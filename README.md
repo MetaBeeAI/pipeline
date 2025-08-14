@@ -19,39 +19,7 @@ MetaBeeAI_LLM/
 └── README.md # This file
 ```
 
-## Install Git Large File Storage (LFS) and clone the repository
 
-1. Install Git LFS:
-``` bash
-brew install git-lfs
-```
-or appropriate package for your OS.
-
-2. Initialize LFS:
-``` bash
-git lfs install
-```
-
-3. Clone the repository:
-``` bash
-git clone https://github.com/rachelparkinson/MetaBeeAI_LLM.git
-```
-All LFS files are now downloaded
-
-Clone without downloading LFS files:
-``` bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/rachelparkinson/MetaBeeAI_LLM.git
-```
-
-Pull without downloading LFS files:
-``` bash
-GIT_LFS_SKIP_SMUDGE=1 git pull
-```
-
-Then, you can download the LFS files separately:
-``` bash
-git lfs pull --include="path/to/specific/file"
-```
 
 
 ## Setup
