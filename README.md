@@ -67,6 +67,96 @@ Uses the LLM answers and further condenses them (with another LLM pipeline) to o
 - Applies additional LLM processing for data condensation
 - Outputs structured data tables in CSV or JSON format
 
+## Required Input Data
+
+Before using the MetaBeeAI pipeline, you need to prepare your dataset of papers. We recommend using **ASReview** for ML-assisted paper selection and scoring.
+
+### 1. **Paper Selection with ASReview**
+
+**ASReview** is a machine learning tool that helps you efficiently screen papers for systematic reviews:
+
+- **Input**: Upload abstracts and titles of candidate papers
+- **Process**: ASReview uses active learning to score papers based on your initial decisions
+- **Output**: Ranked list of papers with relevance scores
+- **Benefit**: Reduces manual screening time by 95% while maintaining quality
+
+**Installation and Setup:**
+```bash
+pip install asreview
+asreview lab
+```
+
+### 2. **Data Structure Requirements**
+
+After selecting papers with ASReview, organize your data as follows:
+
+```
+data/
+├── papers/                          # Main papers directory
+│   ├── 001/                        # Paper subfolder (unique number)
+│   │   ├── 001_main.pdf            # Full-text PDF (rename as needed)
+│   │   └── ...                     # Other paper files
+│   ├── 002/                        # Second paper
+│   │   ├── 002_main.pdf            # Full-text PDF
+│   │   └── ...                     # Other paper files
+│   └── ...                         # Additional papers
+└── included_papers.csv              # ASReview output with paper metadata
+```
+
+**Folder Naming Convention:**
+- Use **numbers** (001, 002, 003, ...)
+- Each number should be **unique** across all papers
+- Numbers should be **sequential** for easy organization
+
+**PDF Requirements:**
+- **One PDF per subfolder**
+- **Full-text PDFs** (not just abstracts)
+- **Rename PDFs** to match folder structure (e.g., `001_main.pdf`)
+- **High-quality scans** for better Vision AI processing
+
+### 3. **Paper Metadata CSV**
+
+ASReview exports a CSV file containing metadata for included papers. Place this file in the `data/` folder:
+
+**Required CSV Columns:**
+- **paper_id**: Must match the subfolder names (001, 002, 003, ...)
+- **title**: Paper title
+- **authors**: Author names
+- **journal**: Journal name
+- **year**: Publication year
+- **doi**: Digital Object Identifier (if available)
+- **abstract**: Paper abstract (if available)
+
+**Example CSV Structure:**
+```csv
+paper_id,title,authors,journal,year,doi,abstract
+001,"Effects of pesticides on bee populations","Smith et al.","Nature",2023,"10.1038/...","This study examines..."
+002,"Neonicotinoid impact on pollinators","Jones et al.","Science",2023,"10.1126/...","Research shows that..."
+```
+
+### 4. **Data Validation**
+
+Before running the pipeline, ensure:
+
+- [ ] **PDF files exist** in each numbered subfolder
+- [ ] **PDFs are readable** and contain full text
+- [ ] **CSV metadata** is in the `data/` folder
+- [ ] **Paper IDs match** between folders and CSV
+- [ ] **No duplicate numbers** across subfolders
+- [ ] **File permissions** allow reading by the pipeline
+
+**Quick Validation Command:**
+```bash
+# Check folder structure
+ls -la data/papers/
+
+# Verify PDF files exist
+find data/papers/ -name "*.pdf" -type f
+
+# Check CSV file
+ls -la data/included_papers.csv
+```
+
 ## Setup
 
 1. Create and activate a virtual environment:
