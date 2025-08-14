@@ -302,7 +302,7 @@ def main():
     # TITLE PAGE: Random paper title, authors, abstract.
     title_text = fake.catch_phrase()
     p = Paragraph(title_text, styles["Title"])
-    cid, chunk = new_chunk(title_text, "page_header", current_page, chunk_index)
+    cid, chunk = new_chunk(title_text, "marginalia", current_page, chunk_index)
     p._metadata_id = cid
     story.append(meta(p))
     chunk_index += 1
@@ -391,7 +391,7 @@ def main():
     
     markdown_lines = []
     for chunk in sorted_chunks:
-        if chunk["chunk_type"] in ["page_header", "heading", "text"]:
+        if chunk["chunk_type"] in ["marginalia", "heading", "text"]:
             markdown_lines.append(chunk["text"])
     
     full_markdown = "\n\n".join(markdown_lines)
