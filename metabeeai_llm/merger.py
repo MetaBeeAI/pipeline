@@ -132,7 +132,7 @@ def main():
         "--filter-chunk-type",
         nargs='+',
         default=[],
-        help="List of keywords for filtering out chunks based on 'chunk_type' (e.g., page_footer)."
+        help="List of keywords for filtering out chunks based on 'chunk_type' (e.g., marginalia)."
     )
     args = parser.parse_args()
 

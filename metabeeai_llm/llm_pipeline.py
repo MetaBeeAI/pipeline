@@ -127,7 +127,7 @@ def merge_json_in_the_folder(folder_path, overwrite=False):
             chunks = json_obj['data']['chunks']
 
             for chunk in chunks:
-                if chunk['chunk_type'] in ['figure','page_header','page_footer']:
+                if chunk['chunk_type'] in ['figure','marginalia']:
                     continue
                 chunks_kept.append(chunk)
 
