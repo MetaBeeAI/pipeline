@@ -15,8 +15,13 @@ import unidecode  # Add this to your imports
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+# Import centralized configuration
+import sys
+sys.path.append('..')
+from config import get_papers_dir
+
 # Directory containing paper folders
-BASE_DIR = "data/papers"
+BASE_DIR = get_papers_dir()
 
 def load_schema_config(config_file="schema_config.yaml"):
     """Load the schema configuration from a YAML file."""

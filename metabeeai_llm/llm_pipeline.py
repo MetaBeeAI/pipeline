@@ -142,17 +142,24 @@ def merge_json_in_the_folder(folder_path, overwrite=False):
     with open(folder_path + "merged.json", "w") as f:
         json.dump(json_obj, f, indent=2)
 
-def process_papers(base_dir="../data/papers", start_paper=1, end_paper=999, overwrite_merged=False):
+def process_papers(base_dir=None, start_paper=1, end_paper=999, overwrite_merged=False):
     """
-    Process a range of papers to extract literature answers.
+    Processes papers in the specified directory range.
     
     Args:
-        base_dir: Base directory containing paper folders
+        base_dir: Base directory containing paper folders (defaults to config)
         start_paper: First paper number to process
         end_paper: Last paper number to process
         overwrite_merged: Whether to overwrite existing merged.json files
     """
-    # Verify the base directory exists
+    # Import centralized configuration if base_dir not provided
+    if base_dir is None:
+        import sys
+        sys.path.append('..')
+        from config import get_papers_dir
+        base_dir = get_papers_dir()
+    
+    # Validate base directory
     if not os.path.exists(base_dir):
         print(f"Error: Base directory '{base_dir}' not found")
         return

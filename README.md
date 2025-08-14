@@ -158,6 +158,96 @@ find data/papers/ -name "*.pdf" -type f
 ls -la data/included_papers.csv
 ```
 
+## Configuration
+
+The MetaBeeAI pipeline uses environment variables to configure data directories and API keys. This allows you to customize the pipeline for your specific setup.
+
+### Environment Variables
+
+Create a `.env` file in the project root with the following variables:
+
+```bash
+# Data Directory Configuration
+METABEEAI_DATA_DIR=/path/to/your/papers/directory
+
+# API Keys
+OPENAI_API_KEY=your_openai_api_key_here
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+LANDING_AI_API_KEY=your_landing_ai_api_key_here
+```
+
+### Data Directory Configuration
+
+The `METABEEAI_DATA_DIR` environment variable controls where the pipeline looks for and saves data:
+
+- **If not set**: Defaults to `"data/papers"` relative to the project root
+- **If set**: Points to your custom papers directory
+
+**Example configurations:**
+```bash
+# macOS/Linux
+METABEEAI_DATA_DIR=/Users/username/Documents/research/papers
+
+# Windows
+METABEEAI_DATA_DIR=C:\Users\username\Documents\research\papers
+
+# Linux
+METABEEAI_DATA_DIR=/home/username/research/papers
+```
+
+**Directory Structure Expected:**
+```
+your_custom_papers_directory/
+├── papers/                          # Paper subfolders
+│   ├── 001/                        # Paper 001
+│   │   ├── 001_main.pdf            # Full-text PDF
+│   │   └── pages/                  # Processed pages
+│   ├── 002/                        # Paper 002
+│   │   ├── 002_main.pdf            # Full-text PDF
+│   │   └── pages/                  # Processed pages
+│   └── ...                         # Additional papers
+├── included_papers.csv              # Paper metadata
+├── logs/                           # Processing logs
+└── output/                         # Generated outputs
+```
+
+### Benefits of Environment Configuration
+
+1. **Flexibility**: Point to any directory on your system
+2. **Portability**: Easy to move between different machines
+3. **Multi-Project Support**: Use different directories for different projects
+4. **Clean Separation**: Keep data separate from code
+5. **Easy Sharing**: Share code without sharing data paths
+
+### Setup Instructions
+
+1. **Copy the example file:**
+   ```bash
+   cp env.example .env
+   ```
+
+2. **Edit `.env` with your paths:**
+   ```bash
+   # Edit the file with your preferred text editor
+   nano .env
+   # or
+   code .env
+   ```
+
+3. **Set your data directory:**
+   ```bash
+   METABEEAI_DATA_DIR=/path/to/your/papers
+   ```
+
+4. **Add your API keys:**
+   ```bash
+   OPENAI_API_KEY=sk-your-actual-key-here
+   ANTHROPIC_API_KEY=your-actual-key-here
+   LANDING_AI_API_KEY=your-actual-key-here
+   ```
+
+**Note**: The `.env` file is not tracked in git, so your API keys and custom paths remain private.
+
 ## Setup
 
 1. Create and activate a virtual environment:

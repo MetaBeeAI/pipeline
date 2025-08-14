@@ -741,7 +741,12 @@ class MainWindow(QMainWindow):
 
     def open_folder(self, initial=False):
         if initial:
-            default_folder = os.path.join(os.getcwd(), "data", "papers")
+            # Import centralized configuration for default folder
+            import sys
+            sys.path.append('..')
+            from config import get_papers_dir
+            default_folder = get_papers_dir()
+            
             if os.path.isdir(default_folder):
                 folder = default_folder
             else:
@@ -754,7 +759,12 @@ class MainWindow(QMainWindow):
             if not folder:
                 return
 
-        default_folder = os.path.join(os.getcwd(), "data", "papers")
+        # Import centralized configuration for default folder comparison
+        import sys
+        sys.path.append('..')
+        from config import get_papers_dir
+        default_folder = get_papers_dir()
+        
         papers_subfolder = os.path.join(folder, "papers")
         if folder != default_folder and os.path.isdir(papers_subfolder):
             self.base_papers_dir = papers_subfolder

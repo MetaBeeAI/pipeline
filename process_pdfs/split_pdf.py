@@ -5,14 +5,21 @@ import sys
 import argparse
 from pathlib import Path
 
-def split_pdfs(papers_dir):
+def split_pdfs(papers_dir=None):
     """
-    Split PDFs in the given directory into overlapping 2-page PDFs.
+    Split PDFs in the specified directory into overlapping 2-page segments.
     
     Args:
-        papers_dir: Directory containing paper subfolders
+        papers_dir: Directory containing paper subfolders (defaults to config)
     """
-    # Ensure the path exists
+    # Import centralized configuration if papers_dir not provided
+    if papers_dir is None:
+        import sys
+        sys.path.append('..')
+        from config import get_papers_dir
+        papers_dir = get_papers_dir()
+    
+    # Validate papers directory
     if not os.path.exists(papers_dir):
         print(f"Error: Directory '{papers_dir}' does not exist")
         return

@@ -9,14 +9,21 @@ import datetime
 import argparse
 from collections import defaultdict
 
-def check_chunk_ids_in_pages_dir(papers_dir="data/papers"):
+def check_chunk_ids_in_pages_dir(papers_dir=None):
     """
-    Check for duplicate chunk IDs in JSON files within pages directories.
+    Check for duplicate chunk IDs in the specified directory.
     
     Args:
-        papers_dir: Directory containing paper subfolders
+        papers_dir: Directory containing paper subfolders (defaults to config)
     """
-    # Verify the directory exists
+    # Import centralized configuration if papers_dir not provided
+    if papers_dir is None:
+        import sys
+        sys.path.append('..')
+        from config import get_papers_dir
+        papers_dir = get_papers_dir()
+    
+    # Validate papers directory
     if not os.path.exists(papers_dir):
         print(f"Error: Directory '{papers_dir}' does not exist")
         return

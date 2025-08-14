@@ -5,14 +5,21 @@ import argparse
 from datetime import datetime
 from dotenv import load_dotenv
 
-def process_papers(papers_dir="../data/papers", start_folder=None):
+def process_papers(papers_dir=None, start_folder=None):
     """
     Process papers in the specified directory using Vision Agentic Document Analysis, starting from an optional folder number.
     
     Args:
-        papers_dir: Directory containing paper subfolders
+        papers_dir: Directory containing paper subfolders (defaults to config)
         start_folder: Optional folder number to start processing from
     """
+    # Import centralized configuration if papers_dir not provided
+    if papers_dir is None:
+        import sys
+        sys.path.append('..')
+        from config import get_papers_dir
+        papers_dir = get_papers_dir()
+    
     # Load environment variables
     load_dotenv()
     
