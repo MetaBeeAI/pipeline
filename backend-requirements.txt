@@ -1,7 +1,0 @@
-# web backend requirements
-
-fastapi
-uvicorn
-python-multipart
-pydantic
-pymupdf
