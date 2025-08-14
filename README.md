@@ -17,7 +17,8 @@ MetaBeeAI_LLM/
 │   ├── process_llm_output.py        # Process and structure LLM outputs
 │   ├── unique_chunk_id.py           # Ensure unique chunk IDs across documents
 │   ├── merger.py                    # Merge and combine processed data
-│   └── synthesis.py                 # Data synthesis and summarization
+│   ├── synthesis.py                 # Data synthesis and summarization
+│   └── questions.yml                # Configuration file defining questions for LLM processing
 │
 ├── llm_review_software/             # Combines answers with chunks and PDFs, provides GUI for reviewing LLM output
 │   ├── beegui.py                    # Main GUI application for reviewing and annotating
@@ -34,7 +35,7 @@ MetaBeeAI_LLM/
 ├── metabeeai-frontend/              # Next.js frontend application
 │   └── src/                         # Frontend source code
 │
-├── questions.yml                     # Configuration file defining questions for LLM processing
+
 ├── schema_config.yaml               # Schema configuration for data extraction
 ├── requirements.txt                  # Python dependencies
 ├── setup.py                         # Package installation configuration
@@ -52,7 +53,7 @@ Converts full text PDFs to structured JSON using LandingAI Vision Agentic Docume
 ### 2. **metabeeai_llm**
 Core pipeline for using Large Language Models to obtain answers to specific questions from the papers. This component:
 - Processes the structured JSON from Vision AI
-- Uses LLMs to answer questions defined in `questions.yml`
+- Uses LLMs to answer questions defined in `metabeeai_llm/questions.yml`
 - Outputs structured answers for each paper
 
 ### 3. **llm_review_software**
@@ -226,7 +227,7 @@ See `requirements.txt` for the complete list of dependencies.
 
 ## Configuration
 
-- **`questions.yml`**: Define the questions to ask the LLM about each paper
+- **`metabeeai_llm/questions.yml`**: Define the questions to ask the LLM about each paper
 - **`schema_config.yaml`**: Configure the data extraction schema
 - **`field_examples.yaml`**: Provide examples for field extraction
 

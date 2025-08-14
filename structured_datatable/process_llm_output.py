@@ -18,7 +18,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # Directory containing paper folders
 BASE_DIR = "data/papers"
 
-def load_schema_config(config_file="../schema_config.yaml"):
+def load_schema_config(config_file="schema_config.yaml"):
     """Load the schema configuration from a YAML file."""
     with open(config_file, 'r') as f:
         config = yaml.safe_load(f)
@@ -342,7 +342,7 @@ def process_complex_field(data, field_config, parent_text=None, existing_data=No
     # If no text was found but we have subfields, create an empty structure
     return {} if field_config['type'] == 'complex' else []
 
-def process_papers(start_folder, end_folder, config_file="../schema_config.yaml", 
+def process_papers(start_folder, end_folder, config_file="schema_config.yaml", 
                    process_pesticides=True):
     """
     Process papers using the schema configuration.
@@ -552,7 +552,7 @@ if __name__ == "__main__":
         parser = argparse.ArgumentParser(description="Process paper data to extract pesticide information.")
         parser.add_argument("--start", type=int, required=True, help="Start folder number (e.g., 1 for 001)")
         parser.add_argument("--end", type=int, required=True, help="End folder number (e.g., 4 for 004)")
-        parser.add_argument("--config", type=str, default="../schema_config.yaml", help="Path to config file")
+        parser.add_argument("--config", type=str, default="schema_config.yaml", help="Path to config file")
         
         args = parser.parse_args()
         
@@ -571,7 +571,7 @@ if __name__ == "__main__":
         # Use interactive mode
         start_folder = int(input("Enter start folder number (e.g., 1 for 001): "))
         end_folder = int(input("Enter end folder number (e.g., 4 for 004): "))
-        config_file = input("Enter path to config file (default: ../schema_config.yaml): ") or "../schema_config.yaml"
+        config_file = input("Enter path to config file (default: schema_config.yaml): ") or "schema_config.yaml"
         
         # Process the papers
         pesticide_results = process_papers(

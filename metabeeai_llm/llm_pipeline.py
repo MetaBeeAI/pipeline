@@ -24,7 +24,11 @@ def format_to_list(question,text,model='gpt-4o-mini'):
 # ------------------------------------------------------------------------------
 # Use {placeholder} format syntax in any question that should be parameterized.
 
-with open('questions.yml', 'r') as file:
+# Get the directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+questions_path = os.path.join(script_dir, 'questions.yml')
+
+with open(questions_path, 'r') as file:
     QUESTIONS = yaml.safe_load(file)
 
 # ------------------------------------------------------------------------------
