@@ -1,0 +1,22 @@
+python-dotenv
+openai
+PyPDF2
+ipykernel 
+mllm
+
+# synthesis
+faker
+reportlab
+matplotlib
+numpy
+
+# LLM pipeline
+litellm
+asyncio
+pydantic
+
+# Processing and GUI
+pymupdf
+termcolor
+pyqt5
+
