@@ -1,0 +1,1092 @@
+{
+  "002": {
+    "answer_llm": "The experimental methodologies used in this paper involved field studies with bumble bee hives placed at different distances from oilseed rape (OSR) fields treated with clothianidin. The study included regular assessments of hive weight and worker numbers, the use of queen lockers to monitor queen production, and pollen sampling for residue analysis.",
+    "answer_rev1": "Two study sites were used - one reference site without clothianidin treatment and one experimental, references given to other studies that used the sites. Soil samples taken to determine clothianidin residues.\n\nStandardised bumble bee colonies were used in the study. The original queen was found, and hive weight and number of workers were recorded twice a week from 26th April, over the project. Behavioural measures such as abnormal flight activity were recorded.\n\nOSR pollen samples to assess pesticide residues were also taken twice, once in April and once in May.  \n\nDuring the post exposure phase, the presnce of a queen, hive weight and numberof workers were recorded once a week. At the end of the post-exposure phase, hives were frozen and then number of new queens produced were assessed.\n\nWeather conditions were monitored at the sites.",
+    "answer_rev2": "The experimental methodologies used in this paper involved field studies with bumble bee hives placed at different distances from oilseed rape (OSR) fields treated with clothianidin. The study included regular assessments of hive weight and worker numbers, the use of queen lockers to monitor queen production, and pollen sampling for residue analysis.",
+    "rev1": "AH",
+    "rev2": "EA"
+  },
+  "003": {
+    "answer_llm": "The experimental methodologies used in this paper involved exposing bumblebees (*Bombus terrestris*) to thiamethoxam and the parasite *C. bombi*, conducting LD50 toxicity tests, inoculating bees with the parasite, and analyzing infection intensity through dissection and microscopy.",
+    "answer_rev1": "The study uses protocols to assess acute oral toxicity (LD50s) published by the OECD. Bioassays with thiamethoxam with and without infection with C. bombi were done. LD50s were calculated to look at the effect of poarasite load. Parasite load was confirmed by dissection and microscopy.",
+    "answer_rev2": "The experimental methodologies used in this paper involved exposing bumblebees (*Bombus terrestris*) to thiamethoxam and the parasite *C. bombi*, conducting LD50 toxicity tests, inoculating bees with the parasite, and analyzing infection intensity through dissection and microscopy.",
+    "rev1": "AH",
+    "rev2": "EA"
+  },
+  "004": {
+    "answer_llm": "The experimental methodologies used in this paper involved exposing *Bombus impatiens* microcolonies to neonicotinoids via two different routes: one study used pollen as the exposure medium, while another used syrup.",
+    "answer_rev1": "The methods section cited 2 previous papers that outlined more detailed methods. This paper describes an oral bioassay using B. impatiens and sub-lethal exposure to pesticide administered in either syrup or pollen. A number of colony-level endpoints were measured.",
+    "answer_rev2": "The experimental methodologies used in this paper involved exposing *Bombus impatiens* microcolonies to neonicotinoids via two different routes: one study used pollen as the exposure medium, while another used syrup.",
+    "rev1": "AH",
+    "rev2": "EA"
+  },
+  "005": {
+    "answer_llm": "The paper utilized experimental methodologies such as splitting honey bee colonies, assessing brood development, monitoring hive weight at two-hourly intervals, and collecting samples of bees and plant materials for residue analysis.",
+    "answer_rev1": "This paper consists of two large-scale field studies: i) the quantification of residues of thiamethoxam and its primary metabolite (CGA322704) in hive products, pollen and nectar of honeybees foraging in maize and oilseed rape that had received a seed dressing of thiamethoxam over one growing season, and ii) assessment of long-term risks associated with a four-year exposure to maize and oilseed rape crops treated with seed dressing containing thiamethoxam. \n\nFor study i), samples of pollen (both bee and hive), nectar (both bee and hive), bee-bread, honey, wax and royal jelly were analysed for thiamethoxam and its metabolite using LC-MS/MS.\nFor study ii), hives were palced in the treated crop while it was in flower and then placed in a forested area away from pesticide treatments. Number of dead adult bees, flight activity and behavioural measures at hive entrance, foraging activity, pollen collection, strength of colony (using the Liebefeld method), presence of healthy egg-laying queen and eggs, area of pollen and nectar storage, area containing eggs, larvae and capped cells and hive weight were all recorded.",
+    "answer_rev2": "The paper utilized experimental methodologies such as splitting honey bee colonies, assessing brood development, monitoring hive weight at two-hourly intervals, and collecting samples of bees and plant materials for residue analysis.",
+    "rev1": "AH",
+    "rev2": "EA"
+  },
+  "006": {
+    "answer_llm": "The experimental methodologies used in this paper include locomotion tests in a controlled arena to assess the impact of insecticides on honeybee locomotion, exposure of bees to specific doses of insecticides, video tracking of locomotor activity, and mortality assays to determine sublethal doses and long-term survival assessments.",
+    "answer_rev1": "The experimental methodologies used in this paper include locomotion tests in a controlled arena to assess the impact of insecticides on honeybee locomotion, exposure of bees to specific doses of insecticides, video tracking of locomotor activity, and mortality assays to determine sublethal doses and long-term survival assessments.",
+    "answer_rev2": "This study first determined the level of sub-lethal dose for each of the five insecticides for subsequent use in experiments using contact mortality tests. This references standard published protocols for bioassys using bees - the OECD test no 214 and OEPP environmental risk assessment on side-effects of pesticide to honeybees. \nThese sub-lethal doses were then used in studies evaluating locomotion in one day old pesticide-treated bees versus controls, using a webcam and video tracking analysis software. \n\nThe long-term survival of pesticide-exposed bees was also assessed over 5 days using differet groups of bees than those used in the locomtion study.",
+    "rev1": "EA",
+    "rev2": "AH"
+  },
+  "007": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) chronic administration of probiotic strains to honeybees to evaluate their anti-*N. ceranae* activity, 2) infection of honeybees with *N. ceranae* spores, 3) exposure to pesticides (thiamethoxam and boscalid), 4) monitoring of sucrose consumption and survival rates, and 5) quantitative PCR to measure gene expression levels related to immunity and detoxification.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) chronic administration of probiotic strains to honeybees to evaluate their anti-*N. ceranae* activity, 2) infection of honeybees with *N. ceranae* spores, 3) exposure to pesticides (thiamethoxam and boscalid), 4) monitoring of sucrose consumption and survival rates, and 5) quantitative PCR to measure gene expression levels related to immunity and detoxification.",
+    "answer_rev2": "This paper describes two experiments: i) an evaluation of five probiotic candidates for anti-Nosema ceranae activity, ii) the probiotic strain selected by this initial experiment (PA) was then investigated further to examine whether it might have a curative effect on the parasite and also whether it might have a beneficial effect on bees exposed to thiamethoxam and boscalid. \nAll experiments were run using oral infection or exposure. \nExperiment i) 8 experimental groups of bee were used, one for each of the five candidate probiotic, one that was infected with N. ceranae but had no probiotic treatment, one that was infected with N. ceranae, had no probiotic, but received fumagillin treatment and a control.\n\nExperiment ii) 6 experimental groups of bee were used, one unifected but treated with PA, one that was infected with N. ceranae but had no probiotic treatment, one that was infected with N. ceranae and had probiotic PA, one exposed to pesticides, one exposed to pesticides and given PA treatment and a control. At day 16 a random sampling of 6 bees from each group was undertaken to extract RNA and DNA. Subsequently 16S rRNA amplification was used to perform metagenomic analyses and qPCR was run to determine effcets on targeted host-gene expression. Mortality and sucrose consumption were measuredfor all groups.",
+    "rev1": "EA",
+    "rev2": "AH"
+  },
+  "008": {
+    "answer_llm": "The experimental methodologies used in this paper include three bioassay methods: 1) a residue film method for determining contact toxicity, 2) collecting stingless bees from feral and vegetable ecosystem colonies and exposing them to insecticides in the lab, and 3) anesthetizing bees collected at the hive entrance before transferring them to conical flasks.",
+    "answer_rev1": "This paper describes three different set-ups to use T. travancorica in acute contact bioassays to determine LD50s. Bees were collected from 2 colonies, one that was on land with no history of insecticide use (feral colony) and one from an agricultural setting wit frequent insecticide exposure (vegetable ecosystem). The 3 bioassay methods trialed were:\ni) bees were collected in plastic containers, tramsported to the lab and transferred to pre-treated conical flasks coated with insecticide or control flasks.\nii)  bees were collected in glass containers, tramsported to the lab and tehn placed in a -20 freezer for 10 minutes to anaesthetise the bees. Then bees were transferred to pre-treated conical flasks coated with insecticide or control flasks using a brush.\niii) bees were collected at the hive into pre-treated conical flasks coated with insecticide or control flasks. \n\nAll set ups fed the bees using 10% honey solution. Mortality was recorded after 3, 6, 9 and 12 hours.",
+    "rev1": "AH"
+  },
+  "009": {
+    "answer_llm": "The experimental methodologies used in this paper involved administering spinosad orally to *Plebeia lucii* foragers, conducting survival bioassays, sublethal bioassays to assess locomotion and flight behavior, and measuring body mass and respiration rate under controlled conditions. The study included various concentrations of spinosad and control groups to evaluate the lethal and sublethal effects on the bees.",
+    "answer_rev1": "This paper describes two experiments, to measure both lethal and sub-lethal effects:\ni) survival bioassay - using oral exposure route to formulations of two insecticides, spinosad and imidacloprid, with control groups (no insecticide exposure) to calculate LT50s (median of lethal times) for both insecticides.\nii) sub-lethal bioassays were thern immediately run on the bees that were still alive after the survival bioassay within the groups exposed to the lower concentrations of spinosad and the control groups. Walking behaviour was assessed using referenced published methods, using a video tracking system. Walking velocity, distance, resting time and number of stops were measured. Flight behaviour was assessed using referenced published methods, using a free-fall flight bioassay. Body mass was measured. Lastly respiration rate was measured using a respirometer that could analyse CO2.",
+    "rev1": "AH"
+  },
+  "010": {
+    "answer_llm": "The experimental methodology used in this paper involved studying the walking trajectories of *B. terrestris* foragers exposed to different sublethal insecticide regimes.",
+    "answer_rev1": "The experimental methodology used in this paper involved studying the walking trajectories of *B. terrestris* foragers exposed to different sublethal insecticide regimes.",
+    "answer_rev2": "The study describes an experiment designed to compare the sub-lethal effects of 3 pesticides in Bombus terrestris audax. Using a thermal visual arena (design referenced published methods) and a thermal imaging camera and video recorder, an aversive environment was created using heat (45 degrees) simultaneously along with a cool reward zone (25 degrees). This was used to allow ten, three-minute aversive training trails for each bee across three days. Bees used were of a standardised age. Food consumption (corrected for evaporation loss) was recorded across the experiment. A range of parameters were measured including bee trajectory maps (routes taken), time spend in the cool rewrad zone, distance travelled throughout trials and average speed of bee throughout trial. The trajectory data was used to calculate power law, to see what effect insecticide exposure regimes had on the behaviour of the bees.",
+    "rev1": "EA",
+    "rev2": "AH"
+  },
+  "011": {
+    "answer_llm": "The experimental methodologies used in this paper include generating a polyclonal antibody against honey bee vitellogenin, exposing honey bees to the neonicotinoid clothianidin, and analyzing vitellogenin levels in their fat body, hemolymph, and brain using Western blotting and mass spectrometry.",
+    "answer_rev1": "This study describes methods to assess the alteration at the protein level to vitellogenin production afetr exposure to clothianidin. The synthesis of a polycolonal A. mellifera vitellogenin antibody is described briefly (company used given). Methods to collect haemolymph, fat body, brain and honey stomach are outlined. Vitellogenin levels in the fat body, hemolymph and brain using Western blotting and mass spectrometry, in bees exposed to clothianidin versus controls.",
+    "rev1": "AH"
+  },
+  "012": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) extraction of hemolymph from honeybee larvae, 2) in vitro exposure of hemolymph to pesticides (imidacloprid and amitraz) and zymosan A, and 3) Real-Time PCR for gene expression analysis of immune-related genes.",
+    "answer_rev1": "This paper describes:\ni) the extraction of haemolymph from Apis mellifera larvae (5th satge). \nii) the incubation of the haemolymph with two pesticides, both as single compound exposures and mixtures (1:1  1:5 and 5:1), run in 24-well tissue culture plates. All these treatment groups were run with and without the addition of Zymosan A for a duration of 18h. \niii) The extraction of RNA from the haemolymph and cDNA synthesis\niv) Real-time PCR to determine differential gene expression of key Apis mellifera immune-related genes to determine the effects of the treatment groups.",
+    "answer_rev2": "The experimental methodologies used in this paper include: 1) extraction of hemolymph from honeybee larvae, 2) in vitro exposure of hemolymph to pesticides (imidacloprid and amitraz) and zymosan A, and 3) Real-Time PCR for gene expression analysis of immune-related genes.",
+    "rev1": "AH",
+    "rev2": "EA"
+  },
+  "013": {
+    "answer_llm": "The experimental methodologies used in this paper include analyzing survival, pollen and syrup consumption, and midgut bacterial diversity in honey bees after exposure to imidacloprid and *T. mercedesae*. Additionally, high-throughput 16S rRNA gene sequencing was employed to identify the microbial communities associated with the honey bees.",
+    "answer_rev1": "The experimental methodologies used in this paper include analyzing survival, pollen and syrup consumption, and midgut bacterial diversity in honey bees after exposure to imidacloprid and *T. mercedesae*. Additionally, high-throughput 16S rRNA gene sequencing was employed to identify the microbial communities associated with the honey bees.",
+    "rev1": "EA"
+  },
+  "014": {
+    "answer_llm": "The experimental methodology used in this paper involved testing the effects of the fungicides boscalid and dimoxystrobin, as well as the insecticide acetamiprid, on honeybee behavior.",
+    "answer_rev1": "Acute toxicity tests of the pesticides used were done to determine LD50 values. Bees were then exposed to oral sub-lethal doses for 1 week, before sucrose responsiveness was tested using a proboscis extension response (PER) test. Bees not responding to 50% sucrose were excluded from differential olfactory conditioning. Differential olfactory conditioning was undertaken using  2 different odors, measured by PER. Reversal learning trials were also done.",
+    "answer_rev2": "The experimental methodology used in this paper involved testing the effects of the fungicides boscalid and dimoxystrobin, as well as the insecticide acetamiprid, on honeybee behavior.",
+    "rev1": "AH",
+    "rev2": "EA"
+  },
+  "015": {
+    "answer_llm": "The experimental methodologies used in this paper include acute and chronic exposure experiments on bees, observations of their locomotion and motor functions in an arena, and assessments of their movement towards light under different exposure conditions.",
+    "answer_rev1": "This study focused on the effects of TMX on bee locomotion, motor functiona and movement towards light. An assessment of the effect of TMX on these parameters was done after acute and chronic exposure. Behaviour was montored and videoed for later analysis in an arena, which was designed with reference to previously published studies. Light levels were also recorded and analysed. Several locomotory parameters were measured over two 3 minute periods of observation, one 30 minutes and one 60 minutes after TMX exposure. Abnormal behaviours and falls were also recorded.",
+    "answer_rev2": "The experimental methodologies used in this paper include acute and chronic exposure experiments on bees, observations of their locomotion and motor functions in an arena, and assessments of their movement towards light under different exposure conditions.",
+    "rev1": "AH",
+    "rev2": "EA"
+  },
+  "016": {
+    "answer_llm": "The experimental methodologies used in this paper involved acute and chronic exposure experiments on honey bees, where bees were fed specific doses of the pesticide TMX to assess its effects on forager flight ability.",
+    "answer_rev1": "The experimental methodologies used in this paper involved acute and chronic exposure experiments on honey bees, where bees were fed specific doses of the pesticide TMX to assess its effects on forager flight ability.",
+    "answer_rev2": "This study focused on the effects of TMX on bee flight activity. An assessment of the effect of TMX on flight duration, distance and velocity was done after acute and chronic exposure. Flight behaviour was tested using a modified flight mill, which was designed with reference to previously published studies. Individuals from acute exposure were tested before and after exposure. Chronic exposure groups were tested post-exposure at 24 and 48 hours. Bees had a harness glued to their thorax prior to flight anaylses to allow them to be attached to the flight mill. Flight was recorded using LabView software on a PC.",
+    "rev1": "EA",
+    "rev2": "AH"
+  },
+  "017": {
+    "answer_llm": "The experimental methodologies used in this paper included monitoring free-ranging honey bees with radio-frequency identification (RFID) technology to assess their homing success after exposure to sublethal doses of thiamethoxam. The study involved two stages: measuring mortality in exposed foragers and evaluating the effects of pesticide exposure on colony dynamics.",
+    "answer_rev1": "The experimental methodologies used in this paper included monitoring free-ranging honey bees with radio-frequency identification (RFID) technology to assess their homing success after exposure to sublethal doses of thiamethoxam. The study involved two stages: measuring mortality in exposed foragers and evaluating the effects of pesticide exposure on colony dynamics.",
+    "rev1": "EA"
+  },
+  "018": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) functional expression of CYP9 enzymes in a baculovirus-insect cell system; 2) fluorescence-based assays to screen recombinant proteins against coumarin substrates; 3) LC\u2013MS/MS analysis of neonicotinoid metabolism; 4) transcriptome sequencing of four Megachile species; and 5) phylogenetic analyses of CYP9 sequences across bee families.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) functional expression of CYP9 enzymes in a baculovirus-insect cell system; 2) fluorescence-based assays to screen recombinant proteins against coumarin substrates; 3) LC\u2013MS/MS analysis of neonicotinoid metabolism; 4) transcriptome sequencing of four Megachile species; and 5) phylogenetic analyses of CYP9 sequences across bee families.",
+    "rev1": "EA"
+  },
+  "019": {
+    "answer_llm": "The experimental methodologies used in this paper include survival experiments on caged honey bees, assessments of viral infection levels using qRT-PCR, and exposure to stressors like nicotine and sub-optimal temperature.",
+    "answer_rev1": "The experimental methodologies used in this paper include survival experiments on caged honey bees, assessments of viral infection levels using qRT-PCR, and exposure to stressors like nicotine and sub-optimal temperature.",
+    "rev1": "EA"
+  },
+  "020": {
+    "answer_llm": "The experimental methodologies used in this paper include laboratory experiments on bumble bees to test the effects of dietary neonicotinoids on colony growth and fecundity, as well as field observations of spider predation rates on bumble bees. Demographic modeling was also employed to simulate the impacts of these stressors.",
+    "answer_rev1": "The experimental methodologies used in this paper include laboratory experiments on bumble bees to test the effects of dietary neonicotinoids on colony growth and fecundity, as well as field observations of spider predation rates on bumble bees. Demographic modeling was also employed to simulate the impacts of these stressors. (good, clear, and concise)",
+    "rev1": "EA"
+  },
+  "021": {
+    "answer_llm": "The experimental methodologies used in this paper included placing commercial bumble bee hives next to corn fields (both treated with neonicotinoids and organic), collecting pollen samples for neonicotinoid residue analysis, observing foraging activity of bumble bees, assessing colony health by measuring various endpoints, and analyzing pollen types and residues using laboratory techniques.",
+    "answer_rev1": "The experimental methodologies used in this paper included placing commercial bumble bee hives next to corn fields (both treated with neonicotinoids and organic), collecting pollen samples for neonicotinoid residue analysis, observing foraging activity of bumble bees, assessing colony health by measuring various endpoints, and analyzing pollen types and residues using laboratory techniques.",
+    "rev1": "EA"
+  },
+  "022": {
+    "answer_llm": "The experimental methodologies used in this paper involved collecting foraging *M. scutellaris* bees from colonies, conducting bioassays to determine the mean lethal time of the pesticide thiamethoxam, and analyzing morphological alterations in their organs (Malpighian tubules, midgut, and brain) using light microscopy and transmission electron microscopy (TEM).",
+    "answer_rev1": "The experimental methodologies used in this paper involved collecting foraging *M. scutellaris* bees from colonies, conducting bioassays to determine the mean lethal time of the pesticide thiamethoxam, and analyzing morphological alterations in their organs (Malpighian tubules, midgut, and brain) using light microscopy and transmission electron microscopy (TEM).",
+    "rev1": "EA"
+  },
+  "023": {
+    "answer_llm": "The experimental methodologies used in this paper include continuous exposure, limited exposure, and topical exposure studies on honey bees.",
+    "answer_rev1": "The experimental methodologies used in this paper include continuous exposure, limited exposure, and topical exposure studies on honey bees.",
+    "rev1": "EA"
+  },
+  "052": {
+    "answer_llm": "The experimental methodologies used in this paper include laboratory studies on *Apis cerana* to investigate the acute and chronic effects of thiacloprid on behaviors such as phototropic climbing ability, sucrose responsiveness, and olfactory learning ability, as well as assessments of bio enzymic activities and transcriptomic changes.",
+    "answer_rev1": "The study employed both acute and chronic exposure assays using honey Apis cerana, following OECD Test Guideline No. 213 for acute toxicity. Chronic exposure involved ad libitum feeding with a thiacloprid-contaminated sucrose solution (39.5 mg/L) over 96 hours under controlled conditions. Behavioral effects were assessed through a climbing test (Gao et al., 2020) and a proboscis extension reflex test to evaluate sucrose responsiveness and olfactory learning (Strube-Bloss and R\u00f6ssler, 2018). Enzymatic activity (AChE, CarE, and P450s) was measured at multiple time points using pooled bee abdomens, homogenized in saline and processed with commercial assay kits. RNA-seq was used to examine gene expression after exposure, and selected differentially expressed genes were validated by qRT-PCR using the 2-\u0394\u0394CT method.",
+    "rev1": "SA"
+  },
+  "053": {
+    "answer_llm": "The experimental methodologies used in this paper involved rearing honey bee larvae in vitro, feeding them diets containing different concentrations of insecticides, and assessing their acute and chronic toxicities through survival and weight measurements.",
+    "answer_rev1": "The study employed an in vitro rearing methodology for Apis mellifera larvae, based on the protocol described by Dai et al. (2018). Larvae were grafted onto sterile 48-well cell culture plates containing defined larval diets and incubated in growth chambers under controlled temperature and humidity conditions. Toxicity was evaluated by incorporating insecticides dissolved in acetone into the diets at various concentrations. Acute toxicity was assessed by measuring mortality over a 72-hour period post-exposure to determine LC\u2085\u2080 values. Chronic toxicity was examined through repeated feeding of treated diets from day 3 to day 6, with daily monitoring of larval survival and pupal development until adult emergence. Mortality was confirmed by observing larval movement and respiration under a microscope. Larval weight was measured on day 7 to assess sub-lethal effects.",
+    "rev1": "SA"
+  },
+  "056": {
+    "answer_llm": "The experimental methodologies used in this paper involved assessing the acute contact toxicity of insecticidal baits on honey bees, including collecting bees, exposing them to treated surfaces, and measuring mortality rates in controlled laboratory conditions.",
+    "answer_rev1": "Toxicity was tested under laboratory conditions using a modified version of the method described by Titov et al. (1989). Bees were exposed to insecticidal baits applied to filter paper for 30 minutes via contact in plastic containers. Mortality was assessed at 1, 4, and 24 hours post-exposure. Each dose was tested with 10 bees per replicate, across 5\u20137 dose levels, and experiments were repeated three times.",
+    "rev1": "SA"
+  },
+  "070": {
+    "answer_llm": "The experimental methodologies used in this paper involved exposing honey bees to sublethal concentrations of thiacloprid and clothianidin, measuring their survival and food consumption, and assessing various biochemical parameters related to oxidative stress and immune response, including enzyme activities and levels of oxidative stress markers.",
+    "answer_rev1": "The experimental methodologies used in this paper involved exposing honey bees to sublethal concentrations of thiacloprid and clothianidin, measuring their survival and food consumption, and assessing various biochemical parameters related to oxidative stress and immune response, including enzyme activities and levels of oxidative stress markers.",
+    "answer_rev2": "Correct - The experimental methodologies used in this paper involved exposing honey bees to sublethal concentrations of thiacloprid and clothianidin, measuring their survival and food consumption, and assessing various biochemical parameters related to oxidative stress and immune response, including enzyme activities and levels of oxidative stress markers.",
+    "rev1": "EA",
+    "rev2": "AJ"
+  },
+  "071": {
+    "answer_llm": "The experimental methodologies used in this paper include laboratory assays where honey bee larvae were exposed to pesticides via diet, and field trials conducted on whole colonies to assess the impact of pesticide exposure over one year.",
+    "answer_rev1": "The experimental methodologies used in this paper include laboratory assays where honey bee larvae were exposed to pesticides via diet, and field trials conducted on whole colonies to assess the impact of pesticide exposure over one year.",
+    "answer_rev2": "The experimental methodologies used in this paper include laboratory assays where honey bee larvae were exposed to pesticides via diet, and field trials conducted on whole colonies to assess the impact of pesticide exposure over one year.",
+    "rev1": "AJ",
+    "rev2": "EA"
+  },
+  "072": {
+    "answer_llm": "The experimental methodologies used in this paper include sampling bees and hoverflies, surveying the diversity of insect-pollinated plants, and placing bumblebee colonies (*Bombus terrestris*) in field edges to monitor their growth and reproduction.",
+    "answer_rev1": "The experimental methodologies used in this paper include sampling bees and hoverflies, surveying the diversity of insect-pollinated plants, and placing bumblebee colonies (*Bombus terrestris*) in field edges to monitor their growth and reproduction.",
+    "answer_rev2": "The experimental methodologies used in this paper include sampling bees and hoverflies, surveying the diversity of insect-pollinated plants, and placing bumblebee colonies (*Bombus terrestris*) in field edges to monitor their growth and reproduction.",
+    "rev1": "AJ",
+    "rev2": "EA"
+  },
+  "073": {
+    "answer_llm": "The experimental methodology used in this paper involved a field experiment where four commercial *Bombus impatiens* colonies were placed in 20 sites along a gradient of agricultural intensity. The colonies were weighed weekly, and workers were captured to assess pollen load diversity. Additionally, metrics such as final colony weight, queen production, and presence of predators were recorded.",
+    "answer_rev1": "The experimental methodology used in this paper involved a field experiment where four commercial *Bombus impatiens* colonies were placed in 20 sites along a gradient of agricultural intensity. The colonies were weighed weekly, and workers were captured to assess pollen load diversity. Additionally, metrics such as final colony weight, queen production, and presence of predators were recorded.",
+    "answer_rev2": "The experimental methodology used in this paper involved a field experiment where four commercial *Bombus impatiens* colonies were placed in 20 sites along a gradient of agricultural intensity. The colonies were weighed weekly, and workers were captured to assess pollen load diversity. Additionally, metrics such as final colony weight, queen production, and presence of predators were recorded.",
+    "rev1": "EA",
+    "rev2": "AJ"
+  },
+  "074": {
+    "answer_llm": "The experimental methodologies used in this paper involved conducting concentration\u2013mortality bioassays to assess the effects of insecticides and fungicides on *Apis mellifera* and *Partamona helleri*, as well as measuring body mass and respiration rates of the bees.",
+    "answer_rev1": "The experimental methodologies used in this paper involved conducting concentration\u2013mortality bioassays to assess the effects of insecticides and fungicides on *Apis mellifera* and *Partamona helleri*, as well as measuring body mass and respiration rates of the bees.",
+    "answer_rev2": "The experimental methodologies used in this paper involved conducting concentration\u2013mortality bioassays to assess the effects of insecticides and fungicides on *Apis mellifera* and *Partamona helleri*, as well as measuring body mass and respiration rates of the bees.",
+    "rev1": "EA",
+    "rev2": "AJ"
+  },
+  "075": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) Placing honey bee colonies adjacent to buckwheat fields treated with flupyradifurone and untreated control fields, 2) Conducting colony condition assessments (CCAs) at multiple time points, 3) Monitoring honey bee forager flight activity through transect walks, and 4) Analyzing pollen and nectar samples for flupyradifurone residues.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) Placing honey bee colonies adjacent to buckwheat fields treated with flupyradifurone and untreated control fields, 2) Conducting colony condition assessments (CCAs) at multiple time points, 3) Monitoring honey bee forager flight activity through transect walks, and 4) Analyzing pollen and nectar samples for flupyradifurone residues.",
+    "rev1": "AJ"
+  },
+  "076": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) Sampling of bee colonies to analyze the presence of neonicotinoids and other pesticides in honey, bee bread, and bees; 2) Direct observation and assessment of colony characteristics; 3) Statistical modeling to analyze the relationships between environmental factors and colony loss; 4) Use of spatially stratified random sampling based on postal code effects to ensure balanced representation of different risk areas.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) Sampling of bee colonies to analyze the presence of neonicotinoids and other pesticides in honey, bee bread, and bees; 2) Direct observation and assessment of colony characteristics; 3) Statistical modeling to analyze the relationships between environmental factors and colony loss; 4) Use of spatially stratified random sampling based on postal code effects to ensure balanced representation of different risk areas.",
+    "answer_rev2": "The experimental methodologies used in this paper include: 1) Sampling of bee colonies to analyze the presence of neonicotinoids and other pesticides in honey, bee bread, and bees; 2) Direct observation and assessment of colony characteristics; 3) Statistical modeling to analyze the relationships between environmental factors and colony loss; 4) Use of spatially stratified random sampling based on postal code effects to ensure balanced representation of different risk areas.",
+    "rev1": "AJ",
+    "rev2": "EA"
+  },
+  "077": {
+    "answer_llm": "The experimental methodologies used in this paper included feeding honey bees (1-day-old, 20-day-old, and 2-year-old queens and 1-day-old and 20-day-old workers) with different concentrations of imidacloprid and measuring the activities of antioxidant enzymes in their hemolymph.",
+    "answer_rev1": "The experimental methodologies used in this paper included feeding honey bees (1-day-old, 20-day-old, and 2-year-old queens and 1-day-old and 20-day-old workers) with different concentrations of imidacloprid and measuring the activities of antioxidant enzymes in their hemolymph.",
+    "answer_rev2": "The experimental methodologies used in this paper included feeding honey bees (1-day-old, 20-day-old, and 2-year-old queens and 1-day-old and 20-day-old workers) with different concentrations of imidacloprid and measuring the activities of antioxidant enzymes in their hemolymph.",
+    "rev1": "EA",
+    "rev2": "AJ"
+  },
+  "080": {
+    "answer_llm": "The experimental methodologies used in this paper included toxicity tests to determine the mean lethal concentration (LC50) and mean lethal time (LT50) of the insecticide thiamethoxam on stingless bees (*Melipona scutellaris*) and honey bees (*Apis mellifera*), as well as morphological and ultrastructural analyses of the bees' brains.",
+    "answer_rev1": "The experimental methodologies used in this paper included toxicity tests to determine the mean lethal concentration (LC50) and mean lethal time (LT50) of the insecticide thiamethoxam on stingless bees (*Melipona scutellaris*) and honey bees (*Apis mellifera*), as well as morphological and ultrastructural analyses of the bees' brains.",
+    "answer_rev2": "The experimental methodologies used in this paper included toxicity tests to determine the mean lethal concentration (LC50) and mean lethal time (LT50) of the insecticide thiamethoxam on stingless bees (*Melipona scutellaris*) and honey bees (*Apis mellifera*), as well as morphological and ultrastructural analyses of the bees' brains.",
+    "rev1": "EA",
+    "rev2": "AJ"
+  },
+  "082": {
+    "answer_llm": "The experimental methodologies used in this paper include TIER I analysis with the USEPA BeeREX model and TIER II analysis using the Species Sensitivity Distribution (SSD) approach.",
+    "answer_rev1": "The experimental methodologies used in this paper include TIER I analysis with the USEPA BeeREX model and TIER II analysis using the Species Sensitivity Distribution (SSD) approach.",
+    "answer_rev2": "The experimental methodologies used in this paper include TIER I analysis with the USEPA BeeREX model and TIER II analysis using the Species Sensitivity Distribution (SSD) approach.",
+    "rev1": "AJ",
+    "rev2": "EA"
+  },
+  "083": {
+    "answer_llm": "The experimental methodologies used in this paper involved exposing bumble bee colonies to turf treated with insecticides and assessing their impacts on colony health and queen production. This included direct observations of foraging activity, monitoring worker mortality, and analyzing nectar samples for insecticide residues.",
+    "answer_rev1": "The experimental methodologies used in this paper involved exposing bumble bee colonies to turf treated with insecticides and assessing their impacts on colony health and queen production. This included direct observations of foraging activity, monitoring worker mortality, and analyzing nectar samples for insecticide residues.",
+    "answer_rev2": "The experimental methodologies used in this paper involved exposing bumble bee colonies to turf treated with insecticides and assessing their impacts on colony health and queen production. This included direct observations of foraging activity, monitoring worker mortality, and analyzing nectar samples for insecticide residues.",
+    "rev1": "EA",
+    "rev2": "AJ"
+  },
+  "216": {
+    "answer_llm": "The experimental methodologies used in this paper include acute contact toxicity tests on honeybees (*A. mellifera*), TEVC (Two-Electrode Voltage Clamp) assays, and insecticidal activity assays against aphids (*M. persicae*).",
+    "answer_rev1": "The paper describes use of acute contact toxicity assays for the calculation of LD50 values. 100ug doses of pesticides were administered to the dorsal thoraxes of bees, and mortality recorded after 24/48 hours in a climate-controlled environment. TEVC evaluations were additionally made, to interrogate the neuronal impacts of each compound.",
+    "rev1": "KW"
+  },
+  "217": {
+    "answer_llm": "The experimental methodologies used in this paper included oral acute toxicity tests and chronic toxicity studies on honey bees (*Apis mellifera*).",
+    "answer_rev1": "Naive worker bees were collected from comb. Bees were starved for 2 hours before exposure to the treatment. In the acute assay, they were provided with a single 10ul shot of pesticide/metabolite treatment - they were then kept at 25C, 65% RH for 96 hours, during which they were fed ad libitum sucrose solution (50% w/v). Mortality was recorded at 2, 4, 6, 10, 14, 20, 24, 30, 48, 72 and 96 hours. A similar approach was employed in the chronic assay, where bees were simply fed a contaminated sucrose (50% w/v) solution over 10 days. Daily consumption was recorded.",
+    "rev1": "KW"
+  },
+  "218": {
+    "answer_llm": "The experimental methodologies used in this paper involved rearing larvae of *O. bicornis* on different pollen diet treatments and exposing them to various pesticides in a factorial design.",
+    "answer_rev1": "The experimental methodologies used in this paper involved rearing larvae of *O. bicornis* on different pollen diet treatments and exposing them to various pesticides in a factorial design.",
+    "answer_rev2": "Fresh Osmia bicornis eggs were collected and reared on pollen provisions. These provisions were randomly allocated, but were contaminated with one of 5 pesticides, each at either a high or low concentration. The pollen itself was an additional measure, split between treatment groups of: predominantly Cistus ladanifer; Salix spp.; Brassicaceae/Quercus, or a mixture of the three. The eggs were kept at 23C, 60% RH for 3-4 weeks, the point at which larave eclosed. Mortality, development time and post-larval weight were recorded. The authors additionally interrogated the expression of two detoxification pathways in a second assay, where all bees were exposed to thiacloprid but fed with different diversities of pollen (see above). Expression was determined with qPCR.",
+    "rev1": "FS",
+    "rev2": "KW"
+  },
+  "219": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) A survey of 16 apiaries; 2) Collection of honey, beeswax, and bee samples from three colonies per apiary; 3) Analysis of these samples for pesticide content using liquid chromatography-tandem mass spectrometry and gas chromatography-tandem mass spectrometry; 4) Monitoring of bee mortality rates in relation to the presence of imidacloprid in maize fields.",
+    "answer_rev1": "The experimental methodologies used in this paper included: A survey of 16 apiaries, selected randomly acorss south Belgium; Collection of honey (2g), beeswax(25cm2), and workers (20) from three colonies per apiary, each randomly selected - additional collection of pollen from maize flowers; analysis of these samples for pesticide content using liquid chromatography-tandem mass spectrometry and gas chromatography-tandem mass spectrometry; cataloguing of size and upper/lower distances of fields in flower from each apiary (<3km); monitoring of bee mortality rates in relation to the presence of imidacloprid in maize fields.",
+    "rev1": "KW"
+  },
+  "221": {
+    "answer_llm": "The experimental methodologies used in this paper include semi-field and field experiments assessing the effects of clothianidin on mason bees (*Osmia bicornis*) and bumblebees (*Bombus terrestris*). This involved direct observations of flight activity, mortality, population development, and analysis of pesticide residues in pollen and nectar collected from the bees.",
+    "answer_rev1": "Osmia bicornis 'congregations' and Bombus terrestris colonies were chronically exposed to seed-treated OSR crop in both field and semi-field conditions. The effects of these treatments were considered with regard to: reproductive success/colony strength (the number of occupied tube or brood cells), growth (weight), mortality (number of dead individuals) and, in the semi-field trial, flight activity (number of individuals in flight in a daily snapshot). Liquid chromatography-mass spectrometry was additionally employed to assess clothianidin residues in pollen and brood after exposure.",
+    "rev1": "KW"
+  },
+  "222": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) Topical applications of pesticides (imidacloprid and cocktail treatments) on drones and workers, 2) In-hive pesticide treatments via pollen patty feeding, 3) Cage experiments comparing worker and drone sensitivity to cold and pesticide exposure, and 4) Proteomics analysis of hemolymph to assess stress responses and protein expression changes in bees.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) Topical applications of pesticides (imidacloprid and cocktail treatments) on drones and workers, 2) In-hive pesticide treatments via pollen patty feeding, 3) Cage experiments comparing worker and drone sensitivity to cold and pesticide exposure, and 4) Proteomics analysis of hemolymph to assess stress responses and protein expression changes in bees.",
+    "answer_rev2": "There are several methods, corresponding to several assays: topical applications of pesticides (imidacloprid and cocktail treatments) on drones and workers; in-hive pesticide treatments via pollen patty feeding; caged assays comparing worker and drone sensitivity to cold and pesticide exposure. Additionally, hemolymph was extracted and proteomically analysed, to consider changes in protein expression patterns under cold and pesticide stress. Proteins were identified by mass spectrometry, and compared to a known library of honey bee proteins.",
+    "rev1": "FS",
+    "rev2": "KW"
+  },
+  "224": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) Field studies on honey bees (*Apis mellifera*) to evaluate foraging behavior, mortality, and food stores at various concentrations of thiacloprid. 2) A controlled experiment where different concentrations of thiacloprid were administered through sugar candies over a series of feedings. 3) Observations of the number of foraging bees entering and exiting the hive, mortality counts of dead bees, and evaluations of food stores by quantifying the area of honey and pollen in the hives.",
+    "answer_rev1": "The experimental methodologies used in this paper included: 1) Field studies on honey bees (*Apis mellifera*) to evaluate foraging behavior, mortality, and food stores at various concentrations of thiacloprid. 2) A controlled experiment where different concentrations of thiacloprid were administered through sugar candies over a series of feedings. 3) Observations of the number of foraging bees entering and exiting the hive, mortality counts of dead bees, and evaluations of food stores by quantifying the area of honey and pollen in the hives.",
+    "rev1": "FS"
+  },
+  "225": {
+    "answer_llm": "The experimental methodologies used in this paper included exposing honeybee larvae to sublethal concentrations of thiacloprid, measuring survival rates, sucrose intake, body weight, and assessing the gut microbiota of adult honeybees over a period of 6 days.",
+    "answer_rev1": "The experimental methodologies used in this paper included exposing honeybee larvae to sublethal concentrations of thiacloprid, measuring survival rates, sucrose intake, body weight, and assessing the gut microbiota of adult honeybees over a period of 6 days.",
+    "answer_rev2": "Naive larvae were collected and incubated at 35C, 90RH in a dark incubator. They were fed contaminated foodstuffs over the following 6 days - dosed with either 0.5 or 1mg/L thiacloprid - and subsequently incubated until eclosure. Adult bees were again incubated (30C, 50%RH) for an additional 6 days, wherein they were fed 50% sterile sucrose solution ad libitum. Mortality, sucrose consumption and body weight were recorded for the 6 days following eclosure. As an additional measure, liquid chromatography-mass spectrometry was used to investigate thiacloprid residues in honey bee abdomens. Similarly, DNA sequencing was employed to assess the impact of thiacloprid on the honey bee microbiota.",
+    "rev1": "FS",
+    "rev2": "KW"
+  },
+  "226": {
+    "answer_llm": "The experimental methodologies used in this paper include exposing honey bee larvae to different concentrations of thiacloprid, assessing their behavioral responses to sucrose using the proboscis extension reflex (PER), and employing immunohistochemistry to investigate neural apoptosis in honey bee brains.",
+    "answer_rev1": "Honey bees were chronically exposed to differing thiacloprid solutions (0, 0.5, 1mg/L) over 6 days, their larval stages. PER was employed to first test sucrose acuity (with a series of dilutions spanning from 1-50% w/w), and later to test learning and memory - using Hexanal and Limonene as stimuli. With immunofluorescence, the authors investigated apoptosis in 5 regions of the brain - they similarly produced transcriptomes of differentially expressed genes from brain tissue.",
+    "answer_rev2": "Bees were exposed to different concentrations of thiacloprid during larval stage via food. Several endpoints were evaluated during the adult stage: survival rate, body weight, neural apoptotic rate and the PER response rate",
+    "rev1": "KW",
+    "rev2": "FS"
+  },
+  "227": {
+    "answer_llm": "The experimental methodologies used in this paper include:\n1. Chiral preparation and identification of S-dinotefuran and R-dinotefuran.\n2. Enantioselective lethality evaluation via acute contact exposure and oral exposure bioassays on honeybees (Apis mellifera).\n3. Molecular docking to explore the toxicological mechanism of dinotefuran enantiomers to nAChR in Xenopus laevis oocytes.\n4. Electrophysiological recording to investigate the binding and affinity of dinotefuran enantiomers to nAChR at the cellular level.",
+    "answer_rev1": "Enantiomers of dinotefuran were isolated from each other through supercritical fluid chromatography. The relative oral and contact toxicity of these enantiomers in workers of Apis mellifera were establish, and LC/D50 values interpolated. Subsequently, molecular docking was used to investigate the toxicological interactions of dinotefuran enantiomers with nAChR subunits in Xenopus laevis oocytes. This was followed on with electrophysiological recording to investigate the binding and affinity of dinotefuran enantiomers to nAChR at the cellular level.",
+    "rev1": "KW"
+  },
+  "233": {
+    "answer_llm": "The experimental methodology used in this paper was the radial-arm maze (RAM) to investigate the effects of pesticide exposure on spatial working memory in bumblebees.",
+    "answer_rev1": "Groups of bees were allowed free access to the training arena for an hour. Motivated foragers were marked, and used as the foragers in the subsequent individual training. Here, foragers were allwoed to enter the arena, and visitation to artificial flowers (spiked with 10ul sucrose) were recorded. After 10 individual training bouts, foragers were acutely fed with doses of thiamethoxam in sucrose solution. There were isolated for 45 minutes to allow absorption of this, and then tested again as above.",
+    "rev1": "KW"
+  },
+  "237": {
+    "answer_llm": "The experimental methodologies used in this paper include trials on free-ranging foragers making repeated flights over treated plots, flights to contaminated feeders, and experiments with captive foragers receiving poisoned sucrose solutions.",
+    "answer_rev1": "The authors employed free-flight assays. Sucrose feeders were provided in proximity to bee hives, and incrementally moved to a distance of 30m (the experimental distance). At this point, feeders were separated into 6 locations along an equidistant line, allowing bees to separate into feeding groups of approximately similar size. This arrangement was maintained for several days, to allow bees to learn their positions. On test days, sucrose was provided in the feeders to attract bees - flight was allowed to establish over an hour. Forager visitation was recorded approximately every 15 minutes by photographic analysis. After this first hour, half of the ffeeders were filled with pesticide solutions. Solution collection by bees were calculated.",
+    "rev1": "KW"
+  },
+  "270": {
+    "answer_llm": "The experimental methodologies used in this paper included administering sucrose syrup contaminated with imidacloprid to honeybees, determining the acute oral LD50, testing three sublethal doses, measuring syrup consumption, and assessing wax production.",
+    "answer_rev1": "The methods of the paper involved the collection of honey bee workers from colonies which were free of disease and assumed imidacloprid-naive. The bees were aged until 18 days, and then acutely fed a range of imidacloprid concentrations, to allow for the concentration of LD50. Having determined this, bees were fed one of three sublethal doses, to assess how this exposure could impact their ability to produce wax. The mass of wax was assessed after 16 days of chronic exposure, considered to be the peak of wax production. Everything past the collection of honey bee workers was conducted in a lab setting.",
+    "rev1": "KW"
+  },
+  "276": {
+    "answer_llm": "The experimental methodologies used in this paper involved chronic exposure of bumble bee queens to imidacloprid in syrup and pollen, treatment with carbon dioxide and cold storage to break diapause, and controlled observations of their behavior and reproductive success, including measuring syrup consumption, monitoring queen mortality, and assessing nest initiation and brood emergence.",
+    "answer_rev1": "Newly mated B. impatiens queens were chronically exposed to doses of imidacloprid through contaminated nectar and/or pollen. Consumption was recorded, as was queen mortality (48h intervals). Time of colony initiation (ie time until first eggs) was recorded, as was brood production, nectar pot count and the number of ejected dead larvae. These were considered until first worker emergence, with a hard deadline of 13 weeks for termination. At termination, brood was dissected for viable reproductive material and total mass. Imidacloprid exposure was confirmed with analysis of residues of both imidacloprid and its metabolites (olefin and 5-OH imidacloprid). This was achieved with LC-MS.",
+    "rev1": "KW"
+  },
+  "277": {
+    "answer_llm": "The experimental methodologies used in this paper include laboratory-based manipulative studies, semi-wild studies, and field studies focusing on the effects of neonicotinoids on bumblebees. The study involved exposing bumblebee queens to sublethal neonicotinoid exposure (imidacloprid) and varying their pollen diet (one or two monofloral diets or a polyfloral mix). The queens were monitored for responses such as mortality, activity, and nectar consumption, as well as the timing and total production of brood in the colony.",
+    "answer_rev1": "Queens were reared from commerical colonies. At 10 days old, these queens were fed on imidacloprid-treated nectar (or untreated, if control). This was a 50%w/v sucrose solution, at 5ppb of imidacloprid; they were fed chronically for 17 (temporary exposure) or 37 (continued exposure) days. Within these groups, queens were additionally fed one of two monofloral pollen diets, or a diet which combined these in equal measure. Queen mortality was recorded daily. At ddays 39-41, a subset of queens were assessed for an 'activity score', the number of times they passed the midpoint of their cage in a 10 minute period. At the colony level, the authors inspected every 1-2 days for the presence of eclosed drones. Terminated colonies were dissected, to assess: total number of eggs, larvae, pupae, drones. Initiation time was therefore estimated.\nA second assay was performed, wherein young queens were fed with treated or control sucrose solution, to assess how this impacted their later nectar consumption.",
+    "rev1": "KW"
+  },
+  "294": {
+    "answer_llm": "The experimental methodologies used in this paper include controlled feeding experiments with imidacloprid, histological techniques for tissue analysis, histochemical tests (mercury bromophenol blue, periodic acid-Schiff, Oil Red O), and real-time PCR (qPCR) for evaluating gene expression of the cdc20 gene.",
+    "answer_rev1": "The experimental methodologies used in this paper include controlled feeding experiments with imidacloprid, histological techniques and histochemical tests (mercury bromophenol blue, periodic acid-Schiff, Oil Red O) for the quantification of lipid content, protein and polysaccharides, and real-time PCR (qPCR) for evaluating gene expression of the cdc20 gene.",
+    "rev1": "NN"
+  },
+  "295": {
+    "answer_llm": "The experimental methodologies used in this paper involved assessing the chronic toxicity of acetamiprid delivered in syrup to microcolonies of *B. impatiens*, examining microcolony growth and development over six weeks, monitoring worker behavior, and conducting chemical analysis of syrup samples.",
+    "answer_rev1": "Chronic oral exposure to acetamiprid in syrup with ad libitum access. Mortality, colony appearance and worker behaviour were mintored daily. Pesticide concentration validation via liquid chromatography - mass spectrometry.",
+    "rev1": "NN"
+  },
+  "296": {
+    "answer_llm": "The experimental methodology used in this paper involved assessing the performance of bumble bees (*B. terrestris*) in queenless microcolonies, focusing on the effects of dietary thiamethoxam on brood production, food consumption, and worker survival over a 17-day exposure period.",
+    "answer_rev1": "The experimental methodology used in this paper involved assessing the performance of bumble bees (*B. terrestris*) in queenless microcolonies, focusing on the effects of dietary thiamethoxam on brood production, food consumption, and worker survival over a 17-day exposure period. In addition, pesticide concetrations in the syrup were validated using liquid chromatography - mass spectrometry techniques.",
+    "rev1": "NN"
+  },
+  "298": {
+    "answer_llm": "The experimental methodologies used in this paper involved measuring the brain morphology of *B. terrestris* workers, specifically the lamina, medulla, lobula, and antennal lobes, after exposure to different concentrations of thiamethoxam. Additionally, the study included histological examinations of Kenyon cells and assessments of neuropil disorganization in the mushroom bodies.",
+    "answer_rev1": "The experimental methodologies used in this paper involved measuring the brain morphology of *B. terrestris* workers, specifically the lamina, medulla, lobula, and antennal lobes, after exposure to different concentrations of thiamethoxam. Additionally, the study included histological examinations of Kenyon cells and assessments of neuropil disorganization in the mushroom bodies.",
+    "rev1": "NN"
+  },
+  "299": {
+    "answer_llm": "The experimental methodologies used in this paper involved establishing honey bee colonies for field testing, treating winter and spring rape seeds with neonicotinoids, collecting nectar, pollen, and bee bread samples for chemical analysis, and observing the health and productivity of bee colonies in relation to neonicotinoid exposure.",
+    "answer_rev1": "The experimental methodologies used in this paper involved establishing honey bee colonies for field testing, treating winter and spring rape seeds with neonicotinoids, collecting nectar, pollen, and bee bread samples for chemical analysis, and observing the health and productivity of bee colonies in relation to neonicotinoid exposure. Specialised techniques included liquid chormatography-mass spectrometry LC-MS, and residue measurements in dust.",
+    "rev1": "NN"
+  },
+  "300": {
+    "answer_llm": "The experimental methodologies used in this paper included field studies conducted over two years to evaluate the effects of different insecticides on the larval population of *Helicoverpa armigera* and the foraging behavior of leafcutter bees.",
+    "answer_rev1": "The experimental methodologies used in this paper included field studies conducted over two years to evaluate the effects of different insecticides on the larval population of *Helicoverpa armigera* and the foraging behavior of leafcutter bees. Evaluation of effects is mainly done through observation and recording abundance and visits.",
+    "rev1": "NN"
+  },
+  "301": {
+    "answer_llm": "The experimental methodologies used in this paper include measuring acute oral toxicity to determine medial lethal concentrations (LC\u2085\u2080), evaluating sucrose sensitivity, learning ability, and memory using the proboscis extension reflex (PER) method, determining octopamine levels, and conducting transcriptomic analyses to study gene expression.",
+    "answer_rev1": "The experimental methodologies used in this paper include measuring acute oral toxicity to determine medial lethal concentrations (LC\u2085\u2080), evaluating sucrose sensitivity, learning ability, and memory using the proboscis extension reflex (PER) method, determining octopamine levels, and conducting transcriptomic analyses to study gene expression.",
+    "rev1": "NN"
+  },
+  "302": {
+    "answer_llm": "The experimental methodologies used in this paper include toxicity studies on honeybees (Apis mellifera) that assess the effects of dinotefuran, specifically focusing on oral and contact toxicity of its enantiomers (S-dinotefuran and R-dinotefuran), and their impact on behaviors such as sensitivity to sucrose, learning, memory, and foraging.",
+    "answer_rev1": "In addition to assays, gene expression was quantified using qPCR, hormone levels were measured using an ELISA kit and metabolites were analysed using LC-MS/MS.",
+    "rev1": "NN"
+  },
+  "303": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) administering different doses of imidacloprid to honeybees infected with chronic bee paralysis virus (CBPV) to observe effects on viral levels and mortality; 2) collecting honeybee samples from various provinces to analyze the presence of imidacloprid residues and viral infections; 3) using quantitative real-time PCR (qRT-PCR) to assess viral levels in different tissues; 4) employing enzyme-linked immunosorbent assay (ELISA) to detect imidacloprid residues; and 5) conducting interaction experiments to study the effects of imidacloprid and CBPV on honeybee survival.",
+    "answer_rev1": "The experimental methodologies used in this paper included: 1) administering different doses of imidacloprid to honeybees infected with chronic bee paralysis virus (CBPV) to observe effects on viral levels and mortality; 2) collecting honeybee samples from various provinces to analyze the presence of imidacloprid residues and viral infections; 3) using quantitative real-time PCR (qRT-PCR) to assess viral levels in different tissues; 4) employing enzyme-linked immunosorbent assay (ELISA) to detect imidacloprid residues; and 5) conducting interaction experiments to study the effects of imidacloprid and CBPV on honeybee survival.",
+    "rev1": "NN"
+  },
+  "304": {
+    "answer_llm": "The experimental methodologies used in this paper included conducting farm-level ecological assessments, sampling bees and syrphids using pan traps, and comparing the impacts of reduced-risk versus conventional pesticide programs on pollinator populations in commercial apple orchards over a three-year period.",
+    "answer_rev1": "The experimental methodologies used in this paper included conducting farm-level ecological assessments, sampling bees and syrphids using pan traps, and comparing the impacts of reduced-risk versus conventional pesticide programs on pollinator populations in commercial apple orchards over a three-year period.",
+    "rev1": "NN"
+  },
+  "367": {
+    "answer_llm": "The experimental methodologies used in this paper included laboratory exposure experiments on honey bee workers to neonicotinoids (clothianidin, imidacloprid, and thiamethoxam) for 48 hours, followed by RNA sequencing and RT-qPCR analysis to assess gene expression changes.",
+    "answer_rev1": "The experimental methodologies used in this paper included laboratory exposure experiments on honey bee workers to neonicotinoids (clothianidin, imidacloprid, and thiamethoxam) for 48 hours, followed by RNA sequencing and RT-qPCR analysis to assess gene expression changes.",
+    "rev1": "FS"
+  },
+  "368": {
+    "answer_llm": "The experimental methodologies used in this paper involved chronic exposure of honey bees to acetamiprid and difenoconazole via sucrose solution, monitoring their survival, weight, and gut microbiota composition, and analyzing gene expression related to detoxification and immunity.",
+    "answer_rev1": "The experimental methodologies used in this paper involved chronic exposure of honey bees to acetamiprid and difenoconazole via sucrose solution, monitoring their survival, weight, and gut microbiota composition, and analyzing gene expression related to detoxification and immunity.",
+    "answer_rev2": "The experimental methodologies used in this paper involved chronic exposure of honey bees to acetamiprid and difenoconazole via sucrose solution, monitoring their survival, weight, and gut microbiota composition, and analyzing gene expression related to detoxification and immunity.",
+    "answer_rev3": "The experimental methodologies used in this paper involved chronic exposure of honey bees to acetamiprid and difenoconazole via sucrose solution, monitoring their survival, weight, and gut microbiota composition, and analyzing gene expression related to detoxification and immunity.",
+    "rev1": "RT",
+    "rev2": "SA",
+    "rev3": "FS"
+  },
+  "369": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) Two semi-field experiments with bee colonies in controlled tents, 2) Treatment variants with and without artificial water sources, 3) Daily assessment of bee mortality and behavior, 4) Monitoring brood development using a digital assessment system, and 5) Sampling of guttation droplets for residue analyses of clothianidin.",
+    "answer_rev1": "Two experiments were performed under semi-field conditions with one bee colony per tent. Four tents were used for the treated (maize derived by seed treated) and two plots for the control (maize crop derived by untreated seeds). In the first experiment, there is also one plot with and one without artificial water. During the experiment several parameters have been collected: 1) bee mortality; 2) flight activity and bee behaviours; 3) brood development; 4) residues in guttation and dead bees",
+    "rev1": "FS"
+  },
+  "370": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) Conducting homing flight tests on honeybee foragers to assess the effects of thiamethoxam; 2) Infesting colonies with *Varroa destructor* mites and assessing their impact on homing success; 3) Using RFID technology to track the movements of bees; 4) Administering thiamethoxam at various sublethal doses in a controlled feeding setup; 5) Monitoring environmental conditions such as temperature during the experiments; 6) Evaluating the health status of the colonies prior to experimentation.",
+    "answer_rev1": "The paper performed an homing flight test using the RFID device to assess the homing success following oral exposure to sublethal doses of thiamethoxam. Other parameters were measured, including Varroa infestation level, mean temperature, Nosema and DWV infection level, to be used a covariates",
+    "rev1": "FS"
+  },
+  "371": {
+    "answer_llm": "The experimental methodologies used in this paper included greenhouse and field experiments with Bombus terrestris, focusing on foraging behavior on treated and control plants, homing rates of colonies in treated and control fields, and colony development under laboratory conditions.",
+    "answer_rev1": "The experimental methodologies used in this paper included greenhouse and field experiments with Bombus terrestris colonies.The total number of visits and the man visit duration/head of sunflower on control and treated plots were assessed in the greeenhouse experiment. Pollen analysis in bee hairs and pellets, homing ability and colony development were assessed in the field experiment. Colony development was completed under laboratory conditions after 9 days in the field",
+    "rev1": "FS"
+  },
+  "373": {
+    "answer_llm": "The experimental methodologies used in this paper include the TUNEL assay, ApopTag in situ apoptosis kit, and Roche's In situ cell death detection kit to assess cell death in honeybee workers.",
+    "answer_rev1": "The study involved exposing marked honeybees to pesticide-treated sugar solutions in controlled cage conditions. After 24, 48, or 72 hours of exposure, bees were euthanized, and their hypopharyngeal glands were dissected for analysis. Morphological measurements of gland structures were performed using light microscopy. Immunohistochemical methods were used to localize heat shock proteins, and apoptosis was assessed through TUNEL assays.",
+    "answer_rev2": "Worker honeybees were orally exposed to imidacloprid and coumaphos. After exposure alterations in the hypopharyngeal glands were evaluated using Tunel assay, immunohistological analyses and immunohistochemical localisation of heat shock proteins.",
+    "rev1": "SA",
+    "rev2": "RT"
+  },
+  "374": {
+    "answer_llm": "The experimental methodologies used in this paper involved establishing honey bee colonies in controlled tents under semi-field conditions, applying a mixture of fungicides and insecticides, monitoring brood capping rates, and measuring adult longevity, body and head weight, and enzyme activity (AChE and P450 reductase) in newly hatched worker bees.",
+    "answer_rev1": "The experimental methodologies used in this paper involved establishing honey bee colonies in semi-field tents with different pollen resources, applying a mixture of fungicides and insecticides, monitoring brood capping rates, and measuring adult longevity, body and head weight, and enzyme activity (AChE and P450 reductase) in newly hatched worker bees.",
+    "answer_rev2": "The experimental methodologies used in this paper involved establishing honey bee colonies in controlled tents under semi-field conditions, applying a mixture of fungicides and insecticides, monitoring brood capping rates, and measuring adult longevity, body and head weight, and enzyme activity (AChE and P450 reductase) in newly hatched worker bees.",
+    "rev1": "SA",
+    "rev2": "RT"
+  },
+  "377": {
+    "answer_llm": "The experimental methodologies used in this paper included lab studies, semifield feeder experiments, and direct observation of honey bee behavior in response to neonicotinoids.",
+    "answer_rev1": "The study used a feeder experiment with free-flying bees, where one feeder contained imidacloprid and the other an uncontaminated sucrose solution. Using direct observation, the authors assessed the effects on recruitment behaviors, foraging activities, and feeder choice.",
+    "answer_rev2": "The study used semi-field behavioral experiments to assess the effects of a neonicotinoid on honey bees. Foragers were trained to scented sucrose feeders and then exposed to either imidacloprid-laced or control solutions. Two training protocols were applied: the standard \u201cbox and jump\u201d method in 2018 and a modified \u201cstep-wise\u201d approach in 2019 to reduce recruitment from non-experimental colonies. During the treatment phase, individually marked foragers were observed for 3 hours. Foraging behavior, waggle dancing, and site fidelity were video-recorded and analyzed using ImageJ.  Dance propensity and frequency, number of waggle runs, foraging persistency, and site specificity were quantified to assess the behavioral effects of pesticide exposure.",
+    "rev1": "RT",
+    "rev2": "SA"
+  },
+  "378": {
+    "answer_llm": "The experimental methodologies used in this paper included closed colony experiments, field studies monitoring bee colonies, sampling and pesticide screening, and time-series intervention analysis to assess the impact of neonicotinoid insecticides on honey bee mortality and colony health.",
+    "answer_rev1": "The experimental methodologies used in this paper included closed colony experiments, field studies monitoring bee colonies, sampling and pesticide screening, and time-series intervention analysis to assess the impact of neonicotinoid insecticides on honey bee mortality and colony health.",
+    "answer_rev2": "The experimental methodologies used in this paper included closed colony experiments, field studies monitoring bee colonies, sampling and pesticide screening, and time-series intervention analysis to assess the impact of neonicotinoid insecticides on honey bee mortality and colony health.",
+    "rev1": "RT",
+    "rev2": "SA"
+  },
+  "380": {
+    "answer_llm": "The experimental methodologies used in this paper involved field sampling of honey bees from 30 hives across different geographical locations, testing the effects of pesticide exposure on their immune response and susceptibility to infections, and analyzing the chemical composition of the bees using semi-quantitative PCR and gas chromatography-quadrupole time of flight mass spectrometry (GC-QTOF).",
+    "answer_rev1": "The experimental methodologies used in this paper involved field sampling of honey bees from 30 hives across different geographical locations. The bees were used to identify pesticide residues in the bee body and presence of Nosema ceranae, and how these stressors interacts.",
+    "answer_rev2": "The experimental methodologies used in this paper involved field sampling of honey bees from 30 hives across different geographical locations, testing the effects of pesticide exposure on their immune response and susceptibility to infections, and analyzing the chemical composition of the bees using semi-quantitative PCR and gas chromatography-quadrupole time of flight mass spectrometry (GC-QTOF).",
+    "rev1": "RT",
+    "rev2": "SA"
+  },
+  "381": {
+    "answer_llm": "The experimental methodologies used in this paper include preparing gut microbiota deficient (GD) workers and conventional gut community (CV) workers, treating them with pesticides (thiacloprid and fluvalinate), administering antibiotics to assess gut dysbiosis, analyzing the expression of P450 detoxification enzymes, and conducting in vitro experiments with gut cultures to evaluate metabolic activity.",
+    "answer_rev1": "The experimental methodologies used in this paper include preparing gut microbiota deficient (GD) workers and conventional gut community (CV) workers, treating them with pesticides (thiacloprid and fluvalinate), administering antibiotics to assess gut dysbiosis, analyzing the expression of P450 detoxification enzymes, and conducting in vitro experiments with gut cultures to evaluate metabolic activity.",
+    "answer_rev2": "The experimental methodologies used in this experiment include rearing gut microbiota deficient (GD) and conventional gut (CV) honey bees under controlled lab conditions, with GD bees fed sterile food and CV bees given gut homogenates. Antibiotic-treated (AT) and non-treated (NF) bees were also prepared to study gut dysbiosis. Bees were exposed orally to pesticides (thiacloprid and fluvalinate) at specified doses, and pesticide residues were analyzed by chromatography. Gut bacterial loads and gene expression of P450 detoxification enzymes were quantified using qPCR. Additionally, in vitro gut bacterial cultures were exposed to pesticides to assess their metabolic capacity.",
+    "rev1": "RT",
+    "rev2": "SA"
+  },
+  "382": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) monitoring bee behaviors using small observation hives at two agricultural sites (one contaminated with pesticides and one control site); 2) collecting and marking newly emerging adult bees for tracking their behaviors; 3) direct observations of worker bee and queen behaviors; 4) analyzing gene expression in different age cohorts of bees; and 5) assessing the impacts of environmental pesticide exposure on behavioral maturation and egg-laying rates.",
+    "answer_rev1": "The experimental methodologies used in this paper included: 1) monitoring bee behaviors using small observation hives at two agricultural sites (one contaminated with pesticides and one control site); 2) collecting and marking newly emerging adult bees for tracking their behaviors; 3) direct observations of worker bee and queen behaviors; 4) analyzing gene expression in different age cohorts of bees; and 5) assessing the impacts of environmental pesticide exposure on behavioral maturation and egg-laying rates.",
+    "answer_rev2": "The experimental methodologies used in this paper included: 1) monitoring bee behaviors using small observation hives at two agricultural sites (one contaminated with pesticides and one control site); 2) collecting and marking newly emerging adult bees for tracking their behaviors; 3) direct observations of worker bee and queen behaviors; 4) analyzing gene expression in different age cohorts of bees; and 5) assessing the impacts of environmental pesticide exposure on behavioral maturation and egg-laying rates.",
+    "rev1": "SA",
+    "rev2": "RT"
+  },
+  "384": {
+    "answer_llm": "The experimental methodologies used in this paper involved conducting laboratory experiments on honey bees, where they were exposed to various concentrations of insecticides and fungicides to assess mortality rates and potential interactions between these chemicals.",
+    "answer_rev1": "The experimental methodologies used in this paper involved conducting laboratory experiments on honey bees, where they were exposed to various concentrations of insecticides and fungicides to assess mortality rates and potential interactions between these chemicals.",
+    "answer_rev2": "The experimental methodologies used in this paper involved conducting laboratory experiments on honey bees, where they were exposed to various concentrations of insecticides and fungicides to assess mortality rates and potential interactions between these chemicals.",
+    "rev1": "SA",
+    "rev2": "RT"
+  },
+  "385": {
+    "answer_llm": "The experimental methodologies used in this paper include acute and contact bioassays of imidacloprid and dimethoate on *A. mellifera* and *Leioproctus paahaumaa*.",
+    "answer_rev1": "The experimental methodologies used in this paper include acute and contact bioassays of imidacloprid and dimethoate on *A. mellifera* and *Leioproctus paahaumaa*.",
+    "answer_rev2": "The experimental methodologies used in this paper include acute and contact bioassays of imidacloprid and dimethoate on *A. mellifera* and *Leioproctus paahaumaa*.",
+    "rev1": "SA",
+    "rev2": "RT"
+  },
+  "421": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) Measuring sugar solution consumption and thiacloprid uptake in bees, 2) Observing food consumption and behavioral differences between male and female bees, 3) Conducting immune tests such as total hemocyte counts and antimicrobial activity assessments, 4) Injecting bees with thiacloprid and measuring the resulting immune responses, and 5) Rearing bees under controlled conditions to ensure accurate exposure to the pesticide.",
+    "answer_rev1": "The experimental methodologies used in this paper involved feeding small groups of caged bees different concentrations of thiacloprid and measuring food consumption and immune responses. The study measured sugar solution consumption and thiacloprid uptake, including differences between male and female bees. The study also measured and compared immune responses in bees in different thiacloprid treatment groups via total hemocyte counts, measuring antimicrobial responses of the hemolymph following the injection of bees with heat-inactivated Escherichia coli after two days of pesticide exposure and measuring the encapsulation response to the insertion of nylon flimament into the abdomen of anethetized bees.",
+    "answer_rev2": "Bees were exposed to different doses of thiacloprid chronically over three days. Subsequent feeding on 'nectar' and pollen were recorded. Immune response was assessed by conducting hemocyte counts (following exposure to heat denatured E. coli) and the measure of total hemolymph immune response - by measuring inhibition zones of plated hemolymph.",
+    "rev1": "BN",
+    "rev2": "KW"
+  },
+  "422": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) Electroantennogram (EAG) recordings to measure honey bee antennal responses to various volatile organic compounds (VOCs) and alarm pheromones, 2) Coupled gas chromatography-electroantennographic detection (GC-EAD) for analyzing responses to flower volatiles, 3) Treatment of honey bee colonies with neonicotinoids (Imidacloprid and Thiacloprid) and monitoring their physiological responses, and 4) Collection of volatile organic compounds from apple flowers using Closed Loop Stripping Analysis (CLSA) and gas chromatography-mass spectrometry (GC-MS).",
+    "answer_rev1": "The study involved exposing honeybee colonies to thiacloprid or imidacloprid via sugar syrup for 6 weeks and then using coupled gas chromatogrphy (GC) and electroantennography (EAG) to test the response of excised antennae to volatiles (VOCs) collected from apple flowers, relative to a positive control compounds (citral). Responses were also tested to queen mandibular pheromone complex (QMP) and the alarm pheremone 2-heptanone. A GC-MS was used to identify the bioacivte flower volatiles. The study examined short term effects immediately following exposure, and long-term effects in the following Spring.",
+    "answer_rev2": "Honey bee colonies were chronically exposed to pesticide treatments (imidacloprid, 50ppb/thiacloprid 4,500ppb) in sugar syrup over 6 weeks - the development of the colony was assessed (success/failure). Separately, headspace volatiles of apple (Malus x domestica) flowers were collected, and later identified via gas chromatography/mass spectrometry. The authors then used gas chromatography in conjunction with an electroantennographic array, to test the response of honey bee antenna to the apple volatiles, and analogues of queen mandibular pheromone/alarm pheromones. Pooled apple volatiles were tested in continuous recording, and individual volatiles in discontinuous recording. Here, removed antennae were (sequentially) exposed to linalool, hexyl-acetate, (Z)-3-hexen-1 ol, methyl-salicylate, (E)-\u03b2-ocimene, 1-hexanol, benzyl-alcohol, benzyl-acetate, \u03b1-terpineol, 2-heptanone, each at a dilution range working from 10^(-6) to 10^(-2).",
+    "rev1": "BN",
+    "rev2": "KW"
+  },
+  "423": {
+    "answer_llm": "The experimental methodology used in this paper involved a fully crossed experimental design with 24 honeybee colonies, including sister-queens from two different strains, and in-hive pollen feeding with or without neonicotinoids (thiamethoxam and clothianidin).",
+    "answer_rev1": "The experimental methodology used in this paper involved a fully crossed experimental design with 24 honeybee colonies, including sister-queens from two different strains, and in-hive pollen feeding with or without neonicotinoids (thiamethoxam and clothianidin). Estimates of colony strength were performed prior to pesticide exposure and a further three times over a year post-pesticide exposure using the Liebefelder Method. Overwintering success was assessed in the following March and surviving colonies were inspected weekly for swarming and queen cells.",
+    "rev1": "BN"
+  },
+  "427": {
+    "answer_llm": "The experimental methodologies used in this paper included placing bumblebee colonies in a field setting and exposing them to a neonicotinoid pesticide (clothianidin) at field-realistic concentrations, monitoring their foraging behavior, conducting a full colony census, and employing both pollen removal and photographic methods to assess pollen loads over a period of five weeks.",
+    "answer_rev1": "20 bumble bee colonies were recorded over 5 weeks in a field setting. Half were controls, and the others were chronically exposed to 5ppb clothianidin in 40% v/v sucrose solution, which approximated field-realistic exposure. After 5 weeks, colonies were euthanised and surveyed for colony structure weight (wax, pollen stores and nectar pots) and the number of eggs, larvae, pupae, workers and sexuals present. Across the 5 weeks, each colony was regularly inspected (one hour, twice per week, per colony) for returning foragers, the presence/absence of pollen and, through photographic methods, the amount of pollen",
+    "answer_rev2": "The experimental methodologies used in this paper included placing bumblebee colonies in a field setting and exposing them to a neonicotinoid pesticide (clothianidin) at field-realistic concentrations, monitoring their foraging behavior, conducting a full colony census, and employing both pollen removal and photographic methods to assess pollen loads over a period of five weeks.",
+    "rev1": "KW",
+    "rev2": "BN"
+  },
+  "429": {
+    "answer_llm": "The experimental methodologies used in this paper involved observing the foraging activity of bees on sunflower plants treated with different insecticides, specifically measuring the number of bees visiting flowers over a period of 5 minutes at various time points before and after the application of the insecticides.",
+    "answer_rev1": "The experimental methodologies used in this paper involved observing the foraging activity of bees on sunflower plants sprayed with six different insecticides. Sunflowers were laid out in CRBD with three replications per insecticide. There were control plots sprayed with water only. Bee visitation activity was measured during peak activity (10:00-13:00h) on the day before, day of and daily between 1-9 days post spraying.  Visitation was expressed as the mean number of bees visiting five flowers per five minutes.",
+    "rev1": "BN"
+  },
+  "430": {
+    "answer_llm": "The experimental methodologies used in this paper include the aggregation of bee records from museum specimens, surveys, and community science observations, along with the application of multispecies occupancy models to estimate the effects of pesticide use, animal-pollinated agriculture, and honeybee colonies on wild bee distributions. Additionally, honeybee surveys were conducted to assess the impact of agricultural practices.",
+    "answer_rev1": "The experimental methodologies used in this paper include the aggregation of bee records from museum specimens, surveys, and community science observations, along with the application of multispecies occupancy models to estimate the effects of pesticide use, land-use change, agriculture type (animal vs. non-animal pollinated), honeybee colony density and temperature and precipitation on individual wild bee species occupancy trends across the contiguous United States. To select predictors for the occupancy models the authors relied on structural causal model analysis, using directed acyclic graphs (DAGS).",
+    "answer_rev2": "The experimental methodologies used in this paper include the aggregation of bee records from museum specimens, surveys, and community science observations, along with the application of multispecies occupancy models to estimate the effects of pesticide use, animal-pollinated agriculture, and honeybee colonies on wild bee distributions. Additionally, honeybee surveys were conducted to assess the impact of agricultural practices.",
+    "rev1": "BN",
+    "rev2": "KW"
+  },
+  "432": {
+    "answer_llm": "The experimental methodology used in this paper involved conducting laboratory experiments on honey bees (*Apis mellifera*) by treating them with various concentrations of imidacloprid in different sugar solutions and measuring the resulting mortality rates after 24 hours.",
+    "answer_rev1": "The experimental methodology used in this paper involved conducting laboratory experiments on honey bees (*Apis mellifera*) by treating them with various concentrations of imidacloprid in different sugar solutions and measuring the resulting mortality rates after 24 hours.",
+    "rev1": "BN"
+  },
+  "434": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) the use of queenless bumblebee microcolonies to assess pesticide exposure, 2) treatment of colonies with imidacloprid and flupyradifurone at varying concentrations, 3) monitoring of food consumption, egg-laying periods, and development of larvae and pupae, and 4) high-throughput 16S rRNA gene sequencing to analyze gut microbiota composition.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) the use of queenless bumblebee microcolonies to assess pesticide exposure, 2) treatment of colonies with imidacloprid and flupyradifurone at varying concentrations, 3) monitoring of food consumption, egg-laying periods, and development of larvae and pupae 4) high-throughput 16S rRNA gene sequencing to analyze gut microbiota composition and 5) Bioinformatic analysis to predict metabolic and transcriptional changes",
+    "answer_rev2": "Queenless microcolonies were first established by hatching pupae from commercial bumble bee colonies and mixing the eclosed workers. These were chronically exposed to one of two pesticides (imidacloprid and flupyradifurone), each at one of three doses (0.1/1/10ug/l, plus control). Food uptake ('nectar' consumption) and colony development (egg laying time) were recorded. On day 17, workers were removed from these microcolines, euthanised and their guts removed. Relative abundances of gut bacteria were assessed using deep amplicon sequencing of the V4 region of the bacterial 16S rRNA gene",
+    "rev1": "BN",
+    "rev2": "KW"
+  },
+  "436": {
+    "answer_llm": "The experimental methodologies used in this paper included a metabolomic approach to examine the effects of nectar starvation and exposure to the neonicotinoid insecticide imidacloprid on the common eastern bumble bee *Bombus impatiens*. The study involved depriving bees of nectar, exposing them to different paradigms of pesticide exposure, and assessing their impact on energy metabolism under controlled conditions.",
+    "answer_rev1": "The authors employ a combination of feeding assays, metabolic analysis and basic mortality assessments. Across the experiment, bees were inspected every 1-2 days, and deaths recorded. Bees were exposed to 5ppb imidacloprid (in one of three treatments) over 7 days; they were subsequently starved for an hour, fed to satiety and starved again for different lengths of time. At the end of this, bees were euthanised in liquid nitrogen. Their thoraces were removed, finely ground and the metabolites extracted. These metabolites were subsequently analysed with a quadropole mass spectrometer, specifically looking for ~100 polar metabolites.",
+    "answer_rev2": "The experimental methodologies used in this paper included a metabolomic approach to examine the effects of nectar starvation and exposure to the neonicotinoid insecticide imidacloprid on the common eastern bumble bee *Bombus impatiens*. The study involved depriving bees of nectar, exposing them to different paradigms of pesticide exposure, and assessing their impact on energy metabolism under controlled conditions.",
+    "rev1": "KW",
+    "rev2": "BN"
+  },
+  "437": {
+    "answer_llm": "The experimental methodologies used in this paper include a two-year field study with different seed treatments (untreated, treated with imidacloprid, and previously-treated) in agricultural fields, collection of wild bees using SpringStar\u2122 blue vane traps, and analysis of neonicotinoid residues in soil and flowers. The study also involved soil and vegetation sampling to assess environmental conditions and potential pesticide exposure.",
+    "answer_rev1": "The experimental methodologies used in this paper include a two-year field study with different seed treatments (untreated, treated with imidacloprid, and previously-treated) in agricultural fields,, collection of wild bees using SpringStar\u2122 blue vane traps, and sampling and analysis of residues in soil and flowers using the QuEChERS method. Five neonicotinoids were targeted in the residue analyses- Acetamiprid, clothianidin, dinotefuran, imidacloprid and thiamethoxam.",
+    "rev1": "BN"
+  },
+  "439": {
+    "answer_llm": "The experimental methodologies used in this paper involved collecting forager bees from colonies, acclimating them, exposing them to different sugar solutions with thiamethoxam in a controlled environment (BOD incubator), and evaluating their mobility and mortality rates after 24 hours of exposure. The study also included the preparation of stock solutions, serial dilutions to create focal concentrations, and the use of video recordings and analysis software to assess bee behavior.",
+    "answer_rev1": "The experimental methodologies used in this paper involved collecting forager bees from colonies, acclimating them, exposing them to different sugar solutions with thiamethoxam in a controlled environment (BOD incubator), and evaluating their mobility and mortality rates after 24 hours of exposure. The study also included the preparation of stock solutions, serial dilutions to create focal concentrations, and the use of video recordings and analysis software to assess bee behavior.",
+    "rev1": "RT"
+  },
+  "440": {
+    "answer_llm": "The experimental methodologies used in this paper involved administering different doses of imidacloprid to honeybee larvae and measuring their effects on capped-brood rates, pupation rates, and eclosion rates, as well as testing the olfactory associative behavior of adult bees after eclosion.",
+    "answer_rev1": "The experimental methodologies used in this paper involved administering different doses of imidacloprid to honeybee larvae and measuring their effects on capped-brood rates, pupation rates, and eclosion rates, as well as testing the olfactory associative behavior of adult bees after eclosion.",
+    "answer_rev2": "The experimental methodologies used in this paper involved administering different doses of imidacloprid to honeybee larvae and measuring their effects on capped-brood rates, pupation rates, and eclosion rates, as well as testing the olfactory associative behavior of adult bees after eclosion.",
+    "rev1": "FS",
+    "rev2": "RT"
+  },
+  "441": {
+    "answer_llm": "The experimental methodologies used in this paper include rearing honey bees in controlled incubators, chronic exposure to pesticides (imidacloprid and glyphosate) through their food, conducting laboratory bioassays to assess gustatory responsiveness and olfactory learning using absolute and differential conditioning protocols, and measuring responses to sucrose solutions of varying concentrations.",
+    "answer_rev1": "The experimental methodologies used in this paper include rearing honey bees in controlled incubators, chronic exposure to pesticides (imidacloprid and glyphosate) through their food, conducting laboratory bioassays to assess gustatory responsiveness and olfactory learning using absolute and differential conditioning protocols, and measuring responses to sucrose solutions of varying concentrations.",
+    "answer_rev2": "The experimental methodologies used in this paper include rearing honey bees in controlled incubators, chronic exposure to pesticides (imidacloprid and glyphosate) through their food, conducting laboratory bioassays to assess mortality, food intake, gustatory responsiveness and olfactory learning using absolute and differential conditioning protocols, and measuring responses to sucrose solutions of varying concentrations.",
+    "rev1": "FS",
+    "rev2": "RT"
+  },
+  "443": {
+    "answer_llm": "The experimental methodologies used in this paper include toxicological assays to determine LD50 and sublethal doses, the proboscis extension response (PER) paradigm to evaluate learning and memory effects, and quantitative PCR (qPCR) experiments to analyze the expression of nicotinic acetylcholine receptor subunits in honeybees.",
+    "answer_rev1": "The experimental methodologies used in this paper include toxicological assays to determine LD50 and sublethal doses, the proboscis extension response (PER) paradigm to evaluate learning and memory effects, and quantitative PCR (qPCR) experiments to analyze the expression of nicotinic acetylcholine receptor subunits in honeybees.",
+    "answer_rev2": "The experimental methodologies used in this paper include toxicological assays to determine LD50 and sublethal doses, the proboscis extension response (PER) paradigm to evaluate learning and memory effects, and quantitative PCR (qPCR) experiments to analyze the expression of nicotinic acetylcholine receptor subunits in honeybees.",
+    "rev1": "RT",
+    "rev2": "FS"
+  },
+  "444": {
+    "answer_llm": "The experimental methodology used in this paper involved a multi-year, multi-site field experiment comparing a conventional insecticide program with an integrated pest management (IPM) system, focusing on the health of managed and wild pollinators in a dual cropping system.",
+    "answer_rev1": "The experimental methodology used in this paper involved a multi-year, multi-site field experiment comparing a conventional insecticide program with an integrated pest management (IPM) system, focusing on the health of managed and wild pollinators in a dual cropping system.",
+    "answer_rev2": "The experimental methodology used in this paper involved a multi-year, multi-site field experiment comparing a conventional insecticide program with an integrated pest management (IPM) system, focusing on the health of managed and wild pollinators in a dual cropping system.",
+    "rev1": "RT",
+    "rev2": "FS"
+  },
+  "445": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) exposing bumblebees to 670nm light and Imidacloprid, 2) measuring whole body respiration rates, 3) assessing haemocyte counts to evaluate immunocompetence, and 4) evaluating the antibacterial action of hemolymph.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) exposing bumblebees to 670nm light and Imidacloprid, 2) measuring whole body respiration rates, 3) assessing haemocyte counts to evaluate immunocompetence, and 4) evaluating the antibacterial action of hemolymph.",
+    "answer_rev2": "The experimental methodologies used in this paper include: 1) exposing bumblebees to 670nm light and Imidacloprid, 2) measuring whole body respiration rates, 3) assessing haemocyte counts to evaluate immunocompetence, and 4) evaluating the antibacterial action of hemolymph.",
+    "rev1": "RT",
+    "rev2": "FS"
+  },
+  "446": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) exposing bees to 670nm light to assess its effects on ATP mobility, visual function, and survival in the context of Imidacloprid exposure; 2) maintaining bumblebees in controlled conditions and dividing them into treatment groups; 3) measuring ATP levels using an ATP determination kit; 4) assessing visual function through electrophysiological recordings; and 5) monitoring survival and mobility over specified periods.",
+    "answer_rev1": "The experimental methodologies used in this paper included: 1) exposing bees to 670nm light to assess its effects on ATP mobility, visual function, and survival in the context of Imidacloprid exposure; 2) maintaining bumblebees in controlled conditions and dividing them into treatment groups; 3) measuring ATP levels using an ATP determination kit; 4) assessing visual function through electrophysiological recordings; and 5) monitoring survival and mobility over specified periods.",
+    "rev1": "RT"
+  },
+  "447": {
+    "answer_llm": "The experimental methodologies used in this paper involved an in vitro model for testing the effects of pesticide exposure on honeybee larvae, including the infection of larvae with *M. plutonius* and monitoring their survival rates after exposure to various pesticides.",
+    "answer_rev1": "The experimental methodologies used in this paper involved an in vitro model for testing the effects of pesticide exposure on honeybee larvae, including the infection of larvae with *M. plutonius* and monitoring their survival rates after exposure to various pesticides.",
+    "rev1": "RT"
+  },
+  "448": {
+    "answer_llm": "The experimental methodologies used in this paper involved exposure experiments on honey bees (*Apis mellifera*) through contact and dermal routes, with a specified exposure time of 48 hours, as well as data collection from three publicly available databases regarding pesticide toxicity.",
+    "answer_rev1": "The study used literature data from Apis mellifera to build 54 classification models using machine learning methods and molecular fingerprints of 676 structurally diverse pesticides. These models were used to predict pesticide acute toxicity.",
+    "rev1": "RT"
+  },
+  "449": {
+    "answer_llm": "The experimental methodology used in this paper involved an *in situ* study with a replicated split-plot design across 4 independent apiary sites, where honey bee hives were treated with imidacloprid and compared to control hives.",
+    "answer_rev1": "The experimental methodology used in this paper involved an *in situ* study with a replicated split-plot design across 4 independent apiary sites, where honey bee hives were treated with imidacloprid and compared to control hives.",
+    "rev1": "RT"
+  },
+  "450": {
+    "answer_llm": "The experimental methodologies used in this paper involved in vitro co-incubation of bee gametes with three different concentrations of Imidacloprid (IMD) for 15 minutes, along with the use of Computer-aided sperm analysis (CASA) and traditional microscopic analysis to evaluate sperm motility and kinematic parameters.",
+    "answer_rev1": "The experimental methodologies used in this paper involved in vitro co-incubation of bee gametes with three different concentrations of Imidacloprid (IMD) for 15 minutes, along with the use of Computer-aided sperm analysis (CASA) and traditional microscopic analysis to evaluate sperm motility and kinematic parameters.",
+    "rev1": "RT"
+  },
+  "451": {
+    "answer_llm": "The experimental methodologies used in this paper include:\n1. Acute toxicity assays to determine the LC50 of thiamethoxam for Africanized honeybee larvae.\n2. In vitro rearing of honeybee larvae under controlled conditions.\n3. Exposure of larvae to varying concentrations of thiamethoxam through diet.\n4. Morphological and immunocytochemical analyses of the larvae's brains to assess the effects of the insecticide.",
+    "answer_rev1": "The experimental methodologies used in this paper include:\n1. Acute toxicity assays to determine the LC50 of thiamethoxam for Africanized honeybee larvae.\n2. Acute oral exposure to one concentration (LC50/10)\n3. Subchronic exposure of larvae for three consecutive days to obtain the same concentration used in the acute exposure. \n4. Morphological and immunocytochemical analyses of the larvae's brains to assess the effects of the insecticide.",
+    "rev1": "RT"
+  },
+  "452": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) feeding frequency experiments on *B. terrestris* larvae, 2) comparisons of different diet nutrients on larval growth and survival, and 3) the effects of chlorfenapyr and dinotefuran inoculation on larval survival and growth.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) feeding frequency experiments on *B. terrestris* larvae, 2) comparisons of different diet nutrients on larval growth and survival, and 3) the effects of chlorfenapyr and dinotefuran inoculation on larval survival and growth.",
+    "rev1": "RT"
+  },
+  "453": {
+    "answer_llm": "The experimental methodologies used in this paper included capturing live managed bumble bees to assess biochemical signs of intoxication from neonicotinoids, dissecting bumble bees to analyze AChE mRNA levels in their brains, placing bumble bee colonies in the field to monitor exposure over time, and collecting water samples for pesticide residue analysis.",
+    "answer_rev1": "The experimental methodologies used in this paper included capturing live managed bumble bees to assess biochemical signs of intoxication from neonicotinoids, dissecting bumble bees to analyze AChE mRNA levels in their brains, placing bumble bee colonies in the field to monitor exposure over time, and collecting water samples for pesticide residue analysis.",
+    "rev1": "RT"
+  },
+  "512": {
+    "answer_llm": "The experimental methodologies used in this paper include acute oral and contact toxicity studies, laboratory studies on dried residues, and field studies assessing the impact on adult bees, brood, and foraging rates.",
+    "answer_rev1": "The experimental methods involve chronic exposure via pollen and monitoring of pollen consumption, survival, colony development, colony health and foraging behavior in the lab.",
+    "rev1": "LH"
+  },
+  "513": {
+    "answer_llm": "The experimental methodologies used in this paper include field experiments and laboratory experiments. Field experiments involved injecting pollen provisions with pesticides for both *Osmia lignaria* and *Megachile rotundata*, while laboratory experiments focused on *O. lignaria*, where larvae were exposed to different doses of imidacloprid through injected pollen provisions or a preblended pollen mixture.",
+    "answer_rev1": "The experimental methodologies used in this paper include field experiments and laboratory experiments. Field experiments involved injecting pollen provisions with imidacloprid for Osmia lignaria. While laboratory experiments focused on *O. lignaria*, where larvae were exposed to different doses of imidacloprid through injected pollen provisions or a preblended pollen mixture. And laboratory experiment in M. rotundata, larvae were exposed to different doses of clothianidin.",
+    "answer_rev2": "The study used a combination of field and lab experiments. In the field, where both species were tested, they injected pollen with pesticides. In the lab, where only Osmia lignaria was tested, they used a combination of methods, either injecting the pollen with pesticides, or replacing it with honeybee-collected pollen that had been spiked with pesticides.",
+    "rev1": "RT",
+    "rev2": "LH"
+  },
+  "514": {
+    "answer_llm": "The experimental methodologies used in this paper included direct contact toxicity bioassays, oral toxicity bioassays, and sublethal toxicity assessments in microcolonies, involving the application of insecticides to bumble bees and monitoring their responses.",
+    "answer_rev1": "The experimental methodologies used in this paper included direct contact toxicity bioassays, oral toxicity bioassays, and sublethal toxicity assessments in microcolonies, involving the application of insecticides to bumble bees and monitoring their responses.",
+    "answer_rev2": "The experimental methods include acute contact toxicity bioassays, acute oral toxicity bioassays and sublethal toxicity testing of microcolonies, where the founding workers had been exposed to pesticides. For the acute contact and oral toxicity bioassays, they established LC50 and the methods used  resembled those that are generaly used for LD50 testing.",
+    "rev1": "RT",
+    "rev2": "LH"
+  },
+  "515": {
+    "answer_llm": "The experimental methodologies used in this paper include acute contact toxicity tests, oral LD50 assessments, and observations of foraging activity and colony parameters under semi-field conditions.",
+    "answer_rev1": "The experimental methodology includes contact and oral toxicity tests, from which they calculated LD50, and a semi-field trial to evaluate mortality, foraging activity and colony health under semi-field and field conditions up to 28 days after pesticide treatment of the crop.",
+    "answer_rev2": "The experimental methodologies used in this paper include acute contact toxicity tests, oral LD50 assessments, and observations of foraging activity and colony parameters under semi-field and field conditions.",
+    "rev1": "LH",
+    "rev2": "RT"
+  },
+  "516": {
+    "answer_llm": "The study used an experimental design involving two groups of honey bees in cages, where one group was fed syrup containing imidacloprid and the other group was fed untreated syrup. The bees were monitored for food consumption, mortality, and behavior over 10 days, with specific endpoints assessed through video tracking.",
+    "answer_rev1": "The study used control and treatment groups of winter honey bees to study the lethal and sublethal effects of imidacloprid (125ug/L in sucrose solution, provided ad libitum). Bees were exposed to the treatment through their food for 10 days and monitored for food consumption, mortality and behaviour. Video tracking was used to record bee activity, with each cage observed for 5 minutes, five times per day. After the experiments neonicotinoids residues in bees were analysed using HPLC-MS/MS",
+    "answer_rev2": "For mortality and food consumption, nine cages with 10 (first round) or 30 (second round) honeybees each, were for used for each of the two treatments (control or imidacloprid). Imidacloprid waw administered via syrup, which - for both treatments - was frozen and replaced every day. Remaning syrup was weighed to calculate daily consumption. During the first round, bee behavior was monitored daily through video tracking. Imidacloprid residues were tested in a similar set of cages, with 30 bees per cage, and bees were sampled every second day.",
+    "answer_rev3": "The study used an experimental design involving two groups of honey bees in cages, where one group was fed syrup containing imidacloprid and the other group was fed untreated syrup. The bees were monitored for food consumption, mortality, and behavior over 10 days, with specific endpoints assessed through video tracking. After the tests, bees were frozen for chemical analysis of imidacloprid residues in the bee body.",
+    "rev1": "ER",
+    "rev2": "LH",
+    "rev3": "RT"
+  },
+  "517": {
+    "answer_llm": "The experimental methodologies used in this paper included:\n1. Laboratory bioassays with queenless bumblebee microcolonies to assess sublethal effects on foraging behavior.\n2. Treatment of bumblebees with spinetoram and spinosad at various concentrations via contact exposure to wet and dry residues.\n3. Oral exposure of bumblebee workers to treated sugar water to evaluate both acute and chronic toxicity effects.\n4. Assessment of sublethal effects on reproduction and foraging behavior over specified time periods.",
+    "answer_rev1": "The experimental methodologies included \n1. Bioassays with workers to assess acute toxicity to dry and wet contact exposure\n2. Bioassays with queenless bumblebee microcolonies to assess acute and chronic toxicity to oral exposure\n3. Bioassays with queenless microcolonies to assess effects of sublethal oral exposure on foraging behavior and reprodiction.",
+    "rev1": "LH"
+  },
+  "518": {
+    "answer_llm": "The experimental methodologies used in this paper involved measuring metal concentrations in honey bee bodies and contaminated syrup using ICP-OES, analyzing honey bee samples through microwave-assisted digestion, assessing the lethal toxicity of chromium and its combinations with pesticides through acute oral exposure experiments, and evaluating the effects of pollutants on bee mortality using survival analyses and binomial proportion tests.",
+    "answer_rev1": "The experimental methodologies used in this paper involved measuring metal concentrations in honey bee bodies and contaminated syrup using ICP-OES, analyzing honey bee samples through microwave-assisted digestion, assessing the lethal toxicity of chromium and its combinations with pesticides through acute oral exposure experiments, and evaluating the effects of pollutants on bee mortality using survival analyses and binomial proportion tests.",
+    "answer_rev2": "Two experiments are described: an estimation of Cr LD50 and sensitivity to single vs. combined exposure. Bees were placed cages in groups of 10 or 20, respectively, and three cages per treatment were used. Cages were rotated daily to reduce differences in microclimate. Bees were starved 1 h before exposure and were exposed collectively. Contaminated sucrose was removed after 2 h. Mortality was assessed after 4, 24, 48, 72 and 96 h. Metal concentrations in sucrose solution and honeybee bodies were measured after 48 h using an inductively coupled plasma optical emission spectrometer.",
+    "rev1": "ER",
+    "rev2": "LH"
+  },
+  "519": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) Field studies assessing the impacts of imidacloprid and thymol on honey bee colonies over a year, 2) Feeding bee colonies sugar syrup containing imidacloprid, 3) Treating colonies with Apiguard gel containing thymol, 4) Measuring hive weights using electronic scales, 5) Monitoring Varroa destructor mite falls using sticky boards, 6) Analyzing honey and wax samples for pesticide residues, and 7) Collecting and analyzing bee samples for pesticide detection using HPLC-MS/MS.",
+    "answer_rev1": "A field study was conducted in two different locations (Tucson, Arizona; Sydney, Australia) to assess colony level effects of trace levels of imidacloprid, the commercial miticide thymol (Apiguard), and their combination. Over a full year, the authors recorded worker and brood populations, as well as food stores, every four weeks by photographing both sides of each frame after brushing off the bees. Daily colony weight dynamics were recorded every 5 minutes, and hive temperature was monitored every 30 min. Abiotic parameters from the two environments were also recorded (rainfall and average daily temperatures). In Tucson, Varroa destructor mite falls were measured using sticky boards in all hives, while no Varroa mites were not detected in Sydney. Honey, wax and bees were collected for to pesticide residue analysis using HPLC-MS/MS.",
+    "answer_rev2": "22 honeybee colonies were used for the experiment south of Tucson, USA and 16 honeybee colonies north of Sydney, Australia. Hive location as well as hive tratment were randomised across the apiary. Colonies were fed sucrose solution either with imidacloprid (imidacloprid or imidacloprid + thymol treatment) or without imidacloprid (control or thymol treatment) inside the hive for 6 weeks. Two weeks after the treatment started, colonies (with thymol treatment or thymol + imidacloprid treatment) recieved an aluminium tray with Apiguard gel. The Apiguard gel was renewed after 2 weeks, but it is unclear from the text how many times this was repeated. The experiment ran for around 9 months and during most of this time, hives were evaluated once a month. The treatment started 4 weeks after the first evaluation. Hives were placed on scales before the experiment, for continous weight measurements and temperature sensors continously recorded temperature data. During the evaluations additional data were recorded on capped brood area, and pollen and honey surface. On four occations, they measured Varroa destructor. In the US, samples of honey and was were analyzed for pesticide residues.",
+    "rev1": "ER",
+    "rev2": "LH"
+  },
+  "520": {
+    "answer_llm": "The experimental methodologies used in the paper include field-realistic exposures to FPF, chronic oral exposure to varying doses, acute contact dosing, and assessments of bee behavior and survival across different seasons and conditions.",
+    "answer_rev1": "Seven laboratories in siz countries followed the same protocol. 21 colonies (3 per laboratory) of three subspecies of honeybee were used. They followed international guidelines for testing chronic oral toxicity on honeybees, but modified these by increasing the number of colonies per treatment (to three), the number of bees per replicate (to 20) and prolonging the exposure (until at least 50% of the control bees had died). Newly emerged bees were moved to test cages, with 20 bees per cage and each caged only contained bees from the same colony. Pesticide exposure was administered ad libitum via a feeder with sucrose solution, which was renewed every 24 \u00b1 2 h. Every 24 h, abnormal behaviors (motion coordination deficits, hyperactivity, apathy, curved-down abdomen, and moribund), survival and food consumption were recorded and daily consumption per bee was calculated.",
+    "answer_rev2": "Chronic exposure at the colony level to five field-realistic doses of FPF was tested. Abnormal behaviours, survival, and food consumption were recorded every 24 h. \nBehavioural abnormalities -grouped in five categories (motion coordination deficits,hyperactivity, apathy, curved-down abdomen, and moribund state)- were quantified.",
+    "rev1": "LH",
+    "rev2": "ER"
+  },
+  "521": {
+    "answer_llm": "The experimental methodology used in this paper involved exposing honeybees to varying concentrations of the pesticide imidacloprid and assessing their acute and sublethal effects over a 52-day period. The study monitored the bees' biological and physiological responses and measured several enzymatic activities related to detoxification, metabolism, and immune response.",
+    "answer_rev1": "The experimental methodologies involved using a spray tower to expose newly emerged worker bees to imidacloprid formulation (Advise 2FL) at different concentrations. Exposure occured repeatedly throughout the experiment and data were collected repeatedly to assess lethal as well as sublethal biological and physiological long-term responses for up to 52 days. Tested responses included body weight, enzyme (esterase, glutathione S-transferase, acetylcholinesterase, invertase, phenoloxidase) activity and mortality.",
+    "answer_rev2": "To assess the long-term sublethal effects and acute toxicity of imidacloprid, a modified spray tower (Zhu et al., 2015) was used. Bees were sprayed twice a week with a 0.5 ml pesticide solution at an air pressure of 69 kpa (10 psi) from a spray distance of 30 cm. Mortality was recorded twice a week (24 hr after spray) starting from day 2 until all bees died (up to 53 days). \nA separate experiment was conducted to assess the influence of imidacloprid on honeybee body weight loss. Caged bees were sprayed with 274 and 552 mg/L imidacloprid formulation. Fresh body weight was measured at different post\u2010treatment times. \n In another similar test, bees were sprayed once a week for three weeks. Once a week, whole bees were homogenized to assess enzyme activity following imidacloprid exposure. The following assays were performed: Esterase activity (measured using the method of Zhu and Gao (1999)); Glutathione S\u2010transferase (GST) activity (using the protocols of Yu (1982) with some modifications); Acetylcholinesterase (AChE) (measured using acetylthiocholine (ATC) according to the method of Ellman, Courtney, Andres, and Featherstone (1961) with some modifications); Invertase activity (determined using sucrose as substrate according to Lever (1972) with some modification); Phenoloxidase activity assay.",
+    "rev1": "LH",
+    "rev2": "ER"
+  },
+  "522": {
+    "answer_llm": "The experimental methodologies used in this paper include automated long-term monitoring of bumble bee colonies, tag-based tracking, pose estimation, and controlled behavioral experiments involving temperature monitoring and pesticide exposure.",
+    "answer_rev1": "The experimental methodologies used in this paper include automated long-term monitoring of bumble bee colonies, tag-based tracking, pose estimation, and controlled behavioral experiments involving temperature monitoring and pesticide exposure.",
+    "answer_rev2": "60 colonies, reared from wild caught queens were used and were randomly assigned to one of the following treatments: control, imidacloprid (continous exposure), cold-stress (once a day for 48 h), or combined cold-stress and imidacloprid. The experimental methodologies involved individual tagging of bumblebees and automated tracking of their behavior inside the nest during 48 h.",
+    "rev1": "ER",
+    "rev2": "LH"
+  },
+  "523": {
+    "answer_llm": "The experimental methodologies used in this paper included releasing individual bumblebees into a flight arena with robotic flowers to assess their foraging behavior after exposure to a low dose of imidacloprid, as well as using RFID tags to track their movements and manual observations to quantify their foraging actions.",
+    "answer_rev1": "The experimental procedure implied releasing individual, free flying bumblebees in a flight arena with robotic flowers, the authors investigated whether any aspects of bumblebee foraging behaviour are affected by exposure to a field-realistic, low-dose (1 ppb) exposure to imidacloprid. For individual bumblebees, they measured (i) physical performance (speed of movements between flowers, linear distance moved between flowers), (ii) the ability to differentiate between rewarding and non-rewarding flowers based on the colour of the flowers, and (iii) foraging motivation (time taken until first flower visitation, number of flowers visited, willingness to try foraging from flowers of all colours). Bumblebee colonies were assigned into two treatments: (i) those exposed to imidacloprid (three colonies) and (ii) control colonies (three) not exposed to the pesticide.",
+    "answer_rev2": "The experimental methodologies involved training commerical bumblebee colonies to feed from artificial flowers of different colours. After one week of training in a training arena, bees were released one by one into the experimental arena where data were collected on their foraging behavior using a computer-controlled robotic flower system.",
+    "rev1": "ER",
+    "rev2": "LH"
+  },
+  "524": {
+    "answer_llm": "The experimental methodologies used in this paper involved olfactory conditioning of honeybees, where bees were trained with a conditioned stimulus (1-hexanol odour) and an unconditioned stimulus (sucrose solution) to assess their responses to different concentrations of neonicotinoids (IMD and TMX). The training included both massed and spaced schedules, and the bees' memory retention was tested after conditioning.",
+    "answer_rev1": "The experimental methodologies used in this study involved olfactory classical conditioning of honeybees. Bees were trained using a conditioned stimulus (CS, 1-hexanol odour) and an unconditioned stimulus (sucrose solution plus pesticide treatment). Two experiments were conducted, both including six training trials: one with a 30-second intertrial interval (ITI, massed training), and the other one with a 5-minute ITI (spaced training). Test after conditioning were performed at 10 minutes and 24 h using both the CS (1-hexanol) and a novel odour (2-octanone)",
+    "answer_rev2": "The experimental methodologies involved olfactory conditioning of honeybees, using a conditions stimulus and an unconditioned stimulus (sucrose solution with different concentrations of pesticides). The training phase included 6 trials, with either 30 s (massed) or 5 min (spaced) inter-trial break. The proboscis extension reflex was tested after 10 min and after 24 h.",
+    "rev1": "ER",
+    "rev2": "LH"
+  },
+  "525": {
+    "answer_llm": "The experimental methodologies used in this paper include MALDI-imaging, MSI techniques, exposure of bees to a sublethal concentration of imidacloprid, collection and dissection of bees, analysis of protein expression, and creation of distribution maps of proteins in situ within the brains of honeybees.",
+    "answer_rev1": "After 8 days of exposyure to imidacloprid or control treatment via sucrose solution, bees were collected and brains were extracted and sectioned to use for MALDI-imaging and histological analyses. 24 proteins were identified and distribution maps of these proteins were created to analyse their expression.",
+    "rev1": "LH"
+  },
+  "531": {
+    "answer_llm": "The experimental methodologies used in this paper involved administering imidacloprid and melatonin to honey bees (*Apis mellifera*), measuring their effects on oxidative stress, apoptosis, and antioxidant activity. This included the collection and rearing of bees, treatment with specific dosages, monitoring survival rates, and analyzing biochemical markers such as ROS, MDA, and gene expression related to apoptosis and detoxification.",
+    "answer_rev1": "They used a full-factorial design, where newly emerged bees were randomly distributed across four treatment groups of two crossed treatments: an imidacloprid treatment (0 or 36 ng/bee) and a melatonin treatment (0 or 200 ng/bee). Bees that consumed the sucrose within 20 minutes were used to test survival, oxidative stress and apoptosis caused by imidacloprid.",
+    "answer_rev2": "The experiment investigated the effects of melatonin, imidacloprid or both on adult honeybees. The authors monitored survival over 48h, and assessed effects on oxidative stress, apoptosis, detoxification and antioxidant defence. Bee heads were collected at 4, 8 and 14 h after exposure to determine melatonin content using the Insect Melatonin (MT) ELISA Kit. \nBees were sampled 14 h after exposure were tested for: \n- histopathological analysis, that included anatomical section of the midgut stained with haematoxylin and eosin  \n- Reactive oxygen species (ROS) levels according to a published procedure He et al., 2021; lipid peroxidation evaluated by assessing Malondialdehyde (MDA) content. Total MDA levels were measured using the Lipid Peroxidation MDA Assay Kit; total glutathione (GSH) contents using the Total Glutathione Assay Kit; and Superoxide dismutase activity using a total superoxide dismutase assay kit with nitro blue tetrazolium \n- Real-time quantitative PCR analysis was performed to assess the expression of apoptosis-related genes,detoxification and antioxidant genes",
+    "rev1": "LH",
+    "rev2": "ER"
+  },
+  "532": {
+    "answer_llm": "The experimental methodologies used in this paper included feeding honeybee larvae with sucrose water containing different concentrations of acetamiprid, collecting hemolymph from the larvae, and analyzing the samples using Liquid Chromatography-Mass Spectrometry (LC-MS) technology for metabolomic analysis.",
+    "answer_rev1": "The study performs a metabolites analysis on the haemolymph of honeybee larvae exposed for four days to a commercially available formulation of acetamiprid at 5 or 25 mg/L in their food. The study used liquid chromatograph mass spectrometer (LC-MS) technology for non-targeted metabolomic analysis.",
+    "answer_rev2": "Honeybee larvae were fed sucrose solution with different concentrations of acetamiprid for four days. After capping, hemolymph was sampled and analysed using liquid chromatography-mass spectrometry.",
+    "rev1": "ER",
+    "rev2": "LH"
+  },
+  "583": {
+    "answer_llm": "The study used experimental methodologies involving the capture of forager honey bees, maintenance in infrared activity monitors, exposure to neonicotinoid pesticides in food, and monitoring of locomotor activity under various light conditions.",
+    "answer_rev1": "The study used experimental methodologies involving the capture of forager honey bees, maintenance in infrared activity monitors, exposure to neonicotinoid pesticides in food, and monitoring of locomotor activity under various light conditions.",
+    "answer_rev2": "Foragers returning to the hive with pollen were captured by the hive entrance and were kept in individual plastic tubes, which were loaded into a locomotor activity monitor and placed in an environmental chamber with controlled light:dark cycle (12:12 h), where data on activity and sleep patterns were collected.",
+    "rev1": "AJ",
+    "rev2": "LH"
+  },
+  "584": {
+    "answer_llm": "The experimental methodology used in this paper involved placing bumblebee colonies adjacent to neonicotinoid-treated oilseed rape fields and monitoring their performance through weight measurements, worker counts, and pesticide residue analysis in nectar and pollen.",
+    "answer_rev1": "The experimental methodology used in this paper involved placing bumblebee colonies adjacent to neonicotinoid-treated oilseed rape fields and monitoring their performance through weight measurements, worker counts, and pesticide residue analysis in nectar and pollen.",
+    "answer_rev2": "20 bumblebee colonies were placed by each of three fields (totally 60 colonies). One field was seed-coated with the neonicotinoid imidacloprid, one with the neonicotinoid clothianidin, and one was free from neonicotinoids. Nectar and pollen was sampled from the colonies for residue analysis. Colonies were weighed regularly and production of queens and workers was assessed at the end of the experiment.",
+    "rev1": "AJ",
+    "rev2": "LH"
+  },
+  "585": {
+    "answer_llm": "The experimental methodologies used in this paper include laboratory conditions, cage assays, and semi-field assays.",
+    "answer_rev1": "The experimental methodologies used in this paper include laboratory conditions, cage assays, and semi-field assays.",
+    "answer_rev2": "The experimental methodologies used in this study involve creating new honeybee colonies, exposing them to a pesticide treatment for seven days and assessing colony health (day 0 and day 10 after start of treatment) as well as gut microbiota of  honeybees (day 0, day 10 and 5 weeks after start of treatment).",
+    "rev1": "AJ",
+    "rev2": "LH"
+  },
+  "586": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) Dietary exposure of bumblebees to neonicotinoids (IMD, CLO, THX) to assess brain accumulation and toxicity; 2) Dose-response experiments to evaluate mortality rates of bees exposed to different concentrations of neonicotinoids; 3) In vitro studies on Kenyon cell neurons to monitor receptor responses to neonicotinoids and acetylcholine; 4) Field experiments where bumblebee colonies were provided with sugar syrup containing neonicotinoids over a 5-week period to observe colony performance and health metrics.",
+    "answer_rev1": "Several experimental methodologies were combined: 1) assessment of pesticide accumulation in the brain and hemolymph after oral feeding, 2) relative acute toxicity using a dose-response experiment, 3) chronic feeding to assess if this alters acute toxicity, 4) in vitro recordings from of Kenyon cells, 5) field experiment with bumblebee colonies chronically exposed to pesticides over 5 weeks.",
+    "answer_rev2": "The experimental methodologies used in this paper include: 1) Dietary exposure of bumblebees to neonicotinoids (IMD, CLO, THX) to assess brain accumulation and toxicity; 2) Dose-response experiments to evaluate mortality rates of bees exposed to different concentrations of neonicotinoids; 3) In vitro studies on Kenyon cell neurons to monitor receptor responses to neonicotinoids and acetylcholine; 4) Field experiments where bumblebee colonies were provided with sugar syrup containing neonicotinoids over a 5-week period to observe colony performance and health metrics.",
+    "rev1": "LH",
+    "rev2": "AJ"
+  },
+  "589": {
+    "answer_llm": "The experimental methodologies used in this paper include chronic exposure of bumblebee microcolonies to clothianidin at a concentration of 1 ppb, inoculation of bumblebees with the parasite *N. ceranae*, and behavioral testing through Proboscis Extension Response (PER) conditioning to evaluate learning ability and memory.",
+    "answer_rev1": "Microcolonies were chronically exposed to 1 ppb (pesticide or pesticide + parasite treatments) or 0 ppb (control or parasite treatments) clothianidin via sucrose solution. Parasite and pesticide + parasite treatments were inoculated with Nosema ceranae three days after microcolony establishment. Microcolonies were monitored for worker mortality and production of males for 31 days, after which fecundity was evaluated and a subset of alive and dead bees were screened for Nosema ceranae infection. PER assays started 10 days after the pesticide treatment and memory retention was tested 2 h after each assay.",
+    "answer_rev2": "The experimental methodologies used in this paper include chronic exposure of bumblebee microcolonies to clothianidin at a concentration of 1 ppb, inoculation of bumblebees with the parasite *N. ceranae*, and behavioral testing through Proboscis Extension Response (PER) conditioning to evaluate learning ability and memory.",
+    "rev1": "LH",
+    "rev2": "AJ"
+  },
+  "590": {
+    "answer_llm": "The experimental methodology used in this paper was a highly replicated semi-field experiment with a full-factorial design involving 40 large flight cages to investigate the effects of sulfoxaflor and azoxystrobin on the solitary bee *Osmia bicornis*. The experiment included four treatments (sulfoxaflor, azoxystrobin, a combination of both, and a water control) and measured various fitness components over a 26-day period.",
+    "answer_rev1": "The study was a semi-field study with 40 cages and a full factorial design with two crossed factors (with or without sulfoxaflor and with or without azoxystrobin and consequently four treatment groups. In each cage, they introduced 50 females and 75 males of Osmia bicornis, which were provided forage through Phacelia tanacetifolia. Pesticide treatments were administered via spraying of Phacelia tanacetifolia. During the experiment, data were collected on adult survival, reproductiona, flower abundance and pesticide residues in pollen loads inside the brood cells. The experiment lasted for 26 days, until only few females were alive. Nests and offspring were assessed in autumn and the following spring.",
+    "answer_rev2": "The experimental methodology used in this paper was a highly replicated semi-field experiment with a full-factorial design involving 40 large flight cages to investigate the effects of sulfoxaflor and azoxystrobin on the solitary bee *Osmia bicornis*. The experiment included four treatments (sulfoxaflor, azoxystrobin, a combination of both, and a water control) and measured various fitness components over a 26-day period.",
+    "rev1": "LH",
+    "rev2": "AJ"
+  },
+  "591": {
+    "answer_llm": "The experimental methodologies used in this paper include: (1) a proboscis extension reflex assay for olfactory conditioning performance in bumblebees and honeybees, and (2) a radial-arm maze for assessing working memory performance in bumblebees.",
+    "answer_rev1": "The methods used in this paper involve lab assessments of olfactory conditioning performance in honeybees and bumblebees, using a proboscis extension reflex (PER) assay, and of working memory in bumblebees, using a radial arm maze (RAM).",
+    "answer_rev2": "The experimental methodologies used in this paper include: (1) a proboscis extension reflex assay for olfactory conditioning performance in bumblebees and honeybees, and (2) a radial-arm maze for assessing working memory performance in bumblebees.",
+    "rev1": "LH",
+    "rev2": "AJ"
+  },
+  "592": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) Cultivating oil-seed rape (OSR) in a randomized split-plot design with neonicotinoid treatment and control, 2) Conducting flight cage experiments with *Osmia cornuta* to observe mating and nesting behavior, 3) Measuring emergence success, emergence mass, and survival rates of bees, 4) Assessing sperm quantity and viability of surviving individuals, and 5) Analyzing clothianidin residues using ultra-high-pressure liquid chromatography coupled to tandem mass spectrometry (UHPLC\u2013MS/MS).",
+    "answer_rev1": "The experimental methodologies used in this paper included: 1) Cultivating oil-seed rape (OSR) in a randomized split-plot design with neonicotinoid treatment and control, 2) Conducting flight cage experiments with *Osmia cornuta* to observe mating and nesting behavior, 3) Measuring emergence success, emergence mass, and survival rates of bees, 4) Assessing sperm quantity and viability of surviving individuals, and 5) Analyzing clothianidin residues using ultra-high-pressure liquid chromatography coupled to tandem mass spectrometry (UHPLC\u2013MS/MS).",
+    "answer_rev2": "10 mates females and 5 males were randomly allocated to cages where they were provided with 52 flowering oilseed rape plants. Bees were maintained in these cages for 3 weeks. Next spring, offspring sex was detemined and male cocoons were randomly selected for further evaluation of weight, mortality, sperm quantity and viability. Clothianidin exposure was verified by residue analysis of pollen that the females had collected for their brood.",
+    "rev1": "AJ",
+    "rev2": "LH"
+  },
+  "593": {
+    "answer_llm": "The experimental methodologies used in this paper include semi-field experiments on honey bee colonies, where larvae were exposed to environmentally realistic concentrations of IMI and THY, followed by transcriptome analysis to investigate molecular effects. Additionally, RNA extraction and sequencing were performed to assess the impacts of these chemicals on gene expression.",
+    "answer_rev1": "The experimental methodologies used in this paper include semi-field experiments on honey bee colonies, where larvae were exposed to environmentally realistic concentrations of IMI and THY, followed by transcriptome analysis to investigate molecular effects. Additionally, RNA extraction and sequencing were performed to assess the impacts of these chemicals on gene expression.",
+    "answer_rev2": "16 hives were divided into four treatment groups in a full factorial design, with crossed imidacloprid (yes or no) and thymol (yes or no) treatments. Fifth-instar larvae were sampled monthly, starting two days before the end of the chronic treamtent. Four larvaey per hive and month were processed for RNA extraction and sequecing.",
+    "rev1": "AJ",
+    "rev2": "LH"
+  },
+  "594": {
+    "answer_llm": "The experimental methodologies used in this paper involved a 15-day cage experiment with honey bees, where bees were exposed to different ambient temperatures (26 \u00b0C, 32 \u00b0C, 38 \u00b0C) and varying concentrations of imidacloprid (0 ppb, 5 ppb, 20 ppb). The study monitored honey bee mortality, syrup and patty consumption, and conducted RT-qPCR for gene expression analysis.",
+    "answer_rev1": "The experimental methodologies used in this paper involved a 15-day cage experiment with honey bees, where bees were exposed to different ambient temperatures (26 \u00b0C, 32 \u00b0C, 38 \u00b0C) and varying concentrations of imidacloprid (0 ppb, 5 ppb, 20 ppb). The study monitored honey bee mortality, syrup and patty consumption, and conducted RT-qPCR for gene expression analysis.",
+    "answer_rev2": "newly emerged workers were distributed into 27 cages with 1000 bees per cage and were randomly assigned an imidacloprid (0, 5, or 20 ppb) treatment and a temperature (26, 32, or 38 \u00b0C) treatment. These treatments were chronic and lasted for 15 days. Bees were sampled every third day for RNA extraction and transpritional analysis.",
+    "rev1": "AJ",
+    "rev2": "LH"
+  },
+  "657": {
+    "answer_llm": "The experimental methodologies used in this paper include: 1) LD50 toxicity tests on honeybees, 2) chronic feeding studies with fortified sunflower honey, 3) field experiments with sunflower crops to assess pesticide residues, 4) sampling and analysis of nectar, pollen, and soil for imidacloprid residues, and 5) chemical analysis using techniques such as HPLC and TLC.",
+    "answer_rev1": "The experimental methodologies used in this paper include: 1) LD50 toxicity tests on honeybees, 2) chronic feeding studies with fortified sunflower honey, 3) field experiments with sunflower crops to assess pesticide residues, 4) sampling and analysis of nectar, pollen, and soil for imidacloprid residues, and 5) chemical analysis using techniques such as HPLC and TLC.",
+    "rev1": "ER"
+  },
+  "658": {
+    "answer_llm": "The experimental methodologies used in this paper include behavioral observations of honeybees (preference for food and trophallaxis), temperature measurements, transcriptome analysis, and metabolome analysis.",
+    "answer_rev1": "The authors performed several experiments and measured (i) feeding preference among S-dinotefuran, R-dinotefuran, and a 50% sucrose solution, they set up an artificial beehive with three gates connected to a feeder, and then recorded the number of bee visits to each of the three feeders, with observations conducted for 30 min. (ii) social interactions with 3 bees essays in a petridish with 1 or two bees treated 5 ng/bee of S-dinotefuran (feeding)  the other one or two treated with sugar solution.  Antennation and trophallaxis were recorded. Each observation lasted for 30 min, with observations conducted once every hour. (iii) the amount of dinotefuran shared across trofallaxis was measured  using UPLC-MS/MS from honeybees  that were placed in a petri dish with one, two, thrree or five individuals, only one bee was exposedt dinotefuran. (iv)body temperature 20 minutes after ingestion of 5 ng/bee of S-dinotefuran, 5 ng/bee of R- dinotefuran,or  a 50% sucrose solution; (v) Transcriptome 1 hour after ingestion of5 ng/bee of S-dinotefuran, 5 ng/bee of R- dinotefuran,or  a 50% sucrose solution; (vi) metaboloome analysis 1 hour after ingestion of S-dinotefuran, 5 ng/bee of R- dinotefuran,or  a 50% sucrose solution",
+    "rev1": "ER"
+  },
+  "659": {
+    "answer_llm": "The experimental methodologies used in this paper include field experiments with honeybee hives placed at various distances from a rice field, analysis of pollen samples, monitoring colony collapse, counting dead worker bees, and assessing hive weight and capped-brood area over a 2-month period. Additionally, insect sweeps and visual censuses were conducted to observe honeybee visitation rates to rice flowers.",
+    "answer_rev1": "The experimental methodologies used in this paper include field experiments with honeybee hives placed at 0, 60, 90 m distances from a rice field. After spraying dead worker bees were counted for 1-week using a 1 \u00d7 1-m white sheet placed on the ground that extended out from each hive entrance. Analysis of pollen samples, insect sweeps and visual censuses were conducted to observe honeybee visitation rates to rice flowers.  To assess long-term effects of clothianidic hive weight and capped-brood area over a 2-month period were monitored.",
+    "answer_rev2": "The experimental methodologies used in this paper include field experiments with honeybee hives placed at various distances from a rice field, analysis of pollen samples, monitoring colony collapse, counting dead worker bees, and assessing hive weight and capped-brood area over a 2-month period. Additionally, insect sweeps and visual censuses were conducted to observe honeybee visitation rates to rice flowers.",
+    "rev1": "ER",
+    "rev2": "BN"
+  },
+  "660": {
+    "answer_llm": "The experimental methodology used in this paper involved exposing honeybees to various insecticides using the dry film method, where bees were released into treated jars at intervals of 0, 12, and 24 hours after dry film formation, and their mortality was recorded at specified time intervals.",
+    "answer_rev1": "The experimental methodology used in this paper involved exposing honeybees to various insecticides using the dry film method, where bees were released into treated jars at intervals of 0, 12, and 24 hours after dry film formation, and their mortality was recorded at specified time intervals.",
+    "answer_rev2": "The experimental methodology used in this paper involved exposing honeybees to various insecticides using the dry film method, where bees were released into treated jars at intervals of 0, 12, and 24 hours after dry film formation, and their mortality was recorded at specified time intervals.",
+    "rev1": "BN",
+    "rev2": "ER"
+  },
+  "662": {
+    "answer_llm": "The experimental methodologies used in this paper include a season-long field study to analyze natural exposure to NNIs and a controlled experiment where honey bee colonies were fed clothianidin-infused pollen patties.",
+    "answer_rev1": "In both experiments (field and controlled) all the bees (both foragers and nurses) collected were freshly frozen in dry ice, brain were dissected and RNA extracted from the brain samples.\nSo RNAseq analysis was performed in samples of nurses and foragers from neonicoitnoids treated crop or from sites away from crops (field experiment) as well as  from colonies fed with pollen patties spiked with clothianidin or polen patties alone (controlled study).",
+    "answer_rev2": "The experimental methodologies used in this paper include a season-long field study to analyze natural exposure to NNIs and a controlled experiment where honey bee colonies were fed clothianidin-infused pollen patties. Nurse and forager bees were collected from colonies and brains were dissected and RNA extracted for sequencing.",
+    "rev1": "ER",
+    "rev2": "BN"
+  },
+  "663": {
+    "answer_llm": "The experimental methodologies used in this paper include:\n1. Inducing varying levels of insecticide stress in bee colonies by administering imidacloprid and fenoxycarb.\n2. Setting up artificial swarms of bees and allowing them to develop before exposure.\n3. Controlled exposure of colonies to insecticides in a semi-field environment using tents.\n4. Measuring various biological indicators such as the number of bees, brood amounts, honey and pollen quantities, and physiological indicators like vitellogenin concentration and enzyme activities.\n5. Using the Liebefeld method for estimating colony strength and other sampling techniques for assessing the health of the colonies.\n6. Analyzing insecticide residues in honey and comb samples using LC-MS/MS.",
+    "answer_rev1": "One, eight and 38 weeks after pesticides exposure \ufeff, 33 measurements were performed on the colonies: \ufeffthe number of bees and of open and capped brood cells, \nthe amounts of honey and pollen present in the hives (estimated by the Liebefeld-method), as well as on indicators of insecticide-induced stress from samples of hive bees, foragers, brood and hemolymph. The ndicators included  all vital functions of the honeybee colony\ufeff included indicators known or assumed to be linked to the age and health status of foragers (size of hypopharyngeal gland-acini, metabolic and immune enzymes), to the quality of brood rearing (chemical composition of brood and jelly, fluctuating asymmetry in adults), and to the health and immune status of hive bees (hemolymph vitellogenin, immune enzymes, ovary development and survival in a cage test).\nIn autumn, samples of honey and comb were tested for pesticides residues using \ufeffLC-MS/MS",
+    "rev1": "ER"
+  },
+  "664": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) Field experiments with bees placed in oilseed rape fields at specific growth stages; 2) Monitoring of bee activity and flower cover; 3) Placement of trap nests for solitary bees to observe nesting behavior; 4) Collection of pollen and nectar samples from bees to analyze pesticide exposure.",
+    "answer_rev1": "This is a field study and the authors tested the follwing in 20 pairs of matched fields: density of wild bees (solitary bees and bumblebees); Osmia cornuta nesting activity (by placing cocoons and after emergence counting the brood cells); Bombus terrestris colony health (measuring colony weight and production of queen and male cocoons); honeybee colony strength (by counting the number of adult bees per colony). Vegetation, Pollen and nectar samples were collected to measure pesticide concentrations.",
+    "rev1": "ER"
+  },
+  "665": {
+    "answer_llm": "The experimental methodologies used in this paper include field experiments involving seed treatments and foliar sprays of neonicotinoid insecticides, direct observations of honey bee foraging activity, and laboratory analyses of pesticide residues in plant samples (leaves, pollen, and nectar).",
+    "answer_rev1": "This field experiment monitored the following parameters after seed treatment/foliar exposure of pestiides:\n-honeybee foraging activities (measured as number of bees per capitulum in five minutes. Five capitulum per replicate were monitored every two hours from 06:00 to 18:00 on each observation day (for seed treatment: at 50% of flowering and at peak flowering stage; for the foliar exposure 1 day before spraying and at 1, 3,57 days after spraying).\n-residue analysis on leaf, pollen and ndectar samples using mass spectrometer SCIEX Triple Quad 3200 System LC\u2013MS/MS ( for seed treatment: leaves collect 30 and 60 days after sowing; pollen and nectar at 60 days after sowing; for foliar spraying: leaves, pollen an nectar collected 3 days after spraying).",
+    "answer_rev2": "The experimental methodologies used in this paper include field experiments involving seed treatments and foliar sprays of neonicotinoid insecticides to sunflowers, direct observations of honey bee foraging activity, and laboratory analyses of pesticide residues in plant samples (leaves, pollen, and nectar) using the QuEChERs method.",
+    "rev1": "ER",
+    "rev2": "BN"
+  },
+  "666": {
+    "answer_llm": "The experimental methodologies used in this paper include acute oral toxicity studies, chronic exposure studies, contact toxicity assessments, and evaluations of maximum exposure scenarios for bumblebee workers.",
+    "answer_rev1": "The experimental methodologies used in this paper include acute oral toxicity studies and evaluations of maximum exposure scenarios for bumblebee workers.",
+    "answer_rev2": "Oral toxicity of six insecticides was tested on B. terrestris  in line with guidelines for the acute oral toxicity of insecticides in bumblebees, with some modifications.\nIndividual bumblebees were individually caged, starved for 3 hours, weighted, fed orally (ad libitum) a specific concentration of insecticide for 48 hours (or less if they died before 48h). The condition of each worker bee was assessed at 2, 4, 24 and 48 h after the start of the bioassay. \n\nMoreover, taking into account the maximum concentration in nectar (from the literature) and the maximum daily nectar consumption in the bioassays, they estimated the maximum dose to which bumblebee workers could be exposed in the field in a worst case scenario.",
+    "rev1": "BN",
+    "rev2": "ER"
+  },
+  "668": {
+    "answer_llm": "The experimental methodologies used in this paper include short-term laboratory experiments with microcolonies and queenright colonies, long-term laboratory experiments assessing gyne production, and field experiments evaluating the effects of neonicotinoids on bumblebee colonies.",
+    "answer_rev1": "The experimental methodologies used in this paper include short-term laboratory experiments with microcolonies and queenright colonies, long-term laboratory experiments assessing gyne production, and field experiments evaluating the effects of neonicotinoids on bumblebee colonies.",
+    "answer_rev2": "The experimental methodologies used in this paper use ad libitum feeding both in the lab and in the field comparing the status of microcolonies and queenright colonies. For short-term lab experiments (nine weeks exposure, conducted both in microcolonies and queenright colonies) the effects of acetamiprid and thiacloprid were assessed counting all males, pupae, larvae, eggs; weigh of adult offspring. \nA longer study in the lab in queenright colonies (three-week-period since the first new queens had emerged, >90 days of exposure in total) measured the effects of pesticides on number of adult queens, queen pupae and queen larvae as well as the number and weigh of adult workers, males and queens. \nA field experiment (four-weeks exposure) was conducted to study the effects of those insecticides on: flight activity over three weeks, number of workers returning to the hive with or without pollen; counts of all individuals, larvae and pupae; weigh of individual queens and colony as a whole; number of reproductives (i.e. the sum of males and gynes)",
+    "rev1": "BN",
+    "rev2": "ER"
+  },
+  "669": {
+    "answer_llm": "The experimental methodologies used in this paper included exposing honey bees and larvae to different concentrations of insecticides (imidacloprid, ethion, and hexaflumuron), measuring their effects on detoxifying enzymes (such as acetylcholinesterase, glutathione S-transferase, and esterase), and assessing mortality rates in both worker bees and larvae under controlled laboratory conditions.",
+    "answer_rev1": "The experimental methodologies used in this paper included exposing honey bees and larvae to different concentrations of insecticides (imidacloprid, ethion, and hexaflumuron), measuring their effects on detoxifying enzymes (such as acetylcholinesterase, glutathione S-transferase, and esterase), and assessing mortality rates in both worker bees and larvae under controlled laboratory conditions.",
+    "answer_rev2": "Experiments on adult worker honeybees: \nFor estimate of LC50, groups of bees were exposed to different concentrations in group by feeding ad libitum for 1 h, and mortality was assessed 24h later. \nSublethal effects were then assessed as follows: bees were food deprived for 2 h and then fed either contaminated (sucrose solutions 50% w/v with insecticide) or uncontaminated syrup (sucrose solutions 50% w/v) for 2 h. Pesticide concentrations included: imidacloprid (0.16 mg a.i./l), ethion (79.47 mg a.i./l), andhexaflumuron (500 mg a.i./l). For the detoxification enzyme assay the study was conducted according to EPPO protocols 170 (OEPP/EPPO 2001) with slight modification. The temperature was maintained at 35 \u00b1 1 \u00b0C instead of 25\u00b0C. Protein concentrations for all enzyme extract samples were quantified according to Bradford (1976). The enzymes assessed included: esterase activity, Glutathione S \u2011transferases activity and Acetylcholinesterase activity, using the heads of 5-day-old worker bees. \nExperiments on larvae: \nGroups of 25 fifth to sixth instar larvae were used. Treatments consisted of 5 \u00b5l of the same concentrations used for adults placed at the bottom of each test cell, beneath the larvae. Combs containing treated and untreated controls larvae were examined 48h after treatment for mortality.",
+    "rev1": "BN",
+    "rev2": "ER"
+  },
+  "671": {
+    "answer_llm": "The experimental methodologies used in this paper included capturing and anesthetizing honey bees, restraining them for experiments, feeding them sucrose solutions, and conducting olfactory conditioning of the proboscis extension reflex (PER) to study the effects of pesticides (Acetamiprid and Deltamethrin) on learning and memory.",
+    "answer_rev1": "The experimental methodologies used in this paper included capturing and anesthetizing honey bees, restraining them for experiments, feeding them sucrose solutions, and conducting olfactory conditioning of the proboscis extension reflex (PER) to study the effects of pesticides (Acetamiprid and Deltamethrin) on learning and memory.",
+    "answer_rev2": "Classical conditioning using the proboscis extension reflex (PER) was used to assess the effects of ACT and DEL on olfactory learning and memory retrival in honeybees. The odour used as a conditioned stimulus (CS) was lavander oil, and the unconditioned stimulus (US) was sugar solution. The inter-trial interval was 2 minutes, and the learning protocol included five CS/US pairing trials.\n Bees were captured from flowers, fed with 40% sugar solution, and starved for 3h before experiment.Two experiments were perfomed: \n-        Bees were exposed to the insecticides 24 h before the learning trial and then tested for memory retrival at 1, 6 and 24h after learning. \n-        Bees were exposed to the insecticide during the learning protocol and then tested then tested for memory retrival 1, 6 and 24h after learning.",
+    "rev1": "BN",
+    "rev2": "ER"
+  },
+  "672": {
+    "answer_llm": "The experimental methodology used in this paper involved a fully crossed experiment assessing the effects of chronic exposure to two pesticides (Sivanto Prime and Quadris Top) on solitary ground-nesting squash bees (Xenoglossa pruinosa).",
+    "answer_rev1": "The paper assessed the possible lethal and sublethal effects of realistic chronic exposure (21 days) to two pesticides (an insecticide, Sivanto Prime, and a fungicide, Quadris Top) alone and in combination, on solitary ground-nesting squash bees (Xenoglossa pruinosa). \nIn particular, under semi-field condition on Cucurbita crops, they monitored the following: survival; nesting activity; foraging activity (amount of pollen collected and duration of collection); motor activities of collected bees placed in transparent enclosures for 2 minutes (including displacement, grooming and escaping behaviours); number of flowers, fruit set and marketable fruits (\u2265 500 g); offspring production (all emerged bees); and pesticide residue concentrations in crop soil, nectar and pollen.",
+    "answer_rev2": "The experimental methodology used in this paper involved a fully crossed experiment assessing the lethal and sub-lethal effects of chronic exposure to two pesticides (Sivanto Prime and Quadris Top) alone or combined on the survival, nesting activity, foraging activity, motor activity and offspring production of solitary ground-nesting squash bees (Xenoglossa pruinosa).",
+    "rev1": "ER",
+    "rev2": "BN"
+  },
+  "729": {
+    "answer_llm": "The experimental methodologies used in this paper involved testing the long-term exposure effects of different doses of sulfoxaflor on the survival, foraging outcomes, and flight performances of the solitary bee *Osmia bicornis*. This included maintaining bees in individual survival cages, exposing them to varying concentrations of sulfoxaflor mixed with sucrose solution, monitoring their survival rates, and observing their foraging behavior in controlled flight cages with artificial flowers.",
+    "answer_rev1": "The experimental methodologies used in this paper involved testing the long-term exposure effects of different doses of sulfoxaflor on the survival, foraging outcomes, and flight performances of the solitary bee *Osmia bicornis*. This included maintaining bees in individual survival cages, exposing them to varying concentrations of sulfoxaflor mixed with sucrose solution, monitoring their survival rates, and observing their foraging behavior in controlled flight cages with artificial flowers.",
+    "answer_rev2": "The methods used included assessing bee survival, foraging behaviour on artifical flowers, flower visitation rate and flight velocity.",
+    "rev1": "AB",
+    "rev2": "HS"
+  },
+  "731": {
+    "answer_llm": "The experimental methodologies used in this paper include exposure of honey bee drones to neonicotinoids and Varroa destructor in a controlled laboratory setting, assessment of drone health and reproductive capabilities, and allocation of drones to different treatment groups.",
+    "answer_rev1": "The experimental methodologies used in this paper include exposure of honey bee drones to neonicotinoids and Varroa destructor, combining a field study (exposure)  and a controlled laboratory setting, assessment of drone health (i.e. survival and sperm quality)",
+    "answer_rev2": "The experimental methodologies used in this paper include exposure of honey bee drones to neonicotinoids and Varroa destructor in a controlled laboratory setting, assessment of drone health and reproductive capabilities, and allocation of drones to different treatment groups.",
+    "rev1": "AB",
+    "rev2": "HS"
+  },
+  "732": {
+    "answer_llm": "The experimental methodologies used in this paper include treating honey bee colonies with imidacloprid (20 ppb for 14 days) and exposing them to high temperature (41 \u00b0C for 6 hours), either singly or in combination. The study involved using whole mini hives with a queen and brood, measuring fluctuations in relative humidity and temperature, and analyzing gene transcription profiles using real-time quantitative PCR and whole transcriptome analysis.",
+    "answer_rev1": "The experimental methodologies used in this paper include treating honey bee colonies with imidacloprid (20 ppb for 14 days) and exposing them to high temperature (41 \u00b0C for 6 hours), either singly or in combination. The study involved using whole mini hives with a queen and brood, measuring fluctuations in relative humidity and temperature, and analyzing gene transcription profiles using real-time quantitative PCR and whole transcriptome analysis.",
+    "answer_rev2": "The experimental methodologies used in this paper include treating honey bee colonies with imidacloprid (20 ppb for 14 days) and exposing them to high temperature (41 \u00b0C for 6 hours), either singly or in combination. The study involved using whole mini hives with a queen and brood, measuring fluctuations in relative humidity and temperature, and analyzing gene transcription profiles using real-time quantitative PCR and whole transcriptome analysis.",
+    "rev1": "HS",
+    "rev2": "AB"
+  },
+  "733": {
+    "answer_llm": "The experimental methodology used in this paper involved exposing honey bee males to the pesticide Thiamethoxam by returning inoculated males to their maternal colonies for continuous exposure.",
+    "answer_rev1": "Honeybees colones were provided with pollen patties containing the pesticide. Some were inncolated with the parasite. Several measures were recorded including male and worker mortality and encapuslation rate.",
+    "answer_rev2": "The experimental methodology used in this paper involved exposing honey bee males to the pesticide Thiamethoxam by returning inoculated males to their maternal colonies for continuous exposure.",
+    "rev1": "HS",
+    "rev2": "AB"
+  },
+  "734": {
+    "answer_llm": "The experimental methodologies used in this paper included the acquisition and maintenance of bumblebee hives, marking of worker bees, conducting bioassays with selected workers under controlled conditions, and testing the effects of specific insecticides and fungicides on bee mortality.",
+    "answer_rev1": "The experimental methodologies used in this paper included the acquisition and maintenance of bumblebee hives, marking of worker bees, conducting bioassays with selected workers under controlled conditions, and testing the effects of specific insecticides and fungicides on bee mortality.",
+    "answer_rev2": "The experimental methodologies used in this paper included the acquisition and maintenance of bumblebee hives, marking of worker bees, conducting bioassays with selected workers under controlled conditions, and testing the effects of specific insecticides and fungicides on bee mortality.",
+    "rev1": "HS",
+    "rev2": "AB"
+  },
+  "736": {
+    "answer_llm": "The experimental methodologies used in this paper involved laboratory exposure of three bee species (*Apis mellifera*, *Bombus terrestris*, and *Osmia bicornis*) to a neonicotinoid insecticide (clothianidin) and an ergosterol-biosynthesis-inhibitor fungicide (propiconazole) to evaluate their synergistic mortality effects.",
+    "answer_rev1": "The experimental methodologies used in this paper involved laboratory exposure of three bee species (*Apis mellifera*, *Bombus terrestris*, and *Osmia bicornis*) to a neonicotinoid insecticide (clothianidin) and an ergosterol-biosynthesis-inhibitor fungicide (propiconazole) to evaluate their synergistic mortality effects.",
+    "answer_rev2": "The experimental methodologies used in this paper involved laboratory exposure of three bee species (*Apis mellifera*, *Bombus terrestris*, and *Osmia bicornis*) to a neonicotinoid insecticide (clothianidin) and an ergosterol-biosynthesis-inhibitor fungicide (propiconazole) to evaluate their synergistic mortality effects.",
+    "rev1": "AB",
+    "rev2": "HS"
+  },
+  "737": {
+    "answer_llm": "The experimental methodologies used in this paper involved testing the effects of various pesticide mixtures on honey bees, including the use of a spray tower to simulate field exposures, monitoring mortality rates, and conducting enzyme activity assays to assess physiological responses.",
+    "answer_rev1": "The experimental methodologies used in this paper involved testing the effects of various pesticide mixtures on honey bees, including the use of a spray tower to simulate field exposures, monitoring mortality rates, and conducting enzyme activity assays to assess physiological responses.",
+    "answer_rev2": "Bioassays assessing bee mortality and physiology",
+    "rev1": "AB",
+    "rev2": "HS"
+  },
+  "738": {
+    "answer_llm": "The experimental methodology used in this paper involved treating honeybees with various binary mixtures of insecticides and measuring their mortality rates and enzyme activity.",
+    "answer_rev1": "The experimental methodology used in this paper involved treating honeybees with various binary mixtures of insecticides and measuring their mortality rates and enzyme activity.",
+    "answer_rev2": "The experimental methodology used in this paper involved treating honeybees with various binary mixtures of insecticides and measuring their mortality rates and enzyme activity.",
+    "rev1": "AB",
+    "rev2": "HS"
+  },
+  "739": {
+    "answer_llm": "The experimental methodologies used in this paper include a year-long study on the Japanese orchard bee (Osmia cornifrons) with exposure to three systemic insecticides and one fungicide at varying concentrations (Low, Medium, High). The study employed a modified natural pollen provision feeding method to assess the effects of pesticide exposure on larval development times, body weight, and survivorship.",
+    "answer_rev1": "The experimental methodologies used in this paper include a year-long study on the Japanese orchard bee (Osmia cornifrons) with exposure to three systemic insecticides and one fungicide at varying concentrations (Low, Medium, High). The study employed a modified natural pollen provision feeding method to assess the effects of pesticide exposure on larval development times, body weight, and survivorship.",
+    "answer_rev2": "The experimental methodologies used in this paper include a year-long study on the Japanese orchard bee (Osmia cornifrons) with exposure to three systemic insecticides and one fungicide at varying concentrations (Low, Medium, High). The study employed a modified natural pollen provision feeding method to assess the effects of pesticide exposure on larval development times, body weight, and survivorship.",
+    "rev1": "AB",
+    "rev2": "HS"
+  },
+  "740": {
+    "answer_llm": "The experimental methodologies used in this paper involved field experiments where insecticides were applied to broad bean plants, and the foraging activity and abundance of bee species were monitored through direct observation and counts before and after treatment.",
+    "answer_rev1": "The experimental methodologies used in this paper involved field experiments where insecticides were applied to broad bean plants, and the foraging activity of bee species were monitored through direct observation and counts before and after treatment.",
+    "answer_rev2": "The experimental methodologies used in this paper involved field experiments where insecticides were applied to broad bean plants, and the foraging activity and abundance of bee species were monitored through direct observation and counts before and after treatment.",
+    "rev1": "HS",
+    "rev2": "AB"
+  },
+  "787": {
+    "answer_llm": "The experimental methodologies used in this paper included: 1) in vitro rearing of *P. helleri* queens, 2) chronic exposure to varying doses of azadirachtin and imidacloprid, 3) monitoring survival and development of larvae, 4) assessing locomotory behavior using a computerized video tracking system, and 5) dissecting the reproductive systems of queens and workers for morphological analysis.",
+    "answer_rev1": "The experimental methodologies used in this paper included: 1) in vitro rearing of *P. helleri* queens, 2) chronic exposure to varying doses of azadirachtin and imidacloprid, 3) monitoring survival and development of larvae, 4) assessing locomotory behavior using a computerized video tracking system, and 5) dissecting the reproductive systems of queens and workers for morphological analysis.",
+    "rev1": "AB"
+  },
+  "790": {
+    "answer_llm": "The experimental methodologies used in this paper include the synthesis of neonicotinoid analogues, testing their insecticidal activities against cowpea aphids, and assessing their toxicities to honey bees through contact and oral toxicity assays.",
+    "answer_rev1": "The experimental methodologies used in this paper include the synthesis of neonicotinoid analogues, testing their insecticidal activities against cowpea aphids, and assessing their toxicities to honey bees through contact and oral toxicity assays.",
+    "rev1": "AB"
+  },
+  "793": {
+    "answer_llm": "The experimental methodologies used in this paper include treating worker bees with a specific dose of dinotefuran (LC10) and observing their behavior and physiological responses, such as acute toxicity effects and changes in gene expression related to development and immune response.",
+    "answer_rev1": "The experimental methodologies used in this paper include treating worker bees with dinotefuran, and observing their behavior and physiological responses, such as acute toxicity effects and changes in gene expression related to development and immune response.",
+    "rev1": "AB"
+  },
+  "798": {
+    "answer_llm": "The experimental methodologies used in this paper include the TUNEL method for analyzing cell death, histochemical analyses of bee organs, and direct observations of physiological changes in bees exposed to pesticides.",
+    "answer_rev1": "The experimental methodologies used in this paper include the TUNEL method for analyzing cell death, histochemical analyses of bee organs, and direct observations of physiological changes in bees exposed to pesticides.",
+    "rev1": "AB"
+  },
+  "799": {
+    "answer_llm": "The experimental methodologies used in this paper included exposing male bumblebees to thiamethoxam, measuring their mating behavior, sperm quantity and viability, and assessing their survival and consumption rates in controlled laboratory conditions.",
+    "answer_rev1": "The experimental methodologies used in this paper included exposing male bumblebees to thiamethoxam, measuring their mating behavior, sperm quantity and viability, and assessing their survival and consumption rates in controlled laboratory conditions.",
+    "rev1": "AB"
+  },
+  "800": {
+    "answer_llm": "The experimental methodologies used in this paper involved chronic low dose long-term exposure of honey bees to thiamethoxam, followed by RNA sequencing and RT-qPCR for gene expression analysis, and bacterial infection assays to evaluate the impact on bee immunity.",
+    "answer_rev1": "The experimental methodologies used in this paper involved chronic low dose long-term exposure of honey bees to thiamethoxam, followed by RNA sequencing and RT-qPCR for gene expression analysis, and bacterial infection assays to evaluate the impact on bee immunity.",
+    "rev1": "AB"
+  },
+  "809": {
+    "answer_llm": "The experimental methodologies used in this paper involved conducting acute 96-hour contact toxicity tests on blue orchard mason bees (*Osmia lignaria*) with various agrochemicals, including neonicotinoids, pyrethroids, and macrocyclic lactones, to evaluate their sensitivity and determine LD50 values for both male and female bees.",
+    "answer_rev1": "The experimental methodologies used in this paper involved conducting acute 96-hour contact toxicity tests on blue orchard mason bees (*Osmia lignaria*) with various agrochemicals, including neonicotinoids, pyrethroids, and macrocyclic lactones, to evaluate their sensitivity and determine LD50 values for both male and female bees.",
+    "rev1": "AB"
+  },
+  "810": {
+    "answer_llm": "The experimental methodologies used in this paper involved conducting three experiments on bumblebees to measure their functional behavioral responses to the pesticides Imidacloprid and Sulfoxaflor at different temperatures.",
+    "answer_rev1": "The experimental methodologies used in this paper involved conducting three experiments on bumblebees to measure their functional behavioral responses to the pesticides Imidacloprid and Sulfoxaflor at different temperatures.",
+    "rev1": "AB"
+  },
+  "811": {
+    "answer_llm": "The experimental methodologies used in this paper included controlled laboratory experiments involving oral feeding of honey bees with insecticides at various dosages and topical application to assess acute toxicity. Biochemical assays were also conducted to measure enzyme activities in the bees' tissues.",
+    "answer_rev1": "The experimental methodologies used in this paper included controlled laboratory experiments involving oral feeding of honey bees with insecticides at various dosages and topical application to assess acute toxicity. Biochemical assays were also conducted to measure enzyme activities in the bees' tissues.",
+    "rev1": "AB"
+  },
+  "813": {
+    "answer_llm": "The experimental methodologies used in this paper included determining the contact and ingestion lethal doses (LD50) of fipronil and imidacloprid on African-derived *Apis mellifera*, assessing motor changes in bees after exposure to lethal and sublethal doses, and conducting motor activity tests in a controlled environment.",
+    "answer_rev1": "The experimental methodologies used in this paper included determining the contact and ingestion lethal doses (LD50) of fipronil and imidacloprid on African-derived *Apis mellifera*, assessing motor changes in bees after exposure to lethal and sublethal doses, and conducting motor activity tests in a controlled environment.",
+    "rev1": "AB"
+  },
+  "883": {
+    "answer_llm": "The experimental methodologies used in this paper include acute and chronic exposure experiments on bumblebees (*B. terrestris*) to assess the effects of imidacloprid, utilizing an optical sensor to measure wingbeat frequency.",
+    "answer_rev1": "The study looked the effects of chronic and acute oral exposure to imidacloprid in Bombus terrestris. An optical sesnsor was used to record and measure wingbeat frequency. The optical sensor recordings were also used to train a neural network to differentiate between exposed bees (both acute and chronic exposure) and non-exposed bees. Differences in exposure groups were visualised using a stochastic neighbour embedding model.",
+    "rev1": "AH"
+  },
+  "884": {
+    "answer_llm": "The experimental methodologies used in this paper involved administering different concentrations of pesticides (flupyradifurone and imidacloprid) to honeybees, observing their behaviors (such as grooming, walking, and standing), and assessing their motor abilities over time. The experiments were conducted in controlled environments, with specific attention to the age and type of bees used.",
+    "answer_rev1": "The methods described include the oral administartion of pesticide to Apis mellifera. There is reference to following the protocol of another published study in the methods section, but not the standard OECD protocols. Bees were aged in the summer experiment and standard aged bees used (6-8 days), whereas the winter bees were taken from the bottom of the hive.\nBehaviour post acute-exposure was recorded at three time points (15, 60 and 180 mins). Behaviour post 24h continuous exposure was recorded for 10mins after the 24h exposure time. BORIS 4.1.3 software was used to record the time spent in each behavioural state. Behaviour recorded on video camera or mobile phone.",
+    "rev1": "AH"
+  },
+  "885": {
+    "answer_llm": "The experimental methodologies used in this paper included an in-hive semi-field experiment with chronic exposure to Closer\u00ae, acute oral toxicity testing (LC50) on honey bee foragers, monitoring of body mass and foraging activity, measurement of brood and honey areas, and direct observation of foraging behavior.",
+    "answer_rev1": "Acute oral toxicity test done with reference to standards testing protocol OECD Test No 213. \n\nSub-lethal test done with reference to standrd OECD test no 245 and reported levels of suloxaflor residues in pollen and nectar. Effects of sub-lethal exposure on colony growth amd activity, body mass of foraging bees and foraging activity were measured.",
+    "rev1": "AH"
+  },
+  "886": {
+    "answer_llm": "The experimental methodologies used in this paper include testing the proboscis extension response (PER) to evaluate gustatory responsiveness, classical conditioning of the PER to assess learning and memory capabilities, administering different concentrations of flupyradifurone to determine sublethal doses and observe mortality rates, and conducting memory tests and extinction trials on honeybees.",
+    "answer_rev1": "This study described two experimental techniques.\n1. Determining sub-lethal doses for oral exposure of honeybees to flupyradifurone, which utilised standard feeding biosaasy techniques. Not referenced though.\n2. Beahvioural studies, post expsosure to a range of sub-lethal doses of flupyradifurone.\ni) Quantifying taste by measuring proboscis extension response (PER) in gustatory response experiments using a range of sucrose concentrations across all doses of insecticide and a control used.\nii)Classical olfactory conditioning using a conditioned stimulus (PER stimulated and reward 30% sucrose solution) and an unconditioned stimulus to condition two group of bees: pollen-foragers and nectar-foragers. These groups of bees were then used 24 h later in memory and extinction tests with the conditioned and unconditioned stimuli. PER recorded. All doses of insecticide used and compared to a control. This section referred to two publications in re methods.",
+    "rev1": "AH"
+  },
+  "887": {
+    "answer_llm": "The experimental methodologies used in the paper include:\n1. Time-to-effect experiments to evaluate the Haber exponent in an isoeffective design.\n2. Analysis of the ingestion vs longevity relationship to assess the impact of exposure duration on toxicity.\n3. An experiment comparing the effects of pulsed versus steady dosing to investigate the biological half-life of a toxicant.",
+    "answer_rev1": "This paper focuses on assessing the time-reinforced toxicity (TRT) of three agricultural insecticides to Bombus terrestris. The study uses two methods to assess the TRT:\ni) time-to-effect experiments\nGroups of bees for each dose treatment were fed sucrose containing the insecticides. Bees were monitored daily and mortality recorded. Sucrose consumption was measured gravimetrically every 48h. Results were anaylsed to determine dose-dependent toxicity and time-dependent mortality.\nii) Fixed (constant dose) versus pulsed (alternating dosed and undosed sucrose solution every 48h) exposure",
+    "rev1": "AH"
+  },
+  "888": {
+    "answer_llm": "The experimental methodologies used in this paper included feeding honey bees different supplemental carbohydrate diets (sucrose, high-fructose corn syrup, and artificial pollen) and exposing them to abiotic stress treatments (heat, cold, and imidacloprid exposure) in laboratory settings, as well as conducting semifield and cage trials.",
+    "answer_rev1": "Three experiments are described, but only two of these use insecticide - the laboratory survival assay and stress protein analysis.\nBoth these use a 4 x 4 factorial design where each of four dietary groups are exposed to abiotic stress treatments: either heat (45 degrees), cold (4 degrees), exposure to sub-lethal dose of imidacloprid (0.28ng/ml, 31 degrees) or controls (31 degrees). Laboratory survival assay - mortality recorded every day for 40 days. Stress protein analysis - bees frozen (-80 degrees) from all groups after 8 days for use in protein analyses. Good referencing used for the enzyme analyses and rearing of bees. No references or standard protocols for feeding assays though. Colony-level experiment to look at longevity did not include imidacloprid.",
+    "rev1": "AH"
+  },
+  "889": {
+    "answer_llm": "The experimental methodology used in this paper involved a controlled laboratory experiment on adult alfalfa leafcutting bees (Megachile rotundata), where bees were exposed to different concentrations of imidacloprid while being provided with varying sugar concentrations in their diet. The study tracked behavior and survivorship of the bees over 5 weeks.",
+    "answer_rev1": "A fully crossed factorial design was used that compared two doses of imidacloprid (30ppb and 300ppb) to a control, all three doses were provided orally in both 20% and 50% sucrose. Good level of citation for the dosages of imidacloprid chosen and for the sucrose concentrations. Groups of 20 bees were exposed for a maximum of 5 weeks. Mortality, body size at death and behaviours were montored.",
+    "rev1": "AH"
+  },
+  "890": {
+    "answer_llm": "The experimental methodologies used in this paper involved exposing the stingless bee species *Tetragonula hockingsi* to imidacloprid- and fipronil-laced sucrose solutions to assess avoidance behavior, as well as measuring their thermal tolerance in response to varying doses of these insecticides.",
+    "answer_rev1": "There are two experiments run in this paper. \ni) choice test - two concentations of insecticide in 25% sucrose, 25% sucrose by itself and water were offered to bees in a choice test to determine how much was consumed from each feeder.\nii) heat tolerance test - three concentations of insecticide in 25% sucrose, were fed to groups of bees (after 1h starvation). Bees were then either kept at a constant temperature (26 degrees) or ubderwent temperature ramping. Over 120 mins the temperature was incresaed to determine the CTmax.\nInsecticide concentrations were chosen with reference to published data for other bee species.",
+    "rev1": "AH"
+  },
+  "891": {
+    "answer_llm": "The experimental methodologies used in this paper include chronic and acute exposure of *Apis cerana* workers to imidacloprid and quercetin, measuring their effects on longevity, sucrose responsiveness, and olfactory learning through various behavioral tests.",
+    "answer_rev1": "The experimental methodologies used in this paper include chronic and acute exposure of *Apis cerana* workers to imidacloprid and quercetin, measuring their effects on longevity, sucrose responsiveness, and olfactory learning through various behavioral tests. Good referencing of publications in the methods to expalin the protocol choice and parameters.",
+    "rev1": "AH"
+  },
+  "892": {
+    "answer_llm": "The experimental methodologies used in this paper included behavioral paradigms (habituation of the proboscis extension reflex), assessments of gustatory thresholds, and observations of motor activity in honeybees, involving the application of imidacloprid at various doses and controlled testing conditions.",
+    "answer_rev1": "This paper studied behavioural responses to sub-lethal exposure of honeybees to imidacloprid. Two preliminary expeiments determined the imidacloprid dose that does not induce modifications in gustaory threshold  (ie concentration that elicits PER) or decrease motor activity. This dose was then used in a non-associative learning experiment, based on habituation of PER, to determine the effect of imidacloprid on non-associative learning in the honeybee. No referencing of prevously published protocols/methods.",
+    "rev1": "AH"
+  },
+  "934": {
+    "answer_llm": "The experimental methodologies used in the paper include direct ingestion of imidacloprid by adult honeybees and ants, feeding the toxin to larvae of stingless bees, exposing termites to imidacloprid-treated soils, and tracking mortality rates over time to estimate LT50 values.",
+    "answer_rev1": "This is a modeling paper, with data used from other published studies (e.g. ld50 data). This paper does not present new empirical data.",
+    "answer_rev2": "This paper is a modelling and synthesis study that compiles previously published experimental data rather than conducting new experiments.",
+    "rev1": "HS",
+    "rev2": "SA"
+  },
+  "935": {
+    "answer_llm": "The experimental methodologies used in this paper included conducting experiments in semi-field conditions with honeybee colonies, applying insecticides (deltamethrin and acetamiprid), and observing the effects on bee mortality and behavior over multiple years.",
+    "answer_rev1": "The experimental methodologies used in this paper included conducting experiments in semi-field conditions with honeybee colonies, applying insecticides (deltamethrin and acetamiprid), and observing the effects on bee mortality and behavior over multiple years.",
+    "answer_rev2": "The experimental methodologies used in this paper included conducting experiments in semi-field conditions with honeybee colonies, applying insecticides (deltamethrin and acetamiprid), and observing the effects on bee mortality and behavior over multiple years.",
+    "rev1": "SA",
+    "rev2": "HS"
+  },
+  "937": {
+    "answer_llm": "The experimental methodologies used in this paper include field studies in eucalyptus plantations to assess honey bee exposure to acetamiprid, sampling various materials (beebread, pollen, honey, forager bees, fresh nectar, flowers, leaves, soil, and eucalyptus leaves) before and after a spraying event, and analyzing pesticide residues using immunoassays.",
+    "answer_rev1": "The experimental methodologies used in this paper include field studies in eucalyptus plantations to assess honey bee exposure to acetamiprid, sampling various materials (beebread, pollen, honey, forager bees, fresh nectar, flowers, leaves, soil, and eucalyptus leaves) before and after a spraying event, and analyzing pesticide residues using immunoassays.",
+    "answer_rev2": "The experimental methodologies used in this paper include field studies in eucalyptus plantations to assess honey bee exposure to acetamiprid, sampling various materials (beebread, pollen, honey, forager bees, fresh nectar, flowers, leaves, soil, and eucalyptus leaves) before and after a spraying event, and analyzing pesticide residues using immunoassays.",
+    "rev1": "SA",
+    "rev2": "HS"
+  },
+  "938": {
+    "answer_llm": "The experimental methodologies used in this paper involved exposing larvae of *Apis mellifera* to various concentrations of insecticides and measuring their survival and development outcomes after single and multiple exposures.",
+    "answer_rev1": "The experimental methodologies used in this paper involved exposing larvae of *Apis mellifera* to various concentrations of insecticides and measuring their survival and development outcomes after single and multiple exposures.",
+    "answer_rev2": "The experimental methodologies used in this paper involved exposing larvae of *Apis mellifera* to various concentrations of insecticides and measuring their survival and development outcomes after single and multiple exposures.",
+    "rev1": "SA",
+    "rev2": "HS"
+  },
+  "943": {
+    "answer_llm": "The experimental methodology used in this paper involved training stingless bees to collect a sucrose solution from a Y-tube maze, where one arm contained the pesticide GF-120 mixed with the sucrose solution, and the other arm contained plain water. The study also involved observing the foraging behavior of free-flying foragers in response to sucrose solutions containing different concentrations of GF-120.",
+    "answer_rev1": "The experimental methodology used in this paper involved training stingless bees to collect a sucrose solution from a Y-tube maze, where one arm contained the pesticide GF-120 mixed with the sucrose solution, and the other arm contained plain water. The study also involved observing the foraging behavior of free-flying foragers in response to sucrose solutions containing different concentrations of GF-120.",
+    "answer_rev2": "The experimental methodology used in this paper involved training stingless bees to collect a sucrose solution from a Y-tube maze, where one arm contained the pesticide GF-120 mixed with the sucrose solution, and the other arm contained plain water. The study also involved observing the foraging behavior of free-flying foragers in response to sucrose solutions containing different concentrations of GF-120.",
+    "rev1": "SA",
+    "rev2": "HS"
+  },
+  "946": {
+    "answer_llm": "The experimental methodologies used in this paper included artificially rearing honeybee larvae, exposing them to sublethal doses of pesticides and lipopolysaccharide, analyzing CHC profiles using gas chromatography-mass spectrometry, and conducting behavioral experiments by transferring treated larvae into surrogate colonies to observe their removal rates by nurse bees.",
+    "answer_rev1": "The experimental methodologies used in this paper included artificially rearing honeybee larvae, exposing them to sublethal doses of pesticides and lipopolysaccharide, analyzing CHC profiles using gas chromatography-mass spectrometry, and conducting behavioral experiments by transferring treated larvae into surrogate colonies to observe their removal rates by nurse bees.",
+    "answer_rev2": "The experimental methodologies used in this paper included artificially rearing honeybee larvae, exposing them to sublethal doses of pesticides and lipopolysaccharide, analyzing CHC profiles using gas chromatography-mass spectrometry, and conducting behavioral experiments by transferring treated larvae into surrogate colonies to observe their removal rates by nurse bees.",
+    "rev1": "HS",
+    "rev2": "SA"
+  },
+  "948": {
+    "answer_llm": "The experimental methodologies used in this paper involved direct observations of foraging trips of *O. bicornis* females, measuring the time taken for flower visits, assessing the weight of strawberries as a measure of pollination success, and observing nest building and offspring production in controlled environments with clothianidin exposure.",
+    "answer_rev1": "The experimental methodologies used in this paper involved direct observations of foraging trips of *O. bicornis* females, measuring the time taken for flower visits, assessing the weight of strawberries as a measure of pollination success, and observing nest building and offspring production in controlled environments with clothianidin exposure.",
+    "answer_rev2": "The experimental methodologies used in this paper involved direct observations of foraging trips of *O. bicornis* females, measuring the time taken for flower visits, assessing the weight of strawberries as a measure of pollination success, and observing nest building and offspring production in controlled environments with clothianidin exposure.",
+    "rev1": "SA",
+    "rev2": "HS"
+  },
+  "949": {
+    "answer_llm": "The experimental methodology used in this paper involved a highly replicated semi-field study with mesocosms comparing neonicotinoid-treated vs. untreated oilseed rape, along with additional flower strips of varying diversity and identity.",
+    "answer_rev1": "The experimental methodology used in this paper involved a highly replicated semi-field study with mesocosms comparing neonicotinoid-treated vs. untreated oilseed rape, along with additional flower strips of varying diversity and identity.",
+    "answer_rev2": "The experimental methodology used in this paper involved a highly replicated semi-field study with mesocosms comparing neonicotinoid-treated vs. untreated oilseed rape, along with additional flower strips of varying diversity and identity.",
+    "rev1": "HS",
+    "rev2": "SA"
+  },
+  "950": {
+    "answer_llm": "The experimental methodologies used in this paper included laboratory-controlled experiments exposing honeybees, mason bees, and painted lady butterfly larvae to PM-bound agrochemicals, utilizing a PM circulator system for exposure and measuring mortality rates across different treatment groups.",
+    "answer_rev1": "The experimental methodologies used in this paper included laboratory-controlled experiments exposing honeybees, mason bees, and painted lady butterfly larvae to PM-bound agrochemicals, utilizing a PM circulator system for exposure and measuring mortality rates across different treatment groups.",
+    "answer_rev2": "The experimental methodologies used in this paper included laboratory-controlled experiments exposing honeybees, mason bees, and painted lady butterfly larvae to PM-bound agrochemicals, utilizing a PM circulator system for exposure and measuring mortality rates across different treatment groups.",
+    "rev1": "SA",
+    "rev2": "HS"
+  },
+  "956": {
+    "answer_llm": "The experimental methodologies used in this paper included field tests with aerial and foliar applications of spinosad and SolBait, as well as exposure of honey bees to the treatments.",
+    "answer_rev1": "The experimental methodology used in Test 1, which assessed the effects of pesticides on honey bees, involved conducting field trials with ground applications of spinosad and malathion as foliar sprays in plots where honey bee colonies were placed. The evaluation included monitoring brood numbers and assessing the overall condition of the hives to determine the potential impacts of the pesticide treatments on colony health.",
+    "answer_rev2": "Test 1 consisted of ground applications of foliar sprays of spinosad and malathion in SolBait at higher volumes com- pared to the malathion-NU-LURE? standard of 20% malathion ULV with 80% NU-LURE? at 12 oz of mix per acr",
+    "rev1": "SA",
+    "rev2": "HS"
+  }
+}

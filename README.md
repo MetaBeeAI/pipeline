@@ -248,6 +248,34 @@ your_custom_papers_directory/
 
 **Note**: The `.env` file is not tracked in git, so your API keys and custom paths remain private.
 
+## LLM Benchmarking and Review
+
+The pipeline includes tools for comparing LLM-generated answers with human reviewer annotations:
+
+### Data Merging
+- **Location**: `llm_benchmarking/merge-answers.py`
+- **Purpose**: Combines LLM answers with human reviewer answers for analysis
+- **Input Sources**:
+  - LLM answers: `papers/{paper_id}/answers.json`
+  - Reviewer answers: Either local `answers_extended.json` files or external reviewer databases
+- **Output**: Merged JSON files in `final_merged_data/` folder
+
+### Review Workflow
+1. **Single Reviewer**: Work directly in the main data folder with `answers_extended.json`
+2. **Multiple Reviewers**: Each reviewer works in separate folders with their initials
+3. **Data Merging**: Combine all reviewer data with LLM answers for benchmarking
+
+### Usage Examples
+```bash
+# Use local answers_extended.json files (default)
+python llm_benchmarking/merge-answers.py
+
+# Use external reviewer database
+python llm_benchmarking/merge-answers.py --reviewer-db /path/to/reviewers
+```
+
+See `llm_benchmarking/README.md` for detailed documentation on the review process and folder structures.
+
 ## Setup
 
 1. Create and activate a virtual environment:
