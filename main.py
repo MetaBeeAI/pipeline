@@ -85,28 +85,17 @@ def get_paper_json(paper_id: str):
         raw = {"data": raw}
     return raw
 
-def parse_questions(questions_data: dict) -> dict:
-    """
-    Parses questions to match the front-end expectations:
-      - For each key with a dict containing 'answer' and 'reason', the key is kept.
-      - For nested structures, keys are combined using a dot notation.
-    """
+def parse_questions(questions_data):
+    """Parse the questions data structure to extract answers and reasons."""
     parsed = {}
     for q_key, q_val in questions_data.items():
         if isinstance(q_val, dict) and "answer" in q_val and "reason" in q_val:
             parsed[q_key] = q_val
         elif isinstance(q_val, dict):
-            if q_key == "endpoint" and "list" in q_val:
-                endpoints = q_val["list"]
-                for ep_key, ep_val in endpoints.items():
-                    if isinstance(ep_val, dict) and "results" in ep_val:
-                        new_key = f"{q_key}: {ep_key}"
-                        parsed[new_key] = ep_val["results"]
-            else:
-                for sub_key, sub_val in q_val.items():
-                    if isinstance(sub_val, dict) and "answer" in sub_val and "reason" in sub_val:
-                        new_key = f"{q_key}.{sub_key}"
-                        parsed[new_key] = sub_val
+            for sub_key, sub_val in q_val.items():
+                if isinstance(sub_val, dict) and "answer" in sub_val and "reason" in sub_val:
+                    new_key = f"{q_key}.{sub_key}"
+                    parsed[new_key] = sub_val
     return parsed
 
 @app.get("/answers/{paper_id}")

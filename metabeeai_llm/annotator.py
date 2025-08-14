@@ -81,26 +81,14 @@ def annotate_pdf(pdf_path, merged_json_path, output_pdf, answers_json_path=None)
 
         questions = answers.get("QUESTIONS", {})
         for question_key, question_value in questions.items():
-            # Special handling for "endpoint" since its structure is nested under "list"
-            if question_key == "endpoint" and isinstance(question_value, dict):
-                endpoints = question_value.get("list", {})
-                for endpoint_key, endpoint_value in endpoints.items():
-                    # Expecting the chunk_ids under a "results" key
-                    results = endpoint_value.get("results", {})
-                    if "chunk_ids" in results:
-                        for cid in results["chunk_ids"]:
-                            cid_to_fields.setdefault(cid, set()).add(endpoint_key)
+            # For questions, either the field value directly has chunk_ids or search recursively.
+            if isinstance(question_value, dict):
+                for field_key, field_value in question_value.items():
+                    if isinstance(field_value, dict) and "chunk_ids" in field_value:
+                        for cid in field_value["chunk_ids"]:
+                            cid_to_fields.setdefault(cid, set()).add(field_key)
                     else:
-                        extract_chunk_ids(endpoint_value, endpoint_key)
-            else:
-                # For other questions, either the field value directly has chunk_ids or search recursively.
-                if isinstance(question_value, dict):
-                    for field_key, field_value in question_value.items():
-                        if isinstance(field_value, dict) and "chunk_ids" in field_value:
-                            for cid in field_value["chunk_ids"]:
-                                cid_to_fields.setdefault(cid, set()).add(field_key)
-                        else:
-                            extract_chunk_ids(field_value, field_key)
+                        extract_chunk_ids(field_value, field_key)
         
         # Annotate each chunk from answers.json using the aggregated field names.
         for cid, fields in cid_to_fields.items():

@@ -24,6 +24,60 @@ def load_schema_config(config_file="../schema_config.yaml"):
         config = yaml.safe_load(f)
     return config
 
+def load_field_examples(examples_file="field_examples.yaml"):
+    """Load field examples from YAML file."""
+    try:
+        with open(examples_file, 'r') as f:
+            examples = yaml.safe_load(f)
+        return examples
+    except FileNotFoundError:
+        print(f"Warning: Examples file {examples_file} not found. Using default examples.")
+        return None
+    except yaml.YAMLError as e:
+        print(f"Warning: Error parsing examples file {examples_file}: {e}. Using default examples.")
+        return None
+
+def get_field_example(field_name, field_type, examples_config):
+    """Get the appropriate example for a field based on its type and name."""
+    if not examples_config:
+        return None
+    
+    # Try to get field-specific example first
+    if field_type in ['complex', 'complex_array']:
+        if field_type == 'complex':
+            examples = examples_config.get('field_examples', {}).get('complex_examples', {})
+        else:
+            examples = examples_config.get('field_examples', {}).get('complex_array_examples', {})
+        
+        # Look for field-specific example
+        if field_name in examples:
+            return examples[field_name]['example']
+        
+        # Fall back to generic example
+        default_key = examples_config.get('default_examples', {}).get(field_type)
+        if default_key and default_key in examples:
+            return examples[default_key]['example']
+    
+    elif field_type == 'list':
+        examples = examples_config.get('field_examples', {}).get('list_examples', {})
+        default_key = examples_config.get('default_examples', {}).get('list')
+        if default_key and default_key in examples:
+            return examples[default_key]['example']
+    
+    elif field_type == 'number':
+        examples = examples_config.get('field_examples', {}).get('simple_examples', {})
+        default_key = examples_config.get('default_examples', {}).get('number')
+        if default_key and default_key in examples:
+            return examples[default_key]['example']
+    
+    elif field_type == 'string':
+        examples = examples_config.get('field_examples', {}).get('simple_examples', {})
+        default_key = examples_config.get('default_examples', {}).get('string')
+        if default_key and default_key in examples:
+            return examples[default_key]['example']
+    
+    return None
+
 def extract_with_wildcards(data, paths):
     """Extract text from nested paths in data, with support for wildcards."""
     extracted_texts = []
@@ -74,6 +128,35 @@ def extract_structured_data(text, field_config, existing_data=None):
     field_type = field_config['type']
     field_description = field_config.get('description', '')
     
+    # Load examples configuration
+    examples_config = load_field_examples()
+    
+    # Build exclusion list if needed (for all field types)
+    exclusion_text = ""
+    exclude_fields = field_config.get('exclude_fields', [])
+    if exclude_fields and existing_data:
+        exclusions = []
+        for exclude_field in exclude_fields:
+            # Handle dot notation for nested fields
+            if '.' in exclude_field and existing_data:
+                parts = exclude_field.split('.')
+                if parts[0] in existing_data:
+                    nested_data = existing_data[parts[0]]
+                    if isinstance(nested_data, list):
+                        for item in nested_data:
+                            if parts[1] in item:
+                                exclusions.append(item[parts[1]])
+            # Handle direct fields
+            elif exclude_field in existing_data and existing_data[exclude_field]:
+                if isinstance(existing_data[exclude_field], list):
+                    exclusions.extend(existing_data[exclude_field])
+                else:
+                    exclusions.append(str(existing_data[exclude_field]))
+        
+        if exclusions:
+            exclusion_list = '", "'.join(str(item) for item in exclusions)
+            exclusion_text = f'\n\nExclude the following items that have already been identified: "{exclusion_list}".'
+    
     # Handle complex type with subfields (structured relationships)
     if field_type in ['complex', 'complex_array']:
         subfields = field_config.get('subfields', [])
@@ -85,13 +168,13 @@ def extract_structured_data(text, field_config, existing_data=None):
         if field_type == 'complex_array':
             # This is for a nested array inside a complex type
             prompt = (
-                f"Extract information about {field_name} from the following text. {field_description}\n\n"
+                f"Extract information about {field_name} from the following text. {field_description}{exclusion_text}\n\n"
                 f"Text: {text}\n\n"
                 "Return a JSON array of objects, where each object represents one instance with the following properties:\n"
             )
         else:
             prompt = (
-                f"Extract structured information from the following text about {field_name}. {field_description}\n\n"
+                f"Extract structured information from the following text about {field_name}. {field_description}{exclusion_text}\n\n"
                 f"Text: {text}\n\n"
                 "Return a JSON array of objects, where each object represents a distinct item with the following properties:\n"
             )
@@ -116,196 +199,49 @@ def extract_structured_data(text, field_config, existing_data=None):
             else:
                 prompt += f"- {subfield_name}: {subfield_desc} ({subfield_type})\n"
         
-        # Build a thorough example
-        example = {}
-        for subfield in subfields:
-            if subfield['type'] == 'complex_array':
-                # Create an example of a nested array
-                nested_example = {}
-                for nested_field in subfield.get('subfields', []):
-                    if nested_field['type'] == 'list':
-                        if nested_field.get('number', False):
-                            nested_example[nested_field['field']] = [1.0, 2.5, 5.0]
-                        else:
-                            nested_example[nested_field['field']] = ["example1", "example2"]
-                    elif nested_field['type'] == 'number':
-                        nested_example[nested_field['field']] = 5.2
-                    else:
-                        nested_example[nested_field['field']] = "example value"
-                
-                example[subfield['field']] = [nested_example]
-            elif subfield['type'] == 'list':
-                if subfield.get('number', False):
-                    example[subfield['field']] = [1.0, 2.5, 5.0]
-                else:
-                    example[subfield['field']] = ["example1", "example2"]
-            elif subfield['type'] == 'number':
-                example[subfield['field']] = 5.2
-            else:
-                example[subfield['field']] = "example value"
+        # Get example from configuration instead of hardcoding
+        example = get_field_example(field_name, field_type, examples_config)
         
-        # Provide a more specific example for different field types
-        if field_type == 'complex_array':
-            prompt += f"\nExample output format: {json.dumps([example])}"
+        # Provide example output format
+        if example:
+            prompt += f"\nExample output format: {json.dumps(example)}"
         else:
-            # For pesticides_data, provide a more specific example
-            if field_name == 'pesticides_data':
-                detailed_example = [
-                    {
-                        "name": "imidacloprid",
-                        "exposure_methods": [
-                            {
-                                "method": "oral",
-                                "doses": [0.1, 1.0, 10.0],
-                                "dose_units": "ng/bee",
-                                "exposure_duration": [48, 72],
-                                "exposure_units": "hours"
-                            },
-                            {
-                                "method": "contact",
-                                "doses": [0.5, 5.0],
-                                "dose_units": "μg/bee",
-                                "exposure_duration": [24],
-                                "exposure_units": "hours"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "clothianidin",
-                        "exposure_methods": [
-                            {
-                                "method": "oral",
-                                "doses": [0.2, 2.0],
-                                "dose_units": "ng/bee",
-                                "exposure_duration": [48],
-                                "exposure_units": "hours"
-                            }
-                        ]
-                    }
-                ]
-                prompt += f"\nExample output format for pesticides with multiple exposure methods: {json.dumps(detailed_example)}"
-            elif field_name == 'endpoints':
-                # Add a detailed, realistic example for endpoints
-                endpoints_example = [
-                    {
-                        "endpoint": "mortality",
-                        "effect_direction": {
-                            "significance": "significant",
-                            "direction": "negative"
-                        },
-                        "sample_size": {
-                            "num": 30,
-                            "units": "bees"
-                        },
-                        "measurement_type": {
-                            "central_tendency_type": "mean",
-                            "variability_type": "standard error"
-                        },
-                        "measurements": [
-                            {
-                                "treatment": "control",
-                                "central_tendency": 5.2,
-                                "variability": 1.1,
-                                "units": "percent"
-                            },
-                            {
-                                "treatment": "imidacloprid 5ng/bee",
-                                "central_tendency": 38.7,
-                                "variability": 3.2,
-                                "units": "percent"
-                            }
-                        ],
-                        "pesticide": "imidacloprid",
-                        "exposure_method": "oral"
-                    },
-                    {
-                        "endpoint": "learning performance",
-                        "effect_direction": {
-                            "significance": "significant",
-                            "direction": "negative"
-                        },
-                        "sample_size": {
-                            "num": 25,
-                            "units": "bees per treatment"
-                        },
-                        "measurement_type": {
-                            "central_tendency_type": "mean",
-                            "variability_type": "standard deviation"
-                        },
-                        "measurements": [
-                            {
-                                "treatment": "control",
-                                "central_tendency": 87.3,
-                                "variability": 5.6,
-                                "units": "percent correct responses"
-                            },
-                            {
-                                "treatment": "clothianidin 0.2ng/bee",
-                                "central_tendency": 62.1,
-                                "variability": 7.9,
-                                "units": "percent correct responses"
-                            }
-                        ],
-                        "pesticide": "clothianidin",
-                        "exposure_method": "oral"
-                    }
-                ]
-                prompt += f"\nExample output format for detailed endpoint measurements: {json.dumps(endpoints_example, indent=2)}"
-            else:
-                prompt += f"\nExample output format: {json.dumps([example])}"
-                
-                # Build exclusion list if needed
-                exclude_fields = field_config.get('exclude_fields', [])
-                if exclude_fields and existing_data:
-                    exclusions = []
-                    for exclude_field in exclude_fields:
-                        # Handle dot notation for nested fields
-                        if '.' in exclude_field and existing_data:
-                            parts = exclude_field.split('.')
-                            if parts[0] in existing_data:
-                                nested_data = existing_data[parts[0]]
-                                if isinstance(nested_data, list):
-                                    for item in nested_data:
-                                        if parts[1] in item:
-                                            exclusions.append(item[parts[1]])
-                        # Handle direct fields
-                        elif exclude_field in existing_data and existing_data[exclude_field]:
-                            if isinstance(existing_data[exclude_field], list):
-                                exclusions.extend(existing_data[exclude_field])
+            # Fallback: build a basic example from subfields
+            fallback_example = {}
+            for subfield in subfields:
+                if subfield['type'] == 'complex_array':
+                    # Create an example of a nested array
+                    nested_example = {}
+                    for nested_field in subfield.get('subfields', []):
+                        if nested_field['type'] == 'list':
+                            if nested_field.get('number', False):
+                                nested_example[nested_field['field']] = [1.0, 2.5, 5.0]
                             else:
-                                exclusions.append(str(existing_data[exclude_field]))
+                                nested_example[nested_field['field']] = ["example1", "example2"]
+                        elif nested_field['type'] == 'number':
+                            nested_example[nested_field['field']] = 5.2
+                        else:
+                            nested_example[nested_field['field']] = "example value"
                     
-                    if exclusions:
-                        exclusion_list = '", "'.join(str(item) for item in exclusions)
-                        prompt += f'\n\nExclude the following items that have already been identified: "{exclusion_list}".'
+                    fallback_example[subfield['field']] = [nested_example]
+                elif subfield['type'] == 'list':
+                    if subfield.get('number', False):
+                        fallback_example[subfield['field']] = [1.0, 2.5, 5.0]
+                    else:
+                        fallback_example[subfield['field']] = ["example1", "example2"]
+                elif subfield['type'] == 'number':
+                    fallback_example[subfield['field']] = 5.2
+                else:
+                    fallback_example[subfield['field']] = "example value"
+            
+            if field_type == 'complex_array':
+                prompt += f"\nExample output format: {json.dumps([fallback_example])}"
+            else:
+                prompt += f"\nExample output format: {json.dumps([fallback_example])}"
             
     else:
         # Original logic for simple types
         is_number = field_config.get('number', False)
-        exclude_fields = field_config.get('exclude_fields', [])
-        
-        # Build the exclusion information
-        exclusion_text = ""
-        if exclude_fields and existing_data:
-            exclusions = []
-            for exclude_field in exclude_fields:
-                if '.' in exclude_field and existing_data:
-                    parts = exclude_field.split('.')
-                    if parts[0] in existing_data:
-                        nested_data = existing_data[parts[0]]
-                        if isinstance(nested_data, list):
-                            for item in nested_data:
-                                if parts[1] in item:
-                                    exclusions.append(item[parts[1]])
-                elif exclude_field in existing_data and existing_data[exclude_field]:
-                    if isinstance(existing_data[exclude_field], list):
-                        exclusions.extend(existing_data[exclude_field])
-                    else:
-                        exclusions.append(str(existing_data[exclude_field]))
-            
-            if exclusions:
-                exclusion_list = '", "'.join(str(item) for item in exclusions)
-                exclusion_text = f' Exclude the following items that have already been identified: "{exclusion_list}".'
         
         prompt = (
             f"Extract the {field_name} from the following text. {field_description}{exclusion_text}\n\n"
@@ -388,11 +324,6 @@ def process_complex_field(data, field_config, parent_text=None, existing_data=No
     field_name = field_config['field']
     subfields = field_config.get('subfields', [])
     
-    # Special handling for endpoints
-    if field_name == 'endpoints':
-        # Use the specialized endpoint processor
-        return process_endpoints(data, field_config, parent_text)
-    
     # Extract data using paths defined in this field
     field_paths = field_config.get('paths', [])
     extracted_text = ""
@@ -411,131 +342,8 @@ def process_complex_field(data, field_config, parent_text=None, existing_data=No
     # If no text was found but we have subfields, create an empty structure
     return {} if field_config['type'] == 'complex' else []
 
-def process_endpoints_independently(data, field_config, parent_data=None):
-    """Process endpoints as a separate top-level entity."""
-    endpoints = []
-    
-    print(f"Starting endpoint processing for paper {parent_data.get('PaperID', 'Unknown')}")
-    
-    # Navigate to the correct endpoint list structure
-    # It should be under QUESTIONS -> endpoint -> list
-    if "QUESTIONS" in data and "endpoint" in data["QUESTIONS"] and "list" in data["QUESTIONS"]["endpoint"]:
-        endpoint_list = data["QUESTIONS"]["endpoint"]["list"]
-        print(f"Found {len(endpoint_list)} endpoints to process")
-        
-        # Get paper ID for reference
-        paper_id = parent_data.get("PaperID") if parent_data else "Unknown"
-        
-        # Record pesticides for potential cross-referencing
-        pesticides = []
-        if "pesticides_data" in parent_data and parent_data["pesticides_data"]:
-            for pesticide in parent_data["pesticides_data"]:
-                if "name" in pesticide:
-                    pesticides.append(pesticide["name"])
-        
-        # Iterate through each endpoint
-        for endpoint_name, endpoint_data in endpoint_list.items():
-            print(f"Processing endpoint: {endpoint_name}")
-            # Check if there's a results section with answer/reason
-            if "results" in endpoint_data:
-                # Gather text from this specific endpoint
-                result_data = endpoint_data["results"]
-                texts = []
-                
-                if "answer" in result_data:
-                    texts.append(result_data["answer"])
-                if "reason" in result_data:
-                    texts.append(result_data["reason"])
-                
-                # If we found text for this endpoint
-                if texts:
-                    endpoint_text = " ".join(texts)
-                    
-                    # Create base endpoint object with paper ID and name
-                    base_endpoint = {
-                        "paper_id": paper_id,
-                        "endpoint": endpoint_name
-                    }
-                    
-                    # Extract endpoint details using our schema
-                    subfields = field_config.get('subfields', [])
-                    prompt = (
-                        f"Extract details about the endpoint '{endpoint_name}' from this text. Include sample size, effect direction, "
-                        f"central tendency (mean), variability, and effect units if available.\n\n"
-                        f"Text: {endpoint_text}\n\n"
-                        "Return a JSON object with these properties:\n"
-                    )
-                    
-                    for subfield in subfields:
-                        sf_name = subfield['field']
-                        sf_desc = subfield.get('description', '')
-                        prompt += f"- {sf_name}: {sf_desc}\n"
-                    
-                    # Call the OpenAI API
-                    try:
-                        print(f"  Calling OpenAI API for endpoint '{endpoint_name}'")
-                        response = client.chat.completions.create(
-                            model="gpt-4-turbo-preview",
-                            temperature=0.0,
-                            messages=[
-                                {"role": "system", "content": "You are a helpful research assistant that extracts structured information from text."},
-                                {"role": "user", "content": prompt}
-                            ]
-                        )
-                        
-                        # Parse the response
-                        result_text = response.choices[0].message.content.strip()
-                        
-                        # Extract the JSON part from the response
-                        import re
-                        json_match = re.search(r'```json\s*(.*?)\s*```', result_text, re.DOTALL)
-                        if json_match:
-                            result_text = json_match.group(1)
-                        else:
-                            # Try to find JSON without code block
-                            json_match = re.search(r'(\{.*\})', result_text, re.DOTALL)
-                            if json_match:
-                                result_text = json_match.group(1)
-                        
-                        try:
-                            # Parse the JSON
-                            endpoint_info = json.loads(result_text)
-                            print(f"  Successfully extracted data for endpoint '{endpoint_name}'")
-                            
-                            # Combine with base endpoint data
-                            complete_endpoint = base_endpoint.copy()
-                            
-                            # Add extracted fields to the endpoint
-                            for key, value in endpoint_info.items():
-                                complete_endpoint[key] = value
-                            
-                            # Try to infer pesticide or stressor if it's in the endpoint name but not extracted
-                            if ('pesticide' not in complete_endpoint or not complete_endpoint['pesticide']) and pesticides:
-                                for pesticide in pesticides:
-                                    if pesticide.lower() in endpoint_name.lower():
-                                        complete_endpoint['pesticide'] = pesticide
-                                        break
-                            
-                            endpoints.append(complete_endpoint)
-                        except json.JSONDecodeError as e:
-                            # Fallback to just using the name and paper ID
-                            print(f"  Failed to parse endpoint JSON for {endpoint_name} in {paper_id}: {e}")
-                            print(f"  Response text: {result_text}")
-                            endpoints.append(base_endpoint)
-                    
-                    except Exception as e:
-                        print(f"  Error processing endpoint {endpoint_name}: {str(e)}")
-                        endpoints.append(base_endpoint)
-            else:
-                print(f"  No results section found for endpoint: {endpoint_name}")
-    else:
-        print(f"No endpoint list structure found in data for paper {parent_data.get('PaperID', 'Unknown')}")
-    
-    print(f"Completed endpoint processing, found {len(endpoints)} endpoints")
-    return endpoints
-
 def process_papers(start_folder, end_folder, config_file="../schema_config.yaml", 
-                   process_pesticides=True, process_endpoints=True):
+                   process_pesticides=True):
     """
     Process papers using the schema configuration.
     
@@ -544,10 +352,9 @@ def process_papers(start_folder, end_folder, config_file="../schema_config.yaml"
         end_folder: Last folder number to process
         config_file: Path to schema configuration file
         process_pesticides: Whether to process pesticide data
-        process_endpoints: Whether to process endpoint data
     
     Returns:
-        Tuple of (pesticide_results, endpoint_results)
+        List of pesticide results
     """
     # Load the schema configuration
     config = load_schema_config(config_file)
@@ -556,7 +363,6 @@ def process_papers(start_folder, end_folder, config_file="../schema_config.yaml"
     
     # Initialize results containers
     pesticide_results = []
-    endpoint_results = []
     
     for i in range(start_folder, end_folder + 1):
         folder_name = f"{i:03d}"  # Convert to three-digit format
@@ -575,13 +381,9 @@ def process_papers(start_folder, end_folder, config_file="../schema_config.yaml"
                 if process_pesticides:
                     structured_row = {"PaperID": paper_id}
                     
-                    # Process each field defined in the output schema except endpoints
+                    # Process each field defined in the output schema
                     for field_config in output_schema:
                         field_name = field_config['field']
-                        
-                        # Skip endpoints - they're handled separately
-                        if field_name == 'endpoints':
-                            continue
                         
                         # Get the mapping for this field
                         mapping = data_mappings.get(field_name, {})
@@ -609,29 +411,8 @@ def process_papers(start_folder, end_folder, config_file="../schema_config.yaml"
                     
                     # Add to pesticide results
                     pesticide_results.append(structured_row)
-                
-                # Only process endpoints if requested
-                if process_endpoints:
-                    # Need paper_id for endpoint processing
-                    base_data = {"PaperID": paper_id}
-                    
-                    # If we already processed pesticides, use that data for context
-                    if process_pesticides:
-                        base_data = structured_row
-                    
-                    # Now process endpoints separately
-                    for field_config in output_schema:
-                        if field_config['field'] == 'endpoints':
-                            paper_endpoints = process_endpoints_independently(data, field_config, base_data)
-                            
-                            # Add paper_id to each endpoint if not already present
-                            for endpoint in paper_endpoints:
-                                if 'paper_id' not in endpoint:
-                                    endpoint['paper_id'] = paper_id
-                            
-                            endpoint_results.extend(paper_endpoints)
     
-    return pesticide_results, endpoint_results
+    return pesticide_results
 
 def clean_text_for_csv(text):
     """Clean text for CSV output by removing brackets, quotes, and transliterating Unicode characters."""
@@ -767,69 +548,39 @@ def flatten_pesticide_data(pesticide_results):
 if __name__ == "__main__":
     # Check if command line arguments are provided
     if len(sys.argv) > 1:
-        # Use argparse as defined above
-        parser = argparse.ArgumentParser(description="Process paper data to extract pesticides and/or endpoints.")
+        # Use argparse for command line processing
+        parser = argparse.ArgumentParser(description="Process paper data to extract pesticide information.")
         parser.add_argument("--start", type=int, required=True, help="Start folder number (e.g., 1 for 001)")
         parser.add_argument("--end", type=int, required=True, help="End folder number (e.g., 4 for 004)")
         parser.add_argument("--config", type=str, default="../schema_config.yaml", help="Path to config file")
-        parser.add_argument("--pesticides", action="store_true", help="Process pesticide data")
-        parser.add_argument("--endpoints", action="store_true", help="Process endpoint data")
-        parser.add_argument("--all", action="store_true", help="Process both pesticide and endpoint data")
         
         args = parser.parse_args()
         
-        # Determine what to process
-        process_pesticides = args.pesticides or args.all
-        process_endpoints = args.endpoints or args.all
-        
-        # If neither is specified, process both
-        if not process_pesticides and not process_endpoints:
-            process_pesticides = True
-            process_endpoints = True
-            
-        # Process the papers selectively
-        pesticide_results, endpoint_results = process_papers(
+        # Process the papers
+        pesticide_results = process_papers(
             args.start, 
             args.end, 
             args.config,
-            process_pesticides=process_pesticides,
-            process_endpoints=process_endpoints
+            process_pesticides=True
         )
         
-        # Save the results as appropriate
-        if process_pesticides and pesticide_results:
+        # Save the results
+        if pesticide_results:
             save_data(pesticide_results, "pesticides", flatten_func=flatten_pesticide_data)
-        
-        if process_endpoints and endpoint_results:
-            save_data(endpoint_results, "endpoints")
     else:
         # Use interactive mode
         start_folder = int(input("Enter start folder number (e.g., 1 for 001): "))
         end_folder = int(input("Enter end folder number (e.g., 4 for 004): "))
-        config_file = input("Enter path to config file (default: ../schema_config.yaml): ") or "schema_config.yaml"
+        config_file = input("Enter path to config file (default: ../schema_config.yaml): ") or "../schema_config.yaml"
         
-        # Ask which types to process
-        print("What would you like to process?")
-        print("1. Pesticides only")
-        print("2. Endpoints only")
-        print("3. Both pesticides and endpoints")
-        choice = input("Enter your choice (1-3): ")
-        
-        process_pesticides = choice in ['1', '3']
-        process_endpoints = choice in ['2', '3']
-        
-        # Process the papers selectively
-        pesticide_results, endpoint_results = process_papers(
+        # Process the papers
+        pesticide_results = process_papers(
             start_folder, 
             end_folder, 
             config_file,
-            process_pesticides=process_pesticides,
-            process_endpoints=process_endpoints
+            process_pesticides=True
         )
         
-        # Save the results as appropriate
-        if process_pesticides and pesticide_results:
+        # Save the results
+        if pesticide_results:
             save_data(pesticide_results, "pesticides", flatten_func=flatten_pesticide_data)
-        
-        if process_endpoints and endpoint_results:
-            save_data(endpoint_results, "endpoints")

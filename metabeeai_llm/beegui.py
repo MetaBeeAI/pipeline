@@ -920,19 +920,11 @@ class MainWindow(QMainWindow):
                 self.questions_map[key] = q_val
                 self.question_list.addItem(key)
             elif isinstance(q_val, dict):
-                if q_key == "endpoint" and "list" in q_val:
-                    endpoints = q_val["list"]
-                    for ep_key, ep_val in endpoints.items():
-                        if isinstance(ep_val, dict) and "results" in ep_val:
-                            key = f"{q_key}: {ep_key}"
-                            self.questions_map[key] = ep_val["results"]
-                            self.question_list.addItem(key)
-                else:
-                    for sub_key, sub_val in q_val.items():
-                        if isinstance(sub_val, dict) and "reason" in sub_val and "answer" in sub_val:
-                            key = f"{q_key}.{sub_key}"
-                            self.questions_map[key] = sub_val
-                            self.question_list.addItem(key)
+                for sub_key, sub_val in q_val.items():
+                    if isinstance(sub_val, dict) and "reason" in sub_val and "answer" in sub_val:
+                        key = f"{q_key}.{sub_key}"
+                        self.questions_map[key] = sub_val
+                        self.question_list.addItem(key)
 
     def on_question_selected(self, item):
         qid = item.text()

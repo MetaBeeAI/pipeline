@@ -48,74 +48,6 @@ output_schema:
     description: "List of additional stressors used in the study"
     exclude_fields: ["pesticides_data.name"]
     csv_include_field: false
-    
-  # Enhanced endpoints field with improved structure
-  - field: endpoints
-    type: complex_array
-    description: "Endpoints or variables measured for each study"
-    csv_include_field: false
-    subfields:
-      - field: endpoint
-        type: string
-        description: "Endpoint tested (e.g., mortality, mobility, learning performance)"
-      
-      - field: effect_direction
-        type: complex
-        description: "Direction and significance of the effect"
-        subfields:
-          - field: significance
-            type: string
-            description: "Statistical significance of the effect (significant, not significant, or not stated)"
-          - field: direction
-            type: string
-            description: "Direction of the effect (positive, negative, none, not stated)"
-      
-      - field: sample_size
-        type: complex
-        description: "Sample size information"
-        subfields:
-          - field: num
-            type: number
-            description: "Numerical value of the sample size"
-          - field: units
-            type: string
-            description: "Units of the sample size (e.g., bees, hives, colonies, cells, brains, groups)"
-      
-      - field: measurement_type
-        type: complex
-        description: "Type of statistical measurements used"
-        subfields:
-          - field: central_tendency_type
-            type: string
-            description: "Type of central tendency measure used (e.g., mean, median, geometric mean)"
-          - field: variability_type
-            type: string
-            description: "Type of variability measure used (e.g., standard deviation, standard error, confidence interval)"
-      
-      - field: measurements
-        type: complex_array
-        description: "Actual measurements broken down by treatment"
-        subfields:
-          - field: treatment
-            type: string
-            description: "Treatment group description (e.g., control, pesticide name + dose)"
-          - field: central_tendency
-            type: number
-            description: "Measured central tendency value"
-          - field: variability
-            type: number
-            description: "Measured variability value"
-          - field: units
-            type: string
-            description: "Units for the measurements"
-      
-      - field: pesticide
-        type: string
-        description: "Related pesticide if known"
-      
-      - field: exposure_method
-        type: string
-        description: "Related exposure method if known"
 
 output_formats:
   - csv
@@ -140,7 +72,4 @@ data_mappings:
     category: "ADDITIONAL STRESSORS"
     question: "What additional stressors were used?"
     
-  # No specific paths for endpoints since we'll use direct access
-  endpoints:
-    category: "ENDPOINTS"
-    question: "Extract all endpoints measured and their corresponding results including sample sizes, effect directions, significance, and detailed measurements broken down by treatment groups."
+  
