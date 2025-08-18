@@ -4,92 +4,83 @@ This module handles the merging of LLM-generated answers with human reviewer ans
 
 ## Overview
 
-The `merge-answers.py` script combines:
-1. **LLM Answers**: Extracted from `papers/{paper_id}/answers.json` files
-2. **Reviewer Answers**: From either local `answers_extended.json` files or external reviewer databases
+The `merge_answers.py` script combines:
+1. **LLM Answers**: Extracted from either the same folder as `answers_extended.json` or from a separate data directory
+2. **Reviewer Answers**: From `answers_extended.json` files in a nested directory structure
 
 ## Data Sources
 
 ### LLM Answers
-- **Location**: `papers/{paper_id}/answers.json` (within the configured data directory)
-- **Format**: JSON files containing LLM-generated responses to questions
-- **Structure**: Nested question paths (e.g., `bee_and_pesticides.bee_species`)
+The script searches for LLM answers in two possible locations:
+1. **Same folder as answers_extended.json**: `{reviewer_db}/{reviewer_initials}/{paper_id}/answers.json`
+2. **Separate data directory**: `{data_dir}/{paper_id}/answers.json`
+
+**Format**: JSON files containing LLM-generated responses to questions
+**Structure**: Nested question paths (e.g., `bee_and_pesticides.bee_species`)
 
 ### Reviewer Answers
+- **Location**: `{reviewer_db}/{reviewer_initials}/{paper_id}/answers_extended.json`
+- **Format**: JSON files containing human reviewer annotations with ratings
+- **Reviewer Names**: Extracted from folder names (e.g., "AB", "HS", "NN")
+- **Use Case**: Multiple reviewers working independently in separate folders
 
-#### Option 1: Local answers_extended.json Files
-- **Location**: `papers/{paper_id}/answers_extended.json` (within the configured data directory)
-- **Format**: JSON files containing human reviewer annotations
-- **Reviewer Names**: Set to "NA" (not applicable for local files)
-- **Use Case**: Single reviewer working directly in the main data folder
+## Expected Folder Structure
 
-#### Option 2: External Reviewer Database
-- **Location**: User-specified path to reviewer database
-- **Format**: Hierarchical folder structure with reviewer initials
-- **Reviewer Names**: Extracted from folder names (e.g., "JD", "SM")
-- **Use Case**: Multiple reviewers working independently
+The script expects a nested directory structure where each reviewer has their own folder:
 
-## Expected Folder Structures
-
-### For Local answers_extended.json (Default)
 ```
-data/
-├── papers/
-│   ├── 001/
-│   │   ├── 001_main.pdf
-│   │   ├── answers.json              # LLM answers
-│   │   ├── answers_extended.json     # Reviewer answers
+reviewer_database/
+├── AB/                              # Reviewer initials (Alice Brown)
+│   ├── 729/
+│   │   ├── 729_main.pdf
+│   │   ├── answers.json             # LLM answers (optional)
+│   │   ├── answers_extended.json    # Reviewer answers with ratings
 │   │   └── pages/
-│   ├── 002/
-│   │   ├── 002_main.pdf
+│   ├── 731/
+│   │   ├── 731_main.pdf
 │   │   ├── answers.json
 │   │   ├── answers_extended.json
 │   │   └── pages/
 │   └── ...
-└── included_papers.csv
-```
-
-### For External Reviewer Database
-```
-reviewer_database/
-├── JD/                              # Reviewer initials (John Doe)
-│   ├── 001/
-│   │   ├── 001_main.pdf
-│   │   ├── answers.json             # Reviewer answers
-│   │   └── pages/
-│   ├── 002/
-│   │   ├── 002_main.pdf
+├── HS/                              # Reviewer initials (Henry Smith)
+│   ├── 729/
+│   │   ├── 729_main.pdf
 │   │   ├── answers.json
+│   │   ├── answers_extended.json
 │   │   └── pages/
-│   └── ...
-├── SM/                              # Reviewer initials (Sarah Miller)
-│   ├── 001/
-│   │   ├── 001_main.pdf
+│   ├── 731/
+│   │   ├── 731_main.pdf
 │   │   ├── answers.json
-│   │   └── pages/
-│   ├── 002/
-│   │   ├── 002_main.pdf
-│   │   ├── answers.json
+│   │   ├── answers_extended.json
 │   │   └── pages/
 │   └── ...
 └── ...
 ```
 
+**Note**: The same paper ID can appear in multiple reviewer folders, allowing for multiple independent reviews.
+
 ## Usage
 
-### Basic Usage (Local answers_extended.json)
-```bash
-python merge-answers.py
-```
+The script requires two main parameters:
 
-### Using External Reviewer Database
 ```bash
-python merge-answers.py --reviewer-db /path/to/reviewer/database
+python merge_answers.py \
+  --reviewer-db /path/to/reviewer/database \
+  --data-dir /path/to/data/directory
 ```
 
 ### Command Line Options
-- `--use-extended`: Use local answers_extended.json files (default: True)
-- `--reviewer-db PATH`: Path to external reviewer database (overrides --use-extended)
+- `--reviewer-db PATH`: **Required** - Path to reviewer database folder containing reviewer initials subfolders
+- `--data-dir PATH`: **Required** - Path to data directory containing paper folders with LLM answers
+- `--output-dir PATH`: **Optional** - Output directory for merged JSON files (default: `final_merged_data`)
+
+### Example
+```bash
+python merge_answers.py \
+  --reviewer-db "/Users/user/OneDrive/Desktop/MetaBeeAI/LLM_reviewer_output_Aug2025" \
+  --data-dir "/Users/user/Documents/MetaBeeAI/pipeline/data/papers" \
+  --output-dir "final_merged_data"
+```
 
 ## Output
 
@@ -108,42 +99,58 @@ Each merged file contains data for all papers with the following structure:
 
 ```json
 {
-  "001": {
+  "729": {
     "answer_llm": "LLM-generated answer text",
     "answer_rev1": "Reviewer answer text",
-    "rev1": "Reviewer initials or 'NA'"
+    "rev1": "AB",
+    "rev1_rating": 10
   },
-  "002": {
+  "731": {
     "answer_llm": "LLM-generated answer text",
     "answer_rev1": "Reviewer answer text",
-    "rev1": "Reviewer initials or 'NA'"
+    "rev1": "AB",
+    "rev1_rating": 8,
+    "answer_rev2": "Alternative reviewer answer text",
+    "rev2": "HS",
+    "rev2_rating": 9
   }
 }
 ```
 
+**Note**: Papers reviewed by multiple reviewers will have `rev2`, `rev3`, etc. entries automatically added.
+
 ## Workflow for Multiple Reviewers
 
 ### Step 1: Set Up Reviewer Folders
-1. Create a main "reviewer" folder
-2. Create subfolders with reviewer initials (e.g., "JD", "SM", "AB")
+1. Create a main reviewer database folder
+2. Create subfolders with reviewer initials (e.g., "AB", "HS", "NN")
 3. Each reviewer copies the full paper structure into their folder
 
 ### Step 2: Review Process
 1. Each reviewer works independently in their assigned folder
-2. Reviewers use the same folder structure: `{paper_id}/answers.json`
-3. All reviewers work on the same set of papers
+2. Reviewers create `answers_extended.json` files with their answers and ratings
+3. Optionally, reviewers can include `answers.json` files in the same folders
+4. All reviewers work on the same set of papers
 
 ### Step 3: Merge Data
 ```bash
-python merge-answers.py --reviewer-db /path/to/reviewer/folder
+python merge_answers.py \
+  --reviewer-db /path/to/reviewer/database \
+  --data-dir /path/to/data/directory
 ```
+
+### Step 4: Review Output
+The script automatically:
+- Combines multiple reviewer answers for the same paper
+- Preserves all reviewer ratings
+- Creates separate output files for each question type
 
 ## Configuration
 
-The script automatically uses the centralized configuration system:
-- **Data Directory**: Set via `METABEEAI_DATA_DIR` environment variable
-- **Default**: `data/papers` if no environment variable is set
-- **Output**: Saved to `{data_dir}/final_merged_data/`
+The script requires explicit paths to be specified:
+- **Reviewer Database**: Path to folder containing reviewer initials subfolders
+- **Data Directory**: Path to folder containing paper folders with LLM answers
+- **Output Directory**: Where merged JSON files will be saved (default: `final_merged_data`)
 
 ## Error Handling
 
@@ -155,6 +162,5 @@ The script includes robust error handling:
 
 ## Dependencies
 
-- `config.py` (centralized configuration)
-- Standard Python libraries: `os`, `json`, `argparse`, `pathlib`
-- Environment variable support via `python-dotenv`
+- Standard Python libraries: `os`, `json`, `argparse`, `pathlib`, `collections`
+- No external dependencies required
