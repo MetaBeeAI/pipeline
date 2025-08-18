@@ -164,3 +164,179 @@ The script includes robust error handling:
 
 - Standard Python libraries: `os`, `json`, `argparse`, `pathlib`, `collections`
 - No external dependencies required
+
+---
+
+# Reviewer Rating Analysis
+
+The `reviewer_rating.py` script provides comprehensive analysis of reviewer ratings and agreement across different question types and individual reviewers.
+
+## Overview
+
+This script analyzes the merged reviewer data to generate:
+1. **Question-wise average ratings** with standard errors
+2. **Reviewer agreement metrics** (differences between rev1 and rev2 ratings)
+3. **Individual reviewer performance** statistics
+
+## Features
+
+### Data Filtering
+- Automatically filters out invalid ratings (rating = 0)
+- Only processes papers with valid reviewer ratings (1-10 scale)
+- Handles missing or incomplete data gracefully
+
+### Statistical Analysis
+- Calculates mean ratings with standard errors
+- Computes reviewer agreement as absolute differences between ratings
+- Aggregates individual reviewer performance across all questions
+
+### Visualization
+- Generates publication-quality bar charts with error bars
+- Color-coded plots for different analysis types
+- Automatic label placement and formatting
+
+## Usage
+
+### Basic Usage
+```bash
+cd /path/to/pipeline
+python llm_benchmarking/reviewer_rating.py
+```
+
+### Requirements
+- Must be run from the main `pipeline` directory
+- Requires `final_merged_data/` folder with merged JSON files
+- Automatically creates `llm_benchmarking/analyses/` output directory
+
+## Output Files
+
+The script generates three PNG files in `llm_benchmarking/analyses/`:
+
+### 1. `avg-rev-ratings.png`
+**Question-wise Average Ratings**
+- X-axis: Question types (bee_species, pesticides, etc.)
+- Y-axis: Average rating scores (1-10 scale)
+- Error bars: Standard errors
+- Color: Sky blue bars with navy edges
+
+### 2. `avg-rev-agreement.png`
+**Reviewer Agreement Analysis**
+- X-axis: Question types
+- Y-axis: Average rating differences (lower = better agreement)
+- Error bars: Standard errors
+- Color: Light coral bars with dark red edges
+- **Note**: Lower values indicate better agreement between reviewers
+
+### 3. `avg-score-per-reviewer.png`
+**Individual Reviewer Performance**
+- X-axis: Reviewer initials (AJ, LH, EA, etc.)
+- Y-axis: Average rating scores across all questions
+- Error bars: Standard errors
+- Color: Light green bars with dark green edges
+- **Note**: Reviewers are sorted by average rating (highest to lowest)
+
+## Data Structure Requirements
+
+The script expects merged JSON files with the following structure:
+
+```json
+{
+  "paper_id": {
+    "answer_llm": "LLM-generated answer",
+    "answer_rev1": "Reviewer 1 answer",
+    "rev1": "AJ",
+    "rev1_rating": 10,
+    "answer_rev2": "Reviewer 2 answer",
+    "rev2": "LH",
+    "rev2_rating": 9
+  }
+}
+```
+
+## Statistical Methods
+
+### Rating Calculations
+- **Mean Rating**: Arithmetic mean of all valid ratings (1-10)
+- **Standard Error**: `σ/√n` where σ is standard deviation and n is sample size
+- **Sample Count**: Number of valid ratings included in calculations
+
+### Agreement Calculations
+- **Agreement Score**: `|rev1_rating - rev2_rating|` for papers with both reviewers
+- **Lower scores** indicate better agreement between reviewers
+- **Zero difference** means perfect agreement
+
+### Data Filtering
+- **Valid Ratings**: Only ratings 1-10 are included
+- **Invalid Ratings**: Ratings of 0 are automatically excluded
+- **Missing Data**: Papers without complete reviewer data are skipped
+
+## Console Output
+
+The script provides detailed console output including:
+
+```
+Starting Reviewer Rating Analysis...
+Loading merged data...
+Loaded data for 7 question types: ['limitations', 'future_research', 'significance', 'experimental_methodology', 'additional_stressors', 'pesticides', 'bee_species']
+
+Calculating question statistics...
+Processing limitations...
+  - limitations: Avg Rating = 8.45 ± 0.12 (n=156)
+  - limitations: Avg Agreement = 1.23 ± 0.15 (n=78)
+
+Generating plots...
+Question ratings plot saved to: llm_benchmarking/analyses/avg-rev-ratings.png
+Reviewer agreement plot saved to: llm_benchmarking/analyses/avg-rev-agreement.png
+Individual reviewer ratings plot saved to: llm_benchmarking/analyses/avg-score-per-reviewer.png
+
+Analysis complete! All plots have been saved to the analyses directory.
+
+============================================================
+SUMMARY STATISTICS
+============================================================
+
+Question-wise Average Ratings (excluding ratings = 0):
+  limitations              :   8.45 ±  0.12 (n=156)
+  future_research          :   7.89 ±  0.15 (n=142)
+  ...
+
+Question-wise Reviewer Agreement (lower = better):
+  limitations              :   1.23 ±  0.15 (n= 78)
+  future_research          :   1.45 ±  0.18 (n= 71)
+  ...
+
+Individual Reviewer Average Ratings:
+  AJ :   8.67 ±  0.08 (n=245)
+  LH :   8.23 ±  0.09 (n=198)
+  EA :   7.89 ±  0.11 (n=167)
+```
+
+## Dependencies
+
+- **Required**: `numpy`, `matplotlib`, `seaborn`
+- **Optional**: `pandas` (for enhanced data handling)
+- **Built-in**: `json`, `os`, `pathlib`, `typing`
+
+## Error Handling
+
+- **Missing Data**: Gracefully handles incomplete reviewer data
+- **Invalid Ratings**: Automatically filters out ratings of 0
+- **File I/O**: Creates output directories if they don't exist
+- **Plotting**: Handles cases where plotting libraries are unavailable
+
+## Use Cases
+
+### Quality Assessment
+- Evaluate consistency of reviewer ratings across question types
+- Identify questions that may need clarification or revision
+- Assess overall quality of the review process
+
+### Reviewer Performance
+- Compare individual reviewer consistency and rigor
+- Identify potential training needs for specific reviewers
+- Ensure balanced review workload distribution
+
+### Research Validation
+- Validate the robustness of LLM-generated answers
+- Assess inter-rater reliability in the review process
+- Support quality metrics for research publications
