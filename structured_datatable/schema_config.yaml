@@ -1,7 +1,7 @@
 output_schema:
   - field: bee_species
     type: list
-    description: "Bee species studied"
+    description: "Bee species studied, give the full species name with subspecies when available. Only give the common name when the latin name isn't provided."
     csv_include_field: false
   
   - field: pesticides_data
