@@ -49,7 +49,7 @@ output_formats:
 data_mappings:
   bee_species:
     category: "BEE_SPECIES"
-    question: "Extract the most refined bee species names from the text. Return scientific names in standard format (genus species subspecies)."
+    question: "Extract the most refined bee species names from the text as provided. Return scientific names in standard format (genus species subspecies)."
   
   pesticides_data:
     category: "PESTICIDES"

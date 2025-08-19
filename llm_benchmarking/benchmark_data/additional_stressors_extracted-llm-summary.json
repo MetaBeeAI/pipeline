@@ -1,0 +1,19 @@
+{
+  "file_path": "extracted_data/additional_stressors_extracted.json",
+  "method": "llm",
+  "timestamp": "2025-08-19T12:22:11.792534",
+  "total_records": 137,
+  "updated_records": 137,
+  "llm_statistics": {
+    "total_scored_records": 137,
+    "average_score": 0.764,
+    "exact_matches": 97,
+    "exact_matches_percentage": 70.8,
+    "llm_missing_info": 9,
+    "llm_missing_info_percentage": 6.6,
+    "llm_extra_info": 3,
+    "llm_extra_info_percentage": 2.2,
+    "conflicts": 28,
+    "conflicts_percentage": 20.4
+  }
+}

@@ -46,7 +46,7 @@
   },
   "070": {
     "answer_llm": "The pesticides used in the study were thiacloprid and clothianidin. The doses were: thiacloprid at 2.69 \u03bcg/mL, 6.72 \u03bcg/mL, and 26.91 \u03bcg/mL; clothianidin at 0.55 ng/mL, 1.38 ng/mL, and 5.52 ng/mL. The exposure method was oral, and the duration of exposure was 48 hours.",
-    "answer_rev1": "Correct.",
+    "answer_rev1": "",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "The pesticides used in the study were thiacloprid and clothianidin. The doses were: thiacloprid at 2.69 \u03bcg/mL, 6.72 \u03bcg/mL, and 26.91 \u03bcg/mL; clothianidin at 0.55 ng/mL, 1.38 ng/mL, and 5.52 ng/mL. The exposure method was oral, and the duration of exposure was 48 hours.",
@@ -55,7 +55,7 @@
   },
   "071": {
     "answer_llm": "The pesticides used in the study were thiamethoxam and captan. The doses were: thiamethoxam at low (10 ng/ml), medium (70 ng/ml), and high (1440 ng/ml); captan at low (100 ng/ml), medium (500 ng/ml), and high (2000 ng/ml). The exposure method involved feeding the larvae pesticide treatments via diet from the fourth day of larval development until they reached the pupal stage.",
-    "answer_rev1": "Correct - The pesticides used in the study were thiamethoxam and captan. The doses were: thiamethoxam at low (10 ng/ml), medium (70 ng/ml), and high (1440 ng/ml); captan at low (100 ng/ml), medium (500 ng/ml), and high (2000 ng/ml). The exposure method involved feeding the larvae pesticide treatments via diet from the fourth day of larval development until they reached the pupal stage.",
+    "answer_rev1": "The pesticides used in the study were thiamethoxam and captan. The doses were: thiamethoxam at low (10 ng/ml), medium (70 ng/ml), and high (1440 ng/ml); captan at low (100 ng/ml), medium (500 ng/ml), and high (2000 ng/ml). The exposure method involved feeding the larvae pesticide treatments via diet from the fourth day of larval development until they reached the pupal stage.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "The pesticides used in the study were thiamethoxam and captan. The doses were: thiamethoxam at low (10 ng/ml), medium (70 ng/ml), and high (1440 ng/ml); captan at low (100 ng/ml), medium (500 ng/ml), and high (2000 ng/ml). The exposure method involved feeding the larvae pesticide treatments via diet from the fourth day of larval development until they reached the pupal stage.",
@@ -481,7 +481,7 @@
   },
   "733": {
     "answer_llm": "The pesticide used in the study was Thiamethoxam at a dose of 2.6 g/kg. The exposure method involved feeding the honey bee colonies pollen patties containing the pesticide, and the duration of exposure was 5 weeks.",
-    "answer_rev1": "Thiamethoxam is correct.",
+    "answer_rev1": "Thiamethoxam.",
     "rev1": "AB",
     "rev1_rating": 1
   },

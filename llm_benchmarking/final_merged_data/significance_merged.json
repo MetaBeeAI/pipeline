@@ -46,7 +46,7 @@
   },
   "070": {
     "answer_llm": "The paper emphasizes the significant threat posed by neonicotinoids to honey bees, highlighting their role in promoting oxidative stress and impairing immune responses. This underscores the need for continued research and regulatory measures to protect pollinators, making it crucial for the field of environmental science and agriculture.",
-    "answer_rev1": "Correct - The paper emphasizes the significant threat posed by neonicotinoids to honey bees, highlighting their role in promoting oxidative stress and impairing immune responses. This underscores the need for continued research and regulatory measures to protect pollinators, making it crucial for the field of environmental science and agriculture.",
+    "answer_rev1": "The paper emphasizes the significant threat posed by neonicotinoids to honey bees, highlighting their role in promoting oxidative stress and impairing immune responses. This underscores the need for continued research and regulatory measures to protect pollinators, making it crucial for the field of environmental science and agriculture.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "The paper emphasizes the significant threat posed by neonicotinoids to honey bees, highlighting their role in promoting oxidative stress and impairing immune responses. This underscores the need for continued research and regulatory measures to protect pollinators, making it crucial for the field of environmental science and agriculture.",
@@ -55,7 +55,7 @@
   },
   "071": {
     "answer_llm": "The paper underscores the significance of understanding pesticide risks to honey bees, particularly the acute toxicity of neonicotinoids like thiamethoxam and fungicides like captan. It emphasizes the implications for pollination services and agricultural sustainability, calling for further research and regulatory measures to protect these vital pollinators.",
-    "answer_rev1": "Correct - The paper underscores the significance of understanding pesticide risks to honey bees, particularly the acute toxicity of neonicotinoids like thiamethoxam and fungicides like captan. It emphasizes the implications for pollination services and agricultural sustainability, calling for further research and regulatory measures to protect these vital pollinators",
+    "answer_rev1": "The paper underscores the significance of understanding pesticide risks to honey bees, particularly the acute toxicity of neonicotinoids like thiamethoxam and fungicides like captan. It emphasizes the implications for pollination services and agricultural sustainability, calling for further research and regulatory measures to protect these vital pollinators",
     "rev1": "AJ",
     "rev1_rating": 0,
     "answer_rev2": "The paper underscores the significance of understanding pesticide risks to honey bees, particularly the acute toxicity of neonicotinoids like thiamethoxam and fungicides like captan. It emphasizes the implications for pollination services and agricultural sustainability, calling for further research and regulatory measures to protect these vital pollinators.",

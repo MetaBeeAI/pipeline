@@ -9,7 +9,7 @@ Main Components:
 - reviewer_rating.py: Analyzes reviewer ratings and generates statistical plots
 """
 
-from .merge_answers import merge_answers_from_reviewers
+from .merge_answers import merge_answers
 from .reviewer_rating import (
     calculate_question_stats,
     calculate_reviewer_agreement,
@@ -24,7 +24,7 @@ __version__ = "1.0.0"
 __author__ = "MetaBeeAI Pipeline"
 
 __all__ = [
-    "merge_answers_from_reviewers",
+    "merge_answers",
     "calculate_question_stats",
     "calculate_reviewer_agreement", 
     "calculate_reviewer_individual_stats",

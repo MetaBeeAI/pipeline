@@ -2,6 +2,17 @@
 
 This module handles the merging of LLM-generated answers with human reviewer answers for benchmarking and analysis purposes.
 
+## Scripts Overview
+
+### `merge_answers.py`
+Combines LLM-generated answers with human reviewer answers from multiple reviewers, creating merged datasets for benchmarking analysis.
+
+### `process_benchmarking.py`
+Extracts structured data from merged JSON files using LLM-based extraction, comparing LLM, rev1, and rev2 answers side-by-side with optimization for identical responses.
+
+### `reviewer_rating.py`
+Analyzes reviewer ratings and agreement across different question types and individual reviewers, generating statistical summaries and visualizations.
+
 ## Overview
 
 The `merge_answers.py` script combines:
@@ -340,3 +351,143 @@ Individual Reviewer Average Ratings:
 - Validate the robustness of LLM-generated answers
 - Assess inter-rater reliability in the review process
 - Support quality metrics for research publications
+
+---
+
+# Structured Data Extraction
+
+The `process_benchmarking.py` script extracts structured data from merged JSON files using LLM-based extraction, with intelligent optimization for identical responses.
+
+## Overview
+
+This script processes one question type at a time, extracting structured information from LLM, rev1, and rev2 answers. It includes optimization to reduce LLM API calls when answers are identical or when reviewers are missing.
+
+## Features
+
+### LLM-Based Extraction
+- Uses GPT-4o-mini for semantic data extraction
+- Structured prompts designed to prevent hallucination
+- Extracts specific fields based on question type (bee_species, pesticides, additional_stressors)
+
+### Smart Optimization
+- Detects identical answers between LLM, rev1, and rev2
+- Processes identical responses only once to save API calls
+- Handles missing reviewers gracefully (no false data copying)
+
+### Question-Specific Processing
+- **bee_species**: Extracts scientific names, common names, or both as provided
+- **pesticides**: Structured extraction of compound names, doses, exposure methods, timing
+- **additional_stressors**: Pathogens, parasites, environmental stressors (excluding pesticides)
+
+## Usage
+
+### Basic Usage
+```bash
+cd /path/to/pipeline
+python llm_benchmarking/process_benchmarking.py --question bee_species
+```
+
+### Command Line Options
+- `--question QUESTION`: Specific question to process (e.g., bee_species, pesticides)
+- `--max-papers N`: Maximum number of papers to process (useful for testing)
+- `--interactive`: Run in interactive mode with menu selection
+- `--data-dir PATH`: Data directory path (default: `llm_benchmarking/final_merged_data`)
+- `--output-dir PATH`: Output directory (default: `extracted_data`)
+
+### Examples
+```bash
+# Process bee_species question for all papers
+python llm_benchmarking/process_benchmarking.py --question bee_species
+
+# Test with first 10 papers
+python llm_benchmarking/process_benchmarking.py --question bee_species --max-papers 10
+
+# Interactive mode
+python llm_benchmarking/process_benchmarking.py --interactive
+```
+
+## Output
+
+### Files Generated
+- **CSV**: `{question}_extracted.csv` - Tabular format for analysis
+- **JSON**: `{question}_extracted.json` - Structured format for further processing
+
+### Output Structure
+```json
+{
+  "paper_id": "594",
+  "question_type": "bee_species",
+  "llm_answer": "Honey bees (Apis mellifera), specifically the Carniolan honey bee (Apis mellifera carnica)...",
+  "rev1_answer": "Honey bees (Apis mellifera), specifically the Carniolan honey bee (Apis mellifera carnica)...",
+  "rev1_rating": 10,
+  "rev1_reviewer": "AJ",
+  "rev2_answer": "The bee species tested was Apis mellifera. The subspecies was Apis mellifera carnica.",
+  "rev2_rating": 10,
+  "rev2_reviewer": "LH",
+  "extracted_llm": "Apis mellifera, Apis mellifera carnica",
+  "extracted_rev1": "Apis mellifera, Apis mellifera carnica",
+  "extracted_rev2": "Apis mellifera, Apis mellifera carnica"
+}
+```
+
+## Optimization Features
+
+### Identical Answer Detection
+- **All identical**: Process once, copy to all three fields
+- **Partial optimization**: Process identical pair once, different answer separately
+- **No optimization**: Process all three answers separately
+
+### Missing Reviewer Handling
+- Only processes answers when reviewers actually exist
+- No false data copying for missing rev1/rev2 reviewers
+- Empty strings for missing reviewer data
+
+### Statistics Tracking
+```
+Optimization stats:
+  - Papers with all identical answers (processed once): 5
+  - Papers with partial optimization (2 identical, 1 different): 0
+  - Papers with no optimization (all different): 0
+  - LLM API calls saved: 10
+```
+
+## Configuration
+
+### Schema Files
+- `benchmarking_schema.yaml`: Defines extraction structure and field types
+- `benchmarking_field_examples.yaml`: Provides examples for LLM prompts
+
+### LLM Settings
+- **Model**: GPT-4o-mini
+- **Temperature**: 0 (deterministic output)
+- **Max tokens**: 500
+- **System prompt**: JSON-only output, no explanations
+
+## Error Handling
+
+- **LLM failures**: Graceful fallback to simple text extraction
+- **Missing data**: Handles null/empty answers appropriately
+- **JSON parsing**: Robust handling of malformed LLM responses
+- **File I/O**: Creates output directories automatically
+
+## Dependencies
+
+- **Required**: `openai`, `pyyaml`, `pandas`
+- **Built-in**: `json`, `os`, `pathlib`, `argparse`, `re`
+
+## Use Cases
+
+### Data Analysis
+- Compare extraction quality between LLM and human reviewers
+- Identify systematic differences in answer interpretation
+- Generate structured datasets for further research
+
+### Quality Control
+- Validate LLM extraction against human annotations
+- Assess consistency of data extraction across reviewers
+- Support automated data processing pipelines
+
+### Research Efficiency
+- Reduce manual data extraction time
+- Standardize data formats across studies
+- Enable large-scale meta-analyses

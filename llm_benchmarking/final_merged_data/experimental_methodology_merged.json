@@ -46,7 +46,7 @@
   },
   "070": {
     "answer_llm": "The experimental methodologies used in this paper involved exposing honey bees to sublethal concentrations of thiacloprid and clothianidin, measuring their survival and food consumption, and assessing various biochemical parameters related to oxidative stress and immune response, including enzyme activities and levels of oxidative stress markers.",
-    "answer_rev1": "Correct - The experimental methodologies used in this paper involved exposing honey bees to sublethal concentrations of thiacloprid and clothianidin, measuring their survival and food consumption, and assessing various biochemical parameters related to oxidative stress and immune response, including enzyme activities and levels of oxidative stress markers.",
+    "answer_rev1": "The experimental methodologies used in this paper involved exposing honey bees to sublethal concentrations of thiacloprid and clothianidin, measuring their survival and food consumption, and assessing various biochemical parameters related to oxidative stress and immune response, including enzyme activities and levels of oxidative stress markers.",
     "rev1": "AJ",
     "rev1_rating": 0,
     "answer_rev2": "The experimental methodologies used in this paper involved exposing honey bees to sublethal concentrations of thiacloprid and clothianidin, measuring their survival and food consumption, and assessing various biochemical parameters related to oxidative stress and immune response, including enzyme activities and levels of oxidative stress markers.",

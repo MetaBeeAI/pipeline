@@ -208,8 +208,8 @@ def main():
                        help='Path to reviewer database folder containing reviewer initials subfolders')
     parser.add_argument('--data-dir', type=str, required=True,
                        help='Path to data directory containing paper folders with LLM answers')
-    parser.add_argument('--output-dir', type=str, default='final_merged_data',
-                       help='Output directory for merged JSON files (default: final_merged_data)')
+    parser.add_argument('--output-dir', type=str, default='llm_benchmarking/benchmark_data',
+                       help='Output directory for merged JSON files (default: llm_benchmarking/benchmark_data)')
     
     args = parser.parse_args()
     

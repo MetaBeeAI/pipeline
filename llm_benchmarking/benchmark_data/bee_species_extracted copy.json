@@ -9,9 +9,9 @@
     "rev2_answer":"The bee species tested was Apis mellifera. The subspecies was Apis mellifera carnica.",
     "rev2_rating":10,
     "rev2_reviewer":"LH",
-    "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_llm":"Apis mellifera, Apis mellifera carnica",
+    "extracted_rev1":"Apis mellifera, Apis mellifera carnica",
+    "extracted_rev2":"Apis mellifera, Apis mellifera carnica"
   },
   {
     "paper_id":"593",
@@ -79,9 +79,9 @@
     "rev2_answer":"Honey bees.",
     "rev2_rating":10,
     "rev2_reviewer":"EA",
-    "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_llm":"honey bees",
+    "extracted_rev1":"honey bees",
+    "extracted_rev2":"honey bees"
   },
   {
     "paper_id":"071",
@@ -107,9 +107,9 @@
     "rev2_answer":"The species of bees tested include: Africanized Apis mellifera, European Apis mellifera, Bombus terrestris, Melipona quadrifasciata, Partamona helleri, Scaptotrigona postica, and others.",
     "rev2_rating":0,
     "rev2_reviewer":"EA",
-    "extracted_llm":"[\"Apis mellifera\", \"Bombus terrestris\", \"Melipona quadrifasciata\", \"Partamona helleri\", \"Scaptotrigona postica\"]",
-    "extracted_rev1":"[\"Apis mellifera\", \"Bombus terrestris\", \"Melipona quadrifasciata\", \"Partamona helleri\", \"Scaptotrigona postica\"]",
-    "extracted_rev2":"[\"Apis mellifera\", \"Bombus terrestris\", \"Melipona quadrifasciata\", \"Partamona helleri\", \"Scaptotrigona postica\"]"
+    "extracted_llm":"[\"Africanized Apis mellifera\", \"European Apis mellifera\", \"Bombus terrestris\", \"Melipona quadrifasciata\", \"Partamona helleri\", \"Scaptotrigona postica\"]",
+    "extracted_rev1":"[\"Africanized Apis mellifera\", \"European Apis mellifera\", \"Bombus terrestris\", \"Melipona quadrifasciata\", \"Partamona helleri\", \"Scaptotrigona postica\"]",
+    "extracted_rev2":"[\"Africanized Apis mellifera\", \"European Apis mellifera\", \"Bombus terrestris\", \"Melipona quadrifasciata\", \"Partamona helleri\", \"Scaptotrigona postica\"]"
   },
   {
     "paper_id":"076",
@@ -123,7 +123,7 @@
     "rev2_reviewer":"EA",
     "extracted_llm":"",
     "extracted_rev1":"",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":"honey bee"
   },
   {
     "paper_id":"586",
@@ -135,9 +135,9 @@
     "rev2_answer":"The bee species tested was Bombus terrestris. The subspecies was Bombus terrestrus audax.",
     "rev2_rating":3,
     "rev2_reviewer":"LH",
-    "extracted_llm":"Apis mellifera, Bombus terrestris",
+    "extracted_llm":"honeybee, bumblebees",
     "extracted_rev1":"",
-    "extracted_rev2":"Bombus terrestris audax"
+    "extracted_rev2":"Bombus terrestris, Bombus terrestris audax"
   },
   {
     "paper_id":"589",
@@ -150,8 +150,8 @@
     "rev2_rating":5,
     "rev2_reviewer":"LH",
     "extracted_llm":"Bombus impatiens, Bombus terrestris",
-    "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris audax"
+    "extracted_rev1":"B. terrestris",
+    "extracted_rev2":"Bombus terrestris, Bombus terrestris audax"
   },
   {
     "paper_id":"590",
@@ -163,7 +163,7 @@
     "rev2_answer":"The bee species tested was Osmia bicornis.",
     "rev2_rating":5,
     "rev2_reviewer":"LH",
-    "extracted_llm":"Osmia bicornis, Apis mellifera",
+    "extracted_llm":"Osmia bicornis, honeybee",
     "extracted_rev1":"Osmia bicornis",
     "extracted_rev2":"Osmia bicornis"
   },
@@ -219,9 +219,9 @@
     "rev2_answer":"The species of bees tested were A. mellifera and M. scutellaris.",
     "rev2_rating":10,
     "rev2_reviewer":"EA",
-    "extracted_llm":"Apis mellifera, Melipona scutellaris",
-    "extracted_rev1":"Apis mellifera, Melipona scutellaris",
-    "extracted_rev2":"Apis mellifera, Melipona scutellaris"
+    "extracted_llm":"Apis mellifera, M. scutellaris",
+    "extracted_rev1":"Apis mellifera, M. scutellaris",
+    "extracted_rev2":"Apis mellifera, M. scutellaris"
   },
   {
     "paper_id":"075",
@@ -235,7 +235,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"072",
@@ -261,9 +261,9 @@
     "rev2_answer":"The bee species used was Apis mellifera. The subspecies was Apis mellifera carnica.",
     "rev2_rating":0,
     "rev2_reviewer":"LH",
-    "extracted_llm":"Apis mellifera carnica",
-    "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_llm":"Apis mellifera, Apis mellifera subsp. carnica",
+    "extracted_rev1":"Apis mellifera, Apis mellifera subsp. carnica",
+    "extracted_rev2":"Apis mellifera, Apis mellifera carnica"
   },
   {
     "paper_id":"584",
@@ -277,7 +277,7 @@
     "rev2_reviewer":"LH",
     "extracted_llm":"Bombus terrestris audax",
     "extracted_rev1":"Bombus terrestris audax",
-    "extracted_rev2":"Bombus terrestris audax"
+    "extracted_rev2":"Bombus terrestris, Bombus terrestris audax"
   },
   {
     "paper_id":"583",
@@ -291,7 +291,7 @@
     "rev2_reviewer":"LH",
     "extracted_llm":"Apis mellifera ligustica",
     "extracted_rev1":"Apis mellifera ligustica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":"Apis mellifera, Apis mellifera ligustica"
   },
   {
     "paper_id":"300",
@@ -303,9 +303,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"[\"Megachile lanata\", \"Megachile hera\", \"Pseudomegachile sp.\", \"Megachile conjuncta\", \"Osmia sp.\", \"Coelioxys sp.\"]",
-    "extracted_rev1":"[\"Helicoverpa armigera\", \"Megachile lanata\", \"Megachile hera\", \"Pseuodmegachile sp.\", \"Megachile cojuncta\", \"Osmia sp.\", \"Coelioxys sp.\"]",
-    "extracted_rev2":"[\"Megachile lanata\", \"Megachile hera\", \"Pseudomegachile sp.\", \"Megachile conjuncta\", \"Osmia sp.\", \"Coelioxys sp.\"]"
+    "extracted_llm":"Megachile lanata, M. hera, Pseudomegachile sp., M. conjuncta, Osmia sp., Coelioxys sp.",
+    "extracted_rev1":"[\"Megachile lanata\", \"Megachile hera\", \"Pseuodmegachile sp.\", \"Megachile cojuncta\", \"Osmia sp.\", \"Coelioxys sp.\"]",
+    "extracted_rev2":""
   },
   {
     "paper_id":"790",
@@ -317,9 +317,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"honey bees",
     "extracted_rev1":"",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"799",
@@ -333,7 +333,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris"
+    "extracted_rev2":""
   },
   {
     "paper_id":"798",
@@ -345,9 +345,9 @@
     "rev2_answer":"Africanized A. mellifera",
     "rev2_rating":9,
     "rev2_reviewer":"AB",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"A. mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":"A. mellifera"
   },
   {
     "paper_id":"301",
@@ -359,9 +359,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"honey bees",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"811",
@@ -375,7 +375,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"295",
@@ -387,9 +387,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Bombus impatiens",
+    "extracted_llm":"B. impatiens",
     "extracted_rev1":"Bombus impatiens",
-    "extracted_rev2":"Bombus impatiens"
+    "extracted_rev2":""
   },
   {
     "paper_id":"294",
@@ -403,7 +403,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"303",
@@ -417,7 +417,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera, Apis cerana",
     "extracted_rev1":"Apis cerana, Apis mellifera",
-    "extracted_rev2":"Apis mellifera, Apis cerana"
+    "extracted_rev2":""
   },
   {
     "paper_id":"793",
@@ -431,7 +431,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"794",
@@ -445,7 +445,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"304",
@@ -459,7 +459,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"[\n    \"Andrena arabis\",\n    \"Andrena barbara\",\n    \"Andrena basilicas\",\n    \"Andrena carlini\",\n    \"Andrena commoda\",\n    \"Andrena connectens\",\n    \"Andrena crataegi\",\n    \"Andrena cressonii\",\n    \"Andrena dunningi\",\n    \"Andrena erigeniae\",\n    \"Andrena forbesii\",\n    \"Andrena hippotes\",\n    \"Andrena imitatrix\",\n    \"Andrena mandibularis\",\n    \"Andrena miserabilis\",\n    \"Andrena nasonii\",\n    \"Andrena pruni\",\n    \"Andrena tridens\",\n    \"Andrena violae\",\n    \"Anthophora abrupta\",\n    \"Anthophora bomboides\",\n    \"Bombus bimaculatus\",\n    \"Bombus griseocollis\",\n    \"Bombus impatiens\",\n    \"Bombus perplexus\",\n    \"Bombus vagans\",\n    \"Ceratina calcarata\",\n    \"Ceratina dupla\",\n    \"Ceratina strenua\",\n    \"Eucera hamata\",\n    \"Habropoda laboriosa\",\n    \"Melissodes bimaculata\",\n    \"Melissodes desponsa\",\n    \"Melitoma taurea\",\n    \"Nomada articulata\",\n    \"Nomada australis\",\n    \"Nomada cressonii\",\n    \"Nomada illinoensis\",\n    \"Nomada lepida\",\n    \"Nomada luteoloides\",\n    \"Nomada maculat\",\n    \"Nomada sayi\",\n    \"Nomada vicina\",\n    \"Ptilothrix bombiformis\",\n    \"Pycnapis pruinosa\",\n    \"Xylocopa virginica\",\n    \"Hylaeus affinis\",\n    \"Hylaeus modestus\",\n    \"Agapostemon splendens\",\n    \"Agapostemon virescens\",\n    \"Augochlora pura\",\n    \"Augochlorella aurata\",\n    \"Augochlorella gratiosa\",\n    \"Halictus confusus\",\n    \"Halictus ligatus\",\n    \"Halictus rubicundus\",\n    \"Halictus tectus\",\n    \"Lasioglossum admirandum\",\n    \"Lasioglossum birkmanni\",\n    \"Lasioglossum bruneri\",\n    \"Lasioglossum call",
     "extracted_rev1":"[\n    \"Andrena arabis\",\n    \"Andrena barbara\",\n    \"Andrena bisalicis\",\n    \"Andrena carlini\",\n    \"Andrena ceanothi\",\n    \"Andrena commoda\",\n    \"Andrena crataegi\",\n    \"Andrena cressonii\",\n    \"Andrena distans\",\n    \"Andrena dunningi\",\n    \"Andrena erigeniae\",\n    \"Andrena forbesii\",\n    \"Andrena hippotes\",\n    \"Andrena imitatrix\",\n    \"Andrena melanchroa\",\n    \"Andrena miserabilis\",\n    \"Andrena nasonii\",\n    \"Andrena perplexa\",\n    \"Andrena pruni\",\n    \"Andrena tridens\",\n    \"Andrena vicina\",\n    \"Andrena violae\",\n    \"Anthophora abrupta\",\n    \"Anthophora bomboides\",\n    \"Bombus bimaculatus\",\n    \"Bombus fervidus\",\n    \"Bombus impatiens\",\n    \"Bombus perplexus\",\n    \"Bombus vagans\",\n    \"Ceratina calcarata\",\n    \"Ceratina dupla\",\n    \"Ceratina mikmaqi\",\n    \"Ceratina strenua\",\n    \"Eucera hamata\",\n    \"Habropoda laboriosa\",\n    \"Melissodes bimaculata\",\n    \"Melissodes desponsa\",\n    \"Melitoma taurea\",\n    \"Nomada articulata\",\n    \"Nomada australis\",\n    \"Nomada composita\",\n    \"Nomada cressonii\",\n    \"Nomada illinoensis\",\n    \"Nomada lepida\",\n    \"Nomada luteoloides\",\n    \"Nomada maculata\",\n    \"Nomada ovata\",\n    \"Nomada pygmaea\",\n    \"Peponapis pruinosa\",\n    \"Xylocopa virginica\",\n    \"Hylaeus af\ufb01nis\",\n    \"Hylaeus mesillae\",\n    \"Hylaeus modestus\",\n    \"Agapostemon splendens\",\n    \"Agapostemon texanus\",\n    \"Agapostemon virescens\",\n    \"Augochlora pura\",\n    \"Augochlorella aurata\",\n    \"Halictus confusus\",\n    \"Halictus ligatus\",\n    \"Halictus rubicundus\",\n    \"Lasioglossum acuminatum\",",
-    "extracted_rev2":"[\n    \"Andrena arabis\",\n    \"Andrena barbara\",\n    \"Andrena basilicas\",\n    \"Andrena carlini\",\n    \"Andrena commoda\",\n    \"Andrena connectens\",\n    \"Andrena crataegi\",\n    \"Andrena cressonii\",\n    \"Andrena dunningi\",\n    \"Andrena erigeniae\",\n    \"Andrena forbesii\",\n    \"Andrena hippotes\",\n    \"Andrena imitatrix\",\n    \"Andrena mandibularis\",\n    \"Andrena miserabilis\",\n    \"Andrena nasonii\",\n    \"Andrena pruni\",\n    \"Andrena tridens\",\n    \"Andrena violae\",\n    \"Anthophora abrupta\",\n    \"Anthophora bomboides\",\n    \"Bombus bimaculatus\",\n    \"Bombus griseocollis\",\n    \"Bombus impatiens\",\n    \"Bombus perplexus\",\n    \"Bombus vagans\",\n    \"Ceratina calcarata\",\n    \"Ceratina dupla\",\n    \"Ceratina strenua\",\n    \"Eucera hamata\",\n    \"Habropoda laboriosa\",\n    \"Melissodes bimaculata\",\n    \"Melissodes desponsa\",\n    \"Melitoma taurea\",\n    \"Nomada articulata\",\n    \"Nomada australis\",\n    \"Nomada cressonii\",\n    \"Nomada illinoensis\",\n    \"Nomada lepida\",\n    \"Nomada luteoloides\",\n    \"Nomada maculat\",\n    \"Nomada sayi\",\n    \"Nomada vicina\",\n    \"Ptilothrix bombiformis\",\n    \"Pycnapis pruinosa\",\n    \"Xylocopa virginica\",\n    \"Hylaeus affinis\",\n    \"Hylaeus modestus\",\n    \"Agapostemon splendens\",\n    \"Agapostemon virescens\",\n    \"Augochlora pura\",\n    \"Augochlorella aurata\",\n    \"Augochlorella gratiosa\",\n    \"Halictus confusus\",\n    \"Halictus ligatus\",\n    \"Halictus rubicundus\",\n    \"Halictus tectus\",\n    \"Lasioglossum admirandum\",\n    \"Lasioglossum birkmanni\",\n    \"Lasioglossum bruneri\",\n    \"Lasioglossum call"
+    "extracted_rev2":""
   },
   {
     "paper_id":"302",
@@ -473,7 +473,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"800",
@@ -487,7 +487,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"809",
@@ -515,7 +515,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris"
+    "extracted_rev2":""
   },
   {
     "paper_id":"296",
@@ -529,7 +529,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris"
+    "extracted_rev2":""
   },
   {
     "paper_id":"299",
@@ -541,9 +541,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"[\"Halictus tumulorum\", \"Lasioglossum fulvicorne\", \"Lasioglossum malachurum\", \"Lasioglossum pauxillum\", \"Osmia spinulosa\", \"Apis mellifera\"]",
+    "extracted_llm":"Halictus tumulorum, Lasioglossum fulvicorne, L. malachurum, L. pauxillum, Osmia spinulosa, Apis mellifera",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"[\"Halictus tumulorum\", \"Lasioglossum fulvicorne\", \"Lasioglossum malachurum\", \"Lasioglossum pauxillum\", \"Osmia spinulosa\", \"Apis mellifera\"]"
+    "extracted_rev2":""
   },
   {
     "paper_id":"787",
@@ -557,7 +557,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"P. helleri",
     "extracted_rev1":"Partamona helleri",
-    "extracted_rev2":"P. helleri"
+    "extracted_rev2":""
   },
   {
     "paper_id":"789",
@@ -569,9 +569,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Tetragonisca spinipes",
+    "extracted_llm":"T. spinipes",
     "extracted_rev1":"Trigona sinipes",
-    "extracted_rev2":"Tetragonisca spinipes"
+    "extracted_rev2":""
   },
   {
     "paper_id":"216",
@@ -585,7 +585,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"227",
@@ -599,7 +599,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"218",
@@ -611,7 +611,7 @@
     "rev2_answer":"The test species is Osmia bicornis",
     "rev2_rating":3,
     "rev2_reviewer":"FS",
-    "extracted_llm":"Osmia bicornis, Bombus terrestris",
+    "extracted_llm":"O. bicornis, B. terrestris",
     "extracted_rev1":"Osmia bicornis",
     "extracted_rev2":"Osmia bicornis"
   },
@@ -627,7 +627,7 @@
     "rev2_reviewer":"BN",
     "extracted_llm":"Osmia bicornis, Bombus terrestris, Apis mellifera",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera carnica"
+    "extracted_rev2":"Apis mellifera ssp. carnica"
   },
   {
     "paper_id":"226",
@@ -639,7 +639,7 @@
     "rev2_answer":"Honey bees (Apis mellifera L.)",
     "rev2_rating":7,
     "rev2_reviewer":"FS",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"honey bees",
     "extracted_rev1":"Apis mellifera",
     "extracted_rev2":"Apis mellifera"
   },
@@ -655,7 +655,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"430",
@@ -667,7 +667,7 @@
     "rev2_answer":"The species of bees tested include 1,081 species from the families Andrenidae (220 species), Apidae (284 species, excluding Apis mellifera), Colletidae (69 species), Halictidae (221 species), Megachilidae (278 species), and Melittidae (9 species).",
     "rev2_rating":9,
     "rev2_reviewer":"BN",
-    "extracted_llm":"[\"Apis mellifera\", \"Bombus\"]",
+    "extracted_llm":"[\"Bombus\"]",
     "extracted_rev1":"[]",
     "extracted_rev2":"[]"
   },
@@ -683,7 +683,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus impatiens",
     "extracted_rev1":"Bombus impatiens",
-    "extracted_rev2":"Bombus impatiens"
+    "extracted_rev2":""
   },
   {
     "paper_id":"233",
@@ -695,9 +695,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Bombus terrestris audax",
+    "extracted_llm":"Bombus terrestris, B. t. audax",
     "extracted_rev1":"Bombus terrestris audax",
-    "extracted_rev2":"Bombus terrestris audax"
+    "extracted_rev2":""
   },
   {
     "paper_id":"421",
@@ -725,7 +725,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris, Bombus impatiens",
     "extracted_rev1":"Bombus impatiens",
-    "extracted_rev2":"Bombus terrestris, Bombus impatiens"
+    "extracted_rev2":""
   },
   {
     "paper_id":"276",
@@ -739,7 +739,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris, Bombus lucorum, Bombus pratorum, Bombus pascuorum, Bombus impatiens",
     "extracted_rev1":"Bombus impatiens",
-    "extracted_rev2":"Bombus terrestris, Bombus lucorum, Bombus pratorum, Bombus pascuorum, Bombus impatiens"
+    "extracted_rev2":""
   },
   {
     "paper_id":"427",
@@ -753,7 +753,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris audax",
     "extracted_rev1":"Bombus terrestris audax",
-    "extracted_rev2":"Bombus terrestris audax"
+    "extracted_rev2":""
   },
   {
     "paper_id":"225",
@@ -766,8 +766,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev1":"honeybees",
+    "extracted_rev2":""
   },
   {
     "paper_id":"237",
@@ -779,9 +779,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera ligustica, Apis mellifera carnica",
-    "extracted_rev1":"Apis mellifera ligustica, Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera ligustica, Apis mellifera carnica"
+    "extracted_llm":"Apis mellifera",
+    "extracted_rev1":"Apis mellifera",
+    "extracted_rev2":""
   },
   {
     "paper_id":"731",
@@ -795,7 +795,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"740",
@@ -809,7 +809,7 @@
     "rev2_reviewer":"HS",
     "extracted_llm":"Apis mellifera, Apis ovatula, Ceratina lacunatus, Xylocopa aestuans",
     "extracted_rev1":"Apis mellifera, Apis ovatula, Ceratina lacunatus, Xylocopa aestuans",
-    "extracted_rev2":"[\"Apis mellifera\", \"Anrena ovatula\", \"Tropinota squalida\", \"Collectes lacunatus\", \"Xylocopa aestuans\"]"
+    "extracted_rev2":"Apis mellifera, Anrena ovatula, Tropinota squalida, Collectes lacunatus, Xylocopa aestuans"
   },
   {
     "paper_id":"734",
@@ -822,7 +822,7 @@
     "rev2_rating":1,
     "rev2_reviewer":"HS",
     "extracted_llm":"Apis mellifera, Bombus impatiens",
-    "extracted_rev1":"Bombus impatiens",
+    "extracted_rev1":"B. impatiens",
     "extracted_rev2":"Bombus impatiens"
   },
   {
@@ -850,8 +850,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev1":"honey bees",
+    "extracted_rev2":""
   },
   {
     "paper_id":"813",
@@ -865,7 +865,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"729",
@@ -892,8 +892,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev1":"Italian honey bees",
+    "extracted_rev2":""
   },
   {
     "paper_id":"448",
@@ -907,7 +907,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"439",
@@ -919,9 +919,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Plebeia catamarcensis, Apis mellifera",
+    "extracted_llm":"P. catamarcensis, A. mellifera",
     "extracted_rev1":"Plebeia catamarcensis",
-    "extracted_rev2":"Plebeia catamarcensis, Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"377",
@@ -935,7 +935,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera ligustica",
     "extracted_rev1":"Apis mellifera ligustica",
-    "extracted_rev2":"Apis mellifera ligustica"
+    "extracted_rev2":""
   },
   {
     "paper_id":"385",
@@ -962,8 +962,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev1":"honey bees",
+    "extracted_rev2":""
   },
   {
     "paper_id":"444",
@@ -989,9 +989,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Bombus terrestris",
+    "extracted_llm":"Bombus terrestris, honeybee",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris"
+    "extracted_rev2":""
   },
   {
     "paper_id":"451",
@@ -1005,7 +1005,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"514",
@@ -1031,7 +1031,7 @@
     "rev2_answer":"Apis mellifera carnica",
     "rev2_rating":1,
     "rev2_reviewer":"SA",
-    "extracted_llm":"Apis mellifera, Apis andreniformis, Apis florea",
+    "extracted_llm":"[\"Apis mellifera\", \"Apis andreniformis\", \"Apis florea\", \"Apis mellifera mellifera\", \"Apis mellifera caucasica\", \"Apis mellifera carnica\"]",
     "extracted_rev1":"Apis mellifera carnica",
     "extracted_rev2":"Apis mellifera carnica"
   },
@@ -1045,7 +1045,7 @@
     "rev2_answer":"Apis mellifera",
     "rev2_rating":9,
     "rev2_reviewer":"HS",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"Apis mellifera, honeybee",
     "extracted_rev1":"Apis mellifera",
     "extracted_rev2":"Apis mellifera"
   },
@@ -1061,7 +1061,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"052",
@@ -1075,7 +1075,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis cerana, Apis mellifera",
     "extracted_rev1":"Apis cerana",
-    "extracted_rev2":"Apis cerana, Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"948",
@@ -1087,7 +1087,7 @@
     "rev2_answer":"Osmia bicornis",
     "rev2_rating":5,
     "rev2_reviewer":"HS",
-    "extracted_llm":"Osmia bicornis",
+    "extracted_llm":"O. bicornis",
     "extracted_rev1":"Osmia bicornis",
     "extracted_rev2":"Osmia bicornis"
   },
@@ -1159,7 +1159,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"739",
@@ -1173,7 +1173,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Osmia cornifrons",
     "extracted_rev1":"Osmia cornifrons",
-    "extracted_rev2":"Osmia cornifrons"
+    "extracted_rev2":""
   },
   {
     "paper_id":"737",
@@ -1187,7 +1187,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"736",
@@ -1199,9 +1199,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera, Bombus terrestris, Osmia bicornis",
+    "extracted_llm":"[\"Apis mellifera\", \"Bombus terrestris\", \"Osmia bicornis\"]",
     "extracted_rev1":"Apis mellifera, Bombus terrestris, Osmia bicornis",
-    "extracted_rev2":"Apis mellifera, Bombus terrestris, Osmia bicornis"
+    "extracted_rev2":""
   },
   {
     "paper_id":"738",
@@ -1215,7 +1215,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera ligustica",
     "extracted_rev1":"Apis mellifera ligustica",
-    "extracted_rev2":"Apis mellifera ligustica"
+    "extracted_rev2":""
   },
   {
     "paper_id":"950",
@@ -1229,7 +1229,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera, Osmia lignaria",
     "extracted_rev1":"Apis mellifera, Osmia lignaria",
-    "extracted_rev2":"Apis mellifera, Osmia lignaria"
+    "extracted_rev2":""
   },
   {
     "paper_id":"015",
@@ -1241,9 +1241,9 @@
     "rev2_answer":"A. mellifera ligustica (Italian honey bee)",
     "rev2_rating":10,
     "rev2_reviewer":"EA",
-    "extracted_llm":"Apis mellifera ligustica",
+    "extracted_llm":"A. mellifera ligustica",
     "extracted_rev1":"Apis mellifera ligustica",
-    "extracted_rev2":"Apis mellifera ligustica"
+    "extracted_rev2":"A. mellifera ligustica"
   },
   {
     "paper_id":"012",
@@ -1271,7 +1271,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris, Apis mellifera",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris, Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"014",
@@ -1283,7 +1283,7 @@
     "rev2_answer":"The species of bee(s) tested include honeybees (Apis mellifera)",
     "rev2_rating":5,
     "rev2_reviewer":"EA",
-    "extracted_llm":"Apis mellifera, Apis cerana cerana, Osmia bicornis, Bombus terrestris, Bombus impatiens",
+    "extracted_llm":"Apis mellifera, A. cerana cerana, O. bicornis, B. terrestris, B. impatiens",
     "extracted_rev1":"Apis mellifera carnica",
     "extracted_rev2":"Apis mellifera"
   },
@@ -1299,7 +1299,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera carnica",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera carnica"
+    "extracted_rev2":""
   },
   {
     "paper_id":"888",
@@ -1311,9 +1311,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera carnica",
-    "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera carnica"
+    "extracted_llm":"Italian, Carniolan hybrid honey bees",
+    "extracted_rev1":"Italian, Carniolan hybrid honey bees",
+    "extracted_rev2":""
   },
   {
     "paper_id":"892",
@@ -1325,9 +1325,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_llm":"honeybee",
+    "extracted_rev1":"honeybee",
+    "extracted_rev2":""
   },
   {
     "paper_id":"007",
@@ -1339,9 +1339,9 @@
     "rev2_answer":"Honeybees",
     "rev2_rating":8,
     "rev2_reviewer":"EA",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"honeybee",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":"honeybee"
   },
   {
     "paper_id":"009",
@@ -1355,7 +1355,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Plebeia lucii",
     "extracted_rev1":"Plebeia lucii",
-    "extracted_rev2":"Plebeia lucii"
+    "extracted_rev2":""
   },
   {
     "paper_id":"008",
@@ -1369,7 +1369,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Tetragonula travancorica",
     "extracted_rev1":"Tetragonula travancorica",
-    "extracted_rev2":"Tetragonula travancorica"
+    "extracted_rev2":""
   },
   {
     "paper_id":"006",
@@ -1395,9 +1395,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"Apis mellifera, Apis mellifera carnica, honeybee",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"883",
@@ -1409,9 +1409,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Bombus terrestris",
+    "extracted_llm":"B. terrestris",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris"
+    "extracted_rev2":""
   },
   {
     "paper_id":"011",
@@ -1425,7 +1425,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"016",
@@ -1451,9 +1451,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera, Bombus terrestris",
+    "extracted_llm":"honey bees, bumblebees",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera, Bombus terrestris"
+    "extracted_rev2":""
   },
   {
     "paper_id":"010",
@@ -1466,7 +1466,7 @@
     "rev2_rating":10,
     "rev2_reviewer":"EA",
     "extracted_llm":"Bombus terrestris",
-    "extracted_rev1":"Bombus terrestris audax",
+    "extracted_rev1":"Bombus terrestis audax",
     "extracted_rev2":"Bombus terrestris"
   },
   {
@@ -1479,9 +1479,9 @@
     "rev2_answer":"The species of bees tested were Bombus terrestris and Bombus terrestris audax.",
     "rev2_rating":7,
     "rev2_reviewer":"EA",
-    "extracted_llm":"Bombus terrestris audax",
+    "extracted_llm":"Bombus terrestris, Bombus terrestris audax",
     "extracted_rev1":"Bombus terrestris audax",
-    "extracted_rev2":"Bombus terrestris audax"
+    "extracted_rev2":"Bombus terrestris, Bombus terrestris audax"
   },
   {
     "paper_id":"004",
@@ -1507,9 +1507,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis cerana",
+    "extracted_llm":"A. cerana",
     "extracted_rev1":"Apis cerana cerana",
-    "extracted_rev2":"Apis cerana"
+    "extracted_rev2":""
   },
   {
     "paper_id":"005",
@@ -1522,8 +1522,8 @@
     "rev2_rating":8,
     "rev2_reviewer":"EA",
     "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev1":"honey bee",
+    "extracted_rev2":"honey bee"
   },
   {
     "paper_id":"002",
@@ -1549,9 +1549,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Nannotrigona aff. testaceicornis, Nannotrigona perilampoides, Tetragonisca hockingsi",
+    "extracted_llm":"Nannotrigona aff. testaceicornis, N. perilampoides, Tetragonisca hockingsi",
     "extracted_rev1":"Tetragonula hockingsi",
-    "extracted_rev2":"Nannotrigona aff. testaceicornis, Nannotrigona perilampoides, Tetragonisca hockingsi"
+    "extracted_rev2":""
   },
   {
     "paper_id":"672",
@@ -1578,8 +1578,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"[\"Melissodes bimaculatus\", \"Lasioglossum (Dialictus) spp.\", \"Ceratina calcarata\", \"Melissodes desponsus\", \"Bombus pensylvanicus\", \"Eucera hamata\", \"Ceratina mikmaqi\", \"Halictus ligatus\"]",
-    "extracted_rev1":"[\"Melissodes bimaculatus\", \"Lasioglossum (Dialictus) spp.\", \"Ceratina calcarata\", \"Melissodes desponsus\", \"Bombus pensylvanicus\", \"Eucera hamata\", \"Ceratina mikmaqi\", \"Halictus ligatus\"]",
-    "extracted_rev2":"[\"Melissodes bimaculatus\", \"Lasioglossum (Dialictus) spp.\", \"Ceratina calcarata\", \"Melissodes desponsus\", \"Bombus pensylvanicus\", \"Eucera hamata\", \"Ceratina mikmaqi\", \"Halictus ligatus\"]"
+    "extracted_rev1":"Melissodes bimaculatus, Lasioglossum (Dialictus) spp., Ceratina calcarata, Melissodes desponsus, Bombus pensylvanicus, Eucera hamata, Ceratina mikmaqi, Halictus ligatus",
+    "extracted_rev2":""
   },
   {
     "paper_id":"023",
@@ -1593,7 +1593,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"013",
@@ -1607,7 +1607,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"022",
@@ -1619,9 +1619,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Melipona scutellaris",
-    "extracted_rev1":"Melipona scutellaris",
-    "extracted_rev2":"Melipona scutellaris"
+    "extracted_llm":"M. scutellaris",
+    "extracted_rev1":"M. scutellaris",
+    "extracted_rev2":""
   },
   {
     "paper_id":"020",
@@ -1635,7 +1635,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris, Bombus terricola",
     "extracted_rev1":"Bombus terrestris, Bombus terricola",
-    "extracted_rev2":"Bombus terrestris, Bombus terricola"
+    "extracted_rev2":""
   },
   {
     "paper_id":"018",
@@ -1647,9 +1647,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera, Ceratina florisomnie, Megachile rotundata",
-    "extracted_rev1":"Apis mellifera, Ceratina florisomnie, Megachile rotundata",
-    "extracted_rev2":"Apis mellifera, Ceratina florisomnie, Megachile rotundata"
+    "extracted_llm":"Apis mellifera, C. florisomnie, M. rotundata",
+    "extracted_rev1":"Apis mellifera, C. florisomnie, M. rotundata",
+    "extracted_rev2":""
   },
   {
     "paper_id":"017",
@@ -1663,7 +1663,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"019",
@@ -1677,7 +1677,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"021",
@@ -1691,7 +1691,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus impatiens",
     "extracted_rev1":"Bombus impatiens",
-    "extracted_rev2":"Bombus impatiens"
+    "extracted_rev2":""
   },
   {
     "paper_id":"532",
@@ -1705,7 +1705,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"517",
@@ -1717,9 +1717,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Bombus terrestris, Apis mellifera",
+    "extracted_llm":"Bombus terrestris, honeybee",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris, Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"521",
@@ -1731,9 +1731,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Apis mellifera",
+    "extracted_llm":"honeybee",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"519",
@@ -1747,7 +1747,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"518",
@@ -1774,8 +1774,8 @@
     "rev2_rating":5,
     "rev2_reviewer":"ER",
     "extracted_llm":"Apis mellifera, Apis cerana",
-    "extracted_rev1":"Apis mellifera carnica, Apis mellifera ligustica, Apis mellifera buckfast",
-    "extracted_rev2":"[\"Apis mellifera carnica\", \"Apis mellifera ligustica\", \"Apis mellifera Buckfast\"]"
+    "extracted_rev1":"Apis mellifera, Apis mellifera carnica, Apis mellifera ligustica, Apis mellifera buckfast",
+    "extracted_rev2":"[\"Apis mellfastifera carnica\", \"Apis mellfastifera ligustica\", \"Apis mellfastifera Buckfast\"]"
   },
   {
     "paper_id":"516",
@@ -1789,7 +1789,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"531",
@@ -1817,7 +1817,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Osmia lignaria, Megachile rotundata",
     "extracted_rev1":"Osmia lignaria, Megachile rotundata",
-    "extracted_rev2":"Osmia lignaria, Megachile rotundata"
+    "extracted_rev2":""
   },
   {
     "paper_id":"525",
@@ -1831,7 +1831,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera, Apis mellifera scutellata",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"522",
@@ -1843,9 +1843,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"Bombus impatiens, Bombus bimaculatus, Bombus griseocollis, Bombus perplexus",
+    "extracted_llm":"B. impatiens, B. bimaculatus, B. griseocollis, B. perplexus",
     "extracted_rev1":"Bombus impatiens, Bombus bimaculatus, Bombus griseocollis, Bombus perplexus",
-    "extracted_rev2":"Bombus impatiens, Bombus bimaculatus, Bombus griseocollis, Bombus perplexus"
+    "extracted_rev2":""
   },
   {
     "paper_id":"523",
@@ -1859,7 +1859,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bombus terrestris",
     "extracted_rev1":"Bombus terrestris",
-    "extracted_rev2":"Bombus terrestris"
+    "extracted_rev2":""
   },
   {
     "paper_id":"524",
@@ -1873,7 +1873,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera var. Buckfast",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera var. Buckfast"
+    "extracted_rev2":""
   },
   {
     "paper_id":"512",
@@ -1885,9 +1885,9 @@
     "rev2_answer":"",
     "rev2_rating":"",
     "rev2_reviewer":"",
-    "extracted_llm":"[\"Apis mellifera\", \"Bombus impatiens\", \"Megachile rotundata\", \"Nomia melanderi\"]",
+    "extracted_llm":"[\"honeybee\", \"bumble bees\", \"alfalfa leafcutter bees\", \"alkali bees\", \"Bombus impatiens\"]",
     "extracted_rev1":"Bombus impatiens",
-    "extracted_rev2":"[\"Apis mellifera\", \"Bombus impatiens\", \"Megachile rotundata\", \"Nomia melanderi\"]"
+    "extracted_rev2":""
   },
   {
     "paper_id":"515",
@@ -1901,7 +1901,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"658",
@@ -1915,7 +1915,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Bumblebees",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Bumblebees"
+    "extracted_rev2":""
   },
   {
     "paper_id":"657",
@@ -1928,8 +1928,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev1":"Apis mellifera, Apis mellifera carnica",
+    "extracted_rev2":""
   },
   {
     "paper_id":"664",
@@ -1942,8 +1942,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"Osmia bicornis, Bombus terrestris, Apis mellifera",
-    "extracted_rev1":"[\"Osmia bicornis\", \"Bombus terrestris\", \"Apis mellifera\"]",
-    "extracted_rev2":"Osmia bicornis, Bombus terrestris, Apis mellifera"
+    "extracted_rev1":"Osmia bicornis, Bombus terrestris, Apis mellifera",
+    "extracted_rev2":""
   },
   {
     "paper_id":"663",
@@ -1956,8 +1956,8 @@
     "rev2_rating":"",
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
-    "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev1":"Apis mellifera, Apis mellifera carnica",
+    "extracted_rev2":""
   },
   {
     "paper_id":"441",
@@ -1971,7 +1971,7 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   },
   {
     "paper_id":"367",
@@ -1985,6 +1985,6 @@
     "rev2_reviewer":"",
     "extracted_llm":"Apis mellifera",
     "extracted_rev1":"Apis mellifera carnica",
-    "extracted_rev2":"Apis mellifera"
+    "extracted_rev2":""
   }
 ]

@@ -55,7 +55,7 @@
   },
   "071": {
     "answer_llm": "Honey bees (Apis mellifera) were tested.",
-    "answer_rev1": "Correct - Honey bees (Apis mellifera) were tested.",
+    "answer_rev1": "Honey bees (Apis mellifera) were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "Honey bees (Apis mellifera) were tested.",

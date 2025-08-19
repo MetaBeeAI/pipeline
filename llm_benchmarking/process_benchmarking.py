@@ -154,7 +154,7 @@ class BenchmarkingDataProcessor:
         if not self.available_questions:
             print("  No questions found. Check the data directory path.")
     
-    def process_question(self, question_name: str, output_dir: str = "extracted_data", max_papers: int = None) -> Optional[str]:
+    def process_question(self, question_name: str, output_dir: str = "llm_benchmarking/benchmark_data", max_papers: int = None) -> Optional[str]:
         """
         Process a single question and extract structured data.
         
@@ -286,6 +286,10 @@ class BenchmarkingDataProcessor:
         result['rev1_answer'] = self._clean_text(result['rev1_answer'])
         result['rev2_answer'] = self._clean_text(result['rev2_answer'])
         
+        # Check if reviewers actually exist before handling fallbacks
+        rev1_exists = bool(result['rev1_reviewer'] and result['rev1_reviewer'].strip())
+        rev2_exists = bool(result['rev2_reviewer'] and result['rev2_reviewer'].strip())
+        
         # Check for identical answers to optimize LLM calls
         answers_identical, primary_answer = self._check_answers_identical(
             result['llm_answer'], result['rev1_answer'], result['rev2_answer']
@@ -304,8 +308,8 @@ class BenchmarkingDataProcessor:
                     if primary_answer:
                         extracted_primary = self._extract_structured_info(primary_answer, question_type)
                         result['extracted_llm'] = extracted_primary
-                        result['extracted_rev1'] = extracted_primary
-                        result['extracted_rev2'] = extracted_primary
+                        result['extracted_rev1'] = extracted_primary if rev1_exists else ''
+                        result['extracted_rev2'] = extracted_primary if rev2_exists else ''
                     else:
                         result['extracted_llm'] = ''
                         result['extracted_rev1'] = ''
@@ -323,23 +327,23 @@ class BenchmarkingDataProcessor:
                     # Apply to identical answers, process different ones separately
                     if llm_norm == rev1_norm:
                         result['extracted_llm'] = extracted_primary
-                        result['extracted_rev1'] = extracted_primary
-                        # Process rev2 separately if it's different
-                        if result['rev2_answer'] and rev2_norm != llm_norm:
+                        result['extracted_rev1'] = extracted_primary if rev1_exists else ''
+                        # Process rev2 separately if it's different and reviewer exists
+                        if rev2_exists and result['rev2_answer'] and rev2_norm != llm_norm:
                             result['extracted_rev2'] = self._extract_structured_info(result['rev2_answer'], question_type)
                         else:
-                            result['extracted_rev2'] = extracted_primary
+                            result['extracted_rev2'] = extracted_primary if rev2_exists else ''
                     elif llm_norm == rev2_norm:
                         result['extracted_llm'] = extracted_primary
-                        result['extracted_rev2'] = extracted_primary
-                        # Process rev1 separately if it's different
-                        if result['rev1_answer'] and rev1_norm != llm_norm:
+                        result['extracted_rev2'] = extracted_primary if rev2_exists else ''
+                        # Process rev1 separately if it's different and reviewer exists
+                        if rev1_exists and result['rev1_answer'] and rev1_norm != llm_norm:
                             result['extracted_rev1'] = self._extract_structured_info(result['rev1_answer'], question_type)
                         else:
-                            result['extracted_rev1'] = extracted_primary
+                            result['extracted_rev1'] = extracted_primary if rev1_exists else ''
                     elif rev1_norm == rev2_norm:
-                        result['extracted_rev1'] = extracted_primary
-                        result['extracted_rev2'] = extracted_primary
+                        result['extracted_rev1'] = extracted_primary if rev1_exists else ''
+                        result['extracted_rev2'] = extracted_primary if rev2_exists else ''
                         # Process LLM separately if it's different
                         if result['llm_answer'] and llm_norm != rev1_norm:
                             result['extracted_llm'] = self._extract_structured_info(result['llm_answer'], question_type)
@@ -355,22 +359,21 @@ class BenchmarkingDataProcessor:
                 else:
                     result['extracted_llm'] = ''
                 
-                # Extract from rev1 answer
-                if result['rev1_answer']:
+                # Extract from rev1 answer - only if reviewer exists
+                if rev1_exists and result['rev1_answer']:
                     result['extracted_rev1'] = self._extract_structured_info(
                         result['rev1_answer'], question_type
                     )
                 else:
                     result['extracted_rev1'] = ''
                 
-                # Extract from rev2 answer - if missing, fall back to LLM answer
-                if result['rev2_answer']:
+                # Extract from rev2 answer - only if reviewer exists
+                if rev2_exists and result['rev2_answer']:
                     result['extracted_rev2'] = self._extract_structured_info(
                         result['rev2_answer'], question_type
                     )
                 else:
-                    # Fall back to LLM answer if rev2 is missing
-                    result['extracted_rev2'] = result['extracted_llm']
+                    result['extracted_rev2'] = ''
                 
         except Exception as e:
             print(f"Error extracting structured info for paper {paper_id}: {e}")
@@ -526,44 +529,97 @@ class BenchmarkingDataProcessor:
         try:
             # Create specific prompts for each question type
             if question_type == "bee_species":
-                prompt = f"""Extract bee species information from the following text. 
-If scientific names (Latin names) are given, return them in standard format (genus species subspecies).
-If only common names are given (like "Honey bees", "Bumblebees"), return the common name. 
-Do not repeat the same species name in the output (e.g., don't return "Apis mellifera" and "Apis mellifera carnica" and "honeybee" for the same species).
-If both latin and common names are given for the same species, return the latin name only.
-If no species information is given, return an empty array [].
-If an abbreviation is used for a species name, return the full species name (e.g., "Apis mellifera" instead of "A. mellifera").
+                prompt = f"""Extract bee species information from the following text.
+
+INSTRUCTIONS:
+1. Extract ONLY what is explicitly stated in the text
+2. Do NOT infer, assume, or add information not present
+3. Do NOT convert common names to scientific names unless both are given
+4. Maintain the exact level of taxonomic detail provided
+
+EXTRACTION RULES:
+- If scientific names (Latin names) are given: return them in standard format (genus species subspecies)
+- If only common names are given: return ONLY the common names as written
+- If both Latin and common names are given for the same species: return the Latin name only
+- If abbreviations are used: expand to full names (e.g., "A. mellifera" → "Apis mellifera")
+- If no species information is given: return empty array []
+- Do not repeat the same species name in different formats
+
+CRITICAL: When the text says "honey bee" (or "honeybee")  without a scientific name, return "honeybee" NOT "Apis mellifera"
 
 Text: {answer_text}
 
 Return a JSON array. Examples:
-- For scientific names: ["Apis mellifera carnica", "Bombus terrestris audax"]
-- For common names: ["Honeybees", "Bumblebees"] 
-- For no info: []"""
+- Text says "Apis mellifera carnica": ["Apis mellifera carnica"]
+- Text says "Honey bees": ["Honey bees"] 
+- Text says "Bumblebees": ["Bumblebees"]
+- Text says "honey bees and bumblebees": ["honey bees", "bumblebees"]
+- Text says nothing about species: []"""
 
             elif question_type == "pesticides":
-                prompt = f"""Extract structured pesticide information from the following text.
-Return a JSON array of objects with this structure:
-[{{"compound_name": "name", "exposure_methods": [{{"method": "method", "doses": [doses], "dose_units": "units", "exposure_duration": [duration], "exposure_units": "units", "mixture_details": "single exposure or co-exposure details"}}]}}]
+                prompt = f"""Extract pesticide names from the following text.
+
+INSTRUCTIONS:
+1. Extract ONLY the names of pesticides that are explicitly mentioned in the text
+2. Do NOT infer, assume, or add information not present
+3. Use the exact pesticide names as written in the text
+4. Do not add any other information or details
+5. Only provide the pesticide name, not the commercial formulation, if both are given.
 
 Text: {answer_text}
 
-Extract all pesticides mentioned with their doses, methods, and timing information."""
+Return a JSON array of pesticide names:
+["pesticide_name_1", "pesticide_name_2", "pesticide_name_3"]
+
+If no pesticide information is found, return an empty array []."""
 
             elif question_type == "additional_stressors":
-                prompt = f"""Extract additional stressors (excluding pesticides) from the following text.
-Return a JSON array of stressors, for example: ["Varroa destructor", "temperature stress (35°C)", "Nosema infection"]
+                prompt = f"""Extract additional stressors (excluding insecticides) from the following text.
+
+INSTRUCTIONS:
+1. Extract ONLY what is explicitly stated in the text
+2. Do NOT infer, assume, or add information not present
+3. Focus on pathogens, parasites, environmental stressors, non-insecticide chemical stressors, and nutritional stress (starvation, restricion).
+4. If a stressor is described in combination with an insecticide stressor, just return the non-insecticide stressor.
+
+EXTRACTION RULES:
+- Include only stressors that are explicitly mentioned
+- Do not add common stressors that might be expected but aren't stated
+- Do not include specific values (measurements, amounts), just the stressor description
+- Standardize the wording used for any kind of temperature or thermal stress (return "temperature stress")
+- Standardize the wording for any kind of starvation, nutrition, or diet stress (return "nutritional stress")
+- If only general terms are used, return those general terms
+- If no additional stressors were found, return "none"
+
+CRITICAL: Do not add typical stressors or common examples if they are not in the text
 
 Text: {answer_text}
 
-Focus on pathogens, parasites, environmental stressors, and other non-pesticide factors."""
+Return a JSON array of stressors, for example: ["Varroa destructor", "temperature stress", "Nosema infection", "nutritional stress"]
+
+If no additional stressors are found, return "none"."""
 
             else:
                 # Generic extraction for other question types
                 prompt = f"""Extract the key information from the following text about {question_type}.
-Return a concise summary in JSON format.
 
-Text: {answer_text}"""
+INSTRUCTIONS:
+1. Extract ONLY what is explicitly stated in the text
+2. Do NOT infer, assume, or add information not present
+3. Maintain the exact level of detail provided
+4. Focus on factual information rather than interpretations
+
+EXTRACTION RULES:
+- Include only information that is directly mentioned
+- Do not add common knowledge or typical examples unless stated
+- Preserve specific details, numbers, and measurements exactly as written
+- If only general terms are used, return those general terms
+
+CRITICAL: Do not add information that might be expected but isn't explicitly stated
+
+Text: {answer_text}
+
+Return a concise summary in JSON format. If no relevant information is found, return an empty object {{}}."""
 
             # Make the API call
             response = client.chat.completions.create(
@@ -815,8 +871,8 @@ def main():
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="extracted_data",
-        help="Output directory for extracted data (default: extracted_data)"
+        default="llm_benchmarking/benchmark_data",
+        help="Output directory for extracted data (default: llm_benchmarking/benchmark_data)"
     )
     
     parser.add_argument(
