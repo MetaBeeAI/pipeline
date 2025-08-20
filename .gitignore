@@ -207,3 +207,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# specific output files (too large to commit)
+llm_benchmarking/test-datasets/*
+llm_benchmarking/final_merged_data/*
+llm_benchmarking/deepeval-results/*
+
+# Deepeval cache
+.deepeval/

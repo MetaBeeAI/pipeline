@@ -1,0 +1,68 @@
+{
+  "total_entries": 5604,
+  "llm_entries": 5604,
+  "reviewer_entries": 0,
+  "metrics_analyzed": [
+    "Correctness [GEval]",
+    "Completeness [GEval]",
+    "Accuracy [GEval]",
+    "Faithfulness",
+    "Contextual Precision",
+    "Contextual Recall"
+  ],
+  "question_types": [
+    "experimental_methodology",
+    "future_research",
+    "pesticides",
+    "additional_stressors",
+    "significance",
+    "bee_species"
+  ],
+  "data_types": [
+    "llm_vs_reviewer"
+  ],
+  "metric_statistics": {
+    "Correctness [GEval]": {
+      "total_evaluations": 1231,
+      "mean_score": 0.22258326563769293,
+      "std_score": 0.4161497787893202,
+      "min_score": 0.0,
+      "max_score": 1.0
+    },
+    "Completeness [GEval]": {
+      "total_evaluations": 1231,
+      "mean_score": 0.625962606164006,
+      "std_score": 0.3080292493383084,
+      "min_score": 0.0,
+      "max_score": 1.0
+    },
+    "Accuracy [GEval]": {
+      "total_evaluations": 1231,
+      "mean_score": 0.5944444052388861,
+      "std_score": 0.3079901876294106,
+      "min_score": 0.0,
+      "max_score": 1.0000000000000002
+    },
+    "Faithfulness": {
+      "total_evaluations": 637,
+      "mean_score": 0.8765936426239258,
+      "std_score": 0.2040157356035888,
+      "min_score": 0.0,
+      "max_score": 1.0
+    },
+    "Contextual Precision": {
+      "total_evaluations": 637,
+      "mean_score": 0.6551472608926222,
+      "std_score": 0.40519002729035675,
+      "min_score": 0.0,
+      "max_score": 1.0
+    },
+    "Contextual Recall": {
+      "total_evaluations": 637,
+      "mean_score": 0.7670346378854285,
+      "std_score": 0.3874746602696989,
+      "min_score": 0.0,
+      "max_score": 1.0
+    }
+  }
+}

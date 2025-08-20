@@ -248,22 +248,23 @@ your_custom_papers_directory/
 
 **Note**: The `.env` file is not tracked in git, so your API keys and custom paths remain private.
 
-## LLM Benchmarking and Review
+## LLM Benchmarking and Dataset Generation
 
-The pipeline includes tools for comparing LLM-generated answers with human reviewer annotations:
+The pipeline includes tools for generating test datasets and evaluating LLM outputs using DeepEval:
 
-### Data Merging
+### Data Merging and Dataset Generation
 - **Location**: `llm_benchmarking/merge-answers.py`
-- **Purpose**: Combines LLM answers with human reviewer answers for analysis
+- **Purpose**: Combines LLM answers with human reviewer answers for dataset creation
 - **Input Sources**:
   - LLM answers: `papers/{paper_id}/answers.json`
   - Reviewer answers: Either local `answers_extended.json` files or external reviewer databases
 - **Output**: Merged JSON files in `final_merged_data/` folder
 
-### Review Workflow
-1. **Single Reviewer**: Work directly in the main data folder with `answers_extended.json`
-2. **Multiple Reviewers**: Each reviewer works in separate folders with their initials
-3. **Data Merging**: Combine all reviewer data with LLM answers for benchmarking
+### Dataset Generation Workflow
+1. **Data Merging**: Combine LLM and reviewer answers using `merge_answers.py`
+2. **Test Dataset Creation**: Generate evaluation datasets using `test_dataset_generation.py`
+3. **Reviewer Comparison**: Create reviewer comparison datasets using `reviewer_dataset_generation.py`
+4. **DeepEval Assessment**: Evaluate datasets using various DeepEval metrics
 
 ### Usage Examples
 ```bash
@@ -274,7 +275,148 @@ python llm_benchmarking/merge-answers.py
 python llm_benchmarking/merge-answers.py --reviewer-db /path/to/reviewers
 ```
 
-See `llm_benchmarking/README.md` for detailed documentation on the review process and folder structures.
+### LLM Evaluation with DeepEval
+
+The pipeline includes comprehensive evaluation tools using DeepEval for assessing LLM performance:
+
+#### Test Dataset Generation
+- **Location**: `llm_benchmarking/test_dataset_generation.py`
+- **Purpose**: Generates test datasets using reviewer answers to various questions about bee research papers
+- **Features**:
+  - **Input**: Questions asked about bee research papers
+  - **Expected Output**: Human reviewer answers (gold standard)
+  - **Context**: Relevant text chunks from original papers
+  - **Metadata**: Paper ID, question type, reviewer, and quality rating
+  - **Output Formats**: Both JSON and CSV for flexibility
+  - **Output Location**: `llm_benchmarking/test-datasets/` folder
+
+#### Reviewer Comparison Dataset Generation
+- **Location**: `llm_benchmarking/reviewer_dataset_generation.py`
+- **Purpose**: Generates test datasets comparing answers from two different reviewers for the same questions
+- **Features**:
+  - **Input**: Questions asked about bee research papers
+  - **Expected Output**: Reviewer 1 answers (used as gold standard)
+  - **Actual Outputs**: Reviewer 2 answers (for comparison)
+  - **Metadata**: Paper ID, question type, and both reviewers' ratings
+  - **Use Cases**: Evaluating inter-reviewer agreement, training models to identify consensus vs. disagreement
+  - **Output Formats**: Both JSON and CSV for flexibility
+  - **Output Location**: `llm_benchmarking/test-datasets/` folder
+
+#### Traditional DeepEval Metrics
+- **Location**: `llm_benchmarking/deepeval_benchmarking.py`
+- **Purpose**: Evaluates LLM outputs using faithfulness, contextual precision, and contextual recall metrics
+- **Features**: Batch processing, incremental saving, retry logic, and cost optimization
+
+#### G-Eval for Correctness Assessment
+- **Location**: `llm_benchmarking/deepeval_GEval.py`
+- **Purpose**: Uses G-Eval metrics to assess correctness, completeness, and accuracy of LLM outputs
+- **Features**: 
+  - **Correctness**: Strict evaluation of output accuracy against expected results
+  - **Completeness**: Assessment of coverage of key points
+  - **Accuracy**: Evaluation of information accuracy and alignment
+  - Uses GPT-4o by default for best evaluation quality
+  - Same robust batch processing and error handling as traditional benchmarking
+
+#### Reviewer Comparison Evaluation
+- **Location**: `llm_benchmarking/deepeval_reviewers.py`
+- **Purpose**: Evaluates reviewer comparison dataset using context-free metrics to assess inter-reviewer agreement
+- **Features**:
+  - **FaithfulnessMetric**: Measures how faithful reviewer 2 answers are to reviewer 1 answers
+  - **G-Eval Correctness**: Strict evaluation of reviewer 2 accuracy against reviewer 1
+  - **G-Eval Completeness**: Assessment of reviewer 2 coverage of reviewer 1 key points
+  - **G-Eval Accuracy**: Evaluation of reviewer 2 information accuracy vs reviewer 1
+  - **Context-Free**: Only uses metrics that don't require paper context or retrieval context
+  - **Reviewer Analysis**: Provides insights into inter-reviewer agreement patterns
+
+#### Test Dataset Questions Covered
+The test dataset includes 7 question types:
+1. **bee_species**: "What species of bee(s) were tested?"
+2. **pesticides**: "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?"
+3. **additional_stressors**: "Were any additional stressors or combination used (like temperature, parasites or pathogens, other chemicals or nutrition stress)?"
+4. **experimental_methodology**: "What experimental methodologies was used in this paper?"
+5. **significance**: "Summarize the paper's discussion regarding the importance to the field."
+6. **future_research**: "Summarize the paper's discussion regarding future research directions."
+7. **limitations**: "Summarize the paper's discussion regarding any limitations or barriers to research."
+
+#### Usage Examples
+```bash
+# Generate test dataset from reviewer answers
+python llm_benchmarking/test_dataset_generation.py
+
+# Generate reviewer comparison dataset
+python llm_benchmarking/reviewer_dataset_generation.py
+
+# Run traditional DeepEval evaluation
+python llm_benchmarking/deepeval_benchmarking.py --question bee_species
+
+# Run G-Eval correctness evaluation (recommended for quality assessment)
+python llm_benchmarking/deepeval_GEval.py --question bee_species
+
+# Run reviewer comparison evaluation
+python llm_benchmarking/deepeval_reviewers.py --question bee_species
+
+# Run with custom settings
+python llm_benchmarking/deepeval_GEval.py --question pesticides --batch-size 25 --model gpt-4o
+```
+
+#### Evaluation Outputs
+Both evaluation scripts save results in `llm_benchmarking/deepeval-results/` with:
+- **JSON format**: Complete evaluation results with metadata
+- **JSONL format**: Line-by-line results for easy processing
+- **Timestamped filenames**: Unique identification for each evaluation run
+- **Incremental saving**: Results saved after each batch to prevent data loss
+
+#### Test Dataset Structure
+The generated test dataset follows this structure:
+```json
+{
+  "input": "What species of bee(s) were tested?",
+  "expected_output": "Honey bees (Apis mellifera) were tested.",
+  "actual_outputs": "Honey bees (*Apis mellifera*), specifically the Carniolan honey bee (*Apis mellifera carnica*), were tested in the study.",
+  "context": ["Text chunk 1 from the paper...", "Text chunk 2 from the paper..."],
+  "metadata": {
+    "paper_id": "594",
+    "question_id": "bee_species",
+    "reviewer": "AJ",
+    "rating": 10
+  }
+}
+```
+
+#### Data Sources
+- **Questions**: From `llm_benchmarking/llm_questions.txt`
+- **Reviewer Answers**: From `final_merged_data/*_merged.json` files
+- **Context**: From paper pages and merged chunk data
+- **Chunk IDs**: From paper `answers.json` files
+- **Output Location**: Generated datasets are saved in `llm_benchmarking/test-datasets/` folder
+
+### Streamlined Structure
+
+The `llm_benchmarking/` module has been streamlined to focus on core benchmarking functions:
+
+- **Core Functions**: Dataset generation, DeepEval evaluation, reviewer analysis, and results visualization
+- **Moved Files**: `process_benchmarking.py` and related utilities have been moved to `structured_datatable/from_benchmarking_to_fix/` for future integration with the structured data pipeline
+
+This ensures a clean separation between benchmarking (evaluation and analysis) and final data structuring (extraction and formatting).
+
+See `llm_benchmarking/README.md` for detailed documentation on the streamlined benchmarking workflow and folder structures.
+
+### DeepEval Results Analysis
+
+The `deepeval_results_analysis.py` script provides comprehensive analysis and visualization of evaluation results:
+
+- **Data Consolidation**: Merges results from multiple evaluation runs into organized files
+- **Visualization**: Creates comparison plots between LLM vs reviewer and reviewer vs reviewer data
+- **Statistical Analysis**: Provides standard error bars and detailed metric breakdowns
+- **Output Organization**: Saves merged data and plots in structured directories
+
+This tool enables researchers to:
+- Compare performance across different evaluation approaches
+- Identify patterns in LLM vs human performance
+- Generate publication-ready visualizations
+- Maintain organized historical evaluation data
+
+**✅ Status**: Successfully tested and working! The script has processed 1,658 evaluation entries across 6 metrics and 6 question types, generating comprehensive visualizations and merged data files.
 
 ## Setup
 
@@ -316,18 +458,63 @@ python -m metabeeai_llm.llm_pipeline
 python llm_review_software/beegui.py
 ```
 
-### 4. Generate Structured Output
+### 4. Generate Test Datasets and Evaluate
 ```bash
-# Create structured data tables
-python -m metabeeai_llm.process_llm_output --start 1 --end 10
+# Generate test datasets from reviewer answers
+python llm_benchmarking/test_dataset_generation.py
+
+# Generate reviewer comparison dataset
+python llm_benchmarking/reviewer_dataset_generation.py
+
+# Evaluate with DeepEval (traditional metrics)
+python llm_benchmarking/deepeval_benchmarking.py --question bee_species
+
+# Evaluate with G-Eval (correctness assessment)
+python llm_benchmarking/deepeval_GEval.py --question bee_species
+
+# Evaluate reviewer comparisons
+python llm_benchmarking/deepeval_reviewers.py --question bee_species
+
+# Analyze and visualize all evaluation results
+python llm_benchmarking/deepeval_results_analysis.py
 ```
+
+### 5. Generate Final Structured Output
+```bash
+# Create structured data tables (using moved utilities)
+# Note: process_benchmarking.py has been moved to structured_datatable/from_benchmarking_to_fix/
+# for future integration with the structured data pipeline
+```
+
+## Processing Pipeline
+
+The MetaBeeAI pipeline follows a structured workflow:
+
+### **Phase 1: Document Processing**
+- **PDF Processing**: Automated PDF splitting and Vision AI analysis
+- **LLM Integration**: Multi-stage question-answering with Large Language Models
+
+### **Phase 2: Review and Annotation**
+- **Interactive Review**: GUI-based review and annotation system
+- **Data Merging**: Combine LLM and reviewer answers for analysis
+
+### **Phase 3: Benchmarking and Evaluation**
+- **Dataset Generation**: Create test datasets for evaluation
+- **DeepEval Assessment**: Comprehensive evaluation using various metrics
+- **Reviewer Analysis**: Statistical analysis of reviewer ratings and agreement
+- **Results Analysis**: Consolidate and visualize evaluation results
+
+### **Phase 4: Final Data Structuring** (Future)
+- **Structured Output**: Final data extraction and formatting
+- **Integration**: Connect with structured data pipeline
 
 ## Features
 
 - **PDF Processing**: Automated PDF splitting and Vision AI analysis
 - **LLM Integration**: Multi-stage question-answering with Large Language Models
 - **Interactive Review**: GUI-based review and annotation system
-- **Data Structuring**: Automated conversion to structured formats (CSV/JSON)
+- **Dataset Generation**: Automated creation of evaluation datasets
+- **DeepEval Integration**: Comprehensive LLM output assessment
 - **Modular Design**: Independent components that can be used separately
 - **Comprehensive Logging**: Detailed processing logs and status updates
 

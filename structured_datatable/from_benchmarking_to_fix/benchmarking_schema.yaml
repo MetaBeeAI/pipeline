@@ -1,0 +1,60 @@
+output_schema:
+  - field: bee_species
+    type: list
+    description: "Extract the most refined bee species names (genus, species, subspecies when available). Return only the scientific names in standard format (e.g., 'Apis mellifera carnica', 'Bombus terrestris audax')."
+    csv_include_field: true
+  
+  - field: pesticides_data
+    type: complex
+    description: "Extract structured pesticide information including compound names, doses, exposure methods, and timing details."
+    csv_include_field: true
+    subfields:
+      - field: compound_name
+        type: string
+        description: "Name of the pesticide compound (e.g., 'imidacloprid', 'clothianidin')"
+      - field: exposure_methods
+        type: complex_array
+        description: "Methods of exposure and their corresponding details"
+        subfields:
+          - field: method
+            type: string
+            description: "Method of exposure (e.g., 'oral', 'contact', 'topical', 'injection')"
+          - field: doses
+            type: list
+            number: true
+            description: "Dosage levels used for this pesticide with this exposure method"
+          - field: dose_units
+            type: string
+            description: "Units for the dosage (e.g., 'ng/bee', 'μg/bee', 'mg/bee', 'ppm')"
+          - field: exposure_duration
+            type: list
+            number: true
+            description: "Exposure duration(s) for this pesticide with this exposure method"
+          - field: exposure_units
+            type: string
+            description: "Units for the exposure duration (e.g., 'hours', 'days', 'weeks')"
+          - field: mixture_details
+            type: string
+            description: "Whether the pesticide was used alone ('single exposure') or in a mixture ('co-exposure with [other compounds]')"
+  
+  - field: additional_stressors
+    type: list
+    description: "Extract additional stressors used in the study (excluding pesticides). Include stressors like pathogens, parasites, temperature stress, nutritional stress, etc."
+    csv_include_field: true
+
+output_formats:
+  - csv
+  - json
+
+data_mappings:
+  bee_species:
+    category: "BEE_SPECIES"
+    question: "Extract the most refined bee species names from the text as provided. Return scientific names in standard format (genus species subspecies)."
+  
+  pesticides_data:
+    category: "PESTICIDES"
+    question: "Extract structured information about all pesticides used, including compound names, doses, exposure methods, duration, and whether used alone or in mixtures."
+  
+  additional_stressors:
+    category: "ADDITIONAL_STRESSORS"
+    question: "What additional stressors (excluding pesticides) were used in the study? Include pathogens, parasites, environmental stressors, etc."
