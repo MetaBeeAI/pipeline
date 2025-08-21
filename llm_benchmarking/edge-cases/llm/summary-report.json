@@ -1,0 +1,231 @@
+{
+  "source": "llm",
+  "generated_at": "2025-08-21 11:54:32.247253",
+  "total_edge_cases": 120,
+  "question_type_summaries": {
+    "bee_species": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.010694043360820235,
+        "max": 0.19747139405152322,
+        "mean": 0.13613681316571646
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Lack of Specificity**: Many responses fail to provide the precise species or subspecies required, often substituting general terms like \"honeybees\" instead of the specific scientific names or subspecies, leading to inaccuracies and incompleteness.\n   \n2. **Inclusion of Unrelated Species**: Responses frequently introduce additional, unrelated species not mentioned in the expected output, which results in factual inaccuracies and a failure to focus on the key species or subspecies required.\n\n3. **Omission of Key Details**: Critical details such as subspecies, scientific names, or specific descriptors (e.g., \"Africanized\") are often omitted, leading to incomplete responses that do not fully align with the expected output.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Emphasize Specificity**: Clearly instruct the model to provide exact scientific names and subspecies, avoiding general terms or common names unless specified.\n\n2. **Limit Scope**: Direct the model to focus solely on the species or subspecies mentioned in the prompt, explicitly stating that additional species should not be included unless requested.\n\n3. **Highlight Key Details**: Ensure the prompt emphasizes the importance of including all relevant descriptors and details, such as subspecies or hybrid information, to improve completeness and accuracy.",
+      "sample_cases": [
+        {
+          "name": "paper_658_case_192",
+          "combined_score": 0.010694043360820235,
+          "paper_id": "658",
+          "input": "What species of bee(s) were tested?",
+          "expected_output": "honeybee (Apis mellifera)",
+          "actual_output": "Bumblebees"
+        },
+        {
+          "name": "paper_885_case_150",
+          "combined_score": 0.06666666666666667,
+          "paper_id": "885",
+          "input": "What species of bee(s) were tested?",
+          "expected_output": "Apis mellifera carnica",
+          "actual_output": "Honey bees and bumblebees."
+        },
+        {
+          "name": "paper_276_case_79",
+          "combined_score": 0.07239937643269716,
+          "paper_id": "276",
+          "input": "What species of bee(s) were tested?",
+          "expected_output": "The paper discusses only the treatment of Bombus impatiens (Cresson)",
+          "actual_output": "The species of bees tested were Bombus terrestris, Bombus lucorum, Bombus pratorum, Bombus pascuorum, and Bombus impatiens."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-21 11:56:36.216613"
+    },
+    "pesticides": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.0,
+        "max": 0.20717077884826063,
+        "mean": 0.16225500624624212
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Incorrect Information**: Many responses included incorrect details about pesticides used, exposure methods, and study designs, leading to significant factual inaccuracies. This often involved stating that pesticides were used when they were not or misidentifying the types and methods of application.\n\n2. **Omissions**: A frequent issue was the omission of critical details such as specific pesticide names, concentrations, exposure methods, and study timelines. These omissions resulted in incomplete responses that failed to meet the expected output requirements.\n\n3. **Misalignment with Expected Output**: Responses often did not align with the expected output, either by introducing unrelated information or failing to address key points such as study context, specific experimental setups, and detailed findings.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Clarify Key Details**: Ensure the prompt explicitly specifies the required details, such as pesticide names, concentrations, exposure methods, and study design elements, to guide the LLM in providing complete and accurate responses.\n\n2. **Emphasize Contextual Understanding**: Include context-specific instructions in the prompt to help the LLM understand the study's framework and avoid introducing unrelated or incorrect information.\n\n3. **Highlight Critical Points**: Use bullet points or numbered lists in the prompt to emphasize critical points that must be addressed, ensuring the LLM focuses on these elements to improve alignment with the expected output.",
+      "sample_cases": [
+        {
+          "name": "paper_430_case_76",
+          "combined_score": 0.0,
+          "paper_id": "430",
+          "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of ex...",
+          "expected_output": "The following neonicotinoids were considered: acetamiprid, clothianidin, dinotefuran, imidacloprid, thiamethoxam and thiacloprid and the following pyr...",
+          "actual_output": "Information not found in the provided text."
+        },
+        {
+          "name": "paper_380_case_125",
+          "combined_score": 0.07064009719213375,
+          "paper_id": "380",
+          "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of ex...",
+          "expected_output": "No exposure was conducted in the study. The study identified the pesticide residues present in the honey bee body.",
+          "actual_output": "The pesticides used in the study include Propamocarb (fungicide), Carbendazim (herbicide), and Azobenzene (insecticide). However, the study does not s..."
+        },
+        {
+          "name": "paper_382_case_109",
+          "combined_score": 0.09953121249301605,
+          "paper_id": "382",
+          "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of ex...",
+          "expected_output": "No pesticides were directly applied in the study. Instead, the study involved placing hives at sites within commercial orchards. However, pesticide ap...",
+          "actual_output": "The pesticides used in the study were neonicotinoids, specifically imidacloprid, clothianidin, and thiamethoxam. The exposure method for imidacloprid ..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-21 11:56:01.474876"
+    },
+    "additional_stressors": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Contradiction with Expected Output**: The most prevalent issue is the direct contradiction between the actual and expected outputs, where the actual output incorrectly states the presence of additional stressors, while the expected output specifies none were used. This results in a complete misalignment and factual inaccuracies.\n\n2. **Inaccuracy and Extraneous Information**: The actual outputs often introduce incorrect and unnecessary details about stressors, such as specific chemicals, dosages, and exposure methods, which are not present in the expected output, leading to significant factual discrepancies.\n\n3. **Failure to Address Key Points**: The actual outputs consistently fail to address the key points from the expected output, resulting in incomplete responses that do not align with the evaluation criteria.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Clarify Expected Output Requirements**: Ensure the prompt explicitly states that no additional stressors should be mentioned unless specified, to prevent contradictions and inaccuracies.\n\n2. **Emphasize Key Points**: Highlight the importance of aligning with the expected output's key points, possibly by providing examples of correct and incorrect responses.\n\n3. **Reduce Extraneous Details**: Instruct the model to avoid adding unnecessary details unless they are explicitly required, to maintain focus on the expected output's core information.",
+      "sample_cases": [
+        {
+          "name": "paper_583_case_30",
+          "combined_score": 0.0,
+          "paper_id": "583",
+          "input": "Question about additional_stressors",
+          "expected_output": "No additional stressors were tested.",
+          "actual_output": "Yes, the study used neonicotinoid pesticides (thiamethoxam and clothianidin) as additional stressors, with doses ranging from 0 to 140 ng/g (ppb) in t..."
+        },
+        {
+          "name": "paper_799_case_32",
+          "combined_score": 0.0,
+          "paper_id": "799",
+          "input": "Question about additional_stressors",
+          "expected_output": "There were no additional stressors during this study",
+          "actual_output": "Yes, thiamethoxam (a neonicotinoid) was used as an additional stressor. The doses reported are 20 ng g\u207b\u00b9 in a sucrose solution and an average exposure..."
+        },
+        {
+          "name": "paper_294_case_36",
+          "combined_score": 0.0,
+          "paper_id": "294",
+          "input": "Question about additional_stressors",
+          "expected_output": "There were no additional stressors.",
+          "actual_output": "Yes, imidacloprid was used as an additional stressor. The dose was 2% (v/v) in the diet, with an expected concentration of 0.7 ng mL\u207b\u00b9. The exposure m..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-21 11:56:29.046432"
+    },
+    "experimental_methodology": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.0,
+        "max": 0.21655811948540524,
+        "mean": 0.15410006985743624
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Factual Discrepancies**: Many responses inaccurately describe the experimental methodologies, often adding incorrect information or omitting critical details, leading to significant factual misalignment with the expected outputs.\n   \n2. **Lack of Completeness**: Responses frequently fail to cover key methodological details, such as specific experimental procedures, conditions, and measurements, resulting in incomplete descriptions that do not fully align with the expected outputs.\n\n3. **Generalization Over Specificity**: Responses often provide overly general summaries instead of detailed procedural steps, missing specific techniques, conditions, and outcomes that are crucial for accurately representing the experimental methodologies.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Emphasize Specificity**: Design prompts to explicitly request detailed descriptions of experimental procedures, conditions, and outcomes, ensuring that responses focus on specific methodologies rather than general summaries.\n\n2. **Highlight Key Details**: Include a checklist of critical methodological elements (e.g., specific techniques, conditions, measurements) within the prompt to guide responses towards covering all necessary aspects comprehensively.\n\n3. **Clarify Expectations**: Clearly define the expected level of detail and accuracy in the prompt, possibly by providing examples of well-aligned responses, to help guide the generation of more precise and complete outputs.",
+      "sample_cases": [
+        {
+          "name": "paper_934_case_97",
+          "combined_score": 0.0,
+          "paper_id": "934",
+          "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not stati...",
+          "expected_output": "This paper is a modelling and synthesis study that compiles previously published experimental data rather than conducting new experiments.",
+          "actual_output": "The experimental methodologies used in the paper include direct ingestion of imidacloprid by adult honeybees and ants, feeding the toxin to larvae of ..."
+        },
+        {
+          "name": "paper_934_case_98",
+          "combined_score": 0.0031783153252578494,
+          "paper_id": "934",
+          "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not stati...",
+          "expected_output": "This is a modeling paper, with data used from other published studies (e.g. ld50 data). This paper does not present new empirical data.",
+          "actual_output": "The experimental methodologies used in the paper include direct ingestion of imidacloprid by adult honeybees and ants, feeding the toxin to larvae of ..."
+        },
+        {
+          "name": "paper_302_case_48",
+          "combined_score": 0.07021121383447504,
+          "paper_id": "302",
+          "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not stati...",
+          "expected_output": "In addition to assays, gene expression was quantified using qPCR, hormone levels were measured using an ELISA kit and metabolites were analysed using ...",
+          "actual_output": "The experimental methodologies used in this paper include toxicity studies on honeybees (Apis mellifera) that assess the effects of dinotefuran, speci..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-21 11:56:19.520734"
+    },
+    "significance": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.03333333333333333,
+        "max": 0.13333333333333333,
+        "mean": 0.11830672368742468
+      },
+      "llm_summary": "**Section 1: Main Issues**\n1. **Lack of Specificity**: The responses frequently provide general summaries about the importance of bees and pesticide research without addressing specific experimental findings or detailed results required by the expected output.\n2. **Incomplete Coverage**: Key details such as specific pesticide effects, experimental results, and study conclusions are consistently omitted, leading to incomplete responses that fail to align with the expected output.\n3. **Misalignment with Expected Output**: There is a significant discrepancy between the actual and expected outputs, with the actual outputs often lacking factual alignment and failing to include critical study-specific information.\n\n**Section 2: Recommendations for Improving Prompt**\n1. **Emphasize Specificity**: Clearly instruct the model to focus on specific experimental findings and results, rather than providing general summaries, to ensure detailed and relevant responses.\n2. **Highlight Key Details**: Include explicit prompts for the model to address particular study conclusions, data points, and experimental outcomes to improve completeness and alignment.\n3. **Use Structured Prompts**: Implement a structured format that guides the model to cover essential elements such as methodology, results, and conclusions, ensuring comprehensive and accurate responses.",
+      "sample_cases": [
+        {
+          "name": "paper_813_case_55",
+          "combined_score": 0.03333333333333333,
+          "paper_id": "813",
+          "input": "Summarize the paper's discussion regarding the importance to the field.",
+          "expected_output": "This study reveals that at a dose of the LD50 for fipronil and imidacloprid, motor function is severely impaired. For firpronil motor impairment is al...",
+          "actual_output": "The paper emphasizes the vital role of honey bees in pollination, contributing over $200 billion annually to agriculture, and addresses the concerning..."
+        },
+        {
+          "name": "paper_432_case_212",
+          "combined_score": 0.07274751723796635,
+          "paper_id": "432",
+          "input": "Summarize the paper's discussion regarding the importance to the field.",
+          "expected_output": "The study reports that imidacloprid was most toxic when fed in fructose, and least toxic when presented in ordindary sugar, sucrose and glucose, and t...",
+          "actual_output": "The paper emphasizes the indispensable role of honeybees in pollinating a significant portion of the world's food supply and warns of the severe conse..."
+        },
+        {
+          "name": "paper_935_case_145",
+          "combined_score": 0.08741531104006182,
+          "paper_id": "935",
+          "input": "Summarize the paper's discussion regarding the importance to the field.",
+          "expected_output": "The study highlights that acetamiprid sprays had no effects on honey bee behavior or mortality. In contrast, in certain years (but not all), exposure ...",
+          "actual_output": "The paper emphasizes the significance of ongoing research into honeybee wellbeing and the factors contributing to their decline, particularly in relat..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-21 11:56:04.385564"
+    },
+    "future_research": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Misalignment with Expected Output**: The primary issue is the consistent misalignment between the Actual Output and the Expected Output, where the Actual Output provides detailed future research suggestions despite the Expected Output explicitly stating there should be none. This discrepancy is evident in all cases, indicating a fundamental misunderstanding of the task requirements.\n\n2. **Introduction of Unrequested Information**: The Actual Output frequently introduces additional information not present or requested in the Expected Output. This results in a failure to adhere to the evaluation criteria, as the responses include content that contradicts the specified requirements.\n\n3. **Failure to Address Key Points**: The Actual Output consistently fails to address the key point of the Expected Output, which is the absence of future research suggestions. This results in a complete misalignment with the evaluation steps and a lack of adherence to the expected response format.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Clarify Output Requirements**: Clearly specify in the prompt that no future research suggestions should be included if the Expected Output states there are none. Emphasize the importance of aligning with the Expected Output.\n\n2. **Highlight Key Points**: Use explicit instructions to highlight the key points that need to be addressed, ensuring that the Actual Output does not introduce unrequested information.\n\n3. **Provide Examples**: Include examples of both correct and incorrect responses to illustrate the expected alignment with the Expected Output, helping to guide the generation of appropriate responses.",
+      "sample_cases": [
+        {
+          "name": "paper_594_case_1",
+          "combined_score": 0.0,
+          "paper_id": "594",
+          "input": "Summarize the paper's discussion regarding future research directions.",
+          "expected_output": "I cannot find any suggestions for future research.",
+          "actual_output": "Future research should investigate the intricate relationships between environmental factors and honey bee gene regulation, particularly under hive co..."
+        },
+        {
+          "name": "paper_586_case_19",
+          "combined_score": 0.0,
+          "paper_id": "586",
+          "input": "Summarize the paper's discussion regarding future research directions.",
+          "expected_output": "I have not identified any sections where they discuss future research directions.",
+          "actual_output": "Future research should focus on the differential effects of neonicotinoids on receptor subtype activation, the long-term impacts on bee behavior and c..."
+        },
+        {
+          "name": "paper_584_case_37",
+          "combined_score": 0.0,
+          "paper_id": "584",
+          "input": "Summarize the paper's discussion regarding future research directions.",
+          "expected_output": "No suggestions for future research.",
+          "actual_output": "Future research directions should include investigating the multiple exposure routes of bumblebees to neonicotinoids, particularly in non-crop areas l..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-21 11:56:11.230011"
+    }
+  },
+  "overall_statistics": {
+    "total_cases": 120,
+    "score_range": {
+      "min": 0.0,
+      "max": 0.21655811948540524,
+      "mean": 0.0951331021594699
+    }
+  }
+}

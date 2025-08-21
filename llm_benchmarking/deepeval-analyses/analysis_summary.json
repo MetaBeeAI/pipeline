@@ -1,7 +1,7 @@
 {
-  "total_entries": 5604,
-  "llm_entries": 5604,
-  "reviewer_entries": 0,
+  "total_entries": 8866,
+  "llm_entries": 7386,
+  "reviewer_entries": 1480,
   "metrics_analyzed": [
     "Correctness [GEval]",
     "Completeness [GEval]",
@@ -19,48 +19,49 @@
     "bee_species"
   ],
   "data_types": [
-    "llm_vs_reviewer"
+    "llm_vs_reviewer",
+    "reviewer_vs_reviewer"
   ],
   "metric_statistics": {
     "Correctness [GEval]": {
-      "total_evaluations": 1231,
-      "mean_score": 0.22258326563769293,
-      "std_score": 0.4161497787893202,
+      "total_evaluations": 1601,
+      "mean_score": 0.2410993129294191,
+      "std_score": 0.4278840856537874,
       "min_score": 0.0,
       "max_score": 1.0
     },
     "Completeness [GEval]": {
-      "total_evaluations": 1231,
-      "mean_score": 0.625962606164006,
-      "std_score": 0.3080292493383084,
+      "total_evaluations": 1601,
+      "mean_score": 0.6358175636501866,
+      "std_score": 0.3011191769149067,
       "min_score": 0.0,
-      "max_score": 1.0
+      "max_score": 1.0000000000000002
     },
     "Accuracy [GEval]": {
-      "total_evaluations": 1231,
-      "mean_score": 0.5944444052388861,
-      "std_score": 0.3079901876294106,
+      "total_evaluations": 1601,
+      "mean_score": 0.6100575213108455,
+      "std_score": 0.299615046079511,
       "min_score": 0.0,
       "max_score": 1.0000000000000002
     },
     "Faithfulness": {
-      "total_evaluations": 637,
-      "mean_score": 0.8765936426239258,
-      "std_score": 0.2040157356035888,
+      "total_evaluations": 1601,
+      "mean_score": 0.9352495456875786,
+      "std_score": 0.15693078864501156,
       "min_score": 0.0,
       "max_score": 1.0
     },
     "Contextual Precision": {
-      "total_evaluations": 637,
-      "mean_score": 0.6551472608926222,
-      "std_score": 0.40519002729035675,
+      "total_evaluations": 1231,
+      "mean_score": 0.6725423863850374,
+      "std_score": 0.36261275365915047,
       "min_score": 0.0,
       "max_score": 1.0
     },
     "Contextual Recall": {
-      "total_evaluations": 637,
-      "mean_score": 0.7670346378854285,
-      "std_score": 0.3874746602696989,
+      "total_evaluations": 1231,
+      "mean_score": 0.8099972248688363,
+      "std_score": 0.34692585809595944,
       "min_score": 0.0,
       "max_score": 1.0
     }

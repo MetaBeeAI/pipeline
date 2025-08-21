@@ -1,0 +1,582 @@
+[
+  {
+    "test_case_index": 324,
+    "name": "reviewer_comparison_594_case_316",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "I cannot find any suggestions for future research.",
+    "expected_output": "Future research should investigate the intricate relationships between environmental factors and honey bee gene regulation, particularly under hive conditions. It should also explore how temperature influences honey bee behavior, dietary preferences, and detoxification processes, especially in relation to pesticide exposure and its impact on bee mortality.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states no suggestions for future research were found, while Expected Output provides detailed suggestions regarding environmental factors, gene regulation, temperature, behavior, dietary preferences, detoxification, pesticide exposure, and bee mortality, showing a clear discrepancy.",
+      "Completeness [GEval]": "The Actual Output fails to address any of the key points from the Expected Output, which include suggestions for future research on environmental factors, gene regulation, temperature effects, dietary preferences, detoxification, pesticide exposure, and bee mortality. The Actual Output simply states that no suggestions were found, missing all required elements.",
+      "Accuracy [GEval]": "The Actual Output fails to provide any of the detailed suggestions for future research present in the Expected Output, such as investigating environmental factors, gene regulation, temperature effects, dietary preferences, detoxification, and pesticide exposure. There is a complete lack of alignment and factual consistency."
+    },
+    "question_type": "future_research",
+    "paper_id": "594",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "594",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 341,
+    "name": "reviewer_comparison_584_case_334",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "No suggestions for future research.",
+    "expected_output": "Future research directions should include investigating the multiple exposure routes of bumblebees to neonicotinoids, particularly in non-crop areas like hedgerows and woodlands, and assessing the long-term ecological impacts of pesticide residues in various environments. Additionally, studies should aim to resolve the inconsistencies in the observed relationships between neonicotinoid exposure and bumblebee colony success, exploring other influencing factors affecting bumblebee populations.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides no suggestions for future research, whereas Expected Output details several specific directions such as investigating exposure routes, long-term impacts, and resolving inconsistencies in research findings.",
+      "Completeness [GEval]": "The Actual Output does not address any of the key points from the Expected Output, such as investigating multiple exposure routes, assessing long-term ecological impacts, or resolving inconsistencies in neonicotinoid effects on bumblebees. It simply states that there are no suggestions for future research, resulting in a complete lack of alignment with the evaluation steps.",
+      "Accuracy [GEval]": "The Actual Output provides no suggestions for future research, whereas the Expected Output lists several specific directions, including investigating exposure routes, assessing long-term impacts, and resolving inconsistencies in research findings. There is a complete lack of alignment and factual consistency between the Actual Output and the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "584",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "584",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 382,
+    "name": "reviewer_comparison_523_case_368",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The authors highlight the need for studies with accurate measurements on low chronic/semi-chronic pesticide concentrations, to identify the threshold(s) where the effects of pesticides have a significant impact on foraging by different bee specie.\n\nMoreover, they emphasize the need for the future research to avoid drawing conclusions based on the absence of detectable effects on physical performance, as this does not imply a lack of effects on other aspects of bee ecology- such as foraging.",
+    "expected_output": "I cannot find any suggestions for future research in the discussion.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists specific suggestions for future research, while Expected Output states there are no such suggestions; thus, Actual Output does not accurately reflect the correctness of Expected Output.",
+      "Completeness [GEval]": "The Expected Output states that there are no suggestions for future research in the discussion, while the Actual Output lists specific suggestions for future research. This is a complete mismatch, as the Actual Output does not align with the Expected Output and introduces content that is not present according to the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output provides detailed suggestions for future research, whereas the Expected Output explicitly states that no such suggestions are present in the discussion. This is a clear factual discrepancy, as the Actual Output introduces information not supported by the Expected Output, failing to align with the key details and requirements."
+    },
+    "question_type": "future_research",
+    "paper_id": "523",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "523",
+      "question_id": "future_research",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 0,
+      "rev2_rating": 4
+    }
+  },
+  {
+    "test_case_index": 325,
+    "name": "reviewer_comparison_586_case_325",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "I have not identified any sections where they discuss future research directions.",
+    "expected_output": "Future research should focus on the differential effects of neonicotinoids on receptor subtype activation, the long-term impacts on bee behavior and colony dynamics, mechanisms behind changes in sex ratios and colony composition, and the pharmacological profiles of neonicotinoids and their metabolites.",
+    "combined_score": 0.0031783152824130675,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.009534945847239202
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states no future research directions were identified, while Expected Output lists several specific future research directions, showing a clear discrepancy.",
+      "Completeness [GEval]": "The Actual Output fails to address any of the key points from the Expected Output, which lists several specific future research directions. Instead, it incorrectly states that no such sections were identified, missing all required details.",
+      "Accuracy [GEval]": "The Actual Output fails to mention any of the specific future research directions listed in the Expected Output, such as receptor subtype activation, long-term impacts, mechanisms behind sex ratio changes, or pharmacological profiles. There is a complete lack of alignment and factual correspondence with the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 357,
+    "name": "reviewer_comparison_430_case_338",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The authors suggest that analyzing abundance patterns of wild bee populations is crucial, as changes in occupancy alone may not reflect the true status of these populations. The authors also suggest that multi-country field studies of effects of realistic levels of pesticide exposure provide the foundation for larger scale future experiments. Finally the authors suggest that before this method can be applied to other countries, spatially explicit pesticide records, honeybee colony location data, crop data and bee inventories are required.",
+    "expected_output": "The authors do not explicitly identifiy points of future research",
+    "combined_score": 0.0545364279079363,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.1636092837238089
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output lists several suggestions for future research, while the Expected Output states that the authors do not explicitly identify points of future research, indicating a clear discrepancy.",
+      "Completeness [GEval]": "The Expected Output states that the authors do not explicitly identify points of future research, but the Actual Output lists several specific suggestions for future research. This indicates a complete mismatch, as the Actual Output introduces key points not present in the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output lists several suggestions for future research, such as analyzing abundance patterns and conducting multi-country field studies, while the Expected Output states that the authors do not explicitly identify points of future research. This is a significant factual discrepancy, as the Actual Output introduces details not supported by the Expected Output. There is minimal alignment between the two outputs."
+    },
+    "question_type": "future_research",
+    "paper_id": "430",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "430",
+      "question_id": "future_research",
+      "rev1": "KW",
+      "rev2": "BN",
+      "rev1_rating": 3,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 330,
+    "name": "reviewer_comparison_593_case_317",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "They suggest that future studies should incorporate ecotoxicogenomics into field or semi-field experiments for improved understanding of separate and combined stressors on bee health.",
+    "expected_output": "Future research should focus on the long-term effects of larval exposure to THY on adult behavior, learning, and memory, as well as the impacts on colony performance. Additionally, there is a need to further investigate the mechanistic bases of transcriptional responses to IMI, particularly regarding neuro-endocrine signaling and the morphological changes observed. Research should also explore the interactions and effects of combined stressors on honey bee populations under varying biotic and abiotic conditions. Incorporating ecotoxicogenomics into field studies and extending it to include multi-omic models will enhance understanding of the relationships between molecular responses and colony-level endpoints.",
+    "combined_score": 0.13491419564355847,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.20474258693067546
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions incorporating ecotoxicogenomics into field or semi-field experiments and understanding stressors, but omits key points from the Expected Output such as long-term effects of THY, impacts on behavior and memory, mechanistic bases of IMI responses, neuro-endocrine signaling, morphological changes, multi-omic models, and varying biotic/abiotic conditions.",
+      "Completeness [GEval]": "The Actual Output only addresses the suggestion to incorporate ecotoxicogenomics into field or semi-field experiments and the study of combined stressors. It omits key points from the Expected Output, such as focusing on long-term effects of larval exposure to THY, impacts on adult behavior and colony performance, mechanistic studies of IMI, neuro-endocrine signaling, morphological changes, and the use of multi-omic models. Thus, coverage is minimal and most key points are missing.",
+      "Accuracy [GEval]": "The Actual Output only partially aligns with the Expected Output. It mentions incorporating ecotoxicogenomics into field or semi-field experiments and understanding combined stressors, which is a small subset of the recommendations in the Expected Output. However, it omits key details such as the focus on long-term effects of larval exposure to THY, impacts on adult behavior and colony performance, mechanistic studies on IMI, neuro-endocrine signaling, morphological changes, and the use of multi-omic models. The response lacks factual consistency and completeness compared to the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "593",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "593",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 373,
+    "name": "reviewer_comparison_445_case_348",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on understanding which mitochondria are absorbing red light, in which tissues and hot this is shifting their function. In addition, it is unknown the patterns of events that improved the bee longevity and how this can have an effect at colony level.",
+    "expected_output": "Future research should focus on examining the effects of 670nm light on respiration and immunity in bumblebees, investigating the specific responses of different haemocyte populations to light exposure, and assessing the overall restoration of the immune system profile. Additionally, exploring the mechanisms involving nicotinic acetylcholine receptors and their impact on haemocyte counts and immune responses is recommended, along with conducting field experiments to validate lab findings regarding the effects of long wavelength light on pollinators.",
+    "combined_score": 0.156612065853555,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.23208213138121608,
+      "Accuracy [GEval]": 0.2377540661794489
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output does not mention key points from the Expected Output such as effects of 670nm light on respiration and immunity, haemocyte population responses, nicotinic acetylcholine receptors, or field experiments; it instead focuses on mitochondria and colony-level effects, which are not specified in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only partially addresses the Expected Output. It mentions the need to understand which mitochondria absorb red light and the effects at the colony level, which loosely relates to tissue-specific effects and broader impacts. However, it omits key points such as examining 670nm light effects on respiration and immunity, investigating haemocyte population responses, assessing immune system restoration, exploring nicotinic acetylcholine receptor mechanisms, and conducting field experiments. Most of the specific research directions from the Expected Output are missing or inadequately covered.",
+      "Accuracy [GEval]": "The Actual Output only partially aligns with the Expected Output. It mentions future research on mitochondria and bee longevity, but omits key details such as the focus on 670nm light, respiration, immunity, haemocyte populations, nicotinic acetylcholine receptors, and field experiments. There are significant discrepancies and missing specifics compared to the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "445",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "445",
+      "question_id": "future_research",
+      "rev1": "RT",
+      "rev2": "FS",
+      "rev1_rating": 9,
+      "rev2_rating": 2
+    }
+  },
+  {
+    "test_case_index": 343,
+    "name": "reviewer_comparison_585_case_333",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The paper emphazises that transcriptomic studies are necessary to to verify the hypothesis that the interaction between microorganisms and hosts is inhibited.",
+    "expected_output": "Future research should focus on transcriptomic studies to clarify the interactions between microorganisms and insect hosts, particularly regarding how pesticides affect exopolysaccharides and microbial diversity. It should also explore the long-term impacts of these changes on bee health and hive functionality, and investigate the mechanisms of microbial selection by the host.",
+    "combined_score": 0.19999999999999996,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.29999999999999993,
+      "Accuracy [GEval]": 0.3
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output only mentions the need for transcriptomic studies to verify inhibition of microorganism-host interaction, but omits key points from Expected Output such as the effects of pesticides on exopolysaccharides and microbial diversity, long-term impacts on bee health and hive functionality, and mechanisms of microbial selection.",
+      "Completeness [GEval]": "The Actual Output mentions the need for transcriptomic studies to verify the hypothesis about microorganism-host interactions, partially addressing the first key point from the Expected Output. However, it omits other key points such as the effects of pesticides on exopolysaccharides and microbial diversity, the long-term impacts on bee health and hive functionality, and the mechanisms of microbial selection by the host. Thus, the Actual Output is incomplete compared to the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output mentions the need for transcriptomic studies and the interaction between microorganisms and hosts, which partially aligns with the Expected Output. However, it omits key details such as the focus on pesticides, exopolysaccharides, microbial diversity, long-term impacts on bee health and hive functionality, and mechanisms of microbial selection. This results in a lack of completeness and specificity compared to the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "585",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "585",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 354,
+    "name": "reviewer_comparison_012_case_352",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should explore the interactions between pesticides and pathogens in honeybees, focusing on both cellular (hemocytes) and organismal levels. Understanding these interactions is crucial for assessing the impact on immune responses and overall health, as well as the implications for honeybee colonies. Additionally, the complex interactions between multiple pesticides and pathogens should be investigated, as they can differentially affect honeybee innate immunity.",
+    "expected_output": "Further components of the immune system response, such as melanization and the production of anti-microbial peptides should also be studied, to give a more comprehensive approach.",
+    "combined_score": 0.2059577268067295,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.30822419619178987,
+      "Accuracy [GEval]": 0.30964898422839865
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output discusses interactions between pesticides and pathogens, while Expected Output focuses on studying specific immune responses like melanization and anti-microbial peptide production; the content and intent do not match.",
+      "Completeness [GEval]": "The Expected Output specifically calls for research into additional immune system components, namely melanization and anti-microbial peptide production, to achieve a comprehensive understanding. The Actual Output focuses on interactions between pesticides and pathogens and their effects on honeybee immunity in general, but does not mention melanization or anti-microbial peptides. Thus, the Actual Output only partially covers the key points, missing the specific immune mechanisms highlighted in the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output discusses the need to study interactions between pesticides and pathogens in honeybees, focusing on immune responses at cellular and organismal levels, but it does not mention specific immune components like melanization or anti-microbial peptides as highlighted in the Expected Output. This represents a partial alignment, as both outputs address honeybee immunity, but the Actual Output omits key details required for full accuracy."
+    },
+    "question_type": "future_research",
+    "paper_id": "012",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "012",
+      "question_id": "future_research",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 2,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 366,
+    "name": "reviewer_comparison_006_case_355",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "uture research should prioritize alternative pest control methods due to the toxicity of neonicotinoids and pyrethroids to bees. It should also focus on developing more sophisticated tests to assess insecticide effects on bee behavior, using the locomotion test as a preliminary analysis. The societal implications of pesticide use necessitate careful selection of alternative chemicals in agriculture. Additionally, research should investigate the specific toxicological effects of insecticides on newly emerged bees and other developmental stages, using parallel tests under consistent experimental conditions to understand the sublethal impacts on locomotion and behavior.",
+    "expected_output": "Cloning and expression of the honeybee voltage-dependent sodium channel and the calcium channels gives a new tool that can be applied to characterise and understand binding of different pyrethoids and will allow for more systematic testing of this insecticide class. \n\nAnalysis of more subtle behavious such as grooming or time spent by food, with obserations taken over a longer time period might tease out effects left undetected by focusing on locomotion.\n\nThe use of tau-fluvalinate as a miticide in hives should be re-evaluated by further tests.\n\nAlternative pest-control methods should be a priority.",
+    "combined_score": 0.2410352857590171,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.37310585727705126,
+      "Accuracy [GEval]": 0.35
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key points from the Expected Output, such as the importance of cloning and expressing bee ion channels for systematic insecticide testing and the need to re-evaluate tau-fluvalinate as a miticide. It also does not mention analyzing subtle behaviors like grooming, which are present in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output addresses the need for alternative pest control methods and improved behavioral testing, partially aligning with the Expected Output's points on prioritizing alternatives and analyzing subtle behaviors. However, it omits key details such as the cloning and expression of sodium and calcium channels for systematic insecticide testing and the specific re-evaluation of tau-fluvalinate as a miticide. The Actual Output also generalizes some points rather than providing the specific recommendations found in the Expected Output, resulting in incomplete coverage.",
+      "Accuracy [GEval]": "The Actual Output partially aligns with the Expected Output by emphasizing the need for alternative pest control methods and improved behavioral testing, which matches some priorities in the Expected Output. However, it omits key factual details such as the cloning and expression of sodium and calcium channels for systematic insecticide testing and the specific mention of tau-fluvalinate re-evaluation. The Actual Output also generalizes behavioral analysis without referencing grooming or time spent by food, as highlighted in the Expected Output. These omissions and lack of specificity result in a low alignment."
+    },
+    "question_type": "future_research",
+    "paper_id": "006",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "006",
+      "question_id": "future_research",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 7,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 386,
+    "name": "reviewer_comparison_004_case_359",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on selecting appropriate test article delivery vehicles (pollen or syrup) to reflect environmental exposures, tracking specific endpoints like drone weight and emergence, and monitoring food consumption over time to understand treatment effects on bumble bee colony fitness.",
+    "expected_output": "Future work on colony-level fitness is needed:\ni) to investigate the 2 week delay observed in the maximum pollen consumption and subsequent drone emergence. Perhaps by limiting pollen or syrup availability in the weeks before drone emergence.\nii) to determine how windows of exposure effect the number and weight of reproductives produced.\niii) to track food consumption over time to enable colony level exposure to be assessed\niv) that focuses on pollen consumption and drone numbers, emergence, size and weight as endpoints to allow for direct comparison between studies.\nv) that incorporates route of exposure into the experimental design\nvi) to assess potential exposure route differences in nectar paot utilisation",
+    "combined_score": 0.28319248473177533,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.4437823499114201,
+      "Accuracy [GEval]": 0.40579510428390586
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits several points from the Expected Output, such as investigating the 2 week delay in pollen consumption and drone emergence, limiting pollen or syrup availability, assessing exposure window effects, and nectar pot utilisation; it also lacks detail on direct comparison between studies and does not fully address all endpoints mentioned.",
+      "Completeness [GEval]": "The Actual Output addresses some key points from the Expected Output, such as the importance of selecting delivery vehicles (pollen or syrup), tracking endpoints like drone weight and emergence, and monitoring food consumption over time. However, it omits several specific details: it does not mention investigating the 2-week delay in pollen consumption and drone emergence, limiting food availability, assessing how exposure windows affect reproductive output, or comparing between studies. It also lacks mention of nectar pot utilization and does not explicitly discuss assessing exposure route differences. Thus, coverage is partial and several key points are missing.",
+      "Accuracy [GEval]": "The Actual Output captures some general themes from the Expected Output, such as the importance of tracking endpoints like drone weight and emergence, monitoring food consumption, and considering delivery vehicles (pollen or syrup). However, it omits several key points: it does not mention the 2-week delay in pollen consumption and drone emergence, does not address limiting food availability, does not discuss windows of exposure or direct comparison between studies, and does not mention nectar pot utilization. The Actual Output is less detailed and misses multiple specific recommendations from the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "004",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "004",
+      "question_id": "future_research",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 10,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 374,
+    "name": "reviewer_comparison_672_case_362",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The authors identify several future research questions that arose from the study, such as: disentangling the possible causes of lower offspring in the nests within enclousers treated with both pesticides; the need to confirm and understand the mechanism behind differences between nest-level and population-level outcomes;  further investigation into the possible hormetic effects of FPF on bee emergence and body size; and a better understanding of the exposure route of FPF that affected immature bees.",
+    "expected_output": "Future research should focus on understanding diverse exposure routes of pesticides to wild bee communities, particularly solitary ground-nesting species- i.e. exposure through food vs soil. There should be a focus on ecologically relevant endpoints, and further investigation of the interactions between different agrochemicals using field and semi-field methods, and an assessment of the implications of environmental conditions on pesticide toxicity.. The authors conclude that the evaluation of synergies between pesticides in real world settings, particularly on sublethal endpoints will require the refinement of statistical methods. The authors also suggest that further research is needed to explore the mechanisms underpinning their finding that pestcide exposure affected mean number of offspring per nest, but not total number of offspring per enclosure. Furthermore, research is also needed to determine whether the interactive effects of pesticides on offspring emergence is due to food deprivation, impaired detoxicification or a combination of these factors.",
+    "combined_score": 0.32323681497981843,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.45000000000000007,
+      "Accuracy [GEval]": 0.5197104449394553
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key points from the Expected Output, such as the need to focus on exposure routes (food vs soil), ecologically relevant endpoints, interactions between agrochemicals, environmental conditions, and refinement of statistical methods. It also lacks detail on mechanisms like food deprivation or impaired detoxification, and does not mention the need for field and semi-field methods.",
+      "Completeness [GEval]": "The Actual Output covers some key points from the Expected Output, such as the need to understand mechanisms behind differences in nest-level and population-level outcomes, and the need to investigate exposure routes and possible causes of lower offspring. However, it omits several important points: it does not mention the focus on solitary ground-nesting species, the importance of ecologically relevant endpoints, the need for field and semi-field methods, the assessment of environmental conditions on toxicity, or the refinement of statistical methods for evaluating synergies. Additionally, it does not address the need to determine whether interactive effects are due to food deprivation or impaired detoxification. Thus, the Actual Output is incomplete.",
+      "Accuracy [GEval]": "The Actual Output captures some key research questions from the Expected Output, such as mechanisms behind differences in nest-level and population-level outcomes, and the need to understand exposure routes. However, it omits important details like the focus on solitary ground-nesting species, the need for ecologically relevant endpoints, the importance of refining statistical methods, and the assessment of environmental conditions. It also lacks mention of specific mechanisms like food deprivation or impaired detoxification. Overall, the Actual Output is partially accurate but misses several critical points from the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "672",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "672",
+      "question_id": "future_research",
+      "rev1": "BN",
+      "rev2": "ER",
+      "rev1_rating": 8,
+      "rev2_rating": 2
+    }
+  },
+  {
+    "test_case_index": 378,
+    "name": "reviewer_comparison_532_case_365",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Further studies should investigate the metabolic pattern of acetamiprid-stressed honeybees and elucidate the detoxification mechanisms. As well as effects of sublethal doses of acetamiprid on honeybee metabolism and the mechanisms invovled. Moreover, harmful effects of other compounds in acetamiprid solvent on bees needs further study.",
+    "expected_output": "The authors state that further studies are needed to investigate the specific functional effects of reduced lipid ontent due to etamiprid exposure. In addition, they state that the effect of other compounds in acetamiprid formulations should be studied, as these may have adverse effects on their own, and that other types of exposure need to be tested.",
+    "combined_score": 0.3256027147590441,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.4980366707773866,
+      "Accuracy [GEval]": 0.4787714734997457
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits the need to study the specific functional effects of reduced lipid content and testing other types of exposure, and does not mention acetamiprid formulations, while Expected Output includes these points.",
+      "Completeness [GEval]": "The Actual Output addresses the need for further studies on the metabolic effects of acetamiprid and the impact of other compounds in the solvent, partially aligning with the Expected Output. However, it does not mention the specific need to investigate the functional effects of reduced lipid content or the need to test other types of exposure, both of which are key points in the Expected Output. Some points are only partially covered, resulting in incomplete alignment.",
+      "Accuracy [GEval]": "The Actual Output partially aligns with the Expected Output by mentioning the need to study the effects of other compounds in acetamiprid solvent and further investigation into metabolic and detoxification mechanisms. However, it omits the specific focus on the functional effects of reduced lipid content and the need to test other types of exposure, which are present in the Expected Output. There are also minor inaccuracies, such as not clearly stating the focus on lipid content and not mentioning 'formulations' or 'other types of exposure.'"
+    },
+    "question_type": "future_research",
+    "paper_id": "532",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "532",
+      "question_id": "future_research",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 5,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 332,
+    "name": "reviewer_comparison_592_case_318",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "They clearly state that is appears urgent to adress possible effects of xenobiotics on male insects. They also state that a holistic approach, combining lab, semi-field and field data is required for reliable assessmsents of pesticides, and that there is an urgent need to develop standardised protocols.",
+    "expected_output": "Future research should focus on: 1) Investigating the impact of neonicotinoid exposure on male wild bee reproductive physiology, as this area is currently under-researched; 2) Developing standardized methods for studying the effects of neonicotinoids on solitary bees, considering the influence of various environmental stressors; 3) Adopting a holistic approach that combines laboratory, semi-field, and field data to assess the environmental hazards of agrochemicals, particularly neonicotinoids, and their effects on male insects.",
+    "combined_score": 0.3301245352552553,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5072531002662084,
+      "Accuracy [GEval]": 0.4831205054995575
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits specific points from the Expected Output, such as the focus on neonicotinoid exposure on male wild bee reproductive physiology and the need to consider various environmental stressors; it also lacks mention of developing standardized methods for solitary bees, thus not fully addressing all points.",
+      "Completeness [GEval]": "The Actual Output addresses the need for a holistic approach and the development of standardized protocols, which aligns with points 2 and 3 of the Expected Output. However, it does not specifically mention the need to investigate the impact of neonicotinoid exposure on male wild bee reproductive physiology, nor does it explicitly reference solitary bees or the influence of environmental stressors. Thus, coverage is partial, with some key points missing or insufficiently detailed.",
+      "Accuracy [GEval]": "The Actual Output captures the need for a holistic approach and the development of standardized protocols, which aligns with points 2 and 3 of the Expected Output. However, it lacks specific mention of neonicotinoids, does not address the focus on male wild bee reproductive physiology, and omits the need to consider various environmental stressors. There are partial matches but also significant omissions of key details."
+    },
+    "question_type": "future_research",
+    "paper_id": "592",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "592",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 362,
+    "name": "reviewer_comparison_003_case_358",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the interactions between agrochemicals (like thiamethoxam) and environmental stressors, particularly in chronic exposure scenarios. There is a need to modify regulatory methodologies to include assessments of sub-lethal impacts and to explore the effects of novel insecticides (such as sulfoxaflor and flupyradifurone) on bee health. A holistic approach to environmental risk assessment that considers multiple stressors impacting wild bees and other pollinators is also recommended, along with post-regulatory monitoring to understand the real-world consequences of agrochemical use.",
+    "expected_output": "Future work is needed:\ni) to determine the mechanism(s) underlying the observation that C. bombi intensity was higher in bees that had been fed a high dose of thiamethoxam and had subsequently died.\nii) to develop methadologies that assess sub-lethal interactions between agrochemicals and parasites in bees.\niii) to understand how novel pesticides intercat with bee parasites.",
+    "combined_score": 0.3420863829177841,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5941770173721364,
+      "Accuracy [GEval]": 0.4320821313812161
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output is broader and more general, lacking the specific focus on C. bombi intensity, mechanisms underlying increased parasite intensity with thiamethoxam, and the explicit mention of interactions between agrochemicals and parasites as in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output addresses the need for research on interactions between agrochemicals and environmental stressors, the assessment of sub-lethal impacts, and the effects of novel insecticides, which partially aligns with the Expected Output's points ii and iii. However, it does not specifically mention the need to determine the mechanisms underlying increased C. bombi intensity in bees exposed to thiamethoxam (point i), nor does it explicitly reference interactions with parasites. The Actual Output also adds broader recommendations not present in the Expected Output, but misses some specificity required by the test case.",
+      "Accuracy [GEval]": "The Actual Output captures some general themes from the Expected Output, such as the need to study sub-lethal effects, novel insecticides, and the importance of holistic risk assessment. However, it omits key specific details, such as the mechanism behind increased C. bombi intensity in bees exposed to thiamethoxam and the explicit focus on interactions between agrochemicals and parasites. The Actual Output is broader and less precise, missing the targeted research directions outlined in the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "003",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "003",
+      "question_id": "future_research",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 7,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 327,
+    "name": "reviewer_comparison_589_case_326",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The authors state that it would be useful to follow up the study and test how learning is affected when bumblebees are exposed to a range of concentrations of pesticide and whether cold-stress influences the effect of pesticide treatment. In addition, they state that there is a need to assess whether Nosema cerana tpresents a serious threat to bumblebee health.",
+    "expected_output": "Future research directions should focus on the effects of field-realistic exposure to neonicotinoids on bumblebees and other pollinator taxa, as well as the virulence of newly emerging diseases like Nosema ceranae on these species. There is a significant gap in knowledge regarding how these factors affect pollinator behavior and survival, particularly in bumblebees, which are crucial for pollination services.",
+    "combined_score": 0.3554813143663312,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5622459324198198,
+      "Accuracy [GEval]": 0.5041980106791737
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits mention of field-realistic exposure and effects on other pollinator taxa, and does not address the knowledge gap in pollinator behavior and survival, which are present in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output addresses the need to study the effects of different concentrations of pesticides and the impact of cold-stress, which partially aligns with the Expected Output's emphasis on field-realistic neonicotinoid exposure. It also mentions assessing the threat of Nosema cerana, which relates to the Expected Output's point about emerging diseases. However, the Actual Output omits reference to other pollinator taxa, the broader context of pollinator behavior and survival, and the importance of bumblebees for pollination services, making the response only partially complete.",
+      "Accuracy [GEval]": "The Actual Output partially aligns with the Expected Output by mentioning the need to assess the threat of Nosema cerana (though with a typo) and the effects of pesticides on bumblebees. However, it omits key details such as the focus on field-realistic neonicotinoid exposure, the inclusion of other pollinator taxa, and the emphasis on pollinator behavior and survival. The Actual Output also introduces cold-stress, which is not mentioned in the Expected Output, and does not address the broader context of pollination services."
+    },
+    "question_type": "future_research",
+    "paper_id": "589",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "589",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 4
+    }
+  },
+  {
+    "test_case_index": 359,
+    "name": "reviewer_comparison_368_case_345",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on exploring toxicological effects of pesticide cocktail on honey bee gut microbiome under field conditions and exploring the molecular mechanisms with multi-omics methods. In addition, future study should focus on understanding the role played by some specific genus of gut bacteria.",
+    "expected_output": "Future research should focus on: 1) obtaining accurate data on field-realistic pesticide exposure levels for honey bees, particularly regarding neonicotinoids and fungicides; 2) isolating and understanding the functional roles of gut bacteria and fungi in honey bees; 3) exploring the toxic effects of pesticide cocktails on honey bee gut microbiomes in real-world conditions and elucidating the molecular mechanisms of these effects using multi-omics approaches.",
+    "combined_score": 0.3568233764474163,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5622459324198197,
+      "Accuracy [GEval]": 0.5082241969224293
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits the need for accurate field-realistic pesticide exposure data and the role of fungi, both present in Expected Output; it only partially covers the functional roles of gut bacteria and the multi-omics approach.",
+      "Completeness [GEval]": "The Actual Output addresses two of the three key points from the Expected Output: it mentions exploring the toxicological effects of pesticide cocktails on the honey bee gut microbiome under field conditions and using multi-omics methods to study molecular mechanisms, and it refers to understanding the role of specific gut bacteria. However, it omits the key point about obtaining accurate data on field-realistic pesticide exposure levels, especially for neonicotinoids and fungicides, and does not mention fungi. Thus, while partially aligned, it is missing important details.",
+      "Accuracy [GEval]": "The Actual Output partially aligns with the Expected Output by mentioning the exploration of toxicological effects of pesticide cocktails on honey bee gut microbiomes under field conditions and the use of multi-omics methods, which matches point 3 of the Expected Output. However, it omits the need for accurate data on field-realistic pesticide exposure levels (point 1) and does not mention fungi or the isolation of gut bacteria and fungi (point 2). The Actual Output also lacks the specificity regarding neonicotinoids and fungicides. Thus, while some key elements are present, there are notable omissions and less detail compared to the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "368",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "368",
+      "question_id": "future_research",
+      "rev1": "RT",
+      "rev2": "FS",
+      "rev1_rating": 9,
+      "rev2_rating": 5
+    }
+  },
+  {
+    "test_case_index": 356,
+    "name": "reviewer_comparison_016_case_356",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should investigate the long-term impacts of chronic neonicotinoid exposure on honey bee behavior, including flight ability and foraging patterns, as well as the ecological consequences of these effects on bee populations. Additionally, studies should focus on the direct effects of acute and chronic exposure to neonicotinoids and their metabolites on pollinator flight ability and behavior, considering their differing impacts on nicotinic acetylcholine receptor subtypes.",
+    "expected_output": "Future investigation of the sublethal effects on flight behaviours are recommended in:\ni) Other pollinators (non honeybee as well as honeybee) \nii) Other neonicotinoids, including their main metabolites (eg clothianidin) that target different subsets of nicotinic acetylcholine receptors.",
+    "combined_score": 0.3657541135385485,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5794462798781792,
+      "Accuracy [GEval]": 0.5178160607374662
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output focuses only on honey bees and does not mention other pollinators as required; it also does not specifically recommend studying other neonicotinoids or their main metabolites like clothianidin, missing key points from Expected Output.",
+      "Completeness [GEval]": "The Actual Output addresses the need to study the effects of neonicotinoids and their metabolites on pollinator flight ability and behavior, and mentions the importance of considering different impacts on nicotinic acetylcholine receptor subtypes, aligning with the Expected Output's point about different neonicotinoids and their metabolites. However, it does not explicitly mention the need to investigate other pollinators beyond honey bees, which is a key point in the Expected Output. The Actual Output is also more general about ecological consequences and long-term impacts, but misses the specific recommendation to study non-honeybee pollinators.",
+      "Accuracy [GEval]": "The Actual Output partially aligns with the Expected Output by recommending research into the effects of neonicotinoids and their metabolites on honey bee behavior and nicotinic acetylcholine receptor subtypes. However, it omits the explicit recommendation to study other pollinators beyond honey bees and does not specifically mention other neonicotinoids like clothianidin. Thus, while some key points are addressed, the Actual Output lacks full coverage and specificity compared to the Expected Output."
+    },
+    "question_type": "future_research",
+    "paper_id": "016",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "016",
+      "question_id": "future_research",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 8,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 355,
+    "name": "reviewer_comparison_434_case_341",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the functional regulation of gut microbiota in pesticide detoxification, particularly for flupyradifurone, and the need for empirical measurements of metabolic and transcriptional changes due to insecticide exposure. It should also investigate the role of gut microbiota in synthesizing essential amino acids and their involvement in xenobiotic detoxification pathways.",
+    "expected_output": "The authors state that future work must probe the safety of flupyradifurone on bumble bees, by measuring functional metabolic changes in the gut and how this impacts on the host",
+    "combined_score": 0.37045668024516454,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5549631102339903,
+      "Accuracy [GEval]": 0.5564069305015034
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output adds details about amino acid synthesis and xenobiotic detoxification not present in Expected Output, and omits the focus on safety of flupyradifurone on bumble bees and the impact on the host.",
+      "Completeness [GEval]": "The Actual Output addresses the need for empirical measurements of metabolic and transcriptional changes due to insecticide exposure, which aligns with the Expected Output's emphasis on measuring functional metabolic changes in the gut. It also mentions flupyradifurone specifically. However, it introduces additional points not present in the Expected Output (e.g., synthesis of essential amino acids, xenobiotic detoxification pathways) and does not explicitly mention probing the safety of flupyradifurone on bumble bees or the impact on the host, which are key points in the Expected Output. Thus, while partially aligned, it lacks full coverage and specificity.",
+      "Accuracy [GEval]": "The Actual Output captures some key elements from the Expected Output, such as the focus on flupyradifurone, the importance of measuring metabolic changes, and the role of gut microbiota. However, it introduces additional details not present in the Expected Output (e.g., transcriptional changes, amino acid synthesis, xenobiotic detoxification) and omits the explicit mention of assessing the safety of flupyradifurone on bumble bees and the direct impact on the host. This partial alignment and inclusion of extra, unrequested information reduce the overall accuracy."
+    },
+    "question_type": "future_research",
+    "paper_id": "434",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "434",
+      "question_id": "future_research",
+      "rev1": "KW",
+      "rev2": "BN",
+      "rev1_rating": 7,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 339,
+    "name": "reviewer_comparison_583_case_335",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The paper emphazises that future studies should assess colony level effects of neonicotinoids on circadian rhythm, reveal the fundamental neural substrates behind the circadian rhythm in honeybees, as well as the neuromechanistic link between neucnitoinoics and honey bee locomotor rhythms.",
+    "expected_output": "Future research should focus on measuring circadian behaviors in whole honey bee colonies in field settings, rather than just individual bees in the lab. Studies are needed to identify the neural mechanisms that generate circadian and sleep behaviors, and how these are synchronized with local time through light cycles. Additionally, understanding the cholinergic signaling pathways affected by neonicotinoids and light will be crucial for elucidating their impact on honey bee circadian rhythms.",
+    "combined_score": 0.3996627701658435,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5989883104975305,
+      "Accuracy [GEval]": 0.6
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key details from the Expected Output, such as the need for field studies on whole colonies, the role of light cycles in synchronizing circadian rhythms, and the importance of cholinergic signaling pathways, and contains spelling errors and less specificity.",
+      "Completeness [GEval]": "The Actual Output addresses several key points from the Expected Output, such as the need to study colony-level effects of neonicotinoids on circadian rhythms and to investigate the neural substrates underlying these rhythms. However, it omits specific mention of measuring behaviors in field settings versus lab, the importance of synchronization with local time through light cycles, and the focus on cholinergic signaling pathways. The neuromechanistic link is mentioned, but not specifically tied to cholinergic signaling or light. Thus, while the main themes are present, some important details are missing or only partially covered.",
+      "Accuracy [GEval]": "The Actual Output captures the main themes of the Expected Output, such as the need to study colony-level effects of neonicotinoids and to investigate neural mechanisms underlying circadian rhythms in honey bees. However, it lacks specific details present in the Expected Output, such as the emphasis on field settings versus lab studies, the role of light cycles in synchronizing behaviors, and the importance of cholinergic signaling pathways. There are also minor inaccuracies in terminology (e.g., 'neucnitoinoics'). Overall, the Actual Output is generally accurate but omits key specifics."
+    },
+    "question_type": "future_research",
+    "paper_id": "583",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "583",
+      "question_id": "future_research",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 10
+    }
+  }
+]

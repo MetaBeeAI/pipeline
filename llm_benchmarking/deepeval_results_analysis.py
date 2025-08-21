@@ -318,34 +318,49 @@ class DeepEvalResultsAnalyzer:
         # Create the plot
         plt.figure(figsize=(14, 8))
         
+        # Get all unique metrics across all data types to ensure consistent x-axis
+        all_metrics = plot_df['metric_name'].unique()
+        metric_to_index = {metric: idx for idx, metric in enumerate(all_metrics)}
+        
         # Set up the plot
-        x = np.arange(len(plot_df['metric_name'].unique()))
+        x = np.arange(len(all_metrics))
         width = 0.35
         
         # Plot bars for each data type
         for i, data_type in enumerate(plot_df['data_type'].unique()):
             data_subset = plot_df[plot_df['data_type'] == data_type]
-            values = data_subset['value'].values
-            errors = data_subset['std_error'].values
+            
+            # Create arrays for all metrics, filling with NaN for missing ones
+            values = np.full(len(all_metrics), np.nan)
+            errors = np.full(len(all_metrics), np.nan)
+            
+            # Fill in the values we have
+            for _, row in data_subset.iterrows():
+                metric_idx = metric_to_index[row['metric_name']]
+                values[metric_idx] = row['value']
+                errors[metric_idx] = row['std_error']
             
             # Create labels for x-axis
             metric_labels = [f"{m}\n({'Binary' if plot_df[plot_df['metric_name'] == m]['is_binary'].iloc[0] else 'Continuous'})" 
-                           for m in data_subset['metric_name'].values]
+                           for m in all_metrics]
             
             if i == 0:
                 x_pos = x - width/2
             else:
                 x_pos = x + width/2
             
-            bars = plt.bar(x_pos, values, width, 
-                          label=data_type.replace('_', ' ').title(),
-                          yerr=errors, capsize=5, alpha=0.8)
-            
-            # Add value labels on bars
-            for bar, value in zip(bars, values):
-                height = bar.get_height()
-                plt.text(bar.get_x() + bar.get_width()/2., height + 0.01,
-                        f'{value:.3f}', ha='center', va='bottom', fontsize=9)
+            # Only plot bars for metrics that have data (not NaN)
+            valid_mask = ~np.isnan(values)
+            if np.any(valid_mask):
+                bars = plt.bar(x_pos[valid_mask], values[valid_mask], width, 
+                              label=data_type.replace('_', ' ').title(),
+                              yerr=errors[valid_mask], capsize=5, alpha=0.8)
+                
+                # Add value labels on bars
+                for bar, value in zip(bars, values[valid_mask]):
+                    height = bar.get_height()
+                    plt.text(bar.get_x() + bar.get_width()/2., height + 0.01,
+                            f'{value:.3f}', ha='center', va='bottom', fontsize=9)
         
         plt.xlabel('Metrics')
         plt.ylabel('Score / Success Rate')

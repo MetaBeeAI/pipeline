@@ -42,6 +42,8 @@ parser.add_argument('--model', '-m', type=str, default='gpt-4o',
                    help='OpenAI model to use for evaluation (default: gpt-4o for best quality)')
 parser.add_argument('--add-context', action='store_true',
                    help='Add paper context to test cases (optional, for metrics that might benefit from it)')
+parser.add_argument('--faithfulness-only', action='store_true',
+                   help='Run only FaithfulnessMetric evaluation (requires --add-context)')
 
 args = parser.parse_args()
 
@@ -69,6 +71,23 @@ from deepeval.models import GPTModel
 # Load the reviewer comparison dataset
 with open("llm_benchmarking/test-datasets/rev_test_dataset.json", "r") as f:
     data = json.load(f)
+
+# Load the LLM dataset to get context if needed
+llm_context_data = {}
+if args.add_context:
+    print("🔄 Loading LLM dataset to extract paper context...")
+    try:
+        with open("llm_benchmarking/test-datasets/test_dataset.json", "r") as f:
+            llm_data = json.load(f)
+            # Create a mapping from paper_id to context
+            for entry in llm_data:
+                if "id" in entry and "context" in entry:
+                    llm_context_data[entry["id"]] = entry["context"]
+        print(f"✅ Loaded context for {len(llm_context_data)} papers")
+    except Exception as e:
+        print(f"⚠️  Warning: Could not load LLM dataset for context: {e}")
+        print("   Continuing without context (FaithfulnessMetric will not work)")
+        args.add_context = False
 
 # Filter by question type (optional)
 print(f"Original dataset: {len(data)} test cases")
@@ -105,12 +124,12 @@ for i, entry in enumerate(filtered_data):
     
     try:
         # Create LLMTestCase object with proper identifiers
-        test_case = LLMTestCase(
-            input=entry["input"],
-            actual_output=entry["actual_outputs"],  # Reviewer 2 answer
-            expected_output=entry["expected_output"],  # Reviewer 1 answer (gold standard)
-            name=f"reviewer_comparison_{entry['id']}_case_{i}",  # Unique name for each test case
-            additional_metadata={
+        test_case_kwargs = {
+            "input": entry["input"],
+            "actual_output": entry["actual_outputs"],  # Reviewer 2 answer
+            "expected_output": entry["expected_output"],  # Reviewer 1 answer (gold standard)
+            "name": f"reviewer_comparison_{entry['id']}_case_{i}",  # Unique name for each test case
+            "additional_metadata": {
                 "paper_id": entry["id"],
                 "question_id": entry["metadata"]["question_id"],
                 "rev1": entry["metadata"]["rev1"],
@@ -118,7 +137,18 @@ for i, entry in enumerate(filtered_data):
                 "rev1_rating": entry["metadata"]["rev1_rating"],
                 "rev2_rating": entry["metadata"]["rev2_rating"]
             }
-        )
+        }
+        
+        # Add context if requested and available
+        if args.add_context and entry["id"] in llm_context_data:
+            # DeepEval expects context to be a list of strings
+            test_case_kwargs["context"] = llm_context_data[entry["id"]]
+            # Also set retrieval_context to the same value for compatibility
+            test_case_kwargs["retrieval_context"] = llm_context_data[entry["id"]]
+            total_chars = sum(len(chunk) for chunk in llm_context_data[entry["id"]])
+            print(f"    📄 Added context for paper {entry['id']} ({len(llm_context_data[entry['id']])} context chunks, {total_chars} chars)")
+        
+        test_case = LLMTestCase(**test_case_kwargs)
         
         # Set proper identifiers to avoid ID errors
         test_case._identifier = f"reviewer_comparison_{entry['id']}_case_{i}"
@@ -141,31 +171,50 @@ print(f"Dataset contains {len(filtered_data)} test cases")
 # Configure the specified model (default: GPT-4o for best quality)
 evaluation_model = GPTModel(model=args.model)
 
-# Define context-free metrics for reviewer comparison evaluation
-metrics = [
-    # Traditional DeepEval metric (context-free)
-    FaithfulnessMetric(model=evaluation_model),
+# Define metrics for reviewer comparison evaluation
+metrics = []
+
+# Check if faithfulness-only mode is requested
+if args.faithfulness_only:
+    if not args.add_context:
+        print("❌ Error: --faithfulness-only requires --add-context")
+        print("   FaithfulnessMetric needs paper context to function")
+        sys.exit(1)
     
-    # G-Eval metrics (context-free, only use actual vs expected output)
-    GEval(
-        name="Correctness",
-        criteria="Correctness - determine if the reviewer 2 answer is correct according to the reviewer 1 answer.",
-        evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
-        strict_mode=True
-    ),
-    GEval(
-        name="Completeness",
-        criteria="Completeness - assess if the reviewer 2 answer covers all the key points mentioned in the reviewer 1 answer.",
-        evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
-        strict_mode=False
-    ),
-    GEval(
-        name="Accuracy",
-        criteria="Accuracy - evaluate if the reviewer 2 answer contains accurate information that aligns with the reviewer 1 answer.",
-        evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
-        strict_mode=False
-    )
-]
+    # Only add FaithfulnessMetric
+    metrics.append(FaithfulnessMetric(model=evaluation_model))
+    print("✅ Running FaithfulnessMetric only (requires context)")
+    
+else:
+    # Add FaithfulnessMetric if context is available
+    if args.add_context:
+        metrics.append(FaithfulnessMetric(model=evaluation_model))
+        print("✅ Added FaithfulnessMetric (requires context)")
+    
+    # G-Eval metrics (context-free, always included unless faithfulness-only)
+    geval_metrics = [
+        GEval(
+            name="Correctness",
+            criteria="Correctness - determine if the reviewer 2 answer is correct according to the reviewer 1 answer.",
+            evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
+            strict_mode=True
+        ),
+        GEval(
+            name="Completeness",
+            criteria="Completeness - assess if the reviewer 2 answer covers all the key points mentioned in the reviewer 1 answer.",
+            evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
+            strict_mode=False
+        ),
+        GEval(
+            name="Accuracy",
+            criteria="Accuracy - evaluate if the reviewer 2 answer contains accurate information that aligns with the reviewer 1 answer.",
+            evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
+            strict_mode=False
+        )
+    ]
+    
+    metrics.extend(geval_metrics)
+    print(f"✅ Added {len(geval_metrics)} G-Eval metrics (context-free)")
 
 print(f"💰 Using {args.model} for evaluation (best quality option)")
 
@@ -184,7 +233,8 @@ if args.model == 'gpt-4o':
 else:
     print(f"💰 Recommendation: {selected_cost['description']}")
 
-print(f"Evaluating with {len(metrics)} context-free metrics:")
+metric_type = "context-aware" if args.add_context else "context-free"
+print(f"Evaluating with {len(metrics)} {metric_type} metrics:")
 for i, metric in enumerate(metrics):
     if hasattr(metric, 'name'):
         print(f"  {i+1}. {metric.name}: {metric.criteria}")
@@ -204,11 +254,18 @@ results_dir = "llm_benchmarking/deepeval-results"
 os.makedirs(results_dir, exist_ok=True)
 
 # Generate unique filenames in the results directory
-results_file = f"{results_dir}/deepeval_reviewer_results_{question_type}_{timestamp}.json"
-results_jsonl_file = f"{results_dir}/deepeval_reviewer_results_{question_type}_{timestamp}.jsonl"
+if args.faithfulness_only:
+    results_file = f"{results_dir}/deepeval_reviewer_faithfulness_{question_type}_{timestamp}.json"
+    results_jsonl_file = f"{results_dir}/deepeval_reviewer_faithfulness_{question_type}_{timestamp}.jsonl"
+else:
+    results_file = f"{results_dir}/deepeval_reviewer_results_{question_type}_{timestamp}.json"
+    results_jsonl_file = f"{results_dir}/deepeval_reviewer_results_{question_type}_{timestamp}.jsonl"
 
 print(f"📁 Output files will be saved in: {results_dir}/")
-print(f"📁 File prefix: deepeval_reviewer_*_{question_type}_{timestamp}")
+if args.faithfulness_only:
+    print(f"📁 File prefix: deepeval_reviewer_faithfulness_{question_type}_{timestamp}")
+else:
+    print(f"📁 File prefix: deepeval_reviewer_*_{question_type}_{timestamp}")
 
 # Function to save results incrementally
 def save_results_incrementally(results_list, filename, jsonl_filename):

@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 230,
+    "name": "paper_658_case_192",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Bumblebees",
+    "expected_output": "honeybee (Apis mellifera)",
+    "combined_score": 0.010694043360820235,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.032082130082460705,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output is 'Bumblebees' while Expected Output is 'honeybee (Apis mellifera)', so they do not match exactly.",
+      "Completeness [GEval]": "The Actual Output provides 'Bumblebees', which does not match the Expected Output of 'honeybee (Apis mellifera)'. The key point of specifying the correct species is missing, and the Actual Output is both incomplete and incorrect.",
+      "Accuracy [GEval]": "The actual output 'Bumblebees' does not match the expected output 'honeybee (Apis mellifera)'. The actual output provides a different species and omits the specific scientific name required. This discrepancy means the response is entirely inaccurate according to the evaluation steps."
+    },
+    "question_type": "bee_species",
+    "paper_id": "658",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "658",
+      "question_id": "bee_species",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 194,
+    "name": "paper_885_case_150",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honey bees and bumblebees.",
+    "expected_output": "Apis mellifera carnica",
+    "combined_score": 0.06666666666666667,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.1,
+      "Accuracy [GEval]": 0.1
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists 'Honey bees and bumblebees' while Expected Output specifies 'Apis mellifera carnica'; they do not match and the requirements are not satisfied.",
+      "Completeness [GEval]": "The Expected Output specifies 'Apis mellifera carnica', a precise subspecies, while the Actual Output gives only general categories ('Honey bees and bumblebees'), failing to mention the required subspecies. The Actual Output is overly broad and does not address the specific key point from the Expected Output.",
+      "Accuracy [GEval]": "The actual output lists 'Honey bees and bumblebees,' which is overly broad and does not match the specific expected output of 'Apis mellifera carnica.' The actual output omits the required detail and introduces an extra, unrelated group (bumblebees), resulting in significant discrepancies and inaccuracy."
+    },
+    "question_type": "bee_species",
+    "paper_id": "885",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "885",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 100,
+    "name": "paper_276_case_79",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were Bombus terrestris, Bombus lucorum, Bombus pratorum, Bombus pascuorum, and Bombus impatiens.",
+    "expected_output": "The paper discusses only the treatment of Bombus impatiens (Cresson)",
+    "combined_score": 0.07239937643269716,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.1164980643138644,
+      "Accuracy [GEval]": 0.10070006498422708
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists multiple Bombus species, while Expected Output specifies only Bombus impatiens is discussed; they do not match exactly.",
+      "Completeness [GEval]": "The Actual Output incorrectly lists multiple Bombus species as being tested, while the Expected Output specifies that only Bombus impatiens is discussed. This shows a significant discrepancy, as the key point about the exclusive focus on Bombus impatiens is not addressed, and incorrect information is provided about other species.",
+      "Accuracy [GEval]": "The actual output lists five bee species as being tested, while the expected output specifies that only Bombus impatiens was discussed in the paper. This is a significant discrepancy, as the actual output introduces incorrect information and does not match the expected output. The only partial alignment is the mention of Bombus impatiens, but the inclusion of four additional species is factually incorrect."
+    },
+    "question_type": "bee_species",
+    "paper_id": "276",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "276",
+      "question_id": "bee_species",
+      "reviewer": "KW",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 160,
+    "name": "paper_014_case_134",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bee(s) tested include honeybees (*Apis mellifera*), *A. cerana cerana*, *O. bicornis*, *B. terrestris*, and *B. impatiens*.",
+    "expected_output": "Apis mellifera carnica",
+    "combined_score": 0.10140334825851843,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.19820137931633466,
+      "Accuracy [GEval]": 0.10600866545922064
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists multiple bee species including Apis mellifera, A. cerana cerana, O. bicornis, B. terrestris, and B. impatiens, while Expected Output only specifies Apis mellifera carnica; they do not match exactly.",
+      "Completeness [GEval]": "The Actual Output lists several bee species, but the Expected Output specifically requires 'Apis mellifera carnica'. This subspecies is not mentioned in the Actual Output, and the inclusion of unrelated species indicates a lack of focus on the key point. Only the general species 'Apis mellifera' is partially relevant, but the required subspecies detail is missing.",
+      "Accuracy [GEval]": "The actual output lists multiple bee species, including Apis mellifera, A. cerana cerana, O. bicornis, B. terrestris, and B. impatiens, while the expected output specifies only Apis mellifera carnica. There is a significant discrepancy in both the number and identity of species mentioned, and the actual output does not match the expected output's specific detail."
+    },
+    "question_type": "bee_species",
+    "paper_id": "014",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "014",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 58,
+    "name": "paper_809_case_57",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were *A. mellifera*, *Megachile rotundata*, *Bombus terrestris*, and *Osmia lignaria*.",
+    "expected_output": "The species of bees tested was *Osmia lignaria*.",
+    "combined_score": 0.13175247084920214,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.1952574125476064,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists four bee species (*A. mellifera*, *Megachile rotundata*, *Bombus terrestris*, and *Osmia lignaria*), while Expected Output only mentions *Osmia lignaria*; they do not match exactly.",
+      "Completeness [GEval]": "The Actual Output lists four bee species, while the Expected Output specifies only *Osmia lignaria* was tested. The key point\u2014identifying the tested species\u2014is not correctly addressed, as the Actual Output introduces incorrect and extra information.",
+      "Accuracy [GEval]": "The actual output lists four bee species, while the expected output specifies only Osmia lignaria. This introduces three incorrect species and fails to match the expected information. The actual output is factually inaccurate and contains significant discrepancies compared to the expected output."
+    },
+    "question_type": "bee_species",
+    "paper_id": "809",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "809",
+      "question_id": "bee_species",
+      "reviewer": "AB",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 204,
+    "name": "paper_520_case_181",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were honey bees (Apis mellifera) and eastern honey bees (Apis cerana).",
+    "expected_output": "The species used was Apis mellfastifera, subspecies carnica, ligustica and Buckfast",
+    "combined_score": 0.13175247103432794,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.19525741310298375
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists Apis mellifera and Apis cerana, while Expected Output specifies Apis mellfastifera subspecies carnica, ligustica, and Buckfast; the species and subspecies do not match.",
+      "Completeness [GEval]": "The Actual Output mentions Apis mellifera, which partially aligns with the Expected Output, but omits the required subspecies (carnica, ligustica, Buckfast) and incorrectly includes Apis cerana, which is not listed in the Expected Output. Most key points are missing or incorrect.",
+      "Accuracy [GEval]": "The actual output incorrectly identifies the species as Apis mellifera and Apis cerana, while the expected output specifies only Apis mellfastifera (likely a typo for Apis mellifera) and its subspecies carnica, ligustica, and Buckfast. The actual output omits the subspecies detail and incorrectly includes Apis cerana, which is not mentioned in the expected output. There are significant factual discrepancies and missing information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "520",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "520",
+      "question_id": "bee_species",
+      "reviewer": "ER",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 34,
+    "name": "paper_586_case_19",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honeybees and bumblebees were tested.",
+    "expected_output": "The bee species tested was Bombus terrestris. The subspecies was Bombus terrestrus audax.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output mentions honeybees and bumblebees generally, while Expected Output specifies Bombus terrestris and its subspecies Bombus terrestrus audax; the outputs do not match exactly.",
+      "Completeness [GEval]": "The Actual Output mentions that honeybees and bumblebees were tested, which only partially aligns with the Expected Output. The Expected Output specifically requires the identification of Bombus terrestris and its subspecies Bombus terrestrus audax, but these details are missing. The Actual Output is vague and does not specify the species or subspecies, omitting key points.",
+      "Accuracy [GEval]": "The actual output incorrectly states that both honeybees and bumblebees were tested, while the expected output specifies only Bombus terrestris (bumblebee) and its subspecies Bombus terrestrus audax. The actual output omits the subspecies detail and adds an incorrect mention of honeybees, resulting in significant factual discrepancies and missing key details."
+    },
+    "question_type": "bee_species",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "bee_species",
+      "reviewer": "LH",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 202,
+    "name": "paper_520_case_180",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were honey bees (Apis mellifera) and eastern honey bees (Apis cerana).",
+    "expected_output": "The species tested was Apis mellifera, and the three subspecies included in the test were A. m. carnica, A. m. ligustica and A. m. buckfast.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output mentions Apis mellifera and Apis cerana, while Expected Output specifies only Apis mellifera and its three subspecies; the outputs do not match.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that both Apis mellifera and Apis cerana were tested, while the Expected Output specifies only Apis mellifera and its three subspecies (A. m. carnica, A. m. ligustica, A. m. buckfast). The Actual Output fails to mention the subspecies entirely and introduces an incorrect species, missing key details and providing inaccurate information.",
+      "Accuracy [GEval]": "The actual output incorrectly states that both Apis mellifera and Apis cerana were tested, while the expected output specifies only Apis mellifera and its three subspecies (A. m. carnica, A. m. ligustica, A. m. buckfast). The actual output omits the subspecies detail and adds an incorrect species, resulting in significant factual discrepancies."
+    },
+    "question_type": "bee_species",
+    "paper_id": "520",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "520",
+      "question_id": "bee_species",
+      "reviewer": "LH",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 174,
+    "name": "paper_007_case_139",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honeybees",
+    "expected_output": "Apis mellifera (genotype Buckfast)",
+    "combined_score": 0.13369956472399322,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.20109869417197968
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output 'Honeybees' does not exactly match Expected Output 'Apis mellifera (genotype Buckfast)'; it is less specific and omits required details.",
+      "Completeness [GEval]": "The Actual Output only provides the general term 'Honeybees', which partially aligns with the Expected Output by referencing the correct organism. However, it omits the specific species name 'Apis mellifera' and the genotype 'Buckfast', both of which are key points in the Expected Output. The response is incomplete and lacks the required specificity.",
+      "Accuracy [GEval]": "The actual output 'Honeybees' is much less specific than the expected output 'Apis mellifera (genotype Buckfast)'. It omits both the scientific name and the genotype, providing only a general term. This is a significant omission of key details required by the expected output."
+    },
+    "question_type": "bee_species",
+    "paper_id": "007",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "007",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 162,
+    "name": "paper_890_case_162",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were *Nannotrigona aff. testaceicornis*, *N. perilampoides*, and *Tetragonisca hockingsi*.",
+    "expected_output": "Tetragonula hockingsi",
+    "combined_score": 0.13420783578387654,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.19969228395850666,
+      "Accuracy [GEval]": 0.20293122339312294
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists three species, including Nannotrigona aff. testaceicornis and N. perilampoides, which are not in the Expected Output; also, the species name Tetragonisca hockingsi does not match the Expected Output Tetragonula hockingsi.",
+      "Completeness [GEval]": "The Actual Output lists three bee species, but only one, Tetragonisca hockingsi, is similar in name to the Expected Output, Tetragonula hockingsi. However, the Actual Output does not mention Tetragonula hockingsi specifically and includes two unrelated species, missing the key point of correctly identifying the expected species.",
+      "Accuracy [GEval]": "The actual output lists three bee species, including two that are not present in the expected output. The expected output only mentions Tetragonula hockingsi, while the actual output incorrectly lists Tetragonisca hockingsi (a different genus) and two Nannotrigona species. This introduces factual inaccuracies and discrepancies in both the species included and the genus name."
+    },
+    "question_type": "bee_species",
+    "paper_id": "890",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "890",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 90,
+    "name": "paper_301_case_46",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honey bees",
+    "expected_output": "Apis mellifera L.",
+    "combined_score": 0.14668393459154735,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2377540668798146,
+      "Accuracy [GEval]": 0.2022977368948274
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output 'Honey bees' does not exactly match Expected Output 'Apis mellifera L.'; the former is a common name while the latter is the scientific name.",
+      "Completeness [GEval]": "The Actual Output provides a general common name ('Honey bees') rather than the specific scientific name ('Apis mellifera L.') required in the Expected Output. While it refers to the correct organism, it lacks the precision and completeness of the scientific nomenclature, missing the key point of providing the exact species name.",
+      "Accuracy [GEval]": "The actual output 'Honey bees' is a general term, while the expected output 'Apis mellifera L.' specifies the scientific name. The actual output omits the precise scientific detail required and is less accurate, but it is not entirely unrelated. There is a significant discrepancy in specificity and correctness."
+    },
+    "question_type": "bee_species",
+    "paper_id": "301",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "301",
+      "question_id": "bee_species",
+      "reviewer": "NN",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 92,
+    "name": "paper_421_case_76",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were Osmia cornuta and Osmia bicornis.",
+    "expected_output": "The authors mention testing only Osmia bicornis, the red mason bee",
+    "combined_score": 0.1484466285448453,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2377540675801802,
+      "Accuracy [GEval]": 0.20758581805435572
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists both Osmia cornuta and Osmia bicornis as tested species, while Expected Output states only Osmia bicornis was tested; they do not match exactly.",
+      "Completeness [GEval]": "The Actual Output incorrectly lists both Osmia cornuta and Osmia bicornis as tested species, while the Expected Output specifies only Osmia bicornis was tested. This introduces an inaccuracy and fails to fully align with the key point from the Expected Output.",
+      "Accuracy [GEval]": "The actual output incorrectly states that both Osmia cornuta and Osmia bicornis were tested, while the expected output specifies only Osmia bicornis was tested. This introduces an inaccuracy by adding an extra species, which affects the factual correctness. However, it does correctly mention Osmia bicornis, partially aligning with the expected output."
+    },
+    "question_type": "bee_species",
+    "paper_id": "421",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "421",
+      "question_id": "bee_species",
+      "reviewer": "KW",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 64,
+    "name": "paper_299_case_60",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were Halictus tumulorum, Lasioglossum fulvicorne, L. malachurum, L. pauxillum, Osmia spinulosa, honey bees (*Apis mellifera*), and honey bees (*Apis mellifera carnica*).",
+    "expected_output": "Apis mellifera carnica",
+    "combined_score": 0.1517368369648656,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2492018454564152,
+      "Accuracy [GEval]": 0.20600866543818158
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists multiple bee species and extra information, while Expected Output only requires 'Apis mellifera carnica'; they do not match exactly.",
+      "Completeness [GEval]": "The Actual Output includes Apis mellifera carnica as required by the Expected Output, but it also lists several other bee species not mentioned in the Expected Output. This introduces unnecessary information and does not focus solely on the key point specified. The response partially addresses the requirement but lacks precision and completeness in matching the Expected Output.",
+      "Accuracy [GEval]": "The actual output lists multiple bee species, while the expected output only specifies Apis mellifera carnica. This introduces several extraneous details and does not match the expected specificity. The only overlap is the mention of Apis mellifera carnica, but the inclusion of unrelated species reduces accuracy and alignment with the evaluation steps."
+    },
+    "question_type": "bee_species",
+    "paper_id": "299",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "299",
+      "question_id": "bee_species",
+      "reviewer": "NN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 98,
+    "name": "paper_277_case_78",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested are *Bombus terrestris* and *Bombus impatiens*.",
+    "expected_output": "The only species given as tested in this paper is Bombus impatiens",
+    "combined_score": 0.15862149354775287,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.23208213073183842,
+      "Accuracy [GEval]": 0.24378234991142017
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists both Bombus terrestris and Bombus impatiens as tested, while Expected Output states only Bombus impatiens was tested.",
+      "Completeness [GEval]": "The Actual Output incorrectly lists Bombus terrestris as a tested species, while the Expected Output specifies only Bombus impatiens. This introduces an inaccuracy and fails to fully align with the key point that only Bombus impatiens was tested. The Actual Output partially addresses the species tested but includes an erroneous addition.",
+      "Accuracy [GEval]": "The actual output incorrectly lists both Bombus terrestris and Bombus impatiens as tested species, while the expected output specifies only Bombus impatiens. This introduces an inaccurate fact and adds information not present in the expected output, resulting in a significant discrepancy."
+    },
+    "question_type": "bee_species",
+    "paper_id": "277",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "277",
+      "question_id": "bee_species",
+      "reviewer": "KW",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 84,
+    "name": "paper_798_case_44",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Africanized *A. mellifera*",
+    "expected_output": "Apis mellifera",
+    "combined_score": 0.16370917999055398,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.22689414213699952,
+      "Accuracy [GEval]": 0.2642333978346624
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output includes 'Africanized' and an abbreviated genus, while Expected Output is the full scientific name 'Apis mellifera'; they do not match exactly.",
+      "Completeness [GEval]": "The Expected Output is 'Apis mellifera', which is the full scientific name. The Actual Output provides 'Africanized *A. mellifera*', which uses an abbreviated genus and adds the descriptor 'Africanized', introducing extra information not present in the Expected Output. The key point of providing the exact scientific name is not fully met, and the output is incomplete and partially incorrect.",
+      "Accuracy [GEval]": "The actual output 'Africanized *A. mellifera*' is factually related to the expected output 'Apis mellifera', as Africanized bees are a subspecies of Apis mellifera. However, the actual output introduces an unnecessary qualifier ('Africanized') and uses an abbreviated form ('A. mellifera') instead of the full scientific name. This results in partial alignment but fails to fully match the expected output in both content and format."
+    },
+    "question_type": "bee_species",
+    "paper_id": "798",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "798",
+      "question_id": "bee_species",
+      "reviewer": "NN",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 212,
+    "name": "paper_531_case_183",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bee(s) tested are *Apis mellifera* and *Apis cerana cerana*.",
+    "expected_output": "The species tested was Apis mellifera.",
+    "combined_score": 0.16514613128953845,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2119202920457591,
+      "Accuracy [GEval]": 0.28351810182285625
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists both Apis mellifera and Apis cerana cerana, while Expected Output only mentions Apis mellifera; this is not an exact match and includes extra information.",
+      "Completeness [GEval]": "The Expected Output specifies only Apis mellifera as the species tested, but the Actual Output incorrectly lists both Apis mellifera and Apis cerana cerana. This introduces an extra, incorrect species and does not fully align with the key point in the Expected Output.",
+      "Accuracy [GEval]": "The actual output incorrectly lists both Apis mellifera and Apis cerana cerana as tested species, while the expected output specifies only Apis mellifera. This introduces an inaccurate addition and fails to match the expected detail, but it does include the correct species among the listed ones."
+    },
+    "question_type": "bee_species",
+    "paper_id": "531",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "531",
+      "question_id": "bee_species",
+      "reviewer": "LH",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 74,
+    "name": "paper_218_case_65",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bee tested were *O. bicornis* and *B. terrestris*.",
+    "expected_output": "The paper mentions only the treatment of Osmia bicornis, the red mason bee. The genus is only given in full once.",
+    "combined_score": 0.16873921669619327,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2562176500885798,
+      "Accuracy [GEval]": 0.24999999999999994
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists both O. bicornis and B. terrestris as tested, but Expected Output states only Osmia bicornis is mentioned; Actual Output adds an extra species not present in Expected Output.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that both O. bicornis and B. terrestris were tested, while the Expected Output clarifies that only Osmia bicornis is mentioned in the paper. The Actual Output also fails to note that the genus is only given in full once, missing a key detail from the Expected Output. Thus, it only partially aligns with the evaluation steps.",
+      "Accuracy [GEval]": "The actual output incorrectly states that both O. bicornis and B. terrestris were tested, while the expected output clarifies that only Osmia bicornis was mentioned in the paper. This is a factual inaccuracy and a significant discrepancy, as it introduces an additional species not present in the expected output."
+    },
+    "question_type": "bee_species",
+    "paper_id": "218",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "218",
+      "question_id": "bee_species",
+      "reviewer": "KW",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 60,
+    "name": "paper_809_case_56",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were *A. mellifera*, *Megachile rotundata*, *Bombus terrestris*, and *Osmia lignaria*.",
+    "expected_output": "Osmia lignaria",
+    "combined_score": 0.17796707794668207,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.26638350209584466,
+      "Accuracy [GEval]": 0.26751773174420146
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists four bee species, while Expected Output only lists Osmia lignaria; they do not match exactly.",
+      "Completeness [GEval]": "The Actual Output includes the expected species, Osmia lignaria, but also lists three additional species not mentioned in the Expected Output. This means the key point is present but not isolated, resulting in unnecessary information and incomplete alignment with the requirement to only provide the expected species.",
+      "Accuracy [GEval]": "The actual output lists four bee species, while the expected output only mentions Osmia lignaria. This introduces extra, unnecessary information and does not match the expected specificity. While Osmia lignaria is included, the presence of additional species is a clear discrepancy."
+    },
+    "question_type": "bee_species",
+    "paper_id": "809",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "809",
+      "question_id": "bee_species",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 50,
+    "name": "paper_794_case_52",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honey bees (*Apis mellifera*) were tested.",
+    "expected_output": "Apis mellifera carnica",
+    "combined_score": 0.19497192591405801,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2747824969024757,
+      "Accuracy [GEval]": 0.31013328083969843
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output gives 'Honey bees (Apis mellifera)' while Expected Output is 'Apis mellifera carnica'; the subspecies 'carnica' is missing and the outputs do not match exactly.",
+      "Completeness [GEval]": "The Actual Output identifies the species as Apis mellifera, which partially matches the Expected Output. However, it omits the subspecies 'carnica,' which is a key detail in the Expected Output. The Actual Output is incomplete as it does not fully specify the required information.",
+      "Accuracy [GEval]": "The actual output identifies the species as Apis mellifera, which is partially correct, but omits the subspecies 'carnica' specified in the expected output. It also adds the common name 'Honey bees' and the scientific name in italics, which is not present in the expected output. This results in incomplete and slightly inaccurate information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "794",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "794",
+      "question_id": "bee_species",
+      "reviewer": "NN",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 216,
+    "name": "paper_525_case_186",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "*A. mellifera* (honeybee)",
+    "expected_output": "The bee species used was Apis mellifera. The breed was africanized honeybees, which means that they were a hybrid between the african subspecies (Apis mellifera scutellata) and (at least) one of the European subspecies.",
+    "combined_score": 0.19747139405152322,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.29999999999999993,
+      "Accuracy [GEval]": 0.2924141821545697
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output only mentions the species name and common name, while Expected Output provides detailed information about the breed (africanized honeybees) and their hybrid origin, which is missing in Actual Output.",
+      "Completeness [GEval]": "The Actual Output only mentions the species name (Apis mellifera) and omits key details from the Expected Output, such as the breed (africanized honeybees) and the explanation that these are hybrids between the African subspecies (Apis mellifera scutellata) and European subspecies. Thus, most key points are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output only mentions the species name 'A. mellifera (honeybee)' and omits key details from the expected output, such as the specific breed (africanized honeybees) and the hybrid nature involving Apis mellifera scutellata and European subspecies. No incorrect information is added, but significant information is missing, affecting completeness and accuracy."
+    },
+    "question_type": "bee_species",
+    "paper_id": "525",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "525",
+      "question_id": "bee_species",
+      "reviewer": "LH",
+      "rating": 9
+    }
+  }
+]

@@ -1,0 +1,574 @@
+[
+  {
+    "test_case_index": 184,
+    "name": "reviewer_comparison_010_case_168",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, temperature was used as an additional stressor, with the arena heated to 45 \u00b0C. The exposure method was individual access to a thermal-visual arena, and the duration of exposure was three days with ten trials of three minutes each.",
+    "expected_output": "No additional stressors.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that temperature was used as an additional stressor, while Expected Output clearly says there were no additional stressors.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that temperature was used as an additional stressor, while the Expected Output clearly specifies that there were no additional stressors. This is a direct contradiction and fails to address the key point from the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output incorrectly states that temperature was used as an additional stressor and provides specific details about exposure, while the Expected Output clearly states that there were no additional stressors. This is a direct factual inconsistency and a complete misalignment with the Expected Output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "010",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "010",
+      "question_id": "additional_stressors",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 0,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 149,
+    "name": "reviewer_comparison_074_case_140",
+    "input": "Question about additional_stressors",
+    "actual_output": "No, the texts do not mention any additional stressors (like temperature, parasites, pathogens, or nutritional stress) or provide details on their dose, exposure method, or duration of exposure.",
+    "expected_output": "No, the texts do not mention any additional stressors (like temperature, parasites, pathogens, or nutritional stress) or provide details on their dose, exposure method, or duration of exposure.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Faithfulness": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.00 because the actual output fails to mention any of the stressors listed in the retrieval context, such as habitat fragmentation, pathogens, parasites, poor nutrition, and pesticides. Additionally, it does not align with the detailed exposure method described, including the fasting of forager bees and the concentration-mortality bioassays."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "074",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "074",
+      "question_id": "additional_stressors",
+      "rev1": "AJ",
+      "rev2": "EA",
+      "rev1_rating": 10,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 194,
+    "name": "reviewer_comparison_669_case_172",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors were studied",
+    "expected_output": "No additional stressors were used in the study",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Faithfulness": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.00 because the actual output incorrectly claims that no additional stressors were studied, while the retrieval context clearly lists multiple stressors like pesticides, parasites, pathogens, habitat fragmentation, and climate change affecting honey bee colonies."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "669",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "669",
+      "question_id": "additional_stressors",
+      "rev1": "BN",
+      "rev2": "ER",
+      "rev1_rating": 3,
+      "rev2_rating": 1
+    }
+  },
+  {
+    "test_case_index": 143,
+    "name": "reviewer_comparison_071_case_134",
+    "input": "Question about additional_stressors",
+    "actual_output": "No specific additional stressors, doses, exposure methods, or durations of exposure are mentioned in the text.",
+    "expected_output": "Captan is a pesticide.",
+    "combined_score": 0.05214057356713624,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.01263937078998852,
+      "Accuracy [GEval]": 0.1437823499114202
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output does not mention that Captan is a pesticide, which is the key information in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output does not mention that Captan is a pesticide, which is the sole key point in the Expected Output. There is no coverage of the required information.",
+      "Accuracy [GEval]": "The Actual Output does not mention that Captan is a pesticide, which is the key factual point in the Expected Output. Instead, it discusses the absence of details about stressors, doses, and exposure, which are not relevant to the Expected Output. This shows a significant misalignment with the evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "071",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "071",
+      "question_id": "additional_stressors",
+      "rev1": "AJ",
+      "rev2": "EA",
+      "rev1_rating": 5,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 163,
+    "name": "reviewer_comparison_583_case_144",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors were tested.",
+    "expected_output": "Additionally, continuous light (LL) was used as a stressor in combination with neonicotinoid exposure.",
+    "combined_score": 0.07644116951250984,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.15621765008857982,
+      "Accuracy [GEval]": 0.0731058584489497
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states no additional stressors were tested, while Expected Output specifies that continuous light (LL) was used as a stressor with neonicotinoid exposure.",
+      "Completeness [GEval]": "The Expected Output specifies that continuous light (LL) was used as an additional stressor with neonicotinoid exposure. The Actual Output incorrectly states that no additional stressors were tested, missing the key point about continuous light. This shows a significant omission, with only minimal alignment.",
+      "Accuracy [GEval]": "The Actual Output incorrectly states that no additional stressors were tested, while the Expected Output specifies that continuous light (LL) was used as an additional stressor alongside neonicotinoid exposure. This is a clear factual inaccuracy and a failure to align with the key details, resulting in a significant discrepancy."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "583",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "583",
+      "question_id": "additional_stressors",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 7,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 166,
+    "name": "reviewer_comparison_949_case_161",
+    "input": "Question about additional_stressors",
+    "actual_output": "Multiple pesticides are used, but all in the same treatment, so they cannot be considered individually.",
+    "expected_output": "The only stressor considered by the authors in their experiment was the neonicotinoid insecticide clothianidin.",
+    "combined_score": 0.11379406971593842,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.1413822091478152
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states multiple pesticides were used in the same treatment, while Expected Output specifies only clothianidin was considered; this is a clear discrepancy in content.",
+      "Completeness [GEval]": "The Expected Output specifies that only clothianidin was considered as a stressor, while the Actual Output incorrectly claims that multiple pesticides were used in the same treatment. This misses the key point that only one pesticide (clothianidin) was involved, resulting in a significant discrepancy and incomplete coverage of the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output incorrectly states that multiple pesticides were used in the same treatment, while the Expected Output clarifies that only clothianidin was considered as a stressor. This is a significant factual discrepancy, as the Actual Output misrepresents the experimental design. The response does not align with the Expected Output in terms of accuracy."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "949",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "949",
+      "question_id": "additional_stressors",
+      "rev1": "SA",
+      "rev2": "HS",
+      "rev1_rating": 1,
+      "rev2_rating": 1
+    }
+  },
+  {
+    "test_case_index": 178,
+    "name": "reviewer_comparison_016_case_167",
+    "input": "Question about additional_stressors",
+    "actual_output": "The exposure method involved feeding the bees these substances, and the duration varied from acute (short-term) to chronic (long-term) exposure",
+    "expected_output": "No additional stressors. Colonies used to supply bees were checked and did not have measureable Varroa infestations. Light and temperature were also ruled out as additional stressors - suppl methods section.",
+    "combined_score": 0.11459411663714007,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.1437823499114202
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output discusses the exposure method and duration but does not mention the absence of additional stressors, Varroa infestations, or control of light and temperature as specified in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only describes the exposure method and duration, but does not address the key points from the Expected Output: the absence of additional stressors, checks for Varroa infestations, and the control of light and temperature. Thus, most key points are missing, resulting in incomplete coverage.",
+      "Accuracy [GEval]": "The Actual Output discusses the method of exposure and duration but does not address the key details in the Expected Output, which focuses on the absence of additional stressors such as Varroa infestations, light, and temperature. There is a significant factual discrepancy, as the Actual Output omits all relevant information about stressor controls."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "016",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "016",
+      "question_id": "additional_stressors",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 0,
+      "rev2_rating": 2
+    }
+  },
+  {
+    "test_case_index": 181,
+    "name": "reviewer_comparison_522_case_179",
+    "input": "Question about additional_stressors",
+    "actual_output": "Although the experimental design in the Methods section describes testing the effects of imidacloprid and cold both individually and in combination, no results are reported on the single and combined effects. Therefore, no additional stressors are addressed in the results.",
+    "expected_output": "Yes, they test how additional cold stress influence the effect of imidacloprid.",
+    "combined_score": 0.13555972266196684,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2029464795593726,
+      "Accuracy [GEval]": 0.2037326884265279
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output claims no results are reported on the effects of cold and imidacloprid, while Expected Output states that the study tests how cold stress influences imidacloprid effects; this is a direct contradiction.",
+      "Completeness [GEval]": "The Expected Output states that the study tests how additional cold stress influences the effect of imidacloprid, indicating that both stressors are addressed. The Actual Output, however, claims that no results are reported on the single and combined effects and that no additional stressors are addressed in the results. This directly contradicts the Expected Output and misses the key point that the effects of cold stress in combination with imidacloprid are tested. The Actual Output only partially references the experimental design but fails to acknowledge the presence of results, leading to a low score.",
+      "Accuracy [GEval]": "The Actual Output contradicts the Expected Output by stating that no results are reported on the single and combined effects of imidacloprid and cold, whereas the Expected Output affirms that the study tests how cold stress influences the effect of imidacloprid. This indicates a significant factual inconsistency and a lack of alignment with the Expected Output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "522",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "522",
+      "question_id": "additional_stressors",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 10,
+      "rev2_rating": 3
+    }
+  },
+  {
+    "test_case_index": 167,
+    "name": "reviewer_comparison_422_case_147",
+    "input": "Question about additional_stressors",
+    "actual_output": "No, additional stressors were not included in this study.",
+    "expected_output": "Although not experimentally altered, the authors do investigate seasonal effects on VOC reception",
+    "combined_score": 0.16966987171288905,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2942048953354982,
+      "Accuracy [GEval]": 0.21480471980316898
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output incorrectly states that no additional stressors were included, while the Expected Output clarifies that seasonal effects were investigated, indicating a discrepancy in content.",
+      "Completeness [GEval]": "The Actual Output correctly states that additional stressors were not included in the study, aligning with part of the Expected Output. However, it fails to mention that the authors investigated seasonal effects on VOC reception, which is a key point in the Expected Output. Thus, the response is only partially complete.",
+      "Accuracy [GEval]": "The Actual Output incorrectly states that no additional stressors were included, missing the nuance that the authors did investigate seasonal effects on VOC reception, as noted in the Expected Output. While it is true that stressors were not experimentally altered, the Actual Output fails to acknowledge the observational investigation of seasonal effects, leading to a significant discrepancy."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "422",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "422",
+      "question_id": "additional_stressors",
+      "rev1": "KW",
+      "rev2": "BN",
+      "rev1_rating": 1,
+      "rev2_rating": 1
+    }
+  },
+  {
+    "test_case_index": 189,
+    "name": "reviewer_comparison_531_case_178",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, an additional stressor was used: melatonin at a dose of 200 ng/bee. Melatonin was administered orally in a 2 mL solution for 20 minutes, either alone or in combination with imidacloprid (24h before imidacloprid exposure).",
+    "expected_output": "No additional stressors were tested, but melatonin  resembles one in this study design.",
+    "combined_score": 0.19897221755547237,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3873817053410329,
+      "Accuracy [GEval]": 0.2095349473253843
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states melatonin was used as an additional stressor, while Expected Output clarifies no additional stressors were tested and only suggests melatonin resembles one; this is a contradiction in information.",
+      "Completeness [GEval]": "The Expected Output states that no additional stressors were tested, but melatonin resembles one in the study design. The Actual Output incorrectly claims that melatonin was an additional stressor, providing specific details about its administration. While it acknowledges melatonin's use, it misrepresents its role, missing the nuance that it was not formally an additional stressor. Thus, the Actual Output partially covers the key point but introduces a significant inaccuracy.",
+      "Accuracy [GEval]": "The Actual Output incorrectly states that melatonin was used as an additional stressor, while the Expected Output clarifies that no additional stressors were tested and melatonin only resembles one in the study design. This is a factual inconsistency and a significant inaccuracy, as the Actual Output misrepresents the experimental design. However, the Actual Output does provide some relevant details about melatonin administration, which prevents a lower score."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "531",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "531",
+      "question_id": "additional_stressors",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 9,
+      "rev2_rating": 5
+    }
+  },
+  {
+    "test_case_index": 182,
+    "name": "reviewer_comparison_007_case_165",
+    "input": "Question about additional_stressors",
+    "actual_output": "the parasite *Nosema ceranae* and the pesticides thiamethoxam and boscalid.",
+    "expected_output": "This paper investigated the effect of probiotic treatment in honeybees on: i) the parasite Nosema ceranae and ii) the effects of pesticides (thiamethoxam and boscalid). However no bees were exposed to both parasite infection and pesticides. So although parasitic load was examined it was done as a stand alone experiment to assess the efficacy of probiotic treatments. Thiamethoxam and boscalid were applied together and so the effects cannot be teased apart. No additional stressors in this study.",
+    "combined_score": 0.20660749863656916,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3222700133666384,
+      "Accuracy [GEval]": 0.2975524825430691
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key details from the Expected Output, such as the investigation of probiotic treatment, the fact that no bees were exposed to both parasite and pesticides, that thiamethoxam and boscalid were applied together, and that no additional stressors were present.",
+      "Completeness [GEval]": "The Actual Output mentions the parasite Nosema ceranae and the pesticides thiamethoxam and boscalid, partially aligning with the Expected Output. However, it omits key details: it does not specify that the effects of probiotics were investigated, that no bees were exposed to both parasite and pesticides simultaneously, that thiamethoxam and boscalid were applied together, or that no additional stressors were present. Thus, coverage of key points is incomplete.",
+      "Accuracy [GEval]": "The Actual Output lists the parasite Nosema ceranae and the pesticides thiamethoxam and boscalid, which are mentioned in the Expected Output. However, it omits key details: it does not mention the focus on probiotic treatment, the fact that no bees were exposed to both parasite and pesticides simultaneously, that thiamethoxam and boscalid were applied together, or that no additional stressors were present. This results in a partial and incomplete alignment with the Expected Output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "007",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "007",
+      "question_id": "additional_stressors",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 1,
+      "rev2_rating": 5
+    }
+  },
+  {
+    "test_case_index": 155,
+    "name": "reviewer_comparison_591_case_139",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors were tested.",
+    "expected_output": "No additional stressors or combinations were mentioned in the texts. The doses of sulfoxaflor were 2.4 ppb, 10 ppb, and 250 ppb, applied via a sucrose solution, with durations of exposure of one hour or 45 minutes after feeding, depending on the experiment.",
+    "combined_score": 0.2237031153558869,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3134263122670018,
+      "Accuracy [GEval]": 0.35768303380065886
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output only mentions that no additional stressors were tested, omitting details about sulfoxaflor doses, application method, and exposure durations present in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output correctly notes that no additional stressors were tested, which matches a key point in the Expected Output. However, it omits important details about the sulfoxaflor doses, the method of application (sucrose solution), and the exposure durations, resulting in only partial coverage of the key points.",
+      "Accuracy [GEval]": "The Actual Output correctly states that no additional stressors were tested, which aligns with the Expected Output. However, it omits key details present in the Expected Output, such as the specific doses of sulfoxaflor, the method of application (sucrose solution), and the durations of exposure. This lack of detail results in partial alignment but misses important information."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "591",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "591",
+      "question_id": "additional_stressors",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 147,
+    "name": "reviewer_comparison_586_case_137",
+    "input": "Question about additional_stressors",
+    "actual_output": "Additional stressors were not explicitly tested, but they discuss that the effect of pesticides was similar across sites, despite that they covered a range of different habitats, suggesting that they aimed at testing additional stressors. However, they also state that the sample size for testing among-site-effects was low.",
+    "expected_output": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text.",
+    "combined_score": 0.2686282199745378,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3901002793232705,
+      "Accuracy [GEval]": 0.41578438060034284
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output incorrectly suggests that testing across different habitats implies testing additional stressors, while the Expected Output clearly states that no additional stressors or combinations were mentioned; thus, the Actual Output does not align with the Expected Output.",
+      "Completeness [GEval]": "The Actual Output partially addresses the Expected Output by noting that additional stressors were not explicitly tested, which aligns with the Expected Output's statement. However, it introduces speculation about the authors' intentions and discusses site variation, which is not relevant to the key point that no additional stressors or combinations were mentioned. The Actual Output does not clearly and directly confirm the absence of other stressors as stated in the Expected Output, resulting in only partial coverage.",
+      "Accuracy [GEval]": "The Actual Output partially aligns with the Expected Output by noting that additional stressors were not explicitly tested. However, it introduces speculation about the authors' intentions and discusses site differences, which is not supported by the Expected Output. The Expected Output clearly states that no additional stressors or combinations were mentioned, while the Actual Output implies possible testing and discusses sample size, leading to some factual inaccuracy and misalignment."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "additional_stressors",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 169,
+    "name": "reviewer_comparison_430_case_148",
+    "input": "Question about additional_stressors",
+    "actual_output": "The study also considered data on agriculture and land use change, types of agriculture, density of honeybee hives, temperature and precipitation as additional factors",
+    "expected_output": "The authors also address how changes in land use influence pollinator abundance (and the relationship between land use and pesticide use)",
+    "combined_score": 0.2701401469089921,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.4205537211964496,
+      "Accuracy [GEval]": 0.38986671953052665
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists additional factors like temperature, precipitation, and hive density, but does not mention the relationship between land use and pollinator abundance or pesticide use as in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output mentions land use change and additional factors like agriculture type, hive density, temperature, and precipitation, partially aligning with the Expected Output's focus on land use. However, it does not specifically address the relationship between land use and pollinator abundance or the link between land use and pesticide use, both of which are key points in the Expected Output. Thus, coverage is only partial.",
+      "Accuracy [GEval]": "The Actual Output mentions land use change and agriculture, which partially aligns with the Expected Output's focus on land use and its influence on pollinator abundance. However, it omits the relationship between land use and pesticide use and does not mention pollinator abundance directly. It also introduces unrelated factors like honeybee hive density, temperature, and precipitation, which are not referenced in the Expected Output. This results in partial but incomplete alignment."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "430",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "430",
+      "question_id": "additional_stressors",
+      "rev1": "KW",
+      "rev2": "BN",
+      "rev1_rating": 5,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 150,
+    "name": "reviewer_comparison_427_case_150",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors were studied",
+    "expected_output": "Temperature and windspeed are noted to be significant, and were assessed for the impact they have on foraging. However, these were not experimentally altered, but rather assessed and controlled for - as such, they are not truly additional stressors",
+    "combined_score": 0.27287901694628475,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3679658579474093,
+      "Accuracy [GEval]": 0.45067119289144486
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits details from the Expected Output, specifically that temperature and windspeed were assessed and controlled for but not experimentally altered, missing the nuance that they are not truly additional stressors.",
+      "Completeness [GEval]": "The Actual Output correctly states that no additional stressors were studied, which aligns with the Expected Output's conclusion. However, it omits key details from the Expected Output, such as the mention of temperature and windspeed being significant, their assessment for impact on foraging, and the clarification that they were controlled for rather than experimentally altered. Thus, the Actual Output is incomplete and lacks important context.",
+      "Accuracy [GEval]": "The Actual Output partially aligns with the Expected Output by indicating that no additional stressors were studied. However, it omits key details present in the Expected Output, such as the assessment and control of temperature and windspeed, and the clarification that these were not experimentally altered. This lack of detail results in a partial but incomplete factual alignment."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "427",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "427",
+      "question_id": "additional_stressors",
+      "rev1": "KW",
+      "rev2": "BN",
+      "rev1_rating": 3,
+      "rev2_rating": 4
+    }
+  },
+  {
+    "test_case_index": 156,
+    "name": "reviewer_comparison_736_case_153",
+    "input": "Question about additional_stressors",
+    "actual_output": "Fully crossed experiments in which the bees were exposed to both clothianidin and propiconazole",
+    "expected_output": "Yes, additional stressors were used: clothianidin and propiconazole. The dose for propiconazole was established at 7 \u03bcg/bee. The exposure method was oral, through feeding solutions",
+    "combined_score": 0.28693542572955916,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.45,
+      "Accuracy [GEval]": 0.41080627718867746
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output, such as the dose of propiconazole (7 \u03bcg/bee) and the oral exposure method, and does not explicitly confirm the use of additional stressors.",
+      "Completeness [GEval]": "The Actual Output mentions the use of both clothianidin and propiconazole, aligning with the Expected Output's identification of additional stressors. However, it omits key details such as the specific dose of propiconazole (7 \u03bcg/bee) and the exposure method (oral, through feeding solutions), making the response incomplete.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies that both clothianidin and propiconazole were used as stressors, matching the Expected Output. However, it omits key details present in the Expected Output, such as the specific dose of propiconazole (7 \u03bcg/bee) and the oral exposure method via feeding solutions. This partial alignment results in a lower score due to missing important factual information."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "736",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "736",
+      "question_id": "additional_stressors",
+      "rev1": "AB",
+      "rev2": "HS",
+      "rev1_rating": 4,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 171,
+    "name": "reviewer_comparison_436_case_149",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the study used a combination of neonicotinoid insecticide (imidacloprid) exposure and artificial nectar starvation as additional stressors.",
+    "expected_output": "In addition to imidacloprid, there were experimental differences in exposure method (chronic/early-acute/late-acute) and starvation period (0-24 hrs)",
+    "combined_score": 0.29873207019219544,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.45809380955120726,
+      "Accuracy [GEval]": 0.4381024010253792
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions imidacloprid exposure and nectar starvation, but omits the experimental differences in exposure method (chronic/early-acute/late-acute) and the specific starvation period (0-24 hrs) described in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output correctly identifies imidacloprid exposure and nectar starvation as stressors, aligning with the Expected Output. However, it omits key details about the experimental differences in exposure method (chronic/early-acute/late-acute) and the specific starvation period range (0-24 hrs), which are both mentioned in the Expected Output. Thus, the response is only partially complete.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies imidacloprid exposure and nectar starvation as stressors, which aligns with the Expected Output. However, it omits key experimental details such as the specific exposure methods (chronic, early-acute, late-acute) and the range of starvation periods (0-24 hrs), resulting in incomplete alignment and missing important factual details."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "436",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "436",
+      "question_id": "additional_stressors",
+      "rev1": "KW",
+      "rev2": "BN",
+      "rev1_rating": 7,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 190,
+    "name": "reviewer_comparison_003_case_169",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the additional stressors used were thiamethoxam and the parasite *C. bombi*.",
+    "expected_output": "The additional strressor here is the trypanosome parasite Crithidia bombi. The exposure was to approximately 10,000 C. bombi cells orally in 10ul sucose solution (50 degree Brix) given after 3 hours of starvation. After 7 days these bees were included in further a experiment with thiamethoxam done over 96 hours.",
+    "combined_score": 0.30571589008476213,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.4381024010657226,
+      "Accuracy [GEval]": 0.47904526918856377
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key experimental details from Expected Output, such as the dosage, method, and timing of C. bombi exposure, and the sequence of thiamethoxam treatment, thus not fully reflecting the information and reasoning provided.",
+      "Completeness [GEval]": "The Actual Output correctly identifies both thiamethoxam and C. bombi as additional stressors, covering the main key points. However, it omits important experimental details present in the Expected Output, such as the dosage and method of C. bombi exposure (10,000 cells in 10ul sucrose after 3 hours starvation), the 7-day interval before the next experiment, and the 96-hour duration of thiamethoxam exposure. Thus, while the main stressors are mentioned, the Actual Output lacks completeness in experimental specifics.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies thiamethoxam and C. bombi as the additional stressors, which aligns with the Expected Output. However, it omits important experimental details such as the dosage (10,000 C. bombi cells), method of administration (oral in sucrose solution), starvation period, and the timing and duration of the thiamethoxam exposure. This partial alignment demonstrates factual consistency on the main points but lacks the full accuracy and detail present in the Expected Output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "003",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "003",
+      "question_id": "additional_stressors",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 4,
+      "rev2_rating": 6
+    }
+  },
+  {
+    "test_case_index": 196,
+    "name": "reviewer_comparison_005_case_171",
+    "input": "Question about additional_stressors",
+    "actual_output": "No, the texts do not mention any additional stressors or combinations used. They primarily discuss exposure to neonicotinoid insecticides without reference to other stressors.",
+    "expected_output": "No additional stressors as the fungicides were applied along with the thiamethoxam in the seed dressing.",
+    "combined_score": 0.34635350138843896,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.45484488411308543,
+      "Accuracy [GEval]": 0.5842156200522315
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output incorrectly states that no additional stressors or combinations were mentioned, while the Expected Output specifies that fungicides were applied with thiamethoxam, which is an additional stressor.",
+      "Completeness [GEval]": "The Actual Output correctly states that no additional stressors are mentioned, aligning with the Expected Output's main point. However, it omits the specific detail that fungicides were applied along with thiamethoxam in the seed dressing, which is a key point in the Expected Output. This makes the response only partially complete.",
+      "Accuracy [GEval]": "The Actual Output correctly states that no additional stressors are mentioned, aligning with the Expected Output's conclusion. However, it omits the specific detail that fungicides were applied with thiamethoxam in the seed dressing, which is present in the Expected Output. This omission results in partial rather than full alignment."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "005",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "005",
+      "question_id": "additional_stressors",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 10,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 188,
+    "name": "reviewer_comparison_004_case_170",
+    "input": "Question about additional_stressors",
+    "actual_output": "The exposure method involved feeding the microcolonies with acetamiprid-containing pollen or syrup, and the duration of exposure was six weeks.",
+    "expected_output": "No additional stressor noted. Acetamiprid is the insecticide used",
+    "combined_score": 0.3623036791581457,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.44639782174508735,
+      "Accuracy [GEval]": 0.6405132157293496
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output adds details about exposure method and duration not present in Expected Output and omits the explicit statement that no additional stressor was noted, which is required.",
+      "Completeness [GEval]": "The Actual Output correctly identifies acetamiprid as the insecticide used, which matches a key point from the Expected Output. However, it does not mention the absence of additional stressors, which is another key point in the Expected Output. The Actual Output instead focuses on the exposure method and duration, which are not required by the Expected Output. Thus, it partially covers the necessary information but is incomplete.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies acetamiprid as the insecticide used, aligning with the Expected Output. It also provides additional details about the exposure method and duration, which are not present in the Expected Output but do not contradict it. However, the Actual Output does not explicitly mention the absence of additional stressors, which is a key point in the Expected Output. This omission results in a minor discrepancy."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "004",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "004",
+      "question_id": "additional_stressors",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 1,
+      "rev2_rating": 4
+    }
+  }
+]

@@ -148,19 +148,37 @@ llm_benchmarking/deepeval-results/
 ## Evaluation Metrics
 
 ### FaithfulnessMetric
-- **Purpose**: Measures if the LLM answer is faithful to the expected output
-- **Score Range**: 0.0 - 1.0 (higher = more faithful)
-- **Use Case**: Detecting hallucinations or extra information
+- **Purpose**: Measures how faithful the actual output is to the expected output while validating both against the paper context
+- **What It Evaluates**: 
+  - Consistency between actual and expected outputs
+  - Whether both outputs are grounded in the provided context
+  - Detection of hallucinations or unsupported claims
+- **Inputs Used**: `actual_output`, `expected_output`, `context`
+- **Score Range**: 0.0 - 1.0 (higher = more faithful and contextually grounded)
+- **Use Case**: Detecting disagreements, hallucinations, or context violations in answer pairs
+- **Example**: If reviewer 2 says "bees were exposed to 50ppb" but reviewer 1 says "30ppb" and the paper only mentions 30ppb, this would score low
 
 ### ContextualPrecisionMetric
-- **Purpose**: Measures precision of retrieved context relative to expected answer
-- **Score Range**: 0.0 - 1.0 (higher = more precise)
-- **Use Case**: Assessing relevance of provided context
+- **Purpose**: Measures how precise and relevant the retrieved context is for answering the question
+- **What It Evaluates**: 
+  - Relevance of context chunks to the expected answer
+  - Whether the context contains focused, answer-specific information
+  - Avoidance of irrelevant or tangential context
+- **Inputs Used**: `context`, `expected_output`
+- **Score Range**: 0.0 - 1.0 (higher = more precise context retrieval)
+- **Use Case**: Assessing quality of context selection and retrieval systems
+- **Example**: High score if context contains specific bee species names and dosages; low score if context includes unrelated methodology sections
 
 ### ContextualRecallMetric
-- **Purpose**: Measures recall of retrieved context relative to expected answer
-- **Score Range**: 0.0 - 1.0 (higher = better recall)
-- **Use Case**: Ensuring complete coverage of expected information
+- **Purpose**: Measures how complete the context coverage is for the expected answer
+- **What It Evaluates**: 
+  - Whether all key information from the expected answer is present in context
+  - Completeness of context coverage for comprehensive answers
+  - Avoidance of missing critical information
+- **Inputs Used**: `context`, `expected_output`
+- **Score Range**: 0.0 - 1.0 (higher = better context coverage)
+- **Use Case**: Ensuring complete information retrieval and avoiding missing key details
+- **Example**: High score if context includes all bee species, pesticides, doses, and exposure methods mentioned in the expected answer
 
 ## Batch Processing Strategy
 
@@ -825,15 +843,38 @@ This script uses a hybrid approach combining traditional DeepEval metrics with G
 ## Metrics Used
 
 ### 🔍 **Context-Free Evaluation**
-- **FaithfulnessMetric**: Measures how faithful reviewer 2 answers are to reviewer 1
+- **FaithfulnessMetric**: Measures how faithful reviewer 2 answers are to reviewer 1 (when context is available)
 - **G-Eval Correctness**: Strict evaluation of reviewer 2 accuracy against reviewer 1
 - **G-Eval Completeness**: Assessment of reviewer 2 coverage of reviewer 1 key points
 - **G-Eval Accuracy**: Evaluation of reviewer 2 information accuracy vs reviewer 1
 
 ### ⚡ **Why Context-Free?**
-- **FaithfulnessMetric**: Only compares actual vs expected output
+- **FaithfulnessMetric**: Can run with or without context (requires `--add-context` flag)
 - **G-Eval Metrics**: Use only `ACTUAL_OUTPUT` and `EXPECTED_OUTPUT` parameters
-- **No Context Required**: Avoids need for full paper text or retrieval context
+- **Context Optional**: G-Eval metrics work without paper context, making them ideal for reviewer comparison
+
+### 📊 **G-Eval Metrics Explained**
+
+#### **Correctness**
+- **Purpose**: Strict binary evaluation of whether reviewer 2's answer is factually correct according to reviewer 1
+- **What It Evaluates**: Exact factual accuracy and agreement between answers
+- **Scoring**: Binary (0.0 or 1.0) - strict pass/fail assessment
+- **Use Case**: Identifying clear factual disagreements between reviewers
+- **Example**: If reviewer 1 says "Apis mellifera" and reviewer 2 says "Apis mellifera", this scores 1.0
+
+#### **Completeness**
+- **Purpose**: Assessment of how well reviewer 2 covers all key points mentioned by reviewer 1
+- **What It Evaluates**: Coverage breadth and detail level relative to reviewer 1's answer
+- **Scoring**: Continuous (0.0 - 1.0) - partial credit for incomplete coverage
+- **Use Case**: Identifying cases where reviewer 2 misses important details
+- **Example**: If reviewer 1 mentions "species, dose, and exposure method" but reviewer 2 only mentions "species", this scores lower
+
+#### **Accuracy**
+- **Purpose**: Evaluation of information accuracy and alignment between reviewer answers
+- **What It Evaluates**: Semantic similarity and information quality alignment
+- **Scoring**: Continuous (0.0 - 1.0) - nuanced assessment of answer quality
+- **Use Case**: Understanding subtle differences in interpretation and emphasis
+- **Example**: If both reviewers mention the same bee species but with different emphasis or detail levels, this captures the alignment quality
 
 ## Key Features
 
@@ -873,16 +914,42 @@ python llm_benchmarking/deepeval_reviewers.py --question pesticides --batch-size
 - `--batch-size, -b`: Number of test cases per batch (default: 50)
 - `--max-retries, -r`: Maximum retries per batch (default: 5)
 - `--model, -m`: OpenAI model for evaluation (default: gpt-4o)
+- `--add-context`: Add paper context to test cases (required for FaithfulnessMetric)
+- `--faithfulness-only`: Run only FaithfulnessMetric evaluation (requires `--add-context`)
+
+### 🔍 **Faithfulness-Only Mode**
+The `--faithfulness-only` flag allows you to run just the FaithfulnessMetric evaluation, which is ideal when:
+- You've already processed G-Eval metrics and want to avoid duplication
+- You want to focus specifically on context-aware faithfulness assessment
+- You need to process large datasets efficiently with minimal API costs
+
+**Usage Examples**:
+```bash
+# Run FaithfulnessMetric only for all questions (most efficient)
+python llm_benchmarking/deepeval_reviewers.py --faithfulness-only --add-context
+
+# Run FaithfulnessMetric only for specific question type
+python llm_benchmarking/deepeval_reviewers.py --faithfulness-only --add-context --question bee_species
+
+# Run with custom batch size for large datasets
+python llm_benchmarking/deepeval_reviewers.py --faithfulness-only --add-context --batch-size 25
+```
 
 ## Output Files
 
 ### Directory Structure
 ```
 llm_benchmarking/deepeval-results/
-├── deepeval_reviewer_results_bee_species_20250120_143022.json
-├── deepeval_reviewer_results_bee_species_20250120_143022.jsonl
+├── deepeval_reviewer_results_bee_species_20250120_143022.json      # Full evaluation (all metrics)
+├── deepeval_reviewer_results_bee_species_20250120_143022.jsonl     # Full evaluation (JSONL)
+├── deepeval_reviewer_faithfulness_bee_species_20250120_143022.json # Faithfulness only
+├── deepeval_reviewer_faithfulness_bee_species_20250120_143022.jsonl # Faithfulness only (JSONL)
 └── ... (timestamped files for each run)
 ```
+
+**File Naming Convention**:
+- **Full evaluation**: `deepeval_reviewer_results_{question_type}_{timestamp}.{ext}`
+- **Faithfulness only**: `deepeval_reviewer_faithfulness_{question_type}_{timestamp}.{ext}`
 
 ### Analysis Results
 - **Metric Scores**: Average scores for each evaluation metric
@@ -906,6 +973,26 @@ llm_benchmarking/deepeval-results/
 - Train models to identify consensus patterns
 - Develop disagreement detection systems
 - Support automated quality assessment
+
+### 📋 **Metric Selection Guide**
+
+#### **When to Use FaithfulnessMetric**
+- **Use case**: You want to assess how well reviewer answers align with paper content
+- **Requirement**: Paper context must be available (`--add-context` flag)
+- **Best for**: Detecting hallucinations, unsupported claims, or context violations
+- **Example**: Evaluating if reviewer claims about pesticide doses are actually in the paper
+
+#### **When to Use G-Eval Metrics**
+- **Use case**: You want to compare reviewer answers without paper context
+- **Requirement**: No paper context needed
+- **Best for**: Inter-reviewer agreement assessment, answer quality comparison
+- **Example**: Understanding how well different reviewers agree on bee species identification
+
+#### **When to Use Both Approaches**
+- **Use case**: Comprehensive evaluation of reviewer quality and agreement
+- **Approach**: Run G-Eval first, then add FaithfulnessMetric with context
+- **Best for**: Complete quality assessment combining agreement and factual grounding
+- **Example**: Full evaluation pipeline for research validation studies
 
 ## Dependencies
 

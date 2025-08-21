@@ -305,7 +305,11 @@ The pipeline includes comprehensive evaluation tools using DeepEval for assessin
 #### Traditional DeepEval Metrics
 - **Location**: `llm_benchmarking/deepeval_benchmarking.py`
 - **Purpose**: Evaluates LLM outputs using faithfulness, contextual precision, and contextual recall metrics
-- **Features**: Batch processing, incremental saving, retry logic, and cost optimization
+- **Features**: 
+  - **FaithfulnessMetric**: Measures consistency between actual/expected outputs while validating against paper context
+  - **ContextualPrecisionMetric**: Assesses relevance and focus of retrieved context
+  - **ContextualRecallMetric**: Evaluates completeness of context coverage
+  - Batch processing, incremental saving, retry logic, and cost optimization
 
 #### G-Eval for Correctness Assessment
 - **Location**: `llm_benchmarking/deepeval_GEval.py`
@@ -319,13 +323,14 @@ The pipeline includes comprehensive evaluation tools using DeepEval for assessin
 
 #### Reviewer Comparison Evaluation
 - **Location**: `llm_benchmarking/deepeval_reviewers.py`
-- **Purpose**: Evaluates reviewer comparison dataset using context-free metrics to assess inter-reviewer agreement
+- **Purpose**: Evaluates reviewer comparison dataset using both context-free and context-aware metrics
 - **Features**:
-  - **FaithfulnessMetric**: Measures how faithful reviewer 2 answers are to reviewer 1 answers
+  - **FaithfulnessMetric**: Measures how faithful reviewer 2 answers are to reviewer 1 answers (requires paper context with `--add-context`)
   - **G-Eval Correctness**: Strict evaluation of reviewer 2 accuracy against reviewer 1
   - **G-Eval Completeness**: Assessment of reviewer 2 coverage of reviewer 1 key points
   - **G-Eval Accuracy**: Evaluation of reviewer 2 information accuracy vs reviewer 1
-  - **Context-Free**: Only uses metrics that don't require paper context or retrieval context
+  - **Flexible Context**: Can run with or without paper context depending on needs
+  - **Faithfulness-Only Mode**: `--faithfulness-only` flag for efficient context-aware evaluation
   - **Reviewer Analysis**: Provides insights into inter-reviewer agreement patterns
 
 #### Test Dataset Questions Covered
@@ -354,6 +359,9 @@ python llm_benchmarking/deepeval_GEval.py --question bee_species
 
 # Run reviewer comparison evaluation
 python llm_benchmarking/deepeval_reviewers.py --question bee_species
+
+# Run FaithfulnessMetric only (requires context)
+python llm_benchmarking/deepeval_reviewers.py --faithfulness-only --add-context --question bee_species
 
 # Run with custom settings
 python llm_benchmarking/deepeval_GEval.py --question pesticides --batch-size 25 --model gpt-4o

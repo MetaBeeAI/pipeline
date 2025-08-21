@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 58,
+    "name": "paper_813_case_55",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the vital role of honey bees in pollination, contributing over $200 billion annually to agriculture, and addresses the concerning decline in bee populations due to habitat loss, pathogens, climate change, and pesticide use. It stresses the need for research and conservation efforts to protect these essential pollinators.",
+    "expected_output": "This study reveals that at a dose of the LD50 for fipronil and imidacloprid, motor function is severely impaired. For firpronil motor impairment is also osberved at very low dosages (1/500 of the LD50) whereas this is not the case for imidacloprid. Motor impairment due to pesticide impacts may be fatal in the wild.",
+    "combined_score": 0.03333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.1,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output discusses the general importance of honey bees and threats to their populations, while the Expected Output specifically details experimental findings on motor impairment in bees due to fipronil and imidacloprid exposure; there is no overlap in content or detail.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of honey bees and threats to their populations but does not address any of the specific findings from the Expected Output regarding the effects of fipronil and imidacloprid on motor function at various dosages. Key points about LD50, differential effects between the two pesticides, and the potential fatality of motor impairment are entirely missing.",
+      "Accuracy [GEval]": "The actual output does not address any of the specific findings from the expected output, such as the effects of fipronil and imidacloprid on motor function at various dosages. Instead, it provides general information about honey bee decline and pollination, which is unrelated to the detailed experimental results required. There are significant discrepancies and no factual alignment between the outputs."
+    },
+    "question_type": "significance",
+    "paper_id": "813",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "813",
+      "question_id": "significance",
+      "reviewer": "NN",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 210,
+    "name": "paper_432_case_212",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the indispensable role of honeybees in pollinating a significant portion of the world's food supply and warns of the severe consequences of their declining populations on agriculture and human life. It stresses the urgency of addressing the factors leading to this decline, particularly the impact of pesticides.",
+    "expected_output": "The study reports that imidacloprid was most toxic when fed in fructose, and least toxic when presented in ordindary sugar, sucrose and glucose, and this trend was independent of how diluted the sugar solution was. Thus the authors conclude that toxicity is higher in disaccharides compared to monosaccharides, and that crops having high sucrose content in their nectars could help reduce mortality of bees.",
+    "combined_score": 0.07274751723796635,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.11824255171389904,
+      "Accuracy [GEval]": 0.1
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output discusses the general importance of honeybees and the impact of pesticides, but does not mention imidacloprid toxicity, sugar types, or the specific findings about disaccharides and sucrose content as in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of honeybees and the threat posed by pesticides, but it does not mention any of the specific findings from the Expected Output, such as the relative toxicity of imidacloprid in different sugars, the independence from dilution, or the implication for crop nectar composition. Only the general issue of pesticides is addressed, leaving all key experimental details and conclusions unaddressed.",
+      "Accuracy [GEval]": "The actual output discusses the general importance of honeybees and the threat posed by pesticides, but it does not mention any of the specific findings from the expected output, such as the relative toxicity of imidacloprid in different sugars or the implications for crop nectar composition. There is a significant discrepancy in information content and factual detail."
+    },
+    "question_type": "significance",
+    "paper_id": "432",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "432",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 174,
+    "name": "paper_935_case_145",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the significance of ongoing research into honeybee wellbeing and the factors contributing to their decline, particularly in relation to Colony Collapse Disorder (CCD). This research is crucial for developing effective conservation strategies and understanding the ecological implications of declining bee populations.",
+    "expected_output": "The study highlights that acetamiprid sprays had no effects on honey bee behavior or mortality. In contrast, in certain years (but not all), exposure to deltamethrin had negative effects on honey bee behavior and increased mortality.",
+    "combined_score": 0.08741531104006182,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.16224593312018545,
+      "Accuracy [GEval]": 0.1
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output discusses the importance of research on honeybee decline and CCD, but does not mention acetamiprid, deltamethrin, or their effects on honey bee behavior and mortality as specified in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of honeybee research and mentions factors contributing to their decline, but it does not address the specific findings from the Expected Output regarding the effects of acetamiprid and deltamethrin on honey bee behavior and mortality. Key details about the lack of effect from acetamiprid and the conditional negative effects of deltamethrin are missing.",
+      "Accuracy [GEval]": "The actual output provides a general summary about honeybee research and Colony Collapse Disorder but does not mention any of the specific findings from the expected output, such as the effects of acetamiprid and deltamethrin on honey bee behavior and mortality. This represents a significant discrepancy in information and factual detail."
+    },
+    "question_type": "significance",
+    "paper_id": "935",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "935",
+      "question_id": "significance",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 132,
+    "name": "paper_513_case_121",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of understanding pesticide effects on wild bees, particularly as honey bee populations decline. It highlights the need for improved testing protocols for wild bee species and their larvae, which are currently overlooked in pesticide registration processes. This research aims to provide a framework for assessing the impact of pesticides on these crucial pollinators, thereby enhancing agricultural sustainability and pollinator health.",
+    "expected_output": "No lethal effects were observed after imidacloprid and clothianidin exposure. At the higher imidacloprid doses, larval development was delayed.",
+    "combined_score": 0.10158086248413122,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.10474258745239362
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output provides a general summary of the paper's focus and significance, while the Expected Output details specific experimental results regarding imidacloprid and clothianidin exposure and larval development; the contents do not match.",
+      "Completeness [GEval]": "The Actual Output does not address the specific experimental findings from the Expected Output, such as the absence of lethal effects and the delayed larval development at higher imidacloprid doses. Instead, it provides a general summary of the paper's aims and significance, missing the key results entirely. Only a vague reference to the importance of assessing pesticide impacts is present, which is insufficient.",
+      "Accuracy [GEval]": "The actual output does not include any of the specific experimental findings from the expected output, such as the absence of lethal effects or the delayed larval development at higher imidacloprid doses. Instead, it provides only a general summary of the paper's aims and significance, missing all key factual details required for alignment."
+    },
+    "question_type": "significance",
+    "paper_id": "513",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "513",
+      "question_id": "significance",
+      "reviewer": "RT",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 60,
+    "name": "paper_298_case_58",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of bumblebees in agricultural pollination and the detrimental effects of pesticides on their populations, which can lead to reduced agricultural productivity and increased use of harmful chemicals. It highlights the need for sustainable practices that protect pollinators.",
+    "expected_output": "This paper reveals that thiamethoxam has an adverse effect on the mushroom bodies in the brain of bumblebees. Neruons in the mushroom bodies show signs of swelling at low to medium thiamethoxam doses which suggest necrosis. In contrast, at high dosages, neuronal area shrinks suggesting a higher occurence of apoptosis.\n\n with some some neurons swelling while others shrink in a dose dependent manner.",
+    "combined_score": 0.11134045923312526,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.19626731151992685,
+      "Accuracy [GEval]": 0.1377540661794489
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output discusses general impacts of pesticides and need for sustainable practices, but does not mention thiamethoxam, mushroom bodies, neuronal swelling, necrosis, apoptosis, or dose-dependent effects as detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of bumblebees and the negative impact of pesticides, but it does not address the specific findings about thiamethoxam's effects on mushroom bodies, neuronal swelling, necrosis, apoptosis, or the dose-dependent nature of these effects, all of which are key points in the Expected Output.",
+      "Accuracy [GEval]": "The actual output provides a general summary about bumblebees, pesticides, and sustainable practices, but it omits all specific findings from the expected output regarding thiamethoxam's effects on bumblebee mushroom bodies, neuronal swelling, necrosis, and apoptosis. No factual inaccuracies are introduced, but the absence of all key details from the expected output results in a significant discrepancy."
+    },
+    "question_type": "significance",
+    "paper_id": "298",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "298",
+      "question_id": "significance",
+      "reviewer": "NN",
+      "rating": 6
+    }
+  },
+  {
+    "test_case_index": 188,
+    "name": "paper_956_case_147",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of finding effective and environmentally friendly alternatives to traditional pesticides in pest management, particularly in light of public health and ecological concerns raised during the Mediterranean fruit fly infestation in Florida.",
+    "expected_output": "The main finding of the study regarding the effects of the treatments on honey bee colonies was that the pesticide treatments had no negative impact on hive conditions or brood production. As a result, the study suggests that the use of spinosad-SolBait treatments for fruit fly control does not compromise honey bee populations.",
+    "combined_score": 0.12074864437339516,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.16224593312018545
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output discusses the importance of environmentally friendly alternatives and public health concerns but does not mention the main finding about the effects of treatments on honey bee colonies or the lack of negative impact, which is present in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of environmentally friendly pest management and references the Mediterranean fruit fly infestation, but it does not address the main finding from the Expected Output regarding the lack of negative impact of pesticide treatments on honey bee colonies. It also omits the specific mention of spinosad-SolBait and its safety for honey bees, which are key points in the Expected Output.",
+      "Accuracy [GEval]": "The actual output does not address the main finding about the effects of treatments on honey bee colonies, which is central to the expected output. Instead, it focuses on the general importance of environmentally friendly pest management and references the Mediterranean fruit fly infestation, which is background information. Key details about the lack of negative impact on hive conditions and brood production, as well as the safety of spinosad-SolBait for honey bees, are omitted."
+    },
+    "question_type": "significance",
+    "paper_id": "956",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "956",
+      "question_id": "significance",
+      "reviewer": "SA",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 234,
+    "name": "paper_521_case_225",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the significance of accurately assessing the risks posed by neonicotinoids and other pesticides to honeybees, highlighting their crucial role in pollination and the agricultural economy. It calls for further research to address the gaps in understanding the long-term effects of pesticide exposure on bee health and survival, which is essential for informing better agricultural practices and policies.",
+    "expected_output": "Concentrations \u226580 mg/L of the imidacloprid formulation Advise 2FI significantly reduced bee survival.  The body weight of imidacloprid\u2010treated bees (at LC20 and LC50) was also significantly reduced. Enzymatic analysis showed higher phenoloxidase activity in bees treated with higher concentrations for 3 weeks, but no significant differences were found between treated and control groups in GST, AchE and esterase activity.",
+    "combined_score": 0.12436861928766683,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.17310585786300048
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output provides a general summary about the importance of assessing pesticide risks to bees, while the Expected Output details specific experimental results such as reduced bee survival at certain concentrations, body weight changes, and enzymatic activity findings; none of these specifics are mentioned in the Actual Output.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the importance of assessing pesticide risks to honeybees and calls for further research, but it does not address any of the specific experimental findings from the Expected Output. Key points such as the reduction in bee survival at \u226580 mg/L imidacloprid, decreased body weight at LC20 and LC50, increased phenoloxidase activity, and the lack of significant differences in GST, AchE, and esterase activity are all missing. The response is generic and lacks the detailed results required.",
+      "Accuracy [GEval]": "The actual output provides a general summary of the paper's significance and calls for further research but omits all specific experimental findings present in the expected output, such as the effects of imidacloprid concentrations on bee survival, body weight, and enzymatic activity. No incorrect information is added, but the lack of key details and results significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "521",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "521",
+      "question_id": "significance",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 138,
+    "name": "paper_514_case_119",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper discusses the importance of bumblebees as key pollinators in agriculture, particularly for wild blueberries, and highlights the need for sustainable pest management to protect these vital species from harmful insecticides.",
+    "expected_output": "All pesticides tested, except flubendiamide, promoted mortality in the contact test. The study showed toxic effects for spinoteram and deltamethrin when ingested orally. Deltamethrin also caused sublethal effects on food consumption, sex ratio and longevity. While flubendiamide and spinetoram did not show sublethal effects. Flubendiamide can be a safe option for B. impatiens.",
+    "combined_score": 0.12725248253978813,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.18175744761936438
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The actual output gives a general summary about bumblebees and sustainable pest management but does not mention any specific findings about pesticide effects, mortality, sublethal effects, or the safety of flubendiamide as detailed in the expected output.",
+      "Completeness [GEval]": "The Actual Output only provides a general summary about the importance of bumblebees and the need for sustainable pest management, but does not address any of the specific findings from the Expected Output. It omits key details such as the effects of specific pesticides (flubendiamide, spinetoram, deltamethrin), the results of contact and oral toxicity tests, sublethal effects, and the recommendation of flubendiamide as a safe option. Only the general theme of protecting pollinators is present, with all specific key points missing.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of bumblebees and the need for sustainable pest management, but it omits all specific findings from the expected output, such as the effects of individual pesticides, mortality results, and sublethal effects. No incorrect information is added, but the lack of detail and omission of key study results significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "514",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "514",
+      "question_id": "significance",
+      "reviewer": "RT",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 106,
+    "name": "paper_516_case_108",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the critical need for comprehensive knowledge of pesticide effects on pollinators, particularly honey bees, to inform effective protection strategies. It stresses the importance of robust evidence for understanding specific mechanisms of pesticide action, especially given the delayed effects on different bee types. This knowledge is essential for safeguarding pollinator health and ensuring agricultural sustainability.",
+    "expected_output": "The exposure to the imidacloprid resulted in 45% mortality rate and caused abnormal behaviours on honey bees. The study showed contrasting results for previous studies of honey bees, but consistent for other bee species. The residual analysis showed that 1-6% remains in the honey bee body, and the amount of imidacloprid detected in the bee body declined with time, showing a half-life of 7.6 days. Additionally, the authors highlight that trembling, restlessness, apathy and falling over may be more sensitive endpoints than walking for assessing sublethal effects.",
+    "combined_score": 0.1293599022342066,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.18807970670261975
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output discusses the need for knowledge and protection strategies for pollinators but does not mention specific findings such as 45% mortality rate, abnormal behaviours, residual analysis, or sensitive endpoints detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the importance of understanding pesticide effects on pollinators but fails to address the specific findings from the Expected Output. It omits key details such as the 45% mortality rate, abnormal behaviors, residual analysis (1-6% remains, half-life of 7.6 days), and the identification of sensitive endpoints (trembling, restlessness, apathy, falling over). Only the general theme of pollinator health is mentioned, with none of the specific study results included.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of understanding pesticide effects on pollinators but omits all specific findings from the expected output, such as the 45% mortality rate, abnormal behaviors, residual analysis, and specific sublethal endpoints. No incorrect information is added, but the lack of key details significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "516",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "516",
+      "question_id": "significance",
+      "reviewer": "RT",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 202,
+    "name": "paper_885_case_178",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the vital role of honey bees in pollination and the need for comprehensive research on the effects of pesticides like sulfoxaflor. It highlights the legislative actions taken against harmful pesticides and the importance of understanding their impacts on bee health and ecosystem stability, which are crucial for sustainable agriculture and biodiversity.",
+    "expected_output": "The acute oral toxicity LD50 of Closer generated here was found to be significantly lower than those generated for registration of sulfoxaflor and in another publication. This could be a potential danger to honey bees.\n\nSub-lethal esposure to Closer was found to impact honeybee colony growth, and brood and honey production. Also it reduced pollen deposition level in hive. Body mass and foraging activity were also negatively affected.",
+    "combined_score": 0.1293599022342066,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.18807970670261975
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The actual output discusses the general importance of honey bees and pesticide research, but does not mention specific findings such as LD50 values, sub-lethal effects on colony growth, brood, honey production, pollen deposition, body mass, or foraging activity, which are detailed in the expected output.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the importance of honey bees, the need for research on pesticides, and legislative actions, but it does not address the specific findings from the Expected Output. Key points such as the lower LD50 of Closer, its potential danger, and the detailed sub-lethal effects on colony growth, brood, honey production, pollen deposition, body mass, and foraging activity are all missing. Only the general theme of pesticide impact is mentioned, without any of the specific results or data.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of honey bees, the need for research, and legislative actions, but it omits all the specific experimental findings and quantitative results present in the expected output, such as the lower LD50, impacts on colony growth, brood and honey production, pollen deposition, body mass, and foraging activity. No incorrect facts are added, but the lack of key details significantly reduces alignment."
+    },
+    "question_type": "significance",
+    "paper_id": "885",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "885",
+      "question_id": "significance",
+      "reviewer": "AH",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 210,
+    "name": "paper_005_case_186",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the importance of honey bees to both ecological balance and agricultural productivity, detailing the concerning trends in their health and population decline. It stresses the need for further research and action to mitigate the factors affecting bee health, which is crucial for sustaining pollination services.",
+    "expected_output": "This study found that the residues of thiamethoxam and its primary metabolite in pollen and nectar collected by bees foraging exclusively on crops that had been treated with a thiamethoxam seed dressing are typically low. Residues found in hive products were consistently even lower than that observed in pollen and nectar, indicating dilution or degradation. There is also nomcarry over from the same pesticide treatment used in two subsequent crop rotations. Over the four year study tehre was no observable diffrence between experimental and control hives in any of the measures monitored. \n\nOverall no detrimental effects of field-realistic exposure to pollen and nectar from the crops that received a seed treatment of thiamethoxam were observed, indicating a low-risk to foraging honeybees.",
+    "combined_score": 0.12935990254711185,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.18807970764133558
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output gives a general summary about honey bee importance and threats, but does not mention thiamethoxam, residue levels, hive product findings, crop rotations, or the study's conclusion of low risk, all of which are detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the importance of honey bees and the need for further research, but it fails to address the specific findings of the study detailed in the Expected Output. Key points such as the low residue levels of thiamethoxam and its metabolite, the lack of carryover in subsequent crop rotations, the absence of observable differences between experimental and control hives, and the overall conclusion of low risk to honeybees are all missing. The Actual Output does not cover the study's methodology, results, or main conclusion, resulting in significant misalignment with the evaluation steps.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of honey bees and the need for further research, but it does not mention any of the specific findings from the expected output, such as residue levels of thiamethoxam, lack of carryover, or the absence of detrimental effects. There are significant discrepancies in both factual detail and specificity, with the actual output lacking the core results and conclusions of the study."
+    },
+    "question_type": "significance",
+    "paper_id": "005",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "005",
+      "question_id": "significance",
+      "reviewer": "AH",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 202,
+    "name": "paper_671_case_205",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the significance of understanding the effects of pesticides on honey bee learning and memory, which are essential for their foraging behavior and overall health. This research is vital for addressing the decline of bee populations and ensuring the sustainability of agricultural ecosystems.",
+    "expected_output": "The study found no effect of acetamiprid or deltamethrin on learning performance but there was an effect on retention 24 hours later, for acetamiprid at 10 and 100 ng/bee and deltamethrin at 100 ng/bee only. The authors conclude that both pesticides are able to impair retrieval performance in honeybees.",
+    "combined_score": 0.13296710189814562,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.19890130569443681
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides a general summary about the importance of the research but does not mention the specific findings on acetamiprid and deltamethrin effects on learning and retention as detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the importance of studying pesticide effects on honey bees but does not address the specific findings of the study, such as the lack of effect on learning performance, the specific effects on retention at certain doses, or the conclusion about impaired retrieval performance. Key details from the Expected Output are missing.",
+      "Accuracy [GEval]": "The actual output provides a general summary of the paper's significance but omits all specific findings reported in the expected output, such as the lack of effect on learning performance, the specific effects on retention, and the doses at which these effects were observed. No incorrect information is added, but the absence of key experimental results and conclusions significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "671",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "671",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 86,
+    "name": "paper_219_case_72",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the vital role of domesticated and wild bees in ecosystems and agriculture, noting their contributions to pollination, economic value, and biodiversity. It raises concerns about increasing mortality rates in bee populations due to pesticide exposure, highlighting the need for further research and better agricultural practices to safeguard these essential species.",
+    "expected_output": "The paper concludes that seed-treatments of maize with imidacloprid cannot be concluded as the reason for abnormally high colony collapse in honey bees. It instead suggests irreponsible and illegal chemical control of V. destructor to be a candidate.",
+    "combined_score": 0.13296710197202136,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.19890130591606406,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The actual output discusses the general importance of bees and threats from pesticides, but does not mention maize seed-treatments, imidacloprid, or V. destructor as in the expected output, nor does it address the specific conclusions about causes of colony collapse.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of bees, threats from pesticides, and the need for better practices, but it does not address the specific conclusions of the paper regarding imidacloprid seed-treatments and the role of illegal chemical control of V. destructor. Key points from the Expected Output are missing, making the response largely incomplete.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of bees and threats to their populations, but it omits the specific findings of the paper regarding imidacloprid seed treatments and the role of V. destructor chemical control. It does not mention the paper's conclusion that imidacloprid is not responsible for colony collapse, nor does it reference the alternative explanation suggested. There are no direct inaccuracies, but the lack of key details and failure to address the main conclusion results in poor alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "219",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "219",
+      "question_id": "significance",
+      "reviewer": "KW",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 98,
+    "name": "paper_793_case_51",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The discussion emphasizes the importance of studying the effects of neonicotinoids on bees, as it provides crucial insights into their health and the ecological implications of insecticide use. It underscores the need for protective measures to ensure ecological stability and the survival of bee populations, which are vital for pollination and biodiversity.",
+    "expected_output": "This study reveals that dinotefuran changes the expression of genes involved in transcriptional and metabolic regulation. This is at least partially mediated by the attempt of the bee to metabolise the harmful compound throuhg the use of P450 cytochromes.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output discusses the general importance of studying neonicotinoids and bee health, while the Expected Output specifically details gene expression changes and metabolic pathways affected by dinotefuran; the contents do not match.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of studying neonicotinoids and their ecological impact on bees, but it does not address the specific findings from the Expected Output. It omits key points such as the effect of dinotefuran on gene expression, the involvement of transcriptional and metabolic regulation, and the role of P450 cytochromes in metabolizing the compound. Only the general context is covered, not the detailed scientific findings.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of studying neonicotinoids and their ecological impact, but it omits all specific findings from the expected output, such as the effect of dinotefuran on gene expression and the role of P450 cytochromes. No incorrect facts are added, but the lack of key details significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "793",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "793",
+      "question_id": "significance",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 84,
+    "name": "paper_217_case_73",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the significance of understanding the risks pesticides pose to honeybees, as they are crucial for crop pollination and agricultural production. It calls for enhanced assessment methods to evaluate pesticide toxicity, which is essential for safeguarding bee populations and, consequently, agricultural sustainability.",
+    "expected_output": "The paper concludes that, in an acute assay, imidacloprid has massively variable toxicities both across colonies and individuals; it is nonetheless highly toxic, as are two of its metabolites, olefin and 5-hydroxyimidacloprid. The former is more toxic than imidacloprid itself. In the chronic exposure route, imidacloprid and all of its metabolites were toxic - at concentrations orders of magnitude lower than would be required to induce toxicity in acute exposure.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output gives a general summary about pesticide risks to honeybees and the need for better assessment, but does not mention imidacloprid, its metabolites, or the specific findings on acute and chronic toxicity detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the importance of assessing pesticide toxicity to honeybees but fails to address the specific findings detailed in the Expected Output. It does not mention the acute assay results, the variability in toxicity, the specific metabolites (olefin and 5-hydroxyimidacloprid), their relative toxicities, or the difference between acute and chronic exposure. Only the general theme of pesticide risk is present, with all key details missing.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of assessing pesticide risks to honeybees but omits all specific findings from the expected output, such as the variable toxicity of imidacloprid, the relative toxicity of its metabolites, and the difference between acute and chronic exposure. No incorrect facts are introduced, but the lack of key details significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "217",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "217",
+      "question_id": "significance",
+      "reviewer": "KW",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 128,
+    "name": "paper_222_case_88",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The discussion highlights the importance of studying male honey bees for improving queen mating success and overall honey bee reproduction, indicating a significant research gap that could impact the field.",
+    "expected_output": "The paper presents several significant findings. It concludes that drones are typically more susceptible to effects of cold and imidacloprid than workers, but that the pesticide 'cocktail' was not measurably toxic at ecologically relevant concentrations (reverse-calculated from concentrations present in A. mellifera hives). It additionally presents that 34 proteins were differentially expressed in topically exposed drones, but not in workers, indicating that drones express stress proteins at a higher baseline than workers.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only discusses the importance of studying male honey bees and a research gap, but does not mention any of the specific findings from the Expected Output such as drone susceptibility to cold and imidacloprid, lack of toxicity from the pesticide cocktail, or differential protein expression.",
+      "Completeness [GEval]": "The Actual Output only generally mentions the importance of studying male honey bees and a research gap, but does not address any of the specific findings from the Expected Output, such as drone susceptibility to cold and imidacloprid, the lack of toxicity from the pesticide cocktail, or the differential protein expression in drones. Most key points are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output only provides a general summary about the importance of studying male honey bees and mentions a research gap, but it omits all specific findings from the expected output. It does not mention the comparative susceptibility of drones and workers to cold and imidacloprid, the lack of toxicity of the pesticide cocktail, or the differential protein expression in drones. No incorrect information is added, but the omission of all key details significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "222",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "222",
+      "question_id": "significance",
+      "reviewer": "KW",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 182,
+    "name": "paper_956_case_148",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of finding effective and environmentally friendly alternatives to traditional pesticides in pest management, particularly in light of public health and ecological concerns raised during the Mediterranean fruit fly infestation in Florida.",
+    "expected_output": "The main finding (in terms of pollinators) is that the paper findsno evidence of harmful effects on benefical insects",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output discusses alternatives to pesticides and public health concerns during a fruit fly infestation, but does not mention the main finding about no evidence of harmful effects on beneficial insects as specified in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output discusses the general importance of environmentally friendly pest management and references the Mediterranean fruit fly infestation, but it does not address the main finding from the Expected Output regarding the lack of harmful effects on beneficial insects or pollinators. The key point about pollinator safety is missing, resulting in a low alignment with the evaluation steps.",
+      "Accuracy [GEval]": "The actual output discusses the general importance of environmentally friendly pest management and references the Mediterranean fruit fly infestation, but it does not address the main finding about pollinators or the lack of harmful effects on beneficial insects, which is central to the expected output. This omission of key information significantly affects accuracy."
+    },
+    "question_type": "significance",
+    "paper_id": "956",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "956",
+      "question_id": "significance",
+      "reviewer": "HS",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 234,
+    "name": "paper_659_case_199",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the significant role of neonicotinoids and other pesticides in the decline of honeybee populations, stressing the need for further research to understand their long-term effects. It highlights the importance of honeybees for pollination and agriculture, indicating that the findings are crucial for informing policy and conservation efforts to protect these essential pollinators.",
+    "expected_output": "The paper found that honeybee workers in hives close to rice fields preferentially forage from rice flower. They conclude that clothianidin spraying of rice fields increases honeybee mortality 24 hours after spraying, but that hive brood weight and capped brood area did not significantly differ between hives placed at varying distances from the treated field. They concluse that clothianidin does not always lead to colony collapse.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output gives a general summary about neonicotinoids and honeybee decline, but does not mention specific findings from the Expected Output such as foraging behavior, clothianidin spraying effects, mortality after 24 hours, or the lack of significant difference in brood weight and capped brood area.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the impact of pesticides on honeybee populations and the importance of further research, but it fails to address the specific findings from the Expected Output. It does not mention honeybee foraging behavior near rice fields, the effects of clothianidin spraying on mortality, the lack of significant differences in brood weight and capped brood area, or the conclusion that clothianidin does not always cause colony collapse. Only the broad theme of pesticide impact is partially covered.",
+      "Accuracy [GEval]": "The actual output provides a general summary about neonicotinoids and honeybee decline but omits all specific findings from the expected output, such as the foraging behavior, the effect of clothianidin spraying on mortality, and the lack of significant differences in brood weight and capped brood area. It also fails to mention the conclusion that clothianidin does not always cause colony collapse. The actual output adds general statements not present in the expected output, resulting in a significant loss of accuracy and detail."
+    },
+    "question_type": "significance",
+    "paper_id": "659",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "659",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 240,
+    "name": "paper_669_case_196",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the significant risks that pesticides pose to honey bees, particularly during their larval stage, and the potential long-term effects on adult bees. It calls for increased awareness and research on pesticide impacts to ensure the health of bee populations, which are essential for pollination and maintaining ecosystem balance.",
+    "expected_output": "The study revealed that ingestion of the sub-lethal concentration of ethion reduced the activity of esterase and the sub-lethal concentration of imidacloprid reduced the activity of acetylcholinesterase and glutathione S-transferase in treated bees. The sub-lethal concentration of imidacloprid, ethion and the recommended field concentration of hexaflumuron did not affect larvae mortality. Finally, the study demonstrated that hexaflumuron applied at the recommended field concentration had no effect on the mortality of adult bees.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output provides a general summary about pesticide risks to bees, while the Expected Output details specific experimental findings on the effects of ethion, imidacloprid, and hexaflumuron on enzyme activity and mortality in bees; the contents do not match.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about pesticide risks to honey bees and the need for further research, but it does not address the specific findings from the Expected Output. Key details such as the effects of ethion, imidacloprid, and hexaflumuron on enzyme activity and mortality in larvae and adult bees are missing. The Actual Output lacks the precise experimental results and does not mention any of the specific pesticides or their measured impacts, resulting in incomplete coverage of the key points.",
+      "Accuracy [GEval]": "The actual output provides a general summary about pesticide risks to honey bees but omits all specific findings from the expected output, such as the effects of ethion, imidacloprid, and hexaflumuron on enzyme activity and mortality. No incorrect facts are added, but the lack of detail and omission of key results significantly reduces alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "669",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "669",
+      "question_id": "significance",
+      "reviewer": "ER",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 206,
+    "name": "paper_671_case_206",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the significance of understanding the effects of pesticides on honey bee learning and memory, which are essential for their foraging behavior and overall health. This research is vital for addressing the decline of bee populations and ensuring the sustainability of agricultural ecosystems.",
+    "expected_output": "This study showed that when ACT or DEL  were applied 24 h before or during learning, that they did not affect learning sessions but they affected memory retrival. In particular, when drugs were applied 24 h before learning sessions, ACT appeared more effective than DEL at 24 h after learning session, however, the ACT effect occurred at a higher dose (100 ng/bee) whereas DEL impaired retrieval performance at a lower dose (10 ng/bee). \nWhen drugs were applied during learning sessions, they both strongly impaired retrieval of the PER at 24 h after learning. ACT was the only one able to impair retrieval at a lower dose.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides a general summary about the importance of the research but does not mention specific findings about ACT and DEL effects on learning and memory retrieval, which are detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output provides a general summary of the study's significance but fails to address the specific experimental findings detailed in the Expected Output. It does not mention the effects of ACT or DEL, the timing of application, differences in dose, or the specific impacts on learning and memory retrieval. Only the broad context of bee health and pesticide effects is covered, leaving all key experimental results unaddressed.",
+      "Accuracy [GEval]": "The actual output provides a general summary about the importance of studying pesticide effects on honey bees but omits all specific experimental findings, such as the effects of ACT and DEL on learning and memory, dose differences, and timing of application. No incorrect information is added, but the lack of detail and omission of all key results from the expected output significantly reduces alignment."
+    },
+    "question_type": "significance",
+    "paper_id": "671",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "671",
+      "question_id": "significance",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  }
+]

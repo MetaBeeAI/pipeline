@@ -1,0 +1,582 @@
+[
+  {
+    "test_case_index": 217,
+    "name": "reviewer_comparison_585_case_198",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodologies used in this study involve creating new honeybee colonies, exposing them to a pesticide treatment for seven days and assessing colony health (day 0 and day 10 after start of treatment) as well as gut microbiota of  honeybees (day 0, day 10 and 5 weeks after start of treatment).",
+    "expected_output": "The experimental methodologies used in this paper include laboratory conditions, cage assays, and semi-field assays.",
+    "combined_score": 0.13077539639793642,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.19706877679766943,
+      "Accuracy [GEval]": 0.19525741239613983
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output describes colony creation, pesticide exposure, and health/microbiota assessment, but does not mention laboratory conditions, cage assays, or semi-field assays as in the Expected Output, missing key methodological details.",
+      "Completeness [GEval]": "The Actual Output does not mention the key methodologies listed in the Expected Output, specifically laboratory conditions, cage assays, and semi-field assays. Instead, it focuses on colony creation, pesticide exposure, and assessment timelines, which are not present in the Expected Output. Only the general idea of experimental methodology is shared, but the specific key points are missing.",
+      "Accuracy [GEval]": "The Actual Output describes the creation of new colonies, pesticide exposure, and assessment of colony health and gut microbiota, but does not mention laboratory conditions, cage assays, or semi-field assays as specified in the Expected Output. There is minimal factual overlap, indicating a significant discrepancy in methodology details."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "585",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "585",
+      "question_id": "experimental_methodology",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 224,
+    "name": "reviewer_comparison_014_case_215",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodology used in this paper involved testing the effects of the fungicides boscalid and dimoxystrobin, as well as the insecticide acetamiprid, on honeybee behavior.",
+    "expected_output": "Acute toxicity tests of the pesticides used were done to determine LD50 values. Bees were then exposed to oral sub-lethal doses for 1 week, before sucrose responsiveness was tested using a proboscis extension response (PER) test. Bees not responding to 50% sucrose were excluded from differential olfactory conditioning. Differential olfactory conditioning was undertaken using  2 different odors, measured by PER. Reversal learning trials were also done.",
+    "combined_score": 0.15010822755599432,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.21824255193614456,
+      "Accuracy [GEval]": 0.23208213073183842
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions the pesticides tested and their effect on honeybee behavior, but omits key methodological details such as acute toxicity tests for LD50, sub-lethal dosing, sucrose responsiveness testing, exclusion criteria, differential olfactory conditioning, use of two odors, PER measurement, and reversal learning trials, all of which are present in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only mentions the pesticides tested and the general focus on honeybee behavior, but omits key methodological details from the Expected Output. It does not mention acute toxicity tests, LD50 determination, oral sub-lethal dosing, the 1-week exposure period, sucrose responsiveness testing, exclusion criteria, differential olfactory conditioning, use of two odors, PER measurement, or reversal learning trials. Most key points are missing or inadequately covered.",
+      "Accuracy [GEval]": "The Actual Output only briefly mentions the pesticides tested and the focus on honeybee behavior, but omits key methodological details present in the Expected Output, such as acute toxicity tests for LD50, the 1-week oral exposure, sucrose responsiveness screening, the use of proboscis extension response (PER) tests, differential olfactory conditioning with two odors, and reversal learning trials. This results in significant factual omissions and a lack of alignment with the Expected Output."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "014",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "014",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 1,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 234,
+    "name": "reviewer_comparison_010_case_219",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodology used in this paper involved studying the walking trajectories of *B. terrestris* foragers exposed to different sublethal insecticide regimes.",
+    "expected_output": "The study describes an experiment designed to compare the sub-lethal effects of 3 pesticides in Bombus terrestris audax. Using a thermal visual arena (design referenced published methods) and a thermal imaging camera and video recorder, an aversive environment was created using heat (45 degrees) simultaneously along with a cool reward zone (25 degrees). This was used to allow ten, three-minute aversive training trails for each bee across three days. Bees used were of a standardised age. Food consumption (corrected for evaporation loss) was recorded across the experiment. A range of parameters were measured including bee trajectory maps (routes taken), time spend in the cool rewrad zone, distance travelled throughout trials and average speed of bee throughout trial. The trajectory data was used to calculate power law, to see what effect insecticide exposure regimes had on the behaviour of the bees.",
+    "combined_score": 0.16446542548600993,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.20293122294794066,
+      "Accuracy [GEval]": 0.29046505351008906
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions studying walking trajectories and sublethal insecticide regimes, omitting key methodological details from the Expected Output such as the use of a thermal visual arena, specific temperature zones, aversive training trials, standardised bee age, food consumption measurement, and the range of behavioral parameters measured.",
+      "Completeness [GEval]": "The Actual Output only briefly mentions the study of walking trajectories of B. terrestris foragers under different sublethal insecticide regimes, which partially addresses the experimental focus. However, it omits key methodological details from the Expected Output, such as the use of a thermal visual arena, specific temperature settings, aversive training trials, standardization of bee age, food consumption measurement, and the range of behavioral parameters recorded (e.g., time in reward zone, distance, speed, power law analysis). Most key points are missing or only implied, resulting in low alignment.",
+      "Accuracy [GEval]": "The Actual Output provides a very general summary, mentioning the study of walking trajectories of B. terrestris foragers under different insecticide regimes, which is factually consistent with the Expected Output. However, it omits key methodological details such as the use of a thermal visual arena, specific temperature settings, aversive training trials, standardization of bee age, food consumption measurement, and the range of behavioral parameters recorded. The Actual Output lacks the depth and specificity present in the Expected Output, resulting in only partial alignment."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "010",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "010",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 7,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 216,
+    "name": "reviewer_comparison_956_case_211",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "Test 1 consisted of ground applications of foliar sprays of spinosad and malathion in SolBait at higher volumes com- pared to the malathion-NU-LURE? standard of 20% malathion ULV with 80% NU-LURE? at 12 oz of mix per acr",
+    "expected_output": "The experimental methodology used in Test 1, which assessed the effects of pesticides on honey bees, involved conducting field trials with ground applications of spinosad and malathion as foliar sprays in plots where honey bee colonies were placed. The evaluation included monitoring brood numbers and assessing the overall condition of the hives to determine the potential impacts of the pesticide treatments on colony health.",
+    "combined_score": 0.2216270031129155,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3622459338205511,
+      "Accuracy [GEval]": 0.30263507551819535
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output only describes the types and application rates of pesticides used, while Expected Output details the experimental methodology, including field trials, placement of bee colonies, and monitoring of brood and hive condition; these key methodological aspects are missing in the Actual Output.",
+      "Completeness [GEval]": "The Actual Output mentions the ground applications of spinosad and malathion as foliar sprays and compares application volumes, partially aligning with the Expected Output's description of the experimental methodology. However, it omits key points such as the placement of honey bee colonies in the plots, the monitoring of brood numbers, and the assessment of hive condition to evaluate pesticide impact. Thus, it only partially covers the key points from the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output mentions the use of ground applications of spinosad and malathion as foliar sprays, which aligns with the Expected Output. However, it omits key methodological details such as the placement of honey bee colonies, the monitoring of brood numbers, and the assessment of hive condition. Additionally, the Actual Output focuses on application volumes and mixtures, which are not emphasized in the Expected Output. This partial alignment and lack of critical experimental details result in a low score."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "956",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "956",
+      "question_id": "experimental_methodology",
+      "rev1": "SA",
+      "rev2": "HS",
+      "rev1_rating": 3,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 233,
+    "name": "reviewer_comparison_520_case_231",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "Chronic exposure at the colony level to five field-realistic doses of FPF was tested. Abnormal behaviours, survival, and food consumption were recorded every 24 h. \nBehavioural abnormalities -grouped in five categories (motion coordination deficits,hyperactivity, apathy, curved-down abdomen, and moribund state)- were quantified.",
+    "expected_output": "Seven laboratories in siz countries followed the same protocol. 21 colonies (3 per laboratory) of three subspecies of honeybee were used. They followed international guidelines for testing chronic oral toxicity on honeybees, but modified these by increasing the number of colonies per treatment (to three), the number of bees per replicate (to 20) and prolonging the exposure (until at least 50% of the control bees had died). Newly emerged bees were moved to test cages, with 20 bees per cage and each caged only contained bees from the same colony. Pesticide exposure was administered ad libitum via a feeder with sucrose solution, which was renewed every 24 \u00b1 2 h. Every 24 h, abnormal behaviors (motion coordination deficits, hyperactivity, apathy, curved-down abdomen, and moribund), survival and food consumption were recorded and daily consumption per bee was calculated.",
+    "combined_score": 0.23333333380024376,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3377540675801802,
+      "Accuracy [GEval]": 0.36224593382055115
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key details from the Expected Output, such as the number of laboratories, countries, colonies, subspecies, adherence to international guidelines, specifics of bee handling, and pesticide administration method. It only partially covers the behavioral categories and recording intervals.",
+      "Completeness [GEval]": "The Actual Output covers only a subset of the key points from the Expected Output. It mentions chronic exposure to FPF, recording of abnormal behaviors, survival, and food consumption every 24 hours, and lists the five behavioral categories. However, it omits critical details such as the multi-laboratory and multi-country design, the use of 21 colonies from three subspecies, adherence to and modification of international guidelines, specifics about the number of bees per cage, the ad libitum pesticide administration method, and the calculation of daily consumption per bee. Thus, the Actual Output is incomplete and misses several essential methodological details.",
+      "Accuracy [GEval]": "The Actual Output correctly mentions chronic exposure to five field-realistic doses of FPF, recording abnormal behaviors, survival, and food consumption every 24 hours, and lists the same behavioral categories as the Expected Output. However, it omits key details such as the involvement of seven laboratories in six countries, the use of 21 colonies from three subspecies, adherence to international guidelines with specific modifications, the number of bees per cage, the method of pesticide administration, and the calculation of daily consumption per bee. These omissions result in a partial but incomplete alignment with the Expected Output."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "520",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "520",
+      "question_id": "experimental_methodology",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 3,
+      "rev2_rating": 5
+    }
+  },
+  {
+    "test_case_index": 240,
+    "name": "reviewer_comparison_005_case_222",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The paper utilized experimental methodologies such as splitting honey bee colonies, assessing brood development, monitoring hive weight at two-hourly intervals, and collecting samples of bees and plant materials for residue analysis.",
+    "expected_output": "This paper consists of two large-scale field studies: i) the quantification of residues of thiamethoxam and its primary metabolite (CGA322704) in hive products, pollen and nectar of honeybees foraging in maize and oilseed rape that had received a seed dressing of thiamethoxam over one growing season, and ii) assessment of long-term risks associated with a four-year exposure to maize and oilseed rape crops treated with seed dressing containing thiamethoxam. \n\nFor study i), samples of pollen (both bee and hive), nectar (both bee and hive), bee-bread, honey, wax and royal jelly were analysed for thiamethoxam and its metabolite using LC-MS/MS.\nFor study ii), hives were palced in the treated crop while it was in flower and then placed in a forested area away from pesticide treatments. Number of dead adult bees, flight activity and behavioural measures at hive entrance, foraging activity, pollen collection, strength of colony (using the Liebefeld method), presence of healthy egg-laying queen and eggs, area of pollen and nectar storage, area containing eggs, larvae and capped cells and hive weight were all recorded.",
+    "combined_score": 0.23450467055400284,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.30579510408771876,
+      "Accuracy [GEval]": 0.3977189075742898
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key details from the Expected Output, such as the two specific field studies, the focus on thiamethoxam residue quantification, the four-year exposure assessment, and the comprehensive list of measured variables and sample types; it only gives a general summary of methods without these specifics.",
+      "Completeness [GEval]": "The Actual Output mentions some experimental methodologies such as splitting colonies, brood assessment, hive weight monitoring, and residue analysis, which partially aligns with the Expected Output. However, it omits key details: the distinction between the two large-scale field studies, the specific focus on thiamethoxam and its metabolite, the types of samples analyzed, the use of LC-MS/MS, the four-year exposure period, and the comprehensive list of colony health and behavioral measures. The coverage is incomplete and lacks specificity regarding the study design and endpoints.",
+      "Accuracy [GEval]": "The Actual Output mentions some experimental methodologies such as splitting colonies, brood assessment, hive weight monitoring, and residue analysis, which partially aligns with the Expected Output. However, it omits key details: the two distinct field studies, the specific focus on thiamethoxam and its metabolite, the types of samples analyzed, and the comprehensive list of colony health and behavioral measures. The Actual Output is less detailed and does not fully capture the scope or specifics of the Expected Output."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "005",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "005",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 5,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 235,
+    "name": "reviewer_comparison_531_case_232",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experiment investigated the effects of melatonin, imidacloprid or both on adult honeybees. The authors monitored survival over 48h, and assessed effects on oxidative stress, apoptosis, detoxification and antioxidant defence. Bee heads were collected at 4, 8 and 14 h after exposure to determine melatonin content using the Insect Melatonin (MT) ELISA Kit. \nBees were sampled 14 h after exposure were tested for: \n- histopathological analysis, that included anatomical section of the midgut stained with haematoxylin and eosin  \n- Reactive oxygen species (ROS) levels according to a published procedure He et al., 2021; lipid peroxidation evaluated by assessing Malondialdehyde (MDA) content. Total MDA levels were measured using the Lipid Peroxidation MDA Assay Kit; total glutathione (GSH) contents using the Total Glutathione Assay Kit; and Superoxide dismutase activity using a total superoxide dismutase assay kit with nitro blue tetrazolium \n- Real-time quantitative PCR analysis was performed to assess the expression of apoptosis-related genes,detoxification and antioxidant genes",
+    "expected_output": "They used a full-factorial design, where newly emerged bees were randomly distributed across four treatment groups of two crossed treatments: an imidacloprid treatment (0 or 36 ng/bee) and a melatonin treatment (0 or 200 ng/bee). Bees that consumed the sucrose within 20 minutes were used to test survival, oxidative stress and apoptosis caused by imidacloprid.",
+    "combined_score": 0.24623560175875112,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.35364333444000434,
+      "Accuracy [GEval]": 0.385063470836249
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output describes experimental procedures and measurements but omits the factorial design, randomization, treatment groups, and specific dosages detailed in Expected Output.",
+      "Completeness [GEval]": "The Actual Output provides detailed information about the experimental procedures and measurements but omits key points from the Expected Output. Specifically, it does not mention the full-factorial design, the random distribution of bees, the specific treatment groups (crossed imidacloprid and melatonin doses), or the criterion that only bees consuming sucrose within 20 minutes were used. While it covers the endpoints measured (survival, oxidative stress, apoptosis), it misses the core experimental design details, resulting in incomplete coverage.",
+      "Accuracy [GEval]": "The Actual Output provides detailed information about the experimental procedures, including the endpoints measured and the timing of sample collection, which aligns partially with the Expected Output's mention of survival, oxidative stress, and apoptosis testing. However, it omits key details from the Expected Output, such as the full-factorial design, random distribution of bees, specific treatment groups, and the criteria for selecting bees (consumption of sucrose within 20 minutes). These omissions represent significant discrepancies in experimental design description."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "531",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "531",
+      "question_id": "experimental_methodology",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 10,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 232,
+    "name": "reviewer_comparison_016_case_218",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodologies used in this paper involved acute and chronic exposure experiments on honey bees, where bees were fed specific doses of the pesticide TMX to assess its effects on forager flight ability.",
+    "expected_output": "This study focused on the effects of TMX on bee flight activity. An assessment of the effect of TMX on flight duration, distance and velocity was done after acute and chronic exposure. Flight behaviour was tested using a modified flight mill, which was designed with reference to previously published studies. Individuals from acute exposure were tested before and after exposure. Chronic exposure groups were tested post-exposure at 24 and 48 hours. Bees had a harness glued to their thorax prior to flight anaylses to allow them to be attached to the flight mill. Flight was recorded using LabView software on a PC.",
+    "combined_score": 0.25494499953755684,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.36791787056691694,
+      "Accuracy [GEval]": 0.3969171280457535
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions acute and chronic exposure and feeding bees TMX to assess flight ability, but omits key methodological details from the Expected Output such as the use of a modified flight mill, testing times (before/after exposure, 24/48 hours), harness attachment, and use of LabView software.",
+      "Completeness [GEval]": "The Actual Output mentions acute and chronic exposure experiments with TMX and the assessment of forager flight ability, partially aligning with the Expected Output. However, it omits several key methodological details: the use of a modified flight mill, specific flight parameters measured (duration, distance, velocity), the timing of tests (before/after for acute, 24/48h for chronic), the harness attachment, and the use of LabView software. These omissions indicate incomplete coverage of the Expected Output's key points.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies the use of acute and chronic exposure experiments and the focus on TMX's effects on bee flight, which aligns with the Expected Output. However, it omits several key methodological details such as the use of a modified flight mill, the specific flight parameters measured (duration, distance, velocity), the timing of post-exposure tests, the use of harnesses, and the recording software. These omissions result in only a partial alignment with the Expected Output."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "016",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "016",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 3,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 208,
+    "name": "reviewer_comparison_226_case_203",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "Bees were exposed to different concentrations of thiacloprid during larval stage via food. Several endpoints were evaluated during the adult stage: survival rate, body weight, neural apoptotic rate and the PER response rate",
+    "expected_output": "Honey bees were chronically exposed to differing thiacloprid solutions (0, 0.5, 1mg/L) over 6 days, their larval stages. PER was employed to first test sucrose acuity (with a series of dilutions spanning from 1-50% w/w), and later to test learning and memory - using Hexanal and Limonene as stimuli. With immunofluorescence, the authors investigated apoptosis in 5 regions of the brain - they similarly produced transcriptomes of differentially expressed genes from brain tissue.",
+    "combined_score": 0.259182707597428,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3880797085800514,
+      "Accuracy [GEval]": 0.3894684142122326
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key details from the Expected Output, such as specific concentrations, duration of exposure, use of PER for sucrose acuity and learning/memory, use of Hexanal and Limonene, immunofluorescence for apoptosis in 5 brain regions, and transcriptome analysis; it only gives a general summary.",
+      "Completeness [GEval]": "The Actual Output mentions exposure to thiacloprid during the larval stage and evaluation of endpoints in adults, including survival rate, body weight, neural apoptotic rate, and PER response rate. However, it omits key details from the Expected Output: specific concentrations and duration of exposure, the use of PER for both sucrose acuity and learning/memory with specific stimuli (Hexanal and Limonene), the use of immunofluorescence in five brain regions, and transcriptome analysis of differentially expressed genes. The Actual Output partially covers the endpoints but lacks important methodological and experimental specifics.",
+      "Accuracy [GEval]": "The Actual Output captures the general idea of bees being exposed to thiacloprid during the larval stage and mentions some endpoints like survival rate, body weight, neural apoptotic rate, and PER response rate, which aligns partially with the Expected Output. However, it omits key specifics such as the exact concentrations (0, 0.5, 1mg/L), the 6-day exposure period, the use of sucrose acuity testing with specific dilutions, the use of Hexanal and Limonene as stimuli, the investigation of apoptosis in 5 brain regions, and the transcriptome analysis. The Actual Output is less detailed and omits several important experimental details, resulting in a lower level of accuracy."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "226",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "226",
+      "question_id": "experimental_methodology",
+      "rev1": "KW",
+      "rev2": "FS",
+      "rev1_rating": 7,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 202,
+    "name": "reviewer_comparison_793_case_201",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodologies used in this paper include treating worker bees with dinotefuran, and observing their behavior and physiological responses, such as acute toxicity effects and changes in gene expression related to development and immune response.",
+    "expected_output": "The study examines how exposure to sublethal levels of dinotefuran changes the gene expression profile. Bees were exposed to either the LC5, LC20 or a control solution and frozen after 48 h. RNA was extracted from all three groups and a Gene Ontology enrichment analysis done on the differentially expressed genes. A real-time quantitative PCR was also used to look at relative changes in gene expression.",
+    "combined_score": 0.27902491135386476,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.42227001388253094,
+      "Accuracy [GEval]": 0.41480472017906334
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key methodological details from the Expected Output, such as the use of LC5 and LC20 concentrations, the 48-hour exposure period, RNA extraction, Gene Ontology enrichment analysis, and real-time quantitative PCR; it also adds information about acute toxicity and immune response not mentioned in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output mentions treating bees with dinotefuran and observing gene expression changes, which aligns with the general focus of the Expected Output. However, it omits key methodological details such as the use of specific concentrations (LC5, LC20, control), the 48-hour exposure period, the process of freezing bees, RNA extraction, Gene Ontology enrichment analysis, and the use of real-time quantitative PCR. These omissions mean several important steps from the Expected Output are missing or inadequately covered.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies that bees were treated with dinotefuran and that gene expression and physiological responses were observed, which aligns with the Expected Output. However, it lacks key methodological details such as the use of LC5 and LC20 concentrations, the 48-hour exposure period, the freezing of bees, RNA extraction, Gene Ontology enrichment analysis, and real-time quantitative PCR. These omissions mean the Actual Output is only partially accurate and does not fully align with the Expected Output."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "793",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "793",
+      "question_id": "experimental_methodology",
+      "rev1": "NN",
+      "rev2": "AB",
+      "rev1_rating": 1,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 191,
+    "name": "reviewer_comparison_592_case_183",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "10 mates females and 5 males were randomly allocated to cages where they were provided with 52 flowering oilseed rape plants. Bees were maintained in these cages for 3 weeks. Next spring, offspring sex was detemined and male cocoons were randomly selected for further evaluation of weight, mortality, sperm quantity and viability. Clothianidin exposure was verified by residue analysis of pollen that the females had collected for their brood.",
+    "expected_output": "The experimental methodologies used in this paper included: 1) Cultivating oil-seed rape (OSR) in a randomized split-plot design with neonicotinoid treatment and control, 2) Conducting flight cage experiments with *Osmia cornuta* to observe mating and nesting behavior, 3) Measuring emergence success, emergence mass, and survival rates of bees, 4) Assessing sperm quantity and viability of surviving individuals, and 5) Analyzing clothianidin residues using ultra-high-pressure liquid chromatography coupled to tandem mass spectrometry (UHPLC\u2013MS/MS).",
+    "combined_score": 0.2863187559495561,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.420929200363328,
+      "Accuracy [GEval]": 0.4380270674853402
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key methodologies such as the randomized split-plot design, neonicotinoid/control treatments, measurement of emergence success/mass/survival, and the specific analytical method (UHPLC\u2013MS/MS) mentioned in the Expected Output, and instead focuses only on cage allocation, bee maintenance, and residue analysis.",
+      "Completeness [GEval]": "The Actual Output covers some key points from the Expected Output, such as the use of flight cage experiments with Osmia cornuta, assessment of sperm quantity and viability, and verification of clothianidin exposure via residue analysis. However, it omits important details: there is no mention of the randomized split-plot design or the neonicotinoid/control treatments, no reference to measuring emergence success, emergence mass, or survival rates, and no specification of the analytical method (UHPLC\u2013MS/MS) for residue analysis. Thus, several key methodological aspects are missing or inadequately covered.",
+      "Accuracy [GEval]": "The Actual Output provides some relevant methodological details, such as the use of cages, allocation of bees, exposure to oilseed rape, and assessment of sperm quantity and viability. However, it omits key aspects from the Expected Output, including the randomized split-plot design, explicit mention of neonicotinoid/control treatments, measurement of emergence success and mass, and the specific analytical method (UHPLC\u2013MS/MS) for residue analysis. There are also minor factual inconsistencies, such as not mentioning the observation of mating and nesting behavior. Overall, the Actual Output partially aligns with the Expected Output but lacks completeness and specificity."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "592",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "592",
+      "question_id": "experimental_methodology",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 200,
+    "name": "reviewer_comparison_583_case_200",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "Foragers returning to the hive with pollen were captured by the hive entrance and were kept in individual plastic tubes, which were loaded into a locomotor activity monitor and placed in an environmental chamber with controlled light:dark cycle (12:12 h), where data on activity and sleep patterns were collected.",
+    "expected_output": "The study used experimental methodologies involving the capture of forager honey bees, maintenance in infrared activity monitors, exposure to neonicotinoid pesticides in food, and monitoring of locomotor activity under various light conditions.",
+    "combined_score": 0.2938454722637449,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.43775406687981455,
+      "Accuracy [GEval]": 0.4437823499114201
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output, such as exposure to neonicotinoid pesticides in food and monitoring under various light conditions; it only describes capture and monitoring, not the full methodology.",
+      "Completeness [GEval]": "The Actual Output covers the capture of forager bees, their placement in activity monitors, and monitoring under controlled light:dark cycles, aligning with some key points from the Expected Output. However, it omits mention of exposure to neonicotinoid pesticides in food and does not specify the use of infrared monitors or the monitoring under various light conditions beyond the 12:12 cycle. Thus, not all key points are addressed.",
+      "Accuracy [GEval]": "The Actual Output accurately describes the capture of forager bees, their placement in activity monitors, and monitoring under controlled light:dark cycles, aligning partially with the Expected Output. However, it omits key details such as exposure to neonicotinoid pesticides in food and the use of infrared activity monitors, which are specifically mentioned in the Expected Output. This results in incomplete alignment and some factual omissions."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "583",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "583",
+      "question_id": "experimental_methodology",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 244,
+    "name": "reviewer_comparison_002_case_223",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodologies used in this paper involved field studies with bumble bee hives placed at different distances from oilseed rape (OSR) fields treated with clothianidin. The study included regular assessments of hive weight and worker numbers, the use of queen lockers to monitor queen production, and pollen sampling for residue analysis.",
+    "expected_output": "Two study sites were used - one reference site without clothianidin treatment and one experimental, references given to other studies that used the sites. Soil samples taken to determine clothianidin residues.\n\nStandardised bumble bee colonies were used in the study. The original queen was found, and hive weight and number of workers were recorded twice a week from 26th April, over the project. Behavioural measures such as abnormal flight activity were recorded.\n\nOSR pollen samples to assess pesticide residues were also taken twice, once in April and once in May.  \n\nDuring the post exposure phase, the presnce of a queen, hive weight and numberof workers were recorded once a week. At the end of the post-exposure phase, hives were frozen and then number of new queens produced were assessed.\n\nWeather conditions were monitored at the sites.",
+    "combined_score": 0.300692182693242,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.4320821307318384,
+      "Accuracy [GEval]": 0.4699944173478875
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output such as use of reference and experimental sites, soil sampling, behavioral measures, weather monitoring, and post-exposure procedures; it also lacks specifics on timing and frequency of measurements.",
+      "Completeness [GEval]": "The Actual Output covers some key points such as the use of bumble bee hives, placement near OSR fields treated with clothianidin, hive weight and worker number assessments, queen production monitoring, and pollen sampling for residue analysis. However, it omits several important details from the Expected Output: it does not mention the use of two study sites (reference and experimental), soil sampling for clothianidin residues, the use of standardised colonies, the timing and frequency of data collection (twice a week from April, once a week post-exposure), behavioral measures like abnormal flight activity, the specific timing of pollen sampling, the freezing of hives and assessment of new queens at the end, and weather monitoring. The Actual Output is thus only partially complete.",
+      "Accuracy [GEval]": "The Actual Output captures some key elements such as hive placement near OSR fields treated with clothianidin, hive weight and worker number assessments, queen production monitoring, and pollen sampling for residue analysis. However, it omits several important details from the Expected Output: it does not mention the use of two study sites (reference and experimental), soil sampling for residues, the frequency and timing of measurements, behavioral observations, post-exposure monitoring, hive freezing, new queen assessment, or weather monitoring. These omissions result in only partial alignment with the Expected Output."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "002",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "002",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 8,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 228,
+    "name": "reviewer_comparison_015_case_213",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodologies used in this paper include acute and chronic exposure experiments on bees, observations of their locomotion and motor functions in an arena, and assessments of their movement towards light under different exposure conditions.",
+    "expected_output": "This study focused on the effects of TMX on bee locomotion, motor functiona and movement towards light. An assessment of the effect of TMX on these parameters was done after acute and chronic exposure. Behaviour was montored and videoed for later analysis in an arena, which was designed with reference to previously published studies. Light levels were also recorded and analysed. Several locomotory parameters were measured over two 3 minute periods of observation, one 30 minutes and one 60 minutes after TMX exposure. Abnormal behaviours and falls were also recorded.",
+    "combined_score": 0.3171826642040671,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.4320821313812161,
+      "Accuracy [GEval]": 0.5194658612309853
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key details from the Expected Output, such as video analysis, reference to previous studies in arena design, measurement of light levels, specific observation periods (30 and 60 minutes), and recording of abnormal behaviors and falls.",
+      "Completeness [GEval]": "The Actual Output covers the general experimental methodologies, mentioning acute and chronic exposure, locomotion and motor function observation, and movement towards light. However, it omits several key details from the Expected Output: it does not mention video recording and later analysis, the arena's design based on previous studies, the measurement of light levels, the specific timing of observations (30 and 60 minutes post-exposure), the measurement of several locomotory parameters, or the recording of abnormal behaviors and falls. Thus, coverage is partial and lacks important specifics.",
+      "Accuracy [GEval]": "The Actual Output captures the general methodologies\u2014acute and chronic exposure, observation of locomotion and motor functions, and movement towards light. However, it omits several key details from the Expected Output: the use of video recording for later analysis, the arena's design referencing previous studies, the measurement of light levels, the specific timing and duration of observations, and the recording of abnormal behaviors and falls. These omissions mean not all key points are accurately reflected."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "015",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "015",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 7,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 249,
+    "name": "reviewer_comparison_523_case_233",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental procedure implied releasing individual, free flying bumblebees in a flight arena with robotic flowers, the authors investigated whether any aspects of bumblebee foraging behaviour are affected by exposure to a field-realistic, low-dose (1 ppb) exposure to imidacloprid. For individual bumblebees, they measured (i) physical performance (speed of movements between flowers, linear distance moved between flowers), (ii) the ability to differentiate between rewarding and non-rewarding flowers based on the colour of the flowers, and (iii) foraging motivation (time taken until first flower visitation, number of flowers visited, willingness to try foraging from flowers of all colours). Bumblebee colonies were assigned into two treatments: (i) those exposed to imidacloprid (three colonies) and (ii) control colonies (three) not exposed to the pesticide.",
+    "expected_output": "The experimental methodologies involved training commerical bumblebee colonies to feed from artificial flowers of different colours. After one week of training in a training arena, bees were released one by one into the experimental arena where data were collected on their foraging behavior using a computer-controlled robotic flower system.",
+    "combined_score": 0.3541269019756133,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.6077198177922617,
+      "Accuracy [GEval]": 0.4546608881345783
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output includes details about experimental variables, measurements, and treatments not mentioned in Expected Output, but omits key steps such as the week-long training phase and the use of commercial colonies, thus failing to accurately match the content and intent.",
+      "Completeness [GEval]": "The Actual Output covers several key points from the Expected Output, such as the use of individual, free-flying bumblebees in a flight arena with robotic/artificial flowers and the measurement of foraging behavior. However, it omits mention of the initial one-week training period and the use of commercial bumblebee colonies specifically being trained to feed from artificial flowers of different colours. The Actual Output provides more detail on the experimental variables and measurements but misses the training methodology, which is a key point in the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output provides more detail about the experimental procedure, including the use of robotic flowers, the specific behaviors measured, and the treatment groups. However, it omits the training phase described in the Expected Output and does not mention the use of commercial bumblebee colonies or the computer-controlled aspect of the robotic flower system. While the core idea of releasing bees into an arena with robotic flowers is present, key methodological steps and context are missing or not explicitly stated."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "523",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "523",
+      "question_id": "experimental_methodology",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 5,
+      "rev2_rating": 3
+    }
+  },
+  {
+    "test_case_index": 248,
+    "name": "reviewer_comparison_007_case_216",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodologies used in this paper include: 1) chronic administration of probiotic strains to honeybees to evaluate their anti-*N. ceranae* activity, 2) infection of honeybees with *N. ceranae* spores, 3) exposure to pesticides (thiamethoxam and boscalid), 4) monitoring of sucrose consumption and survival rates, and 5) quantitative PCR to measure gene expression levels related to immunity and detoxification.",
+    "expected_output": "This paper describes two experiments: i) an evaluation of five probiotic candidates for anti-Nosema ceranae activity, ii) the probiotic strain selected by this initial experiment (PA) was then investigated further to examine whether it might have a curative effect on the parasite and also whether it might have a beneficial effect on bees exposed to thiamethoxam and boscalid. \nAll experiments were run using oral infection or exposure. \nExperiment i) 8 experimental groups of bee were used, one for each of the five candidate probiotic, one that was infected with N. ceranae but had no probiotic treatment, one that was infected with N. ceranae, had no probiotic, but received fumagillin treatment and a control.\n\nExperiment ii) 6 experimental groups of bee were used, one unifected but treated with PA, one that was infected with N. ceranae but had no probiotic treatment, one that was infected with N. ceranae and had probiotic PA, one exposed to pesticides, one exposed to pesticides and given PA treatment and a control. At day 16 a random sampling of 6 bees from each group was undertaken to extract RNA and DNA. Subsequently 16S rRNA amplification was used to perform metagenomic analyses and qPCR was run to determine effcets on targeted host-gene expression. Mortality and sucrose consumption were measuredfor all groups.",
+    "combined_score": 0.36836703351447414,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5197104441292051,
+      "Accuracy [GEval]": 0.5853906564142173
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output summarizes general methodologies but omits key experimental design details from the Expected Output, such as the number and composition of experimental groups, the two-stage structure of the experiments, and the use of metagenomic analyses. It lacks specificity about the experimental setup described in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output covers several key methodologies such as probiotic administration, infection with N. ceranae, pesticide exposure, monitoring of sucrose consumption and survival, and qPCR for gene expression. However, it omits important experimental design details from the Expected Output, such as the two distinct experiments, the specific number and composition of experimental groups in each, the use of fumagillin as a control, the random sampling and timing for RNA/DNA extraction, and the use of 16S rRNA metagenomic analysis. Thus, while the main methods are mentioned, the structure and depth of the experimental setup are lacking.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies several key methodologies from the Expected Output, such as chronic probiotic administration, infection with N. ceranae, pesticide exposure, monitoring of sucrose consumption and survival, and qPCR for gene expression. However, it omits important experimental design details, such as the two distinct experiments, the number and composition of experimental groups, the use of fumagillin as a control, and the metagenomic analyses via 16S rRNA amplification. The Actual Output is factually consistent with the Expected Output in the methods it lists, but lacks completeness and specificity regarding the experimental structure and some techniques."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "007",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "007",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 9,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 226,
+    "name": "reviewer_comparison_012_case_214",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The experimental methodologies used in this paper include: 1) extraction of hemolymph from honeybee larvae, 2) in vitro exposure of hemolymph to pesticides (imidacloprid and amitraz) and zymosan A, and 3) Real-Time PCR for gene expression analysis of immune-related genes.",
+    "expected_output": "This paper describes:\ni) the extraction of haemolymph from Apis mellifera larvae (5th satge). \nii) the incubation of the haemolymph with two pesticides, both as single compound exposures and mixtures (1:1  1:5 and 5:1), run in 24-well tissue culture plates. All these treatment groups were run with and without the addition of Zymosan A for a duration of 18h. \niii) The extraction of RNA from the haemolymph and cDNA synthesis\niv) Real-time PCR to determine differential gene expression of key Apis mellifera immune-related genes to determine the effects of the treatment groups.",
+    "combined_score": 0.3695986849089545,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5148047192393274,
+      "Accuracy [GEval]": 0.5939913354875361
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output, such as the use of 5th stage larvae, specific pesticide mixture ratios, use of 24-well plates, 18h incubation, RNA extraction, and cDNA synthesis; thus, it does not fully align with the Expected Output.",
+      "Completeness [GEval]": "The Actual Output covers the general methodologies: hemolymph extraction, in vitro exposure to pesticides and zymosan A, and Real-Time PCR for gene expression analysis. However, it omits several key details from the Expected Output, such as the specific use of Apis mellifera 5th stage larvae, the details of pesticide mixtures (ratios 1:1, 1:5, 5:1), the use of 24-well tissue culture plates, the 18-hour incubation period, and the RNA extraction and cDNA synthesis steps. Thus, while the main steps are mentioned, important specifics are missing.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies the main methodologies: hemolymph extraction, in vitro exposure to pesticides and zymosan A, and Real-Time PCR for gene expression analysis. However, it omits several important details from the Expected Output, such as the specific stage of larvae (5th stage), the use of mixtures in different ratios (1:1, 1:5, 5:1), the use of 24-well tissue culture plates, the 18-hour incubation period, and the RNA extraction and cDNA synthesis steps. These omissions reduce the completeness and accuracy of the response."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "012",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "012",
+      "question_id": "experimental_methodology",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 7,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 218,
+    "name": "reviewer_comparison_513_case_208",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "The study used a combination of field and lab experiments. In the field, where both species were tested, they injected pollen with pesticides. In the lab, where only Osmia lignaria was tested, they used a combination of methods, either injecting the pollen with pesticides, or replacing it with honeybee-collected pollen that had been spiked with pesticides.",
+    "expected_output": "The experimental methodologies used in this paper include field experiments and laboratory experiments. Field experiments involved injecting pollen provisions with imidacloprid for Osmia lignaria. While laboratory experiments focused on *O. lignaria*, where larvae were exposed to different doses of imidacloprid through injected pollen provisions or a preblended pollen mixture. And laboratory experiment in M. rotundata, larvae were exposed to different doses of clothianidin.",
+    "combined_score": 0.3798048764009825,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5874503262090152,
+      "Accuracy [GEval]": 0.5519643029939323
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output, such as the specific pesticides used (imidacloprid for O. lignaria and clothianidin for M. rotundata), and does not mention that M. rotundata was tested in the lab with clothianidin; it also lacks detail on the exposure to different doses.",
+      "Completeness [GEval]": "The Actual Output covers the use of both field and lab experiments and mentions the injection of pollen with pesticides, aligning with the Expected Output's description of methodologies. However, it omits key details: it does not specify the use of imidacloprid in field experiments for Osmia lignaria, nor does it mention the use of clothianidin in M. rotundata laboratory experiments. The Actual Output also lacks detail on the exposure to different doses and the distinction between the two pesticides used for the two bee species. Thus, while the main methods are addressed, important specifics are missing.",
+      "Accuracy [GEval]": "The Actual Output correctly identifies that both field and lab experiments were used and that pollen was injected with pesticides. However, it omits key details from the Expected Output, such as the specific pesticides used (imidacloprid for O. lignaria in the field and lab, clothianidin for M. rotundata in the lab), and does not mention that M. rotundata was only tested in the lab with clothianidin. The Actual Output also generalizes the methods and does not specify the exposure to different doses. These omissions and generalizations result in partial but incomplete alignment with the Expected Output."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "513",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "513",
+      "question_id": "experimental_methodology",
+      "rev1": "RT",
+      "rev2": "LH",
+      "rev1_rating": 5,
+      "rev2_rating": 0
+    }
+  },
+  {
+    "test_case_index": 273,
+    "name": "reviewer_comparison_519_case_230",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "A field study was conducted in two different locations (Tucson, Arizona; Sydney, Australia) to assess colony level effects of trace levels of imidacloprid, the commercial miticide thymol (Apiguard), and their combination. Over a full year, the authors recorded worker and brood populations, as well as food stores, every four weeks by photographing both sides of each frame after brushing off the bees. Daily colony weight dynamics were recorded every 5 minutes, and hive temperature was monitored every 30 min. Abiotic parameters from the two environments were also recorded (rainfall and average daily temperatures). In Tucson, Varroa destructor mite falls were measured using sticky boards in all hives, while no Varroa mites were not detected in Sydney. Honey, wax and bees were collected for to pesticide residue analysis using HPLC-MS/MS.",
+    "expected_output": "22 honeybee colonies were used for the experiment south of Tucson, USA and 16 honeybee colonies north of Sydney, Australia. Hive location as well as hive tratment were randomised across the apiary. Colonies were fed sucrose solution either with imidacloprid (imidacloprid or imidacloprid + thymol treatment) or without imidacloprid (control or thymol treatment) inside the hive for 6 weeks. Two weeks after the treatment started, colonies (with thymol treatment or thymol + imidacloprid treatment) recieved an aluminium tray with Apiguard gel. The Apiguard gel was renewed after 2 weeks, but it is unclear from the text how many times this was repeated. The experiment ran for around 9 months and during most of this time, hives were evaluated once a month. The treatment started 4 weeks after the first evaluation. Hives were placed on scales before the experiment, for continous weight measurements and temperature sensors continously recorded temperature data. During the evaluations additional data were recorded on capped brood area, and pollen and honey surface. On four occations, they measured Varroa destructor. In the US, samples of honey and was were analyzed for pesticide residues.",
+    "combined_score": 0.38188885190208516,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5528850690313084,
+      "Accuracy [GEval]": 0.5927814866749472
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details such as the number of colonies used, randomization of hive location and treatment, specific feeding and treatment protocols, timing of Apiguard application, and duration of the experiment. It also incorrectly states that bees were brushed off for frame photography, which is not mentioned in Expected Output, and does not mention the monthly evaluation schedule or the start time of treatments relative to evaluations.",
+      "Completeness [GEval]": "The Actual Output covers several key methodological points, such as the two locations, treatments (imidacloprid, thymol, combination), duration, and monitoring of colony parameters (worker/brood populations, food stores, weight, temperature, abiotic factors, Varroa mite monitoring, and residue analysis). However, it omits specific details from the Expected Output: the exact number of colonies per site, the randomization of hive location and treatment, the sucrose feeding protocol, the timing and renewal of Apiguard gel, the 4-week pre-treatment evaluation, the 6-week treatment duration, and the 9-month total experiment length. It also lacks mention of the frequency and timing of Varroa measurements and the specific data collected during evaluations (capped brood area, pollen, honey surface). Thus, while the main experimental design is described, several important procedural details are missing or only partially addressed.",
+      "Accuracy [GEval]": "The Actual Output accurately describes the two study locations, the treatments (imidacloprid, thymol, and their combination), and the monitoring of colony parameters (worker/brood populations, food stores, weight, temperature, and abiotic factors). However, it omits key details from the Expected Output, such as the exact number of colonies at each site, the randomization of hive location and treatment, the specific feeding and treatment schedule (timing and renewal of Apiguard), and the duration of the experiment (states 'full year' instead of 'around 9 months'). The Actual Output also lacks details on the timing of treatment initiation and the frequency of Varroa measurements. Some details, like the use of HPLC-MS/MS for residue analysis, are present, but the Actual Output is less specific about the experimental design and schedule, leading to partial alignment."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "519",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "519",
+      "question_id": "experimental_methodology",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 10,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 185,
+    "name": "reviewer_comparison_594_case_181",
+    "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not statistical methods)",
+    "actual_output": "newly emerged workers were distributed into 27 cages with 1000 bees per cage and were randomly assigned an imidacloprid (0, 5, or 20 ppb) treatment and a temperature (26, 32, or 38 \u00b0C) treatment. These treatments were chronic and lasted for 15 days. Bees were sampled every third day for RNA extraction and transpritional analysis.",
+    "expected_output": "The experimental methodologies used in this paper involved a 15-day cage experiment with honey bees, where bees were exposed to different ambient temperatures (26 \u00b0C, 32 \u00b0C, 38 \u00b0C) and varying concentrations of imidacloprid (0 ppb, 5 ppb, 20 ppb). The study monitored honey bee mortality, syrup and patty consumption, and conducted RT-qPCR for gene expression analysis.",
+    "combined_score": 0.40516135099909456,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.5777299861174692,
+      "Accuracy [GEval]": 0.6377540668798145
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output such as monitoring mortality, syrup and patty consumption, and RT-qPCR for gene expression analysis; it also contains a typo ('transpritional analysis') and lacks mention of these specific measurements, thus not fully matching the content and intent.",
+      "Completeness [GEval]": "The Actual Output correctly describes the experimental setup, including the number of cages, bees per cage, random assignment to imidacloprid and temperature treatments, treatment concentrations, and duration. It also mentions sampling for RNA extraction and transcriptional analysis. However, it omits key points from the Expected Output: monitoring of honey bee mortality, syrup and patty consumption, and the use of RT-qPCR for gene expression analysis. Thus, while the main experimental design is covered, important methodological details are missing.",
+      "Accuracy [GEval]": "The Actual Output accurately describes the experimental setup, including the number of cages, bees per cage, imidacloprid and temperature treatments, and the 15-day duration. However, it omits key methodological details present in the Expected Output, such as monitoring mortality, syrup and patty consumption, and the use of RT-qPCR for gene expression analysis. Additionally, there is a minor typo ('transpritional' instead of 'transcriptional'). Overall, the Actual Output is factually correct for the aspects it covers but lacks completeness."
+    },
+    "question_type": "experimental_methodology",
+    "paper_id": "594",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "594",
+      "question_id": "experimental_methodology",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 10
+    }
+  }
+]

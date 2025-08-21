@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 104,
+    "name": "paper_430_case_76",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "The following neonicotinoids were considered: acetamiprid, clothianidin, dinotefuran, imidacloprid, thiamethoxam and thiacloprid and the following pyrethroids; cyfluthrin, cypermetrin, permethrin, tefluthrin, tralomethrin, fenvalerate, deltamethrin, cyhalothrin-gamma, resmethrin, fluvalinate-tau.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states information not found, while Expected Output lists specific neonicotinoids and pyrethroids; Actual Output does not match or fulfill the requirements.",
+      "Completeness [GEval]": "The Actual Output does not mention any of the neonicotinoids or pyrethroids listed in the Expected Output. It fails to address all key points, providing only a generic statement that information was not found, and thus does not cover any of the required details.",
+      "Accuracy [GEval]": "The actual output does not provide any of the specific information listed in the expected output, such as the names of the neonicotinoids and pyrethroids considered. It omits all required details and does not match any facts from the expected output."
+    },
+    "question_type": "pesticides",
+    "paper_id": "430",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "430",
+      "question_id": "pesticides",
+      "reviewer": "BN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 142,
+    "name": "paper_380_case_125",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study include Propamocarb (fungicide), Carbendazim (herbicide), and Azobenzene (insecticide). However, the study does not specify the dose, exposure method, or duration of exposure for these pesticides.",
+    "expected_output": "No exposure was conducted in the study. The study identified the pesticide residues present in the honey bee body.",
+    "combined_score": 0.07064009719213375,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.011920291576401234
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output incorrectly states that pesticides were used in the study and discusses exposure details, while the Expected Output clarifies that no exposure was conducted and only residue identification was performed.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that pesticides were used in the study and discusses exposure details, which contradicts the Expected Output's key point that no exposure was conducted. It does mention the identification of pesticides, but fails to clarify that only residues were identified and not that exposure occurred. Most key points are missing or incorrect.",
+      "Accuracy [GEval]": "The actual output incorrectly states that pesticides were used in the study and discusses exposure details, while the expected output clarifies that no exposure was conducted and only residue identification was performed. This is a significant inaccuracy and contradiction, failing to align with the evaluation steps."
+    },
+    "question_type": "pesticides",
+    "paper_id": "380",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "380",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 110,
+    "name": "paper_382_case_109",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were neonicotinoids, specifically imidacloprid, clothianidin, and thiamethoxam. The exposure method for imidacloprid was through sucrose or pollen feeding for 3 weeks, while the exposure method for clothianidin and thiamethoxam was through lingering pesticide residues in the environment for 2.5 weeks.",
+    "expected_output": "No pesticides were directly applied in the study. Instead, the study involved placing hives at sites within commercial orchards. However, pesticide applications in these orchards were not controlled by the researchers. The hives remained at the sites for one month.",
+    "combined_score": 0.09953121249301605,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.09859363747904815
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states specific pesticides and exposure methods, while Expected Output clarifies no pesticides were directly applied and hives were simply placed in orchards for one month; details do not match.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that specific neonicotinoids were used and describes controlled exposure methods, which contradicts the Expected Output's key points that no pesticides were directly applied and that hives were simply placed in commercial orchards with uncontrolled pesticide applications. The Actual Output also gives incorrect exposure durations and omits the detail that hives remained at the sites for one month. Only the general context of pesticide exposure is somewhat addressed, but most key points are missing or incorrect.",
+      "Accuracy [GEval]": "The actual output incorrectly states that specific neonicotinoids were used and describes controlled exposure methods, which contradicts the expected output indicating no direct pesticide application and that hives were simply placed in orchards with uncontrolled pesticide use. The actual output also gives incorrect exposure durations and methods, and omits the key detail that hives remained for one month. There is a significant discrepancy in both facts and details."
+    },
+    "question_type": "pesticides",
+    "paper_id": "382",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "382",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 92,
+    "name": "paper_430_case_75",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "Although this is a review, the paper does tie population decline specificially to the use of pyrethoid and neonic classes of pesticides",
+    "combined_score": 0.13273379305828917,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.1982013791748675
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states information not found, but Expected Output provides a specific summary about population decline and pesticide classes, so they do not match.",
+      "Completeness [GEval]": "The Actual Output fails to address the key point from the Expected Output, which is that the paper ties population decline specifically to the use of pyrethoid and neonic classes of pesticides. Instead, it only states that the information was not found, without referencing or discussing the specific content required.",
+      "Accuracy [GEval]": "The actual output fails to mention the key detail from the expected output, specifically the link between population decline and the use of pyrethoid and neonic pesticides. While it does not introduce inaccuracies, it omits all substantive information required by the expected output."
+    },
+    "question_type": "pesticides",
+    "paper_id": "430",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "430",
+      "question_id": "pesticides",
+      "reviewer": "KW",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 140,
+    "name": "paper_380_case_126",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study include Propamocarb (fungicide), Carbendazim (herbicide), and Azobenzene (insecticide). However, the study does not specify the dose, exposure method, or duration of exposure for these pesticides.",
+    "expected_output": "The study did not apply pesticides directly. Instead, it measured environmental pesticide residues in bees collected from 30 hives using chemical analysis. No specific doses or controlled exposures were used.",
+    "combined_score": 0.14310783617917652,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.25621765008857983,
+      "Accuracy [GEval]": 0.1731058584489497
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that pesticides were used in the study and lists specific pesticides, while Expected Output clarifies that no pesticides were applied and only environmental residues were measured in bees; thus, the outputs do not match.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that pesticides were used in the study and misidentifies their types, while the Expected Output clarifies that no pesticides were applied directly and only environmental residues were measured. The Actual Output does mention the lack of dose, exposure method, or duration, which partially aligns with the Expected Output, but it fails to address the key point that the study was observational and not an exposure experiment.",
+      "Accuracy [GEval]": "The actual output incorrectly states that specific pesticides were used in the study and misidentifies their types, while the expected output clarifies that no pesticides were applied directly and only environmental residues were measured. The actual output also incorrectly claims the study does not specify dose or exposure, when in fact no such exposures occurred. There are significant factual inaccuracies and discrepancies between the actual and expected outputs."
+    },
+    "question_type": "pesticides",
+    "paper_id": "380",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "380",
+      "question_id": "pesticides",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 138,
+    "name": "paper_440_case_100",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study is imidacloprid. The doses mentioned are 100 \u03bcg/kg, 6-100 \u03bcg/kg, 12-24 \u03bcg/kg, and 12 ng/bee. The exposure method was through feeding honeybees imidacloprid, and the duration of exposure is described as medium-term.",
+    "expected_output": "The pesticide used was the active ingredient Imidacloprid. The concentrations used were 0.1, 6, 50, 500, 1000, 1500 and 2000 mg/L (corresponding to the doses of 0.4, 24, 200, 2000, 4000, 6000 and 8000 ng/larva), and intermediate-concentration range of 0.1, 1, 10 and 100 ug/L (corresponding to the doses of 0.0004, 0.004, 0.04, 0.4 ng/larva). The exposure was made during the larval stage by adding 1 uL of the solution in the larval cell for 4 consecutive days.",
+    "combined_score": 0.1520725500295266,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2562176500885798,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output, such as specific concentration values, larval stage exposure, method (adding solution to larval cell), and duration (4 days); it also incorrectly describes exposure as feeding adult bees and uses different dose units.",
+      "Completeness [GEval]": "The Actual Output correctly identifies the pesticide as imidacloprid and mentions some dose values, but it lacks the detailed concentration ranges and corresponding doses provided in the Expected Output. It also omits the specific exposure method (larval stage, 1 uL solution in larval cell for 4 days) and instead gives a vague description of exposure through feeding and a 'medium-term' duration. Several key points, such as the exact concentrations, larval exposure details, and duration, are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output correctly identifies imidacloprid as the pesticide and mentions exposure via feeding, but it omits key details such as the specific concentrations, the larval stage as the exposure period, the method of adding 1 uL solution to larval cells, and the 4-day exposure duration. The doses listed in the actual output do not match the expected output's values, and important context about the experimental setup is missing."
+    },
+    "question_type": "pesticides",
+    "paper_id": "440",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "440",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 116,
+    "name": "paper_382_case_110",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were neonicotinoids, specifically imidacloprid, clothianidin, and thiamethoxam. The exposure method for imidacloprid was through sucrose or pollen feeding for 3 weeks, while the exposure method for clothianidin and thiamethoxam was through lingering pesticide residues in the environment for 2.5 weeks.",
+    "expected_output": "This study did not apply pesticides directly. Instead, honey bee colonies were exposed naturally by placing them at two field sites: one contaminated by systemic pesticides from by-products of pesticide-treated seeds processed in an ethanol plant, and a control orchard site without such contamination. The exact pesticide  and levels were documented in supplementary tables. Colonies were monitored over one month periods across multiple trials from 2021 to 2022.",
+    "combined_score": 0.15770195281631658,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2731058584489497,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that pesticides were administered via feeding and environmental residues, while Expected Output specifies only natural exposure at field sites without direct application; details about monitoring periods and documentation are also missing.",
+      "Completeness [GEval]": "The Actual Output correctly identifies the pesticides involved (imidacloprid, clothianidin, thiamethoxam), but it incorrectly describes the exposure method as direct feeding or environmental residues, rather than the natural exposure at contaminated and control field sites as stated in the Expected Output. It also omits key details such as the use of two field sites, the role of the ethanol plant, the documentation of pesticide levels in supplementary tables, and the monitoring period across multiple trials from 2021 to 2022. Thus, several key points are missing or inaccurately described.",
+      "Accuracy [GEval]": "The actual output incorrectly states that specific neonicotinoids were used and describes artificial exposure methods, while the expected output clarifies that no pesticides were directly applied and exposure was natural via field sites. The actual output omits key details about the study design, such as the use of contaminated and control sites, monitoring periods, and documentation of pesticide levels. There are significant factual discrepancies and omissions, resulting in poor alignment with the evaluation steps."
+    },
+    "question_type": "pesticides",
+    "paper_id": "382",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "382",
+      "question_id": "pesticides",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 144,
+    "name": "paper_440_case_101",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study is imidacloprid. The doses mentioned are 100 \u03bcg/kg, 6-100 \u03bcg/kg, 12-24 \u03bcg/kg, and 12 ng/bee. The exposure method was through feeding honeybees imidacloprid, and the duration of exposure is described as medium-term.",
+    "expected_output": "The pesticide used in the study is imidacloprid and the tested concentrations were: 0.1, 6, 50, 500, 1000, 1500 and 2000 mg/L and the total doses ranged from 0.4 to 8000 ng/larva. For the sublethal test the tested doses were from 0 to 0.4 ng/larva",
+    "combined_score": 0.1676281425336524,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.28807970779778824,
+      "Accuracy [GEval]": 0.21480471980316893
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists doses as 100 \u03bcg/kg, 6-100 \u03bcg/kg, 12-24 \u03bcg/kg, and 12 ng/bee, while Expected Output specifies concentrations as 0.1, 6, 50, 500, 1000, 1500, 2000 mg/L and doses from 0.4 to 8000 ng/larva; exposure details and units do not match exactly.",
+      "Completeness [GEval]": "The Actual Output correctly identifies the pesticide as imidacloprid and mentions some dose values, but the units and ranges do not match the Expected Output. The Expected Output specifies concentrations in mg/L and doses in ng/larva, with explicit ranges and sublethal test details, which are missing or incorrectly stated in the Actual Output. The exposure method and duration are mentioned but are not required by the Expected Output, and key details about the tested concentrations and sublethal doses are incomplete or inaccurate.",
+      "Accuracy [GEval]": "The actual output correctly identifies imidacloprid as the pesticide and mentions exposure via feeding, but the reported doses (100 \u03bcg/kg, 6-100 \u03bcg/kg, 12-24 \u03bcg/kg, 12 ng/bee) do not match the expected concentrations (0.1, 6, 50, 500, 1000, 1500, 2000 mg/L) or dose ranges (0.4 to 8000 ng/larva, 0 to 0.4 ng/larva). The actual output also omits the specific concentration and dose ranges and does not mention the sublethal test details. There are significant discrepancies and missing key information."
+    },
+    "question_type": "pesticides",
+    "paper_id": "440",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "440",
+      "question_id": "pesticides",
+      "reviewer": "FS",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 252,
+    "name": "paper_657_case_232",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study was imidacloprid. The dose was an oral LD50 value between 3.7 and 40.9 ng per bee, administered in a 20 \u03bcl sucrose solution. The exposure method was oral, and the duration of exposure was acute, as indicated by the LD50 testing.",
+    "expected_output": "1) for sunflower metabolism experiment: prior to seeding, sunfower seeds were dressed with  [methylene-14C]imidacloprid formulated as the commercial 700g/kg (Gaucho WS70); 2) for LD50: with imidacloprid either as technical grade material (purity >98%) or as formulated ready-to- use products (700g/kg WG; 200 g/litre  SC imidacloprid); fed ad libitum in groups. observed for a total period of 48h.\n3) Sampling of foraging honeybees for residues of imidacloprid or metabolites on treated field:plots \ufeffwere drilled with imidacloprid-free sunflower seed or seeds dressed with the standard combined fungicide and imidacloprid 700g/kg  WS (150g AI/U), sampling happened 2-3 dyas after hive installment.\n4) for chronic experiments: Batches (2kg) of sunflower honey (Honig Mu\u00c8ngers- dorff, Cologne, Germany) weree fortifed with 0, 0.002, 0.005, 0.010 and 0.020mg/kg of technical imidacloprid. Honeybee colonies were chronically fed with the fortified honey",
+    "combined_score": 0.18322510569747086,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2817574471748733,
+      "Accuracy [GEval]": 0.2679178699175393
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output only describes the LD50 experiment with imidacloprid and omits details about the sunflower metabolism experiment, field residue sampling, and chronic exposure experiments present in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only partially addresses the LD50 experiment, mentioning the pesticide (imidacloprid), dose range, exposure method (oral), and that the exposure was acute. However, it omits key details such as the use of technical grade or formulated products, ad libitum feeding, group administration, and the 48-hour observation period. It does not mention the sunflower metabolism experiment, the field residue sampling, or the chronic exposure experiment, all of which are key points in the Expected Output. Thus, most key points are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output only describes the LD50 experiment, mentioning imidacloprid, the dose range, oral administration, and acute exposure. It omits key details from the expected output, such as the sunflower metabolism experiment, residue sampling, and chronic exposure experiments. Additionally, it lacks specifics about formulations, observation periods, and feeding methods. No incorrect information is present, but the response is incomplete and misses most of the required details."
+    },
+    "question_type": "pesticides",
+    "paper_id": "657",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "657",
+      "question_id": "pesticides",
+      "reviewer": "ER",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 224,
+    "name": "paper_518_case_217",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were chromium (as Cr(NO3)3), clothianidin, and propiconazole. The doses were 3.9 mg L<sup>-1</sup> for chromium, 0.074 mg L<sup>-1</sup> for clothianidin, and 700 mg L<sup>-1</sup> for propiconazole. The exposure method was oral ingestion, and the duration of exposure was assessed over 48 hours for synergistic effects and up to 96 hours for antagonistic effects.",
+    "expected_output": "The pesticides used in the study were clothianidin and propiconazole, administered via feeding for 2 hours. The volume of ingestion was calculated so that each bee received 0.74 ng of clothianidin and 7 ug of propiconazole, either alone or in combination. The effects of these acute oral exposures were assessed at 4, 24, 48, 72 and 96 h.",
+    "combined_score": 0.18378938951344023,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3437823499114202,
+      "Accuracy [GEval]": 0.20758581862890044
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly includes chromium, gives different doses and exposure durations, and omits details about per-bee dosing and specific time points present in Expected Output.",
+      "Completeness [GEval]": "The Actual Output correctly identifies clothianidin and propiconazole as pesticides used, but incorrectly includes chromium, which is not in the Expected Output. It provides incorrect doses (mg/L instead of per bee amounts) and omits the specific administration details (feeding for 2 hours, calculated ingestion per bee). The exposure method is generally correct (oral ingestion), but the timing is partially addressed: 48 and 96 hours are mentioned, but not the full range (4, 24, 48, 72, 96 h). The Actual Output also fails to mention that exposures were given alone or in combination. Overall, several key points are missing or incorrect.",
+      "Accuracy [GEval]": "The actual output contains significant discrepancies compared to the expected output. It incorrectly lists chromium as a pesticide used, which is not mentioned in the expected output. The doses and exposure durations do not match: the actual output gives concentrations in mg/L and durations of 48 and 96 hours, while the expected output specifies per-bee doses and a 2-hour feeding period with effects assessed at multiple time points. The actual output omits key details such as the per-bee dosing and the specific time points for assessment, and adds incorrect information about chromium and exposure method. Only the mention of clothianidin and propiconazole partially aligns with the expected output."
+    },
+    "question_type": "pesticides",
+    "paper_id": "518",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "518",
+      "question_id": "pesticides",
+      "reviewer": "ER",
+      "rating": 6
+    }
+  },
+  {
+    "test_case_index": 112,
+    "name": "paper_378_case_111",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were clothianidin and thiamethoxam. The exposure method was through honey bees collecting contaminated pollen and nectar during corn planting. The duration of exposure was significant immediately after planting but declined to pre-planting levels within one week.",
+    "expected_output": "No pesticides were directly used in the study. The study identified pesticides in the honey bee pollen after before, during, immediately after corn planting, and 2 weeks after planting with insecticides.",
+    "combined_score": 0.1849141958286843,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3047425874860529,
+      "Accuracy [GEval]": 0.25
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that pesticides were used in the study and specifies clothianidin and thiamethoxam, while Expected Output clarifies that no pesticides were directly used; Actual Output also omits the full sampling timeline and misrepresents the exposure method.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that clothianidin and thiamethoxam were used in the study, while the Expected Output clarifies that no pesticides were directly used. The Actual Output does mention exposure through contaminated pollen and nectar and notes the timing of exposure, partially aligning with the Expected Output's mention of pesticide detection before, during, and after planting. However, it omits the detail that pesticides were only identified in pollen samples and does not specify the time points as clearly as the Expected Output. Key points about the absence of direct pesticide application and the specific sampling times are missing or inaccurate.",
+      "Accuracy [GEval]": "The actual output incorrectly states that clothianidin and thiamethoxam were used in the study, while the expected output clarifies that no pesticides were directly used. The actual output also misrepresents the exposure method, implying intentional exposure rather than detection of pesticides in pollen. While both outputs mention timing around corn planting, the actual output omits the detail that samples were collected before, during, immediately after, and two weeks after planting. These discrepancies and omissions significantly affect accuracy."
+    },
+    "question_type": "pesticides",
+    "paper_id": "378",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "378",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 262,
+    "name": "paper_666_case_231",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study are: \n1. Imidacloprid - Dose: 0.13 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 3.2 days to reach LD50.\n2. Thiacloprid - Dose: 90.5 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 782.3 days to reach LD50.\n3. Deltamethrin - Dose: 3.65 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 983.8 days to reach LD50.\n4. Esfenvalerate - Dose: 5.52 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 14,234.1 days to reach LD50.\n5. Sulfoxaflor - Dose: 0.71 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 92.9 days to reach LD50.",
+    "expected_output": "Six insecticides were tested using oral feeding method (ad libitum) for 48 hours (or until the bees died if <48h):\n\n1-Imidacloprid (Confidor SL 20% W/V ). Dose: between 0.05 and 3 ppm .\n2-Thiacloprid (Calypso SC, 48% W/V). Dose: between 150 to 800 ppm.\n3-Deltamethrin (Decis Protech EW, 1.5% W/V). Dose: between 2.04 and 73.53 ppm.\n4-Esfenvalerate (Sumifive\u00ae Plus EW, 5% W/V). Dose: between 5.6 and 56.2 ppm.\n5- Sulfoxaflor (Closer\u00ae SC EW 11.43% W/W). Dose: between 0.9 and 3 ppm.\n6- Bacillus thuringiensis ssp. kurstaki (Btk) (DiPel\u00ae DF WG, 54% W/W, strain ABTS-351 (32 mill. CLU/g). Dose:between 54 and 54,000 ppm.",
+    "combined_score": 0.1870105929471354,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3048141287528264,
+      "Accuracy [GEval]": 0.25621765008857983
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists only five pesticides, omits Bacillus thuringiensis, uses different dose units (ng a.i./Bee/Day vs ppm), and does not mention the oral feeding method or 48-hour exposure; Expected Output specifies six insecticides, their commercial names, dose ranges in ppm, and the method.",
+      "Completeness [GEval]": "The Actual Output lists only five pesticides, omitting Bacillus thuringiensis ssp. kurstaki (Btk) entirely, which is a key point in the Expected Output. It provides specific dose and exposure details, but these are in different units (ng a.i./Bee/Day and days to LD50) rather than the ppm dose ranges and product formulations required. The oral feeding method and 48-hour exposure duration are also missing. Thus, several key points are incomplete or missing.",
+      "Accuracy [GEval]": "The actual output lists only five pesticides instead of six, omitting Bacillus thuringiensis ssp. kurstaki (Btk) entirely. It provides specific dose values (ng a.i./Bee/Day) and exposure durations, which differ from the expected output's dose ranges (ppm) and do not mention the oral feeding method or the 48-hour exposure period. The actual output also lacks product names and formulations. While some pesticide names overlap, key details are missing or misrepresented, resulting in significant informational discrepancies."
+    },
+    "question_type": "pesticides",
+    "paper_id": "666",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "666",
+      "question_id": "pesticides",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 74,
+    "name": "paper_790_case_38",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study include Imidacloprid, C-29, and compound 3a. The doses were as follows: Imidacloprid at 0.921 mg L<sup>-1</sup>, C-29 at 0.426 mg L<sup>-1</sup>, and compound 3a at 3.335 mg L<sup>-1</sup> against cowpea aphids. The exposure method is inferred to be liquid application, and the duration of exposure was typically assessed after 24 hours, although specific durations were not consistently detailed.",
+    "expected_output": "This study uses 18 different pesticides including imidacloprid, C-29 and sixteen novel synthesised seven-membered aza-bridged neonicotinoid analogues (1a-1b,2a-2f,3a-3b.4a-4d,5a-5b). These are used against the cow pea aphid at two doses 100mg/L and 20mg/L. A subset of the pesticides(1a,2a,3a,3b, imidacloprid, C-29) as well as NTN32692 were used agianst honey bees. \n\nCow pea aphid were exposed to leaves dipped in the compounds for 24 h, mortality was then recorded. \n\nFor the contact bioassay, bees were exposed to 1ul on the pronotum. For the oral assay, bees were given ad libitum access to a cotton soaked in Twee80, 33% honeywater and the pesticide of choice. Neither doses or concentrations are specified in the paper.",
+    "combined_score": 0.1889961732739082,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.30474258740190474,
+      "Accuracy [GEval]": 0.2622459324198198
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output only mentions 3 pesticides and specific doses, while Expected Output lists 18 pesticides, two doses, and details on both aphid and bee assays. Actual Output omits key elements such as the full pesticide list, bee assay methods, and correct exposure details.",
+      "Completeness [GEval]": "The Actual Output mentions only three pesticides (Imidacloprid, C-29, and 3a), omitting the full list of 18 pesticides and the novel analogues specified in the Expected Output. It provides specific doses for the three mentioned compounds, but these do not match the two standard doses (100mg/L and 20mg/L) described in the Expected Output. The Actual Output notes cowpea aphid as the target and infers liquid application, but does not specify the leaf-dip method or the 24-hour exposure as clearly as required. It also omits details about the honey bee assays, including the subset of compounds tested, the contact and oral bioassay methods, and the lack of specified doses for bees. Overall, several key points are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output lists only three pesticides (Imidacloprid, C-29, and 3a), omitting the other 15 novel analogues mentioned in the expected output. It provides specific doses (e.g., 0.921 mg/L), which do not match the expected doses (100 mg/L and 20 mg/L) and contradicts the note that the paper did not specify concentrations for bee assays. The actual output infers a liquid application method, while the expected output specifies leaf-dip for aphids and detailed bee exposure methods. The actual output also lacks information about the honey bee assays and the use of NTN32692. These discrepancies indicate significant omissions and factual inaccuracies."
+    },
+    "question_type": "pesticides",
+    "paper_id": "790",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "790",
+      "question_id": "pesticides",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 148,
+    "name": "paper_448_case_102",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "No pesticide was tested, the study used literature data from Apis mellifera.",
+    "combined_score": 0.18927770296241717,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2562176500885798,
+      "Accuracy [GEval]": 0.31161545879867164
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states 'Information not found in the provided text' while Expected Output specifies that no pesticide was tested and literature data from Apis mellifera was used; the responses do not match.",
+      "Completeness [GEval]": "The Actual Output correctly indicates that the information is not present in the provided text, which partially aligns with the Expected Output's implication that no pesticide was tested. However, it fails to mention the use of literature data from Apis mellifera, missing a key detail from the Expected Output.",
+      "Accuracy [GEval]": "The actual output correctly indicates that the information was not found, which partially aligns with the expected output's implication that no pesticide was tested. However, it omits the important detail that the study used literature data from Apis mellifera, which is present in the expected output. This omission affects the completeness and accuracy of the response."
+    },
+    "question_type": "pesticides",
+    "paper_id": "448",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "448",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 230,
+    "name": "paper_429_case_193",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were: \n1. Cypermethrin 10% EC - Dose: 65 g a.i./ha, Exposure Method: Sprayed, Duration: 2 days.\n2. Imidacloprid 17.8% SL - Dose: 20 g a.i./ha, Exposure Method: Sprayed, Duration: 2 days.\n3. Fipronil 5% SC - Dose: 45 g a.i./ha, Exposure Method: Sprayed, Duration: 1 day.\n4. Indoxacarb 14.5% SC - Dose: 44 g a.i./ha, Exposure Method: Sprayed, Duration: 4 days.",
+    "expected_output": "The pesticides used in the study were: \n1. Cypermethrin 10% EC - Dose: 65 g a.i./ha, Concentration 0.10%\n2. Imidacloprid 17.8% SL - Dose: 20 g a.i./ha, Concentration 0.02% \n3. Fipronil 5% SC - Dose: 45 g a.i./ha, Concentration 0.20% \n4. Indoxacarb 14.5% SC - Dose: 44 g a.i./ha, Concentration 0.06% \n5. Azadirachtin 0.15%, Dose 5 ml/l, Concentration 50%\n6. Dimethoate 30% EC, Dose 200 g.a.i/ha, Concentration 0.10%\nThe exposure method for all was spraying at the point of 50% blooming. The observations of bees orccured the day before the spray, day of and every day thereafter upto 9 days post spray",
+    "combined_score": 0.1942136014106406,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.309534945782972,
+      "Accuracy [GEval]": 0.2731058584489497
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits pesticides 5 and 6, does not include concentration values, and lacks details about observation timing and spraying method present in Expected Output.",
+      "Completeness [GEval]": "The Actual Output lists only 4 pesticides, omitting Azadirachtin and Dimethoate from the Expected Output. It provides dose information but omits the required concentration values for each pesticide. The Actual Output includes exposure method and duration per pesticide, but does not specify that all were sprayed at 50% blooming or the observation schedule for bees. Several key points from the Expected Output are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output lists only 4 pesticides, omitting Azadirachtin and Dimethoate present in the expected output. It provides dose and exposure duration but omits concentration values, which are included in the expected output. The method and timing of exposure are partially mentioned but lack the detail about spraying at 50% blooming and the observation schedule. While some factual details match, there are significant omissions and discrepancies."
+    },
+    "question_type": "pesticides",
+    "paper_id": "429",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "429",
+      "question_id": "pesticides",
+      "reviewer": "BN",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 112,
+    "name": "paper_237_case_87",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were clothianidin and imidacloprid. The doses for clothianidin were 2.5, 5, 10, 20, 40, and 80 \u03bcg/L, while imidacloprid was tested at 100 ppb. The exposure method involved foragers collecting sucrose solution from feeders containing these concentrations. The duration of exposure varied, with halving times exceeding 165 minutes at lower concentrations and decreasing to about half an hour at 80 \u03bcg/L.",
+    "expected_output": "The authors tested only clothianidin. This was provided at 2.5, 5, 10, 20, 40, and 80 \u00b5g/L, chronically (165-200mins) in a sucrose backdrop.",
+    "combined_score": 0.1979274499704734,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3437823499114202,
+      "Accuracy [GEval]": 0.25
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that both clothianidin and imidacloprid were tested, while Expected Output specifies only clothianidin was tested; Actual Output also mentions imidacloprid at 100 ppb, which is not in Expected Output.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that both clothianidin and imidacloprid were tested, while the Expected Output specifies only clothianidin. The Actual Output does correctly list the clothianidin doses and describes the exposure method and duration, but introduces an error by mentioning imidacloprid and its dose, which is not part of the Expected Output. The duration and sucrose backdrop are addressed, but the inclusion of incorrect information and lack of clarity on chronic exposure reduce alignment.",
+      "Accuracy [GEval]": "The actual output incorrectly states that both clothianidin and imidacloprid were tested, while the expected output specifies only clothianidin was used. The actual output provides correct dose ranges for clothianidin and mentions exposure duration, but introduces factual inaccuracies by including imidacloprid and an incorrect dose for it. There are significant discrepancies in the pesticides tested, which is a key detail."
+    },
+    "question_type": "pesticides",
+    "paper_id": "237",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "237",
+      "question_id": "pesticides",
+      "reviewer": "KW",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 216,
+    "name": "paper_521_case_212",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study was imidacloprid (Advise 2FI). The doses were 0.001 mg/L and 1 mg/L with exposure twice a week for 52 days, and 4.3 mg/L with exposure once a week for three weeks.",
+    "expected_output": "The pesticide used was imidacloprid and it was applied as formulation (Advise 2FI). The pesticide was applied topically using a spray tower and the concentrations tested were 0.00021, 0.21, 0.92, 17.12, 40.66, 58.64, 67.41, 118.13, 206.94 mg/L, corresponding to 0.00034, 0.34, 1.45, 26.96, 64.04, 92.35, 106.17, 186.05, 325.93 ng/bee of active ingredient imidacloprid. At the two lowest concentrations, exposure occurred twice a week for three weeks, or 7-8 weeks. They also state that \"in another similar test, bees were sprayed once a week for three weeks\", but it is unclear which experiment this refers to. To test the effect of imidacloprid on bee body weight, they sprayed bees with diluted formulation corresponding to 274 and 552 mg/l active ingredient (probably only once, although this is not specified).",
+    "combined_score": 0.19865751305494708,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3182425530473722,
+      "Accuracy [GEval]": 0.2777299861174691
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits key details from Expected Output, such as the full range of concentrations (0.00021 to 206.94 mg/L), application method (spray tower), per bee dosages, and details about the body weight experiment; it also gives different exposure durations and frequencies.",
+      "Completeness [GEval]": "The Actual Output correctly identifies the pesticide (imidacloprid, Advise 2FI) and mentions some exposure doses and frequencies. However, it omits key details such as the full range of concentrations tested, the method of application (spray tower, topical), the specific per-bee dosages, and the additional experiments related to body weight. The Actual Output also lacks clarification about the exposure durations and does not address the ambiguity noted in the Expected Output. Overall, several important key points are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output correctly identifies the pesticide (imidacloprid, Advise 2FI) and mentions exposure frequencies and durations, but omits key details such as the full range of concentrations tested, the topical spray application method, and the specific per-bee dosages. It also simplifies the exposure schedule and does not mention the additional high-dose tests or the ambiguity in the original study. There are significant omissions and some inaccuracies in the dosing and exposure details compared to the expected output."
+    },
+    "question_type": "pesticides",
+    "paper_id": "521",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "521",
+      "question_id": "pesticides",
+      "reviewer": "LH",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 214,
+    "name": "paper_532_case_210",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study is acetamiprid, with recommended doses of 50-500 mg/L and an LC50 value of 188.49 mg/L for honeybee larvae exposed over 72 hours. Flumethrin is also mentioned, but specific dose and exposure duration details are not provided.",
+    "expected_output": "The pesticide used in the study is acetamiprid, 0, 5, and 25 mg/L. The authors used a commercial product: the water-dispersible granules of acetamiprid, with the following composition: 70% acetamiprid, 2% naphthalenesulfonic acid-formaldehyde condensate, 4% ZX-D9\uff08disintegrating agent, 12% bentonite, 2% wetting agent M (wetting agents), and 10% ammonium chloride. The pesticide was delivered as food to honeybee larvae from 2-day-old for four days until capped. The volume of food delivered was gradually elevated from 1.5 to 3 \u03bcL by 0.5 \u03bcL every day.",
+    "combined_score": 0.20320751873139523,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.29770226320971077,
+      "Accuracy [GEval]": 0.31192029298447493
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output omits specific concentrations (0, 5, 25 mg/L), detailed composition, and exposure method (food delivery, duration, and volume) present in Expected Output, and adds unrelated LC50 and flumethrin information.",
+      "Completeness [GEval]": "The Actual Output correctly identifies acetamiprid as the pesticide used and mentions an LC50 value, but it omits key details from the Expected Output, such as the specific concentrations tested (0, 5, and 25 mg/L), the commercial product composition, the method of delivery (as food to 2-day-old larvae for four days), and the gradual increase in food volume. The mention of flumethrin is not relevant to the Expected Output. Overall, several critical details are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output correctly identifies acetamiprid as the pesticide and provides the LC50 value, but it omits key details from the expected output, such as the specific doses used (0, 5, and 25 mg/L), the commercial product composition, the method of delivery, and the exposure duration (four days from 2-day-old larvae). It also mentions flumethrin, which is not referenced in the expected output, introducing an inaccuracy. Overall, the response contains some correct information but lacks several important specifics and includes an extraneous detail."
+    },
+    "question_type": "pesticides",
+    "paper_id": "532",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "532",
+      "question_id": "pesticides",
+      "reviewer": "ER",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 208,
+    "name": "paper_532_case_209",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study is acetamiprid, with recommended doses of 50-500 mg/L and an LC50 value of 188.49 mg/L for honeybee larvae exposed over 72 hours. Flumethrin is also mentioned, but specific dose and exposure duration details are not provided.",
+    "expected_output": "The pesticide tested was acetamiprid and the concentrations were 0, 5 and 25 mg/L. Larvae were orally exposed via sucrose solution for four days.",
+    "combined_score": 0.20329451838395798,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.30229773694082424,
+      "Accuracy [GEval]": 0.3075858182110497
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists incorrect dose range (50-500 mg/L, LC50 188.49 mg/L) instead of 0, 5, 25 mg/L, and gives wrong exposure duration (72 hours) instead of four days; also mentions flumethrin, which is not in Expected Output.",
+      "Completeness [GEval]": "The Actual Output correctly identifies acetamiprid as the pesticide used, partially aligning with the Expected Output. However, it fails to mention the specific concentrations tested (0, 5, and 25 mg/L), the oral exposure method via sucrose solution, and the four-day exposure duration. Instead, it provides unrelated information about recommended doses, LC50, and mentions flumethrin, which is not relevant to the key points. Several key details from the Expected Output are missing or incomplete.",
+      "Accuracy [GEval]": "The actual output correctly identifies acetamiprid as the pesticide used, but it provides incorrect concentration ranges (50-500 mg/L and LC50 of 188.49 mg/L) instead of the expected 0, 5, and 25 mg/L. It also omits the exposure method (oral via sucrose solution) and the correct exposure duration (four days, not 72 hours). The mention of flumethrin is extraneous and not present in the expected output, further reducing accuracy."
+    },
+    "question_type": "pesticides",
+    "paper_id": "532",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "532",
+      "question_id": "pesticides",
+      "reviewer": "LH",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 198,
+    "name": "paper_437_case_180",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were imidacloprid and clothianidin. The doses were: imidacloprid (median: 3 \u00b5g/kg in soils, 168 \u00b5g/kg in soybean flowers in 2018) and clothianidin (median: 27 \u00b5g/kg in treated fields, 20 \u00b5g/kg in previously-treated fields). The exposure method involved sampling soils and flowers from treated and previously-treated fields, and the duration of exposure was over two years (2017 and 2018).",
+    "expected_output": "In both years of the study, fields were sown with soybeans at a target planting rate of 445, 000 seeds per ha, with rows spaced 46cm apart. Neonicotinoid treated fields were sown with imidacloprid seed treatments at a rate of 0.10 kg AI/ha in the formulation Gaucho (Bayer Crop Science). Fields were either untreated (no prior neonicotinoid use), previously-treated (last use of neonicotinoids in 2016) or treated (continuously cropped with neonicotinoid seeds for >5 years).",
+    "combined_score": 0.20717077884826063,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3437823499114202,
+      "Accuracy [GEval]": 0.2777299866333616
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output focuses on pesticide types, doses, and exposure methods, but omits key details from Expected Output such as planting rate, row spacing, seed treatment rate, formulation, and specific field treatment history.",
+      "Completeness [GEval]": "The Actual Output correctly identifies the pesticides (imidacloprid and clothianidin), provides some dose information, and mentions sampling from treated and previously-treated fields over two years. However, it omits key details from the Expected Output, such as the soybean planting rate, row spacing, specific seed treatment rate (0.10 kg AI/ha), the formulation used (Gaucho), and the definition of untreated fields. The classification of field types is only partially addressed, and important methodological specifics are missing.",
+      "Accuracy [GEval]": "The actual output mentions the pesticides used (imidacloprid and clothianidin), their doses, exposure method, and duration, but omits key details from the expected output such as the soybean planting rate, row spacing, specific seed treatment rate (0.10 kg AI/ha), formulation (Gaucho), and the precise definitions of field treatment categories. It also adds some information about residue levels not present in the expected output. This results in partial alignment but significant omissions and some extraneous details."
+    },
+    "question_type": "pesticides",
+    "paper_id": "437",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "437",
+      "question_id": "pesticides",
+      "reviewer": "BN",
+      "rating": 4
+    }
+  }
+]

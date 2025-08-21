@@ -1,0 +1,578 @@
+[
+  {
+    "test_case_index": 255,
+    "name": "reviewer_comparison_586_case_244",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "They emphasize that their results provide evidence that effects cannot be extrapolated from one neonicotinoid to another.",
+    "expected_output": "The discussion emphasizes the importance of understanding the specific risks of neonicotinoids to bee populations, as these insects are vital for pollination and food security. The findings suggest that different neonicotinoids have varying effects on bee behavior and colony health, which is crucial for informing pesticide regulation and ensuring the sustainability of pollinator populations.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Faithfulness": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.00 because the actual output fails to acknowledge the possibility of extrapolation between neonicotinoids, as indicated by the retrieval context, which highlights the higher potency of clothianidin at nicotinic acetylcholine receptors."
+    },
+    "question_type": "significance",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "significance",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 8,
+      "rev2_rating": 6
+    }
+  },
+  {
+    "test_case_index": 290,
+    "name": "reviewer_comparison_516_case_269",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper discusses the need to understand effects of pesticides and metabolism for efficient protection of managed and wild pollinators.",
+    "expected_output": "The exposure to the imidacloprid resulted in 45% mortality rate and caused abnormal behaviours on honey bees. The study showed contrasting results for previous studies of honey bees, but consistent for other bee species. The residual analysis showed that 1-6% remains in the honey bee body, and the amount of imidacloprid detected in the bee body declined with time, showing a half-life of 7.6 days. Additionally, the authors highlight that trembling, restlessness, apathy and falling over may be more sensitive endpoints than walking for assessing sublethal effects.",
+    "combined_score": 0.10608085049721784,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.11824255149165352,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output gives a general summary about the need to understand pesticide effects but omits all specific findings from the Expected Output, such as mortality rate, abnormal behaviors, residual analysis, and sensitive endpoints.",
+      "Completeness [GEval]": "The Actual Output only mentions the general need to understand pesticide effects and metabolism for pollinator protection, but does not address any of the specific findings from the Expected Output, such as the 45% mortality rate, abnormal behaviors, residual analysis, half-life, or the identification of sensitive endpoints. Nearly all key points are missing.",
+      "Accuracy [GEval]": "The Actual Output only broadly mentions the need to understand pesticide effects and metabolism for pollinator protection, but omits all key details from the Expected Output, such as the 45% mortality rate, abnormal behaviors, residual analysis, half-life, and specific behavioral endpoints. There is a significant lack of factual alignment and detail, with no mention of imidacloprid or the study's findings."
+    },
+    "question_type": "significance",
+    "paper_id": "516",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "516",
+      "question_id": "significance",
+      "rev1": "RT",
+      "rev2": "LH",
+      "rev1_rating": 2,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 319,
+    "name": "reviewer_comparison_005_case_297",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the importance of honey bees to both ecological balance and agricultural productivity, detailing the concerning trends in their health and population decline. It stresses the need for further research and action to mitigate the factors affecting bee health, which is crucial for sustaining pollination services.",
+    "expected_output": "This study found that the residues of thiamethoxam and its primary metabolite in pollen and nectar collected by bees foraging exclusively on crops that had been treated with a thiamethoxam seed dressing are typically low. Residues found in hive products were consistently even lower than that observed in pollen and nectar, indicating dilution or degradation. There is also nomcarry over from the same pesticide treatment used in two subsequent crop rotations. Over the four year study tehre was no observable diffrence between experimental and control hives in any of the measures monitored. \n\nOverall no detrimental effects of field-realistic exposure to pollen and nectar from the crops that received a seed treatment of thiamethoxam were observed, indicating a low-risk to foraging honeybees.",
+    "combined_score": 0.1301550179866531,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.19046505395995927,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output gives a general summary about honey bee importance and threats but does not mention any of the specific findings from the Expected Output, such as residue levels, lack of carryover, or the absence of detrimental effects from thiamethoxam seed treatment, thus failing to address the key points.",
+      "Completeness [GEval]": "The Actual Output provides a general summary about the importance of honey bees and the need for further research, but it does not address any of the specific findings from the Expected Output. Key points such as residue levels of thiamethoxam and its metabolite, lack of carryover, comparison between experimental and control hives, and the conclusion of low risk to honeybees are all missing. The Actual Output is generic and does not cover the detailed results or conclusions presented in the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output provides a general summary about the importance of honey bees and the need for further research, but it does not mention any of the specific findings from the Expected Output, such as residue levels of thiamethoxam, lack of carryover, or the absence of detrimental effects. There is a significant lack of factual alignment and detail, with only a vague thematic overlap regarding bee health."
+    },
+    "question_type": "significance",
+    "paper_id": "005",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "005",
+      "question_id": "significance",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 2,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 289,
+    "name": "reviewer_comparison_935_case_284",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The impact of multiple pesticides on honeybee colonies (amongst other elements)",
+    "expected_output": "The study highlights that acetamiprid sprays had no effects on honey bee behavior or mortality. In contrast, in certain years (but not all), exposure to deltamethrin had negative effects on honey bee behavior and increased mortality.",
+    "combined_score": 0.13162031622499804,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.19626731115849663,
+      "Accuracy [GEval]": 0.1985936375164975
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions the general impact of multiple pesticides and does not specify the findings about acetamiprid and deltamethrin effects on honey bee behavior and mortality as detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only generally mentions the impact of multiple pesticides on honeybee colonies but does not specify the key findings from the Expected Output: that acetamiprid had no effects and that deltamethrin had negative effects in certain years. The Actual Output lacks these specific details, resulting in incomplete coverage of the key points.",
+      "Accuracy [GEval]": "The Actual Output only vaguely references the impact of multiple pesticides on honeybee colonies and does not specify the key findings about acetamiprid and deltamethrin as detailed in the Expected Output. It lacks factual consistency and omits critical details, resulting in poor alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "935",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "935",
+      "question_id": "significance",
+      "rev1": "SA",
+      "rev2": "HS",
+      "rev1_rating": 1,
+      "rev2_rating": 1
+    }
+  },
+  {
+    "test_case_index": 298,
+    "name": "reviewer_comparison_514_case_273",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper discusses the value of bumblebees as crop pollinators, specially for blueberries, and the imporance of reducing pesticide-related risks to bumblebees by using the least hamful alternatives. They also mention that current evidence is largely focused on honeybees, underlining the importance of bumblebee-focused studies.",
+    "expected_output": "All pesticides tested, except flubendiamide, promoted mortality in the contact test. The study showed toxic effects for spinoteram and deltamethrin when ingested orally. Deltamethrin also caused sublethal effects on food consumption, sex ratio and longevity. While flubendiamide and spinetoram did not show sublethal effects. Flubendiamide can be a safe option for B. impatiens.",
+    "combined_score": 0.13333333333333333,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.2
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output does not mention specific findings about pesticide effects, such as which pesticides caused mortality or sublethal effects, nor does it identify flubendiamide as a safe option, all of which are detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only generally discusses the importance of bumblebees as pollinators and the need to reduce pesticide risks, but does not address the specific findings from the Expected Output. It misses key points such as which pesticides caused mortality, the specific toxic and sublethal effects observed, and the identification of flubendiamide as a safe option. Only the general theme of pesticide risk is mentioned, with no detail on the study's results.",
+      "Accuracy [GEval]": "The Actual Output provides a general summary about the importance of bumblebees and reducing pesticide risks, but it omits nearly all specific findings from the Expected Output, such as the effects of individual pesticides (flubendiamide, spinetoram, deltamethrin) on mortality and sublethal effects. There is no mention of which pesticides were safe or harmful, nor any details about the experimental results. This shows a significant lack of factual consistency and alignment with the Expected Output."
+    },
+    "question_type": "significance",
+    "paper_id": "514",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "514",
+      "question_id": "significance",
+      "rev1": "RT",
+      "rev2": "LH",
+      "rev1_rating": 2,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 258,
+    "name": "reviewer_comparison_787_case_256",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the significance of stingless bees in Brazil's ecosystem and agriculture, advocating for the use of reduced-risk pesticides to protect their health and reproductive capacity. It also emphasizes the need for broader toxicological studies beyond honey bees to include native bee species, particularly stingless bees, due to their different exposure risks to pesticides, which is crucial for developing effective conservation strategies for pollinators.",
+    "expected_output": "Larval food intake and walking behaviour remained unaffected by either pesticide. Imidacloprid surprisingly casued lower mortality than the high doses of azadirachtin although it did cause weight loss. Azadirachtin also impaired the development of the reproductive system which could affect the maintenance of bee populations in the wild.",
+    "combined_score": 0.133944176299757,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.20293122321293017,
+      "Accuracy [GEval]": 0.19890130568634085
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output gives a general summary about the importance of stingless bees and the need for broader studies, but does not mention specific experimental findings such as effects on larval food intake, walking behaviour, mortality, weight loss, or reproductive system impairment as detailed in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output focuses on the broader significance of stingless bees, the need for reduced-risk pesticides, and the importance of toxicological studies, but it does not address the specific experimental findings from the Expected Output. Key points such as the unaffected larval food intake and walking behavior, the comparative mortality rates of imidacloprid and azadirachtin, imidacloprid-induced weight loss, and azadirachtin's impact on reproductive system development are all missing. Only the general concern for bee health and reproduction is tangentially referenced.",
+      "Accuracy [GEval]": "The Actual Output provides a general summary of the paper's themes, such as the importance of stingless bees and the need for broader toxicological studies, but it does not address the specific experimental findings detailed in the Expected Output. Key results\u2014such as the effects of imidacloprid and azadirachtin on mortality, weight loss, larval food intake, walking behavior, and reproductive system development\u2014are missing. This results in significant factual discrepancies and a lack of alignment with the Expected Output."
+    },
+    "question_type": "significance",
+    "paper_id": "787",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "787",
+      "question_id": "significance",
+      "rev1": "NN",
+      "rev2": "AB",
+      "rev1_rating": 2,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 296,
+    "name": "reviewer_comparison_513_case_274",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The authors highlight the importance of widening the perspective from honeybees only in risk assessments. They suggest a method to include lethal and sublethal effects of field-relevant concentrations on wild bees.",
+    "expected_output": "No lethal effects were observed after imidacloprid and clothianidin exposure. At the higher imidacloprid doses, larval development was delayed.",
+    "combined_score": 0.13775587805109682,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2037326883060512,
+      "Accuracy [GEval]": 0.20953494584723922
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output discusses broadening risk assessments and methods for wild bees, while Expected Output details specific experimental results (no lethal effects, delayed larval development at high doses); the Actual Output does not reflect the specific findings in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output does not address the specific findings from the Expected Output, such as the absence of lethal effects and the delayed larval development at higher imidacloprid doses. Instead, it focuses on the broader methodological approach and the importance of including wild bees in risk assessments, which are not mentioned in the Expected Output. Only the general topic of lethal and sublethal effects is tangentially referenced, but the key experimental results are missing.",
+      "Accuracy [GEval]": "The Actual Output discusses the general importance of including wild bees in risk assessments and mentions lethal and sublethal effects, but it does not provide the specific findings from the Expected Output. It omits the key details that no lethal effects were observed and that higher imidacloprid doses delayed larval development. This results in a lack of factual alignment and detail."
+    },
+    "question_type": "significance",
+    "paper_id": "513",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "513",
+      "question_id": "significance",
+      "rev1": "RT",
+      "rev2": "LH",
+      "rev1_rating": 3,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 342,
+    "name": "reviewer_comparison_524_case_315",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "An effect of 10 nM IMD impairing learning was observed by the second conditioning trial and persisted 24 h later. \nIn most other groups, exposure to IMD and TMX affected short term memory but not long-term memory. The results show that the negative impacts of low doses of IMD and TMX do not require long-term exposure and suggest that the effects of neonicotinoids on olfaction are greater than their impact on rewarding memories.",
+    "expected_output": "The paper discusses the physiological mechanisms behind which neonicotinoids influence bee foraging and learning.",
+    "combined_score": 0.1378648277815105,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.20758581815881838,
+      "Accuracy [GEval]": 0.2060086651857131
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides specific experimental results and conclusions about IMD and TMX effects, while Expected Output only mentions a general discussion of physiological mechanisms; there is no direct alignment in content or reasoning.",
+      "Completeness [GEval]": "The Actual Output provides specific experimental findings about the effects of IMD and TMX on bee learning and memory, but it does not address the key point from the Expected Output regarding the physiological mechanisms by which neonicotinoids influence bee foraging and learning. The Actual Output focuses on behavioral outcomes rather than underlying mechanisms, resulting in only a partial alignment.",
+      "Accuracy [GEval]": "The Actual Output provides specific experimental findings about the effects of IMD and TMX on learning and memory in bees, while the Expected Output requires a summary of the physiological mechanisms by which neonicotinoids influence bee foraging and learning. There is a factual disconnect: the Actual Output does not address physiological mechanisms or foraging, and instead focuses on behavioral outcomes. Thus, there is minimal alignment with the evaluation steps."
+    },
+    "question_type": "significance",
+    "paper_id": "524",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "524",
+      "question_id": "significance",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 10,
+      "rev2_rating": 6
+    }
+  },
+  {
+    "test_case_index": 297,
+    "name": "reviewer_comparison_515_case_279",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper discusses negative impacts of thiamethoxam on bees.",
+    "expected_output": "The paper underscores the detrimental effects of thiamethoxam and neonicotinoids on honey bee health and behavior, revealing significant reductions in foraging activity, brood area, nectar, and pollen stores. Based on LD50, thiamethoxam was proven toxic to adults and larvae of A. mellifera",
+    "combined_score": 0.16466377836961116,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2,
+      "Accuracy [GEval]": 0.29399133510883346
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions negative impacts of thiamethoxam on bees, omitting details about neonicotinoids, specific effects on foraging, brood area, nectar, pollen stores, and LD50 toxicity to adults and larvae found in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only mentions negative impacts of thiamethoxam on bees, missing several key points from the Expected Output: it does not mention neonicotinoids in general, specific effects on honey bee health and behavior, reductions in foraging activity, brood area, nectar, and pollen stores, or the LD50 toxicity findings for adults and larvae. Only a very general aspect is covered, with most details omitted.",
+      "Accuracy [GEval]": "The Actual Output only briefly mentions negative impacts of thiamethoxam on bees, lacking key details from the Expected Output such as effects on foraging activity, brood area, nectar and pollen stores, and the specific mention of toxicity to both adults and larvae based on LD50. It also omits reference to neonicotinoids more broadly. This results in a significant loss of factual detail and alignment."
+    },
+    "question_type": "significance",
+    "paper_id": "515",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "515",
+      "question_id": "significance",
+      "rev1": "RT",
+      "rev2": "LH",
+      "rev1_rating": 0,
+      "rev2_rating": 7
+    }
+  },
+  {
+    "test_case_index": 301,
+    "name": "reviewer_comparison_934_case_286",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The most signifcant finding discusses how imidacloprid toxicity can increase over time.",
+    "expected_output": "With this paper, the authors provide a toxicological model to explain the cumulative toxicity of imidacloprid in different insect species. The findings indicate that imidacloprid generally has delayed toxic effects, and its toxicity can increase over time. The authors recommend extending the observation period up to 10 days to detect potential negative effects of imidacloprid and suggest that compounds with delayed toxicity should be avoided due to the difficulties in assessing their negative impacts on pollinators.",
+    "combined_score": 0.16731135572105146,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.20373268838636904,
+      "Accuracy [GEval]": 0.2982013787767853
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions that imidacloprid toxicity can increase over time, omitting key points from the Expected Output such as the toxicological model, delayed toxic effects, recommendation to extend observation to 10 days, and the suggestion to avoid compounds with delayed toxicity.",
+      "Completeness [GEval]": "The Actual Output only mentions that imidacloprid toxicity can increase over time, which partially covers the finding about delayed and cumulative toxicity. However, it omits key points from the Expected Output, such as the toxicological model, the recommendation to extend the observation period to 10 days, and the suggestion to avoid compounds with delayed toxicity. Most of the expected details are missing.",
+      "Accuracy [GEval]": "The Actual Output only mentions that imidacloprid toxicity can increase over time, which is a partial reflection of the Expected Output. It omits key details such as the toxicological model, the delayed toxic effects, the recommendation to extend the observation period to 10 days, and the suggestion to avoid compounds with delayed toxicity. This results in a significant lack of alignment and factual completeness."
+    },
+    "question_type": "significance",
+    "paper_id": "934",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "934",
+      "question_id": "significance",
+      "rev1": "SA",
+      "rev2": "HS",
+      "rev1_rating": 2,
+      "rev2_rating": 6
+    }
+  },
+  {
+    "test_case_index": 268,
+    "name": "reviewer_comparison_810_case_255",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the urgent need to investigate how temperature modulates pesticide toxicity in beneficial insects, which is crucial for developing effective mitigation strategies against their declining populations",
+    "expected_output": "This study examines the effect of exposure to imidacloprid and sulfoxaflor on responsiveness, walking and flight behaviour. In addition the temperature dependence of these pesticide effects are also examined. No temperature dependent effects were observed for sulfaxolfor, whereas for imidacloprid, pesticide effects seem to decrease at higher temperature, except for the flying behaviour where imidcalporid exposed bees terminate their flights earlier at higher temperatures. This highlights potential interactions between temperature and pesticide effects that need to be taken into accoutn in the field.",
+    "combined_score": 0.19133243272668707,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2777299866333616,
+      "Accuracy [GEval]": 0.2962673115466995
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key details from the Expected Output, such as the specific pesticides (imidacloprid and sulfoxaflor), the behaviors measured (responsiveness, walking, flight), and the nuanced findings about temperature dependence for each pesticide. It only gives a general summary about temperature and pesticide toxicity, missing factual specifics and full coverage of all points.",
+      "Completeness [GEval]": "The Actual Output captures the general theme of temperature modulating pesticide toxicity in beneficial insects, aligning with the Expected Output's emphasis on temperature and pesticide interactions. However, it omits key details: it does not mention the specific pesticides (imidacloprid and sulfoxaflor), the behavioral endpoints studied (responsiveness, walking, flight), or the nuanced findings (no temperature effect for sulfoxaflor, decreased imidacloprid effects at higher temperatures except for flight). Thus, coverage is partial and lacks important specifics.",
+      "Accuracy [GEval]": "The Actual Output captures the general theme of temperature modulating pesticide toxicity in beneficial insects, which is consistent with the Expected Output. However, it lacks specific details such as the pesticides studied (imidacloprid and sulfoxaflor), the behavioral effects measured (responsiveness, walking, flight), and the nuanced findings regarding temperature dependence for each pesticide. The Actual Output is overly general and omits key results, leading to partial but not full alignment."
+    },
+    "question_type": "significance",
+    "paper_id": "810",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "810",
+      "question_id": "significance",
+      "rev1": "NN",
+      "rev2": "AB",
+      "rev1_rating": 1,
+      "rev2_rating": 5
+    }
+  },
+  {
+    "test_case_index": 303,
+    "name": "reviewer_comparison_014_case_290",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper discusses the significance of understanding the interactions between different plant protection products (PPPs) and their combined effects on beneficial insects, particularly honeybees. It emphasizes the complexity of these interactions, which can lead to unexpected harmful outcomes, thereby underscoring the need for careful evaluation of PPP mixtures in agricultural practices.",
+    "expected_output": "The behavioural studies described in this study did not reveal any negative effects of the pesticides used, either when exposure was to fungicide, insecticide or both together. Overall the study revealed that there should be no negative behavioural effects from field-realistic application of the particular pesticides used, at least when conditions in Europe are considered. Although at the highest dose a synergistic effect on mortality was observed,which is a cause for  concern and caution.",
+    "combined_score": 0.1951633786596536,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.30373268835959644,
+      "Accuracy [GEval]": 0.28175744761936433
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output summarizes general concerns about PPP interactions and the need for evaluation, but does not mention the key findings from the Expected Output: no negative behavioral effects at field-realistic doses, the exception of synergistic mortality at the highest dose, and the European context. It omits specific study results and thus does not fully address all points.",
+      "Completeness [GEval]": "The Actual Output addresses the general topic of PPP interactions and their potential risks to beneficial insects, aligning with the Expected Output's concern for combined effects. However, it fails to mention key findings from the Expected Output: the lack of negative behavioural effects at field-realistic doses, the specific mention of fungicide and insecticide exposures, and the observation of a synergistic effect on mortality at the highest dose. These omissions mean the Actual Output only partially covers the key points.",
+      "Accuracy [GEval]": "The Actual Output misrepresents the findings of the Expected Output by suggesting that the study found significant harmful effects and emphasizes the need for caution with PPP mixtures, whereas the Expected Output states that no negative behavioral effects were observed under field-realistic conditions, except for a synergistic effect on mortality at the highest dose. The Actual Output omits the key finding of no negative behavioral effects and overstates the general risk, leading to partial but not full alignment."
+    },
+    "question_type": "significance",
+    "paper_id": "014",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "014",
+      "question_id": "significance",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 4,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 263,
+    "name": "reviewer_comparison_589_case_245",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The authors state that there is an urgent need to understand the causes of pollinator declines, given the importance of pollinators on ecosystem services, but they do not clearly state how their study contributes to this.",
+    "expected_output": "The paper emphasizes the importance of understanding the effects of field-realistic concentrations of neonicotinoids on bumblebee health, which is critical for informing agricultural practices and protecting pollinator populations.",
+    "combined_score": 0.19682686399993243,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.29539380599738013,
+      "Accuracy [GEval]": 0.2950867860024172
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output focuses on the general need to understand pollinator declines but does not mention the study's emphasis on field-realistic neonicotinoid concentrations or its relevance to agricultural practices and pollinator protection, which are central in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output acknowledges the general importance of understanding pollinator declines, which partially aligns with the Expected Output's emphasis on pollinator health. However, it misses the specific focus on field-realistic concentrations of neonicotinoids, the relevance to agricultural practices, and the explicit link to protecting pollinator populations. Thus, several key points from the Expected Output are not addressed.",
+      "Accuracy [GEval]": "The Actual Output acknowledges the paper's focus on pollinator declines and their importance but fails to mention the specific emphasis on field-realistic concentrations of neonicotinoids and their effects on bumblebee health, which is central in the Expected Output. It also incorrectly claims the authors do not state how their study contributes, missing the paper's stated relevance to agricultural practices and pollinator protection."
+    },
+    "question_type": "significance",
+    "paper_id": "589",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "589",
+      "question_id": "significance",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 6,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 295,
+    "name": "reviewer_comparison_015_case_288",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of honey bees as key pollinators for biodiversity and agriculture, while highlighting the negative impacts of neonicotinoid pesticides on their locomotion and behavior. It stresses the need for understanding these effects to ensure bee health and ecosystem sustainability.",
+    "expected_output": "This study found that TMX exposure (both acute and chronic) increased movement towards the light. This could impact colony health as exposed bees might move out of the hive or remain outside and fail to perform their duties within the colony. \nAcute exposure was associated with impaired movements, such as bees falling over and failing to ascend the arena. Whereas chronic exposure only reduced the bees ability to ascend the arena. This again could impact colony health as workers might not return to the hive, forage or perform recruitment dances.",
+    "combined_score": 0.19802945806218175,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.30600866560649387,
+      "Accuracy [GEval]": 0.2880797085800514
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output gives a general summary about honey bees and neonicotinoids but omits specific findings from the Expected Output, such as increased movement towards light, impaired movements, and differences between acute and chronic exposure effects.",
+      "Completeness [GEval]": "The Actual Output broadly mentions the negative impacts of neonicotinoid pesticides on honey bee locomotion and behavior and the implications for bee health and ecosystem sustainability. However, it fails to address specific findings from the Expected Output, such as the distinction between acute and chronic TMX exposure, the increased movement towards light, and the detailed behavioral impairments (falling over, failing to ascend, reduced ability to ascend). The Actual Output lacks the nuanced discussion of how these effects could impact specific colony functions, resulting in incomplete coverage of key points.",
+      "Accuracy [GEval]": "The Actual Output provides a general summary about the importance of honey bees and the negative effects of neonicotinoids, but it lacks the specific experimental findings detailed in the Expected Output. It does not mention TMX exposure, the differences between acute and chronic effects, or the observed behavioral changes such as increased movement towards light, impaired movement, or failure to ascend. This results in a significant lack of alignment with the Expected Output's factual details."
+    },
+    "question_type": "significance",
+    "paper_id": "015",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "015",
+      "question_id": "significance",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 6,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 307,
+    "name": "reviewer_comparison_010_case_294",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of using the speed-curvature power law as a diagnostic tool to assess the sublethal impacts of pesticides on pollinators, particularly highlighting significant changes in the movement patterns of *B. terrestris* exposed to thiamethoxam. These findings are critical for understanding the broader ecological implications of pesticide use and the health of pollinator populations.",
+    "expected_output": "This study confirms that aversive training is a highly effective paradigm in sub-lethal pesticide trials. Sub-lethal concentrations of thiacloprid and sulfoxaflor did not effect the bees ability to respond to aversive training (reducing distance travellled to  reward) and were not associated with hyperactive behaviours. Bees treated with thiamethoxam however, did not develop an efficient route to the reward. This implies that sub-lethal treatment with thiamethoxam effects spatial learning and memory, which could impact foraging efficiency. They also increased their post-tarining speeds, implying hyperactivity. \n\nSub-lethal sulfloxaflor exposure was not found to effect any of the parameters measured, making it a good candidate to replace neonicotinoids. This paper also suggests that power law analyses might be a useful tool in detecting sub-lethal effects and could be applied to current assessment tools.",
+    "combined_score": 0.1993502904438159,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.29046505338155465,
+      "Accuracy [GEval]": 0.30758581794989304
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key findings from the Expected Output, such as the effects of thiacloprid and sulfoxaflor, the aversive training paradigm, and specific behavioral outcomes; it only partially mentions thiamethoxam and the power law tool, missing much of the content and intent.",
+      "Completeness [GEval]": "The Actual Output only partially addresses the key points from the Expected Output. It mentions the use of the speed-curvature power law as a diagnostic tool and highlights changes in movement patterns of B. terrestris exposed to thiamethoxam, which aligns with the discussion of power law analyses and thiamethoxam's effects. However, it omits several critical details: the effectiveness of aversive training, the lack of effect of thiacloprid and sulfoxaflor on bee behavior, the specific behavioral outcomes (such as hyperactivity and spatial learning deficits), and the suggestion that sulfoxaflor could replace neonicotinoids. Thus, the Actual Output is incomplete and misses most of the key points.",
+      "Accuracy [GEval]": "The Actual Output captures the general idea that the paper discusses the use of the speed-curvature power law as a diagnostic tool and notes the impact of thiamethoxam on bee movement. However, it omits key findings from the Expected Output, such as the effectiveness of aversive training, the lack of effect from thiacloprid and sulfoxaflor, the specific behavioral changes (like hyperactivity and impaired spatial learning) in thiamethoxam-treated bees, and the recommendation of sulfoxaflor as a neonicotinoid replacement. The summary is accurate in what it includes but is incomplete and lacks several critical details."
+    },
+    "question_type": "significance",
+    "paper_id": "010",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "010",
+      "question_id": "significance",
+      "rev1": "AH",
+      "rev2": "EA",
+      "rev1_rating": 7,
+      "rev2_rating": 8
+    }
+  },
+  {
+    "test_case_index": 283,
+    "name": "reviewer_comparison_937_case_281",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The authors suggest that their study shows that honey bee colony products can be used as a bioindicator of environmental pollution.",
+    "expected_output": "The study confirms that increasing the sprayed areas leads to higher residues of acetamiprid found in the colonies. At the same time, the authors suggest that the study shows that honey bee colony products can be used as bioindicators of environmental pollution. Finally, the authors highlight the difficulties involved in studying pesticide exposure in heterogeneous landscapes.",
+    "combined_score": 0.20059954046695708,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3,
+      "Accuracy [GEval]": 0.30179862140087127
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions the suggestion that honey bee colony products can be used as bioindicators, but omits the findings about increased residues with more sprayed areas and the challenges of studying pesticide exposure in heterogeneous landscapes, both of which are present in the Expected Output.",
+      "Completeness [GEval]": "The Actual Output only addresses one key point from the Expected Output: the suggestion that honey bee colony products can be used as bioindicators of environmental pollution. It omits the confirmation that increased sprayed areas lead to higher acetamiprid residues and does not mention the difficulties in studying pesticide exposure in heterogeneous landscapes. Thus, it only partially covers the required key points.",
+      "Accuracy [GEval]": "The Actual Output only mentions that honey bee colony products can be used as bioindicators, which is just one aspect of the Expected Output. It omits key findings such as the correlation between sprayed areas and acetamiprid residues, as well as the challenges of studying pesticide exposure in heterogeneous landscapes. This partial alignment results in a low score."
+    },
+    "question_type": "significance",
+    "paper_id": "937",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "937",
+      "question_id": "significance",
+      "rev1": "SA",
+      "rev2": "HS",
+      "rev1_rating": 4,
+      "rev2_rating": 9
+    }
+  },
+  {
+    "test_case_index": 245,
+    "name": "reviewer_comparison_592_case_237",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the need for holistic approaches including lab, semi-field and field data, as well as standardized methods to promote direct comparisons among labs.",
+    "expected_output": "The paper underscores the importance of understanding the impact of neonicotinoid insecticides on insect reproductive physiology, particularly for male wild bees, as this knowledge is crucial for assessing the overall fitness and population dynamics of bee species. It also emphasizes the need for standardized research methods to accurately assess the impact of neonicotinoids on solitary bees, highlighting that while no significant effects were found in their study, previous literature suggests potential risks. Furthermore, it calls for a holistic approach in evaluating the environmental risks of neonicotinoids, suggesting that favorable conditions can mask their effects, and stresses the need for further research on the impact of agrochemicals on male insects to better understand their role in global insect declines.",
+    "combined_score": 0.20077544204840514,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2985936370761447,
+      "Accuracy [GEval]": 0.30373268906907064
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key points from the Expected Output, such as the focus on neonicotinoid effects on male wild bees, the importance of reproductive physiology, the lack of significant effects found in the study, references to previous literature, and the need for further research on agrochemicals and male insects; it only mentions holistic approaches and standardized methods.",
+      "Completeness [GEval]": "The Actual Output mentions the need for holistic approaches and standardized methods, which partially aligns with the Expected Output's emphasis on these points. However, it omits several key details: the focus on neonicotinoid impacts on male wild bee reproductive physiology, the importance of this knowledge for population dynamics, the lack of significant effects found in the study versus previous literature, the masking of effects by favorable conditions, and the call for further research on agrochemicals' impact on male insects. Thus, the Actual Output addresses only a small subset of the Expected Output's key points.",
+      "Accuracy [GEval]": "The Actual Output captures the call for holistic approaches and standardized methods, which aligns partially with the Expected Output. However, it omits key details such as the focus on neonicotinoid impacts on male wild bees, the importance of reproductive physiology, the lack of significant effects found in the study, references to previous literature suggesting risks, and the need for further research on agrochemicals and insect declines. The summary is incomplete and lacks several critical points present in the Expected Output."
+    },
+    "question_type": "significance",
+    "paper_id": "592",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "592",
+      "question_id": "significance",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 10,
+      "rev2_rating": 10
+    }
+  },
+  {
+    "test_case_index": 271,
+    "name": "reviewer_comparison_586_case_244",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "They emphasize that their results provide evidence that effects cannot be extrapolated from one neonicotinoid to another.",
+    "expected_output": "The discussion emphasizes the importance of understanding the specific risks of neonicotinoids to bee populations, as these insects are vital for pollination and food security. The findings suggest that different neonicotinoids have varying effects on bee behavior and colony health, which is crucial for informing pesticide regulation and ensuring the sustainability of pollinator populations.",
+    "combined_score": 0.2008779981123433,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.2989013057632526,
+      "Accuracy [GEval]": 0.30373268857377733
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output only mentions that effects cannot be extrapolated between neonicotinoids, but omits key points from the Expected Output such as the importance to bee populations, pollination, food security, and implications for pesticide regulation.",
+      "Completeness [GEval]": "The Actual Output addresses the point that effects cannot be extrapolated between neonicotinoids, which partially covers the Expected Output's mention of varying effects on bee behavior and colony health. However, it omits key points about the importance of bees for pollination and food security, the implications for pesticide regulation, and the broader significance for pollinator sustainability. Thus, coverage is incomplete.",
+      "Accuracy [GEval]": "The Actual Output captures the idea that effects cannot be extrapolated between neonicotinoids, which aligns with the Expected Output's point about varying effects. However, it omits key factual details such as the specific risks to bee populations, the importance of bees for pollination and food security, and the implications for pesticide regulation and sustainability. This results in a partial but incomplete alignment."
+    },
+    "question_type": "significance",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "significance",
+      "rev1": "AJ",
+      "rev2": "LH",
+      "rev1_rating": 8,
+      "rev2_rating": 6
+    }
+  },
+  {
+    "test_case_index": 287,
+    "name": "reviewer_comparison_946_case_283",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The main finding is that exposure to pesticides changed the chemical profiles of the larvae, whcih changed their chemical communciation.",
+    "expected_output": "The main findings of the paper are that honey bee larvae fed with sublethal doses of dimethoate or clothianidin, or with lipopolysaccharide (LPS), exhibited changes in their chemical profiles (CHC). The effects were more pronounced with the pesticides compared to LPS. Importantly, the experiment demonstrated that larvae exposed to pesticides or LPS were rapidly detected and actively removed from the colony by nurse bees. The authors emphasize that CHCs may serve as short-range signals to mark honey bee larvae exposed to xenobiotics.",
+    "combined_score": 0.20200288832510757,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.3,
+      "Accuracy [GEval]": 0.3060086649753227
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output omits key findings from the Expected Output, such as the specific chemicals used (dimethoate, clothianidin, LPS), the comparison of effects, the removal of larvae by nurse bees, and the role of CHCs as signals; it only mentions changes in chemical profiles and communication.",
+      "Completeness [GEval]": "The Actual Output mentions that pesticide exposure changed the chemical profiles of larvae and affected their chemical communication, partially covering the finding about CHC changes. However, it omits key details from the Expected Output: it does not specify the types of pesticides (dimethoate, clothianidin) or LPS, does not mention that the effects were more pronounced with pesticides, and fails to note the behavioral response (nurse bees detecting and removing affected larvae). The role of CHCs as short-range signals is also missing. Thus, the Actual Output only partially covers the key points.",
+      "Accuracy [GEval]": "The Actual Output captures the general idea that pesticide exposure alters larvae chemical profiles and communication, but omits key details from the Expected Output. It does not specify the types of pesticides (dimethoate, clothianidin), the use of LPS, the comparative effects, or the critical behavioral finding that nurse bees detect and remove affected larvae. The role of CHCs as signals is also missing. Thus, the response is incomplete and lacks important factual specifics."
+    },
+    "question_type": "significance",
+    "paper_id": "946",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "946",
+      "question_id": "significance",
+      "rev1": "SA",
+      "rev2": "HS",
+      "rev1_rating": 1,
+      "rev2_rating": 3
+    }
+  },
+  {
+    "test_case_index": 312,
+    "name": "reviewer_comparison_521_case_309",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "Concentrations \u226580 mg/L of the imidacloprid formulation Advise 2FI significantly reduced bee survival.  The body weight of imidacloprid\u2010treated bees (at LC20 and LC50) was also significantly reduced. Enzymatic analysis showed higher phenoloxidase activity in bees treated with higher concentrations for 3 weeks, but no significant differences were found between treated and control groups in GST, AchE and esterase activity.",
+    "expected_output": "By combining lethality measurements with physioloigical measurements, the study shows that bees exposed to imidacloprid recover slower than bees exposed to pyrethroids, and argue that this shows that assessments may need to be longer than 48 h and include measurements of sublethal endponds to capture important effects.",
+    "combined_score": 0.20553953524051152,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.314804719803169,
+      "Accuracy [GEval]": 0.30181388591836567
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output summarizes specific experimental results (bee survival, body weight, enzyme activity) but does not mention the comparison between imidacloprid and pyrethroids, recovery rates, or the study's argument about assessment duration and sublethal endpoints, which are central to the Expected Output.",
+      "Completeness [GEval]": "The Actual Output summarizes some experimental findings, such as reduced survival and body weight, and changes in enzyme activity, but does not mention the comparison between imidacloprid and pyrethroids, nor the study's argument for longer assessment periods and inclusion of sublethal endpoints. Thus, it only partially covers the key points from the Expected Output.",
+      "Accuracy [GEval]": "The Actual Output provides specific findings about imidacloprid's effects on bee survival, body weight, and enzyme activity, which are factually correct but do not address the key comparative point in the Expected Output regarding recovery rates between imidacloprid and pyrethroids. It also omits the study's conclusion about the need for longer assessments and sublethal endpoints. Thus, while some relevant details are present, major points from the Expected Output are missing."
+    },
+    "question_type": "significance",
+    "paper_id": "521",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "521",
+      "question_id": "significance",
+      "rev1": "LH",
+      "rev2": "ER",
+      "rev1_rating": 5,
+      "rev2_rating": 1
+    }
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 0,
+    "name": "paper_594_case_1",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should investigate the intricate relationships between environmental factors and honey bee gene regulation, particularly under hive conditions. It should also explore how temperature influences honey bee behavior, dietary preferences, and detoxification processes, especially in relation to pesticide exposure and its impact on bee mortality.",
+    "expected_output": "I cannot find any suggestions for future research.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides detailed future research suggestions, while Expected Output states there are none; they do not match.",
+      "Completeness [GEval]": "The Expected Output states that there are no suggestions for future research, but the Actual Output provides several detailed suggestions. This means the Actual Output does not align with the Expected Output and fails to address the key point.",
+      "Accuracy [GEval]": "The actual output provides detailed suggestions for future research, whereas the expected output explicitly states that there are no suggestions. This is a clear addition of information not present in the expected output, resulting in a complete misalignment with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "594",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "594",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 54,
+    "name": "paper_586_case_19",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the differential effects of neonicotinoids on receptor subtype activation, the long-term impacts on bee behavior and colony dynamics, mechanisms behind changes in sex ratios and colony composition, and the pharmacological profiles of neonicotinoids and their metabolites.",
+    "expected_output": "I have not identified any sections where they discuss future research directions.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides detailed future research directions, while Expected Output states that no such sections were identified, indicating a clear discrepancy.",
+      "Completeness [GEval]": "The Expected Output states that no future research directions were identified, but the Actual Output provides several specific suggestions for future research. This indicates a complete mismatch, as the Actual Output does not align with the Expected Output and introduces content that should not be present.",
+      "Accuracy [GEval]": "The actual output provides a list of suggested future research directions, whereas the expected output states that no such sections were identified. This is a clear discrepancy, as the actual output adds information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 68,
+    "name": "paper_584_case_37",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research directions should include investigating the multiple exposure routes of bumblebees to neonicotinoids, particularly in non-crop areas like hedgerows and woodlands, and assessing the long-term ecological impacts of pesticide residues in various environments. Additionally, studies should aim to resolve the inconsistencies in the observed relationships between neonicotinoid exposure and bumblebee colony success, exploring other influencing factors affecting bumblebee populations.",
+    "expected_output": "No suggestions for future research.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides multiple suggestions for future research, while Expected Output explicitly states there should be no suggestions.",
+      "Completeness [GEval]": "The Expected Output explicitly states that there should be no suggestions for future research, but the Actual Output provides multiple detailed suggestions. This directly contradicts the requirement, meaning none of the key points are addressed and the response is fully misaligned with the evaluation steps.",
+      "Accuracy [GEval]": "The actual output provides multiple suggestions for future research, whereas the expected output explicitly states that there should be no suggestions. This is a clear discrepancy, as the actual output adds information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "584",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "584",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 76,
+    "name": "paper_790_case_41",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should prioritize the design of novel structural skeletons for neonicotinoids to replace NTN32692, as current modifications have not adequately reduced bee toxicity. Investigating alternative compounds and exploring the relationship between chemical structure and bee toxicity may lead to safer options for bee populations and contribute to more sustainable agricultural practices.",
+    "expected_output": "No future research directions are explicitly listed in the text.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output suggests specific future research directions, while the Expected Output states that no future research directions are explicitly listed in the text.",
+      "Completeness [GEval]": "The Expected Output states that no future research directions are explicitly listed, but the Actual Output provides several detailed future research directions. This means the Actual Output does not align with the Expected Output and fails to address the key point.",
+      "Accuracy [GEval]": "The actual output invents future research directions that are not present in the expected output, which explicitly states that no such directions are listed. This introduces information not supported by the source, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "790",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "790",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 84,
+    "name": "paper_798_case_42",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research directions include: 1) Evaluating chronic exposure effects of neonicotinoids and fungicides on honeybees at realistic concentrations. 2) Investigating the ecotoxicological impacts of picoxystrobin on bees, as current data is lacking. 3) Studying the sublethal effects of pesticides at cellular and tissue levels, particularly focusing on the hepato-nephrocytic system. 4) Understanding the mechanisms that modulate hemocyte populations in bees exposed to thiamethoxam.",
+    "expected_output": "No future research direction is mentioned by the authors.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output lists several future research directions, while Expected Output states that no future research direction is mentioned by the authors.",
+      "Completeness [GEval]": "The Actual Output lists several future research directions, while the Expected Output clearly states that no future research direction is mentioned by the authors. This means the Actual Output does not align with any key point from the Expected Output.",
+      "Accuracy [GEval]": "The actual output lists several specific future research directions, while the expected output clearly states that no future research direction is mentioned by the authors. This is a significant discrepancy, as the actual output adds information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "798",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "798",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 88,
+    "name": "paper_811_case_43",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should prioritize the identification and use of biomarkers for sublethal pesticide exposure in insects, especially honey bees. It should also aim to establish clearer correlations between population/community changes and biomarker responses, ideally through controlled laboratory studies to mitigate environmental interference. Furthermore, there is a need to investigate the sublethal effects of pesticides on non-target organisms, focusing on behavioral and biochemical changes, and to develop pesticides with modes of action that are more specific to target pests to reduce the impact on beneficial species.",
+    "expected_output": "No future research directions are identified by the authors for this study.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The actual output lists several future research directions, while the expected output states that no future research directions are identified by the authors.",
+      "Completeness [GEval]": "The Actual Output provides several future research directions, whereas the Expected Output explicitly states that no future research directions are identified by the authors. This means the Actual Output does not align with the Expected Output and fails to address the key point.",
+      "Accuracy [GEval]": "The actual output provides several future research directions, whereas the expected output explicitly states that no future research directions are identified by the authors. This is a clear discrepancy, as the actual output adds information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "811",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "811",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 90,
+    "name": "paper_302_case_48",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the mechanisms of enantioselective toxicity of insecticides on honeybee larvae, the protective roles of melatonin and vitellogenin (Vg) against oxidative stress, and the effects of altered neurotransmitter levels on larval development. There is also a need to explore the broader impacts of pesticide exposure on bee health and strategies to enhance resilience. Additionally, studies should assess the combined effects of dinotefuran with other insecticides and pathogens, and consider the impact of enantioselective pesticides on beneficial insects and non-target organisms at different developmental stages, while exploring the use of low toxicity pesticides to reduce environmental impacts.",
+    "expected_output": "There are no direct references to future research direction in the text.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides multiple detailed future research directions, while Expected Output states there are no direct references to future research direction in the text, indicating a clear discrepancy.",
+      "Completeness [GEval]": "The Expected Output states that there are no direct references to future research direction in the text, but the Actual Output provides an extensive list of future research directions. This indicates a complete misalignment with the evaluation steps, as none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output provides a detailed list of future research directions, whereas the expected output states that there are no direct references to future research direction in the text. This is a clear discrepancy, as the actual output adds information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "302",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "302",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 98,
+    "name": "paper_793_case_47",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should explore the effects of sublethal doses of neonicotinoid insecticides on bee health, focusing on molecular mechanisms and gene expression. Investigating the role of key genes and detoxification pathways in bees' responses to insecticides is essential, along with the potential use of specific immune genes as biomarkers for monitoring exposure effects.",
+    "expected_output": "No future research direction mentioned in the text.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output suggests multiple future research directions, while Expected Output states that no future research direction is mentioned, so they do not match.",
+      "Completeness [GEval]": "The Actual Output suggests several future research directions, while the Expected Output explicitly states that no future research direction is mentioned in the text. This means the Actual Output does not align with the Expected Output, missing the key point entirely.",
+      "Accuracy [GEval]": "The actual output provides detailed future research directions, whereas the expected output explicitly states that no future research direction is mentioned in the text. This is a clear discrepancy, as the actual output adds information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "793",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "793",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 50,
+    "name": "paper_809_case_50",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on: 1) Investigating the agrochemical sensitivity of non-target invertebrates, especially blue orchard mason bees (*Osmia lignaria*), to determine if current risk assessment factors are adequate for their protection. 2) Standardizing toxicity testing protocols for non-Apis pollinators to enhance comparability of data and improve risk assessments and pesticide regulations. 3) Assessing the effects of macrocyclic lactones on a wider variety of non-target organisms, particularly pollinators, and exploring the mechanisms of exposure and toxicity.",
+    "expected_output": "There is no future research direction specified in the text.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output lists several future research directions, while the Expected Output states that there are none specified in the text, so they do not match.",
+      "Completeness [GEval]": "The Actual Output provides several detailed future research directions, while the Expected Output explicitly states that no future research direction is specified in the text. This means the Actual Output does not align with the Expected Output, missing the key point entirely.",
+      "Accuracy [GEval]": "The actual output provides detailed future research directions, while the expected output explicitly states that no future research direction is specified in the text. This is a clear discrepancy, as the actual output introduces information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "809",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "809",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 56,
+    "name": "paper_298_case_51",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the effects of different pesticide doses on bee brain morphology and behavior, particularly the mechanisms of apoptosis and necrosis in various cell types. Additionally, studies should investigate the long-term impacts of sublethal doses on bee populations and their ecological roles, as well as potential recovery from pesticide exposure. It is also crucial to develop controlled pesticide application strategies and protection measures for bumblebee populations.",
+    "expected_output": "There were no future changes suggested in the paper.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output suggests multiple future research directions, while Expected Output states that no future changes were suggested, so they do not match.",
+      "Completeness [GEval]": "The Actual Output provides several suggestions for future research, while the Expected Output clearly states that no future changes were suggested in the paper. This means the Actual Output does not align with the Expected Output and introduces content that was not present, failing to address the key point.",
+      "Accuracy [GEval]": "The actual output introduces multiple suggestions for future research and actions, whereas the expected output explicitly states that no future changes were suggested in the paper. This indicates a complete mismatch in information, with the actual output providing details not present in the expected output and failing to align with the facts required."
+    },
+    "question_type": "future_research",
+    "paper_id": "298",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "298",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 76,
+    "name": "paper_421_case_68",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should investigate the immune responses of different bee species, especially solitary bees, to neonicotinoids and other pesticides. It is important to include both male and female bees in studies due to potential sex-specific differences in immune responses. Additionally, understanding inter-specific differences in pesticide sensitivity and exposure is essential for enhancing pesticide risk assessment.",
+    "expected_output": "The authors do not explicitly identify avenues of future research",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output suggests specific future research directions, while Expected Output states the authors do not explicitly identify any; this is a clear discrepancy.",
+      "Completeness [GEval]": "The Expected Output states that the authors do not explicitly identify avenues of future research, but the Actual Output lists several specific future research directions. This directly contradicts the Expected Output, indicating that none of the key points are addressed and the Actual Output is not aligned.",
+      "Accuracy [GEval]": "The actual output provides specific suggestions for future research, whereas the expected output states that the authors do not explicitly identify any avenues of future research. This is a direct contradiction, as the actual output introduces information not present in the expected output, failing all evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "421",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "421",
+      "question_id": "future_research",
+      "reviewer": "KW",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 92,
+    "name": "paper_729_case_77",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The discussion suggests that future research should focus on the long-term effects of sulfoxaflor on bee populations, particularly examining how different concentrations affect foraging behavior and survival across various bee species.",
+    "expected_output": "no future research direction",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides a detailed future research direction, while Expected Output states there should be no future research direction; they do not match.",
+      "Completeness [GEval]": "The Expected Output explicitly states that there should be no future research direction, but the Actual Output provides a detailed suggestion for future research. This directly contradicts the requirement and fails to address the key point.",
+      "Accuracy [GEval]": "The actual output provides a detailed future research direction, while the expected output explicitly states that there should be no future research direction. This is a clear discrepancy, as the actual output introduces information not present or requested in the expected output."
+    },
+    "question_type": "future_research",
+    "paper_id": "729",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "729",
+      "question_id": "future_research",
+      "reviewer": "AB",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 100,
+    "name": "paper_440_case_78",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the effects of imidacloprid on honeybee larvae, particularly examining the nursing behavior of bees and the potential for cross-contamination. Studies should investigate the impact of different imidacloprid dosages on larval survival, brood production, eclosion rates, and behavioral changes, as previous studies have mainly concentrated on adult bees and colonies.",
+    "expected_output": "The authors did not suggest directions for future research.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides detailed suggestions for future research, while Expected Output states that no directions for future research were suggested.",
+      "Completeness [GEval]": "The Expected Output clearly states that the authors did not suggest directions for future research, but the Actual Output provides several detailed suggestions for future research. This directly contradicts the Expected Output, failing to align with any key points.",
+      "Accuracy [GEval]": "The actual output provides specific suggestions for future research, whereas the expected output clearly states that the authors did not suggest any directions for future research. This is a direct contradiction and introduces information not present in the expected output, failing all evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "440",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "440",
+      "question_id": "future_research",
+      "reviewer": "RT",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 102,
+    "name": "paper_440_case_79",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the effects of imidacloprid on honeybee larvae, particularly examining the nursing behavior of bees and the potential for cross-contamination. Studies should investigate the impact of different imidacloprid dosages on larval survival, brood production, eclosion rates, and behavioral changes, as previous studies have mainly concentrated on adult bees and colonies.",
+    "expected_output": "No future research has been reported in the paper",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output suggests multiple future research directions, while Expected Output states that no future research has been reported; this is a clear discrepancy.",
+      "Completeness [GEval]": "The Expected Output clearly states that no future research has been reported in the paper, but the Actual Output suggests several directions for future research. This directly contradicts the Expected Output and introduces information not present in the source, failing to address the key point.",
+      "Accuracy [GEval]": "The actual output provides detailed suggestions for future research, whereas the expected output clearly states that no future research has been reported in the paper. This is a significant addition of information not present in the expected output, resulting in a complete misalignment with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "440",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "440",
+      "question_id": "future_research",
+      "reviewer": "FS",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 144,
+    "name": "paper_451_case_97",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should prioritize the investigation of thiamethoxam and other neonicotinoids' effects on honeybee larvae, particularly focusing on sublethal impacts on larval development and the health of bee colonies. There is a significant need to explore the discrepancies in sensitivity between larvae and adult bees, and to fill the existing gaps in literature regarding the toxicity of these compounds to larvae, which is critical for the overall health of bee colonies.",
+    "expected_output": "No future research is mentioned in the discussion",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output discusses future research priorities, while Expected Output states that no future research is mentioned in the discussion.",
+      "Completeness [GEval]": "The Expected Output specifies that no future research should be mentioned, but the Actual Output discusses several future research directions in detail. This directly contradicts the requirement, as all key points in the Expected Output are missing from the Actual Output.",
+      "Accuracy [GEval]": "The actual output introduces recommendations for future research, while the expected output explicitly states that no future research is mentioned. This is a clear discrepancy, as the actual output adds information not present in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "451",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "451",
+      "question_id": "future_research",
+      "reviewer": "RT",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 130,
+    "name": "paper_008_case_120",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should prioritize the ecotoxicology and risk assessment of insecticides on stingless bees, addressing the current lack of toxicological guidelines and investigating the effects of specific insecticides like chlorantraniliprole and thiamethoxam.",
+    "expected_output": "No future research in discussion",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output suggests multiple future research directions, while Expected Output states there should be no future research in discussion; they do not match.",
+      "Completeness [GEval]": "The Actual Output suggests future research directions, while the Expected Output explicitly states that no future research should be discussed. This means the Actual Output does not address the key point and fails to align with the Expected Output.",
+      "Accuracy [GEval]": "The actual output suggests future research directions, whereas the expected output explicitly states that no future research should be discussed. This is a direct discrepancy, as the actual output adds information that is not present or desired in the expected output, failing to align with all evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "008",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "008",
+      "question_id": "future_research",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 194,
+    "name": "paper_432_case_151",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on cultivating crops with higher sugar content in their nectar to lessen the toxicity of insecticides to bees, thereby aiding in the preservation of bee populations in areas with high pesticide application.",
+    "expected_output": "The paper does not recommend directions for future research",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output suggests a future research direction about cultivating crops, while Expected Output states that no future research directions are recommended.",
+      "Completeness [GEval]": "The Actual Output suggests a direction for future research, while the Expected Output explicitly states that the paper does not recommend any future research directions. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output introduces a specific future research direction regarding crop nectar and bee preservation, which is not present in the expected output. The expected output clearly states that the paper does not recommend any directions for future research, indicating a direct contradiction and addition of information not supported by the source."
+    },
+    "question_type": "future_research",
+    "paper_id": "432",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "432",
+      "question_id": "future_research",
+      "reviewer": "BN",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 190,
+    "name": "paper_523_case_175",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should systematically examine the specific behavioral traits of bees affected by field-realistic doses of neonicotinoids, focusing on physical performance, learning abilities, and motivation. Additionally, studies should investigate the behavioral mechanisms influencing foraging success, particularly at low pesticide concentrations that do not affect physical performance but may reduce motivation to forage.",
+    "expected_output": "I cannot find any suggestions for future research in the discussion.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output provides detailed suggestions for future research, while Expected Output states that no suggestions for future research are found in the discussion, indicating a clear discrepancy.",
+      "Completeness [GEval]": "The Expected Output states that there are no suggestions for future research in the discussion, but the Actual Output provides several detailed suggestions for future research. This is a complete mismatch, as none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output provides detailed suggestions for future research, whereas the expected output states that no such suggestions are present in the discussion. This is a clear discrepancy, as the actual output introduces information not found in the expected output, failing to align with the evaluation steps."
+    },
+    "question_type": "future_research",
+    "paper_id": "523",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "523",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 194,
+    "name": "paper_525_case_173",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should investigate how imidacloprid affects synaptic dynamics and learning/memory in bees, especially considering the roles of 14-3-3 protein and protein kinase C in mushroom bodies.",
+    "expected_output": "I have not identified any suggested directions for future research.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output suggests specific future research directions involving imidacloprid, 14-3-3 protein, and protein kinase C, while Expected Output states no future research directions were identified.",
+      "Completeness [GEval]": "The Expected Output states that no suggested directions for future research were identified, but the Actual Output provides a specific suggestion for future research. This means the Actual Output does not align with the Expected Output, failing to address the key point.",
+      "Accuracy [GEval]": "The actual output provides a specific suggested direction for future research, whereas the expected output states that no such directions were identified. This is a clear discrepancy in information, indicating a complete mismatch between the actual and expected outputs."
+    },
+    "question_type": "future_research",
+    "paper_id": "525",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "525",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 196,
+    "name": "paper_512_case_179",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the effects of spinosad at lower concentrations on bumble bee health in natural settings, exploring long-term impacts on colony dynamics and the potential for transient effects observed in greenhouse conditions.",
+    "expected_output": "No suggestions about future research.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The actual output suggests future research directions, while the expected output specifies that there should be no suggestions about future research.",
+      "Completeness [GEval]": "The Actual Output provides suggestions for future research, whereas the Expected Output explicitly requires no suggestions. This means the Actual Output does not align with any of the key points and is fully incomplete according to the evaluation steps.",
+      "Accuracy [GEval]": "The actual output introduces suggestions for future research, which are not present in the expected output. This addition of information directly contradicts the requirement for no suggestions, resulting in a complete mismatch with the expected output."
+    },
+    "question_type": "future_research",
+    "paper_id": "512",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "512",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 1
+    }
+  }
+]

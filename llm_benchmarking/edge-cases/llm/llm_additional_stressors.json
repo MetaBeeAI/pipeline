@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 54,
+    "name": "paper_583_case_30",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the study used neonicotinoid pesticides (thiamethoxam and clothianidin) as additional stressors, with doses ranging from 0 to 140 ng/g (ppb) in the food. The exposure method involved feeding the bees this dosed food for up to 8 days. Additionally, continuous light (LL) was used as a stressor in combination with neonicotinoid exposure.",
+    "expected_output": "No additional stressors were tested.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states neonicotinoid pesticides and continuous light were used as additional stressors, while Expected Output says no additional stressors were tested.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that neonicotinoid pesticides and continuous light were used as additional stressors, while the Expected Output clearly specifies that no additional stressors were tested. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that neonicotinoid pesticides and continuous light were used as additional stressors, while the expected output clearly states that no additional stressors were tested. This is a direct contradiction and introduces inaccurate information, failing all evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "583",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "583",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 58,
+    "name": "paper_799_case_32",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, thiamethoxam (a neonicotinoid) was used as an additional stressor. The doses reported are 20 ng g\u207b\u00b9 in a sucrose solution and an average exposure of 66.23 \u00b1 1.82 ng over a 14-day period. The exposure method was via a syringe, and the duration of exposure was 12 to 14 days, depending on the fragment.",
+    "expected_output": "There were no additional stressors during this study",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states thiamethoxam was used as an additional stressor, while Expected Output states there were no additional stressors, showing a clear discrepancy.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that thiamethoxam was used as an additional stressor, providing specific dosage and exposure details, while the Expected Output clearly states that there were no additional stressors during the study. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that thiamethoxam was used as an additional stressor, providing specific dosage and exposure details, while the expected output clearly states that there were no additional stressors. This is a significant factual discrepancy, as the actual output introduces information that directly contradicts the expected output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "799",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "799",
+      "question_id": "additional_stressors",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 70,
+    "name": "paper_294_case_36",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, imidacloprid was used as an additional stressor. The dose was 2% (v/v) in the diet, with an expected concentration of 0.7 ng mL\u207b\u00b9. The exposure method was through diet from the third to the sixth day of larval development. No other stressors were mentioned.",
+    "expected_output": "There were no additional stressors.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that imidacloprid was used as an additional stressor, while Expected Output clearly states there were no additional stressors.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that imidacloprid was used as an additional stressor, providing specific details about its use, while the Expected Output clearly states that there were no additional stressors. This is a direct contradiction and fails to address the key point from the Expected Output.",
+      "Accuracy [GEval]": "The actual output incorrectly states that imidacloprid was used as an additional stressor with specific dosing and exposure details, while the expected output clearly states that there were no additional stressors. This is a significant factual discrepancy, as the actual output introduces information that directly contradicts the expected output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "294",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "294",
+      "question_id": "additional_stressors",
+      "reviewer": "NN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 74,
+    "name": "paper_793_case_38",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, dinotefuran was used as an additional stressor. The exposure method involved treating bees with dinotefuran dissolved in a 50% sterile sucrose solution after a 2-hour starvation period. The doses used were various concentrations of dinotefuran (0.09375, 0.1875, 0.375, 0.75, 1.5, 3 mg/L), and the duration of exposure was 48 hours after treatment.",
+    "expected_output": "No additional stressors were used in this study",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states dinotefuran was used as an additional stressor with specific exposure details, while Expected Output clearly says no additional stressors were used.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that dinotefuran was used as an additional stressor and provides detailed information about its administration, while the Expected Output clearly states that no additional stressors were used. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that dinotefuran was used as an additional stressor and provides detailed information about its administration, while the expected output clearly states that no additional stressors were used. This is a direct contradiction, with the actual output introducing incorrect and extraneous information, failing all evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "793",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "793",
+      "question_id": "additional_stressors",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 68,
+    "name": "paper_427_case_65",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors such as wind speed and temperature were considered. The dose of the neonicotinoid clothianidin was five parts per billion (ppb), and the exposure method involved a sucrose solution spiked with this chemical. The duration of exposure was over 5 weeks.",
+    "expected_output": "No additional stressors were studied",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that additional stressors were considered, while Expected Output clearly says no additional stressors were studied.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that additional stressors such as wind speed and temperature were considered, while the Expected Output clearly specifies that no additional stressors were studied. This is a direct contradiction and fails to address the key point, resulting in a complete lack of alignment.",
+      "Accuracy [GEval]": "The actual output incorrectly states that additional stressors such as wind speed and temperature were considered, while the expected output clearly states that no additional stressors were studied. This is a factual inaccuracy and a direct contradiction, indicating a complete misalignment with the expected output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "427",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "427",
+      "question_id": "additional_stressors",
+      "reviewer": "BN",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 70,
+    "name": "paper_276_case_63",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the study used neonicotinoids (imidacloprid) as an additional stressor. The doses were 0, 1.5, 5, 10, and 25 ppb in syrup and 0, 0.3, 1.7, 3.3, and 8.3 ppb in pollen. The exposure method was chronic exposure over 18 days.",
+    "expected_output": "There were no additional stressors",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states neonicotinoids were used as additional stressors, while Expected Output says there were no additional stressors; they directly contradict each other.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that neonicotinoids were used as an additional stressor, providing specific doses and exposure details, while the Expected Output clearly states there were no additional stressors. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that neonicotinoids were used as an additional stressor, providing specific doses and exposure details, while the expected output clearly states there were no additional stressors. This is a direct contradiction and introduces inaccurate information, failing all evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "276",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "276",
+      "question_id": "additional_stressors",
+      "reviewer": "KW",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 100,
+    "name": "paper_449_case_79",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, specifically imidacloprid (a chemical stressor) and parasite treatments (Apistan strips and Fumagillin B). The doses of imidacloprid were 400 \u00b5g/kg and 200 \u00b5g/kg, with exposure methods including direct treatment of hives over specified durations: low dosing for 4 weeks and high dosing for 9 weeks. The parasite treatment occurred from Oct 5 to Nov 20, 2010. The text does not mention other stressors like temperature or pathogens.",
+    "expected_output": "No, no additional stressors were used in the study.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The actual output states that additional stressors such as imidacloprid and parasite treatments were used, while the expected output states that no additional stressors were used, indicating a clear discrepancy.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that additional stressors such as imidacloprid and parasite treatments were used, while the Expected Output clearly states that no additional stressors were used in the study. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that additional stressors such as imidacloprid and parasite treatments were used, providing detailed dosing and timing information, while the expected output clearly states that no additional stressors were used. This is a direct contradiction and introduces inaccurate information, failing to align with the evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "449",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "449",
+      "question_id": "additional_stressors",
+      "reviewer": "RT",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 116,
+    "name": "paper_385_case_87",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, acetone was used as an additional stressor, with concentrations ranging from 0.0000125% to 8%. The exposure method was through feeding 10 \u00b5L of the solution, and the duration of exposure was monitored with mortality recorded at 4, 24, 48, and 72 hours after dosing.",
+    "expected_output": "No additional stressors or combinations were mentioned in the text.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The Actual Output states that acetone was used as an additional stressor, while the Expected Output specifies that no additional stressors or combinations were mentioned, indicating a clear mismatch.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that acetone was used as an additional stressor, while the Expected Output clearly specifies that no additional stressors or combinations were mentioned. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that acetone was used as an additional stressor with specific concentrations and exposure details, while the expected output clearly indicates that no additional stressors or combinations were mentioned. This is a significant discrepancy, as the actual output introduces information not present in the expected output, failing all evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "385",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "385",
+      "question_id": "additional_stressors",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 118,
+    "name": "paper_385_case_86",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, acetone was used as an additional stressor, with concentrations ranging from 0.0000125% to 8%. The exposure method was through feeding 10 \u00b5L of the solution, and the duration of exposure was monitored with mortality recorded at 4, 24, 48, and 72 hours after dosing.",
+    "expected_output": "No additional stressor was used in the study.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states acetone was used as an additional stressor, while Expected Output states no additional stressor was used, showing a direct contradiction.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that acetone was used as an additional stressor, providing detailed but inaccurate information, while the Expected Output clearly states that no additional stressor was used. None of the key points from the Expected Output are addressed, and the Actual Output is entirely incorrect.",
+      "Accuracy [GEval]": "The actual output incorrectly states that acetone was used as an additional stressor with specific concentrations and exposure details, while the expected output clearly indicates that no additional stressor was used. This is a significant factual discrepancy, and the actual output introduces information not present in the expected output, failing all evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "385",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "385",
+      "question_id": "additional_stressors",
+      "reviewer": "RT",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 106,
+    "name": "paper_943_case_105",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the additional stressor used was Spinosad, with concentrations of 0, 10, 20, 40, and 80 mg/liter. The exposure method was through a Y-tube choice apparatus, and the duration of exposure was approximately 35 minutes. No other stressors were mentioned.",
+    "expected_output": "No additional stressors used.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states Spinosad was used as an additional stressor, while Expected Output says no additional stressors were used; this is a direct contradiction.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that Spinosad was used as an additional stressor with specific concentrations and exposure details, while the Expected Output clearly states that no additional stressors were used. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that Spinosad was used as an additional stressor with specific concentrations and details about the exposure method and duration, whereas the expected output clearly states that no additional stressors were used. This is a significant factual discrepancy, and the actual output introduces incorrect information not present in the expected output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "943",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "943",
+      "question_id": "additional_stressors",
+      "reviewer": "HS",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 148,
+    "name": "paper_011_case_127",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, including infestation with *Varroa destructor* and treatments with formic acid and oxalic acid. The dose of clothianidin was 3 ng/bee, administered through feeding with a sucrose solution for a duration of 24 hours.",
+    "expected_output": "No additional stressors. Clothianidin is the primary stressor.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output mentions additional stressors (Varroa destructor, formic acid, oxalic acid), while Expected Output states there were no additional stressors and only clothianidin was used.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that additional stressors such as Varroa destructor infestation and acid treatments were used, while the Expected Output clearly specifies that no additional stressors were present and clothianidin was the only stressor. This is a direct contradiction and fails to address the key point.",
+      "Accuracy [GEval]": "The actual output incorrectly states that additional stressors such as Varroa destructor infestation and acid treatments were used, while the expected output clearly specifies that no additional stressors were present and clothianidin was the only stressor. Furthermore, the actual output adds extra details about dosage and administration that are not present in the expected output, introducing inaccuracies and unnecessary information."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "011",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "011",
+      "question_id": "additional_stressors",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 152,
+    "name": "paper_010_case_131",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, temperature was used as an additional stressor, with the arena heated to 45 \u00b0C. The exposure method was individual access to a thermal-visual arena, and the duration of exposure was three days with ten trials of three minutes each.",
+    "expected_output": "No additional stressors.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states temperature was used as an additional stressor, while Expected Output says no additional stressors; this is a direct contradiction.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that temperature was used as an additional stressor, while the Expected Output clearly specifies that there were no additional stressors. This is a direct contradiction and fails to address the key point.",
+      "Accuracy [GEval]": "The actual output incorrectly states that temperature was used as an additional stressor and provides detailed information about exposure, while the expected output clearly states that there were no additional stressors. This is a direct contradiction, indicating a complete mismatch in information."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "010",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "010",
+      "question_id": "additional_stressors",
+      "reviewer": "AH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 160,
+    "name": "paper_016_case_128",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, including neonicotinoids (TMX and imidacloprid) and Varroa infestation. TMX was administered at doses of 1.96\u20132.90 ng/bee per day (chronic exposure), and imidacloprid at 5.98 ng/mL over a 13-week period. The exposure method involved feeding the bees these substances, and the duration varied from acute (short-term) to chronic (long-term) exposure.",
+    "expected_output": "No additional stressors. Colonies used to supply bees were checked and did not have measureable Varroa infestations. Light and temperature were also ruled out as additional stressors - suppl methods section.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states that additional stressors like neonicotinoids and Varroa infestation were used, while Expected Output clearly states no additional stressors were present and Varroa was not measurable; the outputs do not match.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that additional stressors such as neonicotinoids and Varroa infestation were used, while the Expected Output clearly specifies that no additional stressors were present and that Varroa, light, and temperature were ruled out. This is a direct contradiction and fails to address any of the key points from the Expected Output.",
+      "Accuracy [GEval]": "The actual output incorrectly states that additional stressors such as neonicotinoids and Varroa infestation were used, while the expected output clearly specifies that no additional stressors were present and that Varroa, light, and temperature were ruled out. This is a significant factual discrepancy, as the actual output adds information that directly contradicts the expected output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "016",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "016",
+      "question_id": "additional_stressors",
+      "reviewer": "AH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 180,
+    "name": "paper_669_case_144",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the study used temperature (35 \u00b1 1 \u00b0C) and nutritional stress (food deprivation for 2 hours) as additional stressors. The exposure method involved feeding bees contaminated syrup for 2 hours.",
+    "expected_output": "No additional stressors were studied",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output claims temperature and nutritional stress were used as additional stressors, while Expected Output states no additional stressors were studied; this is a direct contradiction.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that temperature and nutritional stress were used as additional stressors, while the Expected Output clearly indicates that no additional stressors were studied. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that temperature and nutritional stress were used as additional stressors, while the expected output clearly indicates that no additional stressors were studied. This is a factual inaccuracy and a direct contradiction, showing a complete mismatch between the actual and expected outputs."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "669",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "669",
+      "question_id": "additional_stressors",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 184,
+    "name": "paper_669_case_143",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the study used temperature (35 \u00b1 1 \u00b0C) and nutritional stress (food deprivation for 2 hours) as additional stressors. The exposure method involved feeding bees contaminated syrup for 2 hours.",
+    "expected_output": "No additional stressors were used in the study",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output incorrectly states that temperature and nutritional stress were used as additional stressors, while Expected Output clearly states no additional stressors were used.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that temperature and nutritional stress were used as additional stressors, while the Expected Output clearly specifies that no additional stressors were used. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that temperature and nutritional stress were used as additional stressors, while the expected output clearly indicates that no additional stressors were used. This is a significant factual discrepancy, and the actual output introduces information not present in the expected output, affecting its accuracy."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "669",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "669",
+      "question_id": "additional_stressors",
+      "reviewer": "BN",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 158,
+    "name": "paper_532_case_159",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, specifically the pesticide acetamiprid. The dose ranged from 50-500 mg/L as field-realistic concentrations, with an LC50 value of 188.49 mg/L for exposure over 72 hours. The exposure method was through the diet of honeybee larvae, consuming contaminated pollen and nectar.",
+    "expected_output": "No additional stressors were tested.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states that additional stressors (acetamiprid) were used, while Expected Output says no additional stressors were tested, showing a clear discrepancy.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that additional stressors were used, providing details about acetamiprid exposure, while the Expected Output clearly states that no additional stressors were tested. This is a direct contradiction, and none of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output incorrectly states that an additional stressor (acetamiprid) was used, providing detailed information about its dose and exposure, while the expected output clearly states that no additional stressors were tested. This is a direct factual inconsistency and all key information is incorrect."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "532",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "532",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 170,
+    "name": "paper_532_case_160",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, specifically the pesticide acetamiprid. The dose ranged from 50-500 mg/L as field-realistic concentrations, with an LC50 value of 188.49 mg/L for exposure over 72 hours. The exposure method was through the diet of honeybee larvae, consuming contaminated pollen and nectar.",
+    "expected_output": "No other stressos were used",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states that additional stressors (acetamiprid) were used, while Expected Output says no other stressors were used; the answers directly contradict each other.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that additional stressors, specifically acetamiprid, were used, while the Expected Output clearly indicates that no other stressors were used. This is a direct contradiction and fails to address the key point from the Expected Output.",
+      "Accuracy [GEval]": "The actual output provides detailed information about an additional stressor (acetamiprid), including dose, LC50, and exposure method, while the expected output clearly states that no other stressors were used. This is a direct contradiction, indicating a complete mismatch in information and accuracy."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "532",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "532",
+      "question_id": "additional_stressors",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 174,
+    "name": "paper_520_case_166",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, including nutritional stress (limited nectar availability) and the gut parasite Nosema ceranae. The doses and exposure methods varied: for example, FPF was administered at 375 ng/bee (oral exposure) and 4000 \u03bcg/kg (chronic oral exposure), with durations of exposure ranging from 3 days to 10 days depending on the study.",
+    "expected_output": "No additional stressors were tested.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states additional stressors like nutritional stress and Nosema ceranae were used, while Expected Output says no additional stressors were tested.",
+      "Completeness [GEval]": "The Actual Output directly contradicts the Expected Output by stating that additional stressors were used, while the Expected Output specifies that no additional stressors were tested. This indicates a complete misalignment with the key point, resulting in a failure to meet the evaluation criteria.",
+      "Accuracy [GEval]": "The actual output incorrectly states that additional stressors such as nutritional stress and Nosema ceranae were used, while the expected output clearly indicates that no additional stressors were tested. This is a direct factual discrepancy, with the actual output providing inaccurate and conflicting information."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "520",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "520",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 184,
+    "name": "paper_585_case_172",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, including insecticides (imidacloprid at 50 ppb and thiacloprid at 4500 ppb) mixed in sugar syrup with 0.005% acetone. The exposure method involved daily administration of the syrup for seven days.",
+    "expected_output": "No additional stressors were tested.",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "The actual output states that additional stressors (insecticides) were used, while the expected output says no additional stressors were tested, showing a clear discrepancy.",
+      "Completeness [GEval]": "The Actual Output directly contradicts the Expected Output by stating that additional stressors were used, while the Expected Output specifies that no additional stressors were tested. None of the key points from the Expected Output are addressed.",
+      "Accuracy [GEval]": "The actual output directly contradicts the expected output by stating that additional stressors (insecticides) were used, while the expected output clearly states that no additional stressors were tested. This is a significant factual discrepancy and introduces incorrect information, failing all evaluation steps."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "585",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "585",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 188,
+    "name": "paper_520_case_167",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, including nutritional stress (limited nectar availability) and the gut parasite Nosema ceranae. The doses and exposure methods varied: for example, FPF was administered at 375 ng/bee (oral exposure) and 4000 \u03bcg/kg (chronic oral exposure), with durations of exposure ranging from 3 days to 10 days depending on the study.",
+    "expected_output": "No additional stressors are used",
+    "combined_score": 0.0,
+    "individual_scores": {
+      "Correctness [GEval]": 0.0,
+      "Completeness [GEval]": 0.0,
+      "Accuracy [GEval]": 0.0
+    },
+    "individual_reasons": {
+      "Correctness [GEval]": "Actual Output states that additional stressors like nutritional stress and Nosema ceranae were used, while Expected Output says no additional stressors are used.",
+      "Completeness [GEval]": "The Actual Output incorrectly states that additional stressors such as nutritional stress and Nosema ceranae were used, while the Expected Output clearly specifies that no additional stressors are used. This is a direct contradiction, and none of the key points from the Expected Output are present in the Actual Output.",
+      "Accuracy [GEval]": "The actual output directly contradicts the expected output by stating that additional stressors were used, while the expected output clearly states that no additional stressors are used. This is a significant factual discrepancy, and the actual output introduces incorrect information not present in the expected output."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "520",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "520",
+      "question_id": "additional_stressors",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  }
+]
