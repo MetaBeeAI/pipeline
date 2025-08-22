@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 66,
+    "name": "paper_216_case_64",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the importance of sulfoximines in agriculture for pest control, particularly their effectiveness against resistant insects. It also stresses the urgent need for safer alternatives due to sulfoxaflor's toxicity to pollinators, which has led to regulatory actions.",
+    "expected_output": "The authors present their significant finding to be the identification of Amel\u03b11/rat\u03b22 gene targets for the synthesis of novel pesticides with low toxicity to bees. They note that they have constructed novel pesticides with these targets in mind, confirming that several display lower toxicities to bees than existing pesticides.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses 'sulfoximines and their insecticidal properties' without addressing the 'Amel\u03b11/rat\u03b22 gene targets or the synthesis of novel pesticides with low toxicity to bees', which are crucial to the input's focus. Similarly, the second node reiterates 'sulfoximines and their agricultural applications' but fails to cover 'the identification of gene targets or the development of pesticides with reduced bee toxicity'. Both nodes are irrelevant to the input, leading to a low score.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be linked to any node(s) in the retrieval context, as the key topics such as the identification of Amel\u03b11/rat\u03b22 gene targets and the construction of novel pesticides are absent."
+    },
+    "question_type": "significance",
+    "paper_id": "216",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "216",
+      "question_id": "significance",
+      "reviewer": "KW",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 120,
+    "name": "paper_444_case_115",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of understanding the impact of neonicotinoid insecticides on both managed and wild pollinators, advocating for more comprehensive research and integrated pest management practices. It presents evidence that adopting IPM can enhance pollinator health, which is crucial for sustainable crop management and pollination services.",
+    "expected_output": "The main finding of the paper is that the performance of managed and wil pollinators are better in fields managed with the IPM strategy compared with the CM. This have important implication in crop management and pollination service",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency.",
+      "Contextual Precision": "The score is 0.00 because the first node discusses \"the impact of NSTs on honey bee health and the role of non-honey bee species in pollination,\" which is irrelevant to the input's focus on summarizing the paper's discussion regarding the importance to the field. This node should be ranked lower as it does not address the comparison of IPM and CM strategies or their implications on pollination services, which are more pertinent to the input.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentences about IPM and CM strategies, as well as implications in crop management and pollination service, do not align with any node(s) in the retrieval context."
+    },
+    "question_type": "significance",
+    "paper_id": "444",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "444",
+      "question_id": "significance",
+      "reviewer": "FS",
+      "rating": 6
+    }
+  },
+  {
+    "test_case_index": 137,
+    "name": "paper_052_case_138",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the importance of studying the effects of neonicotinoids on *Apis cerana*, as this species is at risk from pesticide exposure, yet has been less studied compared to *Apis mellifera*. The findings regarding the sublethal effects of thiacloprid on bee behavior and health are crucial for informing conservation strategies and agricultural practices, highlighting the need for further research in this area.",
+    "expected_output": "The study demonstrates that Apis cerana exhibits lower sensitivity to thiacloprid compared to imidacloprid. Thiacloprid exposure did not impair sucrose responsiveness or phototaxis climbing ability. However, learning and memory abilities were significantly impaired, especially under chronic exposure. Short-term exposure stimulated detoxification enzymes, including P450 monooxygenases and CarE, whereas chronic exposure suppressed CarE activity. Acetylcholinesterase (AChE) activity remained unchanged after both acute and chronic treatments. Transcriptomic analysis revealed consistent upregulation of immune- and stress-related genes following thiacloprid exposure. The authors also emphasize that chronic exposure to thiacloprid produces more severe toxic effects than acute exposure.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts is irrelevant to the input. It discusses the general decline of bee populations due to insecticides, which does not specifically address the paper's discussion on Apis cerana's sensitivity to thiacloprid or the detailed effects of exposure. This misalignment results in a low contextual precision score as the relevant information is not prioritized.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context. The retrieval context lacks any mention of Apis cerana, thiacloprid, or the specific effects and comparisons outlined in the expected output."
+    },
+    "question_type": "significance",
+    "paper_id": "052",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "052",
+      "question_id": "significance",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 208,
+    "name": "paper_432_case_212",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the indispensable role of honeybees in pollinating a significant portion of the world's food supply and warns of the severe consequences of their declining populations on agriculture and human life. It stresses the urgency of addressing the factors leading to this decline, particularly the impact of pesticides.",
+    "expected_output": "The study reports that imidacloprid was most toxic when fed in fructose, and least toxic when presented in ordindary sugar, sucrose and glucose, and this trend was independent of how diluted the sugar solution was. Thus the authors conclude that toxicity is higher in disaccharides compared to monosaccharides, and that crops having high sucrose content in their nectars could help reduce mortality of bees.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Great job!",
+      "Contextual Precision": "The score is 0.00 because the first node, ranked highest, discusses the ecological and agricultural importance of honeybees, which is irrelevant to the input's focus on the study's findings about imidacloprid toxicity and sugar types. Similarly, the second node continues this theme, emphasizing pollination and population decline, without addressing the study's specific findings. Both nodes fail to provide relevant information, leading to a low score.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context. The retrieval context lacks any mention of imidacloprid, its toxicity in relation to different sugars, or the comparative toxicity of disaccharides and monosaccharides, as well as the impact of sucrose content on bee mortality."
+    },
+    "question_type": "significance",
+    "paper_id": "432",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "432",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 202,
+    "name": "paper_429_case_207",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The discussion in the paper highlights the importance of bees in providing pollination services for crops and wild plants, noting that wild bees can be more effective than honey bees. It stresses the urgent need to understand the effects of pesticides on bee populations, given their decline and the implications for agriculture and biodiversity.",
+    "expected_output": "The study found that cypermethrin and imidacloprid reduced bee visits to sunflowers for up to two days post-exposure, firpronil only on the day of spraying, and indoxabarb induced a reduction in visits for four days post-spraying. No effects were observed for the other chemicals and control (water treatment). The majority of the findings are corroborated by existing literature, but there was a difference between the findings of the current study and those of Karise et al. (2007) who did not observe an effect of cypermethrin on honeybee visitation to Brassicas, and Rieth and Levin who reported only a 24hour effect, compared to the 2-day effect reported here. The authors suggest these differences may be attributable to the variability in floral resources and doses used between studies. The significance of the specific findings of this study are not discussed by the authors",
+    "contextual_combined_score": 0.39999999999999997,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.2
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses the general importance of bees and the impact of pesticides, which is not directly related to the input's request to summarize the paper's discussion on its importance to the field. This irrelevant node should be ranked lower than any relevant nodes that directly address the study's findings or significance.",
+      "Contextual Recall": "The score is 0.20 because while the 1st node in the retrieval context aligns with the general effects of pesticides on bees, it lacks specific references to the chemicals and studies mentioned in sentences 1, 2, and 3 of the expected output. Additionally, the retrieval context does not address the variability in floral resources or the significance of the findings, as noted in sentences 4 and 5."
+    },
+    "question_type": "significance",
+    "paper_id": "429",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "429",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 118,
+    "name": "paper_444_case_114",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of understanding the impact of neonicotinoid insecticides on both managed and wild pollinators, advocating for more comprehensive research and integrated pest management practices. It presents evidence that adopting IPM can enhance pollinator health, which is crucial for sustainable crop management and pollination services.",
+    "expected_output": "Conventional approach to pest management (pesticides) impaired the health of managed bees and reduced the abundance and diversity of wild pollinators. Colonies allocated in conventional field showed pesticide residue concentrations higher than LD50 values reported for pollinators.  IPM can provide an environment more suitable for pollinator.",
+    "contextual_combined_score": 0.4444444444444444,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.3333333333333333
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses 'pathogen loads, overwintering success, and NST-mediated impacts on honey bees,' which are not directly related to the input's focus on the 'importance to the field.' This irrelevant node is ranked first, indicating a lack of alignment with the input's context.",
+      "Contextual Recall": "The score is 0.33 because only the first sentence of the expected output aligns with the 1st node in the retrieval context, which discusses the impact of pesticides on managed bees and wild pollinators. However, the retrieval context lacks information on pesticide residue concentrations, LD50 values, and the benefits of IPM, leading to a lower score."
+    },
+    "question_type": "significance",
+    "paper_id": "444",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "444",
+      "question_id": "significance",
+      "reviewer": "RT",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 81,
+    "name": "paper_421_case_81",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The discussion in the paper underscores the importance of investigating the immune responses of different bee species, particularly solitary bees, to neonicotinoids. It highlights the need for comprehensive pesticide risk assessments that include both male and female bees, as they may exhibit different sensitivities and immune responses to pesticides. This research is essential for understanding the ecological impacts of pesticides and for informing regulatory practices to protect bee populations.",
+    "expected_output": "The paper finds that exposure to field-realistic concentrations of thiacloprid can impact the immunocompetence of Osmia bicornis, potentially affecting their ability to mount a rapid immune response and their capacity to resist disease. Males exposed to concentrations above 200 ug/kg showed a reduction in hemocyte density and an impairement in the antimicrobial activity of the hemolymph. Immunosuppressive effects were only observed in females at concentrations of 555 ug/kg. This may be explained by the fact that males consumed more of the spiked sucrose solution, leading to a 2.77 times higher exposure compared to females. Exposure to thiacloprid did not affect the melanisation or wound healing response in either sex. Since only food consumption of females is typically considered in regulatory risk assessments, these results suggest that males should also be included in future risk assessment schemes for the approval and authorisation of pesticide use. The authors also emphasise the importance of studying non-Apis bees since they may respond differently and yet are still important contributers to crop and wild plant pollination.",
+    "contextual_combined_score": 0.5952380952380952,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.5,
+      "Contextual Recall": 0.2857142857142857
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Great job!",
+      "Contextual Precision": "The score is 0.50 because the first node, which is ranked higher, discusses the role of bees as pollinators and does not address the specific effects of thiacloprid on bee immunocompetence or the need for including males in risk assessments. This makes it less relevant to the input. The second node, however, highlights the overlooked effects of neonicotinoids like thiacloprid on bees, including potential impacts on immune function, which aligns with the paper's discussion on immunocompetence and the need for broader risk assessments, making it more relevant. The presence of the less relevant node at a higher rank affects the score.",
+      "Contextual Recall": "The score is 0.29 because while nodes in the retrieval context mention 'thiacloprid' and 'non-Apis bees', aligning with sentences 1 and 7 of the expected output, they lack specific details found in sentences 2, 3, 4, 5, and 6, such as exposure levels, gender-specific effects, and regulatory implications."
+    },
+    "question_type": "significance",
+    "paper_id": "421",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "421",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 50,
+    "name": "paper_813_case_55",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the vital role of honey bees in pollination, contributing over $200 billion annually to agriculture, and addresses the concerning decline in bee populations due to habitat loss, pathogens, climate change, and pesticide use. It stresses the need for research and conservation efforts to protect these essential pollinators.",
+    "expected_output": "This study reveals that at a dose of the LD50 for fipronil and imidacloprid, motor function is severely impaired. For firpronil motor impairment is also osberved at very low dosages (1/500 of the LD50) whereas this is not the case for imidacloprid. Motor impairment due to pesticide impacts may be fatal in the wild.",
+    "contextual_combined_score": 0.611111111111111,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.5,
+      "Contextual Recall": 0.3333333333333333
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.50 because the first node, ranked highest, discusses 'the importance of bees as pollinators and the economic value of pollination,' which is not directly related to the input's focus on 'motor impairment due to pesticides.' This irrelevant node should be ranked lower. However, the second node, which is relevant, mentions 'pesticide toxicity' and 'changes in behavior,' aligning well with the study's findings, justifying its position in the ranking.",
+      "Contextual Recall": "The score is 0.33 because while the 2nd node in the retrieval context supports the general idea of pesticide impact on motor function, specific findings and dosage details about fipronil and imidacloprid in sentences 1 and 2 of the expected output are not covered by any node in the retrieval context."
+    },
+    "question_type": "significance",
+    "paper_id": "813",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "813",
+      "question_id": "significance",
+      "reviewer": "NN",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 209,
+    "name": "paper_659_case_199",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the significant role of neonicotinoids and other pesticides in the decline of honeybee populations, stressing the need for further research to understand their long-term effects. It highlights the importance of honeybees for pollination and agriculture, indicating that the findings are crucial for informing policy and conservation efforts to protect these essential pollinators.",
+    "expected_output": "The paper found that honeybee workers in hives close to rice fields preferentially forage from rice flower. They conclude that clothianidin spraying of rice fields increases honeybee mortality 24 hours after spraying, but that hive brood weight and capped brood area did not significantly differ between hives placed at varying distances from the treated field. They concluse that clothianidin does not always lead to colony collapse.",
+    "contextual_combined_score": 0.6194444444444445,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.6083333333333333,
+      "Contextual Recall": 0.25
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.61 because the first node, ranked highest, is irrelevant as it only discusses the general importance of pollinators without addressing the specific findings on clothianidin or its effects on honeybees. This misplaced ranking affects the overall precision. However, the second and third nodes are relevant, discussing neonicotinoids and their effects on honeybees, aligning well with the paper's focus. The fourth node, though irrelevant, is ranked lower, which helps maintain a moderate score. The subsequent nodes are relevant and provide specific insights into clothianidin's impact, supporting the paper's conclusions.",
+      "Contextual Recall": "The score is 0.25 because only one sentence in the expected output, regarding increased honeybee mortality after clothianidin spraying, is supported by the 5th node in the retrieval context. Other sentences, such as those about foraging behavior, brood weight, and colony collapse, lack direct support from any node in the retrieval context."
+    },
+    "question_type": "significance",
+    "paper_id": "659",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "659",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 191,
+    "name": "paper_002_case_188",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of understanding the ecological and agricultural roles of bumble bees, the need for comprehensive studies to assess the impacts of pesticides, and the necessity for standardized methodologies in risk assessments. It highlights that multiple factors contribute to pollinator decline, not just neonicotinoids, making it crucial for future research and regulatory practices.",
+    "expected_output": "This study found no adverse effect on B. terrestris dalmatinus of OSR treated with Elado seed dressing (Clothianidin and beta-cyfluthrin). No difference in hive weight, or numbers of workers produced were observed. No effect on numbers of young queens produced were observed in the post-exposure phase. Under field-realistic conditions used here clothianidin residue aws lower than often suggested by other studies (max 1.3ug/kg in pollen). This has clear importance for agrigultural practices and regulatory bodies and implies that when used as a seed dressing, the risk of some neonicotinoids may be low to bumblebees. This type of testing could be added to regulatory risk assessments.",
+    "contextual_combined_score": 0.653968253968254,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.5333333333333333,
+      "Contextual Recall": 0.42857142857142855
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency.",
+      "Contextual Precision": "The score is 0.53 because the relevant nodes are not consistently ranked higher than the irrelevant ones. The first node, ranked 1, is irrelevant as it discusses 'the importance of pollination and the decline of pollinators,' which does not directly relate to the study's findings on OSR treated with Elado seed dressing. However, the second node, ranked 2, is relevant as it 'highlights the lack of routine testing for bumble bees in PPP registration,' aligning with the study's implications. The third node, ranked 3, is irrelevant, focusing on 'the standardization of hives and reproductive success,' which is not pertinent to the study's findings. The fourth and fifth nodes, ranked 4 and 5, are relevant, discussing 'the use of seed dressing and concerns about exposure to pollinators' and reiterating 'the lack of testing for bumble bees in PPP registration,' respectively. The presence of irrelevant nodes in higher ranks reduces the score, but the inclusion of relevant nodes in the top five maintains a moderate score.",
+      "Contextual Recall": "The score is 0.43 because while some sentences in the expected output align with nodes in the retrieval context, such as the importance of testing for regulatory purposes (node 2) and the risk of neonicotinoids (node 4), several key details about the specific study, including findings on hive weight, worker numbers, and clothianidin residue, are not supported by the retrieval context."
+    },
+    "question_type": "significance",
+    "paper_id": "002",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "002",
+      "question_id": "significance",
+      "reviewer": "AH",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 77,
+    "name": "paper_421_case_80",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The discussion in the paper underscores the importance of investigating the immune responses of different bee species, particularly solitary bees, to neonicotinoids. It highlights the need for comprehensive pesticide risk assessments that include both male and female bees, as they may exhibit different sensitivities and immune responses to pesticides. This research is essential for understanding the ecological impacts of pesticides and for informing regulatory practices to protect bee populations.",
+    "expected_output": "The paper presents information that exposure to sublethal doses of thiacloprid inhibit the immune response in O. bicornis, but do not impact wound healing (as previously found in social bees). Differences in feeding (therefore exposure) were found across castes, indicating that there are specific species and caste level effects that are often generalised in risk assessments.",
+    "contextual_combined_score": 0.6666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.5,
+      "Contextual Recall": 0.5
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.50 because the first node, ranked higher, discusses the role of bees as pollinators and the differences between social and solitary bees, which is not directly related to the paper's discussion on the effects of thiacloprid on O. bicornis. This irrelevant node should be ranked lower. However, the second node, which is relevant, addresses the effects of neonicotinoids like thiacloprid on bees, mentioning sublethal impairments and compromised immunity, aligning well with the paper's focus on the impact of thiacloprid on immune response in O. bicornis.",
+      "Contextual Recall": "The score is 0.50 because while the 2nd node in the retrieval context supports the expected output by discussing 'sublethal impairments to bees' and 'differences in feeding', it lacks information on 'wound healing' and 'species and caste level effects', which are crucial to fully align with the expected output."
+    },
+    "question_type": "significance",
+    "paper_id": "421",
+    "success": true,
+    "additional_metadata": {
+      "paper_id": "421",
+      "question_id": "significance",
+      "reviewer": "KW",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 206,
+    "name": "paper_665_case_211",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper highlights the essential role of pollinators, especially bees, in linking vegetation, wildlife, and human welfare, emphasizing their economic importance in food production and nutrition. It also addresses the alarming decline in bee populations and the detrimental effects of neonicotinoid insecticides, highlighting the need for awareness and protective measures in the field.",
+    "expected_output": "Foraging activity of the bees did not appear to be impacted when neonicotinoids were applied as seed treatment neonicotinoid insecticides were present below the limits of quantification in pollen and nectar.Contrarily, foliar application of the neonicotinoides significantly reduced the foraging activity between 1 and 3 days after application and neonicotinoids were detected in leaf, pollen and nectar samples. 7 days after spraying, foraging activities went back to values comparable to control.",
+    "contextual_combined_score": 0.6666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 1.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 1.00 because the relevant nodes are perfectly ranked at the top, providing precise and detailed information on the impact of neonicotinoid insecticides on bees, which aligns seamlessly with the paper's discussion on foraging activity and neonicotinoid application. Great job on maintaining such high precision!",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be directly attributed to any node(s) in the retrieval context. The retrieval context lacks specific details on seed treatment, foliar application, and recovery timelines, which are crucial for supporting the expected output."
+    },
+    "question_type": "significance",
+    "paper_id": "665",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "665",
+      "question_id": "significance",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 212,
+    "name": "paper_665_case_210",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper highlights the essential role of pollinators, especially bees, in linking vegetation, wildlife, and human welfare, emphasizing their economic importance in food production and nutrition. It also addresses the alarming decline in bee populations and the detrimental effects of neonicotinoid insecticides, highlighting the need for awareness and protective measures in the field.",
+    "expected_output": "The study found that when applied as a seed treatment, levels of pesticide residues in pollen and nectar samples were below quantifiable levels, whereas levels in foliar spray treated plants were higher. In line with this, they observed no effect of the seed treatment on honeybee foraging behaviour, whereas foliar sprays reduced foraging for 1-3 days post-application, but that this returned to normal levels after 7 days. Therefore the authors conclude that there is little short-term impact of neonicotinoid application on bee foraging activity, especially when applied as a seed treatment. The authors recommend that sprays should not be used during flowering stages.",
+    "contextual_combined_score": 0.6666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 1.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 1.00 because the relevant nodes are perfectly ranked at the top, ensuring that the most pertinent information about the impact of neonicotinoid insecticides on bees and their foraging activity is prioritized. Great job!",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context. The findings, observations, conclusions, and recommendations mentioned in the expected output are not reflected in the retrieval context, leading to a complete lack of supportive evidence."
+    },
+    "question_type": "significance",
+    "paper_id": "665",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "665",
+      "question_id": "significance",
+      "reviewer": "BN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 251,
+    "name": "paper_663_case_244",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the importance of enhancing pesticide testing protocols for honeybees due to their ecological and economic significance, advocating for studies on entire colonies to accurately reflect the effects of pesticides.",
+    "expected_output": "The main findings of the papers are that imidacloprid significantly affected honey production, total number of bees and activity of the immune-related enzyme phenoloxidase in forager bee extracts.  Apart from variables that were themselves components of colony strength (numbers of bees/brood cells), the only indicator that was both influenced by an insecticide and predictive of overwintering strength was the concentration of 10HDA in worker bee heads.\ufeff Finally, the fact that most secondary endpoints influenced by the treatments later showed to be irrelevant for overwintering strength illustrates the great resilience of the honey bee colony.",
+    "contextual_combined_score": 0.6666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 1.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 1.00 because the relevant node, ranked first, perfectly aligns with the input by discussing the importance of testing pesticides on honeybees, which is central to the paper's focus on imidacloprid's effects on honeybee health and colony strength. Great job on the precision!",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be linked to any node(s) in the retrieval context. The expected output discusses specific findings about imidacloprid's effects, variables, and resilience of honey bee colonies, which are absent in the retrieval context."
+    },
+    "question_type": "significance",
+    "paper_id": "663",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "663",
+      "question_id": "significance",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 8,
+    "name": "paper_592_case_5",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper underscores the importance of understanding the impact of neonicotinoid insecticides on insect reproductive physiology, particularly for male wild bees, as this knowledge is crucial for assessing the overall fitness and population dynamics of bee species. It also emphasizes the need for standardized research methods to accurately assess the impact of neonicotinoids on solitary bees, highlighting that while no significant effects were found in their study, previous literature suggests potential risks. Furthermore, it calls for a holistic approach in evaluating the environmental risks of neonicotinoids, suggesting that favorable conditions can mask their effects, and stresses the need for further research on the impact of agrochemicals on male insects to better understand their role in global insect declines.",
+    "expected_output": "The paper emphasizes the need for holistic approaches including lab, semi-field and field data, as well as standardized methods to promote direct comparisons among labs.",
+    "contextual_combined_score": 0.6916666666666668,
+    "individual_scores": {
+      "Faithfulness": 0.875,
+      "Contextual Precision": 0.2,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.88 because the actual output claims potential risks of clothianidin on male solitary bees, while the study found no significant effects, indicating a minor misalignment.",
+      "Contextual Precision": "The score is 0.20 because the relevant node, ranked fifth, highlights the need for a 'holistic approach combining laboratory, semi-field, and field data,' which aligns with the input's focus. However, the first four nodes, which are ranked higher, discuss topics like 'effects of neonicotinoid insecticides on solitary bees' and 'knowledge gap in understanding the impact on reproductive physiology,' which are not directly related to the input's request for a discussion on the importance of holistic approaches or standardized methods. This misalignment in ranking results in a lower score.",
+      "Contextual Recall": "The score is 1.00 because the expected output perfectly aligns with the retrieval context, specifically matching the 5th node, which highlights the necessity of a holistic approach involving lab, semi-field, and field data."
+    },
+    "question_type": "significance",
+    "paper_id": "592",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "592",
+      "question_id": "significance",
+      "reviewer": "LH",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 167,
+    "name": "paper_943_case_153",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of Spinosad in biological pest control as a safer alternative to synthetic insecticides, focusing on its effectiveness against pests while minimizing harm to non-target species like honey bees. It discusses the development of specific formulations that reduce bee exposure, highlighting the need for sustainable practices in agriculture.",
+    "expected_output": "The authors report no negative impacts of the pesticide on bees. The bees did not avoid consuming the pesticide. The auhtors suggest more research is needed over a longer period of time.",
+    "contextual_combined_score": 0.6944444444444443,
+    "individual_scores": {
+      "Faithfulness": 0.75,
+      "Contextual Precision": 0.3333333333333333,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.75 because the actual output inaccurately claims that Spinosad minimizes harm to non-target species like honey bees, while the retrieval context indicates it is very toxic to them in oral exposure tests.",
+      "Contextual Precision": "The score is 0.33 because the relevant node, ranked third, highlights that the GF-120 formulation is not rejected by bees and suggests future studies, aligning with the expected output's mention of no negative impacts and the need for more research. However, the first and second nodes, which are ranked higher, focus on Spinosad's effects on honey bees without addressing the absence of negative impacts or the need for further research, making them less relevant to the input.",
+      "Contextual Recall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, with no unsupportive reasons present. This perfect alignment indicates a comprehensive and accurate retrieval of information."
+    },
+    "question_type": "significance",
+    "paper_id": "943",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "943",
+      "question_id": "significance",
+      "reviewer": "HS",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 142,
+    "name": "paper_373_case_123",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the critical importance of understanding the sub-lethal effects of pesticides on honey bees, particularly how they affect the size and function of hypopharyngeal glands (HPGs) and the role of heat shock proteins (Hsps) in stress responses. These findings have significant implications for bee health, colony productivity, and the broader ecological impacts of pesticide use.",
+    "expected_output": "The study showed that using a combination of the immunohistochemical assays may help to detect the cellular responses of honeybee HPG.",
+    "contextual_combined_score": 0.6969696969696969,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.09090909090909091,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.09 because the relevant node, which discusses the use of immunohistochemical assays to detect cellular responses of honeybee HPG, is ranked 11th. The preceding nodes, such as the first node discussing heat shock proteins and their functions, and the second node focusing on Hsp 90 properties, are not directly related to the study's findings and should be ranked lower. This misalignment in ranking results in a low contextual precision score.",
+      "Contextual Recall": "The score is 1.00 because the expected output perfectly aligns with the information from the 10th node in the retrieval context, showcasing a flawless match. Great job!"
+    },
+    "question_type": "significance",
+    "paper_id": "373",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "373",
+      "question_id": "significance",
+      "reviewer": "RT",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 224,
+    "name": "paper_019_case_219",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of individual bee health in maintaining colony stability, revealing that higher death rates among younger bees can precipitate colony collapse, thus providing insights into bee population dynamics and conservation efforts.",
+    "expected_output": "The paper emphasizes the importance of individual bee health in maintaining colony stability, revealing that higher death rates among younger bees can precipitate colony collapse, thus providing insights into bee population dynamics and conservation efforts.",
+    "contextual_combined_score": 0.7154882154882154,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.14646464646464646,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.15 because the relevant nodes, ranked ninth and eleventh, are positioned lower than several irrelevant nodes. The first node discusses 'the variability in the effects of pesticides on bee colonies,' which does not align with the input's focus on the importance of individual bee health and colony stability. Similarly, the second node outlines 'a conceptual model of stressors affecting honey bee health,' which again does not address the input's focus. These irrelevant nodes should be ranked lower than the ninth node, which 'directly addresses how the death rate of younger bees affects colony stability,' and the eleventh node, which 'concludes that colony collapse is favored by the premature death of younger bees.' This misalignment in ranking results in a lower contextual precision score.",
+      "Contextual Recall": "The score is 1.00 because the expected output aligns perfectly with the retrieval context, specifically node 9, which highlights the impact of younger bee mortality on colony collapse. Great job!"
+    },
+    "question_type": "significance",
+    "paper_id": "019",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "019",
+      "question_id": "significance",
+      "reviewer": "EA",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 87,
+    "name": "paper_222_case_88",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The discussion highlights the importance of studying male honey bees for improving queen mating success and overall honey bee reproduction, indicating a significant research gap that could impact the field.",
+    "expected_output": "The paper presents several significant findings. It concludes that drones are typically more susceptible to effects of cold and imidacloprid than workers, but that the pesticide 'cocktail' was not measurably toxic at ecologically relevant concentrations (reverse-calculated from concentrations present in A. mellifera hives). It additionally presents that 34 proteins were differentially expressed in topically exposed drones, but not in workers, indicating that drones express stress proteins at a higher baseline than workers.",
+    "contextual_combined_score": 0.7222222222222222,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 1.0,
+      "Contextual Recall": 0.16666666666666666
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy!",
+      "Contextual Precision": "The score is 1.00 because the relevant nodes are perfectly ranked at the top, providing a seamless alignment with the input. The first node discusses the susceptibility of drones to environmental stressors, directly supporting the paper's findings. The second node further emphasizes the understudied nature of drone quality, which is crucial to the paper's discussion. Great job on achieving a perfect score!",
+      "Contextual Recall": "The score is 0.17 because only one sentence from the expected output, specifically sentence 2, aligns with the information in node 2 of the retrieval context. The majority of the expected output sentences lack direct support from any nodes in the retrieval context, leading to a low recall score."
+    },
+    "question_type": "significance",
+    "paper_id": "222",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "222",
+      "question_id": "significance",
+      "reviewer": "KW",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 169,
+    "name": "paper_943_case_152",
+    "input": "Summarize the paper's discussion regarding the importance to the field.",
+    "actual_output": "The paper emphasizes the importance of Spinosad in biological pest control as a safer alternative to synthetic insecticides, focusing on its effectiveness against pests while minimizing harm to non-target species like honey bees. It discusses the development of specific formulations that reduce bee exposure, highlighting the need for sustainable practices in agriculture.",
+    "expected_output": "The authors demonstrate that Spinosad has no negative impact on the behavior of the stingless bee P. moureana. Specifically, the findings of the study highlight that GF-120 (Spinosad) was not rejected by this species at the concentrations used in the experiment. The authors suggest that studies with longer observation periods are needed to detect other potential adverse effects.",
+    "contextual_combined_score": 0.7222222222222222,
+    "individual_scores": {
+      "Faithfulness": 0.75,
+      "Contextual Precision": 0.41666666666666663,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.75 because the actual output inaccurately claims that Spinosad minimizes harm to non-target species like honey bees, while the retrieval context indicates it is very toxic to them in oral exposure tests.",
+      "Contextual Precision": "The score is 0.42 because the first two nodes in the retrieval contexts are irrelevant, focusing on the general use of Spinosad and its effects on honey bees, rather than the specific topic of stingless bees or the GF-120 formulation. These irrelevant nodes are ranked higher than the relevant third and fourth nodes, which discuss the GF-120 formulation's impact on stingless bees and the need for longer observation periods, respectively. This misalignment in ranking contributes to the lower score.",
+      "Contextual Recall": "The score is 1.00 because every sentence in the expected output is directly supported by the 3rd node in the retrieval context, demonstrating a perfect alignment between the expected findings and the information retrieved."
+    },
+    "question_type": "significance",
+    "paper_id": "943",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "943",
+      "question_id": "significance",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  }
+]

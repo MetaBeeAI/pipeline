@@ -1,0 +1,237 @@
+{
+  "source": "llm",
+  "analysis_type": "contextual_measures",
+  "measures_analyzed": [
+    "Faithfulness",
+    "Contextual Precision",
+    "Contextual Recall"
+  ],
+  "generated_at": "2025-08-22 08:48:12.675145",
+  "total_edge_cases": 120,
+  "question_type_summaries": {
+    "bee_species": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.3333333333333333,
+        "max": 0.3611111111111111,
+        "mean": 0.3347222222222222
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Lack of Specificity in Retrieval Contexts:** Many nodes fail to specify the bee species tested, leading to irrelevance. This lack of specificity results in low contextual precision and recall scores, as the nodes do not align with the expected output.\n\n2. **Irrelevant Node Ranking:** Relevant nodes are often ranked lower than irrelevant ones, which discuss general topics without specifying the species. This misranking contributes to low precision scores.\n\n3. **Complete Absence of Relevant Information:** In several cases, the retrieval context lacks any mention of the specific bee species required, resulting in zero recall scores.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Enhance Specificity in Retrieval Contexts:** Ensure that retrieval contexts include specific mentions of bee species relevant to the input question to improve precision and recall.\n\n2. **Improve Node Ranking Algorithms:** Adjust algorithms to prioritize nodes that contain specific species information over those with general or irrelevant content.\n\n3. **Refine Contextual Filtering:** Implement stricter filtering criteria to exclude nodes that do not mention the required species, ensuring only relevant information is retrieved.",
+      "sample_cases": [
+        {
+          "name": "paper_586_case_19",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "586",
+          "input": "What species of bee(s) were tested?",
+          "expected_output": "The bee species tested was Bombus terrestris. The subspecies was Bombus terrestrus audax.",
+          "actual_output": "Honeybees and bumblebees were tested."
+        },
+        {
+          "name": "paper_584_case_37",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "584",
+          "input": "What species of bee(s) were tested?",
+          "expected_output": "*Bombus terrestris audax*",
+          "actual_output": "*Bombus terrestris audax*"
+        },
+        {
+          "name": "paper_299_case_60",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "299",
+          "input": "What species of bee(s) were tested?",
+          "expected_output": "Apis mellifera carnica",
+          "actual_output": "The species of bees tested were Halictus tumulorum, Lasioglossum fulvicorne, L. malachurum, L. pauxillum, Osmia spinulosa, honey bees (*Apis mellifera..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-22 08:49:06.099774"
+    },
+    "pesticides": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.2222222222222222,
+        "max": 0.7055555555555556,
+        "mean": 0.5049377705627706
+      },
+      "llm_summary": "**Section 1: Main Issues**\n1. **Contextual Precision**: Many responses scored low due to irrelevant nodes being ranked higher than relevant ones, failing to provide specific details about pesticides, doses, exposure methods, or durations. This misalignment in node ranking leads to a lack of pertinent information.\n2. **Contextual Recall**: Responses often lacked alignment with the retrieval context, missing key details about pesticide application, exposure methods, or specific study conditions, resulting in incomplete or unsupported outputs.\n3. **Faithfulness**: Some outputs contained inaccuracies or contradictions, such as incorrect pesticide classifications or exposure details not supported by the retrieval context, affecting the reliability of the information provided.\n\n**Section 2: Recommendations for Improving Prompt**\n1. **Enhance Contextual Relevance**: Refine the retrieval process to prioritize nodes that directly address the specific details of pesticide use, including doses and exposure methods, ensuring relevant information is ranked higher.\n2. **Improve Recall by Contextual Matching**: Design prompts to better match expected outputs with retrieval contexts, focusing on aligning specific study details and conditions to avoid missing key information.\n3. **Ensure Faithfulness**: Implement checks to verify the accuracy of classifications and exposure details in outputs, aligning them closely with the retrieval context to prevent contradictions and inaccuracies.",
+      "sample_cases": [
+        {
+          "name": "paper_382_case_109",
+          "contextual_combined_score": 0.2222222222222222,
+          "paper_id": "382",
+          "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of ex...",
+          "expected_output": "No pesticides were directly applied in the study. Instead, the study involved placing hives at sites within commercial orchards. However, pesticide ap...",
+          "actual_output": "The pesticides used in the study were neonicotinoids, specifically imidacloprid, clothianidin, and thiamethoxam. The exposure method for imidacloprid ..."
+        },
+        {
+          "name": "paper_380_case_125",
+          "contextual_combined_score": 0.30952380952380953,
+          "paper_id": "380",
+          "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of ex...",
+          "expected_output": "No exposure was conducted in the study. The study identified the pesticide residues present in the honey bee body.",
+          "actual_output": "The pesticides used in the study include Propamocarb (fungicide), Carbendazim (herbicide), and Azobenzene (insecticide). However, the study does not s..."
+        },
+        {
+          "name": "paper_585_case_31",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "585",
+          "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of ex...",
+          "expected_output": "The pesticides used in the study were imidacloprid (50 ppb) and thiacloprid (4500 ppb). The exposure method involved mixing the pesticides in sugar sy...",
+          "actual_output": "The pesticides used in the study were imidacloprid (50 ppb) and thiacloprid (4500 ppb). The exposure method involved mixing the pesticides in sugar sy..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-22 08:49:00.981965"
+    },
+    "additional_stressors": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.0,
+        "max": 0.3333333333333333,
+        "mean": 0.2225
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Irrelevant Contextual Nodes**: A significant issue is the retrieval of irrelevant nodes that do not address the input question about additional stressors. Many nodes focus on unrelated topics such as pesticide effects or bee behavior, leading to low precision scores.\n   \n2. **Misalignment with Retrieval Context**: There is frequent misalignment between the actual output and the retrieval context, resulting in low faithfulness scores. Outputs often include incorrect or omitted details about stressors, dosages, or exposure durations.\n\n3. **Lack of Contextual Recall**: The responses often fail to align with any nodes in the retrieval context, indicating a complete mismatch and resulting in zero recall scores. This suggests a failure to extract relevant information from the context.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Enhance Contextual Relevance**: Refine the retrieval process to prioritize nodes that specifically address additional stressors. Implement filters or keywords to ensure the context aligns with the input question.\n\n2. **Improve Output Alignment**: Ensure the prompt guides the model to accurately reflect the details present in the retrieval context, focusing on correct dosages, exposure methods, and stressors.\n\n3. **Increase Recall through Specificity**: Design prompts to explicitly request information about additional stressors, encouraging the model to extract and align relevant details from the context.",
+      "sample_cases": [
+        {
+          "name": "paper_515_case_182",
+          "contextual_combined_score": 0.0,
+          "paper_id": "515",
+          "input": "Question about additional_stressors",
+          "expected_output": "No additional stressors were mentioned.",
+          "actual_output": "No additional stressors or combinations were mentioned in the text. The focus was solely on the effects of thiamethoxam."
+        },
+        {
+          "name": "paper_787_case_45",
+          "contextual_combined_score": 0.1111111111111111,
+          "paper_id": "787",
+          "input": "Question about additional_stressors",
+          "expected_output": "No additional stressors were listed in the text",
+          "actual_output": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text. The..."
+        },
+        {
+          "name": "paper_443_case_91",
+          "contextual_combined_score": 0.1111111111111111,
+          "paper_id": "443",
+          "input": "Question about additional_stressors",
+          "expected_output": "No additional stressors were evaluated in the study.",
+          "actual_output": "No additional stressors or combinations (like temperature, parasites, pathogens, or nutritional stress) were mentioned in the texts. The only addition..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-22 08:49:22.897634"
+    },
+    "experimental_methodology": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.3333333333333333,
+        "max": 0.7037240537240538,
+        "mean": 0.5790744270816454
+      },
+      "llm_summary": "**Section 1: Main Issues**\n1. **Contextual Precision**: Many responses suffer from low precision due to irrelevant nodes being ranked higher than relevant ones. This misalignment often results in the retrieval of information that does not pertain to experimental methodologies, significantly lowering the precision scores.\n2. **Contextual Recall**: There is a frequent lack of alignment between the expected output and the retrieval context, with key details about experimental methodologies missing from the nodes. This results in a complete or partial absence of supportive connections, affecting recall scores.\n3. **Faithfulness**: While generally high, some responses include inaccuracies, such as incorrect species identification or methodologies not present in the retrieval context, slightly affecting the faithfulness scores.\n\n**Section 2: Recommendations for Improving Prompt**\n1. **Enhance Node Ranking**: Adjust the retrieval algorithm to prioritize nodes that directly address experimental methodologies, ensuring relevant nodes are ranked higher than irrelevant ones.\n2. **Improve Contextual Coverage**: Ensure the retrieval context comprehensively covers all aspects of the expected output, particularly focusing on specific methodologies and experimental details.\n3. **Clarify Methodology Focus**: Refine the prompt to explicitly request detailed descriptions of experimental methodologies, reducing the likelihood of retrieving irrelevant contextual information.",
+      "sample_cases": [
+        {
+          "name": "paper_296_case_51",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "296",
+          "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not stati...",
+          "expected_output": "The experimental methodology used in this paper involved assessing the performance of bumble bees (*B. terrestris*) in queenless microcolonies, focusi...",
+          "actual_output": "The experimental methodology used in this paper involved assessing the performance of bumble bees (*B. terrestris*) in queenless microcolonies, focusi..."
+        },
+        {
+          "name": "paper_237_case_77",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "237",
+          "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not stati...",
+          "expected_output": "The authors employed free-flight assays. Sucrose feeders were provided in proximity to bee hives, and incrementally moved to a distance of 30m (the ex...",
+          "actual_output": "The experimental methodologies used in this paper include trials on free-ranging foragers making repeated flights over treated plots, flights to conta..."
+        },
+        {
+          "name": "paper_013_case_154",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "013",
+          "input": "What experimental methodologies was used in this paper? (e.g. experiment done on the bees, not stati...",
+          "expected_output": "The experimental methodologies used in this paper include analyzing survival, pollen and syrup consumption, and midgut bacterial diversity in honey be...",
+          "actual_output": "The experimental methodologies used in this paper include analyzing survival, pollen and syrup consumption, and midgut bacterial diversity in honey be..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-22 08:49:30.067754"
+    },
+    "significance": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.3333333333333333,
+        "max": 0.7222222222222222,
+        "mean": 0.5783609908609908
+      },
+      "llm_summary": "**Section 1: Main Issues**\n1. **Contextual Precision**: Many responses fail to prioritize relevant information, with irrelevant nodes often ranked higher than pertinent ones. This misalignment leads to low precision scores as the responses do not directly address the input's focus.\n2. **Contextual Recall**: Responses frequently lack coverage of specific details from the expected output, resulting in low recall scores. Key topics and findings are often missing from the retrieval context, leading to incomplete answers.\n3. **Faithfulness**: While generally high, occasional inaccuracies occur, such as misrepresenting study findings, which can slightly affect the faithfulness score.\n\n**Section 2: Recommendations for Improving Prompt**\n1. **Enhance Contextual Relevance**: Design prompts to emphasize the importance of ranking relevant nodes higher by explicitly instructing the model to prioritize nodes that directly address the input's focus.\n2. **Improve Recall by Contextual Coverage**: Ensure prompts guide the model to retrieve comprehensive information by highlighting the need to cover all key aspects and details mentioned in the expected output.\n3. **Clarify Faithfulness Requirements**: Reinforce the importance of maintaining accuracy by instructing the model to cross-verify claims with the retrieval context, reducing the risk of misalignment.",
+      "sample_cases": [
+        {
+          "name": "paper_216_case_64",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "216",
+          "input": "Summarize the paper's discussion regarding the importance to the field.",
+          "expected_output": "The authors present their significant finding to be the identification of Amel\u03b11/rat\u03b22 gene targets for the synthesis of novel pesticides with low tox...",
+          "actual_output": "The paper underscores the importance of sulfoximines in agriculture for pest control, particularly their effectiveness against resistant insects. It a..."
+        },
+        {
+          "name": "paper_444_case_115",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "444",
+          "input": "Summarize the paper's discussion regarding the importance to the field.",
+          "expected_output": "The main finding of the paper is that the performance of managed and wil pollinators are better in fields managed with the IPM strategy compared with ...",
+          "actual_output": "The paper emphasizes the importance of understanding the impact of neonicotinoid insecticides on both managed and wild pollinators, advocating for mor..."
+        },
+        {
+          "name": "paper_052_case_138",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "052",
+          "input": "Summarize the paper's discussion regarding the importance to the field.",
+          "expected_output": "The study demonstrates that Apis cerana exhibits lower sensitivity to thiacloprid compared to imidacloprid. Thiacloprid exposure did not impair sucros...",
+          "actual_output": "The paper underscores the importance of studying the effects of neonicotinoids on *Apis cerana*, as this species is at risk from pesticide exposure, y..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-22 08:49:09.090741"
+    },
+    "future_research": {
+      "num_cases": 20,
+      "score_range": {
+        "min": 0.2857142857142857,
+        "max": 0.3333333333333333,
+        "mean": 0.33095238095238094
+      },
+      "llm_summary": "**Section 1: Main Issues**\n\n1. **Contextual Precision**: The most critical issue is the ranking of irrelevant nodes higher than relevant ones, leading to a complete mismatch with the input's focus on future research directions. This results in a consistent score of 0.00 for contextual precision across cases.\n   \n2. **Contextual Recall**: There is a failure to link expected output sentences to any nodes in the retrieval context, as the contexts do not address future research directions. This results in a score of 0.00 for contextual recall, indicating a lack of relevant information.\n\n3. **Faithfulness**: While faithfulness scores are consistently high, indicating no contradictions, this does not compensate for the lack of relevant content regarding future research directions.\n\n**Section 2: Recommendations for Improving Prompt**\n\n1. **Enhance Retrieval Contexts**: Ensure that retrieval contexts include sections explicitly discussing future research directions. This can be achieved by refining the search criteria to prioritize nodes that mention future research.\n\n2. **Improve Node Ranking**: Adjust the ranking algorithm to prioritize nodes that are more likely to contain future research directions, ensuring they are ranked higher than irrelevant nodes.\n\n3. **Clarify Input Focus**: Modify the prompt to explicitly request information on future research directions, guiding the retrieval system to focus on this aspect and improve both precision and recall.",
+      "sample_cases": [
+        {
+          "name": "paper_440_case_78",
+          "contextual_combined_score": 0.2857142857142857,
+          "paper_id": "440",
+          "input": "Summarize the paper's discussion regarding future research directions.",
+          "expected_output": "The authors did not suggest directions for future research.",
+          "actual_output": "Future research should focus on the effects of imidacloprid on honeybee larvae, particularly examining the nursing behavior of bees and the potential ..."
+        },
+        {
+          "name": "paper_594_case_1",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "594",
+          "input": "Summarize the paper's discussion regarding future research directions.",
+          "expected_output": "I cannot find any suggestions for future research.",
+          "actual_output": "Future research should investigate the intricate relationships between environmental factors and honey bee gene regulation, particularly under hive co..."
+        },
+        {
+          "name": "paper_586_case_19",
+          "contextual_combined_score": 0.3333333333333333,
+          "paper_id": "586",
+          "input": "Summarize the paper's discussion regarding future research directions.",
+          "expected_output": "I have not identified any sections where they discuss future research directions.",
+          "actual_output": "Future research should focus on the differential effects of neonicotinoids on receptor subtype activation, the long-term impacts on bee behavior and c..."
+        }
+      ],
+      "llm_summary_generated_at": "2025-08-22 08:49:14.193612"
+    }
+  },
+  "overall_statistics": {
+    "total_cases": 120,
+    "score_range": {
+      "min": 0.0,
+      "max": 0.7222222222222222,
+      "mean": 0.425091298613335
+    }
+  }
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 110,
+    "name": "paper_382_case_109",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were neonicotinoids, specifically imidacloprid, clothianidin, and thiamethoxam. The exposure method for imidacloprid was through sucrose or pollen feeding for 3 weeks, while the exposure method for clothianidin and thiamethoxam was through lingering pesticide residues in the environment for 2.5 weeks.",
+    "expected_output": "No pesticides were directly applied in the study. Instead, the study involved placing hives at sites within commercial orchards. However, pesticide applications in these orchards were not controlled by the researchers. The hives remained at the sites for one month.",
+    "contextual_combined_score": 0.2222222222222222,
+    "individual_scores": {
+      "Faithfulness": 0.6666666666666666,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.67 because the actual output incorrectly states that imidacloprid exposure was through sucrose or pollen feeding for 3 weeks, while the retrieval context clarifies that queens were only exposed to lingering pesticide residues without being fed any pesticide-treated syrup.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node (rank 1) discusses the effects of neonicotinoids but lacks specific details on pesticide application, dose, exposure method, or duration of exposure. Similarly, the second node (rank 2) mentions lingering pesticide residues but fails to provide the necessary specifics, making it equally unhelpful. As a result, the relevant nodes are not ranked higher than the irrelevant ones.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the node(s) in retrieval context, as they discuss specific details about pesticide application and hive placement that are not mentioned in the context."
+    },
+    "question_type": "pesticides",
+    "paper_id": "382",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "382",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 150,
+    "name": "paper_380_case_125",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study include Propamocarb (fungicide), Carbendazim (herbicide), and Azobenzene (insecticide). However, the study does not specify the dose, exposure method, or duration of exposure for these pesticides.",
+    "expected_output": "No exposure was conducted in the study. The study identified the pesticide residues present in the honey bee body.",
+    "contextual_combined_score": 0.30952380952380953,
+    "individual_scores": {
+      "Faithfulness": 0.42857142857142855,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.5
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.43 because the actual output inaccurately states that Carbendazim is part of the study's pesticides, while the retrieval context clarifies it was found in infected hives. Additionally, while the classifications of Propamocarb, Carbendazim, and Azobenzene are correct, the actual output fails to mention their identification in infected hives, which is crucial information from the context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input query. The first node (rank 1) discusses a targeted exposome approach but lacks specific pesticide information, the second node (rank 2) lists xenobiotics without study details, and the third node (rank 3) mentions fungicides and insecticides without exposure specifics. Since all nodes fail to address the query, the score reflects a complete lack of relevant information.",
+      "Contextual Recall": "The score is 0.50 because while the second sentence about identifying pesticide residues aligns with node 2 regarding xenobiotics in honey bee exposomes, the first sentence about no exposure conducted does not correspond to any node in the retrieval context."
+    },
+    "question_type": "pesticides",
+    "paper_id": "380",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "380",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 56,
+    "name": "paper_585_case_31",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were imidacloprid (50 ppb) and thiacloprid (4500 ppb). The exposure method involved mixing the pesticides in sugar syrup, which was trickled between frames and fed to the colonies. The duration of exposure was seven days. Additionally, imidacloprid was tested at a dose of 2 ng/bee in natural field conditions for up to 5 weeks.",
+    "expected_output": "The pesticides used in the study were imidacloprid (50 ppb) and thiacloprid (4500 ppb). The exposure method involved mixing the pesticides in sugar syrup, which was trickled between frames and fed to the colonies. The duration of exposure was seven days. Additionally, imidacloprid was tested at a dose of 2 ng/bee in natural field conditions for up to 5 weeks.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input query. The first node ranks highest but states, \"The abstract discusses the effects of plant protection products on honeybees but does not mention specific pesticides or their doses, exposure methods, or durations,\" indicating a complete lack of relevant information. Similarly, the second node ranks second and explains, \"This document describes the conditions of the apiary and the management of honeybee colonies but does not provide any information about the pesticides used or their exposure details,\" further confirming the absence of pertinent data. The third node reiterates this issue, focusing on apiary conditions without addressing the pesticides, thus reinforcing the low score.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context, as all key details regarding pesticides, exposure methods, and testing conditions are missing."
+    },
+    "question_type": "pesticides",
+    "paper_id": "585",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "585",
+      "question_id": "pesticides",
+      "reviewer": "AJ",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 58,
+    "name": "paper_072_case_29",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "Information not found in the provided text.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input query regarding pesticides. Each node, from the first to the last, fails to provide any information about the specific pesticide(s) used, their doses, exposure methods, or duration of exposure, as highlighted in the reasons such as 'The context does not provide any information about the specific pesticide(s) used in the study' for the first node. Since there are no relevant nodes, the score reflects a complete lack of pertinent information.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Information not found in the provided text.' does not relate to any specific content in the node(s) in retrieval context."
+    },
+    "question_type": "pesticides",
+    "paper_id": "072",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "072",
+      "question_id": "pesticides",
+      "reviewer": "AJ",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 62,
+    "name": "paper_072_case_30",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "Information not found in the provided text.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input query regarding pesticides. Each node ranks lower due to their lack of information, such as the first node stating, 'The context does not provide any information about the specific pesticide(s) used in the study, nor does it mention the dose, exposure method, or duration of exposure.' This pattern continues across all nodes, which do not address the specifics of pesticide use, leading to a complete absence of relevant content.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Information not found in the provided text.' does not relate to any specific content in the node(s) in retrieval context."
+    },
+    "question_type": "pesticides",
+    "paper_id": "072",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "072",
+      "question_id": "pesticides",
+      "reviewer": "EA",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 118,
+    "name": "paper_444_case_113",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were thiamethoxam (1.25 mg a.i. per seed), imidacloprid (814.09 ml/ha), and lambda-cyhalothrin (140.3 ml/ha). Thiamethoxam was applied as a seed coating, imidacloprid as a soil drench, and lambda-cyhalothrin as a foliar spray with four applications at 4, 6, 8, and 10 weeks post-transplant. The exposure duration for lambda-cyhalothrin was throughout the growing season.",
+    "expected_output": "Corn seeds were coated with Thiamethoxam (Cruiser 5FS 1.25 mg a.i. per seed), and watermelon crops were treated with Imidacloprid (Wrangler 814.09 ml/ha) as a soil drench, and lambda-cyhalothrin (Warrior II pyrethroid 140.3 ml/ha) was sprayed at 4, 6, 8, and 10 weeks post-transplant.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because the first node does not provide any relevant information regarding the pesticides used, their doses, exposure methods, or durations. It states, \"The context does not mention any specific pesticides or their doses, exposure methods, or durations, which are crucial to answering the question.\" This lack of relevant content results in a low score, as there are no relevant nodes to rank higher than the irrelevant ones.",
+      "Contextual Recall": "The score is 0.00 because the expected output details specific pesticide treatments that are not mentioned in the node(s) in retrieval context, leading to a complete lack of relevant support."
+    },
+    "question_type": "pesticides",
+    "paper_id": "444",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "444",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 148,
+    "name": "paper_380_case_126",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study include Propamocarb (fungicide), Carbendazim (herbicide), and Azobenzene (insecticide). However, the study does not specify the dose, exposure method, or duration of exposure for these pesticides.",
+    "expected_output": "The study did not apply pesticides directly. Instead, it measured environmental pesticide residues in bees collected from 30 hives using chemical analysis. No specific doses or controlled exposures were used.",
+    "contextual_combined_score": 0.4126984126984126,
+    "individual_scores": {
+      "Faithfulness": 0.5714285714285714,
+      "Contextual Precision": 0.3333333333333333,
+      "Contextual Recall": 0.3333333333333333
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.57 because the actual output incorrectly identifies Carbendazim as a herbicide and claims it was used in the study, while the retrieval context does not mention it as a pesticide used. Additionally, it misclassifies Azobenzene as an insecticide, whereas the retrieval context describes it as a succinate dehydrogenase inhibitor found in infected hives.",
+      "Contextual Precision": "The score is 0.33 because while the third node provides relevant information about specific pesticides, the first and second nodes are ranked higher despite being irrelevant. The first node, ranked first, \"discusses a targeted exposome approach to pesticide exposures but does not provide specific information about the pesticides used or their doses, exposure methods, or durations,\" and the second node, ranked second, \"lists various xenobiotics identified in honey bee exposomes but does not mention any specific study details regarding doses, exposure methods, or durations of exposure.\" This misalignment in ranking leads to a lower score, as relevant nodes are not prioritized.",
+      "Contextual Recall": "The score is 0.33 because while the measurement of environmental pesticide residues in bees relates to node 1 discussing pesticide exposures, the statements about not applying pesticides directly and the absence of specific doses do not correspond to any context nodes."
+    },
+    "question_type": "pesticides",
+    "paper_id": "380",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "380",
+      "question_id": "pesticides",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 204,
+    "name": "paper_018_case_205",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were imidacloprid (IMI) and thiacloprid (TCP). The doses were 360 ng/mL/mg protein for C. florisomne CYP9BU3 and 157.9 ng/mL/mg protein for D. cincta CYP9BU4. The exposure method involved a baculovirus and insect cell line system, and the duration of exposure is not specified.",
+    "expected_output": "The pesticides used in the study were imidacloprid (IMI) and thiacloprid (TCP). The doses were 360 ng/mL/mg protein for C. florisomne CYP9BU3 and 157.9 ng/mL/mg protein for D. cincta CYP9BU4. The exposure method involved a baculovirus and insect cell line system, and the duration of exposure is not specified.",
+    "contextual_combined_score": 0.4444444444444444,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.3333333333333333
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node ranks highest but states, \"The first document does not mention any specific pesticides or their doses, exposure methods, or durations, making it irrelevant to the question.\" Similarly, the second node also fails to provide the necessary information, stating, \"The second document provides some data on metabolite production but does not specify the pesticides used, their doses, exposure methods, or durations, which are crucial for answering the question.\" Since both nodes lack relevant content, the score remains at zero.",
+      "Contextual Recall": "The score is 0.33 because while the doses mentioned in sentence 2 can be linked to the retrieval context (node 1), the details about the pesticides in sentence 1 and the exposure method in sentence 3 do not have corresponding information in the retrieval context."
+    },
+    "question_type": "pesticides",
+    "paper_id": "018",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "018",
+      "question_id": "pesticides",
+      "reviewer": "EA",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 200,
+    "name": "paper_073_case_203",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study are neonicotinoids, specifically imidacloprid and thiacloprid. However, the text does not specify the doses, exposure methods, or duration of exposure.",
+    "expected_output": "The pesticides used in the study are neonicotinoids, specifically imidacloprid and thiacloprid. However, the text does not specify the doses, exposure methods, or duration of exposure. \n- Should additionally identify that this study is analysing the test species in relation to an agricultural landscape. The use of these insecticides is not the primary focus of this paper, hence the lack of detail. This study examines landscape structure.",
+    "contextual_combined_score": 0.4666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.4
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because the first node discusses the decline of bumble bee populations and mentions 'pesticide use' but does not provide any specific information about the pesticides used, their doses, exposure methods, or duration of exposure. This lack of relevant details means that the node does not meet the criteria for relevance, resulting in a score of zero.",
+      "Contextual Recall": "The score is 0.40 because while the expected output mentions analyzing test species in relation to an agricultural landscape (supporting node 1), it also includes details about specific pesticides and their lack of detail on doses and exposure methods that are not found in the retrieval context, leading to a lower contextual recall."
+    },
+    "question_type": "pesticides",
+    "paper_id": "073",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "073",
+      "question_id": "pesticides",
+      "reviewer": "EA",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 60,
+    "name": "paper_585_case_32",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were imidacloprid (50 ppb) and thiacloprid (4500 ppb). The exposure method involved mixing the pesticides in sugar syrup, which was trickled between frames and fed to the colonies. The duration of exposure was seven days. Additionally, imidacloprid was tested at a dose of 2 ng/bee in natural field conditions for up to 5 weeks.",
+    "expected_output": "Bees were exposed to imidacloprid (50 ppb), thiacloprid (4500 ppb) or control treatment (no pesticide) via sugar solution, which was provided inside the hive. Duration of the pesticide treatment was 7 days.",
+    "contextual_combined_score": 0.5,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.5
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input query. The first node ranks highest but states, \"The abstract discusses the impact of plant protection products on honeybees but does not specify any pesticides used or their doses,\" indicating a complete lack of relevant information. Similarly, the second node ranks next and mentions, \"This document describes the conditions of the apiary and the management of honeybee colonies but does not mention any specific pesticides or their exposure details,\" further confirming its irrelevance. The third node also fails to provide any pertinent details, stating, \"Similar to the previous document, this text focuses on the apiary conditions and management practices without providing information on pesticide use or exposure methods.\" Thus, the absence of relevant nodes leads to a score of 0.00.",
+      "Contextual Recall": "The score is 0.50 because while the mention of 'imidacloprid' and 'thiacloprid' in sentence 1 aligns with the discussion of neonicotinoid insecticides in node 1, the duration of pesticide treatment in sentence 2 lacks support from the retrieval context."
+    },
+    "question_type": "pesticides",
+    "paper_id": "585",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "585",
+      "question_id": "pesticides",
+      "reviewer": "LH",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 116,
+    "name": "paper_444_case_114",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were thiamethoxam (1.25 mg a.i. per seed), imidacloprid (814.09 ml/ha), and lambda-cyhalothrin (140.3 ml/ha). Thiamethoxam was applied as a seed coating, imidacloprid as a soil drench, and lambda-cyhalothrin as a foliar spray with four applications at 4, 6, 8, and 10 weeks post-transplant. The exposure duration for lambda-cyhalothrin was throughout the growing season.",
+    "expected_output": "The main insecticides reported in the paper are: thiamethoxam, imidacloprid, lambda-cyalothrin. In IPM seeds were coated with fungicides: Azoxystrobin, Fludioxonil, Mefenoxam, Thiabendazole",
+    "contextual_combined_score": 0.5,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.5
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because the first node does not provide any relevant information regarding the pesticides used, their doses, exposure methods, or durations. It states, \"The context does not mention any specific pesticides or their doses, exposure methods, or durations, which are crucial to answering the question.\" This lack of relevant content results in a low score, as there are no higher-ranked relevant nodes to compare against.",
+      "Contextual Recall": "The score is 0.50 because while the mention of IPM and fungicides in sentence 2 aligns with node(s) in retrieval context, the specific insecticides listed in sentence 1 are not directly supported by the context, leading to a partial match."
+    },
+    "question_type": "pesticides",
+    "paper_id": "444",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "444",
+      "question_id": "pesticides",
+      "reviewer": "FS",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 76,
+    "name": "paper_789_case_64",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study were chlorantraniliprole (0.015 g a.i. L\u207b\u00b9), chlorfenapyr (0.024 g a.i. L\u207b\u00b9), imidacloprid (0.37 g a.i. L\u207b\u00b9), lambda-cyhalothrin (0.025 g a.i. L\u207b\u00b9), malathion (0.97 g a.i. L\u207b\u00b9), methomyl (0.215 g a.i. L\u207b\u00b9), and spinosad (0.059 g a.i. L\u207b\u00b9). The exposure method involved direct ingestion and trophallactic exchanges, with a standardization period of 2 hours without food before the bioassays. The duration of exposure varied depending on the pesticide, with some causing rapid mortality within minutes and others over several hours.",
+    "expected_output": "The pesticides used in the study were chlorantraniliprole (0.015 g a.i. L\u207b\u00b9), chlorfenapyr (0.024 g a.i. L\u207b\u00b9), imidacloprid (0.37 g a.i. L\u207b\u00b9), lambda-cyhalothrin (0.025 g a.i. L\u207b\u00b9), malathion (0.7 g a.i. L\u207b\u00b9), methomyl (0.215 g a.i. L\u207b\u00b9), and spinosad (0.059 g a.i. L\u207b\u00b9). No formulation mentioned. Pre-weighed feeders with treated sucrose solutions were left in the pot with the bees for 3 h and weighed again after to determine ingestion volume.",
+    "contextual_combined_score": 0.5444444444444444,
+    "individual_scores": {
+      "Faithfulness": 0.8,
+      "Contextual Precision": 0.3333333333333333,
+      "Contextual Recall": 0.5
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.80 because the actual output lists specific insecticides used in the study but omits several others mentioned in the retrieval context, indicating a lack of completeness in the information provided.",
+      "Contextual Precision": "The score is 0.33 because while the relevant node (third node) provides specific details about the pesticides used, the first and second nodes, which are ranked higher, do not contain any relevant information regarding pesticides, doses, or exposure methods. The first node states, 'The first document discusses the collection of bees but does not mention any pesticides or their doses, exposure methods, or durations,' and the second node mentions, 'The second document provides information about bee behavior and the effects of insecticides but does not specify any pesticides used in the study or their respective doses and exposure details.' This misalignment in relevance leads to a lower score.",
+      "Contextual Recall": "The score is 0.50 because while the mention of specific pesticides aligns with node 3 in the retrieval context, the details about pre-weighed feeders and treated sucrose solutions do not connect to any node, indicating partial relevance."
+    },
+    "question_type": "pesticides",
+    "paper_id": "789",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "789",
+      "question_id": "pesticides",
+      "reviewer": "NN",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 58,
+    "name": "paper_304_case_53",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticides used in the study include:\n1. Organophosphate: 3.82 kg a.i./ha (STND)\n2. Pyrethroid: 0.003 kg a.i./ha (STND)\n3. Antibiotic (spinosad, emamectin benzoate, spinetoram): 0.005 kg a.i./ha (STND), 0.012 kg a.i./ha (RR)\n4. Tetranilic Acid (spirotetramat): 0.009 kg a.i./ha (RR)\n5. Anthranilic Diamide (chlorantraniliprole, flubendiamide): 0.111 kg a.i./ha (RR)\n6. Miticide (incl. abamectin): 0.021 kg a.i./ha (STND)\n7. Insect growth regulators (buprofezin, methoxyfenozide, novaluron, pyriproxyfen): 0.066 kg a.i./ha (RR)\n8. Oxadiazine (indoxacarb): 0.012 kg a.i./ha (STND), 0.055 kg a.i./ha (RR)\n9. Nicotinoids: 0.264 kg a.i./ha (STND)\n\nThe exposure method and duration of exposure are not provided in the text.",
+    "expected_output": "This study looks at the effect of different pesticide programs on insect abundance at different farms. Pesticide looked at inlcude organophosphates, pyrethroids, bio-pesticides, Tetramic acid, Anthranilic Diamide, Miticides, Insect growth regulators,and oxadiazine, and nicotinoids. Exposure method and duration are not listed in this study as it broadly examines programs instead of in lab experiments. It also looks at the use of pheromones that disrupt mating.",
+    "contextual_combined_score": 0.6136363636363636,
+    "individual_scores": {
+      "Faithfulness": 0.09090909090909091,
+      "Contextual Precision": 1.0,
+      "Contextual Recall": 0.75
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.09 because the actual output includes specific details about various pesticides and their amounts that are not mentioned in the retrieval context, leading to significant discrepancies.",
+      "Contextual Precision": "The score is 1.00 because all relevant nodes are ranked higher than any irrelevant nodes, ensuring that the most pertinent information is prioritized. The first node provides a direct connection to the study of pesticides, while the second and third nodes offer specific details about the pesticides used, confirming their relevance. The fourth node further elaborates on the application methods and timing, which is crucial for understanding exposure. Since there are no irrelevant nodes present, the score reflects a perfect alignment of relevant information.",
+      "Contextual Recall": "The score is 0.75 because while the expected output effectively connects to the retrieval context through discussions of pesticide programs and specific pesticides, it lacks coverage on exposure methods, which slightly detracts from the overall alignment."
+    },
+    "question_type": "pesticides",
+    "paper_id": "304",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "304",
+      "question_id": "pesticides",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 216,
+    "name": "paper_659_case_187",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in this study was clothianidin, applied at a dose of 250 L of a 20% solution diluted 5000 times with water. The exposure method was spraying, conducted on 2 and 31 August 2010, with a duration of exposure assessed for 1 week after spraying and long-term effects evaluated over 2 months.",
+    "expected_output": "250 L of a clothianidin solution (commercial name of Dantotsu; 20% clothianidin; Sumitomokagaku, Tokyo, Japan) was sprayed after being diluted 5000 times with water.Clothianidin spraying was conducted once in each of the two fields studied.",
+    "contextual_combined_score": 0.6638888888888889,
+    "individual_scores": {
+      "Faithfulness": 0.6666666666666666,
+      "Contextual Precision": 0.325,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.67 because the actual output incorrectly includes details about a 1-week exposure duration and long-term effects over 2 months, which are not mentioned in the retrieval context that focuses solely on immediate mortality after spraying.",
+      "Contextual Precision": "The score is 0.33 because while there are relevant nodes that provide the necessary details about the pesticide used, such as the dose and exposure method, they are ranked lower than several irrelevant nodes. Specifically, the first three nodes discuss general concerns and experimental setups without addressing the input question, which detracts from the overall precision. The relevant nodes are ranked 4th and 5th, with the first three nodes focusing on unrelated aspects, leading to a lower score.",
+      "Contextual Recall": "The score is 1.00 because the expected output is fully supported by the information in the first node of the retrieval context, which directly matches the details about the clothianidin solution and its application."
+    },
+    "question_type": "pesticides",
+    "paper_id": "659",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "659",
+      "question_id": "pesticides",
+      "reviewer": "ER",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 140,
+    "name": "paper_440_case_100",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study is imidacloprid. The doses mentioned are 100 \u03bcg/kg, 6-100 \u03bcg/kg, 12-24 \u03bcg/kg, and 12 ng/bee. The exposure method was through feeding honeybees imidacloprid, and the duration of exposure is described as medium-term.",
+    "expected_output": "The pesticide used was the active ingredient Imidacloprid. The concentrations used were 0.1, 6, 50, 500, 1000, 1500 and 2000 mg/L (corresponding to the doses of 0.4, 24, 200, 2000, 4000, 6000 and 8000 ng/larva), and intermediate-concentration range of 0.1, 1, 10 and 100 ug/L (corresponding to the doses of 0.0004, 0.004, 0.04, 0.4 ng/larva). The exposure was made during the larval stage by adding 1 uL of the solution in the larval cell for 4 consecutive days.",
+    "contextual_combined_score": 0.6666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because the first node does not provide any relevant information regarding the pesticide dose, exposure method, or duration of exposure, which are critical to the input query. The node discusses the effects of imidacloprid on honeybees but fails to address the specific details requested, making it irrelevant.",
+      "Contextual Recall": "The score is 1.00 because every detail in the expected output, including the mention of 'Imidacloprid' and the specific concentrations used, is fully supported by the relevant node(s) in retrieval context, demonstrating a perfect alignment with the information provided."
+    },
+    "question_type": "pesticides",
+    "paper_id": "440",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "440",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 146,
+    "name": "paper_448_case_102",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "No pesticide was tested, the study used literature data from Apis mellifera.",
+    "contextual_combined_score": 0.6666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input query regarding pesticides. Each node fails to provide any specific information about pesticides, their doses, exposure methods, or duration, as highlighted in the reasons for each node. For instance, the first node states, 'The first document does not provide any information about pesticides or their usage in the study,' and this pattern continues throughout all nodes, indicating a complete lack of relevant content.",
+      "Contextual Recall": "The score is 1.00 because the sentence clearly connects pesticide data to honey bees, which is directly supported by the retrieval context mentioning the impact of pesticides on honey bee populations."
+    },
+    "question_type": "pesticides",
+    "paper_id": "448",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "448",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 148,
+    "name": "paper_430_case_76",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "The following neonicotinoids were considered: acetamiprid, clothianidin, dinotefuran, imidacloprid, thiamethoxam and thiacloprid and the following pyrethroids; cyfluthrin, cypermetrin, permethrin, tefluthrin, tralomethrin, fenvalerate, deltamethrin, cyhalothrin-gamma, resmethrin, fluvalinate-tau.",
+    "contextual_combined_score": 0.6666666666666666,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.5,
+      "Contextual Recall": 0.5
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.50 because while there are relevant nodes discussing the effects and usage of neonicotinoids and pyrethroids on bee populations, there are also many irrelevant nodes that do not provide specific information about the pesticides used in the study. For instance, the first node ranks highest but is irrelevant as it \"does not provide any information about pesticides or their effects,\" which detracts from the overall score. The relevant nodes, such as the second and fourth, do provide pertinent information, but their presence is overshadowed by the numerous irrelevant nodes that dominate the rankings.",
+      "Contextual Recall": "The score is 0.50 because while the sentence lists specific neonicotinoids and pyrethroids (sentence 1) that are mentioned in the retrieval context (node 1), it does not directly connect to the broader discussion of their effects on bee populations, which is the main focus of the context."
+    },
+    "question_type": "pesticides",
+    "paper_id": "430",
+    "success": true,
+    "additional_metadata": {
+      "paper_id": "430",
+      "question_id": "pesticides",
+      "reviewer": "BN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 124,
+    "name": "paper_443_case_115",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study was sulfoxaflor (SFX) at a dose of 15 ng/bee. The exposure methods included administering SFX 30 minutes before conditioning and 12 hours before conditioning. The duration of exposure was 30 minutes for the first method and 12 hours for the second method.",
+    "expected_output": "The pesticide used was sulfoxaflor. An acute oral toxicity test was performed using the doses 15, 20, 30, 50, 100, 125, 150, 175, 200, 300, and 500 ng/bee. For sublethal tests (olfactory conditioning) bee were exposed orally with 2 uL of the pesticide at a dose of 15 ng/bee.",
+    "contextual_combined_score": 0.6809523809523809,
+    "individual_scores": {
+      "Faithfulness": 0.3333333333333333,
+      "Contextual Precision": 0.7095238095238094,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.33 because the actual output incorrectly states that SFX was administered 30 minutes before conditioning, while the retrieval context specifies it was 12 hours prior. Additionally, the output claims a 30-minute duration of exposure for the first method, which is not supported by the retrieval context.",
+      "Contextual Precision": "The score is 0.71 because while there are several relevant nodes that provide specific information about the pesticide SFX and its doses, there are also multiple irrelevant nodes that rank higher than some relevant ones. For instance, the second node discusses neonicotinoids without mentioning sulfoxaflor, which is less relevant than the first node that directly addresses the study's goal regarding SFX. Additionally, the fourth node does not provide any details about pesticide doses or exposure methods, which detracts from the overall relevance of the retrieval context.",
+      "Contextual Recall": "The score is 1.00 because all sentences in the expected output are directly supported by the corresponding nodes in the retrieval context, demonstrating a perfect alignment with the provided information."
+    },
+    "question_type": "pesticides",
+    "paper_id": "443",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "443",
+      "question_id": "pesticides",
+      "reviewer": "RT",
+      "rating": 7
+    }
+  },
+  {
+    "test_case_index": 126,
+    "name": "paper_443_case_116",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study was sulfoxaflor (SFX) at a dose of 15 ng/bee. The exposure methods included administering SFX 30 minutes before conditioning and 12 hours before conditioning. The duration of exposure was 30 minutes for the first method and 12 hours for the second method.",
+    "expected_output": "The pesticide used in the study was sulfoxaflor (SFX) at a dose of 15 ng/bee for the sublethal test. This test was obtained after a specific assay for the determination of the LD50 and NOEL testing 11 doses",
+    "contextual_combined_score": 0.7013888888888888,
+    "individual_scores": {
+      "Faithfulness": 0.3333333333333333,
+      "Contextual Precision": 0.7708333333333333,
+      "Contextual Recall": 1.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.33 because the actual output incorrectly states that SFX was administered 30 minutes before conditioning, while the retrieval context emphasizes that it should be 12 hours prior. Additionally, the output claims a 30-minute exposure duration for the first method, which is not supported by the retrieval context.",
+      "Contextual Precision": "The score is 0.77 because while there are several relevant nodes that provide specific information about the pesticide sulfoxaflor (SFX) and its dosage, there are also multiple irrelevant nodes that rank higher than some relevant ones. For instance, the first node confirms the pesticide and dose, but the second node discusses unrelated neonicotinoids, which detracts from the overall precision. Additionally, the fourth node, which is relevant, ranks lower than the second node, indicating that not all relevant information is prioritized effectively.",
+      "Contextual Recall": "The score is 1.00 because every detail in the expected output is directly supported by the information in node 1 of the retrieval context, confirming the accuracy and relevance of the data presented."
+    },
+    "question_type": "pesticides",
+    "paper_id": "443",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "443",
+      "question_id": "pesticides",
+      "reviewer": "FS",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 170,
+    "name": "paper_016_case_163",
+    "input": "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?",
+    "actual_output": "The pesticide used in the study was TMX (Thiamethoxam). The doses were 1.96\u20132.90 ng/bee/day and 2.90\u20133.71 ng/bee/day. The exposure method was chronic ingestion through a sucrose solution, and the duration of exposure was one or two days.",
+    "expected_output": "The pesticide used was analytical grade thiamethoxam (TMX). \nThe exposure route was oral in 2.0M glucose solution (acute exposure group) or 1.8M sucrose solution (cxhronic exposure group).\nThe acute exposure used was 1.34ng/bee in 1 hour.\nThe chronic exposure was with a range of concentrations: 1.26-4.53ng/bee/day (mean of 3.10ng/bee/day). For a duration of 1 and 2 days (data was pooled from both exposures).",
+    "contextual_combined_score": 0.7055555555555556,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.3666666666666667,
+      "Contextual Recall": 0.75
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context.",
+      "Contextual Precision": "The score is 0.37 because while there are relevant nodes that provide specific information about the pesticide and its dosage, such as the third node which details an acute exposure dose, there are also several irrelevant nodes ranked higher that do not address the input question. For instance, the first node ranks first but only discusses effects without providing the necessary details, which detracts from the overall precision of the retrieval.",
+      "Contextual Recall": "The score is 0.75 because while most sentences in the expected output are well-supported by the nodes in retrieval context, the exposure route mentioned in sentence 2 lacks direct attribution to any node, which slightly lowers the overall contextual recall."
+    },
+    "question_type": "pesticides",
+    "paper_id": "016",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "016",
+      "question_id": "pesticides",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  }
+]

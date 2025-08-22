@@ -190,11 +190,13 @@ class EdgeCaseIdentifier:
         for case in edge_cases:
             for metric, reason in case['individual_reasons'].items():
                 if reason and reason != "No reason provided":
+                    # Handle both regular and contextual edge cases
+                    combined_score = case.get('combined_score') or case.get('contextual_combined_score', 0)
                     all_reasons.append({
                         'metric': metric,
                         'reason': reason,
                         'score': case['individual_scores'].get(metric, 0),
-                        'combined_score': case['combined_score']
+                        'combined_score': combined_score
                     })
         
         if not all_reasons:
@@ -293,6 +295,300 @@ Here are the evaluation reasons to analyze:
         # Sort by combined score (lowest first) and return top N cases
         edge_cases.sort(key=lambda x: x["combined_score"])
         return edge_cases[:num_cases]
+    
+    def identify_contextual_edge_cases(self, data: List[Dict], question_type: str, 
+                                     num_cases: int = 20) -> List[Dict]:
+        """
+        Identify edge cases for a specific question type using only contextual measures 
+        (contextual precision, contextual recall, faithfulness) for LLM data.
+        
+        Args:
+            data: List of evaluation results
+            question_type: Type of question to filter by
+            num_cases: Number of edge cases to return
+            
+        Returns:
+            List of edge cases sorted by contextual combined score (lowest first)
+        """
+        edge_cases = []
+        
+        # Define contextual metrics
+        contextual_metrics = ["Faithfulness", "Contextual Precision", "Contextual Recall"]
+        
+        for item in data:
+            # Check if this item matches the question type
+            metadata = item.get("additional_metadata", {})
+            if metadata.get("question_id") != question_type:
+                continue
+            
+            # Calculate combined score across only contextual metrics
+            individual_scores = {}
+            individual_reasons = {}
+            available_metrics = 0
+            total_score = 0.0
+            
+            for metric in contextual_metrics:
+                score = self.get_metric_score(item.get("metrics_data", []), metric)
+                if score is not None:
+                    individual_scores[metric] = score
+                    total_score += score
+                    available_metrics += 1
+                    
+                    # Get the reason for this metric
+                    reason = self.get_metric_reason(item.get("metrics_data", []), metric)
+                    if reason:
+                        individual_reasons[metric] = reason
+            
+            # Skip if no contextual metrics were available
+            if not individual_scores:
+                continue
+            
+            # Calculate average contextual score
+            contextual_combined_score = total_score / available_metrics if available_metrics > 0 else 0.0
+            
+            # Create edge case entry
+            edge_case = {
+                "test_case_index": item.get("test_case_index"),
+                "name": item.get("name"),
+                "input": item.get("input"),
+                "actual_output": item.get("actual_output"),
+                "expected_output": item.get("expected_output"),
+                "contextual_combined_score": contextual_combined_score,
+                "individual_scores": individual_scores,
+                "individual_reasons": individual_reasons,
+                "question_type": question_type,
+                "paper_id": metadata.get("paper_id"),
+                "success": item.get("success"),
+                "additional_metadata": metadata
+            }
+            
+            edge_cases.append(edge_case)
+        
+        # Sort by contextual combined score (lowest first) and return top N cases
+        edge_cases.sort(key=lambda x: x["contextual_combined_score"])
+        return edge_cases[:num_cases]
+    
+    def process_contextual_source(self, source: str, num_cases: int = 20) -> Dict[str, List[Dict]]:
+        """
+        Process contextual edge cases for LLM data only.
+        
+        Args:
+            source: Data source (should be "llm" for contextual analysis)
+            num_cases: Number of edge cases per question type
+            
+        Returns:
+            Dictionary of contextual edge cases organized by question type
+        """
+        if source != "llm":
+            print(f"Contextual analysis is only available for LLM data, not {source}")
+            return {}
+        
+        print(f"Processing contextual measures for {source} data...")
+        
+        # Load data
+        data = self.load_merged_data(source)
+        if not data:
+            print(f"No data found for {source}")
+            return {}
+        
+        # Organize contextual edge cases by question type
+        contextual_edge_cases_by_question = {}
+        
+        for question_type in self.question_types:
+            print(f"  Finding contextual edge cases for {question_type}")
+            contextual_edge_cases = self.identify_contextual_edge_cases(
+                data, question_type, num_cases
+            )
+            contextual_edge_cases_by_question[question_type] = contextual_edge_cases
+        
+        return contextual_edge_cases_by_question
+    
+    def save_contextual_edge_cases(self, source: str, contextual_edge_cases_by_question: Dict[str, List[Dict]]):
+        """Save contextual edge cases to files organized by source and question type."""
+        source_dir = self.output_dir / source
+        source_dir.mkdir(exist_ok=True)
+        
+        for question_type, cases in contextual_edge_cases_by_question.items():
+            if not cases:
+                continue
+            
+            # Create filename for contextual measures
+            filename = f"{source}_{question_type}_contextual.json"
+            filepath = source_dir / filename
+            
+            # Save contextual edge cases
+            with open(filepath, 'w') as f:
+                json.dump(cases, f, indent=2)
+            
+            print(f"  Saved {len(cases)} contextual edge cases to {filepath}")
+    
+    def generate_contextual_source_summary_report(self, source: str, contextual_edge_cases_by_question: Dict[str, List[Dict]]):
+        """
+        Generate a summary report for contextual measures of a specific source with LLM-powered reason summarization.
+        
+        Args:
+            source: Data source (should be "llm" for contextual analysis)
+            contextual_edge_cases_by_question: Dictionary of contextual edge cases organized by question type
+        """
+        if source != "llm":
+            print(f"Contextual summary report is only available for LLM data, not {source}")
+            return None
+        
+        source_dir = self.output_dir / source
+        source_dir.mkdir(exist_ok=True)
+        
+        summary_report = {
+            "source": source,
+            "analysis_type": "contextual_measures",
+            "measures_analyzed": ["Faithfulness", "Contextual Precision", "Contextual Recall"],
+            "generated_at": str(pd.Timestamp.now()),
+            "total_edge_cases": 0,
+            "question_type_summaries": {},
+            "overall_statistics": {}
+        }
+        
+        total_cases = 0
+        all_scores = []
+        
+        # Generate summaries for each question type
+        for question_type, cases in contextual_edge_cases_by_question.items():
+            if not cases:
+                continue
+            
+            total_cases += len(cases)
+            
+            # Collect scores for statistics
+            question_scores = [case['contextual_combined_score'] for case in cases]
+            all_scores.extend(question_scores)
+            
+            # Generate LLM summary of reasons
+            print(f"    Generating LLM summary for contextual measures - {question_type}...")
+            llm_summary = self.summarize_reasons_with_llm(cases, question_type)
+            
+            summary_report["question_type_summaries"][question_type] = {
+                "num_cases": len(cases),
+                "score_range": {
+                    "min": min(question_scores),
+                    "max": max(question_scores),
+                    "mean": sum(question_scores) / len(question_scores)
+                },
+                "llm_summary": llm_summary,
+                "sample_cases": [
+                    {
+                        "name": case["name"],
+                        "contextual_combined_score": case["contextual_combined_score"],
+                        "paper_id": case.get("paper_id"),
+                        "input": case["input"][:100] + "..." if len(case["input"]) > 100 else case["input"],
+                        "expected_output": case["expected_output"][:150] + "..." if len(case["expected_output"]) > 150 else case["expected_output"],
+                        "actual_output": case["actual_output"][:150] + "..." if len(case["actual_output"]) > 150 else case["actual_output"]
+                    }
+                    for case in cases[:3]  # Include first 3 cases as samples
+                ]
+            }
+        
+        # Overall statistics
+        if all_scores:
+            summary_report["overall_statistics"] = {
+                "total_cases": total_cases,
+                "score_range": {
+                    "min": min(all_scores),
+                    "max": max(all_scores),
+                    "mean": sum(all_scores) / len(all_scores)
+                }
+            }
+        
+        summary_report["total_edge_cases"] = total_cases
+        
+        # Save the contextual summary report
+        summary_path = source_dir / "summary-report-context.json"
+        with open(summary_path, 'w') as f:
+            json.dump(summary_report, f, indent=2)
+        
+        print(f"  Generated contextual summary report: {summary_path}")
+        return summary_report
+    
+    def generate_contextual_markdown_report(self, contextual_edge_cases: Dict[str, List[Dict]]):
+        """
+        Generate a comprehensive markdown report for contextual measures analysis.
+        
+        Args:
+            contextual_edge_cases: Dictionary containing contextual edge cases for LLM data
+        """
+        markdown_path = self.output_dir / "edge-case-report-context.md"
+        
+        with open(markdown_path, 'w') as f:
+            f.write("# Contextual Measures Edge Case Analysis Report\n\n")
+            f.write(f"*Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}*\n\n")
+            f.write("*This report focuses on Faithfulness, Contextual Precision, and Contextual Recall measures for LLM data only.*\n\n")
+            
+            # Overall statistics
+            total_cases = sum(len(cases) for cases in contextual_edge_cases.values())
+            f.write(f"## Overview\n\n")
+            f.write(f"- **Total Contextual Edge Cases Analyzed**: {total_cases}\n")
+            f.write(f"- **Data Source**: LLM data only\n")
+            f.write(f"- **Measures Analyzed**: Faithfulness, Contextual Precision, Contextual Recall\n")
+            f.write(f"- **Question Types**: {', '.join(self.question_types)}\n\n")
+            
+            # Try to load the contextual summary report
+            summary_path = self.output_dir / "llm" / "summary-report-context.json"
+            if summary_path.exists():
+                try:
+                    with open(summary_path, 'r') as summary_file:
+                        summary_data = json.load(summary_file)
+                    
+                    # Overall statistics
+                    if "overall_statistics" in summary_data:
+                        stats = summary_data["overall_statistics"]
+                        f.write(f"## Overall Statistics\n\n")
+                        f.write(f"- **Total Cases**: {stats.get('total_cases', 0)}\n")
+                        f.write(f"- **Score Range**: {stats.get('score_range', {}).get('min', 0):.3f} - {stats.get('score_range', {}).get('max', 0):.3f}\n")
+                        f.write(f"- **Average Score**: {stats.get('score_range', {}).get('mean', 0):.3f}\n\n")
+                    
+                    # Question type summaries
+                    if "question_type_summaries" in summary_data:
+                        f.write(f"## Question Type Analysis\n\n")
+                        
+                        for question_type, q_data in summary_data["question_type_summaries"].items():
+                            f.write(f"### {question_type.replace('_', ' ').title()}\n\n")
+                            
+                            # Basic stats
+                            f.write(f"- **Number of Cases**: {q_data.get('num_cases', 0)}\n")
+                            score_range = q_data.get('score_range', {})
+                            f.write(f"- **Score Range**: {score_range.get('min', 0):.3f} - {score_range.get('max', 0):.3f}\n")
+                            f.write(f"- **Average Score**: {score_range.get('mean', 0):.3f}\n\n")
+                            
+                            # LLM Summary
+                            llm_summary = q_data.get('llm_summary')
+                            if llm_summary and llm_summary != "No detailed reasons found in the edge cases.":
+                                f.write("**LLM Analysis:**\n\n")
+                                f.write(f"{llm_summary}\n\n")
+                            else:
+                                f.write("**LLM Analysis:** Not available\n\n")
+                            
+                            # Sample cases
+                            sample_cases = q_data.get('sample_cases', [])
+                            if sample_cases:
+                                f.write("**Sample Contextual Edge Cases:**\n\n")
+                                for i, case in enumerate(sample_cases[:3], 1):
+                                    f.write(f"{i}. **{case.get('name', 'Unknown')}** (Paper {case.get('paper_id', 'Unknown')})\n")
+                                    f.write(f"   - Contextual Combined Score: {case.get('contextual_combined_score', 0):.3f}\n")
+                                    f.write(f"   - Input: {case.get('input', 'N/A')}\n")
+                                    f.write(f"   - **Expected Output:** {case.get('expected_output', 'N/A')}\n")
+                                    f.write(f"   - **Actual Output:** {case.get('actual_output', 'N/A')}\n\n")
+                            
+                            f.write("---\n\n")
+                
+                except Exception as e:
+                    f.write(f"*Error loading contextual summary data: {e}*\n\n")
+            else:
+                f.write(f"*No contextual summary report found*\n\n")
+            
+            # Footer
+            f.write("---\n\n")
+            f.write("*This report was generated automatically by the Contextual Measures Edge Case Analysis tool.*\n")
+        
+        print(f"  Generated contextual markdown report: {markdown_path}")
+        return markdown_path
     
     def process_source(self, source: str, num_cases: int = 20) -> Dict[str, List[Dict]]:
         """
@@ -578,6 +874,74 @@ Here are the evaluation reasons to analyze:
                 print(f"      Error processing {edge_case_file}: {e}")
                 continue
     
+    def generate_contextual_llm_summaries_from_files(self, source: str):
+        """
+        Generate LLM summaries for contextual measures by reading existing contextual edge case files.
+        This method should be called after contextual edge case files are created.
+        
+        Args:
+            source: Data source (should be "llm" for contextual analysis)
+        """
+        if source != "llm":
+            print(f"Contextual LLM summarization is only available for LLM data, not {source}")
+            return
+        
+        if not self.openai_client:
+            print(f"  Skipping contextual LLM summarization for {source} - no OpenAI client available")
+            return
+        
+        source_dir = self.output_dir / source
+        if not source_dir.exists():
+            print(f"  Source directory {source_dir} does not exist")
+            return
+        
+        # Find all contextual edge case files for this source
+        contextual_edge_case_files = list(source_dir.glob(f"{source}_*_contextual.json"))
+        
+        if not contextual_edge_case_files:
+            print(f"  No contextual edge case files found for {source}")
+            return
+        
+        print(f"  Generating contextual LLM summaries for {source} from {len(contextual_edge_case_files)} files...")
+        
+        # Load and analyze each contextual edge case file
+        for edge_case_file in contextual_edge_case_files:
+            try:
+                with open(edge_case_file, 'r') as f:
+                    edge_cases = json.load(f)
+                
+                if not edge_cases:
+                    continue
+                
+                # Extract question type from filename
+                question_type = edge_case_file.stem.replace(f"{source}_", "").replace("_contextual", "")
+                
+                print(f"    Analyzing contextual measures for {question_type} ({len(edge_cases)} cases)...")
+                
+                # Generate LLM summary
+                llm_summary = self.summarize_reasons_with_llm(edge_cases, question_type)
+                
+                # Update the existing contextual summary report
+                summary_report_path = source_dir / "summary-report-context.json"
+                if summary_report_path.exists():
+                    with open(summary_report_path, 'r') as f:
+                        summary_report = json.load(f)
+                    
+                    # Update the LLM summary for this question type
+                    if question_type in summary_report.get("question_type_summaries", {}):
+                        summary_report["question_type_summaries"][question_type]["llm_summary"] = llm_summary
+                        summary_report["question_type_summaries"][question_type]["llm_summary_generated_at"] = str(pd.Timestamp.now())
+                    
+                    # Save updated summary report
+                    with open(summary_report_path, 'w') as f:
+                        json.dump(summary_report, f, indent=2)
+                    
+                    print(f"      Updated contextual summary report with LLM analysis for {question_type}")
+                
+            except Exception as e:
+                print(f"      Error processing {edge_case_file}: {e}")
+                continue
+    
     def generate_summary_report(self, all_edge_cases: Dict[str, Dict[str, List[Dict]]]):
         """Generate a summary report of all identified edge cases."""
         summary = {
@@ -668,6 +1032,43 @@ Here are the evaluation reasons to analyze:
         
         print("\nEdge case analysis complete!")
         return all_edge_cases
+    
+    def run_contextual_analysis(self, num_cases: int = 20) -> Dict[str, List[Dict]]:
+        """
+        Run contextual measures edge case analysis for LLM data only.
+        
+        Args:
+            num_cases: Number of edge cases to identify per question type
+            
+        Returns:
+            Dictionary containing contextual edge cases organized by question type
+        """
+        print(f"Starting contextual measures edge case analysis (targeting {num_cases} cases per question type)...")
+        
+        # Process contextual measures for LLM data only
+        contextual_edge_cases = self.process_contextual_source("llm", num_cases)
+        
+        if not contextual_edge_cases:
+            print("No contextual edge cases found for LLM data")
+            return {}
+        
+        # Save contextual edge cases
+        self.save_contextual_edge_cases("llm", contextual_edge_cases)
+        
+        # Generate contextual summary report
+        print("  Generating contextual summary report for LLM...")
+        self.generate_contextual_source_summary_report("llm", contextual_edge_cases)
+        
+        # Generate contextual markdown report
+        print("  Generating contextual markdown report...")
+        self.generate_contextual_markdown_report(contextual_edge_cases)
+        
+        # Now generate LLM summaries from the created contextual files
+        print("  Generating LLM summaries from contextual edge case files...")
+        self.generate_contextual_llm_summaries_from_files("llm")
+        
+        print("Contextual measures edge case analysis complete!")
+        return contextual_edge_cases
 
 
 def main():
@@ -714,6 +1115,16 @@ def main():
         action="store_true",
         help="Only generate LLM summaries for existing edge case files (skip edge case identification)"
     )
+    parser.add_argument(
+        "--contextual-only",
+        action="store_true",
+        help="Only run contextual measures analysis (Faithfulness, Contextual Precision, Contextual Recall) for LLM data"
+    )
+    parser.add_argument(
+        "--generate-contextual-summaries-only",
+        action="store_true",
+        help="Only generate LLM summaries for existing contextual edge case files (skip edge case identification)"
+    )
     
     args = parser.parse_args()
     
@@ -732,6 +1143,22 @@ def main():
         for source in ["llm", "reviewer"]:
             print(f"Processing {source}...")
             identifier.generate_llm_summaries_from_files(source)
+    elif args.contextual_only:
+        # Run contextual measures analysis only
+        print("Running contextual measures analysis for LLM data...")
+        contextual_edge_cases = identifier.run_contextual_analysis(num_cases=args.num_cases)
+        
+        # Print some quick stats
+        if contextual_edge_cases:
+            total_cases = sum(len(cases) for cases in contextual_edge_cases.values())
+            print(f"\nQuick Statistics:")
+            print(f"  LLM Contextual Measures: {total_cases} total edge cases")
+        else:
+            print("\nNo contextual edge cases found")
+    elif args.generate_contextual_summaries_only:
+        # Only generate contextual LLM summaries for existing files
+        print("Generating contextual LLM summaries for existing contextual edge case files...")
+        identifier.generate_contextual_llm_summaries_from_files("llm")
     else:
         # Run full analysis
         edge_cases = identifier.run_analysis(num_cases=args.num_cases)

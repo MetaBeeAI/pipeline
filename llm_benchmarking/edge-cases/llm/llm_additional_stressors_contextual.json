@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 183,
+    "name": "paper_515_case_182",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations were mentioned in the text. The focus was solely on the effects of thiamethoxam.",
+    "expected_output": "No additional stressors were mentioned.",
+    "contextual_combined_score": 0.0,
+    "individual_scores": {
+      "Faithfulness": 0.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.00 because the actual output incorrectly focuses solely on thiamethoxam, ignoring the retrieval context's mention of a test chemical and control bees treated with acetone.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts focus on various aspects of thiamethoxam's effects on bees, such as 'methodology of applying chemicals', 'preparation and administration of insecticide solutions', and 'contact toxicity', without addressing 'additional stressors'. Since none of the nodes are relevant to the input question, the precision score remains at zero.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were mentioned.' cannot be linked to any node(s) in the retrieval context, which primarily discusses the impact of thiamethoxam on honey bees without addressing stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "515",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "515",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 49,
+    "name": "paper_787_case_45",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text. The doses were azadirachtin at 240\u2013480 ng queen^{-1} and imidacloprid at 672 ng queen^{-1}, but the duration of exposure was not specified.",
+    "expected_output": "No additional stressors were listed in the text",
+    "contextual_combined_score": 0.1111111111111111,
+    "individual_scores": {
+      "Faithfulness": 0.3333333333333333,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.33 because the actual output misrepresents the dosage range of azadirachtin, omitting the lower doses of 24 and 48 ng per queen. Additionally, it inaccurately claims the duration of exposure was unspecified, despite the retrieval context providing specific time frames for mortality rates.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, starting from the first, focuses on topics such as 'insecticide formulations and their effects on bees', 'exposure of queens to azadirachtin and imidacloprid', and 'mortality rates related to insecticide exposure', none of which address additional stressors. This consistent irrelevance across all nodes results in a score of 0.00, as no relevant information is ranked higher than irrelevant information.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were listed in the text' does not align with any node(s) in the retrieval context, which focuses on insecticide effects and experimental details rather than stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "787",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "787",
+      "question_id": "additional_stressors",
+      "reviewer": "NN",
+      "rating": 7
+    }
+  },
+  {
+    "test_case_index": 91,
+    "name": "paper_443_case_91",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations (like temperature, parasites, pathogens, or nutritional stress) were mentioned in the texts. The only additional stressor identified was temperature (28 \u00b1 2\u00b0C) in one fragment, but no details on exposure method or duration were provided.",
+    "expected_output": "No additional stressors were evaluated in the study.",
+    "contextual_combined_score": 0.1111111111111111,
+    "individual_scores": {
+      "Faithfulness": 0.3333333333333333,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.33 because the actual output introduces temperature as a stressor, which is not supported by the retrieval context. Additionally, the actual output lacks alignment with the retrieval context's details on exposure method and duration.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, starting from the first, focuses on aspects such as 'sulfoxaflor's toxicity and impact on learning and memory' or 'effects of neonicotinoid insecticides,' without addressing the specific topic of additional stressors. This consistent irrelevance across all nodes results in a score of zero, as no relevant information is ranked higher than irrelevant content.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were evaluated in the study.' does not align with any node(s) in the retrieval context, which primarily discusses the effects of sulfoxaflor and neonicotinoids on honeybees without mentioning additional stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "443",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "443",
+      "question_id": "additional_stressors",
+      "reviewer": "RT",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 123,
+    "name": "paper_009_case_121",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations were mentioned in the text. The only stressors discussed were the pesticides spinosad and imidacloprid, with specific doses and exposure methods provided.",
+    "expected_output": "No additional stressors included",
+    "contextual_combined_score": 0.16666666666666666,
+    "individual_scores": {
+      "Faithfulness": 0.5,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.50 because the actual output only focuses on spinosad and imidacloprid, neglecting other stressors like neurotoxicity and impaired locomotion mentioned in the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. The first node discusses the effects of spinosad on bee populations, but does not mention any additional stressors. Similarly, the second node focuses on the use of spinosad and imidacloprid in experiments, without mentioning additional stressors. The third node is about the effects of pesticides on bee behavior, not additional stressors. The fourth node discusses the measurement of body mass and respiration rate in bees, without reference to additional stressors. The fifth node describes the experimental setup for exposing bees to pesticides, without mentioning additional stressors. The sixth node repeats information about body mass and respiration rate, without mentioning additional stressors. The seventh node discusses the neurotoxic effects of spinosad on bees, without mentioning additional stressors. Finally, the eighth node highlights the impact of spinosad on bee mortality and motor abilities, without mentioning additional stressors. As all nodes are irrelevant, the score remains at 0.00.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors included' could not be linked to any node(s) in the retrieval context, indicating a complete lack of alignment."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "009",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "009",
+      "question_id": "additional_stressors",
+      "reviewer": "AH",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 122,
+    "name": "paper_883_case_126",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations were mentioned in the texts. The focus was solely on the effects of imidacloprid and thiamethoxam on bumblebees, with specific details on their doses and exposure methods provided for these pesticides only.",
+    "expected_output": "No additional stressors were included in the study.",
+    "contextual_combined_score": 0.16666666666666666,
+    "individual_scores": {
+      "Faithfulness": 0.5,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.50 because the actual output inaccurately includes details on thiamethoxam that are not present in the retrieval context, which only specifies information about imidacloprid.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, from the first to the seventh, focuses on aspects such as the impact of pesticides, bumblebee pollination, and exposure effects, but none address the specific topic of additional stressors in the study. This lack of relevant information results in a score of zero, as no relevant nodes are ranked higher than irrelevant ones.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were included in the study.' cannot be linked to any node(s) in the retrieval context, which primarily discusses the effects of pesticides on bumblebees."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "883",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "883",
+      "question_id": "additional_stressors",
+      "reviewer": "AH",
+      "rating": 5
+    }
+  },
+  {
+    "test_case_index": 142,
+    "name": "paper_437_case_142",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the additional stressor mentioned is soil-applied imidacloprid, which affects the ground-nesting bee *Eucera pruinosa*. However, the text does not specify the dose, exposure method, or duration of exposure.",
+    "expected_output": "No additional stressors were included",
+    "contextual_combined_score": 0.19999999999999998,
+    "individual_scores": {
+      "Faithfulness": 0.6,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.60 because the actual output likely misrepresents the specific concentration of imidacloprid that affects bees, as well as the method of exposure, which are clearly detailed in the retrieval context.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. The first node discusses 'pesticide exposure and its effects on bees' but fails to mention any 'additional stressors beyond neonicotinoids.' Similarly, the second node focuses on 'nesting habits and foraging ranges of bees,' without addressing any 'additional stressors.' The third node also centers on 'bee nesting preferences and foraging behavior,' yet does not introduce any 'additional stressors.' As a result, the ranking does not prioritize relevant information, leading to a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were included' is not supported by any node in the retrieval context, which focuses on pesticide exposure and bee nesting habits without mentioning stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "437",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "437",
+      "question_id": "additional_stressors",
+      "reviewer": "BN",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 61,
+    "name": "paper_233_case_60",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations were mentioned in the text. The study focused on thiamethoxam as the primary stressor, with doses of 2.5 ng/bee (high), 0.377 ng/bee (low), and 0.091 ng/bee (low). The exposure method involved feeding a sucrose solution with the pesticide, and the duration of exposure was 45 minutes after feeding. No details on other stressors were provided.",
+    "expected_output": "No additional stressors were tested",
+    "contextual_combined_score": 0.2222222222222222,
+    "individual_scores": {
+      "Faithfulness": 0.6666666666666666,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.67 because the actual output inaccurately represents the dosage levels and exposure duration. It incorrectly lists only three dosage levels, omitting the 0 ng exposure mentioned in the retrieval context. Additionally, it misinterprets the 45-minute timeframe as the duration of exposure, whereas the context refers to the time after which effects can be observed.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, from the first to the seventh, focuses on various aspects of pesticide effects on bees, such as 'spatial working memory' and 'exposure levels', without addressing the specific topic of additional stressors. This lack of relevant content across all nodes results in a score of zero.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were tested' is not supported by any node(s) in the retrieval context, which focuses on pesticide exposure and its effects on bees without mentioning additional stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "233",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "233",
+      "question_id": "additional_stressors",
+      "reviewer": "KW",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 77,
+    "name": "paper_729_case_77",
+    "input": "Question about additional_stressors",
+    "actual_output": "No, the text does not indicate any additional stressors or combinations used. The only stressor mentioned is sulfoxaflor, with doses of 5, 10, and 50 \u03bcg dm\u207b\u00b3, and exposure durations ranging from at least 12 hours to five days.",
+    "expected_output": "No additional stressors were mentioned",
+    "contextual_combined_score": 0.2222222222222222,
+    "individual_scores": {
+      "Faithfulness": 0.6666666666666666,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.67 because the actual output inaccurately extends the observation period to include exposure durations of at least 12 hours, which is not mentioned in the retrieval context that specifies a maximum of five days for foraging behavior observation.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, starting from the first, focuses on aspects such as 'the impact of sulfoxaflor on solitary bees' and 'foraging behavior', without addressing the specific topic of additional stressors. Consequently, the ranking does not prioritize any relevant information, resulting in a score of zero.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were mentioned' is not supported by any node(s) in the retrieval context, which primarily discusses the effects of sulfoxaflor on bees rather than stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "729",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "729",
+      "question_id": "additional_stressors",
+      "reviewer": "AB",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 103,
+    "name": "paper_053_case_98",
+    "input": "Question about additional_stressors",
+    "actual_output": "No, the text does not mention any additional stressors or combinations used. It only discusses the effects of insecticides on honey bee larvae, detailing the doses and exposure methods related to those insecticides only.",
+    "expected_output": "Any additional stressors were evaluated in this paper.",
+    "contextual_combined_score": 0.2222222222222222,
+    "individual_scores": {
+      "Faithfulness": 0.6666666666666666,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.67 because the actual output includes information about honey bee larvae and adult honey bees, which is not aligned with the retrieval context that focuses solely on insecticides.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. The first node focuses on the effects of insecticides on honey bee larvae, which does not address additional stressors. Similarly, the second node details the preparation and concentration of insecticides, which is unrelated to the input. The third node discusses the methodology of feeding larvae and recording mortality, again not relevant to additional stressors. This pattern continues throughout the list, with each node focusing on various aspects of insecticides rather than the requested topic of additional stressors.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Any additional stressors were evaluated in this paper.' does not align with any node(s) in the retrieval context, which primarily discusses insecticide effects rather than additional stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "053",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "053",
+      "question_id": "additional_stressors",
+      "reviewer": "SA",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 21,
+    "name": "paper_591_case_19",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations were mentioned in the texts. The doses of sulfoxaflor were 2.4 ppb, 10 ppb, and 250 ppb, applied via a sucrose solution, with durations of exposure of one hour or 45 minutes after feeding, depending on the experiment.",
+    "expected_output": "No additional stressors were tested.",
+    "contextual_combined_score": 0.25,
+    "individual_scores": {
+      "Faithfulness": 0.75,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.75 because the actual output incorrectly represents the units of measurement for sulfoxaflor doses, stating them in parts per billion (ppb) instead of micrograms per cubic decimeter (\u03bcg dm\u00b3) as indicated in the retrieval context. This discrepancy affects the faithfulness of the output.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. The first node discusses 'various stressors like agriculture, habitat loss, and agrochemicals,' but does not address the testing of additional stressors. Similarly, the second node focuses on 'the effects of neonicotinoids and sulfoxaflor on bee performance,' which is unrelated to the input. The third node details 'the methodology of sulfoxaflor treatments,' again not relevant to the input question. This pattern continues throughout the list, with each node failing to address the specific query about additional stressors, resulting in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were tested.' cannot be linked to any node in the retrieval context, which discusses various stressors but does not explicitly state the absence of additional tests."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "591",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "591",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 137,
+    "name": "paper_890_case_141",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the text mentions the combination of insecticide exposure (imidacloprid and fipronil) and thermal stress as additional stressors. The dose for imidacloprid was 3.5 \u00d7 10\u207b\u00b9 ng per bee, and the exposure method included topical treatment and consumption of sucrose solutions. The duration of exposure for the choice assay was 24 hours.",
+    "expected_output": "Heat stress was examined as an additional stressor to pesticide exposure - heat ramped up by 0.5 degree to determine CTmax.",
+    "contextual_combined_score": 0.25,
+    "individual_scores": {
+      "Faithfulness": 0.75,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.75 because the actual output incorrectly states the dose for imidacloprid as 3.5 \u00d7 10\u207b\u00b9 ng per bee, while the retrieval context clearly mentions it as 3.5 \u00d7 10\u00b9 ng per bee. This discrepancy affects the faithfulness of the output.",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts discusses the effects of imidacloprid on bees, which is unrelated to the input question about additional stressors. This irrelevant node should be ranked lower than any relevant nodes, but since it is the only node present, it results in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence about heat stress and CTmax cannot be linked to any node(s) in the retrieval context, which centers on imidacloprid exposure and stingless bees."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "890",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "890",
+      "question_id": "additional_stressors",
+      "reviewer": "AH",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 181,
+    "name": "paper_512_case_181",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations were mentioned in the text. The only stressor discussed was spinosad, with doses of 0.2, 0.8, and 8.0 mg kg\u207b\u00b9, and the exposure method was through feeding the colonies spinosad in pollen. The duration of exposure was from weeks 2 to 5 of a 10-week monitoring period.",
+    "expected_output": "No additional stressors were tested.",
+    "contextual_combined_score": 0.25,
+    "individual_scores": {
+      "Faithfulness": 0.75,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.75 because the actual output focuses solely on spinosad as a stressor, while the retrieval context includes additional factors like pesticide toxicity and larval development effects. This partial alignment results in a moderate faithfulness score.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, from the first to the thirteenth, focuses on various aspects of spinosad's effects on bees, such as 'the effects of pesticides on wild bees', 'the behavior and effects of spinosad on bees', and 'the lifecycle of bumble bees and the experiment setup', rather than addressing additional stressors. This consistent irrelevance across all nodes results in a score of 0.00, as no relevant information is ranked higher than irrelevant information.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were tested.' from the expected output cannot be linked to any node(s) in the retrieval context, indicating a complete lack of alignment."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "512",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "512",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 53,
+    "name": "paper_789_case_47",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, insecticides were used as additional stressors. The doses were imidacloprid (0.37 g a.i. L\u207b\u00b9), malathion (0.7 g a.i. L\u207b\u00b9), and spinosad (0.059 g a.i. L\u207b\u00b9). The exposure method was through a feeder with a diet of 50% distilled water and 50% sucrose, but the duration of exposure is not specified in the text. No other stressors like temperature, parasites, or nutritional stress were mentioned.",
+    "expected_output": "No additional stressors were mentioned in the text.",
+    "contextual_combined_score": 0.26666666666666666,
+    "individual_scores": {
+      "Faithfulness": 0.8,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.80 because the actual output fails to specify the duration of exposure to insecticides, while the retrieval context clearly provides this information, indicating a partial misalignment.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, from the first to the thirteenth, focuses on topics such as 'collection and weighing of bees', 'nest construction and insecticide sensitivity', 'experimental setup and insecticide exposure', and 'spinosad toxicity', none of which address additional stressors. This complete lack of relevant information results in the lowest possible score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were mentioned in the text.' does not align with any node(s) in the retrieval context, which focuses on bee collection, insecticide effects, and trophallaxis, without addressing stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "789",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "789",
+      "question_id": "additional_stressors",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 115,
+    "name": "paper_892_case_118",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the additional stressor used was imidacloprid, with doses of 0.125, 2.50, 5.10, 10, and 20 ng/bee. The exposure method was thoracic application, and the duration of exposure was 15, 30, or 60 minutes before testing. No other stressors were mentioned.",
+    "expected_output": "No other stressors were mentioned.",
+    "contextual_combined_score": 0.26666666666666666,
+    "individual_scores": {
+      "Faithfulness": 0.8,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.80 because the actual output incorrectly lists the doses of imidacloprid as 0.125, 2.50, 5.10, 10, and 20 ng/bee, whereas the retrieval context specifies them as 5, 10, and 20 ng/bee. This discrepancy affects the faithfulness of the output to the source material.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. The first node discusses the effects of imidacloprid on honeybees, focusing on the proboscis extension reflex and gustatory threshold, without mentioning any additional stressors. Similarly, the second node details the methodology of determining the gustatory threshold in honeybees, with no reference to other stressors. The third node focuses on the effects of imidacloprid on gustatory threshold and does not mention any other stressors. The fourth node provides data on variations in gustatory threshold due to imidacloprid, without mentioning additional stressors. The fifth node contains statistical significance indicators and does not discuss any stressors. Lastly, the sixth node discusses the effects of imidacloprid on nicotinic receptors and neuronal metabolism, but does not mention any other stressors. Therefore, the score remains at 0.00 as all nodes are irrelevant to the input.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No other stressors were mentioned.' cannot be linked to any node(s) in the retrieval context, which primarily discusses the effects of imidacloprid on honeybees without addressing other stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "892",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "892",
+      "question_id": "additional_stressors",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 149,
+    "name": "paper_077_case_149",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, the additional stressor used was the pesticide Imidacloprid (ID), with doses of 0 ppb, 5 ppb, or 200 ppb administered through bee food. The exposure duration was one month. No other additional stressors were mentioned.",
+    "expected_output": "No other additional stressors were mentioned.",
+    "contextual_combined_score": 0.26666666666666666,
+    "individual_scores": {
+      "Faithfulness": 0.8,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.80 because the actual output incorrectly reported the concentrations of imidacloprid as 0 ppb, 5 ppb, or 200 ppb, whereas the retrieval context clearly states they were 4.2 ppb in I-5 and 196 ppb in I-200 after 3 months.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. The first node discusses honey bees' aging and antioxidant defense systems, but does not mention any additional stressors. Similarly, the second node focuses on the evolutionary development of antioxidant defense systems in honey bees, without mentioning additional stressors. The third node describes the rearing conditions of bees and the concentrations of imidacloprid, but does not mention any additional stressors. The fourth node provides details on imidacloprid contamination levels, but does not mention any additional stressors. Lastly, the fifth node discusses the response of antioxidant defense systems in bees, but does not mention any additional stressors. As a result, all nodes are irrelevant, leading to a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No other additional stressors were mentioned.' cannot be linked to any node(s) in the retrieval context, which focuses on oxidative stressors and imidacloprid without explicitly stating the absence of other stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "077",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "077",
+      "question_id": "additional_stressors",
+      "reviewer": "EA",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 155,
+    "name": "paper_532_case_159",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, specifically the pesticide acetamiprid. The dose ranged from 50-500 mg/L as field-realistic concentrations, with an LC50 value of 188.49 mg/L for exposure over 72 hours. The exposure method was through the diet of honeybee larvae, consuming contaminated pollen and nectar.",
+    "expected_output": "No additional stressors were tested.",
+    "contextual_combined_score": 0.26666666666666666,
+    "individual_scores": {
+      "Faithfulness": 0.8,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.80 because the actual output inaccurately reports the acetamiprid dose range as 50-500 mg/L, while the retrieval context specifies concentrations of 0, 5, and 25 mg/L.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. The first node, ranked highest, focuses on 'the effects of acetamiprid on honeybees, specifically metabolic variations,' without mentioning additional stressors. Similarly, the second node discusses 'the impact of pesticides on honeybee larvae and other animals,' but again, it does not address additional stressors. The third node repeats the context about pesticide effects without mentioning additional stressors. Thus, the ranking does not prioritize relevant information, resulting in a low score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors were tested.' is not supported by any node in the retrieval context, which focuses on the effects of acetamiprid on honeybees and other insects without mentioning additional stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "532",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "532",
+      "question_id": "additional_stressors",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 163,
+    "name": "paper_532_case_160",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, additional stressors were used, specifically the pesticide acetamiprid. The dose ranged from 50-500 mg/L as field-realistic concentrations, with an LC50 value of 188.49 mg/L for exposure over 72 hours. The exposure method was through the diet of honeybee larvae, consuming contaminated pollen and nectar.",
+    "expected_output": "No other stressos were used",
+    "contextual_combined_score": 0.26666666666666666,
+    "individual_scores": {
+      "Faithfulness": 0.8,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.80 because the actual output incorrectly states that worker bee larvae were fed with sucrose water containing acetamiprid concentrations of 50-500 mg/L, while the retrieval context specifies concentrations of 0, 5, and 25 mg/L.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node, ranked 1, focuses on the effects of acetamiprid on honeybees, but does not mention any additional stressors. Similarly, the second node, ranked 2, discusses the impact of pesticides, specifically acetamiprid, without mentioning other stressors. The third node, ranked 3, repeats the context of acetamiprid's effects on honeybees, again with no reference to other stressors. This consistent irrelevance across all nodes results in a low score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No other stressos were used' cannot be linked to any node in the retrieval context, which focuses on acetamiprid and honeybees without mentioning other stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "532",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "532",
+      "question_id": "additional_stressors",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 41,
+    "name": "paper_294_case_36",
+    "input": "Question about additional_stressors",
+    "actual_output": "Yes, imidacloprid was used as an additional stressor. The dose was 2% (v/v) in the diet, with an expected concentration of 0.7 ng mL\u207b\u00b9. The exposure method was through diet from the third to the sixth day of larval development. No other stressors were mentioned.",
+    "expected_output": "There were no additional stressors.",
+    "contextual_combined_score": 0.2777777777777778,
+    "individual_scores": {
+      "Faithfulness": 0.8333333333333334,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.83 because the actual output omits the mention of glycerol and methylbenzetonium chloride as additional components, which are highlighted in the retrieval context as potential stressors.",
+      "Contextual Precision": "The score is 0.00 because the first node discusses the preparation and exposure of larvae to imidacloprid, which is unrelated to the presence or absence of additional stressors, and the second node focuses on the diet and exposure of larvae to imidacloprid, without mentioning any additional stressors. Both nodes are irrelevant to the input question about additional stressors, leading to a low score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'There were no additional stressors.' in the expected output cannot be linked to any node(s) in the retrieval context, which focuses on larval diets and imidacloprid exposure without mentioning stressors."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "294",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "294",
+      "question_id": "additional_stressors",
+      "reviewer": "NN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 6,
+    "name": "paper_083_case_4",
+    "input": "Question about additional_stressors",
+    "actual_output": "No additional stressors or combinations were mentioned in the text. The exposure method was through clothianidin-treated turf, with a duration of five days for initial effects and two weeks for further evaluation, but no specific doses or durations for additional stressors were provided.",
+    "expected_output": "No additional stressors or combinations were mentioned in the text.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, starting from the first, discusses topics such as the impact of neonicotinoids, habitat loss, and insecticide use, but none introduce or mention any new stressors or combinations. This consistent irrelevance across all nodes results in a score of zero, as no relevant information is ranked higher than irrelevant information.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No additional stressors or combinations were mentioned in the text.' could not be linked to any node(s) in the retrieval context, indicating a complete mismatch."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "083",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "083",
+      "question_id": "additional_stressors",
+      "reviewer": "AJ",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 13,
+    "name": "paper_070_case_6",
+    "input": "Question about additional_stressors",
+    "actual_output": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on doses, exposure methods, or durations of exposure for any additional stressors.",
+    "expected_output": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on doses, exposure methods, or durations of exposure for any additional stressors.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about additional stressors. Each node, starting from the first, discusses topics such as 'the importance of honey bees', 'regulatory actions', 'biochemical changes', 'acute toxicity tests', and 'pesticide concentrations', but none address additional stressors or combinations. This consistent irrelevance across all nodes results in a score of zero, as no relevant information is ranked higher than irrelevant information.",
+      "Contextual Recall": "The score is 0.00 because the expected output's mention of 'additional stressors or combinations used' and 'doses, exposure methods, or durations of exposure for any additional stressors' cannot be linked to any node(s) in the retrieval context."
+    },
+    "question_type": "additional_stressors",
+    "paper_id": "070",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "070",
+      "question_id": "additional_stressors",
+      "reviewer": "AJ",
+      "rating": 10
+    }
+  }
+]

@@ -37,11 +37,25 @@ with open(questions_path, 'r') as file:
 def get_answer(question_text, json_path):
     """
     Retrieves the answer for a given question by calling ask_json.
-    Since ask_json returns a dictionary with keys 'reason' and 'answer',
-    this function simply extracts the 'answer' field.
+    Returns a dictionary with the required structure: answer, reason, and chunk_ids.
     """
     result = ask_json(question_text, json_path)
-    return result
+    
+    # Ensure the result has the required structure
+    if isinstance(result, dict):
+        # Extract the required fields from the enhanced result
+        return {
+            "answer": result.get("answer", ""),
+            "reason": result.get("reason", ""),
+            "chunk_ids": result.get("chunk_ids", [])
+        }
+    else:
+        # Fallback if result is not a dict
+        return {
+            "answer": str(result) if result else "",
+            "reason": "Answer generated from available information",
+            "chunk_ids": []
+        }
 
 
 # ------------------------------------------------------------------------------

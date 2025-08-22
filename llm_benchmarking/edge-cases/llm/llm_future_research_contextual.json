@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 77,
+    "name": "paper_440_case_78",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the effects of imidacloprid on honeybee larvae, particularly examining the nursing behavior of bees and the potential for cross-contamination. Studies should investigate the impact of different imidacloprid dosages on larval survival, brood production, eclosion rates, and behavioral changes, as previous studies have mainly concentrated on adult bees and colonies.",
+    "expected_output": "The authors did not suggest directions for future research.",
+    "contextual_combined_score": 0.2857142857142857,
+    "individual_scores": {
+      "Faithfulness": 0.8571428571428571,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.86 because the actual output incorrectly suggests that cross contamination of treated imidacloprid was observed, contradicting the retrieval context which states it was not observed. Despite this, the overall alignment with the retrieval context remains strong.",
+      "Contextual Precision": "The score is 0.00 because both nodes in the retrieval contexts are irrelevant to the input. The first node, ranked 1, discusses the effects of imidacloprid on honeybees, but does not mention any future research directions. Similarly, the second node, ranked 2, focuses on the methodology and results of the study regarding imidacloprid's effects, without suggesting future research directions. This indicates that the relevant nodes are not ranked higher than the irrelevant ones, resulting in a low score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'The authors did not suggest directions for future research.' cannot be linked to any node(s) in the retrieval context, which focuses solely on the effects of imidacloprid on honeybees without addressing future research directions."
+    },
+    "question_type": "future_research",
+    "paper_id": "440",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "440",
+      "question_id": "future_research",
+      "reviewer": "RT",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 2,
+    "name": "paper_594_case_1",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should investigate the intricate relationships between environmental factors and honey bee gene regulation, particularly under hive conditions. It should also explore how temperature influences honey bee behavior, dietary preferences, and detoxification processes, especially in relation to pesticide exposure and its impact on bee mortality.",
+    "expected_output": "I cannot find any suggestions for future research.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts discusses 'the relationship between environmental factors and honey bee gene regulation,' which is irrelevant to the input's focus on 'future research directions.' This indicates that irrelevant nodes are ranked higher than relevant ones, leading to a low score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'I cannot find any suggestions for future research.' does not align with any node(s) in the retrieval context, which focuses on environmental factors, gene regulation, and temperature effects on bees, without addressing future research suggestions."
+    },
+    "question_type": "future_research",
+    "paper_id": "594",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "594",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 36,
+    "name": "paper_586_case_19",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the differential effects of neonicotinoids on receptor subtype activation, the long-term impacts on bee behavior and colony dynamics, mechanisms behind changes in sex ratios and colony composition, and the pharmacological profiles of neonicotinoids and their metabolites.",
+    "expected_output": "I have not identified any sections where they discuss future research directions.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. Each node, starting from the first, focuses on the effects and risks of neonicotinoids on bees, without addressing future research directions. The second node continues to discuss the impact on honeybees and the need for further evidence, but again, lacks specific future research directions. The third node repeats the discussion on the impact and need for more evidence, while the fourth node discusses toxicity at different exposure levels, all without detailing future research directions. Thus, the ranking does not prioritize relevant information, resulting in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence, 'I have not identified any sections where they discuss future research directions,' cannot be linked to any node(s) in the retrieval context, as there is no mention of future research directions in the provided context."
+    },
+    "question_type": "future_research",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 49,
+    "name": "paper_584_case_37",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research directions should include investigating the multiple exposure routes of bumblebees to neonicotinoids, particularly in non-crop areas like hedgerows and woodlands, and assessing the long-term ecological impacts of pesticide residues in various environments. Additionally, studies should aim to resolve the inconsistencies in the observed relationships between neonicotinoid exposure and bumblebee colony success, exploring other influencing factors affecting bumblebee populations.",
+    "expected_output": "No suggestions for future research.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts discusses 'the results of site-based and residue-based analyses,' which is irrelevant to the input about future research directions. Similarly, the second node focuses on 'the impact of neonicotinoids on bumblebees,' which also does not address future research directions. Both nodes are irrelevant and should be ranked lower, leading to a low contextual precision score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No suggestions for future research.' in the expected output cannot be linked to any node(s) in the retrieval context, which primarily discusses bumblebee exposure to neonicotinoids without addressing future research."
+    },
+    "question_type": "future_research",
+    "paper_id": "584",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "584",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 65,
+    "name": "paper_793_case_47",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should explore the effects of sublethal doses of neonicotinoid insecticides on bee health, focusing on molecular mechanisms and gene expression. Investigating the role of key genes and detoxification pathways in bees' responses to insecticides is essential, along with the potential use of specific immune genes as biomarkers for monitoring exposure effects.",
+    "expected_output": "No future research direction mentioned in the text.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Great job!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses 'the effects of dinotefuran on bee populations and the use of RNA-seq technology to study gene expression,' which is unrelated to the input's focus on 'future research directions.' This irrelevant node should be ranked lower to improve the score.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence 'No future research direction mentioned in the text.' cannot be linked to any node(s) in the retrieval context, which focuses on the effects of dinotefuran on bees without addressing future research directions."
+    },
+    "question_type": "future_research",
+    "paper_id": "793",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "793",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 50,
+    "name": "paper_298_case_51",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the effects of different pesticide doses on bee brain morphology and behavior, particularly the mechanisms of apoptosis and necrosis in various cell types. Additionally, studies should investigate the long-term impacts of sublethal doses on bee populations and their ecological roles, as well as potential recovery from pesticide exposure. It is also crucial to develop controlled pesticide application strategies and protection measures for bumblebee populations.",
+    "expected_output": "There were no future changes suggested in the paper.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses 'the effects of thiamethoxam on brain morphology,' and the second node summarizes 'the study's findings on brain morphology changes,' both of which do not address future research directions. These irrelevant nodes are ranked higher than any relevant nodes, leading to a low score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'There were no future changes suggested in the paper.' cannot be linked to any node(s) in the retrieval context, which focuses on thiamethoxam's effects on brain morphology without mentioning future changes or suggestions."
+    },
+    "question_type": "future_research",
+    "paper_id": "298",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "298",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 56,
+    "name": "paper_809_case_50",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on: 1) Investigating the agrochemical sensitivity of non-target invertebrates, especially blue orchard mason bees (*Osmia lignaria*), to determine if current risk assessment factors are adequate for their protection. 2) Standardizing toxicity testing protocols for non-Apis pollinators to enhance comparability of data and improve risk assessments and pesticide regulations. 3) Assessing the effects of macrocyclic lactones on a wider variety of non-target organisms, particularly pollinators, and exploring the mechanisms of exposure and toxicity.",
+    "expected_output": "There is no future research direction specified in the text.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node discusses 'pollinator risk assessments and variability in sensitivity to agrochemicals,' which does not align with the input's focus on future research directions. Similarly, the second node, ranked second, centers on 'macrocyclic lactones and their impact on non-target organisms,' lacking any mention of future research. The third node, ranked third, talks about 'the adaptation of honey bee protocols for other pollinators,' again missing the input's focus. Lastly, the fourth node, ranked fourth, addresses 'the suitability of honey bee protocols for other pollinators,' without any reference to future research directions. Thus, the score reflects the absence of relevant nodes.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence 'There is no future research direction specified in the text.' does not align with any node(s) in the retrieval context, which focuses on current research and findings without addressing future directions."
+    },
+    "question_type": "future_research",
+    "paper_id": "809",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "809",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 76,
+    "name": "paper_270_case_67",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on investigating the physiological causes of decreased wax production in bees and conducting field experiments to evaluate the impact of imidacloprid on honeybee colonies. There is also a call for reducing the use of neonicotinoids and integrating them into pest management strategies.",
+    "expected_output": "The paper discusses the need to identify the physiological mechanisms by which imidacloprid exposure impacts wax production. It equally states that field experiments should follow, to quantify the negative effects of exposure in natura.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts is irrelevant to the input. It focuses on the regulation of the use of *Apis mellifera*, which does not align with the input's request for a summary of future research directions. This misalignment results in a low score as the relevant information is not prioritized.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context, which primarily discusses the regulation of imidacloprid use rather than its physiological impacts or field experiments."
+    },
+    "question_type": "future_research",
+    "paper_id": "270",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "270",
+      "question_id": "future_research",
+      "reviewer": "KW",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 82,
+    "name": "paper_225_case_72",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the long-term effects of sublethal thiacloprid exposure on honeybee health, particularly regarding gut microbiome changes and energy metabolism. It is essential to investigate the discrepancies between laboratory and field study results, considering factors like bee age and diet that may influence susceptibility. Understanding the temporal dynamics of microbiome alterations and their implications for honeybee survival and colony health is also crucial. Furthermore, prioritizing field experiments is necessary to investigate the long-term toxic effects of neonicotinoids on honeybees, as laboratory conditions may not accurately reflect the complexities of real-world environments.",
+    "expected_output": "The authors identify that field experiments must be run to better understand long term effects of neonic exposure on the gut microbiota",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node discusses the effects of thiacloprid exposure on honeybee gut microbiota and survival rates, but does not mention future research directions. Similarly, the second node highlights the long-lasting effects of thiacloprid exposure on honeybee gut microbiota without providing insights into future research directions. Lastly, the third node elaborates on the impact of insecticides on honeybee gut microbiome and related metabolic processes, yet lacks any mention of future research directions. Thus, the ranking does not prioritize relevant information, resulting in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence about field experiments and long-term effects of neonic exposure on gut microbiota cannot be linked to any node(s) in the retrieval context."
+    },
+    "question_type": "future_research",
+    "paper_id": "225",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "225",
+      "question_id": "future_research",
+      "reviewer": "KW",
+      "rating": 6
+    }
+  },
+  {
+    "test_case_index": 84,
+    "name": "paper_427_case_70",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should aim to refine methodologies that combine controlled laboratory conditions with realistic field settings to better understand the sub-lethal effects of pesticide exposure on bee behavior and colony development. This approach could enhance the accuracy of ecotoxicological assessments and inform pesticide risk guidelines.",
+    "expected_output": "The only avenues for future work that the authors explicitly reference are the develo[ment and implementation of automated systems for tracking foraging trips and load",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node discusses 'pesticide exposure and its effects on bee colonies', which is unrelated to future research directions. Similarly, the second node focuses on 'clothianidin exposure', while the third node contrasts 'behavioural results with other studies', neither of which address future research directions. The fourth node talks about 'benefits and limitations of laboratory studies', and the fifth node highlights 'data collection methods and limitations', both failing to mention future research directions. Thus, the irrelevant nodes are not ranked lower than any relevant nodes, resulting in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the expected output's mention of future work and automated systems is not supported by any node in the retrieval context."
+    },
+    "question_type": "future_research",
+    "paper_id": "427",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "427",
+      "question_id": "future_research",
+      "reviewer": "KW",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 98,
+    "name": "paper_299_case_53",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "Information not found in the provided text.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input, as they focus on various aspects such as 'the impacts of neonicotinoids on honey bees', 'methodology', and 'findings', rather than 'future research directions'. This indicates that no relevant nodes were ranked higher than irrelevant ones, resulting in a score of zero.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Information not found in the provided text.' does not align with any node(s) in the retrieval context, indicating a complete mismatch."
+    },
+    "question_type": "future_research",
+    "paper_id": "299",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "299",
+      "question_id": "future_research",
+      "reviewer": "NN",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 75,
+    "name": "paper_729_case_77",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "The discussion suggests that future research should focus on the long-term effects of sulfoxaflor on bee populations, particularly examining how different concentrations affect foraging behavior and survival across various bee species.",
+    "expected_output": "no future research direction",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts is irrelevant, as it discusses 'the effects of sulfoxaflor on bee behavior and survival,' which does not pertain to 'future research directions.' This indicates that irrelevant nodes are ranked higher than relevant ones, leading to a low contextual precision score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'no future research direction' cannot be linked to any node(s) in the retrieval context, indicating a complete mismatch."
+    },
+    "question_type": "future_research",
+    "paper_id": "729",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "729",
+      "question_id": "future_research",
+      "reviewer": "AB",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 85,
+    "name": "paper_440_case_79",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on the effects of imidacloprid on honeybee larvae, particularly examining the nursing behavior of bees and the potential for cross-contamination. Studies should investigate the impact of different imidacloprid dosages on larval survival, brood production, eclosion rates, and behavioral changes, as previous studies have mainly concentrated on adult bees and colonies.",
+    "expected_output": "No future research has been reported in the paper",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because both nodes in the retrieval contexts are irrelevant to the input. The first node, ranked 1, discusses 'the effects of imidacloprid on honeybee colonies,' which does not align with the input's focus on future research directions. Similarly, the second node, ranked 2, centers on 'the methodology and results of the study regarding imidacloprid's effects on larvae,' again failing to address future research directions. This misalignment results in a score of 0.00, as no relevant nodes are present.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No future research has been reported in the paper' cannot be linked to any node(s) in the retrieval context, which focuses on the effects of imidacloprid on honeybees without addressing future research."
+    },
+    "question_type": "future_research",
+    "paper_id": "440",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "440",
+      "question_id": "future_research",
+      "reviewer": "FS",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 95,
+    "name": "paper_378_case_88",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research directions should focus on the long-term impacts of neonicotinoid insecticides on honey bee health, the mechanisms of mortality linked to these chemicals, and the exploration of alternative pest management practices that reduce risks to pollinators.",
+    "expected_output": "The authors does not explicitly suggest specific future research directions.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts, which is ranked highest, is irrelevant to the input. The node discusses 'the observed effects of insecticides on honey bee mortality' and lacks any mention of 'future research directions,' which is the focus of the input. This misalignment results in a low contextual precision score.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence about future research directions does not align with any node(s) in the retrieval context, which primarily discusses the impact of insecticides on honey bees."
+    },
+    "question_type": "future_research",
+    "paper_id": "378",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "378",
+      "question_id": "future_research",
+      "reviewer": "SA",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 109,
+    "name": "paper_380_case_98",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on integrating targeted disease screening with exposomics to explore the interactions between xenobiotic exposures and diseases affecting honey bees, particularly how these factors influence bee physiology and increase susceptibility to infections.",
+    "expected_output": "The future research suggested by the authors included an investigation into the implications of sulfur metabolism dysregulation on honey bees",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses the impact of fungicides and herbicides on metabolic pathways, and the second node focuses on xenobiotic exposures and their effects on bees. Both nodes fail to address future research directions, which is the main focus of the input. As a result, irrelevant nodes are ranked higher than any relevant nodes, leading to a low score.",
+      "Contextual Recall": "The score is 0.00 because the expected output's mention of future research on sulfur metabolism dysregulation cannot be linked to any node(s) in the retrieval context, which primarily discusses xenobiotic exposures and metabolic pathways without addressing sulfur metabolism or future research."
+    },
+    "question_type": "future_research",
+    "paper_id": "380",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "380",
+      "question_id": "future_research",
+      "reviewer": "RT",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 128,
+    "name": "paper_008_case_120",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should prioritize the ecotoxicology and risk assessment of insecticides on stingless bees, addressing the current lack of toxicological guidelines and investigating the effects of specific insecticides like chlorantraniliprole and thiamethoxam.",
+    "expected_output": "No future research in discussion",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts discusses 'the role of bees in pollination and the use of insecticides,' which is irrelevant to the input's focus on future research directions. This irrelevant node is ranked first, leading to a low contextual precision score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'No future research in discussion' from the expected output cannot be linked to any node(s) in the retrieval context, indicating a complete lack of alignment."
+    },
+    "question_type": "future_research",
+    "paper_id": "008",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "008",
+      "question_id": "future_research",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 169,
+    "name": "paper_432_case_151",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should focus on cultivating crops with higher sugar content in their nectar to lessen the toxicity of insecticides to bees, thereby aiding in the preservation of bee populations in areas with high pesticide application.",
+    "expected_output": "The paper does not recommend directions for future research",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses 'the effects of sugar content on bee mortality and insecticide toxicity,' which is irrelevant to the input's focus on 'future research directions.' This irrelevant node is ranked first, leading to a low score.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence about future research recommendations cannot be linked to any node(s) in the retrieval context, which primarily discusses sucrose's impact on insecticide toxicity and bee mortality."
+    },
+    "question_type": "future_research",
+    "paper_id": "432",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "432",
+      "question_id": "future_research",
+      "reviewer": "BN",
+      "rating": 4
+    }
+  },
+  {
+    "test_case_index": 182,
+    "name": "paper_525_case_173",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should investigate how imidacloprid affects synaptic dynamics and learning/memory in bees, especially considering the roles of 14-3-3 protein and protein kinase C in mushroom bodies.",
+    "expected_output": "I have not identified any suggested directions for future research.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses 'the effects of imidacloprid on bees' synaptic dynamics and learning/memory,' which is irrelevant to the input's focus on future research directions. This node should be ranked lower as it does not address the input's requirement for summarizing future research directions.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence 'I have not identified any suggested directions for future research.' does not correspond to any node(s) in the retrieval context, which focuses on the role of proteins and imidacloprid in bees, without addressing future research directions."
+    },
+    "question_type": "future_research",
+    "paper_id": "525",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "525",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 188,
+    "name": "paper_523_case_175",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Future research should systematically examine the specific behavioral traits of bees affected by field-realistic doses of neonicotinoids, focusing on physical performance, learning abilities, and motivation. Additionally, studies should investigate the behavioral mechanisms influencing foraging success, particularly at low pesticide concentrations that do not affect physical performance but may reduce motivation to forage.",
+    "expected_output": "I cannot find any suggestions for future research in the discussion.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node focuses on the EU initiative on pollinators and the effects of neonicotinoids, without mentioning future research directions. Similarly, the second node discusses the potential effects of neonicotinoids on bee behavior but does not suggest future research directions. The third node highlights the effects of neonicotinoids on bee behavior but does not provide suggestions for future research. Lastly, the fourth node addresses the realism of neonicotinoid exposure in experiments but does not mention future research directions. This lack of relevant content results in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'I cannot find any suggestions for future research in the discussion.' does not align with any node(s) in the retrieval context, which focuses on the effects of neonicotinoids on bees without mentioning future research suggestions."
+    },
+    "question_type": "future_research",
+    "paper_id": "523",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "523",
+      "question_id": "future_research",
+      "reviewer": "LH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 194,
+    "name": "paper_017_case_157",
+    "input": "Summarize the paper's discussion regarding future research directions.",
+    "actual_output": "Information not found in the provided text.",
+    "expected_output": "Information not found in the provided text.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input, as they do not discuss future research directions. For instance, the first node focuses on 'Micka\u00ebl Henry and DOI', which is not pertinent to future research directions, and the second node discusses 'personal use', which also lacks relevance. This pattern continues throughout the list, with nodes like the fourth one discussing 'thiamethoxam's effects on honey bees' and the tenth node repeating 'Colony Collapse Disorder', none of which address future research directions. Consequently, the precision score reflects the absence of relevant content.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence 'Information not found in the provided text.' does not align with any node(s) in the retrieval context, indicating a complete mismatch."
+    },
+    "question_type": "future_research",
+    "paper_id": "017",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "017",
+      "question_id": "future_research",
+      "reviewer": "EA",
+      "rating": 10
+    }
+  }
+]

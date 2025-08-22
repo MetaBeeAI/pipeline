@@ -1,0 +1,542 @@
+[
+  {
+    "test_case_index": 30,
+    "name": "paper_586_case_19",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honeybees and bumblebees were tested.",
+    "expected_output": "The bee species tested was Bombus terrestris. The subspecies was Bombus terrestrus audax.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node discusses neonicotinoids and their effects on bees but fails to specify the species tested, which is crucial for relevance. Similarly, the second node focuses on the impact of imidacloprid on honeybees without mentioning Bombus terrestris or its subspecies, making it irrelevant. The third node examines the effects of THX and CLO on honeybees and other insects but does not identify the specific bee species tested, further contributing to the low score. The fourth node mentions bumblebees in the context of toxicity but does not specify the species Bombus terrestris, and the fifth node discusses toxicity levels and effects on bees without identifying the specific species Bombus terrestris. All nodes lack the necessary specificity to be considered relevant, resulting in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context, indicating a complete lack of relevant information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "586",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "586",
+      "question_id": "bee_species",
+      "reviewer": "LH",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 43,
+    "name": "paper_584_case_37",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "*Bombus terrestris audax*",
+    "expected_output": "*Bombus terrestris audax*",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts is irrelevant to the input question. It fails to mention any specific species of bee, such as 'Bombus terrestris audax', which is necessary to address the query about tested bee species.",
+      "Contextual Recall": "The score is 0.00 because the sentence '*Bombus terrestris audax*' in the expected output cannot be linked to any node(s) in the retrieval context, which primarily discusses methods and experimental setup without mentioning this specific term."
+    },
+    "question_type": "bee_species",
+    "paper_id": "584",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "584",
+      "question_id": "bee_species",
+      "reviewer": "AJ",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 60,
+    "name": "paper_299_case_60",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were Halictus tumulorum, Lasioglossum fulvicorne, L. malachurum, L. pauxillum, Osmia spinulosa, honey bees (*Apis mellifera*), and honey bees (*Apis mellifera carnica*).",
+    "expected_output": "Apis mellifera carnica",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node discusses the effects of neonicotinoids on various wild bee species, but it does not mention the specific species Apis mellifera carnica. Similarly, the second node focuses on honey bees in Hungary and the UK without specifying the species Apis mellifera carnica. The third node outlines the study's purpose and methods regarding neonicotinoid effects on honey bees, yet it fails to specify the species Apis mellifera carnica. Lastly, the fourth node mentions the establishment of new honey bee colonies but does not specify the species Apis mellifera carnica. As a result, the retrieval contexts do not provide relevant information, leading to a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Apis mellifera carnica' is not supported by any node(s) in the retrieval context, which focuses on neonicotinoids and their effects on bees, without mentioning 'Apis mellifera carnica' specifically."
+    },
+    "question_type": "bee_species",
+    "paper_id": "299",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "299",
+      "question_id": "bee_species",
+      "reviewer": "NN",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 70,
+    "name": "paper_218_case_65",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bee tested were *O. bicornis* and *B. terrestris*.",
+    "expected_output": "The paper mentions only the treatment of Osmia bicornis, the red mason bee. The genus is only given in full once.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts discusses the effects of pesticides on bees but does not specify the species tested, such as \"Osmia bicornis.\" This indicates that irrelevant nodes are ranked higher than relevant ones, leading to a low precision score.",
+      "Contextual Recall": "The score is 0.00 because the retrieval context lacks any mention of Osmia bicornis or the red mason bee, and it does not specify the genus being mentioned only once, focusing instead on general effects of pesticides on bees."
+    },
+    "question_type": "bee_species",
+    "paper_id": "218",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "218",
+      "question_id": "bee_species",
+      "reviewer": "KW",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 74,
+    "name": "paper_218_case_66",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bee tested were *O. bicornis* and *B. terrestris*.",
+    "expected_output": "The test species is Osmia bicornis",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts, ranked 1, is irrelevant. It discusses the effects of pesticides on bees but does not specify the species tested, which is crucial for the input question. The node mentions 'developing' but lacks specific reference to Osmia bicornis, indicating it should be ranked lower than any relevant nodes.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence 'The test species is Osmia bicornis' cannot be linked to any node(s) in the retrieval context, which lacks any mention or implication of the species Osmia bicornis."
+    },
+    "question_type": "bee_species",
+    "paper_id": "218",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "218",
+      "question_id": "bee_species",
+      "reviewer": "FS",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 92,
+    "name": "paper_421_case_76",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were Osmia cornuta and Osmia bicornis.",
+    "expected_output": "The authors mention testing only Osmia bicornis, the red mason bee",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Great job!",
+      "Contextual Precision": "The score is 0.00 because the first node discusses the effects of neonicotinoids on bees in general, including honeybees and bumblebees, but does not specify the species Osmia bicornis or any other specific species tested. This indicates that the node is irrelevant to the input question, yet it is ranked first, leading to a low precision score.",
+      "Contextual Recall": "The score is 0.00 because the expected output sentence about testing Osmia bicornis, the red mason bee, is not supported by any node(s) in the retrieval context, which focuses on neonicotinoids and their effects on bees without mentioning this specific species."
+    },
+    "question_type": "bee_species",
+    "paper_id": "421",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "421",
+      "question_id": "bee_species",
+      "reviewer": "KW",
+      "rating": 2
+    }
+  },
+  {
+    "test_case_index": 94,
+    "name": "paper_421_case_77",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were Osmia cornuta and Osmia bicornis.",
+    "expected_output": "The species of bees tested were Osmia bicornis.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts discusses the effects of neonicotinoids on bees, including honeybees and bumblebees, but does not specify the species Osmia bicornis or any other specific species tested. This makes it irrelevant to the input question about specific bee species tested, and it should be ranked lower than any relevant nodes.",
+      "Contextual Recall": "The score is 0.00 because the retrieval context lacks any mention of the species Osmia bicornis, which is crucial for attributing the expected output to the context."
+    },
+    "question_type": "bee_species",
+    "paper_id": "421",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "421",
+      "question_id": "bee_species",
+      "reviewer": "BN",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 77,
+    "name": "paper_427_case_80",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "*Bombus terrestris audax* (Harris, 1776)",
+    "expected_output": "The authors use Bombus terrestris audax",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. Each node, from the first to the seventh, fails to specify the species of bee tested, focusing instead on general topics such as 'the importance of understanding risks to insect pollinators', 'effects of neonicotinoids on colonies', and 'experimental setup and colony conditions'. This lack of relevant information results in a score of zero, as no relevant nodes are ranked higher than irrelevant ones.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'The authors use Bombus terrestris audax' cannot be linked to any node(s) in the retrieval context, which lacks specific mention of this species."
+    },
+    "question_type": "bee_species",
+    "paper_id": "427",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "427",
+      "question_id": "bee_species",
+      "reviewer": "KW",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 87,
+    "name": "paper_734_case_86",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were *A. mellifera* (honey bee) and *B. impatiens* (common eastern bumble bee).",
+    "expected_output": "B. impatiens",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 0.0,
+      "Contextual Precision": 1.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 0.00 because the actual output incorrectly references A. mellifera (honey bee) instead of the common eastern bumble bee (B. impatiens), which is the species mentioned in the retrieval context.",
+      "Contextual Precision": "The score is 1.00 because the relevant node, ranked first, directly answers the question by mentioning \"the common eastern bumble bee, B. impatiens,\" which is the species tested. The irrelevant nodes, ranked second and third, discuss \"limitations of research on pesticide interactions\" and \"fungicide-insecticide interactions and synergism ratios,\" respectively, without specifying the species tested, thus justifying their lower ranking.",
+      "Contextual Recall": "The score is 0.00 because the expected output 'B. impatiens' is not supported by any node(s) in the retrieval context, which focuses on pesticide interactions and bee species without mentioning 'B. impatiens' specifically."
+    },
+    "question_type": "bee_species",
+    "paper_id": "734",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "734",
+      "question_id": "bee_species",
+      "reviewer": "AB",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 109,
+    "name": "paper_377_case_97",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honey bees (predominantly *Apis mellifera ligustica*) were tested in the study.",
+    "expected_output": "Apis mellifera ligustica",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. Each node, starting from the first, fails to specify the species of bee tested, as they only discuss general effects of neonicotinoids on honey bees or provide background information without detailing the species. For instance, the first node mentions 'the effects of neonicotinoids on honey bees but does not specify the species tested,' and similar issues persist throughout the list, leading to a complete lack of relevant information.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Apis mellifera ligustica' cannot be linked to any node(s) in the retrieval context, as it is neither mentioned nor implied."
+    },
+    "question_type": "bee_species",
+    "paper_id": "377",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "377",
+      "question_id": "bee_species",
+      "reviewer": "RT",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 112,
+    "name": "paper_052_case_112",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were *A. cerana* (Apis cerana) and *A. mellifera* (Apis mellifera).",
+    "expected_output": "Apis cerana",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Great job!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node discusses the impact of insecticides on bee populations but lacks specific species information. The second node mentions honeybees and their susceptibility to pesticides but fails to specify the species tested. Similarly, the third node talks about the sensitivity of bees to certain chemicals without identifying the species tested. Thus, none of the nodes provide the required information, resulting in a low score.",
+      "Contextual Recall": "The score is 0.00 because the expected output 'Apis cerana' is not supported by any node(s) in the retrieval context, which focuses on bee populations and pesticide exposure without mentioning 'Apis cerana' specifically."
+    },
+    "question_type": "bee_species",
+    "paper_id": "052",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "052",
+      "question_id": "bee_species",
+      "reviewer": "SA",
+      "rating": 3
+    }
+  },
+  {
+    "test_case_index": 118,
+    "name": "paper_946_case_115",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honeybee (Apis mellifera) larvae were tested.",
+    "expected_output": "The species tested in the study was Apis mellifera carnica.",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy and consistency!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node discusses 'the effects of pesticides and diseases on honeybee larvae' but fails to specify the species tested. Similarly, the second node describes 'the experimental design and methods' without mentioning the specific species of bee. The third node provides 'information about the location and conditions of the study' but does not specify the species of bee. The fourth node details 'the larval rearing process and experimental groups' without mentioning the species of bee tested. The fifth node repeats 'information about the effects of pesticides and diseases on honeybee larvae' without specifying the species. Lastly, the sixth node discusses 'the experimental design and findings' but does not specify the species of bee tested. All nodes lack the relevant information needed to answer the input question, resulting in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the retrieval context lacks any mention of the specific species 'Apis mellifera carnica', which is crucial for aligning with the expected output."
+    },
+    "question_type": "bee_species",
+    "paper_id": "946",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "946",
+      "question_id": "bee_species",
+      "reviewer": "SA",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 125,
+    "name": "paper_015_case_129",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "*A. mellifera ligustica* (Italian honey bee)",
+    "expected_output": "Apis mellifera ligustica",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node discusses 'the effects of pesticides on bee locomotion and behavior' but fails to specify the species of bee tested. Similarly, the second node provides details on 'the experimental setup and location' without mentioning the species. The third node repeats 'the experimental setup details and location' without specifying the species of bee tested. As a result, none of the nodes provide the required information, leading to a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the expected output 'Apis mellifera ligustica' is not supported by any node(s) in the retrieval context, which only covers general information about honey bees without mentioning this specific subspecies."
+    },
+    "question_type": "bee_species",
+    "paper_id": "015",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "015",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 129,
+    "name": "paper_015_case_130",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "*A. mellifera ligustica* (Italian honey bee)",
+    "expected_output": "*A. mellifera ligustica* (Italian honey bee)",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node discusses 'the effects of pesticides on honey bees and their locomotion,' but fails to specify the species of bee tested. Similarly, the second node outlines 'the experimental setup and methods used in the study,' yet omits any mention of the specific species. The third node repeats the second node's focus on 'experimental methods without specifying the species of bee tested.' As a result, no relevant information is ranked higher than irrelevant information, leading to a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the expected output, specifically the mention of '*A. mellifera ligustica* (Italian honey bee)', cannot be attributed to any node(s) in the retrieval context, which lacks specific references to this subspecies."
+    },
+    "question_type": "bee_species",
+    "paper_id": "015",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "015",
+      "question_id": "bee_species",
+      "reviewer": "EA",
+      "rating": 10
+    }
+  },
+  {
+    "test_case_index": 155,
+    "name": "paper_014_case_134",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bee(s) tested include honeybees (*Apis mellifera*), *A. cerana cerana*, *O. bicornis*, *B. terrestris*, and *B. impatiens*.",
+    "expected_output": "Apis mellifera carnica",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. Each node, starting from the first, discusses various effects on honeybees but consistently fails to specify the species tested, as highlighted by phrases like 'does not specify the species tested.' This lack of relevant information across all nodes results in a score of zero.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Apis mellifera carnica' in the expected output cannot be linked to any node(s) in the retrieval context, indicating a complete lack of relevant information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "014",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "014",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 161,
+    "name": "paper_016_case_148",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bee tested was *A. mellifera ligustica* (honey bee).",
+    "expected_output": "Apis mellifera ligustica",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. Each node, starting from the first, fails to specify the species of bee tested, only mentioning 'honey bee flight ability' or 'honey bees' without further detail. This lack of specificity in all nodes results in a low contextual precision score, as no relevant information is ranked higher than irrelevant nodes.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Apis mellifera ligustica' cannot be linked to any node in the retrieval context, indicating a complete lack of relevant information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "016",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "016",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 9
+    }
+  },
+  {
+    "test_case_index": 165,
+    "name": "paper_885_case_150",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honey bees and bumblebees.",
+    "expected_output": "Apis mellifera carnica",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. The first node discusses the effects of neonicotinoids on honey bees and other bee species but fails to specify the species tested. The second node, ranked second, focuses on the impact of sulfoxaflor on honey bees and bumblebees but does not mention the specific species Apis mellifera carnica. Similarly, the third node analyzes the impact of sulfoxaflor on pollinators, including honey bees and bumblebees, but does not specify the species Apis mellifera carnica. Thus, none of the nodes provide the required information, resulting in a score of 0.00.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Apis mellifera carnica' could not be linked to any node(s) in the retrieval context, indicating a complete lack of relevant information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "885",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "885",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 0
+    }
+  },
+  {
+    "test_case_index": 173,
+    "name": "paper_884_case_145",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "The species of bees tested were honeybees, specifically *Apis mellifera* and its subspecies *Apis mellifera carnica*.",
+    "expected_output": "Apis mellifera carnica",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job maintaining accuracy!",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. Each node, from the first to the twentieth, fails to specify the species of bees tested, as they only discuss general topics such as 'the effects of a pesticide on honeybee motor abilities', 'background on the threats to pollinators', and 'pesticide exposure routes for bees'. This lack of specificity results in a complete absence of relevant information, justifying the lowest possible score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Apis mellifera carnica' cannot be linked to any node(s) in the retrieval context, indicating a complete lack of relevant information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "884",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "884",
+      "question_id": "bee_species",
+      "reviewer": "AH",
+      "rating": 8
+    }
+  },
+  {
+    "test_case_index": 199,
+    "name": "paper_658_case_192",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Bumblebees",
+    "expected_output": "honeybee (Apis mellifera)",
+    "contextual_combined_score": 0.3333333333333333,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.0,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.00 because the first node in the retrieval contexts, ranked 1, is irrelevant. It discusses the effects of neonicotinoid insecticides on bumblebees, but does not mention honeybees or any specific species tested, which is crucial for answering the input question.",
+      "Contextual Recall": "The score is 0.00 because the expected output 'honeybee (Apis mellifera)' does not align with any node(s) in the retrieval context, which centers on neonicotinoid insecticides and their impact on bumblebees, not honeybees."
+    },
+    "question_type": "bee_species",
+    "paper_id": "658",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "658",
+      "question_id": "bee_species",
+      "reviewer": "ER",
+      "rating": 1
+    }
+  },
+  {
+    "test_case_index": 50,
+    "name": "paper_794_case_52",
+    "input": "What species of bee(s) were tested?",
+    "actual_output": "Honey bees (*Apis mellifera*) were tested.",
+    "expected_output": "Apis mellifera carnica",
+    "contextual_combined_score": 0.3611111111111111,
+    "individual_scores": {
+      "Faithfulness": 1.0,
+      "Contextual Precision": 0.08333333333333333,
+      "Contextual Recall": 0.0
+    },
+    "individual_reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Everything aligns perfectly, showcasing a high level of accuracy and consistency. Keep up the great work!",
+      "Contextual Precision": "The score is 0.08 because the relevant node, which mentions 'honey bees (A. mellifera)', is ranked twelfth, while the preceding eleven nodes are irrelevant as they do not specify the species tested. For instance, the first node only mentions 'honey bee workers' without specifying the species, and the second node is in Spanish, mentioning 'abeja de la miel' without specifying the species. This misplacement of relevant information significantly lowers the score.",
+      "Contextual Recall": "The score is 0.00 because the sentence 'Apis mellifera carnica' cannot be linked to any node in the retrieval context, indicating a complete lack of relevant information."
+    },
+    "question_type": "bee_species",
+    "paper_id": "794",
+    "success": false,
+    "additional_metadata": {
+      "paper_id": "794",
+      "question_id": "bee_species",
+      "reviewer": "NN",
+      "rating": 9
+    }
+  }
+]
