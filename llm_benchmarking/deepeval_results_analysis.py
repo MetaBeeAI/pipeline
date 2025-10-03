@@ -26,8 +26,11 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Set plotting style
-plt.style.use('default')
+plt.style.use('dark_background')
 sns.set_palette("husl")
+
+# Define custom color palette (lilac and light orange)
+CUSTOM_COLORS = ['#B19CD9', '#FFB366']  # Lilac and light orange
 
 class DeepEvalResultsAnalyzer:
     def __init__(self):
@@ -317,6 +320,7 @@ class DeepEvalResultsAnalyzer:
         
         # Create the plot
         plt.figure(figsize=(14, 8))
+        plt.style.use('dark_background')
         
         # Get all unique metrics across all data types to ensure consistent x-axis
         all_metrics = plot_df['metric_name'].unique()
@@ -354,28 +358,37 @@ class DeepEvalResultsAnalyzer:
             if np.any(valid_mask):
                 bars = plt.bar(x_pos[valid_mask], values[valid_mask], width, 
                               label=data_type.replace('_', ' ').title(),
-                              yerr=errors[valid_mask], capsize=5, alpha=0.8)
+                              yerr=errors[valid_mask], capsize=5, alpha=0.8,
+                              color=CUSTOM_COLORS[i % len(CUSTOM_COLORS)],
+                              error_kw={'color': '#CCCCCC', 'linewidth': 2})
                 
                 # Add value labels on bars
                 for bar, value in zip(bars, values[valid_mask]):
                     height = bar.get_height()
                     plt.text(bar.get_x() + bar.get_width()/2., height + 0.01,
-                            f'{value:.3f}', ha='center', va='bottom', fontsize=9)
+                            f'{value:.3f}', ha='center', va='bottom', 
+                            fontsize=14, color='#CCCCCC')
         
-        plt.xlabel('Metrics')
-        plt.ylabel('Score / Success Rate')
-        plt.title('Average Scores Comparison: LLM vs Reviewer vs Reviewer vs Reviewer')
-        plt.xticks(x, metric_labels, rotation=45, ha='right')
-        plt.legend()
-        plt.grid(True, alpha=0.3)
+        plt.xlabel('Metrics', fontsize=18, color='#CCCCCC')
+        plt.ylabel('Score / Success Rate', fontsize=18, color='#CCCCCC')
+        plt.title('Average Scores Comparison: LLM vs Reviewer vs Reviewer vs Reviewer', 
+                 fontsize=20, color='white')
+        plt.xticks(x, metric_labels, rotation=45, ha='right', fontsize=16, color='#CCCCCC')
+        plt.yticks(fontsize=16, color='#CCCCCC')
+        plt.ylim(0.0, 1.0)  # Set y-axis limits from 0.0 to 1.0
+        plt.legend(fontsize=16)
+        plt.grid(True, alpha=0.3, color='#CCCCCC')
         plt.tight_layout()
         
-        # Save the plot
-        plot_path = os.path.join(self.output_dir, "average_scores_comparison.png")
-        plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+        # Save the plot as PNG and PDF
+        plot_path_png = os.path.join(self.output_dir, "average_scores_comparison.png")
+        plot_path_pdf = os.path.join(self.output_dir, "average_scores_comparison.pdf")
+        plt.savefig(plot_path_png, dpi=300, bbox_inches='tight')
+        plt.savefig(plot_path_pdf, bbox_inches='tight')
         plt.close()
         
         print(f"    ✅ Saved: average_scores_comparison.png")
+        print(f"    ✅ Saved: average_scores_comparison.pdf")
     
     def _create_individual_metric_plots(self, df: pd.DataFrame):
         """Create individual plots for each metric grouped by question type."""
@@ -395,6 +408,7 @@ class DeepEvalResultsAnalyzer:
             
             # Create the plot
             plt.figure(figsize=(16, 10))
+            plt.style.use('dark_background')
             
             # Get unique question types
             question_types = sorted(metric_df['question_type'].unique())
@@ -438,35 +452,46 @@ class DeepEvalResultsAnalyzer:
                 
                 bars = plt.bar(x_pos, means, width, 
                               label=data_type.replace('_', ' ').title(),
-                              yerr=errors, capsize=5, alpha=0.8)
+                              yerr=errors, capsize=5, alpha=0.8,
+                              color=CUSTOM_COLORS[i % len(CUSTOM_COLORS)],
+                              error_kw={'color': '#CCCCCC', 'linewidth': 2})
                 
                 # Add value labels on bars
                 for bar, value in zip(bars, means):
                     if value > 0:
                         height = bar.get_height()
                         plt.text(bar.get_x() + bar.get_width()/2., height + 0.01,
-                                f'{value:.3f}', ha='center', va='bottom', fontsize=9)
+                                f'{value:.3f}', ha='center', va='bottom', 
+                                fontsize=14, color='#CCCCCC')
             
-            plt.xlabel('Question Types')
+            plt.xlabel('Question Types', fontsize=18, color='#CCCCCC')
             if metric_name == "Correctness":
-                plt.ylabel('Success Rate')
-                plt.title(f'{metric_name}: Success Rate by Question Type')
+                plt.ylabel('Success Rate', fontsize=18, color='#CCCCCC')
+                plt.title(f'{metric_name}: Success Rate by Question Type', 
+                         fontsize=20, color='white')
             else:
-                plt.ylabel('Score')
-                plt.title(f'{metric_name}: Average Score by Question Type')
+                plt.ylabel('Score', fontsize=18, color='#CCCCCC')
+                plt.title(f'{metric_name}: Average Score by Question Type', 
+                         fontsize=20, color='white')
             
-            plt.xticks(x, [q.replace('_', ' ').title() for q in question_types], rotation=45, ha='right')
-            plt.legend()
-            plt.grid(True, alpha=0.3)
+            plt.xticks(x, [q.replace('_', ' ').title() for q in question_types], 
+                      rotation=45, ha='right', fontsize=16, color='#CCCCCC')
+            plt.yticks(fontsize=16, color='#CCCCCC')
+            plt.ylim(0.0, 1.0)  # Set y-axis limits from 0.0 to 1.0
+            plt.legend(fontsize=16)
+            plt.grid(True, alpha=0.3, color='#CCCCCC')
             plt.tight_layout()
             
-            # Save the plot
+            # Save the plot as PNG and PDF
             safe_metric_name = metric_name.replace(' ', '_').replace('[', '').replace(']', '')
-            plot_path = os.path.join(self.output_dir, f"{safe_metric_name}_by_question_type.png")
-            plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+            plot_path_png = os.path.join(self.output_dir, f"{safe_metric_name}_by_question_type.png")
+            plot_path_pdf = os.path.join(self.output_dir, f"{safe_metric_name}_by_question_type.pdf")
+            plt.savefig(plot_path_png, dpi=300, bbox_inches='tight')
+            plt.savefig(plot_path_pdf, bbox_inches='tight')
             plt.close()
             
             print(f"      ✅ Saved: {safe_metric_name}_by_question_type.png")
+            print(f"      ✅ Saved: {safe_metric_name}_by_question_type.pdf")
     
     def generate_summary_statistics(self, llm_df: pd.DataFrame, reviewer_df: pd.DataFrame):
         """Generate summary statistics for the analysis."""

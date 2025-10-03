@@ -6,7 +6,8 @@
     "rev1_rating": 10,
     "answer_rev2": "I cannot find any suggestions for future research.",
     "rev2": "LH",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_llm2": "No future research directions were suggested."
   },
   "593": {
     "answer_llm": "Future research should focus on the long-term effects of larval exposure to THY on adult behavior, learning, and memory, as well as the impacts on colony performance. Additionally, there is a need to further investigate the mechanistic bases of transcriptional responses to IMI, particularly regarding neuro-endocrine signaling and the morphological changes observed. Research should also explore the interactions and effects of combined stressors on honey bee populations under varying biotic and abiotic conditions. Incorporating ecotoxicogenomics into field studies and extending it to include multi-omic models will enhance understanding of the relationships between molecular responses and colony-level endpoints.",
@@ -15,7 +16,8 @@
     "rev1_rating": 10,
     "answer_rev2": "They suggest that future studies should incorporate ecotoxicogenomics into field or semi-field experiments for improved understanding of separate and combined stressors on bee health.",
     "rev2": "LH",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_llm2": "- Incorporate ecotoxicogenomics into field or semi-field experiments to refine the understanding of molecular responses and colony-level endpoints.\n- Investigate unpredicted molecular changes in systems such as circadian rhythms and sleep to understand uncharacterised phenotypes in bees."
   },
   "592": {
     "answer_llm": "Future research should focus on: 1) Investigating the impact of neonicotinoid exposure on male wild bee reproductive physiology, as this area is currently under-researched; 2) Developing standardized methods for studying the effects of neonicotinoids on solitary bees, considering the influence of various environmental stressors; 3) Adopting a holistic approach that combines laboratory, semi-field, and field data to assess the environmental hazards of agrochemicals, particularly neonicotinoids, and their effects on male insects.",
@@ -24,7 +26,8 @@
     "rev1_rating": 10,
     "answer_rev2": "They clearly state that is appears urgent to adress possible effects of xenobiotics on male insects. They also state that a holistic approach, combining lab, semi-field and field data is required for reliable assessmsents of pesticides, and that there is an urgent need to develop standardised protocols.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "1. Develop standardized methods and protocols to improve reproducibility and facilitate direct comparisons of findings among different laboratories.\n2. Investigate the effects of simultaneous exposure to additional stressors (e.g., pathogens, food stress, fluctuating temperatures and humidity) on the impact of neonicotinoid insecticides on solitary bees.\n3. Investigate the effects of xenobiotics on male insects to understand their role in global insect declines.\n4. Develop a holistic approach combining laboratory, semi-field, and field data to reliably assess environmental hazards of chemicals and prevent false-negative results."
   },
   "077": {
     "answer_llm": "Future research should focus on the mechanisms behind the differing antioxidant defense responses in queens and workers to oxidative stressors, the ecological implications for honey bee populations in pesticide-exposed environments, and the evolutionary aspects of antioxidant defenses in light of contemporary challenges.",
@@ -33,7 +36,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should focus on the mechanisms behind the differing antioxidant defense responses in queens and workers to oxidative stressors, the ecological implications for honey bee populations in pesticide-exposed environments, and the evolutionary aspects of antioxidant defenses in light of contemporary challenges.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "- Investigate the biochemical evolution of the antioxidant defense system (ADS) versus colony fitness in honey bees.\n- Study the role of oxidative stress in the adaptive response to environmental pressures, including neonicotinoids.\n- Develop further knowledge on the ADSs of different organs and tissues in honey bees using the experimental protocol.\n- Investigate how decreased forager ADSs due to oxidative pesticide stress impact colony fitness and survival."
   },
   "083": {
     "answer_llm": "Future research should focus on the movement and longevity of neonicotinoids in flowering plants like clover, examining their environmental behavior and potential risks to bees, particularly after mowing and following rainfall. Additionally, studies should investigate the long-term impacts of trace dietary neonicotinoids on bees in field settings, focusing on relevant exposure durations and conditions.",
@@ -42,7 +46,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should focus on the movement and longevity of neonicotinoids in flowering plants like clover, examining their environmental behavior and potential risks to bees, particularly after mowing and following rainfall. Additionally, studies should investigate the long-term impacts of trace dietary neonicotinoids on bees in field settings, focusing on relevant exposure durations and conditions.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "070": {
     "answer_llm": "Future research should focus on the effects of sublethal doses of NEOCs on honey bee health, particularly enzyme activity and physiological processes. It is crucial to assess honey bee biomarkers at sublethal pesticide doses and consider transitioning to biopesticides. The complexity of enzyme regulation also warrants further investigation.",
@@ -51,7 +56,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should focus on the effects of sublethal doses of NEOCs on honey bee health, particularly enzyme activity and physiological processes. It is crucial to assess honey bee biomarkers at sublethal pesticide doses and consider transitioning to biopesticides. The complexity of enzyme regulation also warrants further investigation.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Investigate the molecular mechanisms underlying the modulation of neural enzyme (AChE) by NEOCs and its impact on neurotransmission.\n2. Develop alternative biopesticides for biological control of pests to replace conventional chemical pesticides.\n3. Assess the effects of sublethal pesticide doses on recognized honey bee biomarkers to ensure functional integrity and survival.\n4. Explore the correlation between protein expression and enzyme activity in honey bees exposed to NEOCs."
   },
   "071": {
     "answer_llm": "Future research should focus on the interactions between captan and insecticides, especially thiamethoxam, and explore the indirect effects of fungicides on bee health, including their impact on microbiota and pathogens. Additionally, studies should investigate how exposure to captan affects honey bee colony dynamics and the mortality of solitary and sub-social wild bees, as well as the mechanisms of compensation in honey bee colonies, such as increased queen egg laying, particularly during critical crop pollination periods.",
@@ -60,7 +66,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should focus on the interactions between captan and insecticides, especially thiamethoxam, and explore the indirect effects of fungicides on bee health, including their impact on microbiota and pathogens. Additionally, studies should investigate how exposure to captan affects honey bee colony dynamics and the mortality of solitary and sub-social wild bees, as well as the mechanisms of compensation in honey bee colonies, such as increased queen egg laying, particularly during critical crop pollination periods.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "Investigate the effects of captan on pollinators during critical pollination periods to ensure sustainable crop pollination and agricultural production."
   },
   "082": {
     "answer_llm": "Future research should focus on understanding the effects of pesticides on native bees, particularly through the development of risk assessment protocols that include Brazilian native species. Additionally, research should investigate the pollen and nectar consumption patterns of both social and solitary native bees to better assess their exposure to pesticides. It is crucial to assess the collective risk of insecticide exposure to the entire bee community, rather than isolated species, and to incorporate native bee species into risk assessments to enhance biodiversity protection. Furthermore, studies should explore the sublethal and long-term effects of pesticides on bees, and standardize methodologies to accurately assess oral exposure in bees. Lastly, there is a pressing need for more data on pesticide concentrations in plants, advocating for the creation of an open platform to make this data publicly available.",
@@ -78,7 +85,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should focus on integrating land use information and agricultural pesticide data into models, increasing sample sizes for better precision, and conducting longitudinal studies to explore the main drivers of honey bee winter loss. Additionally, it should investigate the impact of weather conditions on foraging and health, the repellent effects of neonicotinoids, and the role of specific floral resources like *Calluna vulgaris* in enhancing colony resilience.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "- Add information on land use to the modeling to replace postal code areas with a better explaining spatial effect.\n- Use database information on land use and pesticide use on agricultural crops in modeling data from the National Monitoring Survey.\n- Explore the increases and decreases of other pollinators potentially affected by land use and agricultural pesticides."
   },
   "586": {
     "answer_llm": "Future research should focus on the differential effects of neonicotinoids on receptor subtype activation, the long-term impacts on bee behavior and colony dynamics, mechanisms behind changes in sex ratios and colony composition, and the pharmacological profiles of neonicotinoids and their metabolites.",
@@ -87,7 +95,8 @@
     "rev1_rating": 10,
     "answer_rev2": "I have not identified any sections where they discuss future research directions.",
     "rev2": "LH",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_llm2": "- Investigate the discrepancy between laboratory and field trials regarding the impact of THX on honeybee colonies, considering the potential buffering capacity of large colonies.\n- Conduct further studies to resolve the risk to honeybees from THX, particularly focusing on the potential compensatory mechanisms within colonies.\n- Explore the effects of prolonged neonicotinoid exposure through translocation to wildflowers, which is often excluded in field studies.\n- Assess the subtle deficits in bee learning and memory in more naturalistic settings, beyond the limited exposure during crop flowering periods.\n- Evaluate the impact of neonicotinoids on bee foraging ability in diverse habitats, including those with abundant wildflower availability, to better understand field relevance."
   },
   "589": {
     "answer_llm": "Future research directions should focus on the effects of field-realistic exposure to neonicotinoids on bumblebees and other pollinator taxa, as well as the virulence of newly emerging diseases like Nosema ceranae on these species. There is a significant gap in knowledge regarding how these factors affect pollinator behavior and survival, particularly in bumblebees, which are crucial for pollination services.",
@@ -96,7 +105,8 @@
     "rev1_rating": 10,
     "answer_rev2": "The authors state that it would be useful to follow up the study and test how learning is affected when bumblebees are exposed to a range of concentrations of pesticide and whether cold-stress influences the effect of pesticide treatment. In addition, they state that there is a need to assess whether Nosema cerana tpresents a serious threat to bumblebee health.",
     "rev2": "LH",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "1. Investigate the interactive effects of pesticide exposure with additional stressors such as cold exposure and starvation on bee mortality.\n2. Explore the infectivity and virulence of different *N. ceranae* strains in bumblebees, considering the genetic background of the host and the parasite.\n3. Examine the reasons behind the reduced sugar water collection following *Nosema* treatment in bees."
   },
   "590": {
     "answer_llm": "Future research should focus on assessing carryover effects of pesticides on offspring fitness in solitary bees, and conduct further semi-field and field studies to explore interactions between pesticides and additional stressors like nutritional stress.",
@@ -105,7 +115,8 @@
     "rev1_rating": 10,
     "answer_rev2": "The authors emphasize the need for more research on the effects of sulfoxamine insecticides, in particular in interaction with additional stressors. They also state that it is necessary to test if five days is a sufficient safety period for other species and crops. In addition, they stress the need to assess carryover effects on offspring fitness.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Conduct further (semi-)field studies to confirm the generality of findings for other bee and non-bee pollinator taxa.\n2. Identify the most effective mitigation measures for reducing exposure to sulfoxaflor.\n3. Investigate potential impacts of sulfoximine insecticides, including interactions with other pesticides or stressors such as pathogens or food stress.\n4. Explore the impacts of repeated exposure to sulfoxaflor and other combinations of pesticides.\n5. Investigate the effects of multiple applications of sulfoxaflor or mixing with other sprayed growth stages on bee populations."
   },
   "591": {
     "answer_llm": "Future research should focus on the sub-lethal effects of sulfoximine-based insecticides on pollinators, particularly their impact on ovary development and egg laying. Additionally, it should clarify the relationship between bee cognitive traits and foraging efficiency, investigate the effects of chronic exposure to sulfoxaflor on both adult and larval bees, and prioritize studies on non-Apis/Bombus species due to insufficient data.",
@@ -114,7 +125,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research is needed to understandpotential impacts of chronic exposure to sulfoxaflor. They also highlight a need to better understand the relationship between bee cognitive traits and foraging efficiency. They finally suggest that future work should focis on examining effects of sulfoxaflor on ovary development and egg laying, as well as under which conditions sulfoxaflor impacts bee health. In particular, more researchers should focus on non-Apis and non-Bombus species.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "- Examine potential sub-lethal impacts on ovary development and egg laying, which could directly relate to reductions in worker production."
   },
   "073": {
     "answer_llm": "Future research should focus on the effects of neonicotinoids on bumble bee colonies and populations, moving beyond laboratory studies to field conditions. It should also investigate how landscape habitat composition and local floral resources affect bumble bee health and development. Furthermore, studies should prioritize monitoring bumble bee colonies throughout their entire lifespan, assess the impacts of intensive agriculture on various bumble bee species, and develop better methods to estimate floral resource availability.",
@@ -123,7 +135,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should focus on the effects of neonicotinoids on bumble bee colonies and populations, moving beyond laboratory studies to field conditions. It should also investigate how landscape habitat composition and local floral resources affect bumble bee health and development. Furthermore, studies should prioritize monitoring bumble bee colonies throughout their entire lifespan, assess the impacts of intensive agriculture on various bumble bee species, and develop better methods to estimate floral resource availability.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "- Monitor the development of bumble bee colonies throughout their entire lifespan under field conditions to uncover causal determinants of survival related to agriculture.\n- Design integrative methods and indices to estimate floral resource availability at various spatial scales."
   },
   "074": {
     "answer_llm": "Future research should investigate the detoxification processes in stingless bees and their relationship with metabolism, conduct field studies to evaluate the risks of agrochemical exposure to native pollinators, and consider native bees as models for agrochemical risk assessments.",
@@ -132,7 +145,8 @@
     "rev1_rating": 9,
     "answer_rev2": "Future research should investigate the detoxification processes in stingless bees and their relationship with metabolism, conduct field studies to evaluate the risks of agrochemical exposure to native pollinators, and consider native bees as models for agrochemical risk assessments.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Investigate the effects of non-EBI fungicides such as thiophanate-methyl and chlorothalonil on pollinators, as these have received little attention compared to EBI fungicides.\n2. Examine the synergistic interactions between different types of insecticides and fungicides, particularly focusing on the differences in toxicity across various bee species.\n3. Explore the physiological effects of commercial agrochemical formulations, including components other than the active ingredients, on both target and non-target organisms."
   },
   "080": {
     "answer_llm": "Future research should investigate the effects of neonicotinoids on multiple bee species, particularly stingless bees, to address knowledge gaps and enhance pesticide risk assessments beyond the non-native *A. mellifera*. It should also aim to determine maximum safe concentrations of environmental contaminants for bee diversity, compare toxicity data between *A. mellifera* and stingless bees, and evaluate the applicability of toxicity tests for ecosystem-wide effects.",
@@ -141,7 +155,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should investigate the effects of neonicotinoids on multiple bee species, particularly stingless bees, to address knowledge gaps and enhance pesticide risk assessments beyond the non-native *A. mellifera*. It should also aim to determine maximum safe concentrations of environmental contaminants for bee diversity, compare toxicity data between *A. mellifera* and stingless bees, and evaluate the applicability of toxicity tests for ecosystem-wide effects.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "- Conduct further analysis to understand how thiamethoxam acts in *M. scutellaris* compared to *A. mellifera*.\n- Investigate the biochemical alterations caused by thiamethoxam that lead to decreased survival time in *M. scutellaris*.\n- Perform additional toxicity studies using stingless bees to support regulatory decisions and risk assessments for bee biodiversity conservation."
   },
   "072": {
     "answer_llm": "Future research should focus on the effectiveness of specific agri-environment schemes (AES) in delivering ecosystem services like pollination, particularly examining local management practices such as organic farming and flower strips, and their impact on pollinator diversity. Additionally, it should clarify the role of configurational heterogeneity and field size in influencing pollinator responses, and involve complex landscape experiments to understand the interactions between different AES and pollinator populations in various landscape contexts.",
@@ -150,7 +165,8 @@
     "rev1_rating": 5,
     "answer_rev2": "Future research should focus on the effectiveness of specific agri-environment schemes (AES) in delivering ecosystem services like pollination, particularly examining local management practices such as organic farming and flower strips, and their impact on pollinator diversity. Additionally, it should clarify the role of configurational heterogeneity and field size in influencing pollinator responses, and involve complex landscape experiments to understand the interactions between different AES and pollinator populations in various landscape contexts.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "585": {
     "answer_llm": "Future research should focus on transcriptomic studies to clarify the interactions between microorganisms and insect hosts, particularly regarding how pesticides affect exopolysaccharides and microbial diversity. It should also explore the long-term impacts of these changes on bee health and hive functionality, and investigate the mechanisms of microbial selection by the host.",
@@ -159,7 +175,8 @@
     "rev1_rating": 10,
     "answer_rev2": "The paper emphazises that transcriptomic studies are necessary to to verify the hypothesis that the interaction between microorganisms and hosts is inhibited.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "- Conduct in-depth studies of the effects of neonicotinoids at the transcriptomic level to understand microbial and host responses.\n- Investigate whether the reduction and modulation of gut microbial biodiversity can lead to a depletion of gut functionalities and drive the negative impact of pesticides on bee health."
   },
   "584": {
     "answer_llm": "Future research directions should include investigating the multiple exposure routes of bumblebees to neonicotinoids, particularly in non-crop areas like hedgerows and woodlands, and assessing the long-term ecological impacts of pesticide residues in various environments. Additionally, studies should aim to resolve the inconsistencies in the observed relationships between neonicotinoid exposure and bumblebee colony success, exploring other influencing factors affecting bumblebee populations.",
@@ -168,7 +185,8 @@
     "rev1_rating": 10,
     "answer_rev2": "No suggestions for future research.",
     "rev2": "LH",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_llm2": "No future research directions were suggested."
   },
   "583": {
     "answer_llm": "Future research should focus on measuring circadian behaviors in whole honey bee colonies in field settings, rather than just individual bees in the lab. Studies are needed to identify the neural mechanisms that generate circadian and sleep behaviors, and how these are synchronized with local time through light cycles. Additionally, understanding the cholinergic signaling pathways affected by neonicotinoids and light will be crucial for elucidating their impact on honey bee circadian rhythms.",
@@ -177,103 +195,120 @@
     "rev1_rating": 10,
     "answer_rev2": "The paper emphazises that future studies should assess colony level effects of neonicotinoids on circadian rhythm, reveal the fundamental neural substrates behind the circadian rhythm in honeybees, as well as the neuromechanistic link between neucnitoinoics and honey bee locomotor rhythms.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "No future research directions were suggested"
   },
   "300": {
     "answer_llm": "Future research should investigate sustainable pest management practices that balance crop yields with pollinator health, focusing on bio-insecticides like Ha-NPV and *B. thuringiensis*. Studies should explore optimal timing for pest control during flowering periods to protect pollinators and assess the long-term ecological impacts of these alternatives compared to synthetic insecticides.",
     "answer_rev1": "The article suggests that future pest management programs should ensure that pesticides effects on both pests and pollinators should be considered. No further suggestions are made.",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "No future research directions were suggested."
   },
   "790": {
     "answer_llm": "Future research should prioritize the design of novel structural skeletons for neonicotinoids to replace NTN32692, as current modifications have not adequately reduced bee toxicity. Investigating alternative compounds and exploring the relationship between chemical structure and bee toxicity may lead to safer options for bee populations and contribute to more sustainable agricultural practices.",
     "answer_rev1": "No future research directions are explicitly listed in the text.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "- Investigate alternative structural skeletons to replace NTN32692 to reduce bee toxicity.\n- Explore the degradation pathways of compounds to understand the formation of more toxic degradation products."
   },
   "798": {
     "answer_llm": "Future research directions include: 1) Evaluating chronic exposure effects of neonicotinoids and fungicides on honeybees at realistic concentrations. 2) Investigating the ecotoxicological impacts of picoxystrobin on bees, as current data is lacking. 3) Studying the sublethal effects of pesticides at cellular and tissue levels, particularly focusing on the hepato-nephrocytic system. 4) Understanding the mechanisms that modulate hemocyte populations in bees exposed to thiamethoxam.",
     "answer_rev1": "No future research direction is mentioned by the authors.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "Intensify studies on the mechanisms involved in modulating the number of hemocytes in bees exposed to pesticides."
   },
   "811": {
     "answer_llm": "Future research should prioritize the identification and use of biomarkers for sublethal pesticide exposure in insects, especially honey bees. It should also aim to establish clearer correlations between population/community changes and biomarker responses, ideally through controlled laboratory studies to mitigate environmental interference. Furthermore, there is a need to investigate the sublethal effects of pesticides on non-target organisms, focusing on behavioral and biochemical changes, and to develop pesticides with modes of action that are more specific to target pests to reduce the impact on beneficial species.",
     "answer_rev1": "No future research directions are identified by the authors for this study.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "- Investigate the use of biomarkers for sublethal exposure to pesticides in insects.\n- Correlate population and community changes to selected biomarkers in field-collected bees under controlled laboratory conditions."
   },
   "810": {
     "answer_llm": "Future research should focus on understanding the interactions between temperature and pesticide exposure, particularly for beneficial organisms like pollinators. This includes conducting controlled studies across varying temperatures to assess both lethal and sublethal effects of pesticides. Additionally, research should quantify how temperature variations influence pesticide toxicity and develop targeted pesticide application strategies that consider pollinator life cycles and environmental conditions, ultimately enhancing integrated pest management practices.",
     "answer_rev1": "The authors do not specify their future research direction in the text.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "295": {
     "answer_llm": "Future research should focus on using foraging arenas to distinguish the effects of acetamiprid on adult bumble bee behavior and brood resource needs. More assessments of acetamiprid concentrations in nectar in various regions are also necessary to evaluate its environmental impact.",
     "answer_rev1": "Future research should focus on using foraging arenas to distinguish the effects of acetamiprid on adult bumble bee behavior and brood resource needs. More assessments of acetamiprid concentrations in nectar in various regions and other species are also necessary to evaluate its environmental impact.",
     "rev1": "NN",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "294": {
     "answer_llm": "Future research should investigate the effects of imidacloprid exposure during larval stages on adult lifespan, behavior, and responses to other stressors in honey bees.",
     "answer_rev1": "Future research should investigate the effects of imidacloprid exposure during larval stages on adult lifespan, behavior, and responses to other stressors in honey bees.",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "793": {
     "answer_llm": "Future research should explore the effects of sublethal doses of neonicotinoid insecticides on bee health, focusing on molecular mechanisms and gene expression. Investigating the role of key genes and detoxification pathways in bees' responses to insecticides is essential, along with the potential use of specific immune genes as biomarkers for monitoring exposure effects.",
     "answer_rev1": "No future research direction mentioned in the text.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "1. Investigate the molecular mechanisms causing honeybee death by dinotefuran using RNA-seq technology to analyze differential gene expression.\n2. Explore the role of the *vitellogenin* gene in immune response and longevity regulation in bees exposed to dinotefuran.\n3. Evaluate the potential of immune genes *hymenoptaecin*, *abaecin*, and *apidaecins1* as markers for monitoring bees' response to dinotefuran exposure."
   },
   "302": {
     "answer_llm": "Future research should focus on the mechanisms of enantioselective toxicity of insecticides on honeybee larvae, the protective roles of melatonin and vitellogenin (Vg) against oxidative stress, and the effects of altered neurotransmitter levels on larval development. There is also a need to explore the broader impacts of pesticide exposure on bee health and strategies to enhance resilience. Additionally, studies should assess the combined effects of dinotefuran with other insecticides and pathogens, and consider the impact of enantioselective pesticides on beneficial insects and non-target organisms at different developmental stages, while exploring the use of low toxicity pesticides to reduce environmental impacts.",
     "answer_rev1": "There are no direct references to future research direction in the text.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "800": {
     "answer_llm": "Future research should focus on the long-term effects of thiamethoxam on gene expression in honey bees, particularly the role of uncharacterized genes and short open reading frames (sORFs). Studies should investigate the functional implications of these findings and the ecological impacts of chronic pesticide exposure on bee health and behavior. Furthermore, research should identify the roles of newly discovered genes in bee immune responses, particularly those affected by neonicotinoid exposure, and explore the potential for new antimicrobial peptide genes to strengthen bee immunity against infections. Additionally, understanding the cellular and molecular effects of insecticides on pollinators, particularly regarding gene expression changes and alternative splicing mechanisms, is crucial for developing strategies to protect bee health.",
     "answer_rev1": "The authors specifically call for the study of the function of the genes identified in this paper so that we may better understand how to strengthen the immune response of bees against pesticides.",
     "rev1": "NN",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Investigate the role of dose-responsive, uncharacterised genes encoding short open reading frames (sORFs) in honey bees.\n2. Investigate the roles of identified genes in the immune response of bees to establish how bee immunity might be strengthened to resist bacterial infections.\n3. Investigate the molecular mechanisms by which antimicrobial peptides (AMPs) enhance learning and memory in Drosophila.\n4. Explore the potential disturbed communication between glial cells and neurons due to dysregulated sORFs in response to thiamethoxam exposure."
   },
   "809": {
     "answer_llm": "Future research should focus on: 1) Investigating the agrochemical sensitivity of non-target invertebrates, especially blue orchard mason bees (*Osmia lignaria*), to determine if current risk assessment factors are adequate for their protection. 2) Standardizing toxicity testing protocols for non-Apis pollinators to enhance comparability of data and improve risk assessments and pesticide regulations. 3) Assessing the effects of macrocyclic lactones on a wider variety of non-target organisms, particularly pollinators, and exploring the mechanisms of exposure and toxicity.",
     "answer_rev1": "There is no future research direction specified in the text.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "- Standardization of non-Apis specific pollinator protocols (e.g., mason bee protocols) to enable relevant comparison of toxicity data among species while maintaining robust study designs that account for species-specific variation.\n- Investigate the suitability of *A. mellifera* as a surrogate model for other pollinators, particularly mason bees.\n- Examine size and sex-dependent responses to pesticides in different bee species.\n- Explore differences in pesticide sensitivity between solitary and colony-nesting bees, focusing on factors like cuticle maturation and antioxidant enzyme levels."
   },
   "298": {
     "answer_llm": "Future research should focus on the effects of different pesticide doses on bee brain morphology and behavior, particularly the mechanisms of apoptosis and necrosis in various cell types. Additionally, studies should investigate the long-term impacts of sublethal doses on bee populations and their ecological roles, as well as potential recovery from pesticide exposure. It is also crucial to develop controlled pesticide application strategies and protection measures for bumblebee populations.",
     "answer_rev1": "There were no future changes suggested in the paper.",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "No future research directions were suggested."
   },
   "296": {
     "answer_llm": "Future research should focus on elucidating the mechanisms by which thiamethoxam and imidacloprid affect bumble bees, particularly their feeding behavior and brood production. Studies should compare the sensitivity of bumble bees from the same colony to these neonicotinoids, investigate the effects of longer exposure periods, and assess the impact of thiamethoxam in both nectar and pollen. Understanding the implications for bumble bee queens and the broader effects of neonicotinoid exposure on bee health is also crucial.",
     "answer_rev1": "Future research should focus on elucidating the mechanisms by which thiamethoxam and imidacloprid affect bumble bees, particularly their feeding behavior and brood production. Studies should compare the sensitivity of bumble bees from the same colony to these neonicotinoids, investigate the effects of longer exposure periods, and assess the impact of thiamethoxam in both nectar and pollen. Understanding the implications for bumble bee queens and the broader effects of neonicotinoid exposure on bee health is also crucial.",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "- Determine the impact of thiamethoxam on bumble bee queens and their colonies.\n- Investigate the effects of dietary thiamethoxam in pollen, in addition to nectar.\n- Assess the impact of longer exposure periods to thiamethoxam, beyond the 17 days tested, to reflect environmental conditions."
   },
   "299": {
     "answer_llm": "Information not found in the provided text.",
     "answer_rev1": "Information not found in the provided text.",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "216": {
     "answer_llm": "Future research should focus on the rational design of novel aphicides with low bee toxicity, utilizing insights from the nAChR \u03b11 subunit's response to different insecticides. This includes further exploration of the mechanisms of bee toxicity and the development of new sulfoximine derivatives that avoid key residues linked to toxicity.",
     "answer_rev1": "The paper does not make explicit reference to the focus of future research. The closest is in the mention of novel piperonyl-tethered sulfoximine derivatives as potential future aphicides, implying the value of further research.",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "1. Perform a structural extension of SFX to change the original binding mode and lower bee toxicity.\n2. Design and synthesize novel piperonyl-tethered sulfoximine derivatives using a multistep strategy.\n3. Investigate the molecular interactions of Amel\u03b11/rat\u03b22 to design new insecticides with low bee toxicity.\n4. Explore the potential of piperonyl-tethered sulfoximine derivatives as aphicidal candidates with low bee toxicity.\n5. Examine the role of critical residues on Amel\u03b11 (Ile152, Ala151, Val160) and Mpo1 (Lys144, Trp80) in bee toxicity and aphicidal potency for designing new insecticidal agents."
   },
   "227": {
     "answer_llm": "Future research directions include investigating the molecular mechanisms behind the different responses of nAChR subunits to ACh in various insect species, identifying crucial components or variants of nAChR subunits, and exploring the binding interactions of dinotefuran enantiomers with functional subunits using structural models. Additionally, research should focus on developing chiral neonicotinoid products with a higher proportion of R-dinotefuran to improve pest control while protecting honeybees, as well as further studies on the relationship between honeybee nAChR subunits and chiral neonicotinoid pesticides to better understand and reduce toxicity to pollinators.",
     "answer_rev1": "The only reference made to future work is that other molecular mechanisms (of interactions with nAChr subunits) will be explored in follow-up studies",
     "rev1": "KW",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_llm2": "No future research directions were suggested."
   },
   "218": {
     "answer_llm": "Future research should investigate the interactions between nutrition and pesticide effects on bees, particularly focusing on gene expression patterns to understand the subtle influences of these interactions. Additionally, exploring the effects of diverse pollen compositions on bee health and development could provide further insights. There is also a critical need to develop risk assessment protocols for solitary bee larvae, considering their unique life history and physiological traits, and to investigate the interactive effects of different pollen nutrition types and pesticide exposure, as this area remains largely unexplored.",
@@ -282,7 +317,8 @@
     "rev1_rating": 7,
     "answer_rev2": "The authors emphasize as future researches the need to addressing the effects of pesticide exposure and nutrional stress.",
     "rev2": "FS",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_llm2": "- Investigate the interactive effects of pesticide exposure and nutritional stress on wild bees.\n- Test the effects of field-realistic pesticide exposure in all life history stages, including larval development.\n- Examine carry-over effects to the next generation, such as the impact of reduced female weight on offspring provision performance and fecundity."
   },
   "422": {
     "answer_llm": "Future research should investigate seasonal variations in antennal sensitivity, the effects of neonicotinoids on olfactory responses, and the ecological implications of these changes. Studies should focus on the type, distribution, and number of sensilla in bees throughout the year, as well as the regulatory effects of VOCs on social behaviors. Additionally, combined studies of behavior and EAG responses are necessary to understand how pesticides affect learning and memory in honey bees, linking changes in antennal signals to behavioral observations at both individual and colony levels.",
@@ -291,19 +327,22 @@
     "rev1_rating": 8,
     "answer_rev2": "In general the authors recommend further investigations of the effects of neonicotinoids on peripheral olfactory responses to enable the linkage of changes in antennal signals to behavioural observations at the bee and colony level. The authors suggest that to confirm that there are true seasonal trends in responsiveness to VOCs as they observed between autumn and spring would require a repetition of the study over multiple years. They also suggest that to determine the mechanism underpinning such seasonal variation, there should be an investigation of the type, distribution and number of sensilla during the year. They also suggest that future research should be conducted to determine how neonicotinoid exposure affects olfactory receptors, given the results contrast with findings and conclusions from previous studies regarding chemical specific responses of VOC receptors. They suggest using calcium imaging of ORN signals in the antennal lobe. To determine whether pesticides also impact learning at the periphery of the olfactory system i.e. through reduced cue detection the authors suggest combined studies of behaviour and EAG responses should be conducted in future. They also suggest future EAG experiment focusing specifically on alarm pheremone responses are needed to examine how neonicotinoids affect alarm pheremone sensitivity, since thiacloprid exposure only affected the response to one component.",
     "rev2": "BN",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "- Confirm the general trend of seasonal changes in honey bee perception of VOCs by repeating the experiment over multiple years.\n- Investigate neonicotinoid effects on peripheral olfactory responses and antennal transduction in bees.\n- Link changes in antennal signals to behavioral observations at the single bee and colony level."
   },
   "221": {
     "answer_llm": "Future research should focus on the specific risks of neonicotinoids to different bee species, increase the distance between control and treated sites to minimize contamination, conduct semi-field and field experiments to assess real-world impacts, address discrepancies in existing studies, and explore the effects of pesticides on bee foraging behavior. Additionally, larger sample sizes are needed to enhance statistical power and improve the robustness of findings.",
     "answer_rev1": "The authors mention that future research must increase the distance between treatments, to eliminate contamination across trials - it also mentions the need for further replicates. Although not explicitly identified as an avenue for future research, the authors highlight the importance of probing dose-dependent effects of neonic exposure.",
     "rev1": "KW",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "- Increase the distance between control sites and treated sites beyond the minimum of 250 meters to minimize contamination risk.\n- Conduct controlled exposure experiments to eliminate field site effects and better understand the impact of pesticides.\n- Perform field studies to determine field-realistic exposure levels and expand knowledge of actual residue levels in bee-collected plant products."
   },
   "226": {
     "answer_llm": "Future research should focus on elucidating the detoxification mechanisms of the CYP9Q subfamily in relation to thiacloprid and other neonicotinoids. There is also a need to investigate how metabolic changes from thiacloprid exposure impact honey bee behaviors, learning, and memory, particularly through the cAMP and AMPK signaling pathways. Understanding the connection between gene expression alterations and cognitive disorders in honey bees is also crucial.",
     "answer_rev1": "Further investigations are necessary to defini tively determine how the CYP9Q subfamily enhances resistance to thiacloprid and clarify the potential variations in detoxification mechanisms across neonicotinoid compounds",
     "rev1": "KW",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "430": {
     "answer_llm": "Future research should focus on investigating the specific impacts of different pesticide types on various bee species, especially bumble bees, and conduct larger-scale experiments to understand population-level trends. Additionally, comprehensive data collection, including spatially explicit pesticide application records and new bee inventories, is essential. Analyzing abundance patterns of wild bee populations is crucial, as changes in occupancy alone may not reflect the true status of these populations. Strategies for protecting wild bees, particularly in agricultural settings, should be developed, emphasizing integrated pest and pollinator management (IPPM) techniques like enhancing habitats through hedgerows.",
@@ -312,7 +351,8 @@
     "rev1_rating": 3,
     "answer_rev2": "The authors suggest that analyzing abundance patterns of wild bee populations is crucial, as changes in occupancy alone may not reflect the true status of these populations. The authors also suggest that multi-country field studies of effects of realistic levels of pesticide exposure provide the foundation for larger scale future experiments. Finally the authors suggest that before this method can be applied to other countries, spatially explicit pesticide records, honeybee colony location data, crop data and bee inventories are required.",
     "rev2": "BN",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_llm2": "- Investigate the effects of honeybee colonies at finer spatial and temporal scales to better understand their impact on native bees.\n- Quantify the effects of habitat conversion on bee populations to assess its role in bee health and biodiversity."
   },
   "436": {
     "answer_llm": "Future research should focus on the combined effects of neonicotinoids and nutritional stress in more natural environments, considering the complexity of multiple stressors that bees encounter. It is also important to investigate colony-level variations and the long-term impacts of short-term pesticide exposure on metabolite levels.",
@@ -321,31 +361,36 @@
     "rev1_rating": 7,
     "answer_rev2": "Future research should focus on the combined effects of neonicotinoids and nutritional stress in more natural environments, considering the complexity of multiple stressors that bees encounter. It is also important to investigate colony-level variations and the long-term impacts of short-term pesticide exposure on metabolite levels.Future metabolomic studies should also quantify nectar consumption and exposure.",
     "rev2": "BN",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Investigate the interaction between nutritional stress and neonicotinoid exposure on bumble bee metabolism, particularly focusing on energy metabolism.\n2. Examine colony-level variation in metabolite responses to stressors in social insects to understand the influence of natal colony on experimental outcomes.\n3. Explore the buffering effects of pollen diets on the harmful impacts of pesticides in bumble bees and other pollinators.\n4. Assess the impact of brief versus chronic exposure to neonicotinoids on metabolite levels, particularly focusing on metabolites like NAD and adenosine.\n5. Consider the environmental complexity and multiple stressor scenarios in future studies to avoid underestimating the harmful consequences of insecticides on bees.\n6. Quantify consumption and exposure in future metabolomic studies to understand how individual differences in bee behavior might affect susceptibility to neonicotinoid exposure in the context of energetics and metabolism."
   },
   "233": {
     "answer_llm": "Future research should explore the effects of pesticide exposure on bee behavior, particularly spatial working memory, and how these effects vary among different sizes of bees within a colony. It is crucial to investigate the potential magnification of acute effects with chronic exposure and to develop standard assays for assessing cognitive impacts. Understanding these dynamics is essential for informing policy decisions regarding pesticide use.",
     "answer_rev1": "The authors identify a few routes for future investigation. They suggest that interrupting visits of flowers to disrupt transition sequences in foraging trips. They also suggest that future experiments could investigate whether the more realistic chronic exposure would replicate the findings of acute exposure.",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "Investigate whether the acute effects of thiamethoxam on spatial working memory are magnified with chronic exposure."
   },
   "270": {
     "answer_llm": "Future research should focus on investigating the physiological causes of decreased wax production in bees and conducting field experiments to evaluate the impact of imidacloprid on honeybee colonies. There is also a call for reducing the use of neonicotinoids and integrating them into pest management strategies.",
     "answer_rev1": "The paper discusses the need to identify the physiological mechanisms by which imidacloprid exposure impacts wax production. It equally states that field experiments should follow, to quantify the negative effects of exposure in natura.",
     "rev1": "KW",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "No future research directions were suggested."
   },
   "421": {
     "answer_llm": "Future research should investigate the immune responses of different bee species, especially solitary bees, to neonicotinoids and other pesticides. It is important to include both male and female bees in studies due to potential sex-specific differences in immune responses. Additionally, understanding inter-specific differences in pesticide sensitivity and exposure is essential for enhancing pesticide risk assessment.",
     "answer_rev1": "The authors do not explicitly identify avenues of future research",
     "rev1": "KW",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_llm2": "1. Conduct genomic sequencing of solitary bee species to compare genes implicated in immunity with those of eusocial bees.\n2. Perform comparative analyses of the immune systems and effects of pesticide stressors on immune strength across different bee species."
   },
   "277": {
     "answer_llm": "Future research should target the combined effects of declining floral resource diversity and neonicotinoid exposure on nest-founding bumblebee queens, as well as investigate the impacts of neonicotinoids on other life-history stages, particularly during the early nesting phase. This research is essential for understanding the implications for reproduction, nesting success, and overall bumblebee population dynamics.",
     "answer_rev1": "The authors direct future research towards queens, particularly their solitary stages",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "No future research directions were suggested."
   },
   "427": {
     "answer_llm": "Future research should aim to refine methodologies that combine controlled laboratory conditions with realistic field settings to better understand the sub-lethal effects of pesticide exposure on bee behavior and colony development. This approach could enhance the accuracy of ecotoxicological assessments and inform pesticide risk guidelines.",
@@ -354,19 +399,22 @@
     "rev1_rating": 3,
     "answer_rev2": "Future research should aim to refine methodologies that combine semi-field experiments with behavioural observations to better understand the sub-lethal effects of pesticide exposure on bee behavior and colony development. Suggested improvements include automated methods such as RFID, automated weighing scales and/or the use of camera traps.",
     "rev2": "BN",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "225": {
     "answer_llm": "Future research should focus on the long-term effects of sublethal thiacloprid exposure on honeybee health, particularly regarding gut microbiome changes and energy metabolism. It is essential to investigate the discrepancies between laboratory and field study results, considering factors like bee age and diet that may influence susceptibility. Understanding the temporal dynamics of microbiome alterations and their implications for honeybee survival and colony health is also crucial. Furthermore, prioritizing field experiments is necessary to investigate the long-term toxic effects of neonicotinoids on honeybees, as laboratory conditions may not accurately reflect the complexities of real-world environments.",
     "answer_rev1": "The authors identify that field experiments must be run to better understand long term effects of neonic exposure on the gut microbiota",
     "rev1": "KW",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "No future research directions were suggested."
   },
   "222": {
     "answer_llm": "Future research should focus on the interactive effects of multiple stressors on drones, particularly the additive and synergistic effects of pesticide exposure and heat stress. It is also important to investigate the indirect effects of drone exposure on queens and to further explore the roles of specific proteins in stress responses and immunity. Additionally, studying the genetic variability among bee colonies and its impact on stress responses is crucial.",
     "answer_rev1": "The authors identify that work must be sex biases of other social insects must be investigated, to help generalise their observations. They further note that research should focus on the effects (additive/synergistic) of multiple stressors on drones, and the genetic variability in stress tolerance - in addition to the indirect effects of drone exposure on queens.",
     "rev1": "KW",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Investigate the effects of multi-stressor exposures on drones.\n2. Explore the genetic variability of stress tolerance in the honey bee population."
   },
   "434": {
     "answer_llm": "Future research should focus on the functional regulation of gut microbiota in pesticide detoxification, particularly for flupyradifurone, and the need for empirical measurements of metabolic and transcriptional changes due to insecticide exposure. It should also investigate the role of gut microbiota in synthesizing essential amino acids and their involvement in xenobiotic detoxification pathways.",
@@ -375,19 +423,22 @@
     "rev1_rating": 7,
     "answer_rev2": "Future research should focus on the functional regulation of gut microbiota in pesticide detoxification, particularly for flupyradifurone, and the need for empirical measurements of metabolic and transcriptional changes due to insecticide exposure. It should also investigate the role of gut microbiota in synthesizing essential amino acids and their involvement in xenobiotic detoxification pathways.",
     "rev2": "BN",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "731": {
     "answer_llm": "Future research should focus on understanding the interactions between neonicotinoids and *V. destructor* on honey bee reproductive health, particularly during drone sexual maturity, and should be conducted under consistent conditions to explore the differences in stressor effects. Furthermore, more field studies are necessary to validate laboratory findings and improve risk assessment methodologies regarding the complex interactions of multiple stressors affecting honey bees.",
     "answer_rev1": "Future research should focus on understanding the interactions between neonicotinoids and *V. destructor* on honey bee reproductive health, particularly during drone sexual maturity, and should be conducted under consistent conditions to explore the differences in stressor effects. Furthermore, more field studies are necessary to validate laboratory findings and improve risk assessment methodologies regarding the complex interactions of multiple stressors affecting honey bees.",
     "rev1": "AB",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "- Elucidate outcomes of simultaneous pressure from multiple stressors for risk assessment schemes.\n- Conduct additional field studies to confirm laboratory findings."
   },
   "729": {
     "answer_llm": "The discussion suggests that future research should focus on the long-term effects of sulfoxaflor on bee populations, particularly examining how different concentrations affect foraging behavior and survival across various bee species.",
     "answer_rev1": "no future research direction",
     "rev1": "AB",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "440": {
     "answer_llm": "Future research should focus on the effects of imidacloprid on honeybee larvae, particularly examining the nursing behavior of bees and the potential for cross-contamination. Studies should investigate the impact of different imidacloprid dosages on larval survival, brood production, eclosion rates, and behavioral changes, as previous studies have mainly concentrated on adult bees and colonies.",
@@ -396,37 +447,43 @@
     "rev1_rating": 3,
     "answer_rev2": "No future research has been reported in the paper",
     "rev2": "FS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "447": {
     "answer_llm": "Future research should focus on testing field-relevant concentrations of thiamethoxam in combination with propiconazole, exploring additional pesticide combinations, and examining the effects of pesticides on honeybee worker mortality throughout their development. It is also important to investigate sublethal effects such as bacterial load and immune gene expression, and to include control groups of agrochemical-exposed larvae infected with non-pathogenic organisms in future studies.",
     "answer_rev1": "Future research should focus on testing field-relevant concentrations of thiamethoxam in combination with propiconazole, exploring additional pesticide combinations, and examining the effects of pesticides on honeybee worker mortality throughout their development. It is also important to investigate sublethal effects such as bacterial load and immune gene expression.",
     "rev1": "RT",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "449": {
     "answer_llm": "Future research should focus on validating the proposed mechanism of delayed mortality in honey bees caused by imidacloprid exposure during larval and pupal stages. Additionally, studies should investigate the effects of low levels of imidacloprid in different honey bee feeds, especially HFCS, to better understand their role in contributing to Colony Collapse Disorder (CCD).",
     "answer_rev1": "Future research should focus on validating the proposed mechanism of delayed mortality in honey bees caused by imidacloprid exposure during larval and pupal stages. Additionally, the authors cited unanswered questions as a result of the study: the systematic loss of sealed brood, the impacts of feeding bees with HFCS, and the delayed mortality in honey bees observed in late winter.",
     "rev1": "RT",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "No future research directions were suggested."
   },
   "446": {
     "answer_llm": "Future research should focus on optimizing the parameters of 670nm light treatment, exploring other effective wavelengths, and examining the effects of varying insecticide dosages in natural environments. There is also a need to investigate the prophylactic use of light treatment prior to insecticide exposure and its impact on declining bee populations.",
     "answer_rev1": "Although the discussion indicates that Future research should focus on optimizing the parameters of 670nm light treatment, exploring other effective wavelengths, and examining the effects of varying insecticide dosages in natural environments, the authors don't specify directly any further directions, only discuss the gap and missing information in the methodology",
     "rev1": "RT",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "- Investigate the impact of varying light energy, duration, time of day of exposure, and wavelength to optimize the effect of 670nm light treatment.\n- Explore the efficacy of other wavelengths, such as approximately 810nm and around 1000nm, known to be effective via COX absorption.\n- Assess the prophylactic potential of 670nm light treatment by exposing bees to the light prior to insecticide exposure.\n- Evaluate the impact of introducing 670nm lighting directly into experimental colonies exposed to insecticides to improve mobility and survival.\n- Confirm the efficacy of 670nm light exposure in a wider range of insects, including honeybees.\n- Investigate the impact of 670nm light on higher order functions such as navigation in bees.\n- Explore the effective dosing energy and time of exposure for 670nm light in bees, considering the potential reduced efficacy with excess exposure."
   },
   "439": {
     "answer_llm": "Future research should assess the effects of insecticides on a wider variety of stingless bee species to establish protective parameters that preserve their biodiversity. It should also focus on the varying sensitivities of bee species to insecticides, particularly thiamethoxam, and the biological mechanisms behind these differences, including the role of metabolic enzymes in detoxifying neonicotinoids.",
     "answer_rev1": "Future research should assess the effects of insecticides on a wider variety of stingless bee species to establish protective parameters that preserve their biodiversity.",
     "rev1": "RT",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "453": {
     "answer_llm": "Future research should prioritize the study of native pollinators, particularly solitary species, to understand their ecological roles and vulnerabilities. There is a critical need for more investigations into the impacts of neonicotinoids on native bees in natural settings, as existing data is insufficient. Specific areas of focus should include: 1) Understanding the mechanisms of exposure to neonicotinoids for bumble bees and other native pollinators; 2) Investigating the effects of developmental stages and body sizes on AChE expression and other biomarkers; 3) Assessing the long-term ecological impacts of neonicotinoid exposure on bee populations and their behaviors; 4) Expanding field studies to include various agricultural practices and their effects on pollinator health.",
     "answer_rev1": "The authors suggested future research in establishing thresholds in AChE expression levels to understand the neonicotinoids exposure for pollinators.",
     "rev1": "RT",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "Establish intoxication thresholds while measuring AChE expression levels in bumble bees."
   },
   "377": {
     "answer_llm": "Future research should focus on the foraging choices of honey bees regarding neonicotinoid exposure, examining how they select between treated and untreated food sources. Additionally, studies should explore the cognitive and behavioral effects of neonicotinoids in both lab and field conditions, as well as the broader implications for bee colonies.",
@@ -435,7 +492,8 @@
     "rev1_rating": 2,
     "answer_rev2": "The authors note that future studies using honey bees with different genetic backgrounds and/or other neonicotinoids at the wide range of concentrations found in the field are needed to better assess the risks of neonicotinoids to foraging honey bees.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "- Utilize honey bees with different genetic backgrounds and/or other neonicotinoids across the broad range of concentrations observed in the field to better assess the risk of neonicotinoids to foraging honey bees."
   },
   "378": {
     "answer_llm": "Future research directions should focus on the long-term impacts of neonicotinoid insecticides on honey bee health, the mechanisms of mortality linked to these chemicals, and the exploration of alternative pest management practices that reduce risks to pollinators.",
@@ -444,7 +502,8 @@
     "rev1_rating": 2,
     "answer_rev2": "The authors does not explicitly suggest specific future research directions.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "368": {
     "answer_llm": "Future research should focus on: 1) obtaining accurate data on field-realistic pesticide exposure levels for honey bees, particularly regarding neonicotinoids and fungicides; 2) investigating the specific effects of pesticide mixtures on honey bee colonies, especially their additive, synergistic, or antagonistic toxicity; 3) isolating and understanding the functional roles of gut bacteria and fungi in honey bees; 4) exploring the toxic effects of pesticide cocktails on honey bee gut microbiomes in real-world conditions and elucidating the molecular mechanisms of these effects using multi-omics approaches.",
@@ -453,7 +512,8 @@
     "rev1_rating": 9,
     "answer_rev2": "Future research should focus on exploring toxicological effects of pesticide cocktail on honey bee gut microbiome under field conditions and exploring the molecular mechanisms with multi-omics methods. In addition, future study should focus on understanding the role played by some specific genus of gut bacteria.",
     "rev2": "FS",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_llm2": "- Observe the toxicological effects of pesticide cocktails on honey bee gut microbiomes under real exposure scenarios (field conditions).\n- Elucidate the molecular mechanism of the toxic effect using multi-omics methods to identify new targets for protecting honey bees."
   },
   "444": {
     "answer_llm": "Future research should focus on large-scale field experiments to clarify the effects of NSTs on honey bee health, explore impacts across multiple crops and habitats, and investigate integrated pest management (IPM) systems to minimize insecticide use while managing pests effectively.",
@@ -462,7 +522,8 @@
     "rev1_rating": 1,
     "answer_rev2": "No future research are recommended base on the results from this paper",
     "rev2": "FS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "443": {
     "answer_llm": "Future research should investigate the sublethal effects of sulfoxaflor (SFX) on the expression of nicotinic acetylcholine receptor (nAChR) subunits in honeybees, as this area has not been studied yet. Additionally, studies should focus on the long-term impacts of SFX on honeybee learning and memory, and compare these effects with those of neonicotinoids. Furthermore, detailed characterization of nAChR subtypes involved in the response to SFX exposure is needed to understand its mode of action and assess environmental risks to pollinators.",
@@ -471,7 +532,8 @@
     "rev1_rating": 6,
     "answer_rev2": "Future research should focus on understanding the molecular composition of nAChRs and the molecular mechanisms of sublethal effects on learning and memory when bees are exposed to low SFX doses",
     "rev2": "FS",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_llm2": "- Investigate the role of specific nAChR subunits, such as Amel\u03b11, Amel\u03b13, and Amel\u03b21, in the memory retrieval process in honeybees.\n- Explore the compensatory mechanisms of nAChR subunit expression in response to different insecticides, including SFX, IMI, and TMX.\n- Examine the potential binding of SFX to nAChR subtypes, particularly those containing the Dmel\u03b21 subunit, to understand its distinct action compared to other neonicotinoids.\n- Assess the co-regulation and interaction of Amel\u03b11 and Amel\u03b13 subunits in receptor subtypes and their correlation with retrieval defects in honeybees."
   },
   "445": {
     "answer_llm": "Future research should focus on examining the effects of 670nm light on respiration and immunity in bumblebees, investigating the specific responses of different haemocyte populations to light exposure, and assessing the overall restoration of the immune system profile. Additionally, exploring the mechanisms involving nicotinic acetylcholine receptors and their impact on haemocyte counts and immune responses is recommended, along with conducting field experiments to validate lab findings regarding the effects of long wavelength light on pollinators, particularly honey bees.",
@@ -480,13 +542,15 @@
     "rev1_rating": 9,
     "answer_rev2": "Future research should focus on understanding which mitochondria are absorbing red light, in which tissues and hot this is shifting their function. In addition, it is unknown the patterns of events that improved the bee longevity and how this can have an effect at colony level.",
     "rev2": "FS",
-    "rev2_rating": 2
+    "rev2_rating": 2,
+    "answer_llm2": "1. Investigate the common underlying mechanisms of respiration and immunocompetence related to mitochondrial integrity.\n2. Examine the response of other pesticides targeting mitochondria to 670nm light exposure.\n3. Investigate the specific haemocyte subpopulations that respond to 670nm light exposure.\n4. Examine the restoration of immune system profile, not just cell number, following 670nm light treatment.\n5. Explore the potential mechanism involving nicotinic acetylcholine receptors in bees that could explain the decrease in haemocyte counts after Imidacloprid exposure.\n6. Determine whether the increased circulating haemocyte numbers are due to displacement of sessile haemocytes by 670nm light.\n7. Assess the individual and combined effects of bacterial exposure and 670nm light on the immune response and antimicrobial activity of the haemolymph."
   },
   "451": {
     "answer_llm": "Future research should prioritize the investigation of thiamethoxam and other neonicotinoids' effects on honeybee larvae, particularly focusing on sublethal impacts on larval development and the health of bee colonies. There is a significant need to explore the discrepancies in sensitivity between larvae and adult bees, and to fill the existing gaps in literature regarding the toxicity of these compounds to larvae, which is critical for the overall health of bee colonies.",
     "answer_rev1": "No future research is mentioned in the discussion",
     "rev1": "RT",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "- Investigate the effects of sublethal doses of thiamethoxam on the developmental stages and optic lobes of honeybee larvae.\n- Conduct comprehensive analyses of pesticide impacts on honeybee larvae, considering developmental changes as a major threat to colonies.\n- Conduct studies on the effects of neonicotinoids on honeybee larvae."
   },
   "380": {
     "answer_llm": "Future research should focus on integrating targeted disease screening with exposomics to explore the interactions between xenobiotic exposures and diseases affecting honey bees, particularly how these factors influence bee physiology and increase susceptibility to infections.",
@@ -495,25 +559,29 @@
     "rev1_rating": 2,
     "answer_rev2": "The authors recommend future research to explore the implications of potential dysregulation in sulfur metabolism, as its biological impact remains unclear. They also highlight the importance of investigating pesticide exposure routes beyond agricultural fields when assessing susceptibility to N. ceranae infections.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "053": {
     "answer_llm": "Future research should analyze the effects of insecticides on the transcriptome and metabolome of honey bee larvae, particularly in relation to chronic toxicity, as current studies have primarily focused on adult bees.",
     "answer_rev1": "Future research should focus on analyzing the effects of insecticides on the transcriptome and metabolome of honey bee larvae under chronic exposure conditions.",
     "rev1": "SA",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "- Analyze the effects of insecticides on the transcriptome and metabolome of honey bee larvae based on chronic toxicity."
   },
   "052": {
     "answer_llm": "Future research should focus on the sublethal effects of neonicotinoids, especially thiacloprid, on *Apis cerana*, as current studies primarily address *A. mellifera*. It emphasizes the need to explore the impacts of chronic exposure and potential interactions with other stressors, which may elevate mortality rates in bees. Additionally, it calls for investigations into both acute and chronic exposure scenarios to enhance understanding of the effects on bee behavior and gene expression.",
     "answer_rev1": "The authors suggested that future studies should explore candidate responsive genes associated with pesticide resistance in A. cerana.",
     "rev1": "SA",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "- Select candidate responsive genes associated with pesticide resistance unique to *A. cerana*."
   },
   "946": {
     "answer_llm": "Future research directions include investigating the sublethal effects of pesticides on honeybees and their implications for chemical communication, understanding the effects of pathogens and xenobiotics on hygienic behavior in less organized insect societies, identifying the threshold of detection for impaired larvae in honeybee colonies, and exploring the mechanisms behind larval detection and removal. Additionally, comparisons with bumblebee studies could provide insights into the effects of pesticide exposure on brood development.",
     "answer_rev1": "Although not stated explicitly, the authors suggest that future studies should investigate how hygienic behavior and its consequences vary in insect species with smaller colonies or less organized social structures when exposed to pathogens or xenobiotics.",
     "rev1": "SA",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "- Investigate the consequences of pathogen and xenobiotic exposure in insects living in less organized societies."
   },
   "956": {
     "answer_llm": "Future research should focus on conducting additional field trials to confirm the efficacy of spinosad-SolBait against Caribfly and Medfly, utilizing both aerial and ground application techniques. Additionally, studies should investigate the relative response of different fruit fly species to SolBait-based toxins, optimize application techniques and equipment, determine the appropriate dosage and rate of spinosad, explore incorporation into bait stations, and assess the impact on non-target organisms in commercial citrus groves.",
@@ -522,19 +590,22 @@
     "rev1_rating": 5,
     "answer_rev2": "Further studies are needed on relative response of fruit fly species to the SolBait-based toxins, application techniques and equipment, dosage of spinosad, rate of application, incorpora- tion into bait stations and any effect on non-tar- get organisms in commercial citrus groves",
     "rev2": "HS",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "No future research directions were suggested."
   },
   "056": {
     "answer_llm": "Future research directions should encompass both the toxicodynamics of different insecticides and the need for semi-field and field studies to evaluate the exposure and hazard degree of insecticidal baits for honeybees under practical use conditions. Understanding the impact of bait composition on insecticide efficacy and the long-term effects on bee populations and behavior is also crucial.",
     "answer_rev1": "The authors recommend conducting semi-field and field studies to further evaluate the potential exposure and risk that insecticidal baits pose to honey bees under practical use conditions.",
     "rev1": "SA",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "No future research directions were suggested."
   },
   "935": {
     "answer_llm": "Future research should focus on identifying the factors influencing the general condition of bee colonies and their reactions to insecticide treatments, particularly deltamethrin.",
     "answer_rev1": "So far, the factors affecting different reactions of bee colonies to insecticide treatments have not been identified. It still remains a challenge for scientists and necessitates further research.",
     "rev1": "HS",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "Identify factors influencing the general condition of bee colonies in relation to deltamethrin exposure."
   },
   "015": {
     "answer_llm": "Future research should focus on the long-term impacts of TMX exposure on bee behavior, particularly regarding foraging and pollination services, as well as the overall health of bee colonies. Furthermore, studies should compare locomotion in the presence and absence of light to decouple the effects of neonicotinoids on phototaxis and locomotion.",
@@ -543,7 +614,8 @@
     "rev1_rating": 9,
     "answer_rev2": "Future research should focus on the long-term impacts of TMX exposure on bee behavior, particularly regarding foraging and pollination services, as well as the overall health of bee colonies. Furthermore, studies should compare locomotion in the presence and absence of light to decouple the effects of neonicotinoids on phototaxis and locomotion.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "No future research directions were suggested."
   },
   "012": {
     "answer_llm": "Future research should explore the interactions between pesticides and pathogens in honeybees, focusing on both cellular (hemocytes) and organismal levels. Understanding these interactions is crucial for assessing the impact on immune responses and overall health, as well as the implications for honeybee colonies. Additionally, the complex interactions between multiple pesticides and pathogens should be investigated, as they can differentially affect honeybee innate immunity.",
@@ -552,19 +624,22 @@
     "rev1_rating": 2,
     "answer_rev2": "Future research should explore the interactions between pesticides and pathogens in honeybees, focusing on both cellular (hemocytes) and organismal levels. Understanding these interactions is crucial for assessing the impact on immune responses and overall health, as well as the implications for honeybee colonies. Additionally, the complex interactions between multiple pesticides and pathogens should be investigated, as they can differentially affect honeybee innate immunity.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "No future research directions were suggested."
   },
   "889": {
     "answer_llm": "Future research should focus on the combined effects of nutritional stress and pesticide exposure on solitary bee species, as current data is limited. There is a need for more quantitative studies to understand the sensitivity of non-eusocial bees to these stressors.",
     "answer_rev1": "Future research to determine how nectar consumption varies with respect to sugar content. Also to test whether a higher quality diet would compensate for the reproductive costs of pesticide exposure using oudoor flight cages. Also to determine the effect of diet quality on pesticide toxicity, with respsect to other components than sucrose. Lastly other pesticide classes and other neonicotinoids should be testsed for interaction with diet quality.",
     "rev1": "AH",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "- Examine other neonicotinoids and pesticide classes to discern interactions with diet quality."
   },
   "887": {
     "answer_llm": "Future research should focus on evaluating the biological half-lives of toxicants, understanding the Haber exponent, analyzing the ingestion vs longevity relationship, and investigating the effects of pulsed versus constant dosing on toxicity. Additionally, studies should explore the impacts of systemic insecticides on bumble bees and other bee species, and clarify the pharmacological behavior of thiamethoxam and fipronil in bees. These studies are essential for assessing the risks of agrochemicals to farmland bees and improving toxicological models.",
     "answer_rev1": "For thiamethoxam and fipronil further research is neede to clarify their pharmacological behaviour eg. radio-ligand binding assays.",
     "rev1": "AH",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "No future research directions were suggested."
   },
   "014": {
     "answer_llm": "Future research should focus on investigating the synergistic effects of non-SBI fungicide-insecticide mixtures, the effects of fungicides on non-target organisms, particularly honeybees, considering factors like feeding duration and concentration, and exploring a matrix of different plant protection products (PPPs) and their interactions to assess their impact on honeybee behavior and cognition.",
@@ -573,19 +648,22 @@
     "rev1_rating": 7,
     "answer_rev2": "Future research should focus on investigating the synergistic effects of non-SBI fungicide-insecticide mixtures, the effects of fungicides on non-target organisms, particularly honeybees, considering factors like feeding duration and concentration, and exploring a matrix of different plant protection products (PPPs) and their interactions to assess their impact on honeybee behavior and cognition.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "- Investigate a matrix of different PPPs and their interaction using more concentrations to estimate the real threat of PPP mixtures on honeybee behavioral performance and cognition.\n- Conduct studies on different wild bee species to understand the impact of PPPs.\n- Examine other non-target organisms in more detail to assess the negative effects of PPPs.\n- Investigate other combinations of non-SBI fungicide-insecticide mixtures for potential synergistic effects."
   },
   "886": {
     "answer_llm": "Future research should focus on the combined effects of flupyradifurone and other pesticides on honeybees, the impact on wild bee populations, and the long-term effects of flupyradifurone on complex honeybee behaviors including gustatory responsiveness, learning, memory, dancing, and navigation.",
     "answer_rev1": "Future research should focus on the combined effects of flupyradifurone and other pesticides on honeybees, the impact on wild bee populations, and the long-term effects of flupyradifurone on complex honeybee behaviors including gustatory responsiveness, learning, memory, dancing, and navigation.",
     "rev1": "AH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "888": {
     "answer_llm": "Future research should aim to identify causal factors of losses in beekeeping while also exploring practical changes to beekeeping strategies that can help mitigate these losses. Furthermore, studies should investigate the relationship between supplemental carbohydrates and honey bee longevity, specifically how these carbohydrates affect SOD activity and oxidative stress mitigation, as well as the micro-nutrient content of these supplements.",
     "answer_rev1": "Future studies should investigate the relationship between supplemental carbohydrates and honey bee longevity, specifically how these carbohydrates affect SOD activity and oxidative stress mitigation, as well as the micro-nutrient content of these supplements. Cold stress increased HSP70 levels in high-fructose corn syrup based diets and the physiology underlying this needs to be explored.",
     "rev1": "AH",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "007": {
     "answer_llm": "Future research directions should include investigating the mechanisms of the PA strain's protective effects against pesticide exposure and *N. ceranae* infections, assessing its efficacy at the colony level in different landscapes, and exploring its potential to sequester environmental toxins. Additionally, studies should evaluate the implications of PA treatment on gut microbiota dynamics and its effectiveness in other animal species.",
@@ -594,19 +672,22 @@
     "rev1_rating": 9,
     "answer_rev2": "Future research directions should include investigating the mechanisms of the PA strain's protective effects against pesticide exposure and *N. ceranae* infections, assessing its efficacy at the colony level in different landscapes, and exploring its potential to sequester environmental toxins. Additionally, studies should evaluate the implications of PA treatment on gut microbiota dynamics and its effectiveness in other animal species.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "Investigate the efficiency of PA at the colony level in different landscapes against nosemosis and intoxications."
   },
   "009": {
     "answer_llm": "Future research should focus on investigating the physiological differences among *Plebeia* species and their susceptibility to various pesticides, as well as the ecotoxicological profiles of biopesticides like spinosad to clarify their safety for pollinators.",
     "answer_rev1": "The monophyly of the genus Plebia is not universally accepted. Further work to determine the phylogenetic realationship within this genus should be carried out. Also physiological differences and differing sensitivity to pesticides between Plebia species, should also be examined. \nThe ecotoxicological profile of spinosad and its formulations across stingless bees should be investigated.",
     "rev1": "AH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "008": {
     "answer_llm": "Future research should prioritize the ecotoxicology and risk assessment of insecticides on stingless bees, addressing the current lack of toxicological guidelines and investigating the effects of specific insecticides like chlorantraniliprole and thiamethoxam.",
     "answer_rev1": "No future research in discussion",
     "rev1": "AH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "006": {
     "answer_llm": "Future research should prioritize alternative pest control methods due to the toxicity of neonicotinoids and pyrethroids to bees. It should also focus on developing more sophisticated tests to assess insecticide effects on bee behavior, using the locomotion test as a preliminary analysis. The societal implications of pesticide use necessitate careful selection of alternative chemicals in agriculture. Additionally, research should investigate the specific toxicological effects of insecticides on newly emerged bees and other developmental stages, using parallel tests under consistent experimental conditions to understand the sublethal impacts on locomotion and behavior.",
@@ -615,25 +696,29 @@
     "rev1_rating": 7,
     "answer_rev2": "uture research should prioritize alternative pest control methods due to the toxicity of neonicotinoids and pyrethroids to bees. It should also focus on developing more sophisticated tests to assess insecticide effects on bee behavior, using the locomotion test as a preliminary analysis. The societal implications of pesticide use necessitate careful selection of alternative chemicals in agriculture. Additionally, research should investigate the specific toxicological effects of insecticides on newly emerged bees and other developmental stages, using parallel tests under consistent experimental conditions to understand the sublethal impacts on locomotion and behavior.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Investigate the molecular mechanisms underlying the differential effects of pyrethroids on honeybee sodium channels, using cloning and expression of the honeybee voltage-dependent sodium channel, AmNa<sub>v</sub>.\n2. Conduct numerical simulations to analyze changes induced by different pyrethroids to understand their binding differences and differential toxicity.\n3. Systematically test the effects of pyrethroids on honeybee calcium channels (AmCa<sub>v</sub>) to assess their impact on muscle function, thermoregulation, and hemolymph circulation."
   },
   "884": {
     "answer_llm": "Future research should focus on: 1) Investigating the sensitivity of honeybees to pesticides by including different age groups and genetic backgrounds; 2) Exploring the effects of flupyradifurone on other molecular targets and its impact on immune responses and oxidative stress; 3) Examining the distribution and function of nicotinic ACh receptors in the honeybee brain, particularly in relation to motor coordination; 4) Considering honeybees as a model for Parkinson's disease, particularly focusing on dopaminergic neurons and motor disabilities; 5) Understanding the environmental impact of pesticide residues and their effects on wild pollinators.",
     "answer_rev1": "Future research should focus on: 1) Investigating the sensitivity of honeybees to pesticides by including different age groups and genetic backgrounds; 2) Exploring the effects of flupyradifurone on other molecular targets and its impact on immune responses and oxidative stress; 3) Examining the distribution and function of nicotinic ACh receptors in the honeybee brain, particularly in relation to motor coordination; 4) Considering honeybees as a model for Parkinson's disease, particularly focusing on dopaminergic neurons and motor disabilities; 5) Testing of intermediate concentrations could have generated more field-realistic results",
     "rev1": "AH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "Investigate the potential molecular targets of flupyradifurone beyond nAChR; study its effects on immune responses and reactive oxygen species production in honeybees."
   },
   "883": {
     "answer_llm": "Future research directions should focus on improving field data collection methods for pesticide exposure, developing versatile monitoring tools for various pollinator species, and conducting more field and semi-field experiments to better understand the sublethal effects of pesticides on bees and other pollinators. Additionally, exploring different concentrations of imidacloprid and utilizing optical sensors combined with machine learning algorithms could help identify subtle effects of pesticides on pollinator behavior.",
     "answer_rev1": "Further work is needed to develop the optical sesnsor so it can be reialbly used under field conditions. Treatments with a wider range of insecticide concentrations could be performed to give results that fully cover field-realistic doses.",
     "rev1": "AH",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Investigate the effects of different concentrations of imidacloprid on bumblebees.\n2. Explore the use of optical sensors combined with machine learning algorithms to detect sublethal effects of pesticides on flying insect behavior."
   },
   "011": {
     "answer_llm": "Future research should focus on linking altered vitellogenin levels to physiological outcomes in honey bees, exploring other factors that may affect vitellogenin levels, and validating vitellogenin as a biomarker for pesticide exposure. The newly developed antibody will aid in these investigations.",
     "answer_rev1": "Further studies recommended on:\ni) the link between altered vitellogenin production and physiological outcomes. this work could facilitate the use of vitellogenin as a biomarker candidte for exposure of bees to neonicotinoids or other pesticides.\nii) what other factors might affect vitellogenin production\niii) whether the levels of vitellogenin fluctuate or if upregulation is transient\niv) the use of the antibody developed here to analyse the effects of other pesticides",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "016": {
     "answer_llm": "Future research should investigate the long-term impacts of chronic neonicotinoid exposure on honey bee behavior, including flight ability and foraging patterns, as well as the ecological consequences of these effects on bee populations. Additionally, studies should focus on the direct effects of acute and chronic exposure to neonicotinoids and their metabolites on pollinator flight ability and behavior, considering their differing impacts on nicotinic acetylcholine receptor subtypes.",
@@ -642,13 +727,15 @@
     "rev1_rating": 8,
     "answer_rev2": "Future research should investigate the long-term impacts of chronic neonicotinoid exposure on honey bee behavior, including flight ability and foraging patterns, as well as the ecological consequences of these effects on bee populations. Additionally, studies should focus on the direct effects of acute and chronic exposure to neonicotinoids and their metabolites on pollinator flight ability and behavior, considering their differing impacts on nicotinic acetylcholine receptor subtypes.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "885": {
     "answer_llm": "Future research should focus on the long-term effects of chronic pesticide exposure on bee colonies, particularly regarding foraging behavior and pollination services. It is crucial to explore various exposure pathways, including both active ingredients and co-formulants, and to conduct field studies to assess real-world impacts on bee health and ecological roles.",
     "answer_rev1": "The consequences of long-term exposure to sulfoxaflor at the colony-level, and on pollination services needs further research.",
     "rev1": "AH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "No future research directions were suggested."
   },
   "010": {
     "answer_llm": "Future research should focus on the sublethal effects of neonicotinoids and other pesticide compounds on a variety of bee species. Utilizing advanced ecotoxicology tools, such as the thermal visual arena, alongside speed\u2013curvature power law analyses, will enhance understanding of behavioral deviations caused by these substances. This research is crucial for developing safer pesticides and conducting accurate risk assessments. Furthermore, timely assessments of alternative pesticides to neonicotinoids should be prioritized, testing multiple compounds together, and addressing research gaps related to wild pollinators to improve risk assessments and understand ecological impacts.",
@@ -657,7 +744,8 @@
     "rev1_rating": 8,
     "answer_rev2": "Future research should focus on the sublethal effects of neonicotinoids and other pesticide compounds on a variety of bee species. Utilizing advanced ecotoxicology tools, such as the thermal visual arena, alongside speed\u2013curvature power law analyses, will enhance understanding of behavioral deviations caused by these substances. This research is crucial for developing safer pesticides and conducting accurate risk assessments. Furthermore, timely assessments of alternative pesticides to neonicotinoids should be prioritized, testing multiple compounds together, and addressing research gaps related to wild pollinators to improve risk assessments and understand ecological impacts.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "- Extend power law analyses to further agricultural stressors and other beneficial invertebrates.\n- Use power law analyses to examine physiological or behavioural stresses of bee virus infections, varroa infestations, poor diet, and nutritional stress.\n- Apply power law analyses to assess responses of other beneficials, such as pest predators and parasitoids, to pesticide exposure.\n- Assess alternative replacements to neonicotinoids, such as sulfoxaflor, alongside current compounds like thiamethoxam, imidacloprid, and clothianidin.\n- Test compounds in combination rather than isolation to better understand their sublethal effects.\n- Fill research gaps by focusing on wild pollinators, such as bumblebees, rather than predominantly using honeybees as model organisms.\n- Use sound and field realistic methodologies to accurately assess pesticide impacts on non-target species."
   },
   "003": {
     "answer_llm": "Future research should focus on the interactions between agrochemicals (like thiamethoxam) and environmental stressors, particularly in chronic exposure scenarios. There is a need to modify regulatory methodologies to include assessments of sub-lethal impacts and to explore the effects of novel insecticides (such as sulfoxaflor and flupyradifurone) on bee health. A holistic approach to environmental risk assessment that considers multiple stressors impacting wild bees and other pollinators is also recommended, along with post-regulatory monitoring to understand the real-world consequences of agrochemical use.",
@@ -666,7 +754,8 @@
     "rev1_rating": 7,
     "answer_rev2": "Future research should focus on the interactions between agrochemicals (like thiamethoxam) and environmental stressors, particularly in chronic exposure scenarios. There is a need to modify regulatory methodologies to include assessments of sub-lethal impacts and to explore the effects of novel insecticides (such as sulfoxaflor and flupyradifurone) on bee health. A holistic approach to environmental risk assessment that considers multiple stressors impacting wild bees and other pollinators is also recommended, along with post-regulatory monitoring to understand the real-world consequences of agrochemical use.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "- Conduct sub-lethal assessments of chronic exposure in bumblebees alongside toxicity tests to detect sub-lethal, but significant, effects.\n- Modify methodologies within the regulatory process to consider the interaction effects between multiple environmental stressors on wild bees.\n- Monitor interactions between pesticides and pathogens.\n- Develop a holistic approach to environmental risk assessment that considers interactions between multiple stressors and models their impact on wild bees."
   },
   "004": {
     "answer_llm": "Future research should focus on selecting appropriate test article delivery vehicles (pollen or syrup) to reflect environmental exposures, tracking specific endpoints like drone weight and emergence, and monitoring food consumption over time to understand treatment effects on bumble bee colony fitness.",
@@ -675,13 +764,15 @@
     "rev1_rating": 10,
     "answer_rev2": "Future research should focus on selecting appropriate test article delivery vehicles (pollen or syrup) to reflect environmental exposures, tracking specific endpoints like drone weight and emergence, and monitoring food consumption over time to understand treatment effects on bumble bee colony fitness.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Conduct experiments to directly compare exposure route differences to determine if findings apply broadly to various pesticide classes and different castes and pollinator species.\n2. Investigate whether the route of acetamiprid exposure affects associations between microcolony endpoints and drone production.\n3. Investigate the effects of acetamiprid exposure via both pollen and syrup to mimic environmental exposures and capture all relevant treatment effects.\n4. Use drone weight or size, the number of emerged drones, and time to drone emergence as apical endpoints in microcolony analyses to integrate potential treatment effects on food consumption, fecundity, development, and survival.\n5. Track food consumption over time to estimate exposure at the level of the microcolony and to disentangle treatment effects on foraging and colony food needs from brood production."
   },
   "891": {
     "answer_llm": "Future research should focus on the sublethal effects of imidacloprid on the foraging behavior of *A. cerana*, investigate the detoxification pathways of imidacloprid and quercetin, and explore the differences in tolerance to imidacloprid between *A. cerana* and *A. mellifera*. Additionally, studies should assess the mechanisms by which quercetin reduces the toxicity of imidacloprid and the potential for phytochemicals to enhance detoxification processes in honey bees.",
     "answer_rev1": "Future research is needed to understand the molecular mechanisms that underpin the protective effect of quercitin on the effects of imidaclopid in A. cerana, and to understand the detoxification mecahnisms of both substances. More studies on the lethal and sub-lethal effects of imidacloprid on A. cerana are also needed to understand the dose-time interaction of phytochemical exposure on insecticide sensitivity. This will help tease out species differences in the genus.",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Determine the mechanism of quercetin reducing the lethal and sublethal effects of imidacloprid on *A. cerana*.\n2. Investigate whether P450 genes are induced by quercetin in native honey bees."
   },
   "005": {
     "answer_llm": "Future research should focus on conducting in-use field trials to monitor honey bee colonies exposed to neonicotinoid seed treated crops throughout the bee season and during the overwintering period, while also integrating laboratory data with field studies to better understand the realistic exposure and behavior of bees regarding pesticide use under normal agronomical conditions.",
@@ -690,7 +781,8 @@
     "rev1_rating": 9,
     "answer_rev2": "Future research should focus on conducting in-use field trials to monitor honey bee colonies exposed to neonicotinoid seed treated crops throughout the bee season and during the overwintering period, while also integrating laboratory data with field studies to better understand the realistic exposure and behavior of bees regarding pesticide use under normal agronomical conditions.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "Conduct field trials to assess the impact of pesticides on bees under real agronomical conditions."
   },
   "002": {
     "answer_llm": "Future research should focus on: 1) conducting repeated field and monitoring studies across various years and locations to address unanswered questions about the effects of clothianidin on bumble bees; 2) developing validated methodologies for testing the effects of plant protection products (PPPs) on bumble bees, taking into account their unique biology; 3) standardizing bumble bee hives and ensuring uniformity in queen age and quality; 4) accurately measuring reproductive success by considering both the number of new queens and queen cells produced; and 5) investigating the temporal dynamics of bumble bee foraging behavior and the impact of various floral resources in the landscape.",
@@ -699,13 +791,15 @@
     "rev1_rating": 7,
     "answer_rev2": "Future research should focus on: 1) conducting repeated field and monitoring studies across various years and locations to address unanswered questions about the effects of clothianidin on bumble bees; 2) developing validated methodologies for testing the effects of plant protection products (PPPs) on bumble bees, taking into account their unique biology; 3) standardizing bumble bee hives and ensuring uniformity in queen age and quality; 4) accurately measuring reproductive success by considering both the number of new queens and queen cells produced; and 5) investigating the temporal dynamics of bumble bee foraging behavior and the impact of various floral resources in the landscape.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "890": {
     "answer_llm": "Future research should investigate the interactive and synergistic effects of insecticide exposure and climate change on non-Apis bee species, particularly their avoidance behaviors. There is a need for more studies on stingless bee responses to insecticides, as current data is scarce. Additionally, understanding how rising temperatures may exacerbate the risks from these stressors is crucial.",
     "answer_rev1": "Understanding the response of T. hockingsi to insecticide and/or heat stress at the gene level needs to be understood, so further work into the biology, physiology and genetics of the species is needed.",
     "rev1": "AH",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Investigate the interactive and potentially synergistic effects of insecticide exposure and climate change on non-Apis bee species.\n2. Explore whether bees can avoid stressors such as insecticides and climate change."
   },
   "672": {
     "answer_llm": "Future research should focus on understanding diverse exposure routes of pesticides to wild bee communities, particularly solitary ground-nesting species, and their effects on bee health and behavior. It should also investigate the interactions between different agrochemicals, explore the hormetic effects of low pesticide doses, and assess the implications of environmental conditions on pesticide toxicity.",
@@ -714,25 +808,29 @@
     "rev1_rating": 8,
     "answer_rev2": "The authors identify several future research questions that arose from the study, such as: disentangling the possible causes of lower offspring in the nests within enclousers treated with both pesticides; the need to confirm and understand the mechanism behind differences between nest-level and population-level outcomes;  further investigation into the possible hormetic effects of FPF on bee emergence and body size; and a better understanding of the exposure route of FPF that affected immature bees.",
     "rev2": "ER",
-    "rev2_rating": 2
+    "rev2_rating": 2,
+    "answer_llm2": "1. Investigate the underlying mechanisms of synergistically induced hyperactivity in bees exposed to multiple pesticides.\n2. Explore the potential hormetic effects of low (field-realistic) levels of FPF on ground-nesting bees, particularly regarding early emergence and increased body size.\n3. Examine the potential survival bias favoring larger individuals in offspring body size studies.\n4. Study the antagonistic interaction between Sivanto and Quadris Top on the emergence date of squash bee offspring, focusing on the role of fungicide exposure in suppressing early emergence of male offspring.\n5. Assess the impact of intra-specific variation in bee size on movements, foraging, floral handling, and pollination services at ecosystem scales."
   },
   "423": {
     "answer_llm": "Future research should focus on the long-term effects of neonicotinoids on queen honeybees, particularly their mating success and the resulting impact on colony growth and health. Additionally, studies should investigate the genetic basis of honeybee responses to neonicotinoid exposure, the sublethal effects on larvae and nurse bees, and the complex interactions between neonicotinoids and environmental stressors. Understanding these factors is crucial for assessing the overall impact of neonicotinoids on honeybee populations.",
     "answer_rev1": "The authors recommend more studies focusing on the effects of sublethal exposure of larvae or nurse bees extending to the performance of adult forager honeybees are needed, as well as investigations of the sublethal effects of neonicotinoids on honeybee queens. They also suggest there is an urgent need for more thoroughly designed studies to clarify the threats of neonicotinoids to honeybees and pollinators in general, particularly given that there may be delayed effects of pesticide exposure.",
     "rev1": "BN",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "- Explore the potential genetic basis underlying variable responses to sublethal neonicotinoid exposure in honeybees.\n- Investigate detoxification genes and corresponding expression profiles, such as cytochrome P450 monooxygenases, in honeybees.\n- Resolve the pathways for nitroguanidine neonicotinoid metabolism in honeybees compared to other insecticidal compounds.\n- Investigate the long-term impact of neonicotinoids on queen bees, focusing on queen supersedure rates.\n- Explore the role of queens as potential sinks for sublethal exposure to systemic insecticides through pollen-based nutrition."
   },
   "437": {
     "answer_llm": "Future research should investigate the long-term effects of neonicotinoid exposure on ground-nesting bees and wild bee communities, particularly in private agricultural lands. Studies should also explore conservation strategies that limit pesticide use in areas managed for wildlife, recognizing the critical role of wild bees as sentinel species in agroecosystems.",
     "answer_rev1": "Future research should investigate the long-term effects of neonicotinoid exposure via soil on ground-nesting bees and wild bee communities, particularly in private agricultural lands.",
     "rev1": "BN",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "669": {
     "answer_llm": "Future research should focus on estimating the risks of other common pesticides on honey bees, beyond just imidacloprid and ethion, to better understand their effects on bee physiology and colony performance.",
     "answer_rev1": "The authors conclude that further studies are needed to estimate the risk of other common pesticides on honeybees, and specifically additional studies should be performed to investigate the sub-lethal effects of pesticides on larval development",
     "rev1": "BN",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "659": {
     "answer_llm": "Future research should examine the relationship between the topical dose of clothianidin experienced by foraging bees and the duration of adverse effects post-spray.",
@@ -741,7 +839,8 @@
     "rev1_rating": 8,
     "answer_rev2": "Future studies are needed to examine the relationship between the topical dose experienced by bees foraging in rice fields, and the length of the post-spray period. To fully understand such long-term effects in winter, measurements of clothianidin residue levels within collected and stored pollen as well as feeding experiments using clothianidin-contaminated pollen are required. Finally, because the application was done on one field and honeybees forage within 4-5 km from their hives, experiments with spraying multiple surronding fields and on a larger spatial scales should be considered as well.",
     "rev2": "ER",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_llm2": "No future research directions were suggested."
   },
   "662": {
     "answer_llm": "Future research directions include utilizing genomics, specifically RNA sequencing, to quantify a large number of phenotypes in ecotoxicological studies. It should also focus on the effects of neonicotinoids (NNIs) on honey bee worker bees in natural field conditions, the impacts on gene expression in different honey bee castes, and the effects of NNIs on metabolic pathways in nurses and the maturation process in honey bee workers.",
@@ -750,67 +849,78 @@
     "rev1_rating": 7,
     "answer_rev2": "The authors suggest that future research should focus on the effects of neonicotinoids on metabolic pathways in nurses and on the development of workers.",
     "rev2": "ER",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_llm2": "- Explore the effects of NNIs on metabolic pathways in nurse bees.\n- Investigate the effects of NNIs on the maturation process in honey bee workers."
   },
   "665": {
     "answer_llm": "Future research should investigate the long-term effects of neonicotinoid insecticides on both honey bees and wild bee populations, focusing on physiological stress, pathogen burdens, reproductive success, and overall fitness in agricultural landscapes. Additionally, studies should explore the chronic effects of neonicotinoid residues found in pollen and nectar on bee colony health and behavior.",
     "answer_rev1": "The authors recommend that future studies should focus on the impact of prolonged exposure of Indian bee pollinators to sublethal doses of neonicotinoids. They suggest that the current work should form the basis for further studies related to chronic effects of neonicotinoid residues at the levels found in pollen and nectar on colony fitness.",
     "rev1": "BN",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "Investigate the chronic effects of neonicotinoid residues at the levels found in pollen and nectar on colony fitness."
   },
   "432": {
     "answer_llm": "Future research should focus on cultivating crops with higher sugar content in their nectar to lessen the toxicity of insecticides to bees, thereby aiding in the preservation of bee populations in areas with high pesticide application.",
     "answer_rev1": "The paper does not recommend directions for future research",
     "rev1": "BN",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "No future research directions were suggested."
   },
   "023": {
     "answer_llm": "Future research should evaluate the long-term effects of the pesticide Success on foraging honey bees during a Medfly control season, monitor hive health in treated versus untreated areas, and assess the impact of *Varroa destructor* mites and honey bee diseases.",
     "answer_rev1": "Future research should evaluate the long-term effects of the pesticide Success on foraging honey bees during a Medfly control season, monitor hive health in treated versus untreated areas, and assess the impact of *Varroa destructor* mites and honey bee diseases.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "013": {
     "answer_llm": "Information not found in the provided text.",
     "answer_rev1": "Information not found in the provided text.",
     "rev1": "EA",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "No future research directions were suggested."
   },
   "022": {
     "answer_llm": "The paper discusses future research directions that emphasize the need for further studies on the responses of M. scutellaris to thiamethoxam exposure, which will be crucial for risk assessments related to the conservation of bee biodiversity.",
     "answer_rev1": "The paper discusses future research directions that emphasize the need for further studies on the responses of M. scutellaris to thiamethoxam exposure, which will be crucial for risk assessments related to the conservation of bee biodiversity.",
     "rev1": "EA",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "No future research directions were suggested."
   },
   "020": {
     "answer_llm": "Future research should focus on: 1) Investigating the impact of dietary neonicotinoids on fecundity in bumblebees, particularly how reduced egg laying by queens and workers may contribute to colony decline. 2) Quantifying the impact of crab spider predation on bumble bee colony performance and fitness. 3) Understanding the relative importance of managing floral resources, nesting sites, and stressors on bumble bee population recovery. 4) Identifying demographic indicators that signal a species' susceptibility to decline through sensitivity analyses. 5) Expanding demographic modeling to explore a wider range of stressors impacting bumble bees, which could help in developing strategies for their conservation.",
     "answer_rev1": "Future research should focus on: 1) Investigating the impact of dietary neonicotinoids on fecundity in bumblebees, particularly how reduced egg laying by queens and workers may contribute to colony decline. 2) Quantifying the impact of crab spider predation on bumble bee colony performance and fitness. 3) Understanding the relative importance of managing floral resources, nesting sites, and stressors on bumble bee population recovery. 4) Identifying demographic indicators that signal a species' susceptibility to decline through sensitivity analyses. 5) Expanding demographic modeling to explore a wider range of stressors impacting bumble bees, which could help in developing strategies for their conservation.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "018": {
     "answer_llm": "Future research directions should include: 1) Investigating the relationship between structural differences in CYP9 proteins and their substrate binding capabilities, particularly how the openness of access channels in P450 enzymes influences their ability to bind multiple or specific substrates. 2) Developing standardized toxicity testing protocols for solitary bee species, especially Megachilidae, and conducting in vivo work to assess their vulnerability to insecticides, with a recommendation to use *M. rotundata* as a model species for ecotoxicological testing.",
     "answer_rev1": "Future research directions should include: 1) Investigating the relationship between structural differences in CYP9 proteins and their substrate binding capabilities, particularly how the openness of access channels in P450 enzymes influences their ability to bind multiple or specific substrates. 2) Developing standardized toxicity testing protocols for solitary bee species, especially Megachilidae, and conducting in vivo work to assess their vulnerability to insecticides, with a recommendation to use *M. rotundata* as a model species for ecotoxicological testing.",
     "rev1": "EA",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "1. Conduct further in vivo work and acute toxicity testing to confirm the vulnerability of Megachilidae species lacking CYP9Q-related orthologs to insecticides.\n2. Develop standardized protocols for toxicity tests in solitary bee species.\n3. Create standardized comparative genomics analyses and targeted in vitro functional tests to inform ecotoxicological trials.\n4. Target acute contact toxicity testing at specific species or genera to avoid negative outcomes of insecticide use.\n5. Consider adding *M. rotundata* as a model solitary bee species for tier one testing of insecticides."
   },
   "017": {
     "answer_llm": "Information not found in the provided text.",
     "answer_rev1": "Information not found in the provided text.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested"
   },
   "019": {
     "answer_llm": "Future research should focus on a multi-stressor approach to better understand the interactions affecting honey bee health within agroecosystems, moving away from the traditional single-stressor assessments. This includes investigating the effects of pesticides on detoxification systems and the dynamics involving immune-suppressing pathogens.",
     "answer_rev1": "Future research should focus on a multi-stressor approach to better understand the interactions affecting honey bee health within agroecosystems, moving away from the traditional single-stressor assessments. This includes investigating the effects of pesticides on detoxification systems and the dynamics involving immune-suppressing pathogens.",
     "rev1": "EA",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No future research directions were suggested."
   },
   "021": {
     "answer_llm": "Future research should focus on the ecological interactions affecting bumble bee foraging behavior, particularly how floral characteristics and competition influence their exposure to neonicotinoid-treated crops. Additionally, studies should aim to reconcile the discrepancies between laboratory and field findings to improve risk assessment methodologies and enhance conservation strategies for pollinators.",
     "answer_rev1": "Future research should focus on the ecological interactions affecting bumble bee foraging behavior, particularly how floral characteristics and competition influence their exposure to neonicotinoid-treated crops. Additionally, studies should aim to reconcile the discrepancies between laboratory and field findings to improve risk assessment methodologies and enhance conservation strategies for pollinators.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "532": {
     "answer_llm": "Future research should investigate the specific functional effects of acetamiprid on lipid content and metabolic activities in honeybees, as well as the effects of sublethal doses on honeybee metabolism and the specific mechanisms involved. Additionally, research should focus on the effects of acetamiprid on honeybee larvae metabolites, as this area has not been explored yet.",
@@ -819,13 +929,15 @@
     "rev1_rating": 5,
     "answer_rev2": "Further studies should investigate the metabolic pattern of acetamiprid-stressed honeybees and elucidate the detoxification mechanisms. As well as effects of sublethal doses of acetamiprid on honeybee metabolism and the mechanisms invovled. Moreover, harmful effects of other compounds in acetamiprid solvent on bees needs further study.",
     "rev2": "ER",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "517": {
     "answer_llm": "Future research should focus on evaluating sublethal effects of pesticides on bumblebee foraging behavior in realistic field conditions, understanding the genetic and biochemical mechanisms of sensitivity to spinosad and spinetoram, and exploring the pharmacodynamics and uptake kinetics of these insecticides. This will help assess the ecological impacts on pollinators and develop safer alternatives to current insecticides.",
     "answer_rev1": "They conclude that spinetoram and spinosad should be tested in more field-realistic settings to assess potentially deleterious effects on foraging behavior, using queenright bumblebee colonies.",
     "rev1": "LH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "- Improve the annotation of the bumblebee *B. terrestris* genome to aid in risk assessment studies.\n- Investigate the structure and docking data of spinosad/spinetoram with respect to the D\u03b16 subunit of the nAChR ligand-binding domain.\n- Evaluate spinetoram and spinosad in realistic field-related situations using queenright colonies of *B. terrestris* to assess potentially deleterious effects on foraging behaviour."
   },
   "521": {
     "answer_llm": "Future research should concentrate on establishing the noneffective concentration of imidacloprid that is more relevant to in-hive exposure scenarios, since current findings are mainly based on field spray systems.",
@@ -834,25 +946,29 @@
     "rev1_rating": 8,
     "answer_rev2": "Further research is needed to identify the no-effect concentration that more accurately reflects in-hive exposure conditions. Additional studies are also required to determine whether a correlation exists between AChE activity and imidacloprid concentration, as well as whether Varroa mite infestations are associated with variable phenoloxidase activity and honeybee susceptibility to pesticides.",
     "rev2": "ER",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "No future research directions were suggested."
   },
   "519": {
     "answer_llm": "Future research should focus on conducting long-term field studies to better understand the complex interactions between agrochemical stressors, colony dynamics, and environmental factors affecting bee hives. This includes investigating the combined effects of pesticides like imidacloprid and in-hive treatments such as thymol-based miticides, as well as the long-term impacts of neonicotinoids and miticides on honey bee colonies in various environmental contexts.",
     "answer_rev1": "The paper concludes that more research on colony level effects over a wide range of climatic and environmental conditions is needed. They also suggest that a reevaluation of the benefits of miticide treatments could benefit beekeeping, but whether they refer to a policy reevaluation or scientific studies is not fully clear to me.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "518": {
     "answer_llm": "Information not found in the provided text.",
     "answer_rev1": "No such information was found.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "520": {
     "answer_llm": "Future research should prioritize innovative assessments of pesticide toxicity, focusing on long-term and sublethal effects on bees and other insects. It should also investigate the colony-level impacts of individual behavioral deficits, the synergistic effects of multiple pesticides, and develop standardized methodologies for long-term studies. Improved assessments of abnormal behaviors and the implementation of long-term tests are essential for understanding pesticide risks to insect pollinators and the environment.",
     "answer_rev1": "Future studies should coordinate research across labs and countries and assessments of long-term sublethal effects to improve our ability to protect insect biodiversity.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Implement truly long-term tests to assess sublethal, synergistic, and time-reinforced interactions in pesticide research and risk assessment.\n2. Develop a more accurate and thorough assessment of abnormal behaviours using publicly available behavioural descriptions and video analyses adapted for standard risk assessments.\n3. Adapt the ring-tested time-to-death approach to assess pesticide lethal and sublethal effects in insect pollinators and other non-target organisms.\n4. Investigate the long-term effects of pesticides on bee survival and food consumption beyond the standard 10-day observation period.\n5. Develop and standardize methodologies for chronic trials that capture sublethal effects at lower doses.\n6. Assess the impact of pesticides on bee hemolymph viroses over short and long-term exposure periods."
   },
   "516": {
     "answer_llm": "Future research should focus on the specific effects of pesticides on different honey bee types, particularly winter bees, and should aim to provide robust evidence for the mechanisms of these effects. Additionally, studies should involve experiments with honey bees in spring, summer, and winter to explore the effects of imidacloprid and other neonicotinoids, along with their metabolism.",
@@ -861,37 +977,43 @@
     "rev1_rating": 0,
     "answer_rev2": "The authors highlight that future studies should consider several levels of exposure and include spring, summer and winter honey bees to better understand the effects of imidacloprid and other neonicotinoids, as well as their metabolism in honey bees.",
     "rev2": "ER",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "- Conduct experiments with varying levels of exposure to imidacloprid or other neonicotinoids across different seasons (spring, summer, winter) to understand their effects and metabolism in honey bees."
   },
   "531": {
     "answer_llm": "Future research should focus on elucidating the microscopic molecular features affected by imidacloprid in honey bees, particularly regarding apoptosis, oxidative stress, antioxidant defense, and detoxification mechanisms, as well as conducting experiments directly in bee colonies to integrate laboratory analyses with field observations for more accurate conclusions.",
     "answer_rev1": "The authors hypothesise that attenuation of antioxidant activity may be the intrinsic mechanism of imidacloprid lethality, but state that this needs to be confirmed. They also highlight the need for future studies to assess effects in colonies and under more field-relevant settings.",
     "rev1": "LH",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "Conduct experiments directly in bee colonies, combining laboratory analyses with field observations."
   },
   "514": {
     "answer_llm": "Future research should focus on identifying nonhazardous insecticides for bumble bees, exploring reduced-risk alternatives, and understanding the varying impacts of these insecticides based on exposure methods and formulations. Studies should also investigate the differences in susceptibility to insecticides among various Bombus species, particularly focusing on how exposure routes affect toxicity. Additionally, semi-field or field investigations should be conducted to assess the risks of deltamethrin, phosmet, and spinetoram to *B. impatiens*, while minimizing pesticide hazards to bumble bees is crucial given their declining numbers and importance in pollination.",
     "answer_rev1": "Future studies should evaluate how to reduce the negative influence of deltamethrin, phosmet and spinetoram under field or semi-field conditions.",
     "rev1": "LH",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "- Conduct semi-field or field investigations to evaluate the risk of deltamethrin, phosmet, and spinetoram to *B. impatiens*."
   },
   "513": {
     "answer_llm": "Future research should focus on the effects of pesticides on wild bee species, particularly their larval development, sublethal effects on mating success, reproductive output, foraging, and nesting ability. Additionally, there is a need to develop and refine testing protocols for new pesticides to ensure the protection of wild bees during the pesticide registration process, and to verify the persistence of pesticides in natural conditions.",
     "answer_rev1": "They argue that there is a need to understand effects of clothianidin and imidacloprid on mating success, reproductive output, foraging, and nesting ability before it can be concluded that clothianidin and imidacloprid do not pose any threat to these two species of solitary bee. They also mention that future studies are needed to verify the persistence of imidacloprid and clorhianidin in pollen fed to larvae under field conditions.",
     "rev1": "LH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "1. Examine sublethal effects on mating success, reproductive output, foraging, and nesting ability.\n2. Create and refine protocols for testing new pesticides on wild bees for use in the pesticide registration process.\n3. Use 48-well culture plates with wells having a diameter of 11 mm and possibly incorporate coverslips to improve cocoon construction in laboratory experiments.\n4. Improve the consistency of the pollen/sugar/water mixture to better match the natural pollen provisions provided by the bees.\n5. Conduct research to determine the constituents and ratio of *O. lignaria*'s own provisions for future studies.\n6. Confirm the consumption of the entire pollen provision in all treatments.\n7. Examine the impacts of pesticides on larval development, particularly focusing on the increased developmental time and its potential effects on the timing of diapause initiation."
   },
   "525": {
     "answer_llm": "Future research should investigate how imidacloprid affects synaptic dynamics and learning/memory in bees, especially considering the roles of 14-3-3 protein and protein kinase C in mushroom bodies.",
     "answer_rev1": "I have not identified any suggested directions for future research.",
     "rev1": "LH",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "No future research directions were suggested."
   },
   "522": {
     "answer_llm": "Future research should focus on refining model tuning for pose estimation and expanding the training dataset to better capture the complexity of bumble bee behavior. Additionally, applying tag-based tracking methods to other social insects, such as honey bees and ants, is recommended to improve understanding of collective behaviors and stress responses. Integrating multi-animal pose tracking with unsupervised behavioral classification is also suggested to enhance behavioral analysis.",
     "answer_rev1": "The authors suggest that their approach could be used for other behavioral studies in social insects, and that it could be improved by refining the model tuning and creating a larger training dataset.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "- Refine model tuning and create a larger training set to improve prediction accuracy in pose estimation.\n- Integrate multi-animal pose tracking pipelines with ongoing unsupervised behavioral classification works to create more complete representations of behavior at scale and in complex environments.\n- Investigate the application of tag-based tracking and SLEAP pose estimation to other social insects, such as honey bees and ants, to understand collective behavioral thermoregulation.\n- Utilize the high-throughput pipeline for discovering and quantifying ethologically relevant stress responses in social insects."
   },
   "523": {
     "answer_llm": "Future research should systematically examine the specific behavioral traits of bees affected by field-realistic doses of neonicotinoids, focusing on physical performance, learning abilities, and motivation. Additionally, studies should investigate the behavioral mechanisms influencing foraging success, particularly at low pesticide concentrations that do not affect physical performance but may reduce motivation to forage.",
@@ -900,7 +1022,8 @@
     "rev1_rating": 0,
     "answer_rev2": "The authors highlight the need for studies with accurate measurements on low chronic/semi-chronic pesticide concentrations, to identify the threshold(s) where the effects of pesticides have a significant impact on foraging by different bee specie.\n\nMoreover, they emphasize the need for the future research to avoid drawing conclusions based on the absence of detectable effects on physical performance, as this does not imply a lack of effects on other aspects of bee ecology- such as foraging.",
     "rev2": "ER",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "No future research directions were suggested."
   },
   "524": {
     "answer_llm": "Future research should focus on the effects of varying concentrations and exposure durations of IMD and TMX on honeybee olfactory learning and memory, explore impacts on other learning types like spatial memory, and examine differences in effects across bee species. Long-term studies on higher concentrations' effects on neuronal function and foraging performance are also recommended.",
@@ -909,54 +1032,63 @@
     "rev1_rating": 0,
     "answer_rev2": "There is no explicit recommendation for future research",
     "rev2": "ER",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "512": {
     "answer_llm": "Future research should focus on the effects of spinosad at lower concentrations on bumble bee health in natural settings, exploring long-term impacts on colony dynamics and the potential for transient effects observed in greenhouse conditions.",
     "answer_rev1": "No suggestions about future research.",
     "rev1": "LH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "515": {
     "answer_llm": "Information not found in the provided text.",
     "answer_rev1": "Information not found.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No future research directions were suggested."
   },
   "658": {
     "answer_llm": "Future research should focus on the effects of neonicotinoid insecticides on honeybee behavior, particularly their feeding preferences and proactivity. It is crucial to investigate the mechanisms behind these behaviors, especially in relation to the toxicity of different enantiomers of dinotefuran. Additionally, studies should explore the interconnectedness of respiration, energy metabolism, and thermoregulation in honeybees.",
     "answer_rev1": "Future research should investigate which factors contribute to the preference for S-dinotefuran and dinortefuran-induced proactivity of bees",
     "rev1": "ER",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "No future research directions were suggested."
   },
   "668": {
     "answer_llm": "Future research should prioritize long-term risk assessment studies to evaluate the effects of agrochemicals on gyne production and reconsider the role of male production in risk assessments, especially in species capable of asexual reproduction. It should also explore the physiological differences between worker and queen castes, the effects of pesticides on sperm viability, and the role of adjuvants in commercial pesticides. Furthermore, studies should aim to clarify the conflicting results regarding thiacloprid's impact on male larval survival and assess multiple colony fitness parameters under field-realistic conditions.",
     "answer_rev1": "The authors identified several research questions that arose from the study: (i) understanding the mechanism behind the differences in outcomes between microcolonies and queenright colonies, in particular the observed positive effect of thiachloprid on male larval survival in the microcolonies; (ii) evaluating the effects of acetamiprid at higher concentrations, as the one used in the study was quite conservative; (iii) conducting long-term risk-assessment studies using queenright colonies and (iv) elucidating the role of adjuvants in the effects of pesticides on bees.",
     "rev1": "ER",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "- Conduct long-term laboratory evaluations in lower tier risk assessments, focusing on gyne production as a main endpoint.\n- Perform risk assessments of pesticides under field-realistic conditions, especially for substances affecting foraging behavior.\n- Assess foraging behavior and colony fitness parameters, such as the production of new queens, for neonicotinoids and other insecticides targeting the nicotinic acetylcholine receptor."
   },
   "657": {
     "answer_llm": "Future research should investigate the residue concentrations of imidacloprid and its metabolites affecting honeybees, focusing on continuous exposure at field-relevant levels. It should also compare these levels with no-adverse-effect thresholds to assess the link between imidacloprid seed-dressing and the bee malady. Furthermore, studies should examine the metabolites of imidacloprid in sunflower pollen and nectar for their toxicity to honeybees and analyze field-collected samples for residue concentrations.",
     "answer_rev1": "No specific recommendations for the future are presented",
     "rev1": "ER",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   },
   "663": {
     "answer_llm": "Future research should prioritize identifying secondary endpoints sensitive to insecticide effects that are relevant for honeybee colony performance and survival. This includes exploring the relationship between HDA concentration and overwintering strength, as well as the broader implications of insecticides on honeybee health. Understanding these relationships is crucial for evaluating the ecological and economic risks associated with pesticide use.",
     "answer_rev1": "The authors encourage future studies aimed at study the effects of other stressors on bee colony to use indicators like GOX-activity and hemolymph titres of vitellogenin, as they can tell more about colony vitality than the mere numbers of bees and brood cells.",
     "rev1": "ER",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "- Investigate the molecular mechanisms underlying the influence of juvenile hormone analogues on HDA-synthesis in nurse bees.\n- Develop secondary endpoints that are sensitive to insecticide classes and relevant for long-term colony performance and survival.\n- Explore the relationship between HDA-concentration in bee head extracts and overwintering strength as a potential indicator for the study of insect growth regulator effects on bee colonies."
   },
   "370": {
     "answer_llm": "Future research should investigate the co-exposure of honeybees to pesticides and bio-aggressors, examining how these interactions influence honeybee health and behavior. This includes studying the effects of asymptomatic pathogens on pesticide toxicity and vice versa, to enhance pesticide risk assessment protocols. Furthermore, research should focus on the mechanisms linking *Varroa* infestation with foraging behavior and pesticide effects, the impact of weather on bee homing success, and the necessity for comprehensive risk assessments of pesticides considering bioagressor infestations. Employing the ED approach could also enhance predictions regarding the effects of *Varroa* and climatic conditions.",
     "answer_rev1": "The effect of seson as possible source of variation of ED20 needs to be addressed in further studies.",
     "rev1": "FS",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "1. Investigate how the sanitary condition of bee colonies, particularly *Varroa destructor* infestation, modulates the effects of pesticides on bee homing success.\n2. Explore the underlying mechanisms of the interaction between *Varroa* mite infestation, precocity of foraging, and pesticide effects.\n3. Assess the influence of weather conditions, particularly low ambient temperatures, on the homing success of bees exposed to *Varroa* and pesticides.\n4. Conduct a thorough risk assessment of plant protection products considering bioagressor infestation of the colonies.\n5. Detail the environmental context when assessing sublethal effects in field conditions, using the ED approach to predict the impact of *Varroa* infestation and climatic context."
   },
   "371": {
     "answer_llm": "Future research directions should focus on the effects of insecticides on bumblebee behavior, particularly their foraging habits and homing capabilities, as well as their development in environments with treated plants. This includes adapting experimental methods specifically for bumblebees and comparing their responses to those of honey bees.",
     "answer_rev1": "The paper does not report any future research directions",
     "rev1": "FS",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No future research directions were suggested."
   }
 }

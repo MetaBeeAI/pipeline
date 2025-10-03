@@ -1,0 +1,53 @@
+{
+  "QUESTIONS": {
+    "bee_and_pesticides.bee_species": {
+      "user_answer_positive": "Honey Bee",
+      "user_answer_negative": "Apis mellifera (although probably correct) was not actually written in this paper, despite being included in the references. They didn't specify further.",
+      "user_reason_positive": "Honey Bee is the only species mentioned in the paper.",
+      "user_reason_negative": "",
+      "user_rating": 8
+    },
+    "bee_and_pesticides.pesticides": {
+      "user_answer_positive": "The pesticide used in the study was thiamethoxam, with doses of 88.2 g a.s./ha for maize and 12.6 g a.s./ha for oilseed rape. The exposure method involved placing bee colonies adjacent to treated fields during the flowering period, and the duration of exposure was throughout this flowering period.",
+      "user_answer_negative": "",
+      "user_reason_positive": "The study primarily used thiamethoxam as the pesticide, with specific doses and exposure methods detailed in the text. The exposure method involved placing bee colonies adjacent to treated fields during the flowering period of crops, and the duration of exposure was throughout this flowering period. Additionally, the study also mentioned the use of metalaxyl-M and fludioxonil in conjunction with thiamethoxam, but thiamethoxam was the main focus regarding its effects on honey bees.",
+      "user_reason_negative": "",
+      "user_rating": 9
+    },
+    "bee_and_pesticides.additional_stressors": {
+      "user_answer_positive": "No, the texts do not mention any additional stressors or combinations used. They primarily discuss exposure to neonicotinoid insecticides without reference to other stressors.",
+      "user_answer_negative": "",
+      "user_reason_positive": "All referenced texts consistently indicate that no additional stressors such as temperature, parasites, pathogens, or nutritional stress were mentioned. The focus across the texts is primarily on the effects of neonicotinoid insecticides, specifically thiamethoxam and imidacloprid, and their application methods and doses. There is no information provided regarding any other stressors or their specific doses, exposure methods, or durations.",
+      "user_reason_negative": "",
+      "user_rating": 9
+    },
+    "experimental_methodology": {
+      "user_answer_positive": "The paper utilized experimental methodologies such as splitting honey bee colonies, assessing brood development, monitoring hive weight at two-hourly intervals, and collecting samples of bees and plant materials for residue analysis.",
+      "user_answer_negative": "Not very clear on how insecticides are assessed.",
+      "user_reason_positive": "The experimental methodologies used in the paper involved direct manipulation and observation of honey bee colonies in field trials. This included splitting colonies, assessing brood development, monitoring hive weight, and collecting samples of bees and plant materials for residue analysis. The study focused on the biological effects of exposure to treated crops rather than statistical methods.",
+      "user_reason_negative": "",
+      "user_rating": 7
+    },
+    "discussion.significance": {
+      "user_answer_positive": "The paper underscores the importance of honey bees to both ecological balance and agricultural productivity, detailing the concerning trends in their health and population decline. It stresses the need for further research and action to mitigate the factors affecting bee health, which is crucial for sustaining pollination services.",
+      "user_answer_negative": "Highlights the presence of neonics in crops where bees are foraging, as a component of their health decline.",
+      "user_reason_positive": "The paper discusses the critical role of honey bees in ecosystems and agriculture, emphasizing the alarming decline in their populations and health. This decline poses significant ecological and economic threats, making it essential for the field to address the various factors contributing to this issue, such as parasites, pesticides, and environmental changes.",
+      "user_reason_negative": "",
+      "user_rating": 8
+    },
+    "discussion.future_research": {
+      "user_answer_positive": "Future research should focus on conducting in-use field trials to monitor honey bee colonies exposed to neonicotinoid seed treated crops throughout the bee season and during the overwintering period, while also integrating laboratory data with field studies to better understand the realistic exposure and behavior of bees regarding pesticide use under normal agronomical conditions.",
+      "user_answer_negative": "",
+      "user_reason_positive": "The discussion highlights the necessity for future research to bridge the gap between laboratory findings and real-world conditions. It suggests that studies should not only monitor honey bee colonies exposed to neonicotinoid seed treated crops over extended periods but also integrate laboratory data with field trials to assess realistic exposure and behavior of bees under normal agricultural practices. This comprehensive approach will enhance understanding of the risks associated with pesticide use.",
+      "user_reason_negative": "",
+      "user_rating": 8
+    },
+    "discussion.limitations": {
+      "user_answer_positive": "The paper identifies limitations such as the complexity of long-term field trials, challenges in finding suitable trial sites, difficulties in achieving sufficient replication for robust statistical analysis, and high colony loss during trials. It also emphasizes the inadequacy of laboratory data alone for risk assessment, underscoring the importance of field trials to understand real-world risks.",
+      "user_answer_negative": "",
+      "user_reason_positive": "The paper discusses several limitations and barriers to research, including the complexity of conducting long-term field trials, challenges in site selection and control, difficulties in achieving sufficient replication for statistical analysis, and high colony loss during trials. Additionally, it highlights the issue of relying on laboratory data for risk assessment, which does not accurately reflect real-world exposure and behavior of bees, indicating a need for more realistic field studies to understand the true impact of neonicotinoids on honey bee populations.",
+      "user_reason_negative": "",
+      "user_rating": 10
+    }
+  }
+}

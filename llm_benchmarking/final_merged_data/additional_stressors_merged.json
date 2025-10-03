@@ -1,48 +1,58 @@
 {
   "594": {
     "answer_llm": "Yes, the study used additional stressors: non-optimal ambient temperatures (26 \u00b0C and 38 \u00b0C) and imidacloprid (0 ppb, 5 ppb, and 20 ppb). The exposure method was feeding imidacloprid-tainted sugar ad libitum, and the duration of exposure was 15 days.",
-    "answer_rev1": "Yes, the study used additional stressors: non-optimal ambient temperatures (26 \u00b0C and 38 \u00b0C)",
+    "answer_rev1": "non-optimal ambient temperatures (26 \u00b0C and 38 \u00b0C)",
     "rev1": "AJ",
     "rev1_rating": 6,
     "answer_rev2": "Yes, they tested the effect of additional temperature stress.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Temperature stress: 26\u00b0C, 32\u00b0C, 38\u00b0C; 15 days.",
+    "answer_llm2": "1. Temperature stress: 26\u00b0C, 32\u00b0C, 38\u00b0C; applied continuously for 15 days."
   },
   "592": {
     "answer_llm": "No specific details about the dose, exposure method, or duration of exposure for additional stressors such as temperature, parasites, pathogens, or nutrition stress were provided in the texts.",
-    "answer_rev1": "No specific details about the dose, exposure method, or duration of exposure for additional stressors such as temperature, parasites, pathogens, or nutrition stress were provided in the texts.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "No additional stressors were tested.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "083": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The exposure method was through clothianidin-treated turf, with a duration of five days for initial effects and two weeks for further evaluation, but no specific doses or durations for additional stressors were provided.",
-    "answer_rev1": "No additional stressors or combinations were mentioned in the text.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "No additional stressors or combinations were mentioned in the text. The exposure method was through clothianidin-treated turf, with a duration of five days for initial effects and two weeks for further evaluation, but no specific doses or durations for additional stressors were provided.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "070": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on doses, exposure methods, or durations of exposure for any additional stressors.",
-    "answer_rev1": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on doses, exposure methods, or durations of exposure for any additional stressors.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on doses, exposure methods, or durations of exposure for any additional stressors.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "071": {
     "answer_llm": "No specific additional stressors, doses, exposure methods, or durations of exposure are mentioned in the text.",
-    "answer_rev1": "Captan is a pesticide.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 5,
     "answer_rev2": "No specific additional stressors, doses, exposure methods, or durations of exposure are mentioned in the text.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "082": {
     "answer_llm": "No, the text does not mention any additional stressors or their details.",
@@ -51,205 +61,262 @@
     "rev1_rating": 10,
     "answer_rev2": "No, the text does not mention any additional stressors or their details.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "076": {
     "answer_llm": "Yes, additional stressors such as varroa mites, adverse weather conditions, and exposure to contaminated pollen and nectar were mentioned. However, the texts do not provide specific details on the dose, exposure method, or duration of exposure for these stressors.",
-    "answer_rev1": "Yes, additional stressors such as varroa mites, adverse weather conditions, and exposure to contaminated pollen and nectar were mentioned. However, the texts do not provide specific details on the dose, exposure method, or duration of exposure for these stressors.",
+    "answer_rev1": "varroa mites, adverse weather conditions, and exposure to contaminated pollen and nectar were mentioned. However, the texts do not provide specific details on the dose, exposure method, or duration of exposure for these stressors.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "Yes, additional stressors such as varroa mites, adverse weather conditions, and exposure to contaminated pollen and nectar were mentioned. However, the texts do not provide specific details on the dose, exposure method, or duration of exposure for these stressors.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Nosema spp. infection; 2. Varroa mite infestation: Level of infestation determined",
+    "answer_llm2": "1. Nosema spp. infection: Analysis for presence of Nosema ceranae and Nosema apis, samples collected in July 2011.\n2. Varroa mite infestation: Level of infestation determined, samples collected in July and October 2011."
   },
   "586": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text.",
-    "answer_rev1": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "Additional stressors were not explicitly tested, but they discuss that the effect of pesticides was similar across sites, despite that they covered a range of different habitats, suggesting that they aimed at testing additional stressors. However, they also state that the sample size for testing among-site-effects was low.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "No additional stressors were tested",
+    "answer_llm2": "No additional stressors were tested"
   },
   "589": {
     "answer_llm": "Yes, additional stressors were used: chronic exposure to clothianidin (1 ppb) and inoculation with the parasite *Nosema ceranae* (approximately 130,000 spores). The exposure method for clothianidin was through contaminated sugar water, and the duration of exposure was monitored for 30 days after treatment.",
-    "answer_rev1": "Yes, additional stressors were  the parasite *Nosema ceranae* (approximately 130,000 spores).",
+    "answer_rev1": "parasite *Nosema ceranae* (approximately 130,000 spores).",
     "rev1": "AJ",
     "rev1_rating": 7,
     "answer_rev2": "Yes, they tested if infections with Nosema ceranae influenced the effect of clothianidin exposure.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Parasite stress: Nosema ceranae infection, 130,000 spores per bee, oral inoculation, 30 days",
+    "answer_llm2": "1. Parasite stress: Nosema ceranae infection, 130,000 spores per bee, oral inoculation, 30 days"
   },
   "591": {
     "answer_llm": "No additional stressors or combinations were mentioned in the texts. The doses of sulfoxaflor were 2.4 ppb, 10 ppb, and 250 ppb, applied via a sucrose solution, with durations of exposure of one hour or 45 minutes after feeding, depending on the experiment.",
-    "answer_rev1": "No additional stressors or combinations were mentioned in the texts. The doses of sulfoxaflor were 2.4 ppb, 10 ppb, and 250 ppb, applied via a sucrose solution, with durations of exposure of one hour or 45 minutes after feeding, depending on the experiment.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "No additional stressors were tested.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "074": {
     "answer_llm": "No, the texts do not mention any additional stressors (like temperature, parasites, pathogens, or nutritional stress) or provide details on their dose, exposure method, or duration of exposure.",
-    "answer_rev1": "No, the texts do not mention any additional stressors (like temperature, parasites, pathogens, or nutritional stress) or provide details on their dose, exposure method, or duration of exposure.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "No, the texts do not mention any additional stressors (like temperature, parasites, pathogens, or nutritional stress) or provide details on their dose, exposure method, or duration of exposure.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "080": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used, nor does it provide information on dose, exposure method, or duration of exposure for any additional stressor.",
-    "answer_rev1": "No, the text does not mention any additional stressors or combinations used, nor does it provide information on dose, exposure method, or duration of exposure for any additional stressor.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "No, the text does not mention any additional stressors or combinations used, nor does it provide information on dose, exposure method, or duration of exposure for any additional stressor.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "075": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text.",
-    "answer_rev1": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "072": {
     "answer_llm": "Information not found in the provided text.",
-    "answer_rev1": "Information not found in the provided text.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "Information not found in the provided text.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "584": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used, nor does it provide information on doses, exposure methods, or durations for any additional stressors.",
-    "answer_rev1": "No, the text does not mention any additional stressors or combinations used, nor does it provide information on doses, exposure methods, or durations for any additional stressors.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 10,
     "answer_rev2": "No additional stressors were tested.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "583": {
     "answer_llm": "Yes, the study used neonicotinoid pesticides (thiamethoxam and clothianidin) as additional stressors, with doses ranging from 0 to 140 ng/g (ppb) in the food. The exposure method involved feeding the bees this dosed food for up to 8 days. Additionally, continuous light (LL) was used as a stressor in combination with neonicotinoid exposure.",
-    "answer_rev1": "Additionally, continuous light (LL) was used as a stressor in combination with neonicotinoid exposure.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "AJ",
     "rev1_rating": 7,
     "answer_rev2": "No additional stressors were tested.",
     "rev2": "LH",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "300": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used.",
-    "answer_rev1": "No, the text does not mention any additional stressors or combinations used.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No additional stressors were tested"
   },
   "799": {
     "answer_llm": "Yes, thiamethoxam (a neonicotinoid) was used as an additional stressor. The doses reported are 20 ng g\u207b\u00b9 in a sucrose solution and an average exposure of 66.23 \u00b1 1.82 ng over a 14-day period. The exposure method was via a syringe, and the duration of exposure was 12 to 14 days, depending on the fragment.",
-    "answer_rev1": "There were no additional stressors during this study",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "798": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, or nutritional stress) were mentioned in the text. The pesticides were administered at doses of 0.001 ng a.i./\u03bcL for thiamethoxam and 0.018 ng a.i./\u03bcL for picoxystrobin, with continuous oral exposure for five days.",
     "answer_rev1": "Picoxystrobin was an additional stressor to the main insecticide thiamethoxam.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "810": {
     "answer_llm": "Yes, temperature was used as an additional stressor in the study, with exposures at low, mid, and high temperatures. However, specific doses, exposure methods, and durations of exposure for the temperature stressor are not detailed in the text.",
-    "answer_rev1": "Temperature was used as an additional stressor with bees exposed to low (21C), mid (27C) and high temperature (30C) for each experiment described previously.",
+    "answer_rev1": "Temperature: low (21C), mid (27C) and high temperature (30C) for each experiment.",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Temperature stress: 21\u00b0C, 27\u00b0C, and 30\u00b0C; applied continuously during the experiment.",
+    "answer_llm2": "1. Temperature stress: 21\u00b0C, 27\u00b0C, and 30\u00b0C; applied continuously during the experiment."
   },
   "295": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The exposure method was through sugar syrup and pollen, with a dose of 11,300 \u03bcg/L for syrup and 4250 \u03bcg/kg for pollen, and the duration of exposure was 6 weeks.",
-    "answer_rev1": "No additional stressors or combinations were mentioned in the text. The exposure method was through sugar syrup and pollen, with a dose of 11,300 \u03bcg/L for syrup and 4250 \u03bcg/kg for pollen, and the duration of exposure was 6 weeks.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "294": {
     "answer_llm": "Yes, imidacloprid was used as an additional stressor. The dose was 2% (v/v) in the diet, with an expected concentration of 0.7 ng mL\u207b\u00b9. The exposure method was through diet from the third to the sixth day of larval development. No other stressors were mentioned.",
-    "answer_rev1": "There were no additional stressors.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "303": {
     "answer_llm": "Yes, the study used imidacloprid as an additional stressor in combination with chronic bee paralysis virus (CBPV). The dose was 66.9 ng/bee, the exposure method was acute oral treatment, and the duration of exposure was 96 hours.",
     "answer_rev1": "Honeybees were also infected with chronic bee paralysis virus (CBPV) to look at the effect of imidacloprid on virus levels. Honeybees were infected with 4.3 x 100,000 genomic copies via in a volume of 500 ul of sucrose solution. Exposure was less than 24 h.",
     "rev1": "NN",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "793": {
     "answer_llm": "Yes, dinotefuran was used as an additional stressor. The exposure method involved treating bees with dinotefuran dissolved in a 50% sterile sucrose solution after a 2-hour starvation period. The doses used were various concentrations of dinotefuran (0.09375, 0.1875, 0.375, 0.75, 1.5, 3 mg/L), and the duration of exposure was 48 hours after treatment.",
     "answer_rev1": "No additional stressors were used in this study",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "794": {
     "answer_llm": "Yes, the additional stressor used was the pesticide thiacloprid, with doses of 0.17 \u03bcg (low) and 0.80 \u03bcg (high). The exposure method was force-feeding in a sucrose solution, and the duration of exposure was monitored for 24 and 48 hours after feeding. No other stressors were mentioned.",
-    "answer_rev1": "There were no additional stressors listed in the text.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "304": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on doses, exposure methods, or duration of exposure for any additional stressors.",
     "answer_rev1": "No additional stressors",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1, 
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "302": {
     "answer_llm": "Yes, low dose cadmium stress was mentioned as an additional stressor, but specific details about the dose, exposure method, and duration of exposure were not provided. Other than that, no additional stressors were reported in the text fragments.",
-    "answer_rev1": "There were no additional stressors mentioned in the text.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "298": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The only stressor discussed is thiamethoxam, with doses of 15 ppb and 45 ppb, or 1/1000, 1/100, and 1/10, depending on the study. The exposure method was primarily spraying, and the duration of exposure was typically 48 hours, but no other stressors were indicated.",
-    "answer_rev1": "No additional stressors or combinations were mentioned in the text. The only stressor discussed is thiamethoxam exposure via spray.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "296": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text. The only stressor discussed was thiamethoxam, which was administered at various concentrations for a duration of 17 days.",
-    "answer_rev1": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text. The only stressor discussed was thiamethoxam, which was administered at various concentrations for a duration of 17 days.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "299": {
     "answer_llm": "Yes, an acaricide (amtyrase) was used as an additional stressor, applied via fumigation, but the specific dose, exposure method, and duration of exposure are not provided in the text.",
-    "answer_rev1": "Although acaricide was applied to the hives to limit the risk of mite infestations, there were no other additional stressors other than the two pesticides used in the study.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "787": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text. The doses were azadirachtin at 240\u2013480 ng queen^{-1} and imidacloprid at 672 ng queen^{-1}, but the duration of exposure was not specified.",
-    "answer_rev1": "No additional stressors were listed in the text",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
     "rev1_rating": 7,
     "answer_rev2": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the text.",
     "rev2": "AB",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "789": {
     "answer_llm": "Yes, insecticides were used as additional stressors. The doses were imidacloprid (0.37 g a.i. L\u207b\u00b9), malathion (0.7 g a.i. L\u207b\u00b9), and spinosad (0.059 g a.i. L\u207b\u00b9). The exposure method was through a feeder with a diet of 50% distilled water and 50% sucrose, but the duration of exposure is not specified in the text. No other stressors like temperature, parasites, or nutritional stress were mentioned.",
-    "answer_rev1": "No additional stressors were mentioned in the text.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "216": {
     "answer_llm": "No additional stressors or combinations were used in the experiment. The exposure method was leaf dipping for 10-15 seconds, followed by 48 hours in a controlled environment.",
-    "answer_rev1": "There are no additional stressors.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "KW",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "227": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on dose, exposure method, or duration of exposure for any additional stressors.",
-    "answer_rev1": "The authors state no additional stressors",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "KW",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "218": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, or other chemicals) were mentioned in the text. Specific details about dose, exposure method, and duration of exposure for any additional stressor were not provided.",
@@ -258,28 +325,36 @@
     "rev1_rating": 1,
     "answer_rev2": "Nutrition type of Osmia bicornis pollen is the additional stressor. The nutrion treatments are: C - Cistus ladanifer; S - Salix; BQ - Brassicaceae/Quercus; M - Mixture of the three diversity pollen",
     "rev2": "FS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "422": {
     "answer_llm": "Yes, additional stressors (neonicotinoid pesticides) were used. The doses were 50 ppb Imidacloprid and 4,500 ppb Thiacloprid, with 50 ppm acetone as a solvent. The exposure method was through sugar syrup feeding, and the duration of exposure was 6 weeks.",
-    "answer_rev1": "Although not experimentally altered, the authors do investigate seasonal effects on VOC reception",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "KW",
     "rev1_rating": 1,
     "answer_rev2": "No, additional stressors were not included in this study.",
     "rev2": "BN",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "221": {
     "answer_llm": "Yes, additional stressors were mentioned, including food shortage and pesticide exposure (clothianidin, beta-cyfluthrin, thiram). The doses for the pesticides were specified (10 g clothianidin, 2 g beta-cyfluthrin, and 4 g thiram per kg of seeds), and the exposure method was through seed coating. However, the duration of exposure is not specified, and other stressors like temperature, parasites, or nutritional stress are not detailed.",
-    "answer_rev1": "No additional stressors were directly tested, although there are some complications of note; climatic and weather conditions were not directly manipulated, but were noted and accounted for. Similarly, food availability was not directly regulated, but does vary between field/semi-field environments, and was suggested to induce nutritional stress",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "KW",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "226": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text; only thiacloprid was administered for 6 days at controlled conditions.",
-    "answer_rev1": "There are no additional stressors listed",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "KW",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "430": {
     "answer_llm": "Information not found in the provided text.",
@@ -288,7 +363,9 @@
     "rev1_rating": 5,
     "answer_rev2": "The study also considered data on agriculture and land use change, types of agriculture, density of honeybee hives, temperature and precipitation as additional factors",
     "rev2": "BN",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "436": {
     "answer_llm": "Yes, the study used a combination of neonicotinoid insecticide (imidacloprid) exposure and artificial nectar starvation as additional stressors. The dose of imidacloprid was 5 ppb, and the exposure method involved feeding bees with treated sucrose solution. The duration of exposure was 7 days for chronic bees and 2 days for acute exposure groups.",
@@ -297,49 +374,63 @@
     "rev1_rating": 7,
     "answer_rev2": "Yes, the study used a combination of neonicotinoid insecticide (imidacloprid) exposure and artificial nectar starvation as additional stressors.",
     "rev2": "BN",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "233": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The study focused on thiamethoxam as the primary stressor, with doses of 2.5 ng/bee (high), 0.377 ng/bee (low), and 0.091 ng/bee (low). The exposure method involved feeding a sucrose solution with the pesticide, and the duration of exposure was 45 minutes after feeding. No details on other stressors were provided.",
     "answer_rev1": "No additional stressors were tested",
     "rev1": "KW",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "421": {
     "answer_llm": "Yes, an additional stressor (heat-inactivated *Escherichia coli*) was used to challenge the immune system. The dose was 1 \u03bcl injected on day two of the exposure phase. The exposure method involved injection, and the duration of exposure to thiacloprid was three days. However, no other additional stressors were mentioned in the texts.",
-    "answer_rev1": "There are no additional stressors tested in the paper",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "KW",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "277": {
     "answer_llm": "Yes, additional stressors were used in the form of different pollen diets alongside imidacloprid exposure. The dose of imidacloprid was 5 ppb, with exposure durations of 17 days (IMD-A) or 37 days (IMD-B). The pollen diets varied in composition, simulating different foraging conditions. No other stressors like temperature, parasites, or pathogens were mentioned.",
     "answer_rev1": "Pollen diversity was an additional stressor - bees were ded with a diet comprising mostly pollen derived from heather, rockrose or a diet combining both in equal measure",
     "rev1": "KW",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "276": {
     "answer_llm": "Yes, the study used neonicotinoids (imidacloprid) as an additional stressor. The doses were 0, 1.5, 5, 10, and 25 ppb in syrup and 0, 0.3, 1.7, 3.3, and 8.3 ppb in pollen. The exposure method was chronic exposure over 18 days.",
-    "answer_rev1": "There were no additional stressors",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "KW",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "427": {
     "answer_llm": "Yes, additional stressors such as wind speed and temperature were considered. The dose of the neonicotinoid clothianidin was five parts per billion (ppb), and the exposure method involved a sucrose solution spiked with this chemical. The duration of exposure was over 5 weeks.",
-    "answer_rev1": "Temperature and windspeed are noted to be significant, and were assessed for the impact they have on foraging. However, these were not experimentally altered, but rather assessed and controlled for - as such, they are not truly additional stressors",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "KW",
     "rev1_rating": 3,
     "answer_rev2": "No additional stressors were studied",
     "rev2": "BN",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "222": {
     "answer_llm": "Yes, additional stressors were used, including cold exposure (1\u00b0C for 0, 2, or 4 hours) and pesticide exposure (imidacloprid at doses of 1, 10, and 100 ppm via topical application, and a cocktail of pesticides at 0.33x, 2x, and 10x the median concentration in wax).",
-    "answer_rev1": "They additionally investigated susceptibility to acute cold stress - refrigerating bees at 4 degrees C for 0, 2 or 4 hours.",
+    "answer_rev1": "acute cold temperature stress, 4 degrees C for 0, 2 or 4 hours.",
     "rev1": "KW",
     "rev1_rating": 2,
     "answer_rev2": "Cold exposuer at 4\u00b0C for 0, 2 or 4 hours after pesticide exposure is the additional stressors.",
     "rev2": "FS",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_rev3": "1. Cold stress: 4\u00b0C, exposure for 2 and 4 hours",
+    "answer_llm2": "1. Cold stress: 4\u00b0C, exposure for 2 and 4 hours\n2. Temperature stress: 1\u00b0C for 0, 2, or 4 hours; applied by placing caged bees in a covered container in a refrigerator."
   },
   "434": {
     "answer_llm": "Yes, the study used imidacloprid (10 \u03bcg/L) and flupyradifurone (0.1, 1, and 10 \u03bcg/L) as stressors. The exposure method was through ingestion in syrup, and the duration of exposure was 28 days for the insecticides. However, no additional stressors like temperature, parasites, or nutritional stress were mentioned.",
@@ -348,13 +439,17 @@
     "rev1_rating": 10,
     "answer_rev2": "No additional stressors like temperature, parasites, or nutritional stress were mentioned.",
     "rev2": "BN",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "237": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, nor do they provide details on dose, exposure method, or duration of exposure for any additional stressors.",
     "answer_rev1": "The authors list no additional stressors",
     "rev1": "KW",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "736": {
     "answer_llm": "Yes, additional stressors were used: clothianidin and propiconazole. The doses were 0.25 to 8 ng/bee for clothianidin in *A. mellifera*, 0.5 to 16 ng/bee in *B. terrestris*, and 0.2 to 16 ng/bee in *O. bicornis*. The dose for propiconazole was established at 7 \u03bcg/bee. The exposure method was oral, through feeding solutions, but the duration of exposure is not explicitly mentioned. However, no other stressors like temperature, parasites, or nutritional stress were detailed in the texts.",
@@ -363,7 +458,9 @@
     "rev1_rating": 4,
     "answer_rev2": "Fully crossed experiments in which the bees were exposed to both clothianidin and propiconazole",
     "rev2": "HS",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "731": {
     "answer_llm": "Yes, the additional stressors used were neonicotinoid insecticides and the *V. destructor* mite. However, the text does not specify the dose, exposure method, or duration of exposure for these stressors.",
@@ -372,49 +469,63 @@
     "rev1_rating": 8,
     "answer_rev2": "Varroa destructor",
     "rev2": "HS",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "No additional stressors were tested"
   },
   "733": {
     "answer_llm": "Yes, additional stressors were used: the pesticide Thiamethoxam and the pathogen Nosema apis. The exposure method involved simultaneous exposure during larval development and until sexual maturity, but specific doses and duration of exposure are not detailed in the text.",
-    "answer_rev1": "Thiamethoxam and the pathogen Nosema apis",
+    "answer_rev1": "pathogen Nosema apis",
     "rev1": "AB",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "1. Pathogen stress: *Nosema apis* infection, 10,000 spores per bee, oral inoculation, 15 days"
   },
   "732": {
     "answer_llm": "Yes, additional stressors were used: imidacloprid (20 \u03bcg/kg for 14 days) and high temperature (41 \u00b0C for 6 h).",
-    "answer_rev1": "Yes, additional stressors were used: imidacloprid (20 \u03bcg/kg for 14 days) and high temperature (41 \u00b0C for 6 h).",
+    "answer_rev1": "high temperature (41 \u00b0C for 6 h).",
     "rev1": "AB",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Temperature stress: 25\u00b0C for 30 min, 30\u00b0C for 30 min, 35\u00b0C for 30 min, 41\u00b0C for 6 hours",
+    "answer_llm2": "1. Temperature stress: 25\u00b0C for 30 min, 30\u00b0C for 30 min, 35\u00b0C for 30 min, 41\u00b0C for 6 hours; applied in a growth chamber under 60% RH and light conditions."
   },
   "729": {
     "answer_llm": "No, the text does not indicate any additional stressors or combinations used. The only stressor mentioned is sulfoxaflor, with doses of 5, 10, and 50 \u03bcg dm\u207b\u00b3, and exposure durations ranging from at least 12 hours to five days.",
-    "answer_rev1": "No additional stressors were mentioned",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AB",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "447": {
     "answer_llm": "The text does not mention any additional stressors or provide details on dose, exposure method, or duration of exposure for any additional stressors.",
     "answer_rev1": "The inoculation with Melissococcus plutonius at D0 was used as an additional stressor in the treatments. Another stressors it was the mixture of pesticides.",
     "rev1": "RT",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "449": {
     "answer_llm": "Yes, additional stressors were used, specifically imidacloprid (a chemical stressor) and parasite treatments (Apistan strips and Fumagillin B). The doses of imidacloprid were 400 \u00b5g/kg and 200 \u00b5g/kg, with exposure methods including direct treatment of hives over specified durations: low dosing for 4 weeks and high dosing for 9 weeks. The parasite treatment occurred from Oct 5 to Nov 20, 2010. The text does not mention other stressors like temperature or pathogens.",
-    "answer_rev1": "No, no additional stressors were used in the study.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "RT",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "446": {
     "answer_llm": "Yes, additional stressors were used: Imidacloprid (10nM in 50% sucrose) and 670nm light (15 mins twice daily at 40mW/cm\u00b2). The duration of exposure for Imidacloprid was from Day 0 to Day 10, and the light exposure was also during this period.",
     "answer_rev1": "Additional stressor used was the 670nm light (15 mins twice daily at 40mW/cm\u00b2) from Day 0 to Day 10.",
     "rev1": "RT",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "441": {
     "answer_llm": "No, the study did not use any additional stressors such as temperature, parasites, pathogens, or other chemicals. The focus was solely on the effects of imidacloprid and glyphosate, with specific doses and exposure methods provided for these pesticides.",
     "answer_rev1": "The study evaluated the mixture of imidacloprid and glyphosate at the same concentrations used in the isolated pesticides.",
     "rev1": "RT",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "377": {
     "answer_llm": "Yes, an additional stressor (IMD) was used at a concentration of 100 nM (about 26 ppb). The exposure method involved replacing feeders with a solution containing IMD, but the exact duration of exposure is not specified. However, no other stressors such as temperature, parasites, pathogens, or nutritional stress were mentioned in the texts.",
@@ -423,7 +534,9 @@
     "rev1_rating": 1,
     "answer_rev2": "No additional stressors or combinations were mentioned in the text.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "384": {
     "answer_llm": "Yes, additional stressors (chemicals) were used, specifically spinetoram and flusilazole. The dose was 25 ppm for spinetoram and 12 ppm for flusilazole, with exposure through spraying. The duration of exposure is not explicitly stated. However, no other stressors like temperature, parasites, pathogens, or nutritional stress were mentioned in the text.",
@@ -432,49 +545,63 @@
     "rev1_rating": 4,
     "answer_rev2": "Yes, additional stressors (fungicides) were used, specifically two DMI fungicides (propiconazole and flusilazole) and a fungicide with a different mode of action containing pyraclostrobin and boscalid. The experiment evaluated how these fungicides can potentiate the effects of two insecticides (acetamiprid and spinetoram) on honey bees. The doses used were: Propiconazole (Topas\u00ae) 613 ppm, Flusilazole (Nustar\u00ae) 12 ppm, and Pyraclostrobin + boscalid (Pristine\u00ae) 2432 ppm. The exposure method involved applying 1 \u03bcL of treatment solution to the dorsal side of anesthetized bees, with an exposure duration of 48 hours.",
     "rev2": "SA",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "385": {
     "answer_llm": "Yes, acetone was used as an additional stressor, with concentrations ranging from 0.0000125% to 8%. The exposure method was through feeding 10 \u00b5L of the solution, and the duration of exposure was monitored with mortality recorded at 4, 24, 48, and 72 hours after dosing.",
-    "answer_rev1": "No additional stressor was used in the study.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "RT",
     "rev1_rating": 1,
     "answer_rev2": "No additional stressors or combinations were mentioned in the text.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "378": {
     "answer_llm": "Yes, the additional stressor identified was clothianidin, with a dose of 100 ng g\u207b\u00b9 in the pollen. The exposure method was feeding the bees contaminated pollen, and the duration of exposure was 96 hours. Other stressors like temperature, parasites, or nutritional stress were not mentioned in detail.",
-    "answer_rev1": "No additional stressor was assessed.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "RT",
     "rev1_rating": 1,
     "answer_rev2": "No additional stressors or combinations were mentioned in the text.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "368": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text.",
-    "answer_rev1": "The combination of both pesticides (acetamiprid and difenoconazole) was tested.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "RT",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "443": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, or nutritional stress) were mentioned in the texts. The only additional stressor identified was temperature (28 \u00b1 2\u00b0C) in one fragment, but no details on exposure method or duration were provided.",
-    "answer_rev1": "No additional stressors were evaluated in the study.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "RT",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "445": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The only stressors discussed are Imidacloprid (5-day exposure) and 670nm light (varied exposure durations).",
     "answer_rev1": "Bumblebees were also exposed to 670nm light for varying durations (0.5, 1, 5, or 60 minutes) to assess its effects on respiration.",
     "rev1": "RT",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "380": {
     "answer_llm": "Yes, the study evaluated additional stressors including parasitic infection (*Nosema ceranae*) and pesticide exposure. However, it does not specify the dose, exposure method, or duration of exposure for these stressors.",
     "answer_rev1": "Parasitic infection detection (Nosema ceranae) was used as an additional stressor.",
     "rev1": "RT",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "374": {
     "answer_llm": "Yes, the study used plant protection products (PPPs) as an additional stressor, specifically a mixture of thiacloprid and prochloraz. However, the text does not specify the dose, exposure method, or duration of exposure for these stressors.",
@@ -483,7 +610,9 @@
     "rev1_rating": 1,
     "answer_rev2": "The paper investigates the interaction between two stressors: pesticide exposure and low-nutritional pollen sources. The additional stressor, low-nutritional pollen, was introduced through three treatments: tents with maize (poor resources), tents with 50% maize + 50% flower mixture (high resources), and tents with Phacelia tanacetifolia (intermediate resources). Bee colonies were placed in these tents for a 13-day exposure period, from the day of placement until the end of colony monitoring.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "381": {
     "answer_llm": "Yes, additional stressors were used, specifically antibiotics (tetracycline) and pesticides (thiacloprid and fluvalinate). The doses were 400 \u00b5g/ml for tetracycline, 35 mg/l for thiacloprid, and 400 mg/l for fluvalinate. The exposure method for tetracycline was through feeding in sterile sugar water, and for pesticides, it was through sugar syrup. However, the duration of exposure is not consistently specified across the texts.",
@@ -492,94 +621,122 @@
     "rev1_rating": 8,
     "answer_rev2": "Yes, additional stressors were used. Bees were exposed to the antibiotic tetracycline at 400 \u00b5g/mL in sugar water for 5 days, and to PBO at 0.1% in syrup, alone or with pesticides. Bees were also given gut homogenates for 5 days to modify microbiota.",
     "rev2": "SA",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "053": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used. It only discusses the effects of insecticides on honey bee larvae, detailing the doses and exposure methods related to those insecticides only.",
     "answer_rev1": "Any additional stressors were evaluated in this paper.",
     "rev1": "SA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "052": {
     "answer_llm": "Yes, the text mentions that synergistic effects may occur when thiacloprid exposure is combined with other stressors such as pathogens and nutritional deficiencies. The dose used was 1/5 of the LC\u2085\u2080 of thiacloprid, but the text does not specify the exact duration of exposure or the method of exposure for the additional stressors.",
-    "answer_rev1": "No. In the experiment, the effects of both acute and chronic exposure to thiacloprid were evaluated. No additional stressors were assessed.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "SA",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "948": {
     "answer_llm": "Yes, pyrethrin was used as an additional stressor. The dose was 0.045 g A.I. per L, applied once by spraying. The plants were kept outdoors for a week before reintroduction to the cages, indicating a potential exposure duration of at least one week. No other stressors were mentioned.",
-    "answer_rev1": "Any additional stressors were evaluated in this paper.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "SA",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "949": {
     "answer_llm": "Yes, additional stressors were used, including neonicotinoid insecticide (clothianidin), fungicide (thiram), and pyrethroid insecticide (beta-cyfluthrin). The dose for clothianidin was 23.15 \u03bcg per oilseed rape seed. The exposure method was seed treatment before planting, and the duration of exposure was approximately eight weeks.",
-    "answer_rev1": "The only stressor considered by the authors in their experiment was the neonicotinoid insecticide clothianidin.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "SA",
     "rev1_rating": 1,
     "answer_rev2": "Multiple pesticides are used, but all in the same treatment, so they cannot be considered individually.",
     "rev2": "HS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "056": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, nor do they provide details on dose, exposure method, or duration of exposure for any additional stressors.",
-    "answer_rev1": "No additional stressors were used.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "SA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "943": {
     "answer_llm": "Yes, the additional stressor used was Spinosad, with concentrations of 0, 10, 20, 40, and 80 mg/liter. The exposure method was through a Y-tube choice apparatus, and the duration of exposure was approximately 35 minutes. No other stressors were mentioned.",
-    "answer_rev1": "No additional stressors were examined in the experiment.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "SA",
     "rev1_rating": 1,
     "answer_rev2": "No additional stressors used.",
     "rev2": "HS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "737": {
     "answer_llm": "Yes, additional stressors were used, specifically pesticide solutions (PBO, TPP, DEM) applied before the main pesticide treatment. The exposure method was spraying, and the duration of exposure was 48 hours for mortality assessment.",
     "answer_rev1": "Interactions between imidacloprid and 7 other pesticides in binary comparions.",
     "rev1": "HS",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "738": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, nor do they provide details on dose, exposure method, or duration of exposure for any additional stressors.",
-    "answer_rev1": "The study tested pesticides in isolation and combiantion. The additional stressor is multiple pesticides.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "HS",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "734": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used, nor does it provide information on dose, exposure method, or duration of exposure for any additional stressors.",
-    "answer_rev1": "The interactions between multiple pesticides were tested.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "HS",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "015": {
     "answer_llm": "No, the text does not indicate any additional stressors or combinations used. The focus was solely on the effects of TMX exposure, with specific doses and methods outlined for both acute and chronic exposure.",
-    "answer_rev1": "No additional stressors",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
     "rev1_rating": 9,
     "answer_rev2": "No, the text does not indicate any additional stressors or combinations used. The focus was solely on the effects of TMX exposure, with specific doses and methods outlined for both acute and chronic exposure.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,  
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "012": {
     "answer_llm": "Yes, additional stressors were used: imidacloprid, amitraz, and zymosan A. The doses were 40 and 200 \u03bcg/ml for imidacloprid and amitraz, and 4 \u03bcg/ml for zymosan A. The exposure method involved dissolving these in WH12 medium and adding them to tissue culture plates. The duration of exposure was not explicitly stated, but the pesticides were sonicated for 30 minutes before use.",
     "answer_rev1": "Zymosan A, an acticator of the Toll pathway (immune activator) was used as an additional stressor. The effect of Zymosan A can be separated because the experiments was run with its addition and without. Zymosan was added 1 ug/ml. The exposure method involved dissolving Zymosan A in WH2 medium and adding them to tissue culture plates with hemolymph. Duration is for 18h.",
     "rev1": "AH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "Zymosan A, an acticator of the Toll pathway (immune activator) was used as an additional stressor. Duration is for 18h.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "889": {
     "answer_llm": "Yes, the additional stressor used was imidacloprid, with doses of 30 ppb and 300 ppb, administered orally via sucrose syrups over a duration of 5 weeks. No other stressors were mentioned.",
     "answer_rev1": "Sucrose concentration. Diets were either 20% or 50%(m/m) sucrose solution.",
     "rev1": "AH",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "887": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used, such as temperature, parasites, pathogens, or nutritional stress. It only details the preparation and analysis of insecticide doses and their effects on bumble bees.",
     "answer_rev1": "No additional stressors mentioned",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "014": {
     "answer_llm": "No, the texts do not mention any additional stressors or provide details on dose, exposure method, or duration of exposure for any additional stressor.",
@@ -588,25 +745,30 @@
     "rev1_rating": 10,
     "answer_rev2": "No, the texts do not mention any additional stressors or provide details on dose, exposure method, or duration of exposure for any additional stressor.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "886": {
     "answer_llm": "No additional stressors or combinations were used in the experiments. The only stressor mentioned was flupyradifurone, administered at three concentrations (1.2 \u03bcg ai/bee, 120 ng ai/bee, and 12 ng ai/bee) via a sugar solution for one hour at 28\u00b0C and 70% relative humidity.",
     "answer_rev1": "No additional stressors in this study",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "888": {
     "answer_llm": "Yes, additional stressors were used: heat (45\u00b0C), cold (4\u00b0C), and imidacloprid (0.28 ng/ml). The exposure method involved feeding bees different diets and then subjecting them to these stress treatments in the lab. The duration of exposure to feeding treatments was 72 hours, and bees were exposed to abiotic stress treatments continuously after the first five days post-emergence.",
-    "answer_rev1": "The additional stressor of diet was included in the study in reference to the pesticide exposure. The imidacloprid exposed bees were all kept at 31 degrees, but were fed one of four diets - sucrose solution (50% v:v), local honey from Louisiana (%0% v:v), high-fructose corn syrup (50% v:v) and  high-fructose corn syrup with 10% locally sourced pollen (50% v:v).",
+    "answer_rev1": "heat (45\u00b0C), cold (4\u00b0C), and diet",
     "rev1": "AH",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "1. Temperature stress: 45\u00b0C and 4\u00b0C, applied in the lab, duration not specified.\n2. Chemical stress: Imidacloprid at 0.48 ng/ml, applied in the lab, duration not specified."
   },
   "892": {
     "answer_llm": "Yes, the additional stressor used was imidacloprid, with doses of 0.125, 2.50, 5.10, 10, and 20 ng/bee. The exposure method was thoracic application, and the duration of exposure was 15, 30, or 60 minutes before testing. No other stressors were mentioned.",
-    "answer_rev1": "No other stressors were mentioned.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No additional stressors were tested"
   },
   "007": {
     "answer_llm": "Yes, additional stressors were used: honeybees were co-exposed to the insecticide thiamethoxam (2.94 ng/bee/day) and the fungicide boscalid (196.5 ng/bee/day). The exposure method involved chronic feeding through sucrose syrup. The duration of exposure is not specified, but it is implied to be continuous during the experiment.",
@@ -615,70 +777,80 @@
     "rev1_rating": 1,
     "answer_rev2": "the parasite *Nosema ceranae* and the pesticides thiamethoxam and boscalid.",
     "rev2": "EA",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_llm2": "No additional stressors were tested."
   },
   "009": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The only stressors discussed were the pesticides spinosad and imidacloprid, with specific doses and exposure methods provided.",
-    "answer_rev1": "No additional stressors included",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "008": {
     "answer_llm": "No additional stressors or combinations were mentioned in the texts. The focus was solely on the effects of insecticides on bees.",
-    "answer_rev1": "No additional stressors mentioned",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "006": {
     "answer_llm": "No additional stressors or combinations were mentioned in the texts. The focus was solely on the effects of specific insecticides on honeybee locomotion and mortality, with specified doses and exposure methods for those insecticides.",
-    "answer_rev1": "No additional stressors",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
     "rev1_rating": 10,
     "answer_rev2": "No additional stressors or combinations were mentioned in the texts. The focus was solely on the effects of specific insecticides on honeybee locomotion and mortality, with specified doses and exposure methods for those insecticides.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "No additional stressors were tested."
   },
   "884": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The studies focused solely on the effects of pesticides on honeybees.",
-    "answer_rev1": "No additional stressors or combinations were mentioned in the text. The studies focused solely on the effects of pesticides on honeybees.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested."
   },
   "883": {
     "answer_llm": "No additional stressors or combinations were mentioned in the texts. The focus was solely on the effects of imidacloprid and thiamethoxam on bumblebees, with specific details on their doses and exposure methods provided for these pesticides only.",
-    "answer_rev1": "No additional stressors were included in the study.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "No additional stressors were tested"
   },
   "011": {
     "answer_llm": "Yes, additional stressors were used, including infestation with *Varroa destructor* and treatments with formic acid and oxalic acid. The dose of clothianidin was 3 ng/bee, administered through feeding with a sucrose solution for a duration of 24 hours.",
-    "answer_rev1": "No additional stressors. Clothianidin is the primary stressor.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "No additional stressors were tested."
   },
   "016": {
     "answer_llm": "Yes, additional stressors were used, including neonicotinoids (TMX and imidacloprid) and Varroa infestation. TMX was administered at doses of 1.96\u20132.90 ng/bee per day (chronic exposure), and imidacloprid at 5.98 ng/mL over a 13-week period. The exposure method involved feeding the bees these substances, and the duration varied from acute (short-term) to chronic (long-term) exposure.",
-    "answer_rev1": "No additional stressors. Colonies used to supply bees were checked and did not have measureable Varroa infestations. Light and temperature were also ruled out as additional stressors - suppl methods section.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
     "rev1_rating": 0,
     "answer_rev2": "The exposure method involved feeding the bees these substances, and the duration varied from acute (short-term) to chronic (long-term) exposure",
     "rev2": "EA",
-    "rev2_rating": 2
+    "rev2_rating": 2,
+    "answer_llm2": "No additional stressors were tested"
   },
   "885": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The exposure method was chronic feeding of honey bee colonies with a sublethal concentration of Closer\u00ae (0.0003 ppm) for 21 days.",
-    "answer_rev1": "No additional stressors mentioned.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No additional stressors were tested."
   },
   "010": {
     "answer_llm": "Yes, temperature was used as an additional stressor, with the arena heated to 45 \u00b0C. The exposure method was individual access to a thermal-visual arena, and the duration of exposure was three days with ten trials of three minutes each.",
-    "answer_rev1": "No additional stressors.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
     "rev1_rating": 0,
     "answer_rev2": "Yes, temperature was used as an additional stressor, with the arena heated to 45 \u00b0C. The exposure method was individual access to a thermal-visual arena, and the duration of exposure was three days with ten trials of three minutes each.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "003": {
     "answer_llm": "Yes, the additional stressors used were thiamethoxam and the parasite *C. bombi*. However, the texts do not specify the dose, exposure method, or duration of exposure for these stressors.",
@@ -687,139 +859,160 @@
     "rev1_rating": 4,
     "answer_rev2": "Yes, the additional stressors used were thiamethoxam and the parasite *C. bombi*.",
     "rev2": "EA",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_llm2": "1. Parasite stress: Crithidia bombi infection: 10,000 cells per bee, oral inoculation, 15 minutes followed by a 7-day establishment period."
   },
   "004": {
     "answer_llm": "Yes, acetamiprid was used as an additional stressor. The doses were 0.452, 4.52, 45.2, 452, or 4520 ppb in pollen and 1.13, 11.3, 113, 1130, or 11,300 ppb in syrup. The exposure method involved feeding the microcolonies with acetamiprid-containing pollen or syrup, and the duration of exposure was six weeks.",
-    "answer_rev1": "No additional stressor noted. Acetamiprid is the insecticide used",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
     "rev1_rating": 1,
     "answer_rev2": "The exposure method involved feeding the microcolonies with acetamiprid-containing pollen or syrup, and the duration of exposure was six weeks.",
     "rev2": "EA",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "No additional stressors were tested"
   },
   "891": {
     "answer_llm": "Yes, quercetin was used as an additional stressor at doses of 37.8 mg/liter and 75.6 mg/liter in the diet before pesticide exposure. The text does not specify the exposure method or duration.",
     "answer_rev1": "Quercetin was used as an additional stressor - or rather as an amelioration, at doses of 37.8 mg/l, 75.6 mg/l and 151.2 mg/l, administered orally,  before pesticide exposure. The same methods were followed as for imidacloprid exposure. Lethal and sub-lethal effects measured.",
     "rev1": "AH",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "No additional stressors were tested"
   },
   "005": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used. They primarily discuss exposure to neonicotinoid insecticides without reference to other stressors.",
-    "answer_rev1": "No additional stressors as the fungicides were applied along with the thiamethoxam in the seed dressing.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
     "rev1_rating": 10,
     "answer_rev2": "No, the texts do not mention any additional stressors or combinations used. They primarily discuss exposure to neonicotinoid insecticides without reference to other stressors.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "No additional stressors were tested"
   },
   "002": {
     "answer_llm": "No, the texts do not specify any additional stressors or their details such as dose, exposure method, or duration.",
-    "answer_rev1": "The text is clear that Elado contains two insecticides, but the effects of these two compounds cannot be separated based on the experimental design. So is not additional stressor. Statistical testing was used to look at the effcet of weather conditions (temperature, humidity, rainfall and windspeed). So these can be considered as additional stressors.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "AH",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_llm2": "No additional stressors were tested."
   },
   "890": {
     "answer_llm": "Yes, the text mentions the combination of insecticide exposure (imidacloprid and fipronil) and thermal stress as additional stressors. The dose for imidacloprid was 3.5 \u00d7 10\u207b\u00b9 ng per bee, and the exposure method included topical treatment and consumption of sucrose solutions. The duration of exposure for the choice assay was 24 hours.",
     "answer_rev1": "Heat stress was examined as an additional stressor to pesticide exposure - heat ramped up by 0.5 degree to determine CTmax.",
     "rev1": "AH",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "1. Temperature stress: Reduction in thermal tolerance ($CT_{max}$) by 0.8\u00b0C to 1.5\u00b0C when combined with insecticide exposure; specific temperature ranges not provided."
   },
   "437": {
     "answer_llm": "Yes, the additional stressor mentioned is soil-applied imidacloprid, which affects the ground-nesting bee *Eucera pruinosa*. However, the text does not specify the dose, exposure method, or duration of exposure.",
-    "answer_rev1": "No additional stressors were included",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "BN",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_llm2": "No additional stressors were tested"
   },
   "669": {
     "answer_llm": "Yes, the study used temperature (35 \u00b1 1 \u00b0C) and nutritional stress (food deprivation for 2 hours) as additional stressors. The exposure method involved feeding bees contaminated syrup for 2 hours.",
-    "answer_rev1": "No additional stressors were used in the study",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "BN",
     "rev1_rating": 3,
     "answer_rev2": "No additional stressors were studied",
     "rev2": "ER",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "No additional stressors were tested"
   },
   "666": {
     "answer_llm": "Yes, additional stressors such as \u03bb-cyhalothrin and imidacloprid were used, but specific details about the dose, exposure method, and duration of exposure for these stressors are not provided. Other stressors like temperature, parasites, pathogens, or nutritional stress were not mentioned.",
-    "answer_rev1": "Other stressors like temperature, parasites, pathogens, or nutritional stress were not mentioned.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "BN",
     "rev1_rating": 7,
     "answer_rev2": "No additional stressors are included in the study",
     "rev2": "ER",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "No additional stressors were tested"
   },
   "662": {
     "answer_llm": "No additional stressors or combinations were mentioned. The exposure method involved feeding clothianidin-infused pollen patties, with doses starting at 4.9 ppb and reduced to 2.0 ppb by week 5, continuing at that level until week 12, or a duration of 30 days in other studies.",
-    "answer_rev1": "No additional stressors or combinations were mentioned.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "BN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No additional stressors were tested"
   },
   "023": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the studies. The exposure methods involved the application of Success pesticide with specific doses and durations, primarily focusing on its effects on honey bees.",
-    "answer_rev1": "No additional stressors or combinations (like temperature, parasites, pathogens, other chemicals, or nutrition stress) were mentioned in the studies. The exposure methods involved the application of Success pesticide with specific doses and durations, primarily focusing on its effects on honey bees.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "077": {
     "answer_llm": "Yes, the additional stressor used was the pesticide Imidacloprid (ID), with doses of 0 ppb, 5 ppb, or 200 ppb administered through bee food. The exposure duration was one month. No other additional stressors were mentioned.",
-    "answer_rev1": "No other additional stressors were mentioned.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "EA",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "No additional stressors were tested"
   },
   "013": {
     "answer_llm": "Yes, additional stressors were used: imidacloprid (at doses of 25 \u03bcg/L and 50 \u03bcg/L) and the parasite *T. mercedesae*. The exposure method was through diet (sugar syrup), and the duration of exposure was at least several days (12 days mentioned in one fragment).",
-    "answer_rev1": "Yes, additional stressors were used: imidacloprid (at doses of 25 \u03bcg/L and 50 \u03bcg/L) and the parasite *T. mercedesae*. The exposure method was through diet (sugar syrup), and the duration of exposure was at least several days (12 days mentioned in one fragment).",
+    "answer_rev1": "the parasite *T. mercedesae*. the duration of exposure was at least several days.",
     "rev1": "EA",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "No additional stressors were tested."
   },
   "022": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, such as temperature, parasites, pathogens, other chemicals, or nutrition stress. The only stressor discussed is thiamethoxam, which was administered through a 50% sucrose solution after a 3-hour starvation period, with exposure durations of 1, 4, and 8 days.",
-    "answer_rev1": "No, the texts do not mention any additional stressors or combinations used, such as temperature, parasites, pathogens, other chemicals, or nutrition stress. The only stressor discussed is thiamethoxam, which was administered through a 50% sucrose solution after a 3-hour starvation period, with exposure durations of 1, 4, and 8 days.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "073": {
     "answer_llm": "Yes, neonicotinoid pesticides (e.g., imidacloprid, thiacloprid) were used as additional stressors. However, the texts do not provide specific details on the dose, exposure method, or duration of exposure for these stressors or any other additional stressors.",
-    "answer_rev1": "Yes, neonicotinoid pesticides (e.g., imidacloprid, thiacloprid) were used as additional stressors. However, the texts do not provide specific details on the dose, exposure method, or duration of exposure for these stressors or any other additional stressors.\n-In this case, yes, the insecticides are the additional stressors rather than the primary stressor.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "020": {
     "answer_llm": "Yes, the additional stressor used was dietary imidacloprid at a dose of 10 ppb, delivered through feeder syrup, over a duration of 42 days. No other stressors like temperature, parasites, or pathogens were mentioned in the texts.",
-    "answer_rev1": "No other stressors like temperature, parasites, or pathogens were mentioned in the texts.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "EA",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "No additional stressors were tested."
   },
   "018": {
     "answer_llm": "Information not found in the provided text.",
-    "answer_rev1": "Information not found in the provided text.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "EA",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "No additional stressors were tested"
   },
   "017": {
     "answer_llm": "The study primarily focused on thiamethoxam as the stressor, with a dose of 1.34 ng in a 20-\u03bcl sucrose solution. No additional stressors like temperature, parasites, or other chemicals were mentioned, and the duration of exposure was not specified.",
-    "answer_rev1": "The study primarily focused on thiamethoxam as the stressor, with a dose of 1.34 ng in a 20-\u03bcl sucrose solution. No additional stressors like temperature, parasites, or other chemicals were mentioned, and the duration of exposure was not specified.",
+    "answer_rev1": "No additional stressors were tested.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "019": {
     "answer_llm": "Yes, additional stressors were used: infection with 1000 DWV genome copies, nicotine at 50 ppm, and exposure to a sub-optimal temperature of 32\u00b0C. The exposure method included dietary administration for DWV and nicotine, and temperature control in a thermostatic cabinet. The duration of exposure for DWV and nicotine is until death after emergence, while temperature exposure was continuous.",
-    "answer_rev1": "Yes, additional stressors were used: infection with 1000 DWV genome copies, and exposure to a sub-optimal temperature of 32\u00b0C. The exposure method included dietary administration for DWV and nicotine, and temperature control in a thermostatic cabinet. The duration of exposure for DWV and nicotine is until death after emergence, while temperature exposure was continuous.",
+    "answer_rev1": "infection with 1000 DWV genome copies, and exposure to a sub-optimal temperature of 32\u00b0C. The exposure method included dietary administration for DWV and nicotine, and temperature control in a thermostatic cabinet. The duration of exposure for DWV and nicotine is until death after emergence, while temperature exposure was continuous.",
     "rev1": "EA",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. DWV infection: 1000 genome copies per bee, administered through diet before pupation, duration not specified.\n2. Nicotine exposure: 50 ppm in sugar solution, administered at adult stage, duration not specified.\n3. Temperature stress: 32\u00b0C, applied to adult bees in a thermostatic cabinet, duration not specified."
   },
   "021": {
     "answer_llm": "Information not found in the provided text.",
-    "answer_rev1": "Information not found in the provided text.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "593": {
     "answer_llm": "No additional stressors were reported in the study. The chemicals tested were imidacloprid (5 \u03bcg kg\u207b\u00b9 for six weeks) and thymol (250 \u03bcg kg\u207b\u00b9 for four weeks), both applied separately and in combination.",
-    "answer_rev1": "Yes, they tested how exposure to thymol/Apiguard (or potentially lack of treatment against Varroa) influenced the effect of imidacloprid.",
+    "answer_rev1": "exposure to thymol/Apiguard",
     "rev1": "LH",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "No additional stressors were tested."
   },
   "532": {
     "answer_llm": "Yes, additional stressors were used, specifically the pesticide acetamiprid. The dose ranged from 50-500 mg/L as field-realistic concentrations, with an LC50 value of 188.49 mg/L for exposure over 72 hours. The exposure method was through the diet of honeybee larvae, consuming contaminated pollen and nectar.",
@@ -828,31 +1021,38 @@
     "rev1_rating": 0,
     "answer_rev2": "No other stressos were used",
     "rev2": "ER",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "521": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used, nor does it provide details on their dose, exposure method, or duration of exposure.",
-    "answer_rev1": "No additional stressors were mentioned.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "519": {
     "answer_llm": "Yes, additional stressors were used: imidacloprid (5 \u03bcg/kg) and thymol (via Apiguard\u00ae), with combinations of both. The exposure method was through sugar syrup and Apiguard\u00ae, and the duration of exposure for imidacloprid was 6 weeks. The presence of Varroa destructor and small hive beetles were also noted as stressors, but specific exposure details for these were not provided.",
-    "answer_rev1": "Yes, the focus of the study was to assess separate as well as combined effects of the neonicotinoid imidacloprid and the acardicide thymol (formulation Apiguard).",
+    "answer_rev1": "the acardicide thymol (formulation Apiguard).",
     "rev1": "LH",
     "rev1_rating": 10,
     "answer_rev2": "Yes, the additional stressor thymol (Apiguard, 250 g/kg of thymol) was investigated alone and in combination with imidacloprid (5 \u03bcg/kg for 6 weeks). Two weeks after the imidacloprid treatment started, colonies were given one aluminium tray containing 50 g of Apiguard gel (250 g/kg of thymol) that was renewed after two weeks for another two-week period. (4 weeks total exposure duration of thymol)",
     "rev2": "ER",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_llm2": "No additional stressors were tested."
   },
   "518": {
     "answer_llm": "Yes, additional stressors were used: chromium (Cr) in combination with clothianidin and propiconazole. However, the text does not specify the dose, exposure method, or duration of exposure for these stressors.",
-    "answer_rev1": "Yes, the study assessed how combined exposure to pesticides (the neonicotinoid insecticide clothianidin and the fungicide propiconazole) and a heavy metal (chromium) diffes from exposure to single compounds.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
     "rev1_rating": 9,
     "answer_rev2": "Yes, the effects of Cr(III) and the fungicide propiconazole were tested in combination with clothianidin. Bees were exposed via feeding for 2h. The volume of ingestion was calculated so that each bee received 0.74 ng of clothianidin, 7 ug of propiconazole, 0.039 ug of Cr, alone or in binary and tenarry mixtures. The effects of these acute oral exposures were assessed at 4, 24, 48, 72 and 96 h.",
     "rev2": "ER",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "520": {
     "answer_llm": "Yes, additional stressors were used, including nutritional stress (limited nectar availability) and the gut parasite Nosema ceranae. The doses and exposure methods varied: for example, FPF was administered at 375 ng/bee (oral exposure) and 4000 \u03bcg/kg (chronic oral exposure), with durations of exposure ranging from 3 days to 10 days depending on the study.",
@@ -861,117 +1061,148 @@
     "rev1_rating": 0,
     "answer_rev2": "No additional stressors are used",
     "rev2": "ER",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "516": {
     "answer_llm": "No additional stressors or combinations were used. The only stressor was imidacloprid at a dose of 125 \u03bcg L\u207b\u00b9, administered via feeding for a duration of 10 days.",
     "answer_rev1": "No additional stressors were tested.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "590": {
     "answer_llm": "No, the texts do not mention any additional stressors or combinations used, nor do they provide information on dose, exposure method, or duration of exposure for any additional stressors.",
-    "answer_rev1": "Yes, they test sulfoxaflor alone (in the formulation product Closer) and in combination with azoxystrobin (formulation product Amistar).",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "No additional stressors were tested"
   },
   "531": {
     "answer_llm": "Yes, additional stressors were used: imidacloprid (36 ng/bee) and melatonin (200 ng/bee). The exposure method was feeding the bees a sucrose-water solution, and the duration of exposure for the IMI+MT group was 24 hours after the initial melatonin feeding.",
-    "answer_rev1": "No additional stressors were tested, but melatonin  resembles one in this study design.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
     "rev1_rating": 9,
     "answer_rev2": "Yes, an additional stressor was used: melatonin at a dose of 200 ng/bee. Melatonin was administered orally in a 2 mL solution for 20 minutes, either alone or in combination with imidacloprid (24h before imidacloprid exposure).",
     "rev2": "ER",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "585": {
     "answer_llm": "Yes, additional stressors were used, including insecticides (imidacloprid at 50 ppb and thiacloprid at 4500 ppb) mixed in sugar syrup with 0.005% acetone. The exposure method involved daily administration of the syrup for seven days.",
     "answer_rev1": "No additional stressors were tested.",
     "rev1": "LH",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "No additional stressors were tested"
   },
   "514": {
     "answer_llm": "No additional stressors or combinations (like temperature, parasites, pathogens, or nutritional stress) are mentioned in the text. The focus was solely on the effects of insecticides on bumble bees, with specific doses and exposure methods provided for those insecticides.",
     "answer_rev1": "No additional stressors were tested.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "No additional stressors were tested"
   },
   "513": {
     "answer_llm": "No, the text does not mention any additional stressors or combinations used, nor does it provide details on dose, exposure method, or duration of exposure for any additional stressors.",
-    "answer_rev1": "No, there are no additional stressors.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "525": {
     "answer_llm": "No additional stressors were used; only imidacloprid was tested for 8 days.",
     "answer_rev1": "No additional stressors were tested.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "522": {
     "answer_llm": "Yes, additional stressors were used: cold stress (9 \u00b0C for 2 hours) and neonicotinoid pesticide exposure (10 ppb imidacloprid continuously in nectar).",
-    "answer_rev1": "Yes, they test how additional cold stress influence the effect of imidacloprid.",
+    "answer_rev1": "cold temperature stress influence the effect of imidacloprid.",
     "rev1": "LH",
     "rev1_rating": 10,
     "answer_rev2": "Although the experimental design in the Methods section describes testing the effects of imidacloprid and cold both individually and in combination, no results are reported on the single and combined effects. Therefore, no additional stressors are addressed in the results.",
     "rev2": "ER",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Temperature stress: 9 \u00b0 C for 2 hours, cycle repeated twice over 48 hours.",
+    "answer_llm2": "1. Temperature stress: 9\u00b0C for 2 hours, applied via Peltier thermoelectric heat pumps, cycle repeated twice over 48 hours."
   },
   "523": {
     "answer_llm": "No, the studies primarily focused on the effects of a low dose of imidacloprid (1 ppb) on bumblebee foraging behavior without mentioning any additional stressors such as temperature, parasites, or pathogens. The exposure method was through a sucrose solution, but the duration of exposure is not specified.",
-    "answer_rev1": "No additional stressors were tested.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "524": {
     "answer_llm": "Yes, additional stressors (neonicotinoids IMD and TMX) were used. The doses were 6.12 pg/bee IMD and 0.69 pg/bee TMX, administered via food rewards during conditioning. The duration of exposure was acute, occurring within 30 seconds of consumption.",
-    "answer_rev1": "No additional stressors were tested.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
     "rev1_rating": 0,
     "answer_rev2": "No additional stressors were tested",
     "rev2": "ER",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "512": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The only stressor discussed was spinosad, with doses of 0.2, 0.8, and 8.0 mg kg\u207b\u00b9, and the exposure method was through feeding the colonies spinosad in pollen. The duration of exposure was from weeks 2 to 5 of a 10-week monitoring period.",
     "answer_rev1": "No additional stressors were tested.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "515": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The focus was solely on the effects of thiamethoxam.",
-    "answer_rev1": "No additional stressors were mentioned.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "LH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "No additional stressors were tested"
   },
   "672": {
     "answer_llm": "No, the texts do not mention any additional stressors or provide details on dose, exposure method, or duration of exposure for any additional stressors. The focus is primarily on the effects of the pesticides Sivanto Prime and Quadris Top.",
-    "answer_rev1": "Yes, the study investigate the effects of the fungicide alone and in combination with the insecticide",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "ER",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   },
   "658": {
     "answer_llm": "No additional stressors or combinations were mentioned in the text. The studies primarily focused on the effects of dinotefuran on honeybee behavior and physiology, without including other stressors.",
-    "answer_rev1": "No additional stressors or combinations were mentioned in the text.",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "ER",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested."
   },
   "663": {
     "answer_llm": "Yes, additional stressors were used: treatments against *Varroa destructor* with 60% formic acid (2 mL/comb) and 3.5% oxalic acid (10-25 mL/colony). The exposure method was direct application to the colonies, but the duration of exposure is not specified.",
-    "answer_rev1": "no additional stressor was used howover all colonies (regardless treatements or control) were treated with formic acid against the mite Varroa according to normal beekeeping practice.",
+    "answer_rev1": "all colonies (regardless treatements or control) were treated with formic acid against the mite Varroa according to normal beekeeping practice.",
     "rev1": "ER",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "1. Parasite stress: *Varroa destructor* treatment with 60% formic acid, 2 mL/comb, applied on August 22 and August 26; 3.5% oxalic acid, 10\u201325 mL/colony, applied on December 20."
   },
   "370": {
     "answer_llm": "Yes, additional stressors were used, including *Varroa destructor* mites, *Nosema* spp., DWV, and temperature. However, the text does not provide specific details on the dose, exposure method, or duration of exposure for these stressors.",
     "answer_rev1": "Four additional stressors (e.g. temperature, Varroa, DWV and Nosema) were included in the experimental design but considered as continuous variables. The infestation level was based on the number of Varroa, virus and Nosema detected in bees from the colony origin of the tested bees. The temperature value is based on the mean temperature recorded during 24-h period.",
     "rev1": "FS",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Varroa destructor infestation: 0 to 81 mites per sticky board, artificial infestation using brood combs, 4 to 6 weeks.\n2. Nosema spp. infection: 3000 \u00d7 10^4 spores per bee, applied to colonies, duration not specified.\n3. Deformed Wing Virus (DWV) infection: Viral levels per bee ranging from 1.60 \u00d7 10^7 to 1.00 \u00d7 10^13, applied to colonies, duration not specified.\n4. Temperature stress: 16\u00b0C, 20\u00b0C, 24\u00b0C, and 26\u00b0C; applied during the 24-hour homing period.",
+    "answer_llm2": "1. Varroa destructor infestation: 0 to 81 mites per sticky board, artificial infestation using brood combs, 4 to 6 weeks.\n2. Nosema spp. infection: 3000 \u00d7 10^4 spores per bee, applied to colonies, duration not specified.\n3. Deformed Wing Virus (DWV) infection: Viral levels per bee ranging from 1.60 \u00d7 10^7 to 1.00 \u00d7 10^13, applied to colonies, duration not specified.\n4. Temperature stress: 16\u00b0C, 20\u00b0C, 24\u00b0C, and 26\u00b0C; applied during the 24-hour homing period."
   },
   "369": {
     "answer_llm": "No, the text does not specify any additional stressors or their details.",
-    "answer_rev1": "In the first experiment it was included an additional stressor, the presence or absence of artificial water",
+    "answer_rev1": "No additional stressors were tested",
     "rev1": "FS",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "No additional stressors were tested.",
+    "answer_llm2": "No additional stressors were tested"
   }
 }

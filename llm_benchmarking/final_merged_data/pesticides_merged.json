@@ -6,7 +6,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Bees were orally exposed to imidacloprid (0, 5 or 20 ppb) via sucrose solution that was provided ad libitum. Exposure lasted for 15 days.",
     "rev2": "LH",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_rev3": "1. Imidacloprid: 0 ppb, 5 ppb, and 20 ppb, oral exposure via sugar solution, 15 days",
+    "answer_llm2": "1. Imidacloprid: 0 ppb, 5 ppb, and 20 ppb, oral exposure via sugar solution, 15 days"
   },
   "593": {
     "answer_llm": "The pesticides used in the study were Imidacloprid (IMI) at a dose of 5 \u03bcg\u00b7kg\u207b\u00b9 and Thymol (THY) at a concentration of 250 g\u00b7kg\u207b\u00b9. The exposure method for IMI was through a sucrose solution, and THY was applied using Apiguard\u00ae. The duration of exposure for both pesticides was six weeks, from January 20 to February 24, 2017.",
@@ -15,7 +17,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Bees were chronically exposed to imidacloprid (5 ug/kg), or control treatment (no pesticide) via sucrose solution provided inside the hive. Provision of imidacloprid lasted for 6 weeks, but exposure was expected to occur longer. This treatment was crossed with thymol treatment  (commerical formulation Apiguard, 250 g a.i./kg) in a full factorial design with four hives per treatment group: imidacloprid, imidacloprid + thymol, thymol, control.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Imidacloprid: 5 ug/kg, oral exposure via sucrose solution, 6 weeks; 2. Thymol: 250 g/kg, field exposure via Apiguard preparation, 6 weeks",
+    "answer_llm2": "1. Imidacloprid: 5 \u03bcg\u00b7kg\u207b\u00b9, oral exposure via sucrose solution, 6 weeks\n2. Thymol: 250 g\u00b7kg\u207b\u00b9, field exposure via Apiguard\u00ae preparation, 6 weeks"
   },
   "592": {
     "answer_llm": "The pesticide used in the study was clothianidin, with a dose of 400 g L\u207b\u00b9 for the field study and 0.56 ng g^{-1} for the semi-field study. The exposure method involved seeds coated with clothianidin, and the duration of exposure was from early September 2014 to May 2016.",
@@ -24,7 +28,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Bees were exposed to the pesticide treatments when foraging from oilseed rape that was either untreated (control) or had been seed-coated with clothianidin (commercial formulation: Modesto, 400 g clothianidin/L of seed treatment). Exposure was established through residue analysis of the pollen provision, which contained  0.56 ng clothianidin/g in the clothianidin treatment, whereas the control treatment did not contain any detectable levels.",
     "rev2": "LH",
-    "rev2_rating": 2
+    "rev2_rating": 2,
+    "answer_rev3": "1. Clothianidin: field exposure via treated oilseed rape (OSR) seeds coated with clothianidin, 0.56 ng/g, semi-field exposure",
+    "answer_llm2": "1. Clothianidin: field exposure via treated oilseed rape (OSR) seeds coated with clothianidin 400 g L\u207b\u00b9; 0.56 ng g\\(^{-1}\\), semi-field exposure."
   },
   "077": {
     "answer_llm": "The pesticide used in the study was Imidacloprid (ID), with doses of 0, 5, and 200 ppb. The exposure method involved feeding the bees sugar-water syrup and a mixture of pollen and commercial bee food containing these doses. The duration of exposure was 1 month.",
@@ -33,7 +39,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticide used in the study was Imidacloprid (ID), with doses of 0, 5, and 200 ppb. The exposure method involved feeding the bees sugar-water syrup and a mixture of pollen and commercial bee food containing these doses. The duration of exposure was 1 month.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Imidacloprid: 0, 5, and 200 ppb, oral exposure, 1 month",
+    "answer_llm2": "1. Imidacloprid: 5 ppb and 200 ppb, oral exposure via sugar-water syrup and pollen mixture, 1 month; 4.2 ppb and 196 ppb in syrup, oral exposure, 3 months"
   },
   "083": {
     "answer_llm": "The pesticides used in the study were clothianidin (0.45 kg AI ha\u207b\u00b9) and chlorantraniliprole (0.23 kg AI ha\u207b\u00b9). The exposure method involved applying these pesticides to turf, and the duration of exposure was six days.",
@@ -42,7 +50,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticides used in the study were clothianidin (0.45 kg AI ha\u207b\u00b9) and chlorantraniliprole (0.23 kg AI ha\u207b\u00b9). The exposure method involved applying these pesticides to turf, and the duration of exposure was six days.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Clothianidin: 0.45 kg AI/ha, field exposure via treated turf, 6 days; 2. Chlorantraniliprole: 0.23 kg AI ha, field exposure, 6 days",
+    "answer_llm2": "1. Clothianidin: 0.45 kg AI ha\u207b\u00b9, field exposure via treated turf, 6 days\n2. Chlorantraniliprole: 0.23 kg AI ha\u207b\u00b9, field exposure via treated turf, 6 days"
   },
   "070": {
     "answer_llm": "The pesticides used in the study were thiacloprid and clothianidin. The doses were: thiacloprid at 2.69 \u03bcg/mL, 6.72 \u03bcg/mL, and 26.91 \u03bcg/mL; clothianidin at 0.55 ng/mL, 1.38 ng/mL, and 5.52 ng/mL. The exposure method was oral, and the duration of exposure was 48 hours.",
@@ -51,7 +61,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticides used in the study were thiacloprid and clothianidin. The doses were: thiacloprid at 2.69 \u03bcg/mL, 6.72 \u03bcg/mL, and 26.91 \u03bcg/mL; clothianidin at 0.55 ng/mL, 1.38 ng/mL, and 5.52 ng/mL. The exposure method was oral, and the duration of exposure was 48 hours.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Thiacloprid: 2.69 ug/mL, 6.72 ug/mL, and 26.91 ug/mL, oral exposure, 48 hours; 2. Clothianidin: 0.55 ng/mL, 1.38 ng/mL, and 5.52 ng/mL, oral exposure, 48 hours",
+    "answer_llm2": "1. Thiacloprid: 2.69 \u03bcg/mL, 6.72 \u03bcg/mL, and 26.91 \u03bcg/mL, oral exposure, 48 hours\n2. Clothianidin: 0.55 ng/mL, 1.38 ng/mL, and 5.52 ng/mL, oral exposure, 48 hours"
   },
   "071": {
     "answer_llm": "The pesticides used in the study were thiamethoxam and captan. The doses were: thiamethoxam at low (10 ng/ml), medium (70 ng/ml), and high (1440 ng/ml); captan at low (100 ng/ml), medium (500 ng/ml), and high (2000 ng/ml). The exposure method involved feeding the larvae pesticide treatments via diet from the fourth day of larval development until they reached the pupal stage.",
@@ -60,7 +72,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticides used in the study were thiamethoxam and captan. The doses were: thiamethoxam at low (10 ng/ml), medium (70 ng/ml), and high (1440 ng/ml); captan at low (100 ng/ml), medium (500 ng/ml), and high (2000 ng/ml). The exposure method involved feeding the larvae pesticide treatments via diet from the fourth day of larval development until they reached the pupal stage.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Captan: 0.10 ng/ul, 0.50 ng/ul, 2.0 ng/ul, oral exposuret; 2. Thiamethoxam: 0.01 ng/ul, 0.07 ng/ul, 1.44 ng/ul, oral exposure; 3. Captan + Thiamethoxam: Captan at 2.0 ng/ul combined with Thiamethoxam at 0.01 ng/ul, 0.07 ng/ul, 1.44 ng/ul, oral exposure",
+    "answer_llm2": "1. Captan: 0.10 ng/ul, 0.50 ng/ul, 2.0 ng/ul, oral exposure, starting on Day 4 of larval development\n2. Thiamethoxam: 0.01 ng/ul, 0.07 ng/ul, 1.44 ng/ul, oral exposure, starting on Day 4 of larval development\n3. Captan + Thiamethoxam: Captan at 2.0 ng/ul combined with Thiamethoxam at 0.01 ng/ul, 0.07 ng/ul, 1.44 ng/ul, oral exposure, starting on Day 4 of larval development"
   },
   "082": {
     "answer_llm": "The pesticide used in the study was imidacloprid. The doses were 0.1 kg a.i./ha for leaf applications on beans, tomatoes, and passion fruit, 0.192 kg a.i./ha or 0.54 mg a.i./seed for beans (seed application), and 0.45 kg a.i./ha or 0.34 mg a.i./seed for sunflowers (seed application). The exposure methods included leaf and seed applications, with durations ranging from 1 to 5 applications over periods of 3 to 14 days.",
@@ -78,7 +92,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Pesticide treatments were imidacloprid, clothianidin, thiamethoxam and control (no pesticide) and bees were orally exposed via sugar solution. Several experiments were conducted: 1) to test accumulation in the brain and hemolymph, bees were exposed to 2.5 ppb of clothianidin or thiamethoxam during three days, 2) to test the relative acute toxicity, bees were exposed to 100 ppb of clothianidin, thiamethoxam or imidacloprid for 1-3 days, 3) to assess if chronic exposure to neonicorinois incrased seensitivity to subsequent exposure to toxic levels of clothianidin, bees were exposed to 2.5 ppb of imidacloprid thiamethoxam or clothianidin for 7 days after which the bees were exposed to 50 ppb of clothianidin for two days, 3) bumblebee colonies in the field were exposed to 2.5 ppb of thiamethoxam, imidacloprid, clothianidin or control (no pesticide) over 5 weeks.",
     "rev2": "LH",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Imidacloprid (IMD): 10 nM (2.1 ppb), oral exposure via sugar syrup, 3 days; 2. Clothianidin (CLO): 2.5 ppb, oral exposure via sugar syrup, 3 days; 3. Thiamethoxam (THX): 2.5 ppb, oral exposure via sugar syrup, 3 days; 4. Imidacloprid (IMD): 100 ppb, oral exposure via sugar syrup, 1-3 days; 5. Clothianidin (CLO): 100 ppb, oral exposure via sugar syrup, 1-3 days; 6. Thiamethoxam (THX): 100 ppb, oral exposure via sugar syrup, 1-3 days; 7. Imidacloprid (IMD): 2.5 ppb, oral exposure, 7 days; 8. Clothianidin (CLO): 2.5 ppb, oral exposure, 7 days; 9. Thiamethoxam (THX): 2.5 ppb, oral exposure, 7 days; 10. Imidacloprid (IMD): 10nM, oral exposure via syrup, 5 weeks; 11. Thiamethoxam (THX): 10nM, oral exposure via syrup, 5 weeks; 12. Clothianidin (CLO): 10nM, oral exposure via syrup, 5 weeks",
+    "answer_llm2": "1. Imidacloprid (IMD): 10 nM (2.1 ppb), oral exposure via sugar syrup, 3 days\n2. Clothianidin (CLO): 2.5 ppb, oral exposure via sugar syrup, 3 days\n3. Thiamethoxam (THX): 2.5 ppb, oral exposure via sugar syrup, 3 days\n4. Imidacloprid (IMD): 100 ppb, oral exposure via sugar syrup, 1-3 days\n5. Clothianidin (CLO): 100 ppb, oral exposure via sugar syrup, 1-3 days\n6. Thiamethoxam (THX): 100 ppb, oral exposure via sugar syrup, 1-3 days\n7. Imidacloprid (IMD): 2.5 ppb, oral exposure, 7 days\n8. Clothianidin (CLO): 2.5 ppb, oral exposure, 7 days\n9. Thiamethoxam (THX): 2.5 ppb, oral exposure, 7 days\n10. Imidacloprid (IMD): 10nM, oral exposure via syrup, 5 weeks\n11. Thiamethoxam (THX): 10nM, oral exposure via syrup, 5 weeks\n12. Clothianidin (CLO): 10nM, oral exposure via syrup, 5 weeks"
   },
   "589": {
     "answer_llm": "The pesticide used in the study was clothianidin at a dose of 1 ppb. The exposure method was through an ad-libitum supply of 60% sugar water solution contaminated with clothianidin, and the duration of exposure was 30 days, with fresh solutions renewed every third day.",
@@ -87,7 +103,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Bees had ad libitum access to sucrose solution with 1 ppb clothianidin, or without pesticide (control treatment), which was renewed every third day. The duration of the treatment was at least 10 days.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Clothianidin: 1 ppb, oral exposure",
+    "answer_llm2": "1. Clothianidin: 1 ppb, oral exposure via sugar water solution, renewed every third day."
   },
   "590": {
     "answer_llm": "The pesticides used in the study were sulfoxaflor (48 g a.i./ha) and azoxystrobin (250 g a.i./ha). Sulfoxaflor was applied five days before flowering, and azoxystrobin was applied at the start of the exposure phase. The exposure method involved spray application, and the duration of exposure was 26 days (from day 0 to day 25).",
@@ -96,7 +114,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Sulfoxaflor was applied to Phacelia tanacetifolia as commercial formulation (Closer) at a rate of 48 g a.i./ha. The fungicide azoxystrobin was applied 5 days later as formulation (Amistar) at a rate of 250 g a.i./ha. Sulfoxaflor was applied before flowering. The four treatment groups were sulfoxaflor, sulfoxaflor + azoxystrobin, azoxystrobin, and control (no pesticide treatment). Duration of exposure was 26 days.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Sulfoxaflor: 48 g a.i./ha, field exposure, applied 5 days before flowering; 2. Azoxystrobin: 250 g a.i./ha, field exposure, applied at the start of the exposure phase; residues of 3811 ppb (single treatment) and 4307 ppb (combined treatment with sulfoxaflor), analyzed 0-3 days after application",
+    "answer_llm2": "1. Sulfoxaflor: 48 g a.i./ha, field exposure, applied 5 days before flowering; residues of 74 ppb (single treatment) and 129 ppb (combined treatment with azoxystrobin), analyzed 5\u20138 days after application.\n2. Azoxystrobin: 250 g a.i./ha, field exposure, applied at the start of the exposure phase; residues of 3811 ppb (single treatment) and 4307 ppb (combined treatment with sulfoxaflor), analyzed 0\u20133 days after application."
   },
   "591": {
     "answer_llm": "The pesticide used in the study was sulfoxaflor. The doses were 2.4 ppb, 10 ppb, and 250 ppb in some experiments, and 5 ppb, 10 ppb, and 250 ppb in others. The exposure method involved feeding bees a sucrose solution containing the pesticide, and the duration of exposure was one hour after feeding in some cases and 45 minutes in others.",
@@ -105,7 +125,8 @@
     "rev1_rating": 10,
     "answer_rev2": "Bees in experiment 1 were orally exposed to sulfoxaflor via one drop of 10 uL sucrose solution, at one of the following concentrations: 0, 2.4, 10 and 250 ppb. In experiment 2, bumblebees were fed 18.85 uL of sucrose solution with either 0, 5 (totally 0.045 ng/bee), 10 (totally 0.091 ng/bee) or 250 (totally 2.5 ng/bee) ppb of sulfoxaflor. Exposure was direct/acute and the exact duration is not presented.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "answer_rev3": "1. Sulfoxaflor: 2.4, 5, 10, and 250 ppb, oral exposure, durations: 1 hour and 45 minutes",
+    "answer_llm2": "1. Sulfoxaflor: 2.4, 5, 10, and 250 \u03bcg dm\u207b\u00b3 (2.4 ppb, 5 ppb, 10 ppb, and 250 ppb); oral exposure; durations: 1 hour and 45 minutes."
   },
   "074": {
     "answer_llm": "The pesticides used in the study include:\n1. Deltamethrin - LC\u2085\u2080 for A. mellifera: 7.1 \u00d7 10\u207b\u2076 \u03bcg a.i. ml\u207b\u00b9; for P. helleri: 891.1 \u03bcg a.i. ml\u207b\u00b9.\n2. Imidacloprid - LC\u2085\u2080 for A. mellifera: 240.1 \u03bcg a.i. ml\u207b\u00b9; for P. helleri: 573.4 \u03bcg a.i. ml\u207b\u00b9.\n3. Ceronil (thiophanate-methyl + chlorothalonil) - LC\u2085\u2080 for A. mellifera: 1498.1 \u03bcg a.i. ml\u207b\u00b9; for P. helleri: 990.2 \u03bcg a.i. ml\u207b\u00b9.\n\nThe exposure method was oral, and the duration of exposure was 5 hours.",
@@ -114,7 +135,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticides used in the study include:\n1. Deltamethrin - LC\u2085\u2080 for A. mellifera: 7.1 \u00d7 10\u207b\u2076 \u03bcg a.i. ml\u207b\u00b9; for P. helleri: 891.1 \u03bcg a.i. ml\u207b\u00b9.\n2. Imidacloprid - LC\u2085\u2080 for A. mellifera: 240.1 \u03bcg a.i. ml\u207b\u00b9; for P. helleri: 573.4 \u03bcg a.i. ml\u207b\u00b9.\n3. Ceronil (thiophanate-methyl + chlorothalonil) - LC\u2085\u2080 for A. mellifera: 1498.1 \u03bcg a.i. ml\u207b\u00b9; for P. helleri: 990.2 \u03bcg a.i. ml\u207b\u00b9.\n\nThe exposure method was oral, and the duration of exposure was 5 hours.\n\n(This information doesn't include the doses applied to generate the conc-mortality curves, which produced the LC50 for each of these insecticides/ combiations)",
     "rev2": "EA",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_rev3": "1. Deltamethrin: 25 g a.i. L, oral exposure, LD50 for *A. mellifera* 18.4 ng a.i. bee, for *P. helleri* 0.014 ng a.i. bee; 2. Imidacloprid: 700 g a.i. L, oral exposure, LD50 for *A. mellifera* 0.063 ng a.i. bee, for *P. helleri* 0.091 ng a.i. bee; 3. Chlorothalonil: 750 g a.i. kg, oral exposure; 4. Thiophanate-methyl: 700 g a.i. kg, oral exposure; 5. Cerconil (thiophanate-methyl + chlorothalonil): oral exposure, LD50 for *A. mellifera* 0.039 ng a.i. bee, for *P. helleri* 0.015 ng a.i. bee",
+    "answer_llm2": "1. Deltamethrin: 25 g a.i. L\u207b\u00b9, oral exposure, LD50 for *A. mellifera* 18.4 ng a.i. bee\u207b\u00b9, for *P. helleri* 0.014 ng a.i. bee\u207b\u00b9\n2. Imidacloprid: 700 g a.i. L\u207b\u00b9, oral exposure, LD50 for *A. mellifera* 0.063 ng a.i. bee\u207b\u00b9, for *P. helleri* 0.091 ng a.i. bee\u207b\u00b9\n3. Chlorothalonil: 750 g a.i. kg\u207b\u00b9, oral exposure\n4. Thiophanate-methyl: 700 g a.i. kg\u207b\u00b9, oral exposure\n5. Cerconil (thiophanate-methyl + chlorothalonil): oral exposure, LD50 for *A. mellifera* 0.039 ng a.i. bee\u207b\u00b9, for *P. helleri* 0.015 ng a.i. bee\u207b\u00b9"
   },
   "080": {
     "answer_llm": "The pesticide used in the study was thiamethoxam. The doses were 0.227 ng a.i./\u03bcL for *A. mellifera* and 0.0543 ng a.i./\u03bcL for *M. scutellaris*. The exposure method was ingestion of contaminated food, and the duration of exposure was 120 hours for *A. mellifera* and 72 hours for *M. scutellaris*.",
@@ -123,13 +146,16 @@
     "rev1_rating": 3,
     "answer_rev2": "The exposure method was ingestion of contaminated food, and the duration of exposure was 120 hours for *A. mellifera* and 72 hours for *M. scutellaris*.",
     "rev2": "EA",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_rev3": "1. Thiamethoxam: 0.227 ng a.i. /L, oral exposure via contaminated food, duration not specified; 2. Thiamethoxam: 1.0, 0.47, 0.22, 0.10, and 0.05 ng a.i./\u03bcL of food, oral exposure, 24 hours; 3. Thiamethoxam: 0.2, 0.1, 0.05, 0.025, and 0.0125 ng a.i./L, oral exposure, 24 hours; 4. Thiamethoxam: LC50 = 0.227 ng a.i./L of diet, oral exposure, 24 hours; LC50 = 0.0543 ng a.i./L of diet, oral exposure, 24 hours",
+    "answer_llm2": "1. Thiamethoxam: 1000 ng a.i. per \u00b5L, oral exposure via contaminated food, duration not specified.\n2. Thiamethoxam: 1.0, 0.47, 0.22, 0.10, and 0.05 ng a.i./\u03bcL of food, oral exposure, 24 hours.\n3. Thiamethoxam: 0.2, 0.1, 0.05, 0.025, and 0.0125 ng a.i./\u03bcL, oral exposure, 24 hours.\n4. Thiamethoxam: LC50 = 0.227 ng a.i./\u03bcL of diet, oral exposure, 24 hours; LC50 = 0.0543 ng a.i./\u03bcL of diet, oral exposure, 24 hours."
   },
   "075": {
     "answer_llm": "The pesticide used was flupyradifurone, applied at a dose of 205 g ai/ha per application, with a total cumulative dose of 410 g ai/ha. The exposure method was foliar spray, and the duration of exposure spanned from the first application at prebloom (4-5 weeks after planting) to the second application at full bloom.",
     "answer_rev1": "The pesticide used was flupyradifurone, applied at a dose of 205 g ai/ha per application, with a total cumulative dose of 410 g ai/ha. The exposure method was foliar spray, and the duration of exposure spanned from the first application at prebloom (4-5 weeks after planting) to the second application at full bloom.",
     "rev1": "AJ",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Flupyradifurone: maximum label rate, field exposure via sprayed buckwheat fields"
   },
   "072": {
     "answer_llm": "Information not found in the provided text.",
@@ -138,7 +164,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Information not found in the provided text.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "No pesticides were tested in this study",
+    "answer_llm2": "No pesticides were tested in this study"
   },
   "585": {
     "answer_llm": "The pesticides used in the study were imidacloprid (50 ppb) and thiacloprid (4500 ppb). The exposure method involved mixing the pesticides in sugar syrup, which was trickled between frames and fed to the colonies. The duration of exposure was seven days. Additionally, imidacloprid was tested at a dose of 2 ng/bee in natural field conditions for up to 5 weeks.",
@@ -147,7 +175,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Bees were exposed to imidacloprid (50 ppb), thiacloprid (4500 ppb) or control treatment (no pesticide) via sugar solution, which was provided inside the hive. Duration of the pesticide treatment was 7 days.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Imidacloprid: 2 ng/bee, field exposure, up to 5 weeks; 2. Thiacloprid: field exposure, up to 5 weeks",
+    "answer_llm2": "1. Imidacloprid: 2 ng/bee, field exposure, up to 5 weeks; 2. Thiacloprid: field exposure, up to 5 weeks"
   },
   "584": {
     "answer_llm": "The pesticides used in the study were clothianidin and thiamethoxam. The exposure method involved placing colonies adjacent to treated oilseed rape fields, and the duration of exposure was 6-7 weeks during the flowering period.",
@@ -156,7 +186,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticide treatments were clothianidin, imidacloprid and control (no pesticide treatment) and bees were exposed by foraging from seed-coated oilseed rape in the field. Duration of exposure was 6-7 weeks, after which the oilseed rape had ceased and the hives were moved to a neonicotinoid-free site. Because residue analysis revealed that bees were exposed to a cocktail of clothianidin and thiamethoxam even at the neonicotinoid-free field, they additionally tested the effect of thiamethoxam residues.",
     "rev2": "LH",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_rev3": "1. Clothianidin: field exposure via treated oilseed rape fields, 6-7 weeks; 2. Imidacloprid: field exposure via treated oilseed rape fields, 6-7 weeks",
+    "answer_llm2": "1. Clothianidin: field exposure via treated oilseed rape fields, 6-7 weeks; 2. Imidacloprid: field exposure via treated oilseed rape fields, 6-7 weeks"
   },
   "583": {
     "answer_llm": "The pesticides used in the study were thiamethoxam and clothianidin. The doses were 25 ppb and 70 ppb for thiamethoxam, and exposure was through bee candy for up to 8 days.",
@@ -165,13 +197,17 @@
     "rev1_rating": 10,
     "answer_rev2": "During the 8 days of experiment, bees had ad libitum access to bee candy (cane sugar and honey), containing 0-140 ng of clothianidin or thiamethoxam per gram.",
     "rev2": "LH",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Thiamethoxam: 25 ppb and 70 ppb, oral exposure, 4-5 days; 2. Clothianidin: Detected as a metabolite of thiamethoxam, oral exposure, 4-5 days",
+    "answer_llm2": "1. Thiamethoxam: 25 ppb and 70 ppb, oral exposure via bee candy, 4-5 days; 2. Clothianidin: Detected as a metabolite of thiamethoxam, oral exposure, 4-5 days"
   },
   "300": {
     "answer_llm": "The pesticides used in this study include:\n1. Dipel - Active ingredient: Bacillus thuringiensis var. kurstaki, Dose: 1.5 g/liter of water.\n2. Biovirus H - Active ingredient: Ha-NPV, Dose: 250 LE/ha.\n3. Believe - Active ingredient: NSKE 0.15 EC, Dose: 5 ml/liter of water.\n4. Neem active - Active ingredient: Neem oil, Dose: 4 ml/liter of water.\n5. Tracer - Active ingredient: Spinosad 45 SC, Dose: 0.15 ml/liter of water.\n6. Rimon - Active ingredient: Novaluron 10 EC, Dose: 0.3 ml/liter of water.\n7. Proclaim - Active ingredient: Emamectin benzoate 5 SG, Dose: 0.4 g/liter of water.\n\nThe exposure method and duration of exposure are not provided in the text, which is critical for a complete understanding of the study's methodology.",
     "answer_rev1": "The pesticides used in this study include:\n1. Dipel - Active ingredient: Bacillus thuringiensis var. kurstaki, Dose: 1.5 g/liter of water.\n2. Biovirus H - Active ingredient: Ha-NPV, Dose: 250 LE/ha.\n3. Believe - Active ingredient: NSKE 0.15 EC, Dose: 5 ml/liter of water.\n4. Neem active - Active ingredient: Neem oil, Dose: 4 ml/liter of water.\n5. Tracer - Active ingredient: Spinosad 45 SC, Dose: 0.15 ml/liter of water.\n6. Rimon - Active ingredient: Novaluron 10 EC, Dose: 0.3 ml/liter of water.\n7. Proclaim - Active ingredient: Emamectin benzoate 5 SG, Dose: 0.4 g/liter of water.\n\nThe exposure method and duration of exposure are not provided in the text, which is critical for a complete understanding of the study's methodology.",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Bacillus thuringiensis var. kurstaki: 1.5 g/liter of water; 2. Ha-NPV: 250 LE/ha; 3. NSKE 0.15 EC: 5 ml/liter of water; 4. Neem oil: 4 ml/liter of water; 5. Spinosad 45 SC: 0.15 ml/liter of water; 6. Novaluron 10 EC: 0.3 ml/liter of water; 7. Emamectin benzoate 5 SG: 0.4 g/liter of water",
+    "answer_llm2": "1. Bacillus thuringiensis var. kurstaki: 1.5 g/liter of water; 2. Ha-NPV: 250 LE/ha; 3. NSKE 0.15 EC: 5 ml/liter of water; 4. Neem oil: 4 ml/liter of water; 5. Spinosad 45 SC: 0.15 ml/liter of water; 6. Novaluron 10 EC: 0.3 ml/liter of water; 7. Emamectin benzoate 5 SG: 0.4 g/liter of water"
   },
   "790": {
     "answer_llm": "The pesticides used in the study include Imidacloprid, C-29, and compound 3a. The doses were as follows: Imidacloprid at 0.921 mg L<sup>-1</sup>, C-29 at 0.426 mg L<sup>-1</sup>, and compound 3a at 3.335 mg L<sup>-1</sup> against cowpea aphids. The exposure method is inferred to be liquid application, and the duration of exposure was typically assessed after 24 hours, although specific durations were not consistently detailed.",
@@ -180,7 +216,9 @@
     "rev1_rating": 1,
     "answer_rev2": "The pesticides used in the study include Imidacloprid, C-29, and compound 3a",
     "rev2": "AB",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. C-29: 0.028 ug/bee (24 hours), 0.024 ug/bee (48 hours), contact exposure; 2. 3a: 0.328 ug/bee (24 hours), 0.256 ug/bee (48 hours), contact exposure; 3. 2a: 0.320 ug/bee (24 hours), 0.291 ug/bee (48 hours), contact exposure; 4. 3b: 0.081 ug/bee (24 hours), 0.048 ug/bee (48 hours), contact exposure; 5. 1a: 0.028 ug/bee (24 hours), 0.021 ug/bee (48 hours), contact exposure; 6. NTN32692: 0.023 ug/bee (24 hours), 0.020 ug/bee (48 hours), contact exposure; 7. Imidacloprid: 0.076 ug/bee (24 hours), 0.062 ug/bee (48 hours), contact exposure",
+    "answer_llm2": "1. C-29: 0.028 \u03bcg/bee (24 hours), 0.024 \u03bcg/bee (48 hours), contact exposure\n2. 3a: 0.328 \u03bcg/bee (24 hours), 0.256 \u03bcg/bee (48 hours), contact exposure\n3. 2a: 0.320 \u03bcg/bee (24 hours), 0.291 \u03bcg/bee (48 hours), contact exposure\n4. 3b: 0.081 \u03bcg/bee (24 hours), 0.048 \u03bcg/bee (48 hours), contact exposure\n5. 1a: 0.028 \u03bcg/bee (24 hours), 0.021 \u03bcg/bee (48 hours), contact exposure\n6. NTN32692: 0.023 \u03bcg/bee (24 hours), 0.020 \u03bcg/bee (48 hours), contact exposure\n7. Imidacloprid: 0.076 \u03bcg/bee (24 hours), 0.062 \u03bcg/bee (48 hours), contact exposure"
   },
   "799": {
     "answer_llm": "The pesticide used in the study was thiamethoxam. The dose was 20 ng g\u207b\u00b9 in the sucrose-solution for 12 days, and there was also an average exposure of 66.23 \u00b1 1.82 ng over 14 days. The exposure method involved administering the pesticide via a 5 ml syringe in a sucrose-solution.",
@@ -189,7 +227,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticide used in the study was thiamethoxam. The dose was 20 ng g\u207b\u00b9 in the sucrose-solution for 12 days. The exposure method involved administering the pesticide via a 5 ml syringe in a sucrose-solution.",
     "rev2": "AB",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Thiamethoxam: 20 ng/g, oral exposure, 12 days.",
+    "answer_llm2": "1. Thiamethoxam: 20 ng g\u207b\u00b9, oral exposure via sucrose-solution, 12 days"
   },
   "798": {
     "answer_llm": "The pesticides used in the study were thiamethoxam (0.001 ng a.i./\u03bcL, 1 ppb) and picoxystrobin (0.018 ng a.i./\u03bcL, 18 ppb). The exposure method was chronic oral exposure via syrup, and the duration of exposure was five days.",
@@ -198,7 +238,9 @@
     "rev1_rating": 5,
     "answer_rev2": "The pesticides used in the study were thiamethoxam (0.001 ng a.i./\u03bcL, 1 ppb) and picoxystrobin (0.018 ng a.i./\u03bcL, 18 ppb). The exposure method was chronic oral exposure via syrup, and the duration of exposure was five days.",
     "rev2": "AB",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Thiamethoxam: 0.001 ng a.i./uL, oral exposure, 5 days\n2. Picoxystrobin: 0.018 ng a.i./uL, oral exposure, 5 days",
+    "answer_llm2": "1. Thiamethoxam: 0.001 ng a.i./\u03bcL, oral exposure, 5 days\n2. Picoxystrobin: 0.018 ng a.i./\u03bcL, oral exposure, 5 days"
   },
   "811": {
     "answer_llm": "The pesticides used in the study were acetamiprid, dinotefuran, pymetrozine, and pyridalyl. The doses were as follows: acetamiprid (0.6, 1.2, 2.4, 6.0, and 60.0 mg/L), pymetrozine (specific activities at 0.01-, 0.02-, and 0.04-fold of the field application dose), and pyridalyl (2.5, 5.0, 10.0, and 25.0 mg/L). The exposure method involved applying these pesticides at various concentrations, and the duration of exposure is not specified in the text.",
@@ -207,7 +249,9 @@
     "rev1_rating": 1,
     "answer_rev2": "The pesticides used in the study were acetamiprid, dinotefuran, pymetrozine, and pyridalyl. The doses were as follows: acetamiprid (0.6, 1.2, 2.4, 6.0, and 60.0 mg/L)",
     "rev2": "AB",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_rev3": "1. Acetamiprid: oral exposure: 0.6, 1.2, 2.4, 6.0, and 60.0 mg (a.i.)/L, 24 hours; Topical exposure: 1.0 to 10 ug/bee, 24 hours; 2. Dinotefuran: Oral exposure: 1.0, 2.0, 4.0, 10.0, and 100.0 mg (a.i.)/L, 24 hours, Topical exposure: 0.001 to 0.02 ug/bee, 24 hours; 3. Pymetrozine: Oral exposure: 2.5, 5.0, 10.0, 25.0, and 250.0 mg (a.i.)/L, 24 hours, Topical exposure: 0.05 to 20 ug/bee, 24 hours; 4. Pyridalyl: Oral exposure: 2.5, 5.0, 10.0, 25.0, and 250.0 mg (a.i.)/L, 24 hours, Topical exposure: 1.0 to 10 ug/bee, 24 hours",
+    "answer_llm2": "1. Acetamiprid: \n   - Oral exposure: 0.6, 1.2, 2.4, 6.0, and 60.0 mg (a.i.)/L, 24 hours\n   - Topical exposure: 1.0 to 10 \u03bcg/bee, 24 hours\n2. Dinotefuran: \n   - Oral exposure: 1.0, 2.0, 4.0, 10.0, and 100.0 mg (a.i.)/L, 24 hours\n   - Topical exposure: 0.001 to 0.02 \u03bcg/bee, 24 hours\n3. Pymetrozine: \n   - Oral exposure: 2.5, 5.0, 10.0, 25.0, and 250.0 mg (a.i.)/L, 24 hours\n   - Topical exposure: 0.05 to 20 \u03bcg/bee, 24 hours\n4. Pyridalyl: \n   - Oral exposure: 2.5, 5.0, 10.0, 25.0, and 250.0 mg (a.i.)/L, 24 hours\n   - Topical exposure: 1.0 to 10 \u03bcg/bee, 24 hours"
   },
   "810": {
     "answer_llm": "The pesticides used in the study were imidacloprid and sulfoxaflor. Imidacloprid was administered at doses of 150 \u03bcg/L for experiments 1 and 3, and 40 \u03bcg/L and 10 \u03bcg/L for experiment 2. The exposure method involved provisioning bees with a sucrose solution containing these pesticides, and the duration of exposure was 144 hours (6 days) for experiment 1 and 72 hours for experiment 2.",
@@ -216,19 +260,25 @@
     "rev1_rating": 1,
     "answer_rev2": "The pesticides used in the study were imidacloprid and sulfoxaflor. The duration of exposure was 144 hours (6 days) for experiment 1 and 72 hours for experiment 2.",
     "rev2": "AB",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Imidacloprid: 150 ug/L, oral exposure, 144 hours; 40 ug/L and 10 ug/L, oral exposure, 72 hours.; 2. Sulfoxaflor: 150 ug/L, oral exposure, 144 hours; 40 ug/L and 10 ug/L, oral exposure, 72 hours.",
+    "answer_llm2": "1. Imidacloprid: 150 \u03bcg/L, oral exposure via spiked nectar substitute; 40 \u03bcg/L, oral exposure via spiked nectar substitute; 10 \u03bcg/L, oral exposure via spiked nectar substitute.\n2. Sulfoxaflor: 150 \u03bcg/L, oral exposure via spiked nectar substitute; 40 \u03bcg/L, oral exposure via spiked nectar substitute; 10 \u03bcg/L, oral exposure via spiked nectar substitute."
   },
   "295": {
     "answer_llm": "The pesticide used in the study was acetamiprid. The doses were 1.13 \u00b5g/L, 11.3 \u00b5g/L, 113 \u00b5g/L, 1,130 \u00b5g/L, and 11,300 \u00b5g/L. The exposure method was through sugar syrup delivered in syrup feeders, renewed three times a week. The duration of exposure was 6 weeks.",
     "answer_rev1": "The pesticide used in the study was acetamiprid. The doses were 1.13 \u00b5g/L, 11.3 \u00b5g/L, 113 \u00b5g/L, 1,130 \u00b5g/L, and 11,300 \u00b5g/L. The exposure method was through sugar syrup delivered in syrup feeders, renewed three times a week. The duration of exposure was 6 weeks.",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Acetamiprid: 1.13, 11.3, 113, 1,130, 11,300 ug/L, oral exposure, 6 weeks",
+    "answer_llm2": "1. Acetamiprid: 1.13, 11.3, 113, 1,130, 11,300 \u03bcg/L, oral exposure via sugar syrup, 6 weeks"
   },
   "294": {
     "answer_llm": "The pesticide used in the study was imidacloprid. The dose was 2% (v/v) added to the diet during the third to sixth days of larval development, corresponding to the third to fifth instar stages. The exposure method was dietary, and the duration of exposure was from the third to the sixth day of larval development.",
     "answer_rev1": "The pesticide used was imidacloprid. The concentration was 0.7 ng per ml in the formulation Evidence WG 700 g/kg. The exposure method was dietary, and the duration of exposure was from the third to the sixth day of larval development.",
     "rev1": "NN",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Imidacloprid: 20.5 ng g, oral exposure, 3 days.",
+    "answer_llm2": "1. Imidacloprid: 20.5 ng g\u207b\u00b9, oral exposure, from the third to the sixth day of larval development."
   },
   "793": {
     "answer_llm": "The pesticide used in the study was dinotefuran. The doses were 0.220 mg/L (LC\u2085) and 0.458 mg/L (LC\u2082\u2080). The exposure method involved feeding bees a dinotefuran sucrose solution (15 \u03bcL/bee), followed by unlimited access to a 50% sucrose solution. The duration of exposure was 48 hours.",
@@ -237,25 +287,33 @@
     "rev1_rating": 6,
     "answer_rev2": "The pesticide used in the study was dinotefuran.",
     "rev2": "AB",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_rev3": "1. Dinotefuran: 0.220 mg/L, 0.458 mg/L, 0.988 mg/L, oral exposure, 48 hours",
+    "answer_llm2": "1. Dinotefuran: 0.220 mg/L (LC\u2085), 0.458 mg/L (LC\u2082\u2080), 0.988 mg/L (LC\u2085\u2080), oral exposure, 48 hours\n2. Imidacloprid: sublethal exposure, oral\n3. Thiamethoxam: acute oral exposure"
   },
   "794": {
     "answer_llm": "The pesticide used in the study was thiacloprid. The doses were 0.17 \u03bcg (low dose) and 0.80 \u03bcg (high dose), administered via force-feeding in a 20 \u03bcl 2.7 M sucrose solution. The duration of exposure was recorded at 24 and 48 hours after feeding.",
     "answer_rev1": "The pesticide used in the study was thiacloprid. The doses were 0.17 \u03bcg (low dose) and 0.80 \u03bcg (high dose), administered via force-feeding in a 20 \u03bcl 2.7 M sucrose solution. Exposure occured via a single feeding event when bees were manually fed the pesticide solution.",
     "rev1": "NN",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_rev3": "1. Thiacloprid: 0.17 ug, 0.34 ug, and 0.80 ug, oral exposure, acute",
+    "answer_llm2": "1. Thiacloprid: 0.17 \u03bcg, 0.34 \u03bcg, and 0.80 \u03bcg, oral exposure via sucrose solution, 1\u20136 hours"
   },
   "304": {
     "answer_llm": "The pesticides used in the study include:\n1. Organophosphate: 3.82 kg a.i./ha (STND)\n2. Pyrethroid: 0.003 kg a.i./ha (STND)\n3. Antibiotic (spinosad, emamectin benzoate, spinetoram): 0.005 kg a.i./ha (STND), 0.012 kg a.i./ha (RR)\n4. Tetranilic Acid (spirotetramat): 0.009 kg a.i./ha (RR)\n5. Anthranilic Diamide (chlorantraniliprole, flubendiamide): 0.111 kg a.i./ha (RR)\n6. Miticide (incl. abamectin): 0.021 kg a.i./ha (STND)\n7. Insect growth regulators (buprofezin, methoxyfenozide, novaluron, pyriproxyfen): 0.066 kg a.i./ha (RR)\n8. Oxadiazine (indoxacarb): 0.012 kg a.i./ha (STND), 0.055 kg a.i./ha (RR)\n9. Nicotinoids: 0.264 kg a.i./ha (STND)\n\nThe exposure method and duration of exposure are not provided in the text.",
     "answer_rev1": "This study looks at the effect of different pesticide programs on insect abundance at different farms. Pesticide looked at inlcude organophosphates, pyrethroids, bio-pesticides, Tetramic acid, Anthranilic Diamide, Miticides, Insect growth regulators,and oxadiazine, and nicotinoids. Exposure method and duration are not listed in this study as it broadly examines programs instead of in lab experiments. It also looks at the use of pheromones that disrupt mating.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Azinphosmethyl; 2. Chlorpyrifos; 3. Diazinon; 4. Phosmet; 5. Carbaryl; 6. Lambda cyhalothrin; 7. Methoxyfenozide; 8. Pyriproxyfen; 9. Spirodiclofen; 10. Abamectin; 11. Buprofezin; 12. Novaluron; 13. Chlorantraniliprole; 14. Flubendiamide; 15. Spirotetramat; 16. Spinosad; 17. Emamectin benzoate; 18. Spinetoram; 19. Indoxacarb; 20. Acetamiprid; 21. Imidacloprid; 22. Thiamcloprid",
+    "answer_llm2": "1. Azinphosmethyl\n2. Chlorpyrifos\n3. Diazinon\n4. Phosmet\n5. Carbaryl\n6. Lambda cyhalothrin\n7. Methoxyfenozide\n8. Pyriproxyfen\n9. Spirodiclofen\n10. Abamectin\n11. Buprofezin\n12. Novaluron\n13. Chlorantraniliprole\n14. Flubendiamide\n15. Spirotetramat\n16. Spinosad\n17. Emamectin benzoate\n18. Spinetoram\n19. Indoxacarb\n20. Acetamiprid\n21. Imidacloprid\n22. Thiamcloprid"
   },
   "302": {
     "answer_llm": "The pesticides used in the study were dinotefuran, specifically its enantiomers rac-dinotefuran, R-dinotefuran, and S-dinotefuran. The acute exposure method involved a single 72-hour exposure, while the chronic exposure method involved repeated exposure to a dose of 90 \u03bcg per larva.",
     "answer_rev1": "There were three isomers of dinotefuran tested. Dosages were as follows for acute toxicity assays:\n50, 100, 200, 300, and 400 \u03bcg/larva for R-dinotefuran; \n25,50, 100, 150, and 200 \u03bcg/larva for rac-dinotefuran; \n5, 10, 20, 40, and 80 \u03bcg/larva for S-dinotefuran\nEach larvae was fed 30 ul at 4 days old and mortality monitored at 24, 48 and 72h after exposure.\n\nFor the chronic toxicity assay, dosages and duration were as follows:\n90 ug/larva total over four days from D3-D6\n90 ug/larva total over four days from D3-D6\n90 ug/llarva total over four days from D3-D6\n\nDimethoate was also used as a positive control at 7.39 ug/larva total over the same duration from D3-D6.",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "1. R-dinotefuran: 50, 100, 200, 300, and 400 ug/larva, oral exposure, 72 hours; 2. Rac-dinotefuran: 25, 50, 100, 150, and 200 ug/larva, oral exposure, 72 hours; 3. S-dinotefuran: 5, 10, 20, 40, and 80 ug/larva, oral exposure, 72 hours; 4. Dimethoate: 7.39 g/larva, oral exposure, 72 hours",
+    "answer_llm2": "1. Dinotefuran:\n   - R-dinotefuran: 50, 100, 200, 300, and 400 \u03bcg/larva, oral exposure, 72 hours\n   - Rac-dinotefuran: 50, 100, 150, and 200 \u03bcg/larva, oral exposure, 72 hours\n   - S-dinotefuran: 5, 10, 20, 40, and 80 \u03bcg/larva, oral exposure, 72 hours\n2. Dimethoate: 8.8 \u03bcg/larva, oral exposure, 72 hours"
   },
   "813": {
     "answer_llm": "The pesticides used in the study were fipronil and imidacloprid. The doses were as follows: \n- Fipronil: \n  - LD50 (ingestion): 0.2316 \u03bcg/bee \n  - LD50 (contact): 0.0080 \u03bcg/bee \n  - Sublethal dose (ingestion): 0.0004 \u03bcg/bee \n  - Sublethal dose (contact): 0.000016 \u03bcg/bee \n- Imidacloprid: \n  - LD50 (ingestion): 0.1079 \u03bcg/bee \n  - LD50 (contact): 0.0308 \u03bcg/bee \n  - Sublethal dose (ingestion): 0.0002 \u03bcg/bee \n  - Sublethal dose (contact): 0.00006 \u03bcg/bee \n\nThe exposure method was by ingestion and contact, and the duration of exposure was during the study period.",
@@ -264,7 +322,9 @@
     "rev1_rating": 1,
     "answer_rev2": "The pesticides used in the study were fipronil and imidacloprid. The exposure method was by ingestion and contact",
     "rev2": "AB",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_rev3": "1. Fipronil: 0.2316,  0.0626 ug/bee, Contact lethal dose: 0.0080, 0.0021 ug/bee, Sublethal ingestion dose: 0.0004 ug/bee, Sublethal contact dose: 0.000016 ug/bee, Exposure method: Ingestion and contact, Duration: 24 hours; 2. Imidacloprid: Ingestion lethal dose: 0.1079 , 0.0375 ug/bee, contact lethal dose: 0.0308, 0.0218 ug/bee, Sublethal ingestion dose: 0.0002 ug/bee, Sublethal contact dose: 0.00006 ug/bee, Exposure method: Ingestion and contact, Duration: 24 hours",
+    "answer_llm2": "1. Fipronil: \n   - Ingestion lethal dose: 0.2316 \u00b1 0.0626 \u03bcg/bee\n   - Contact lethal dose: 0.0080 \u00b1 0.0021 \u03bcg/bee\n   - Sublethal ingestion dose: 0.0004 \u03bcg/bee\n   - Sublethal contact dose: 0.000016 \u03bcg/bee\n   - Exposure method: Ingestion and contact\n   - Duration: 24 hours\n\n2. Imidacloprid: \n   - Ingestion lethal dose: 0.1079 \u00b1 0.0375 \u03bcg/bee\n   - Contact lethal dose: 0.0308 \u00b1 0.0218 \u03bcg/bee\n   - Sublethal ingestion dose: 0.0002 \u03bcg/bee\n   - Sublethal contact dose: 0.00006 \u03bcg/bee\n   - Exposure method: Ingestion and contact\n   - Duration: 24 hours"
   },
   "809": {
     "answer_llm": "The pesticides used in the study were:\n1. Neonicotinoids: thiamethoxam, imidacloprid, clothianidin\n2. Pyrethroids: permethrin, bifenthrin\n3. Macrocyclic lactones: abamectin, ivermectin\n\nThe exposure method was a series of 96-hour contact toxicity tests. The doses were measured in terms of LD50 values, with neonicotinoids having LD50 values ranging from 2.88 to 26.35 ng/bee, macrocyclic lactones from 5.51 to 32.86 ng/bee, and pyrethroids having LD50 values greater than 33 ng/bee.",
@@ -273,25 +333,33 @@
     "rev1_rating": 0,
     "answer_rev2": "The pesticides used in the study were:\n1. Neonicotinoids: thiamethoxam, imidacloprid, clothianidin\n2. Pyrethroids: permethrin, bifenthrin\n3. Macrocyclic lactones: abamectin, ivermectin\n\nThe exposure method was a series of 96-hour contact toxicity tests",
     "rev2": "AB",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_rev3": "1. Clothianidin: LD = 4.9 ng/bee (female), 2.9 ng/bee (male), contact exposure; 2. Thiamethoxam: LD = 9.7 ng/bee (female), 5.1 ng/bee (male), contact exposure; 3. Imidacloprid: LD = 25.5 ng/bee (female), 26.4 ng/bee (male), contact exposure; 4. Abamectin: 32.9 ng/bee for females, 5.5 ng/bee for males, contact exposure; 5. Ivermectin: 24.7 ng/bee for females, 9.1 ng/bee for males, contact exposure; 6. Bifenthrin: female LD = 75.0 ng/bee, male LD = 32.6 ng/bee; 7. Permethrin: female LD = 289.7 ng/bee, male = 201.9 ng/bee",
+    "answer_llm2": "1. Clothianidin: LD<sub>50</sub> = 4.9 \u00b1 0.8 ng/bee (female), 2.9 \u00b1 0.4 ng/bee (male), contact exposure\n2. Thiamethoxam: LD<sub>50</sub> = 9.7 \u00b1 1.5 ng/bee (female), 5.1 \u00b1 0.6 ng/bee (male), contact exposure\n3. Imidacloprid: LD<sub>50</sub> = 25.5 \u00b1 3.5 ng/bee (female), 26.4 \u00b1 3.0 ng/bee (male), contact exposure\n4. Abamectin: 32.9 \u00b1 10.9 ng/bee for females, 5.5 \u00b1 1.1 ng/bee for males, contact exposure\n5. Ivermectin: 24.7 \u00b1 5.9 ng/bee for females, 9.1 \u00b1 1.4 ng/bee for males, contact exposure\n6. Bifenthrin: female LD\u2085\u2080 = 75.0 \u00b1 12.0 ng/bee, male LD\u2085\u2080 = 32.6 \u00b1 5.8 ng/bee\n7. Permethrin: female LD\u2085\u2080 = 289.7 \u00b1 39.4 ng/bee, male LD\u2085\u2080 = 201.9 \u00b1 32.6 ng/bee"
   },
   "298": {
     "answer_llm": "The pesticide used in the study was thiamethoxam, applied at doses of 1/1000, 1/100, and 1/10 of the maximum recommended dose. The exposure method was spraying with 1 atm pressure for 20 seconds, and the duration of exposure was 48 hours.",
     "answer_rev1": "The pesticide used in the study was thiamethoxam, applied at doses of 1/1000, 1/100, and 1/10 of the maximum recommended field application rate. Insect were exposed by a 20 s spray at 1 atm presure. The formulation used during this study is unclear and this could affect the interpretaiton of the results. The duration of exposure was 48 h.",
     "rev1": "NN",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Thiamethoxam: 240 g/l, oral exposure, concentrations of 1/1000, 1/100, and 1/10; contact exposure, 48 hours",
+    "answer_llm2": "1. Thiamethoxam: 240 g/l, oral exposure, concentrations of 1/1000, 1/100, and 1/10; contact exposure via spraying, 48 hours"
   },
   "296": {
     "answer_llm": "The pesticide used in the study was thiamethoxam, with a maximum dose of 98 \u03bcg kg\u207b\u00b9. The exposure method was through dietary syrup, and the duration of exposure was 17 days.",
     "answer_rev1": "The pesticide used was pure thiamethoxam at concetrations of 98.43, 39.37, 15.75, 6.30, 2.52, 1.01, 0.40, 0.16, 0.06 ug/kg in syurup. Bumblebees were exposed via diet with ad libitum access for 17 days.",
     "rev1": "NN",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_rev3": "1. Thiamethoxam: 98.43, 39.37, 15.75, 6.30, 2.52, 1.01, 0.40, 0.16, 0.06 ug/kg, oral exposure, 17 days.",
+    "answer_llm2": "1. Thiamethoxam: 98.43, 39.37, 15.75, 6.30, 2.52, 1.01, 0.40, 0.16, 0.06 ng kg, oral exposure via syrup, 14 days\n2. Thiamethoxam: exposure via syrup, 17 days\n3. Thiamethoxam: 0.2, 2.1, 6.4, 20.5, 64.1, 98.4 \u03bcg kg\u207b\u00b9 ppb\u207b\u00b9, oral exposure via feeder syrup, 7 days"
   },
   "299": {
     "answer_llm": "The pesticides used in the study were thiamethoxam and clothianidin. The dose was 20 \u03bcg of clothianidin and 12.6 \u03bcg of thiamethoxam per seed. The exposure method was seed dressing, and the duration of exposure was during the flowering stage of spring rape in June and July of 2017 and 2018.",
     "answer_rev1": "The pesticides used in the study were thiamethoxam and clothianidin. Clothianidin (400 g/l) was applied in a mixture with beta-cyfluthrin (80 g/l), while Thiamethoxam (280 g/L) was applied in a mixture with fludioxonil (8 g/L) and metalaxyl-M (32.3 g/L) to seeds. The dose was 20 \u03bcg of clothianidin and 12.6 \u03bcg of thiamethoxam per seed. Honeybees were exposed during the flowering stage of spring rape in June and July of 2017 and 2018.",
     "rev1": "NN",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Thiamethoxam: 12.6 ug per seed, field exposure; 2. Clothianidin: 20 ug per seed, field exposure",
+    "answer_llm2": "1. Thiamethoxam: 12.6 \u03bcg per seed, field exposure via treated rape seeds\n2. Clothianidin: 20 \u03bcg per seed, field exposure via treated rape seeds"
   },
   "787": {
     "answer_llm": "The pesticides used in the study were azadirachtin and imidacloprid. Azadirachtin was applied at a dose of 30 ng a.i. ul\u207b\u00b9 (30000 ppb) and 24 to 480 ng a.i. queen\u207b\u00b9 over approximately 40 days, while imidacloprid was applied at a dose of 42 ng a.i. ul\u207b\u00b9 (42000 ppb) and 672 ng a.i. queen\u207b\u00b9. The exposure method was oral, with imidacloprid exposure lasting 3 hours and azadirachtin exposure lasting 24 hours in one context, while chronic exposure was noted for azadirachtin.",
@@ -300,25 +368,33 @@
     "rev1_rating": 2,
     "answer_rev2": "The pesticides used in the study were azadirachtin and imidacloprid. Imidacloprid was applied at a dose of 42 ng a.i. ul\u207b\u00b9. The exposure method was oral",
     "rev2": "AB",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_rev3": "1. Azadirachtin: 30 ng a.i. /ul (30000 ppb), oral exposure, 24 hours; 2. Imidacloprid: 42 ng a.i. /ul (42000 ppb), oral exposure, 3 hours; 3. Azadirachtin: 24, 48, 240, and 480 ng a.i. /queen, chronic exposure, approximately 40 days; 4. Imidacloprid: 672 ng a.i. /queen, chronic exposure, approximately 40 days",
+    "answer_llm2": "1. Azadirachtin: 30 ng a.i. ul\u207b\u00b9 (30000 ppb), oral exposure, 24 hours\n2. Imidacloprid: 42 ng a.i. ul\u207b\u00b9 (42000 ppb), oral exposure, 3 hours\n3. Azadirachtin: 24, 48, 240, and 480 ng a.i. queen\u207b\u00b9, chronic exposure, approximately 40 days\n4. Imidacloprid: 672 ng a.i. queen\u207b\u00b9, chronic exposure, approximately 40 days"
   },
   "789": {
     "answer_llm": "The pesticides used in the study were chlorantraniliprole (0.015 g a.i. L\u207b\u00b9), chlorfenapyr (0.024 g a.i. L\u207b\u00b9), imidacloprid (0.37 g a.i. L\u207b\u00b9), lambda-cyhalothrin (0.025 g a.i. L\u207b\u00b9), malathion (0.97 g a.i. L\u207b\u00b9), methomyl (0.215 g a.i. L\u207b\u00b9), and spinosad (0.059 g a.i. L\u207b\u00b9). The exposure method involved direct ingestion and trophallactic exchanges, with a standardization period of 2 hours without food before the bioassays. The duration of exposure varied depending on the pesticide, with some causing rapid mortality within minutes and others over several hours.",
     "answer_rev1": "The pesticides used in the study were chlorantraniliprole (0.015 g a.i. L\u207b\u00b9), chlorfenapyr (0.024 g a.i. L\u207b\u00b9), imidacloprid (0.37 g a.i. L\u207b\u00b9), lambda-cyhalothrin (0.025 g a.i. L\u207b\u00b9), malathion (0.7 g a.i. L\u207b\u00b9), methomyl (0.215 g a.i. L\u207b\u00b9), and spinosad (0.059 g a.i. L\u207b\u00b9). No formulation mentioned. Pre-weighed feeders with treated sucrose solutions were left in the pot with the bees for 3 h and weighed again after to determine ingestion volume.",
     "rev1": "NN",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_rev3": "1. Chlorantraniliprole: 0.015 g a.i. /L, oral exposure, 3 hours; 2. Chlorfenapyr: 0.024 g a.i. /L, oral exposure, 3 hours; 3. Imidacloprid: 0.37 g a.i. /L, oral exposure, 3 hours; 4. Lambda-cyhalothrin: 0.025 g a.i. /L, oral exposure, 3 hours; 5. Malathion: 0.7 g a.i./L, oral exposure, 3 hours; 6. Methomyl: 0.215 g a.i. /L, oral exposure, 3 hours; 7. Spinosad: 0.059 g a.i. /L, oral exposure, 3 hours",
+    "answer_llm2": "1. Chlorantraniliprole: oral exposure\n2. Chlorfenapyr: oral exposure\n3. Imidacloprid: 0.0291 mg, oral exposure via ingestion\n4. Lambda-cyhalothrin: oral exposure\n5. Malathion: 0.0199 mg, oral exposure via ingestion\n6. Methomyl: oral exposure\n7. Spinosad: 0.0310 mg, oral exposure via ingestion"
   },
   "216": {
     "answer_llm": "The pesticides used in the study were compounds 7b, 7g, FPF, and SFX for honeybees, with a dose of 30 mg per compound, applied as a 2 \u03bcL solution on the dorsal side of the bee thorax, and exposure durations of 24 and 48 hours. Additionally, sulfoxaflor was used for aphids at doses of 500 and 2000 mg/L, with a leaf dipping method for 10-15 seconds and a duration of exposure of 48 hours after introduction to treated leaves.",
     "answer_rev1": "They used sulfoxaflor, flupyradifurone and representative compounds 7b and 7g. Effects are measured at 24 and 48 hours. Sulfoxaflor was included as a positive control. 100ug doses (in 2ul volumes) were administered to each bee, applied acutely to the dorsal thorax.",
     "rev1": "KW",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "1. Compound 7b: 5 and 10 mg/L, contact exposure, 24 and 48 hours\n2. Compound 7g: 5 \u00d7 10\u2074 mg/L, contact exposure, 24 and 48 hours\n3. Flupyradifurone (FPF): 5 \u00d7 10\u2074 mg/L, contact exposure, 24 and 48 hours\n4. Sulfoxaflor (SFX): 5 \u00d7 10\u2074 mg/L, contact exposure, 24 and 48 hours",
+    "answer_llm2": "1. Compound 7b: 5 \u00d7 10\u2074 mg/L, contact exposure, 24 and 48 hours\n2. Compound 7g: 5 \u00d7 10\u2074 mg/L, contact exposure, 24 and 48 hours\n3. Flupyradifurone (FPF): 5 \u00d7 10\u2074 mg/L, contact exposure, 24 and 48 hours\n4. Sulfoxaflor (SFX): 5 \u00d7 10\u2074 mg/L, contact exposure, 24 and 48 hours"
   },
   "227": {
     "answer_llm": "The pesticide used in the study is dinotefuran, specifically its enantiomers S-(+)-dinotefuran and R-(\u2212)-dinotefuran. The exposure methods were physical contact (LD50 values: S-(+)-dinotefuran: 0.023 \u03bcg/bee, R-(\u2212)-dinotefuran: 2.997 \u03bcg/bee) and oral ingestion (LC50 values: S-(+)-dinotefuran: 0.125 mg/L, R-(\u2212)-dinotefuran: 5.127 mg/L). The duration of exposure is not specified in the text.",
     "answer_rev1": "The bees were exposed to dinotefuran, both the S-(+)- and R-(-)- enantiomers, and the racemic mixture of these. These were administered both orally and through contact, but the dosages and duration are not specified. The authors note only the calculated LC/D50 values.",
     "rev1": "KW",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. R-(-)-dinotefuran: contact: LD50 = 2.997 ug/bee, Oral : LC50 = 5.127 mg/L; 2. S(+)-dinotefuran: contact: LD50 = 0.023 ug/bee, Oral: LC50 = 0.125 mg/L; 3. rac-(\u00b1)-dinotefuran: contact: LD50 = 0.041 ug/bee, Oral: LC50 = 0.328 mg/L",
+    "answer_llm2": "1. R(\u2212)-dinotefuran: \n   - Physical contact: LD50 = 2.997 \u03bcg/bee\n   - Oral ingestion: LC50 = 5.127 mg/L\n\n2. S(+)-dinotefuran: \n   - Physical contact: LD50 = 0.023 \u03bcg/bee\n   - Oral ingestion: LC50 = 0.125 mg/L\n\n3. rac-(\u00b1)-dinotefuran: \n   - Physical contact: LD50 = 0.041 \u03bcg/bee\n   - Oral ingestion: LC50 = 0.328 mg/L"
   },
   "218": {
     "answer_llm": "The pesticides used in the study were thiacloprid (0.75 mg/kg), sulfoxaflor (3 mg/kg), flupyradifurone (40 mg/kg), azoxystrobin (1.9 mg/kg), and tebuconazole (0.5 mg/kg). The exposure method involved spiking pollen provisions with pesticide solutions, and the duration of exposure was from April 2020 to April 2021.",
@@ -327,7 +403,9 @@
     "rev1_rating": 1,
     "answer_rev2": "The pesticides used in the study were thiacloprid (0.75 mg/kg), sulfoxaflor (3 mg/kg), flupyradifurone (40 mg/kg), azoxystrobin (1.9 mg/kg), and tebuconazole (0.5 mg/kg). Two concentrations per pesticide were tested: the high concentration reported in bracket and the low concentration corresponded to a 10-fold lower value. The exposure method involved spiking pollen provisions with pesticide solutions, and the exposure to pesticides occured during larval devlopement, apprix. 3-4 weeks.",
     "rev2": "FS",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_rev3": "1. Clothianidin: 0.3 mg/kg, oral; 2. Thiacloprid: 3.5 mg/kg, oral; 3. Azoxystrobin: 1.5 mg/kg, oral; 4. Tebuconazole: 0.6 mg/kg, oral; 5. Sulfoxaflor: 3 mg/kg, oral; 6. Thiacloprid: 0.75 mg/kg, oral; 7. Azoxystrobin: 19 mg/kg, oral; 8. Tebuconazole: 0.5 mg/kg, oral; 9. Flupyradifurone: 40 mg/kg, oral",
+    "answer_llm2": "1. Clothianidin: 0.3 mg/kg, exposure method not specified\n2. Thiacloprid: 3.5 mg/kg, exposure method not specified\n3. Azoxystrobin: 1.5 mg/kg, exposure method not specified\n4. Tebuconazole: 0.6 mg/kg, exposure method not specified\n5. Sulfoxaflor: 3 mg/kg, oral exposure via pollen\n6. Thiacloprid: 0.75 mg/kg, oral exposure via pollen\n7. Azoxystrobin: 19 mg/kg, oral exposure via pollen\n8. Tebuconazole: 0.5 mg/kg, oral exposure via pollen\n9. Flupyradifurone: 40 mg/kg, oral exposure via pollen"
   },
   "422": {
     "answer_llm": "The pesticides used in the study included Linalool, Hexyl acetate, Z-3-Hexenol, (E)-\u03b2-ocimene, \u03b1-terpineol, Clothianidin, Imidacloprid, Thiacloprid, and Thiametoxam. The doses were $10^{-6}$ and $10^{-5}$ for some pesticides, 0.75 \u00b5g and 2.55 \u00b5g for Clothianidin, 50 ppb for Imidacloprid, and 4,500 ppb for Thiacloprid. The exposure methods varied, including statistical analysis and dietary exposure, with durations ranging from immediate to 6 weeks. Specific details on exposure duration for all pesticides are not fully available.",
@@ -336,31 +414,41 @@
     "rev1_rating": 1,
     "answer_rev2": "Pesticides were administered via a rapid top feeder for a period of 6 weeks. Each colony was provided twice a week with 500 ml sugar syrup contaioning pesticides. Three colonies received syrup contaminated with 50 ppb Imidacloprid and three received 4500 ppb Thiacloprid.",
     "rev2": "BN",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Imidacloprid: 50 ppb, oral, 6 weeks; 2. Thiacloprid: 4,500 ppb, oral, 6 weeks",
+    "answer_llm2": "1. Imidacloprid: 50 ppb, oral exposure via sugar syrup, 6 weeks\n2. Thiacloprid: 4,500 ppb, oral exposure via sugar syrup, 6 weeks"
   },
   "221": {
     "answer_llm": "The pesticides used in the study were clothianidin (10 g/kg seeds), beta-cyfluthrin (2 g/kg seeds), and thiram (4 g/kg seeds). The exposure method was seed coating, and the duration of exposure began at sowing in August-September 2012 until bee exposure, though the exact duration is not specified.",
     "answer_rev1": "The paper discusses treatment with ELADO FS 480 plus TMTD seed coating, comprising of 10g clothianisin, 2g beta-cyfluthrin and 4g thiram per kg of. An additional treatment investigated the use of DMM, comprising 5g dimetomorph per kg of seeds. Exposure was chronic in field conditions for 25-36 days.",
     "rev1": "KW",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Clothianidin: field exposure via treated oilseed rape at 10 g active ingredient/kg seeds, 25-36 days",
+    "answer_llm2": "1. Clothianidin: field exposure via treated oilseed rape at 10 g active ingredient/kg seeds"
   },
   "226": {
     "answer_llm": "The pesticide used in the study was thiacloprid, with doses of 0 mg/L (control), 0.5 mg/L, and 1.0 mg/L. The exposure method involved diluting thiacloprid in freshly prepared food for bee larvae. The duration of exposure was 6 days (D1\u2013D6).",
     "answer_rev1": "Bees were exposed to thiacloprid at 0.5mg or 1mg/L - or a control solution. Solid thiacloprid was dissolves in 1mL DMSO, and subsequently diluted in DI water. These doses were administered chronically over 6 days.",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Thiacloprid: 0.5 mg/L and 1.0 mg/L, oral, 6 days",
+    "answer_llm2": "1. Thiacloprid: 0.5 mg/L and 1.0 mg/L, oral exposure via larvae food, exposure for 6 days (D1\u2013D6)"
   },
   "219": {
     "answer_llm": "The pesticide used in the study is imidacloprid. The doses reported include:\n- Oral toxicity (LD50 at 48 h): 41\u201381 ng per bee and 37.7\u201340.9 ng per bee.\n- Acute contact toxicity: 49\u2013102 ng per bee and 59.7\u2013242.6 ng per bee.\n- Chronic exposure: 45\u201396 \u00b5g/kg sucrose solutions for 11 days and concentrations between 0.1 and 10 \u00b5g/kg sucrose solutions for 8\u201310 days. The exposure method was primarily through ingestion of sucrose solutions and potential exposure through contaminated pollen and nectar in field conditions. The duration of exposure is not explicitly stated in all references, but it implies ongoing exposure in the field and specific tests in the laboratory.",
     "answer_rev1": "The pesticide in use is imidacloprid, administered in the seed-treatment formulation, \"Gaucho\". The paper does not discuss the direct, experiimental application of this to honey bees - it is rather an analysis of the incorporation of pesticide residues in a lomg-term, chronically exposed field setting. There is therefore no set quantity or duration of exposure.",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Imidacloprid: Oral: LD$_{50}$ at 48 h, 41\u201381 ng per bee; chronic exposure, 45\u201396 \u00b5g/kg sucrose solutions for 11 days; ingestion, 0.1\u201310 \u00b5g/kg sucrose solutions for 8\u201310 days.\n   - Contact exposure: LD$_{50}$, 49\u2013102",
+    "answer_llm2": "1. Imidacloprid: \n   - Oral exposure: LD$_{50}$ at 48 h, 41\u201381 ng per bee; chronic exposure, 45\u201396 \u00b5g/kg sucrose solutions for 11 days; ingestion, 0.1\u201310 \u00b5g/kg sucrose solutions for 8\u201310 days.\n   - Contact exposure: LD$_{50}$, 49\u2013102 ng per bee; 59.7\u2013242.6 ng per bee.\n   - Field exposure: 1-10 \u03bcg/kg, via contaminated pollen and nectar."
   },
   "217": {
     "answer_llm": "The pesticides used in the study were imidacloprid, 5-hydroxyimidacloprid, and olefin. The doses were 0.010, 0.1, and 1 ng of imidacloprid per bee per day. The exposure method was oral acute toxicity tests, and the duration of exposure was acute (48, 72, and 96 hours) and chronic (10 days).",
     "answer_rev1": "The only pesticide investigated in the study was imidacloprid. To test acute oral toxicity, bees were fed 1-1000ng/individual in a 10ul volume. Mortality was recorded over 96 hours. For chronic toxicity, bees were fed 0.1, 1, or 10 g/L of imidacloprid-tainted sucrose solution over 10 days. These two assays were additionally repeated with 5 metabolites of imidacloprid - 5-Hydroxy, Olefin, 4,5-Dihydroxy, Desnitro, 6-CNAa and Urea.",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Imidacloprid: \n   - Acute exposure: 1 to 1,000 ng/bee (10\u201310,000 \u03bcg/kg), oral exposure, 48, 72, and 96 hours\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n2. 5-Hydroxyimidacloprid: \n   - Acute exposure: 200 ng/bee, oral exposure\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n3. Olefin: \n   - Acute exposure: 30 ng/bee, oral exposure\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n4. Urea: \n   - Acute exposure: 600 ng/bee (10,000 \u03bcg/kg), oral exposure\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n5. 4,5-Dihydroxyimidacloprid: \n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n6. 6-Chloronicotinic acid: \n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n7. Desnitroimidacloprid: \n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days",
+    "answer_llm2": "1. Imidacloprid: \n   - Acute exposure: 1 to 1,000 ng/bee (10\u201310,000 \u03bcg/kg), oral exposure, 48, 72, and 96 hours\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n2. 5-Hydroxyimidacloprid: \n   - Acute exposure: 200 ng/bee, oral exposure\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n3. Olefin: \n   - Acute exposure: 30 ng/bee, oral exposure\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n4. Urea: \n   - Acute exposure: 600 ng/bee (10,000 \u03bcg/kg), oral exposure\n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n5. 4,5-Dihydroxyimidacloprid: \n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n6. 6-Chloronicotinic acid: \n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days\n7. Desnitroimidacloprid: \n   - Chronic exposure: 0.1, 1, and 10 \u03bcg/L, oral exposure, 10 days"
   },
   "430": {
     "answer_llm": "Information not found in the provided text.",
@@ -369,37 +457,48 @@
     "rev1_rating": 5,
     "answer_rev2": "The following neonicotinoids were considered: acetamiprid, clothianidin, dinotefuran, imidacloprid, thiamethoxam and thiacloprid and the following pyrethroids; cyfluthrin, cypermetrin, permethrin, tefluthrin, tralomethrin, fenvalerate, deltamethrin, cyhalothrin-gamma, resmethrin, fluvalinate-tau.",
     "rev2": "BN",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "1. Acetamiprid\n2. Clothianidin\n3. Dinotefuran\n4. Imidacloprid\n5. Thiamethoxam\n6. Thiacloprid\n7. Cyfluthrin\n8. Cypermethrin\n9. Permethrin\n10. Tefluthrin\n11. Tralomethrin\n12. Fenvalerate\n13. Deltamethrin\n14. Cyhalothrin-gamma\n15. Resmethrin\n16. Fluvalinate-tau"
   },
   "233": {
     "answer_llm": "The pesticide used in the study was thiamethoxam. The doses were: high dose at 2.5 ng per bee, low dose LD.091 at 0.091 ng per bee, and low dose LD.377 at 0.377 ng per bee. The exposure method was through a radial-arm maze task, and the duration of exposure was acute.",
     "answer_rev1": "Bees were exposed to thiamethoxam at one of three doses: 2/5ng/bee (high), 0.377ng/bee (upper field realistic) or 0.091ng/bee (lower field realistic). This was supplied through the oral acute route, fed to the bees as a dilution in 18.855ul of sucrose solution. Absorption was allowed over 45 mins.",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Thiamethoxam: 2.5 ng^-1 bee (high sub-lethal dose), 0.377 ng^-1 bee (low dose), 0.091 ng^-1 bee (low dose); oral exposure; acute exposure.",
+    "answer_llm2": "1. Thiamethoxam: 2.5 ng^-1 bee (high sub-lethal dose), 0.377 ng^-1 bee (low dose), 0.091 ng^-1 bee (low dose); oral exposure; acute exposure."
   },
   "270": {
     "answer_llm": "The pesticide used in the study was imidacloprid (Confidor\u00ae Supra, 70% active ingredient). The doses were 0.175 mg L\u207b\u00b9, 0.087 mg L\u207b\u00b9, and 0.035 mg L\u207b\u00b9 of syrup. The exposure method was through syrup consumption, and the duration of exposure was 16 days.",
     "answer_rev1": "The pesticide in use was imidacloprid, administered in the 'Confidor Supra' formulation. For an estimation of the LD50, imidacloprid was administered at the following concentrations: 0.20, 0.30, 0.40, 0.50, 0.60, 0.70 and 0.80 ng/uL. This was administered as an acute oral dose, and mortality recorded after 48 hours. For a second assay, sublethal concentrations of 0.035, 0.087 and 0.175 mg/L were administered, via a chronic oral route, over 16 days.",
     "rev1": "KW",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_rev3": "1. Imidacloprid: 0.80, 0.70, 0.60, 0.50, 0.40, 0.30, and 0.20 mg/L for LD50 estimation; 0.175, 0.087, and 0.035 mg/L for sublethal doses, oral, 16 days.",
+    "answer_llm2": "1. Imidacloprid: 0.80, 0.70, 0.60, 0.50, 0.40, 0.30, and 0.20 mg \u03bcl\u207b\u00b9 for LD\u2085\u2080 estimation; 0.175, 0.087, and 0.035 mg L\u207b\u00b9 for sublethal doses, oral exposure via sucrose syrup, 16 days."
   },
   "277": {
     "answer_llm": "The pesticide used was imidacloprid at a dose of 5 ppb in nectar. The exposure method was through feeding the bumblebee queens with this nectar, and the duration of exposure was either 17 days (until eggs were present) or 37 days (for the entire experiment).",
     "answer_rev1": "Queens were fed chronically with 'nectar' (50%w/v sucrose solution) which had been treated with imidacloprid, 5ppb. Groups were fed for either 17 or 37 days.",
     "rev1": "KW",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Imidacloprid: 5 ppb, oral exposure, 17 or 37 days",
+    "answer_llm2": "1. Imidacloprid: 5 ppb, oral exposure, 17 or 37 days"
   },
   "276": {
     "answer_llm": "The pesticides used in the study were thiamethoxam and imidacloprid. The exposure method was chronic exposure through syrup and pollen. The doses were 0, 1.5, 5, 10, and 25 ppb for syrup, and 0, 0.3, 1.7, 3.3, and 8.3 ppb for pollen. The duration of exposure was 18 days.",
     "answer_rev1": "Bees were treated with only imidacloprid. They were exposed chronically over an 18 day duration, through a combination of treated pollen and nectar. Pollen measured at 0.3, 1.7, 3.3 and 8.3 ppb. Nectar measured at 1, 5, 10 and 5 ppb.",
     "rev1": "KW",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "1. Imidacloprid: 0, 1, 5, 10, or 25 ppb, oral exposure in 50% sugar syrup, 18 days",
+    "answer_llm2": "1. Imidacloprid: 0, 1, 5, 10, or 25 ppb, oral exposure in 50% sugar syrup, 18 days"
   },
   "427": {
     "answer_llm": "The pesticide used in the study was clothianidin at a dose of five parts per billion (ppb). The exposure method was through a sucrose solution spiked with clothianidin, and the duration of exposure was 5 weeks.",
     "answer_rev1": "Bees were chronically exposed with clothianidin. It was supplied at 5ppb, in 40% v/v sucrose solution, over 5 weeks, and was fed to colonies at large.",
     "rev1": "KW",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Clothianidin: 5 ppb, oral exposure via sucrose solution, 5 weeks (35 days)",
+    "answer_llm2": "1. Clothianidin: 5 ppb, oral exposure via sucrose solution, 5 weeks (35 days)"
   },
   "225": {
     "answer_llm": "The pesticide used in this study was thiacloprid, with doses of 0.5 mg/L and 1.0 mg/L. The exposure method involved administering freshly prepared food containing these dosages throughout the larval stage for a duration of 6 days after emergence.",
@@ -408,7 +507,9 @@
     "rev1_rating": 8,
     "answer_rev2": "Bees were exposed to thiacloprid at two doses (0.5 mg/L and 10 mg/L) during larval stage via food. The exposure duration was during larval stage (6 days)",
     "rev2": "FS",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "1. Thiacloprid: 0.5 mg/L and 1.0 mg/L, oral exposure during larval phase, 6 days",
+    "answer_llm2": "1. Thiacloprid: 0.5 mg/L and 1.0 mg/L, oral exposure during larval phase, 6 days"
   },
   "222": {
     "answer_llm": "The pesticides used in the study included a cocktail mixture (tau-fluvalinate, coumaphos, 2,4-DMPF, chlorothalonil, chlorpyrifos, fenpropathrin, atrazine, pendimethalin, and azoxystrobin) and imidacloprid. The doses for the cocktail were 0x, 0.33x, 2x, and 10x the median concentration in wax, while imidacloprid was tested at 1, 10, and 100 ppm. The exposure methods were topical application (2 \u03bcl directly to the thorax) and pollen feeding. The duration of exposure was generally acute, followed by a recovery period, but specific durations were not consistently detailed.",
@@ -417,19 +518,25 @@
     "rev1_rating": 8,
     "answer_rev2": "The pesticides used in the study included a cocktail mixture (tau-fluvalinate, coumaphos, 2,4-DMPF, chlorothalonil, chlorpyrifos, fenpropathrin, atrazine, pendimethalin, and azoxystrobin) and imidacloprid. The doses for the cocktail were 0x, 0.33x, 2x, and 10x the median concentration in wax, while imidacloprid was tested at 1, 10, and 100 ppm. The exposure methods were topical application (2 \u03bcl directly to the thorax) in adults and pollen feeding in larvae and adults inside the hive. The duration of exposure was acute for adults. In a second experiment, larvae and adults were exposed to pesticides via pollen patty feeding inside the hive.",
     "rev2": "FS",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "1. Imidacloprid: 1, 10, and 100 nm, 2 \u03bcl topical exposure in acetone\n2. Thiamethoxam: <5.0 ppb, oral exposure, colony-level\n3. Clothianidin: <5.0 ppb, oral exposure, colony-level\n4. Tau-fluvalinate: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n5. Coumaphos: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n6. 2,4-DMPF: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n7. Chlorothalonil: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n8. Chlorpyrifos: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n9. Fenpropathrin: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n10. Atrazine: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n11. Pendimethalin: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n12. Azoxystrobin: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n13. Carbaryl: included in the in-hive pollen patty feeding, specific doses not mentioned",
+    "answer_llm2": "1. Imidacloprid: 1, 10, and 100 nm, 2 \u03bcl topical exposure in acetone\n2. Thiamethoxam: <5.0 ppb, oral exposure, colony-level\n3. Clothianidin: <5.0 ppb, oral exposure, colony-level\n4. Tau-fluvalinate: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n5. Coumaphos: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n6. 2,4-DMPF: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n7. Chlorothalonil: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n8. Chlorpyrifos: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n9. Fenpropathrin: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n10. Atrazine: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n11. Pendimethalin: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n12. Azoxystrobin: part of a cocktail mixture, doses at 0x, 0.33x, 2x, and 10x of median wax concentration\n13. Carbaryl: included in the in-hive pollen patty feeding, specific doses not mentioned"
   },
   "434": {
     "answer_llm": "The pesticides used in the study were imidacloprid and flupyradifurone, with doses of 0.1, 1, and 10 \u03bcg/L. The exposure method was through treatment in sugar syrup, and the duration of exposure was 28 days.",
     "answer_rev1": "Imidacloprid and flupyradifurone were used in the study. These were at nominal concentrations of 0.1, 1 and 10ug/L, diluted in 50% w/w sucrose solution. These solutions were provided chronically over 15 days (newly emerged bees) and 28 days (microcolonies)",
     "rev1": "KW",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Imidacloprid: 0.1 ug/L, 1 ug/L, 10 ug/L, oral, 28 days; 2. Flupyradifurone: 0.1 ug/L, 1 ug/L, 10 ug/L, oral, 28 days",
+    "answer_llm2": "1. Imidacloprid: 0.1 \u00b5g/L, 1 \u00b5g/L, 10 \u00b5g/L, oral exposure, 28 days\n2. Flupyradifurone: 0.1 \u00b5g/L, 1 \u00b5g/L, 10 \u00b5g/L, oral exposure, 28 days"
   },
   "237": {
     "answer_llm": "The pesticides used in the study were clothianidin and imidacloprid. The doses for clothianidin were 2.5, 5, 10, 20, 40, and 80 \u03bcg/L, while imidacloprid was tested at 100 ppb. The exposure method involved foragers collecting sucrose solution from feeders containing these concentrations. The duration of exposure varied, with halving times exceeding 165 minutes at lower concentrations and decreasing to about half an hour at 80 \u03bcg/L.",
     "answer_rev1": "The authors tested only clothianidin. This was provided at 2.5, 5, 10, 20, 40, and 80 \u00b5g/L, chronically (165-200mins) in a sucrose backdrop.",
     "rev1": "KW",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "1. Clothianidin: 2.5, 5, 10, 20, 40, and 80 ug/L, oral, 165-200 mins; 2. Imidacloprid: 100 ppb, oral, repeated intakes; 1600 ppb, free flight exposure, acute",
+    "answer_llm2": "1. Clothianidin: 2.5, 5, 10, 20, 40, and 80 \u03bcg/L, free flight exposure, repeated intakes\n2. Imidacloprid: 100 ppb, free flight exposure, repeated intakes; 1600 ppb, free flight exposure, single dose"
   },
   "739": {
     "answer_llm": "The pesticides used in the study were Acetamiprid, Flonicamid, Sulfoxaflor, and Dodine. The doses were categorized as Low (1/10\u00d7), Medium (1\u00d7), and High (10\u00d7). The exposure method involved treating pollen food stores with these pesticides, and the duration of exposure was chronic, lasting until adult eclosion over a year.",
@@ -438,25 +545,33 @@
     "rev1_rating": 6,
     "answer_rev2": "The pesticides used in the study were Acetamiprid, Flonicamid, Sulfoxaflor, and Dodine.",
     "rev2": "HS",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Acetamiprid, oral, chronic; 2. Flonicamid, oral, chronic",
+    "answer_llm2": "1. Acetamiprid\n2. Flonicamid"
   },
   "737": {
     "answer_llm": "The pesticides used in the study include Imidacloprid (Advise 2FL), Acephate (Bracket97), \u03bb-Cyhalothrin (Karate Z 2.08 CS), Oxamyl (Vydate 3.77 CLV), Tetraconazole (Domark 230 ME), Glyphosate (Roundup PowerMAX), Sulfoxaflor (Transform 5G), and Clothianidin (Belay 50 WDG). The doses (spray concentrations) at LC20 are as follows: Imidacloprid - 274, Acephate - 273, \u03bb-Cyhalothrin - 273, Oxamyl - 162, Tetraconazole - 2500, Glyphosate - 2500, Sulfoxaflor - 117, Clothianidin - 40. The exposure method is through spraying, but the duration of exposure is not specified in the text.",
     "answer_rev1": "The pesticides used in the study include Imidacloprid (Advise 2FL), Acephate (Bracket97), \u03bb-Cyhalothrin (Karate Z 2.08 CS), Oxamyl (Vydate 3.77 CLV), Tetraconazole (Domark 230 ME), Glyphosate (Roundup PowerMAX), Sulfoxaflor (Transform 5G), and Clothianidin (Belay 50 WDG). sate - 2500, Sulfoxaflor - 117, Clothianidin - 40. The exposure method is through spraying, and the doses were chosen based on LC20 values",
     "rev1": "AB",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_rev3": "1. Imidacloprid: 58.6 mg a.i./L, field exposure; 2. Tetraconazole: 512.5 mg a.i./L, spraying method, field exposure; 3. Sulfoxaflor: 58.5 mg a.i./L, spraying method, field exposure; 4. Oxamyl: 68 mg a.i./L, spraying method, field exposure; 5. Acephate: 88.3 mg a.i./L, spraying method, field exposure; 6. \u03bb-Cyhalothrin: 62.2 mg a.i./L, spraying method, field exposure; 7. Clothianidin: 9.4 mg a.i./L, spraying method, field exposure; 8. Glyphosate: 1217.5 mg a.i./L, spraying method, field exposure",
+    "answer_llm2": "1. Imidacloprid: 58.6 mg a.i./L, spraying method, field exposure\n2. Tetraconazole: 512.5 mg a.i./L, spraying method, field exposure\n3. Sulfoxaflor: 58.5 mg a.i./L, spraying method, field exposure\n4. Oxamyl: 68 mg a.i./L, spraying method, field exposure\n5. Acephate: 88.3 mg a.i./L, spraying method, field exposure\n6. \u03bb-Cyhalothrin: 62.2 mg a.i./L, spraying method, field exposure\n7. Clothianidin: 9.4 mg a.i./L, spraying method, field exposure\n8. Glyphosate: 1217.5 mg a.i./L, spraying method, field exposure"
   },
   "736": {
     "answer_llm": "The pesticides used in the study were clothianidin and propiconazole. The doses were 0.79 ng/bee for *A. mellifera*, 1.81 ng/bee for *B. terrestris*, and 0.63 ng/bee for *O. bicornis* for clothianidin, and 7 \u03bcg/bee for propiconazole. The exposure method involved oral administration through feeding solutions, with a duration of exposure of 24 hours for *A. mellifera* and *B. terrestris*, and 72 hours for *O. bicornis*.",
     "answer_rev1": "The pesticides used in the study were clothianidin and propiconazole. A dose of 7 \u03bcg/bee for propiconazole was used. The exposure method involved oral administration through feeding solutions.",
     "rev1": "AB",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_rev3": "1. Clothianidin: 0.25 to 8 ng/bee (A. mellifera), 0.5 to 16 ng/bee (B. terrestris), 0.2 to 16 ng/bee (O. bicornis), oral, acute; 2. Propiconazole: 7 ng/bee, oral, acute",
+    "answer_llm2": "1. Clothianidin: 0.25 to 8 ng/bee (A. mellifera), 0.5 to 16 ng/bee (B. terrestris), 0.2 to 16 ng/bee (O. bicornis), oral exposure via feeding solution\n2. Propiconazole: 7 \u03bcg/bee, oral exposure via feeding solution"
   },
   "731": {
     "answer_llm": "The pesticides used in the study were thiamethoxam (4.5 ppb) and clothianidin (1.5 ppb). They were administered via pollen patties for a duration of 49 days (February 5 to March 25, 2018).",
     "answer_rev1": "The pesticides used in the study were thiamethoxam (4.5 ppb) and clothianidin (1.5 ppb). They were administered via pollen patties for a duration of 49 days",
     "rev1": "AB",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Thiamethoxam: 4.5 ppb, oral, 49 days; 2. Clothianidin: 1.5 ppb, oral, 49 days",
+    "answer_llm2": "1. Thiamethoxam: 4.5 ppb, oral exposure via pollen patties, 49 days\n2. Clothianidin: 1.5 ppb, oral exposure via pollen patties, 49 days"
   },
   "738": {
     "answer_llm": "The pesticides used in the study were Th, \u03bb-cy, \u03b2-cy, and Ab. The doses were as follows: Th (1000, 750, 400, 200, 100 \u03bcg/L), \u03bb-cy (7.5 \u00d7 10\u2074, 6 \u00d7 10\u2074, 4 \u00d7 10\u2074, 2 \u00d7 10\u2074, 1 \u00d7 10\u2074 \u03bcg/L), \u03b2-cy (3 \u00d7 10\u2074, 1.5 \u00d7 10\u2074, 1 \u00d7 10\u2074, 5 \u00d7 10\u00b3, 2.5 \u00d7 10\u00b3 \u03bcg/L), and Ab (100, 50, 25, 15, 10 \u03bcg/L). The exposure method was through feeding the bees a sucrose solution with the pesticides for 4 hours, and the duration of exposure was 48 hours.",
@@ -465,37 +580,49 @@
     "rev1_rating": 7,
     "answer_rev2": "The study used thiamethoxan, lambda-cyhalothrin, beta-cypermethrin and abamectin. The dosages are;\n\nthiamethoxan (1000, 750, 400, 200, 100 \u03bcg/L)\nlambda-cyhalothrin (7.5 \u00d7 10\u2074, 6 \u00d7 10\u2074, 4 \u00d7 10\u2074, 2 \u00d7 10\u2074, 1 \u00d7 10\u2074 \u03bcg/L)\nbeta-cypermethrin (3 \u00d7 10\u2074, 1.5 \u00d7 10\u2074, 1 \u00d7 10\u2074, 5 \u00d7 10\u00b3, 2.5 \u00d7 10\u00b3 \u03bcg/L)\nabamectin (100, 50, 25, 15, 10 \u03bcg/L).",
     "rev2": "HS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "1. Thiamethoxam: 300 \u03bcg/L, oral exposure, 4 hours; 2. Lambda-cyhalothrin: $2.64 \\times 10^4$ \u03bcg/L, oral exposure, 4 hours; 3. Beta-cyfluthrin: $1.04 \\times 10^4$ \u03bcg/L, oral exposure, 4 hours; 4. Abamectin: 33 \u03bcg/L, oral exposure, 4 hours",
+    "answer_llm2": "1. Thiamethoxam: 300 \u03bcg/L, oral exposure, 4 hours\n2. Lambda-cyhalothrin: $2.64 \\times 10^4$ \u03bcg/L, oral exposure, 4 hours\n3. Beta-cyfluthrin: $1.04 \\times 10^4$ \u03bcg/L, oral exposure, 4 hours\n4. Abamectin: 33 \u03bcg/L, oral exposure, 4 hours"
   },
   "740": {
     "answer_llm": "The pesticides used in the study are:\n1. Actara 25 WG (Thiamethoxam) - Dose: 0.2 g/l\n2. Clipper 20% SL (Acetamiprid) - Dose: 0.25 ml/l\n3. Calypso 48% SL (Thiacloprid) - Dose: 0.3 ml/l\n4. Radiant 12% SC (Spinosyns A and D) - Dose: 0.5 ml/l\n5. Malathion 57% EC (Organophosphate) - Dose: 1.5 ml/l\n\nThe exposure method and duration of exposure are not provided in the text.",
     "answer_rev1": "The pesticides used in the study are:\n1. Actara 25 WG (Thiamethoxam) - Dose: 0.2 g/l\n2. Clipper 20% SL (Acetamiprid) - Dose: 0.25 ml/l\n3. Calypso 48% SL (Thiacloprid) - Dose: 0.3 ml/l\n4. Radiant 12% SC (Spinosyns A and D) - Dose: 0.5 ml/l\n5. Malathion 57% EC (Organophosphate) - Dose: 1.5 ml/l",
     "rev1": "AB",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_rev3": "1. Thiamethoxam: 50 mg/l; 2. Spinosyns A and D: 60 mg/l; 3. Acetamiprid: 50 mg/l; 4. Thiacloprid: 144 mg/l; 5. Malathion: 855 mg/l",
+    "answer_llm2": "1. Thiamethoxam: 50 mg/l\n2. Spinosyns A and D: 60 mg/l\n3. Acetamiprid: 50 mg/l\n4. Thiacloprid: 144 mg/l\n5. Malathion: 855 mg/l"
   },
   "734": {
     "answer_llm": "The pesticides used in this study were thiamethoxam (0.024 \u03bcg), bifenthrin (0.255 \u03bcg), difenoconazole (200 \u03bcg), fenhexamid (250 \u03bcg), and myclobutanil (400 \u03bcg). The exposure method was contact application, with the pesticides dissolved in acetone. The duration of exposure for the insecticides was 48 hours, but the duration for the fungicides is not specified.",
     "answer_rev1": "he pesticides used in this study were thiamethoxam (0.024 \u03bcg), bifenthrin (0.255 \u03bcg), difenoconazole (200 \u03bcg), fenhexamid (250 \u03bcg), and myclobutanil (400 \u03bcg). The exposure method was contact application, with the pesticides dissolved in acetone.",
     "rev1": "AB",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": ". Thiamethoxam: 0.024 \u03bcg, contact exposure; 2. Bifenthrin: 0.255 \u03bcg, contact exposure; 3. Difenoconazole: 200 \u03bcg, contact exposure; 4. Fenhexamid: 250 \u03bcg, contact exposure; 5. Myclobutanil: 400 \u03bcg, contact exposure",
+    "answer_llm2": "1. Thiamethoxam: 0.024 \u03bcg, contact exposure\n2. Bifenthrin: 0.255 \u03bcg, contact exposure\n3. Difenoconazole: 200 \u03bcg, contact exposure\n4. Fenhexamid: 250 \u03bcg, contact exposure\n5. Myclobutanil: 400 \u03bcg, contact exposure"
   },
   "733": {
     "answer_llm": "The pesticide used in the study was Thiamethoxam at a dose of 2.6 g/kg. The exposure method involved feeding the honey bee colonies pollen patties containing the pesticide, and the duration of exposure was 5 weeks.",
     "answer_rev1": "Thiamethoxam.",
     "rev1": "AB",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Thiamethoxam: 2.6 g/kg, oral exposure, 5 weeks",
+    "answer_llm2": "1. Thiamethoxam: 2.6 g/kg, oral exposure via pollen patties, 5 weeks"
   },
   "732": {
     "answer_llm": "The pesticide used in the study was imidacloprid (IMD) at a dose of 20 \u03bcg/kg. The exposure method involved daily feeding of a 50% sucrose solution containing the pesticide to the honey bee hives. The duration of exposure was 14 days.",
     "answer_rev1": "The pesticide used in the study was imidacloprid (IMD) at a dose of 20 \u03bcg/kg. The exposure method involved daily feeding of a 50% sucrose solution containing the pesticide to the honey bee hives. The duration of exposure was 14 day",
     "rev1": "AB",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "1. Imidacloprid: 20 \u03bcg/kg, oral exposure, 14 days",
+    "answer_llm2": "1. Imidacloprid: 20 \u03bcg/kg, oral exposure via sucrose solution, 14 days"
   },
   "729": {
     "answer_llm": "The pesticide used in the study was sulfoxaflor. The doses were 5 \u03bcg dm<sup>-3</sup>, 10 \u03bcg dm<sup>-3</sup>, and 50 \u03bcg dm<sup>-3</sup>. The exposure method involved a 25% sucrose solution, and the duration of exposure was five days.",
     "answer_rev1": "sulfoxaflor at 5\u03bcg , 10\u03bcg , and 50\u03bcg , with an oral-bronic exposure (ad libitum, renewed daily)",
     "rev1": "AB",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Sulfoxaflor: 5, 10, and 50 \u03bcg dm<sup>3</sup>, oral exposure , chronic.",
+    "answer_llm2": "1. Sulfoxaflor: 5, 10, and 50 \u03bcg dm<sup>3</sup>, oral exposure via 25% sucrose solution, long-term exposure with daily renewal of feeders."
   },
   "440": {
     "answer_llm": "The pesticide used in the study is imidacloprid. The doses mentioned are 100 \u03bcg/kg, 6-100 \u03bcg/kg, 12-24 \u03bcg/kg, and 12 ng/bee. The exposure method was through feeding honeybees imidacloprid, and the duration of exposure is described as medium-term.",
@@ -504,25 +631,25 @@
     "rev1_rating": 0,
     "answer_rev2": "The pesticide used in the study is imidacloprid and the tested concentrations were: 0.1, 6, 50, 500, 1000, 1500 and 2000 mg/L and the total doses ranged from 0.4 to 8000 ng/larva. For the sublethal test the tested doses were from 0 to 0.4 ng/larva",
     "rev2": "FS",
-    "rev2_rating": 4
-  },
-  "448": {
-    "answer_llm": "Information not found in the provided text.",
-    "answer_rev1": "No pesticide was tested, the study used literature data from Apis mellifera.",
-    "rev1": "RT",
-    "rev1_rating": 1
+    "rev2_rating": 4,
+    "answer_rev3": "1. Imidacloprid: 24 to 8000 ng/larva, oral and contact, 4 days",
+    "answer_llm2": "1. Imidacloprid: 24 to 8000 ng/larva, direct treatment in the hive"
   },
   "439": {
     "answer_llm": "The pesticide used in this study was thiamethoxam (ACTARA\u00ae). The dose was 0.408 ng a.i./\u03bcL for the 24-hour LC50, with additional sublethal concentrations of LC50/10 and LC50/20. The exposure method was oral, through syrup, and the duration of exposure was 24 hours.",
     "answer_rev1": "The authors used the formulated product Actara contaning the active ingrediente thiamethoxam. For the acute oral LC50 determination, the concentrations testes were 0.1, 0.2, 0.4, 0.8, 1.6 and 3.2 ng/uL and offered for 24h. For the mobility endpoints workers were exposed to the LC50/100 and LC50/10, considering the LC50 of 0.408 ng/uL, bees were orally exposed for 24h.",
     "rev1": "RT",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "1. Thiamethoxam: 1000 ng a.i./\u03bcL, oral, 24 hours",
+    "answer_llm2": "1. Thiamethoxam: 1000 ng a.i./\u03bcL, 24 hours exposure"
   },
   "453": {
     "answer_llm": "The pesticides used in the study were clothianidin and thiamethoxam. The exposure method involved analyzing pesticide residues in water puddles and dead honey bees. The duration of exposure was approximately 5 weeks, from early May to mid-June.",
     "answer_rev1": "The study did not perform a pesticide exposure; instead, colonies of bumble bees were placed in fields with a high level of agricultural use (especially neonicotinoids). The colonies were kept in the field for approximately 5 weeks. For exposed sites, residue analysis proved the presence of clothianidin and thiamethoxam.",
     "rev1": "RT",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Clothianidin: field exposure, 5 weeks; 2. Thiamethoxam: field exposure, 5 weeks",
+    "answer_llm2": "1. Clothianidin: field exposure via neonicotinoid-treated corn fields\n2. Thiamethoxam: field exposure via neonicotinoid-treated corn fields"
   },
   "384": {
     "answer_llm": "The pesticides used in the study are:\n1. Acetamiprid (Assail\u00ae 70 WP) - Dose: 560 ppm\n2. Spinetoram (Delegate\u00ae) - Dose: 25 ppm\n3. Propiconazole (Topas\u00ae) - Dose: 613 ppm\n4. Flusilazole (Nustar\u00ae) - Dose: 12 ppm\n\nThe exposure method involved applying 1 \u03bcL of treatment solution to the dorsal side of anesthetized bees, and the duration of exposure was 48 hours, during which honey bee mortality was assessed.",
@@ -531,7 +658,9 @@
     "rev1_rating": 0,
     "answer_rev2": "The pesticides used in the study are:\n1. Acetamiprid (Assail\u00ae 70 WP) - Dose: 560 ppm\n2. Spinetoram (Delegate\u00ae) - Dose: 25 ppm\n3. Propiconazole (Topas\u00ae) - Dose: 613 ppm\n4. Flusilazole (Nustar\u00ae) - Dose: 12 ppm\n5. Pyraclostrobin + boscalid (Pristine\u00ae) - Dose: 2432 ppm\nThe exposure method involved applying 1 \u03bcL of treatment solution to the dorsal side of anesthetized bees, and the duration of exposure was 48 hours, during which honey bee mortality was assessed.",
     "rev2": "SA",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_rev3": "1. Acetamiprid: 560 ppm, contact, acute; 2. Spinetoram: 25 ppm, contact, acute; 3. Propiconazole: 613 ppm, contact, acute; 4. Flusilazole: 12 ppm, combined exposure with spinetoram, contact, acute; 5. Pyraclostrobin + Boscalid: 2432 ppm, contact, acute",
+    "answer_llm2": "1. Acetamiprid: 560 ppm\n2. Spinetoram: 25 ppm, oral and contact exposure\n3. Propiconazole: 613 ppm\n4. Flusilazole: 12 ppm, combined exposure with spinetoram\n5. Pyraclostrobin + Boscalid: 2432 ppm"
   },
   "385": {
     "answer_llm": "The pesticides used in the study were Imidacloprid and Dimethoate. The doses were: Imidacloprid - 0.0047 \u00b5g a.i./bee (oral) and 0.0014 \u00b5g a.i./bee (contact); Dimethoate - 0.0565 \u00b5g a.i./bee (oral) and 0.0691 \u00b5g a.i./bee (contact). The exposure method was oral and contact toxicity bioassays, with a duration of 48 hours post-treatment.",
@@ -540,7 +669,9 @@
     "rev1_rating": 2,
     "answer_rev2": "The pesticides used in this study were imidacloprid and dimethoate (active ingredients 99% purity). The tested concentrations are not provided in the main text, but in the Suplementary Material of the paper. Individual bees of Leioproctus paahaumaa and Apis mellifera were orally exposed to 10 \u03bcL of pesticide-sucrose solutions at various concentrations, with mortality monitored up to 72 hours. Contact exposure involved topical application of 1 \u03bcL (for A. mellifera) or 2 \u03bcL (for L. paahaumaa) of the pesticide solution, with mortality monitored up to 72 hours.",
     "rev2": "SA",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Imidacloprid: 5 concentrations from 0.001 to 2 ug/bee, Oral exposure, 48 hours; Contact exposure, 48 hours\n2. Dimethoate: 5 concentrations from 0.001 to 2 ug/bee, Oral exposure, 48 hours; Contact exposure, 48 hours",
+    "answer_llm2": "1. Imidacloprid: Oral exposure, 48 hours; Contact exposure, 48 hours\n2. Dimethoate: Oral exposure, 48 hours; Contact exposure, 48 hours"
   },
   "382": {
     "answer_llm": "The pesticides used in the study were neonicotinoids, specifically imidacloprid, clothianidin, and thiamethoxam. The exposure method for imidacloprid was through sucrose or pollen feeding for 3 weeks, while the exposure method for clothianidin and thiamethoxam was through lingering pesticide residues in the environment for 2.5 weeks.",
@@ -549,7 +680,9 @@
     "rev1_rating": 2,
     "answer_rev2": "This study did not apply pesticides directly. Instead, honey bee colonies were exposed naturally by placing them at two field sites: one contaminated by systemic pesticides from by-products of pesticide-treated seeds processed in an ethanol plant, and a control orchard site without such contamination. The exact pesticide  and levels were documented in supplementary tables. Colonies were monitored over one month periods across multiple trials from 2021 to 2022.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "No pesticides were tested in this study",
+    "answer_llm2": "No pesticides were tested in this study"
   },
   "378": {
     "answer_llm": "The pesticides used in the study were clothianidin and thiamethoxam. The exposure method was through honey bees collecting contaminated pollen and nectar during corn planting. The duration of exposure was significant immediately after planting but declined to pre-planting levels within one week.",
@@ -558,7 +691,8 @@
     "rev1_rating": 2,
     "answer_rev2": "The pesticides used in the study were clothianidin, thiamethoxam and imidacloprid, detected as residues in field-collected pollen during corn planting. In the field experiment, honey bees were exposed by foraging on contaminated pollen and nectar. In the controlled closed colony experiment, bees were orally exposed for 96 hours to three treatments: pollen spiked with 100 ng/g technical clothianidin (positive control), pollen from a low-exposure site (negative control), and naturally contaminated field-collected pollen.",
     "rev2": "SA",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "1. Clothianidin: field-collected pollen exposure, 4 days\n2. Thiamethoxam: field-collected pollen exposure, 4 days\n3. Imidacloprid\n4. Nitenpyram\n5. Dinotefuran\n6. Acetamiprid\n7. Thiacloprid"
   },
   "444": {
     "answer_llm": "The pesticides used in the study were thiamethoxam (1.25 mg a.i. per seed), imidacloprid (814.09 ml/ha), and lambda-cyhalothrin (140.3 ml/ha). Thiamethoxam was applied as a seed coating, imidacloprid as a soil drench, and lambda-cyhalothrin as a foliar spray with four applications at 4, 6, 8, and 10 weeks post-transplant. The exposure duration for lambda-cyhalothrin was throughout the growing season.",
@@ -567,7 +701,9 @@
     "rev1_rating": 9,
     "answer_rev2": "The main insecticides reported in the paper are: thiamethoxam, imidacloprid, lambda-cyalothrin. In IPM seeds were coated with fungicides: Azoxystrobin, Fludioxonil, Mefenoxam, Thiabendazole",
     "rev2": "FS",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "No pesticides were tested in this study",
+    "answer_llm2": "No pesticides were tested in this study"
   },
   "443": {
     "answer_llm": "The pesticide used in the study was sulfoxaflor (SFX) at a dose of 15 ng/bee. The exposure methods included administering SFX 30 minutes before conditioning and 12 hours before conditioning. The duration of exposure was 30 minutes for the first method and 12 hours for the second method.",
@@ -576,19 +712,24 @@
     "rev1_rating": 7,
     "answer_rev2": "The pesticide used in the study was sulfoxaflor (SFX) at a dose of 15 ng/bee for the sublethal test. This test was obtained after a specific assay for the determination of the LD50 and NOEL testing 11 doses",
     "rev2": "FS",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Sulfoxaflor: 15, 20, 30, 50, 100, 125, 150, 175, 200, 300, and 500 ng/bee, oral exposure, 48 hours; 15 ng/bee, oral exposure, 30 minutes before conditioning and 12 hours before conditioning."
   },
   "445": {
     "answer_llm": "The pesticide used in the study was Imidacloprid at a dose of 10nM (2.56 ppb), delivered in a 50% sucrose solution for ad libitum feeding. The duration of exposure to Imidacloprid was 5 days, and bumblebees were also exposed to 670nm light for varying durations (0.5, 1, 5, or 60 minutes) to assess its effects on respiration.",
     "answer_rev1": "The pesticide used in the study was Imidacloprid at a dose of 10nM (2.56 ppb), delivered in a 50% sucrose solution for ad libitum feeding. The duration of exposure to Imidacloprid was 5 days.",
     "rev1": "RT",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_rev3": "1. Imidacloprid: 10nM (2.56 ppb), oral exposure, 5 days",
+    "answer_llm2": "1. Imidacloprid: 10nM (2.56 ppb), oral exposure via 50% sucrose solution, continuous exposure for 5 days"
   },
   "451": {
     "answer_llm": "The pesticide used in the study was thiamethoxam. The acute exposure dose was 1.43 ng a.i./\u03bcL, administered through a food solution on the 4th day of the bioassay, with no insecticide on the 5th and 6th days. The subchronic exposure involved doses of 20, 40, and 50 ng a.i./\u03bcL, with larvae fed contaminated food on the 4th, 5th, and 6th days. The duration of acute exposure was 48 hours, while subchronic exposure lasted for 3 consecutive days.",
     "answer_rev1": "The pesticide used in the study was thiamethoxam.\nFor the acute LC50 calculation, the study used six concentrations from 0.1 to 200 ng/uL that were offered on the 4th day of the bioassay. Next, an acute exposure dose was 1.43 ng a.i./\u03bcL, administered through a food solution on the 4th day of the bioassay, with no insecticide on the 5th and 6th days. The subchronic exposure larvae were fed contaminated food on the 4th, 5th, and 6th days, receiving the following volumes per day: 20, 40, and 50 \u03bcL of food containing 0.47 ng/\u03bcL of thiamethoxam.",
     "rev1": "RT",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "1. Thiamethoxam: 14.34 ng a.i./\u03bcL (LC\u2085\u2080), 1.43 ng a.i./\u03bcL (sublethal concentration), oral exposure, acute exposure for 48 hours; subchronic exposure over 3 days (4th, 5th, and 6th days) with 0.47 ng a.i./\u03bcL per day.",
+    "answer_llm2": "1. Thiamethoxam: 14.34 ng a.i./\u03bcL (LC\u2085\u2080), 1.43 ng a.i./\u03bcL (sublethal concentration), oral exposure, acute exposure for 48 hours; subchronic exposure over 3 days (4th, 5th, and 6th days) with 0.47 ng a.i./\u03bcL per day."
   },
   "514": {
     "answer_llm": "The pesticides used in the study were flubendiamide (2000 mg a.i./L), deltamethrin (17 mg a.i./L and 1.7 mg a.i./L), spinetoram (8 mg a.i./L and 0.8 mg a.i./L), and phosmet. The exposure methods included topical application and oral ingestion through contaminated honey solution. The duration of exposure was approximately 48 hours for oral tests, while the duration for topical exposure was not explicitly stated.",
@@ -597,7 +738,9 @@
     "rev1_rating": 3,
     "answer_rev2": "The pesticides included formulations of flubendiamide (Belt), deltamethrin (Decis), spinetoram (Delegate), phosmet (Imidan) and spinosad (Success). Because they performed direct contact and oral toxicity bioassays to calculate LC50, each test included various concentrations. For sublethal effects, the tested concentrations were 0 (control), 2000 (flubendiamide), 0.8 (spinetoram), 8.0 (spinetoram), 1.7 (deltamethrin) and 17.0 (deltamethrin) mg a.i./L. The duration of exposure in the acute contact exposure bioassays was not specified, but acute contact exposure implies that it was short. For the oral toxicity assays and sublethal toxicity microcolony bioassays, the exact duration was also not mentioned, but bees had access to the pesticide-spiked honey solution for 15 min, meaning that exposure lasted for a maximum of 15 min.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Flubendiamide: 2000 mg a.i./L, oral exposure\n2. Deltamethrin: 17 and 1.7 mg a.i./L, oral exposure\n3. Spinetoram: 8 and 0.8 mg a.i./L, oral exposure",
+    "answer_llm2": "1. Flubendiamide: 2000 mg a.i./L, oral exposure\n2. Deltamethrin: 17 and 1.7 mg a.i./L, oral exposure\n3. Spinetoram: 8 and 0.8 mg a.i./L, oral exposure"
   },
   "513": {
     "answer_llm": "The pesticides used in the study were imidacloprid and clothianidin. The doses were low (3 or 6 ppb), intermediate (30 ppb), and high (300 ppb). The exposure method involved injecting the pollen provisions with the pesticides. The duration of exposure was not specified in the text.",
@@ -606,7 +749,9 @@
     "rev1_rating": 7,
     "answer_rev2": "The pesticides were imidacloprid and clothianidin at concentrations of 0 (control), 3, 6, 30 or 300 ppb in pollen.  Exposure occured via pollen and either involved injecting the bees' own pollen with pesticides, or replacing the pollen with honeybee-collectefd pollen with pesticides. The duration of exposure was throughout the larval feeding stage.",
     "rev2": "LH",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "1. Imidacloprid: 3, 6, 30, and 300 ppb, oral exposure, unknown duration; 2. Clothianidin: 3, 6, 30, and 300 ppb, oral exposure via pollen, unknown duration",
+    "answer_llm2": "1. Imidacloprid: 3, 6, 30, and 300 ppb, oral exposure via pollen, field and laboratory experiments\n2. Clothianidin: 3, 6, 30, and 300 ppb, oral exposure via pollen, field experiments"
   },
   "373": {
     "answer_llm": "The pesticides used in the study were imidacloprid (500 ng/kg in 35% sugar/water solution) and coumaphos (32 mg/mL in sugar solution). The exposure method was ad libitum feeding of the treated solutions, and the duration of exposure was 24, 48, or 72 hours.",
@@ -615,7 +760,9 @@
     "rev1_rating": 8,
     "answer_rev2": "Two pesticides were used in this study: imidacloprid and coumaphos. Imidacloprid was prepared at a concentration of 500 ng/kg in a 35% sugar/water solution using 0.183 mL of the formulation Gaucho per 1 L. Coumaphos was prepared at 32 mg/mL using the formulation Perizin (1 mL Perizin in 15 g sugar in 50 mL water; Bayer). The exposure method was ad libitum, and the duration of exposure was 24, 48, or 72 hours.",
     "rev2": "SA",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_rev3": "1. Imidacloprid: 500 ng/kg, oral, 24, 48 or 72 hours; 2. Coumaphos, 32 mg/mL, oral, 24, 48 or 72 hours",
+    "answer_llm2": "1. Imidacloprid: exposure duration of 24 hours\n2. Coumaphos"
   },
   "380": {
     "answer_llm": "The pesticides used in the study include Propamocarb (fungicide), Carbendazim (herbicide), and Azobenzene (insecticide). However, the study does not specify the dose, exposure method, or duration of exposure for these pesticides.",
@@ -624,7 +771,8 @@
     "rev1_rating": 1,
     "answer_rev2": "The study did not apply pesticides directly. Instead, it measured environmental pesticide residues in bees collected from 30 hives using chemical analysis. No specific doses or controlled exposures were used.",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_llm2": "1. Praziquantel\n2. Captafol\n3. Captan\n4. Fenpropimorph\n5. Propamocarb\n6. Carbathiin\n7. Benzoyprop-ethyl\n8. Tebuthiuron\n9. Allethrin\n10. Azobenzene\n11. Carbofuran\n12. Ethion\n13. Fluorexal-butyl\n14. Isoprocarb\n15. Monocrotophos\n16. Promecarb\n17. Propoxur\n18. Tetramethrin\n19. Oxalic Acid\n20. Naphthalene\n21. Carbendazim"
   },
   "381": {
     "answer_llm": "The pesticides used in the study were thiacloprid (35 mg l\u207b\u00b9 in syrup) and fluvalinate (400 mg l\u207b\u00b9 in syrup). The exposure method was through treatment in syrup, and the duration of exposure was 10 days.",
@@ -633,7 +781,8 @@
     "rev1_rating": 5,
     "answer_rev2": "The study used two pesticides, thiacloprid and fluvalinate. The pesticides were dissolved in DMSO and diluted in sugar syrup at two doses: thiacloprid at 17.5 mg/L (low) and 35 mg/L (high), and fluvalinate at 200 mg/L (low) and 400 mg/L (high). Honey bees were exposed by feeding them pesticide-treated syrup ad libitum, starting on day 6 or day 11 after emergence depending on the group. Exposure lasted several days, with sampling for analysis occurring between 4 and 7 days post-treatment.",
     "rev2": "SA",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "1. Thiacloprid: 35 mg l\u207b\u00b9 (high dosage) and 17.5 mg l\u207b\u00b9 (low dosage), oral exposure via syrup, 10 days\n2. Fluvalinate: 400 mg l\u207b\u00b9 (high dosage) and 200 mg l\u207b\u00b9 (low dosage), oral exposure via syrup, 10 days"
   },
   "515": {
     "answer_llm": "The pesticide used in the study was thiamethoxam (Spike 25WG). The doses included 0.1 g/l for spraying, 0.005 to 0.08 \u03bcg/bee for contact exposure, and 0.016 \u03bcg/bee for oral exposure. The exposure methods were spraying, topical application, and oral feeding. The duration of exposure varied, with 24 hours for acute toxicity assessments and up to 28 days for effects on foraging and colony performance.",
@@ -642,31 +791,37 @@
     "rev1_rating": 9,
     "answer_rev2": "The pesticide used in the toxicity tests was thiamethoxam. Exposure occurred through contact (0.005, 0.01, 0.02, 0.04, 0.08 ug/bee) and oral (0.005, 0.01, 0.02, 0.04, 0.08, 0.16 ug/bee) exposure, the latter via 5 micro L of sucrose solution. Duration of exposure unspecified, but given the methods, it was short. For oral toxicity test for larvae under field conditions, the concentrations were 0.03, 0.06, 0.12, 0.24, 0.48, 0.6 and 0 ug and exposure duration was 14 days. For semi-field and field studies, thiamethoxam in formulation (Spike 25WG) was sprayed on a flowering crop (Brassica juncea) at 0.1 g/L (no mentioning of application per area) and also not specified that this is referring to the a.i., but it must be as it otherwise would be surprisingly low), and compared to a water control. Duration of exposure in the semi-field trial was 28 days.",
     "rev2": "LH",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "1. Thiamethoxam: 0.1 g/l, field exposure via spraying on mustard crop, 3 days after bee colonies were set up; 0.012, 0.03, 0.06, 0.24, 0.48, and 0.60 \u00b5g/larvae, oral exposure, 14 days"
   },
   "938": {
     "answer_llm": "The pesticides used in the study were fenvalerate, \u03bb-cyhalothrin, quinalphos, and thiamethoxam, all at a dose of 12.5 ppm. The exposure method involved multiple applications, with a duration of exposure of 24 hours after the last dose for fenvalerate, while other pesticides were assessed at different larval stages.",
     "answer_rev1": "The pesticides used in the experiment were fenvalerate, \u03bb-cyhalothrin, quinalphos, and thiamethoxam, each tested at five different concentrations: 0.02, 0.1, 0.5, 2.5, and 12.5 ppm. The exposure method involved both single and multiple applications, with 1 \u00b5L of solution applied to each larval cell. Two controls were used: a negative control (without solvent) and a positive control (with solvent). For multiple-dose treatments, each application was performed at 24-hour intervals. Survival of A. mellifera larvae was assessed at different developmental stages.",
     "rev1": "SA",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "1. Fenvalerate: 0.02, 0.1, 0.5, 2.5, and 12.5 ppm, applied using micropipette (1 \u03bcl per cell), single and multiple doses with a 24-hour interval between applications.\n2. \u03bb-Cyhalothrin: 0.02, 0.1, 0.5, 2.5, and 12.5 ppm, applied using micropipette (1 \u03bcl per cell), single and multiple doses with a 24-hour interval between applications.\n3. Thiamethoxam: 0.02, 0.1, 0.5, 2.5, and 12.5 ppm, applied using micropipette (1 \u03bcl per cell), single and multiple doses with a 24-hour interval between applications.\n4. Quinalphos: 0.02, 0.1, 0.5, 2.5, and 12.5 ppm, applied using micropipette (1 \u03bcl per cell), single and multiple doses with a 24-hour interval between applications."
   },
   "053": {
     "answer_llm": "The pesticides used in the study were acetamiprid, carbaryl, cypermethrin, and deltamethrin. The doses were: acetamiprid (2.5 to 590 mg L\u207b\u00b9), carbaryl (2 to 64 mg L\u207b\u00b9), cypermethrin (0.25 to 8 mg L\u207b\u00b9), and deltamethrin (0.025 to 0.8 mg L\u207b\u00b9). The exposure method involved feeding larvae a diet containing these pesticides, and the duration of exposure was 72 hours for acute toxicity and 4 days for chronic toxicity assessments.",
     "answer_rev1": "Five insecticides were used in this study: acetamiprid, carbaryl, cypermethrin, deltamethrin, and dimethoate (positive control). Larvae were fed 30 \u00b5L of diet containing each insecticide dissolved in acetone, with doses per larva as follows: acetamiprid\u20140.75, 1.5, 3, 6, and 12 \u03bcg; carbaryl\u20140.3, 0.6, 1.2, 2.4, and 4.8 \u03bcg; cypermethrin\u20140.0225, 0.045, 0.09, 0.18, and 0.36 \u03bcg; and deltamethrin\u20140.0075, 0.015, 0.03, 0.06, and 0.12 \u03bcg. Exposure began at 4 days post-grafting (larvae approximately 84 hours old) and lasted 72 hours, with mortality recorded daily until day 7 to determine LC50 values.",
     "rev1": "SA",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Acetamiprid: 25, 50, 100, 200, and 400 \u03bcg mL\u207b\u00b9; oral exposure; 72 hours\n2. Carbaryl: 10, 20, 40, 80, and 160 \u03bcg mL\u207b\u00b9; oral exposure; 72 hours\n3. Cypermethrin: 0.75, 1.5, 3, 6, and 12 \u03bcg mL\u207b\u00b9; oral exposure; 72 hours\n4. Deltamethrin: 0.25, 0.5, 1, 2, and 4 \u03bcg mL\u207b\u00b9; oral exposure; 72 hours\n5. Dimethoate: No specific dose or exposure method mentioned; oral exposure; 72 hours"
   },
   "052": {
     "answer_llm": "The pesticide used in the study was thiacloprid. The dose was 1/5 of the LC\u2085\u2080 (39.5 mg/L), and the exposure method involved both acute (48 hours) and chronic (96 hours) exposure.",
     "answer_rev1": "The pesticide used in the study was thiacloprid. First, an acute oral test was performed to determine de LC50. For this test, they used 6 different concentrations: 0 mg/L, 130 mg/L, 170 mg/L, 220 mg/L, 286 mg/L and 382 mg/L. The duration of the acute test was 48h.  The obtained 48h-LC50 value was 197.625 mg/L. After the acute test, a chronic oral test was performed using a sublethal concentration corresponding with 1/5 of LC50 (39.5 mg/L). The bees were chronically exposed to the pesticide for 96h.",
     "rev1": "SA",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "1. Thiacloprid: 0 mg/L, 130 mg/L, 170 mg/L, 220 mg/L, 286 mg/L, 382 mg/L; oral exposure; acute exposure; and 96 hours chronic exposure at 39.5 mg/L (1/5 of LC50); 2. Imidacloprid: 3.044 mg/L, oral exposure, 48 hours acute, 96 hours chronic.",
+    "answer_llm2": "1. Thiacloprid: 0 mg/L, 130 mg/L, 170 mg/L, 220 mg/L, 286 mg/L, 382 mg/L; oral exposure via 50% sucrose solution; 48 hours acute exposure and 96 hours chronic exposure at 39.5 mg/L (1/5 of LC50).\n2. Imidacloprid: 3.044 mg/L, oral exposure."
   },
   "946": {
     "answer_llm": "The pesticides used in the study were dimethoate (120 ng/larva) and clothianidin (16 ng/larva). The exposure method involved adding these pesticides to the larval diet, and the duration of exposure was twelve days.",
     "answer_rev1": "The pesticides used in the study were dimethoate (120 ng/larva) and clothianidin (16 ng/larva). The exposure method involved adding these pesticides to the larval diet on days 1, 3, and 4 to simulate chronic exposure and achieve the final doses. On day 5, each replicate was divided as follows: one plate for hydrocarbon analysis, one plate for transferring larvae to the colony, and one plate that remained in the laboratory until day 7 to confirm the non-lethality of the pesticides.",
     "rev1": "SA",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "1. Dimethoate: 120 ng/larva, oral exposure during artificial rearing\n2. Clothianidin: 8, 16, and 32 ng/larva, oral exposure during artificial rearing"
   },
   "949": {
     "answer_llm": "The pesticides used in the study were clothianidin (a neonicotinoid), thiram (a fungicide), and beta-cyfluthrin (a pyrethroid insecticide). The dose for clothianidin was 23.15 \u03bcg per oilseed rape seed. The exposure method involved treating the seeds before planting, and the duration of exposure was approximately 8 weeks from seeding in April 2018 until the introduction of bees on 3 July 2018.",
@@ -681,37 +836,43 @@
     "rev1_rating": 5,
     "answer_rev2": "The pesticides used in the study were bifenthrin, permethrin, clothianidin, imidacloprid, abamectin, and ivermectin.",
     "rev2": "HS",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_llm2": "1. Bifenthrin\n2. Permethrin\n3. Clothianidin\n4. Imidacloprid\n5. Abamectin\n6. Ivermectin\n7. Thiamethoxam"
   },
   "956": {
     "answer_llm": "The pesticides used in the study were spinosad and malathion. The doses were spinosad at 1.8 l/ha and 3.5 l/ha for aerial applications, and malathion at 0.976 l/ha. The exposure methods included aerial and foliar spot spraying. The duration of exposure was from 22 March 1999 to 08 May 2000, with applications made at two-week intervals across multiple tests.",
     "answer_rev1": "The pesticides used in the study were spinosad and malathion. Only Test 1 assessed the effects of these pesticides on honey bees. Four treatments were tested: a control using SolBait only at 21.5 L/ha; spinosad at 80 ppm (0.28 g active ingredient per hectare) mixed with SolBait at 21.5 L/ha and applied as a foliar spot spray at 60 ml per tree; malathion (Fyfanon\u00ae 96.8%) at 208.3 g active ingredient per hectare in SolBait at 21.3 L/ha, also applied as a foliar spot spray at 60 ml per tree; and malathion at the same dose mixed with NU-LURE\u00ae bait at 700.9 ml/ha, applied as a spot spray at 30 ml per tree to 30 trees per hectare. All treatments were applied three times at two-week intervals between 22 March and 3 May 1999.",
     "rev1": "SA",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "1. Spinosad: 28 g AI/ha, foliar spot spray\n2. Malathion: 208.3 g AI/ha, foliar spot spray and spot sprays on 30 trees per ha\n3. Spinosad: 80 ppm (1.57 g AI/ha), foliar spot spray, applied twice with a two-week interval\n4. Malathion: 5 EC (187.2 g AI/ha), foliar spot spray, applied twice with a two-week interval\n5. Fyfanon (Malathion): 209.3 g AI/ha, aerial application at 175.4 ml/ha with NU-LURE at 700.9 ml/ha\n6. Spinosad: 80 ppm (0.13 g AI/ha), aerial application in SolBait at 1.75 l/ha\n7. Spinosad: 80 ppm (0.28 g AI/ha), aerial application in SolBait at 3.5 l/ha\n8. Spinosad: 80 ppm (3.37 g AI/ha), foliar spot spray in SolBait at 90 ml per tree (40.2 l/ha) using hand-held nozzles"
   },
   "934": {
     "answer_llm": "The pesticide used in the study was imidacloprid. The doses varied, including 0.004 ng/bee/day, 4\u20138 \u03bcg/L (ppb), and 5.6 to 2800 ng/bee, depending on the specific study. The exposure methods included direct ingestion by adult bees, feeding to larvae, and foraging on treated crops. The duration of exposure ranged from 10 days to 30 days, with some studies following larvae for up to 23 days.",
     "answer_rev1": "This is a modelling paper that compiles published results to assess the time-cumulative toxicity of imidacloprid in different insect species. The pesticide used was imidacloprid. Exposure methods included direct oral ingestion for adult honeybees and larval feeding for the stingless bee (Melipona quadrifasciata anthidioides). The doses and exposure durations varied across the studies included in the meta-analysis.",
     "rev1": "SA",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Imidacloprid: 4 and 8 \u00b5g/L, oral exposure in syrup, duration up to 60 days\n2. Clothianidin"
   },
   "056": {
     "answer_llm": "The pesticides used in the study were acetamiprid, ivermectin, fipronil, and chlorfenapyr. The exposure method was contact with treated surfaces, and the duration of exposure included 30 minutes for initial observations and up to 48 hours for mortality rates.",
     "answer_rev1": "Four insecticidal baits were tested, each containing a different active ingredient: fipronil (0.15%), acetamiprid (1.5%), ivermectin (0.6%), or chlorfenapyr (6%). The baits were applied at a volume of 1 mL to 51 cm\u00b2 filter paper, dried, and bees were exposed by contact for 30 minutes. After exposure, the bees were transferred to cages, and their mortality was assessed at 1, 4, and 24 hours. Specific numerical doses were not provided in the text.",
     "rev1": "SA",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "1. Acetamiprid: 6552 \u03bcg/bee, contact exposure\n2. Ivermectin: 229.3 \u03bcg/bee, contact exposure\n3. Chlorfenapyr: 1188.3 \u03bcg/bee, contact exposure\n4. Fipronil: 202.6 \u03bcg/bee, contact exposure"
   },
   "374": {
     "answer_llm": "The pesticides used in the study were Mirage\u00ae 45 EC (active substance: prochloraz) and Biscaya\u00ae (active substance: thiacloprid). The doses were 1.5 L/ha for Mirage\u00ae and 0.3 L/ha for Biscaya. The exposure method involved spraying with a field plot back sprayer, and the duration of exposure was on the 5th day after placing the colonies in the tent, lasting at least three days post-application.",
     "answer_rev1": "The pesticides used in the study were Mirage\u00ae 45 EC (active substance: prochloraz) and Biscaya\u00ae (active substance: thiacloprid). The doses were 1.5 L/ha for Mirage\u00ae and 0.3 L/ha for Biscaya. The exposure method involved spraying with a field plot back sprayer, and the exposure duration lasted from the 5th day after placing the colonies in the tent to 7 days after spraying.",
     "rev1": "SA",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Prochloraz: 675 g/ha, field exposure\n2. Thiacloprid: 72 g/ha, field exposure"
   },
   "943": {
     "answer_llm": "The pesticide used in the study was Spinosad, with doses of 0, 10, 20, 40, and 80 mg/liter mixed with a 1.0 M sucrose solution. The exposure method involved a Y-tube choice apparatus, and the duration of exposure was approximately 35 minutes.",
     "answer_rev1": "The pesticide used in the study was Spinosad (GF-120 formulation), with doses of 0, 10, 20, 40 and 80 mg/liter mixed with a 1.0 M sucrose solution. The exposure method involved a Y-tube choice apparatus, which offers the sucrose solution with the pesticide or just water. The duration of the exposure was ca. 35 minutes.",
     "rev1": "SA",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Spinosad: 0, 10, 20, 40, and 80 mg/liter, oral exposure via sucrose solution, approximately 35 \u00b1 15 minutes."
   },
   "015": {
     "answer_llm": "The pesticide used in the study was TMX (Thiamethoxam). The acute exposure dose was 1.34 ng per bee for 1 hour, and the chronic exposure doses ranged from 1.42 to 3.48 ng per bee per day, with a mean of 2.56 ng/bee/day over 2 days.",
@@ -720,7 +881,8 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticide used in the study was TMX (Thiamethoxam). The acute exposure dose was 1.34 ng per bee for 1 hour, and the chronic exposure doses ranged from 1.42 to 3.48 ng per bee per day, with a mean of 2.56 ng/bee/day over 2 days.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "1. Thiamethoxam (TMX): 1.34 ng, oral exposure, acute (1 hour); 1.42\u20133.48 ng/bee/day, oral exposure via sucrose solution containing 45 ppb of TMX, chronic exposure; 45 ppb, oral exposure, 2 days; 118 ppb, oral exposure, 60 minutes; 3.8 ng/bee, acute contact exposure; 1.26\u20134.53 ng/bee/day, chronic exposure, 1 and 2 days.\n2. Imidacloprid: 0.1\u20131000 ng/bee, acute exposure; 2.5 ng/bee, acute oral exposure.\n3. Acetamiprid: 100 and 500 ng/bee, acute contact exposure."
   },
   "012": {
     "answer_llm": "The pesticides used in the study were imidacloprid and amitraz. The doses were 10 or 50 \u03bcg/ml for single exposures, and mixtures were at final concentrations of 10 + 10 \u03bcg/ml, 10 + 50 \u03bcg/ml, or 50 + 50 \u03bcg/ml. The exposure method involved dissolving the pesticides in WH12 medium and adding them to tissue culture plates with hemolymph, but the duration of exposure is not specified.",
@@ -729,19 +891,22 @@
     "rev1_rating": 2,
     "answer_rev2": "The pesticides used in the study were imidacloprid and amitraz. The doses were 10 or 50 \u03bcg/ml for single exposures, and mixtures were at final concentrations of 10 + 10 \u03bcg/ml, 10 + 50 \u03bcg/ml, or 50 + 50 \u03bcg/ml. The exposure method involved dissolving the pesticides in WH12 medium and adding them to tissue culture plates with hemolymph, but the duration of exposure is not specified.",
     "rev2": "EA",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_llm2": "1. Imidacloprid: 10 and 50 \u03bcg/ml, exposure in tissue culture plates\n2. Amitraz: 10 and 50 \u03bcg/ml, exposure in tissue culture plates"
   },
   "889": {
     "answer_llm": "The pesticide used in the study was imidacloprid. The doses were 0 ppb, 30 ppb, and 300 ppb, administered via chronic oral exposure through sucrose syrups over a duration of 5 weeks.",
     "answer_rev1": "The pesticide used was the formulation Marathon 1% Granular (Olympic horticultural Products) which is 1% imidacloprid and 99% inert ingredients. The pesticide was administered orally in two concentrations of sucrose (20 and 50% m/m). Two doses of imidsacloprid were used 30ppb and 300ppb as well as a control diet (0ppb imidacloprid). Bees were exposed to their diets ad libertum daily for the first 7 days after emergence and then 3 times per week until death occured (5 weeks)",
     "rev1": "AH",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Imidacloprid: 0 ppb, 30 ppb, and 300 ppb, oral exposure via sucrose solution, duration not explicitly stated"
   },
   "887": {
     "answer_llm": "The pesticides used in the study were imidacloprid, thiamethoxam, and fipronil. The doses were: imidacloprid (1531, 563, 246, 98, 39, 16, 6 \u03bcg L\u207b\u00b9), thiamethoxam (1953, 781, 313, 125, 50, 20 \u03bcg L\u207b\u00b9), and fipronil (125, 50, 20, 8, 3.2, 1.3 \u03bcg L\u207b\u00b9). The exposure method involved diluting the pesticides in sugar syrup, with fresh batches prepared every 10 days. The duration of exposure is not specified.",
     "answer_rev1": "The pesticides used in the study were analytical grade imidacloprid (Pestanal 37 894), thiamethoxam (Pestanal 37 924) and fipronil (Pestanal 46 451). The doses were: imidacloprid (1531, 563, 246, 98, 39, 16, 6 \u03bcg L\u207b\u00b9), thiamethoxam (1953, 781, 313, 125, 50, 20 \u03bcg L\u207b\u00b9), and fipronil (125, 50, 20, 8, 3.2, 1.3 \u03bcg L\u207b\u00b9). Oral exposure method of pesticides in sugar syrup, with fresh batches prepared every 10 days. Thiamethoxam and fipronil were also tested using a fixed and pulsed exposure. Pulsed exposure being alternating between dosed and undosed food every 48h. The duration was for the lifetime of the bee post exposure.",
     "rev1": "AH",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Imidacloprid: 1531, 563, 246, 98, 39, 16, and 6 \u03bcg L\u207b\u00b9, oral exposure via sugar syrup, fresh batches every 10 days.\n2. Thiamethoxam: 1953, 781, 313, 125, 50, and 20 \u03bcg L\u207b\u00b9, oral exposure via sugar syrup, fresh batches every 10 days; 125 \u03bcg L\u207b\u00b9, oral exposure, fixed dietary concentration; 250 \u03bcg L\u207b\u00b9, oral exposure, pulsed exposure for 48 h followed by 48 h undosed.\n3. Fipronil: 125, 50, 20, 8, 3.2, and 1.3 \u03bcg L\u207b\u00b9, oral exposure via sugar syrup, fresh batches every 10 days; 3.2 \u03bcg L\u207b\u00b9, oral exposure, fixed dietary concentration; 6.4 \u03bcg L\u207b\u00b9, oral exposure, pulsed exposure for 48 h followed by 48 h undosed."
   },
   "014": {
     "answer_llm": "The pesticides used in the study were Cantus\u00ae Gold (fungicide) and Mospilan\u00ae (insecticide). The doses were: Cantus\u00ae Gold - low dose: 10 \u00b5g/l, high dose: 100 \u00b5g/l; Mospilan\u00ae - low dose: 200 \u00b5g/l, high dose: 2000 \u00b5g/l. The exposure method involved feeding solutions to caged bees, but the duration of exposure is not specified.",
@@ -750,25 +915,29 @@
     "rev1_rating": 3,
     "answer_rev2": "The pesticides used in the study were Cantus\u00ae Gold (fungicide) and Mospilan\u00ae (insecticide). The doses were: Cantus\u00ae Gold - low dose: 10 \u00b5g/l, high dose: 100 \u00b5g/l; Mospilan\u00ae - low dose: 200 \u00b5g/l, high dose: 2000 \u00b5g/l. The exposure method involved feeding solutions to caged bees, but the duration of exposure is not specified.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "1. Boscalid: 10 \u00b5g/l (low dose), oral exposure\n2. Dimoxystrobin: 10 \u00b5g/l (low dose), oral exposure\n3. Acetamiprid: 72.5 \u00b5g/kg residue level, oral exposure"
   },
   "886": {
     "answer_llm": "The pesticide used in the study was flupyradifurone. The doses were: 8.3 x 10^-4 mol/l (1.2 \u03bcg ai/bee), 8.3 x 10^-5 mol/l (120 ng ai/bee), and 8.3 x 10^-6 mol/l (12 ng ai/bee). The exposure method was feeding the bees a sugar solution containing the pesticide, with a duration of exposure of one hour for initial tests and 72 hours for sublethal assessments. Additionally, flupyradifurone can be applied via foliar application, soil drench, and seed treatment, leading to potential accumulation in foraging bees.",
     "answer_rev1": "Flupyradifurone (Pestanal) analytical standard was used.\nSub-lethal doses were determined using oral exposure to a concentration of 1.7 x10-4 mol/l or a duration of 120 mins. A second esperiment exposed bees to oral doses of 8.3 x10-4 (1.2ug ai/bee), 8.3 x10-5 mol/l (120ng ai/bee) and 8.3 x10-6 mol/l (12ng ai/bee). This was run over 72 hours.\n\nQuantifying the sub-lethal effects used oral doses of 8.3 x10-4 (1.2ug ai/bee), 8.3 x10-5 mol/l (120ng ai/bee) and 8.3 x10-6 mol/l (12ng ai/bee) with testing done 1 hour post exposure.",
     "rev1": "AH",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Flupyradifurone: 8.3 * 10^-4 mol/l, 8.3 * 10^-5 mol/l, 8.3 * 10^-6 mol/l, oral exposure, 72 hours\n2. Flupyradifurone: LD\u2085\u2080 1.2 \u03bcg/bee, acute oral exposure\n3. Flupyradifurone: 410 g ai/ha, field exposure via foliar application, maximum residue found 541 ppb in nectar and 1170 ppb in pollen."
   },
   "888": {
     "answer_llm": "The pesticide used in the study was imidacloprid, with doses reported as 0.28 ng/ml and 0.48 ng/ml in different contexts. The exposure method involved feeding bees a pollen paste mixed with water for the first five days postemergence, followed by three additional days at 31\u00b0C. Therefore, the total duration of exposure to imidacloprid was eight days.",
     "answer_rev1": "The pesticide used here was imidacloprid. Dose was given as 0.28ng/ml (sub-lethal) in the methods but 0.48ng/ml in the abstract. Bees were exposed to imidacloprid through dietary exposure in pollen paste. Two experiments using imidacloprid were performed:\ni) Laboratory survival assay - duration across 40 days - constant exposure\nii) Stress protein analysis - duration of 8 days (final 3 days with exposure to imidaclprid - 0.28ng/ml)\nSub-lethal dose used was attributed to a published paper.",
     "rev1": "AH",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "1. Imidacloprid: 0.48 ng/ml, oral exposure"
   },
   "892": {
     "answer_llm": "The pesticide used in the study was imidacloprid, with doses of 1.25, 2.50, 5, 10, and 20 ng/bee. The exposure method was topical application to the thorax, and the duration of exposure was 15 minutes, 30 minutes, or 60 minutes before testing.",
     "answer_rev1": "The pesticide used in the study was imidacloprid (unspecified quality), with doses of 1.25, 2.50, 5, 10, and 20 ng/bee for gustatory threshold and motor activity. For proboscis extention habituation only 1.25ng/bee was used. The exposure method was topical application to the thorax (1ul dose).\nDuration of exposure was 15 minutes, 30 minutes, or 60 minutes before testing.",
     "rev1": "AH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "1. Imidacloprid: 1.25, 2.5, 5, 10, 20 ng/bee, thoracic application, 15 min, 30 min, 60 min"
   },
   "007": {
     "answer_llm": "The pesticides used in the study were thiamethoxam (1.5 \u03bcg/L) and boscalid (100 \u03bcg/L). The exposure method involved feeding honeybees with a sucrose syrup containing these pesticides, and the duration of exposure was chronic, starting 4 days after emergence and lasting until the end of the experiment.",
@@ -777,19 +946,22 @@
     "rev1_rating": 8,
     "answer_rev2": "The pesticides used in the study were thiamethoxam (1.5 \u03bcg/L) and boscalid (100 \u03bcg/L). The exposure method involved feeding honeybees with a sucrose syrup containing these pesticides, and the duration of exposure was chronic, starting 4 days after emergence and lasting until the end of the experiment.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Thiamethoxam: 1.5 \u03bcg/L, oral exposure via sucrose syrup, chronic exposure\n2. Boscalid: 100 \u03bcg/L, oral exposure via sucrose syrup, chronic exposure"
   },
   "009": {
     "answer_llm": "The pesticides used in the study were spinosad (Tracer\u00ae) and imidacloprid (Evidence\u00ae). The dose for spinosad was 81.6 ng a.i. \u03bcl\u207b\u00b9, with decreasing dilutions of 4.08 ng a.i. \u03bcl\u207b\u00b9, 1.63 ng a.i. \u03bcl\u207b\u00b9, and 0.82 ng a.i. \u03bcl\u207b\u00b9. The dose for imidacloprid was 42 ng a.i. \u03bcl\u207b\u00b9. The exposure method involved exposing foragers to these concentrations, but the duration of exposure is not specified in the text. Additionally, spinosad was used in various sublethal bioassays with doses of 0 ng a.i. \u03bcl\u207b\u00b9, 0.82 ng a.i. \u03bcl\u207b\u00b9, and 1.63 ng a.i. \u03bcl\u207b\u00b9, with exposure methods including free-fall flight bioassays and ingestion of syrup, but the exact duration of exposure was not consistently detailed across the references.",
     "answer_rev1": "The pesticides used in the study were commercial formulations of spinosad (Tracer\u00ae) and imidacloprid (Evidence\u00ae). The exposure method used was orally in sucrose solution (1:1 w/w). Two experiments were run: \ni) survival bioassay - concentrations used for spinosad 81.6 ng a.i./ ul, 4.08 ng a.i./ ul, 1.63 ng a.i./ ul and 0.82 ng a.i./ ul; for imidacloprid a concentration of 42 ng a.i./ ul was used. A control was also run - no pesticide. Duration was 72 hours.\nii) sub-lethal effects of spinosad were assessed using bees exposed to concentrations of 0 ng a.i./ ul (control bees), 0.82 ng a.i./ ul and 1.63 ng a.i./ ul that had survived for 72 h in experiment 1. Tests carried out immediately after the survival bioassay. Duration of locomotion tests was 10 mins and respiration rate recorded across 3 h. Total exposure therefore >72h <96h.",
     "rev1": "AH",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Spinosad: 81.6 ng a.i. \u03bcl\u207b\u00b9, 4.08 ng a.i. \u03bcl\u207b\u00b9, 1.63 ng a.i. \u03bcl\u207b\u00b9, 0.82 ng a.i. \u03bcl\u207b\u00b9, oral exposure, 72 hours\n2. Imidacloprid: 42 ng a.i. \u03bcl\u207b\u00b9, oral exposure, 72 hours"
   },
   "008": {
     "answer_llm": "The pesticides used in the study were chlorantraniliprole and thiamethoxam. The doses were 10, 5, and 1 ppm for chlorantraniliprole, and 50, 10, 5, and 1 ppm for thiamethoxam. The exposure method involved applying the pesticides as a thin film in conical flasks, which were air-dried for two hours. The exact duration of exposure was not specified.",
     "answer_rev1": "Technical grade chlorantraniliprole and thiamethoxam were used. The exposure method was contact with a residue film (coated flasks). Concentartions used for range finding were: 10, 5, 1 ppm for chlorantraniliprole and 50, 10, 5, 1 ppm for thiamethoxam. Concentrations for main bioassays not given.",
     "rev1": "AH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "1. Chlorantraniliprole: 10, 5, 1 ppm, contact exposure via residue film method, mortality recorded at 3, 6, 9, and 12 hours.\n2. Thiamethoxam: 50, 10, 5, 1 ppm, contact exposure via residue film method, mortality recorded at 3, 6, 9, and 12 hours."
   },
   "006": {
     "answer_llm": "The pesticides used in the study were:\n1. Cypermethrin - 2.5 ng/bee\n2. Tau-fluvalinate - 33 ng/bee\n3. Tetramethrin - 70 ng/bee\n4. Thiamethoxam - 3.8 ng/bee\n5. Fipronil - 0.5 ng/bee\n\nThe exposure method involved applying these doses to bees, and the duration of exposure was 48 hours for the initial assessment, with a long-term survival test conducted up to 5 days after exposure.",
@@ -798,25 +970,29 @@
     "rev1_rating": 8,
     "answer_rev2": "The pesticides used in the study were:\n1. Cypermethrin - 2.5 ng/bee\n2. Tau-fluvalinate - 33 ng/bee\n3. Tetramethrin - 70 ng/bee\n4. Thiamethoxam - 3.8 ng/bee\n5. Fipronil - 0.5 ng/bee\n\nThe exposure method involved applying these doses to bees, and the duration of exposure was 48 hours for the initial assessment, with a long-term survival test conducted up to 5 days after exposure.",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Cypermethrin: 2.5 ng/bee, exposure method not specified, duration 48 hours\n2. Tau-fluvalinate: 33 ng/bee, exposure method not specified, duration 48 hours\n3. Tetramethrin: 70 ng/bee, exposure method not specified, duration 48 hours\n4. Thiamethoxam: 3.8 ng/bee, contact exposure, 48 hours\n5. Thiamethoxam: 1.3 ng/bee, oral exposure\n6. Fipronil: contact exposure, unspecified dose"
   },
   "884": {
     "answer_llm": "The pesticides used in the study were flupyradifurone and imidacloprid. \n\n1. **Flupyradifurone**: \n   - **Doses**: 830 \u03bcmol/l (1.2 \u03bcg/bee), 83 \u03bcmol/l, and 8.3 \u03bcmol/l \n   - **Exposure Method**: Single oral administration and continuous feeding in a 50% sugar solution \n   - **Duration of Exposure**: 15, 60, and 180 minutes after administration, and 24 hours for continuous exposure.\n\n2. **Imidacloprid**: \n   - **Doses**: 3.1 \u03bcmol/l and 0.31 \u03bcmol/l \n   - **Exposure Method**: Feeding in a 50% sugar solution \n   - **Duration of Exposure**: 72 hours for some experiments.",
     "answer_rev1": "The pesticides used in the study were flupyradifurone (Pestanal) and imidacloprid (Pestanal). Both were >98% purity analytical standard. \nTwo studies were done:\ni) single dose of pesticide administered orally in sucrose sloution (50%) at two concentrations. Flupyradifureone administered at 830umol/l and 83umol/l. Imidacloprid administered at 3.1umol/l and 0.31umol/l. Behaviours were monitored across a 3 hour time period post-exposure.\nii) pesticide administered orally in sucrose sloution (50%) over a 24 hour period at two concentrations. Flupyradifureone administered at 83umol/l and 8.3umol/l. Imidacloprid administered at 0.31umol/l and 0.031umol/l. Behaviour was recorded after 24 hours continuous feeding of the pesticide, for 10 mins.",
     "rev1": "AH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "1. Flupyradifurone: 830 \u03bcmol/l, 83 \u03bcmol/l, 8.3 \u03bcmol/l; oral exposure; 72 hours and 24 hours\n2. Imidacloprid: 62 \u03bcmol/l, 6.2 \u03bcmol/l, 3.1 \u03bcmol/l, 0.31 \u03bcmol/l; oral exposure via 50% sugar solution; 72 hours"
   },
   "883": {
     "answer_llm": "The pesticide used in the study was imidacloprid. For acute exposure, bees were fed 10 \u03bcL of a solution containing 3 ng of imidacloprid (10 ppb), and for chronic exposure, a solution with a concentration of 10 \u03bcg/L was used. The exposure method involved feeding the bees with sugar water solutions, and the duration of exposure is not specified in the provided text.",
     "answer_rev1": "The insecticide used is imidacloprid (PESTANAL analytical standard). Chronic and acute exposure were studied. \nAcute exposure 3ng in 10ul sucrose solution (10ppb) - oral exposure route. Duration 96 hours.\nChronic exposure - 10ug/L (fed ad libitum). Oral exposure route. Duration 10 days.",
     "rev1": "AH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "1. Imidacloprid: \n   - Acute exposure: 3 ng per bee, oral exposure, field-realistic dose (10 ppb)\n   - Chronic exposure: 10 \u03bcg/L, oral exposure, field-realistic concentration, 10 days"
   },
   "011": {
     "answer_llm": "The pesticide used in this study was clothianidin, at a dose of 3 ng/bee, with an exposure method of feeding with a sucrose solution and a duration of 24 hours.",
     "answer_rev1": "Technical grade Clothianidin aws used. Bees were exposed orally to 3ng/bee of clothianidin in sucrose solution over 24 hours.",
     "rev1": "AH",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_llm2": "1. Clothianidin: 3 ng/bee, oral exposure, 24 hours\n2. Acetamiprid\n3. Imidacloprid\n4. Thiamethoxam\n5. Chlorpyrifos\n6. Malathion\n7. Cypermethrin\n8. Chlorantraniliprole"
   },
   "016": {
     "answer_llm": "The pesticide used in the study was TMX (Thiamethoxam). The doses were 1.96\u20132.90 ng/bee/day and 2.90\u20133.71 ng/bee/day. The exposure method was chronic ingestion through a sucrose solution, and the duration of exposure was one or two days.",
@@ -825,13 +1001,15 @@
     "rev1_rating": 1,
     "answer_rev2": "he pesticide used in the study was TMX (Thiamethoxam). The doses were 1.96\u20132.90 ng/bee/day and 2.90\u20133.71 ng/bee/day. The exposure method was chronic ingestion through a sucrose solution, and the duration of exposure was one or two days.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "1. Thiamethoxam (TMX): \n   - Acute exposure: 1.34 ng/bee, oral exposure, within 1 hour\n   - Chronic exposure: 1.96\u20132.90 ng/bee/day, oral exposure, 1-2 days\n   - Acute exposure: 118 ppb, oral exposure, 40 minutes\n   - Chronic exposure: 32.5 and 45.0 ppb, oral exposure via sucrose solution, 1-day and 2-day exposures."
   },
   "885": {
     "answer_llm": "The pesticide used in the study was Closer\u00ae (sulfoxaflor) at a dose of 0.0003 ppm (0.3 ppb). The exposure method involved incorporating the pesticide into a sugar solution, which was provided to the treatment group for 21 days, with fresh preparations every 2 days.",
     "answer_rev1": "Closer SC (24% sulfoxaflor) was used. To determine LD50 oral toxicity - four concentrations of Closer were used - 0.0006, 0.006, 0.006 and 0.6 mg/l or ppm) - administered orally in sucrose solution (50%) for 24h. \n\nTo determine sub-lethal effects of Closer on colony growth and activity, body mass of foraging bees and foraging activity - a dose of 0.0003ppm (LC5 value) was administered orally in sucrose solution (50%) for 21 days (fresh insecticide preparation provided every 2 days).",
     "rev1": "AH",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Sulfoxaflor: 0.3 ppb, oral exposure via sugar solution, 21 days\n2. Sulfoxaflor: 0.0006, 0.006, 0.06, 0.6 mg/L (ppm), oral exposure, 24 hours\n3. Sulfoxaflor: 12 ppb, acute exposure, 24 hours"
   },
   "010": {
     "answer_llm": "The pesticides used in the study were thiacloprid (500 ppb), thiamethoxam (10 ppb), and sulfoxaflor (5 ppb, with a higher dose of 50 ppb). The exposure method was through feeding on dosed Biogluc sugar syrup, and the duration of exposure was during the feeding period.",
@@ -840,7 +1018,8 @@
     "rev1_rating": 7,
     "answer_rev2": "The pesticides used in the study were thiacloprid (500 ppb), thiamethoxam (10 ppb), and sulfoxaflor (5 ppb, with a higher dose of 50 ppb). The exposure method was through feeding on dosed Biogluc sugar syrup, and the duration of exposure was during the feeding period.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Sulfoxaflor: 5 ppb and 50 ppb, oral exposure\n2. Thiacloprid: 500 ppb, oral exposure\n3. Thiamethoxam: 10 ppb, oral exposure"
   },
   "003": {
     "answer_llm": "The pesticide used in the study was thiamethoxam, with a dose of 5 ng of active ingredient per bee. The exposure method involved feeding bees a sucrose solution containing thiamethoxam after a 3-hour starvation period. The duration of exposure was 96 hours.",
@@ -849,7 +1028,8 @@
     "rev1_rating": 3,
     "answer_rev2": "The pesticide used in the study was thiamethoxam, with a dose of 5 ng of active ingredient per bee. The exposure method involved feeding bees a sucrose solution containing thiamethoxam after a 3-hour starvation period.",
     "rev2": "EA",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_llm2": "1. Thiamethoxam: 5 ng/g of active substance/bee, oral exposure, 96 hours"
   },
   "004": {
     "answer_llm": "The pesticide used in the study was acetamiprid. The doses were: 0.452, 4.52, 45.2, 452, or 4520 ppb for pollen and 1.13, 11.3, 113, 1130, or 11,300 ppb for syrup. The exposure method was through feeding either acetamiprid-containing pollen or syrup, and the duration of exposure was six weeks.",
@@ -858,13 +1038,15 @@
     "rev1_rating": 9,
     "answer_rev2": "The pesticide used in the study was acetamiprid. The doses were: 0.452, 4.52, 45.2, 452, or 4520 ppb for pollen and 1.13, 11.3, 113, 1130, or 11,300 ppb for syrup. The exposure method was through feeding either acetamiprid-containing pollen or syrup, and the duration of exposure was six weeks.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_llm2": "1. Acetamiprid: \n   - Pollen exposure: 0.452, 4.52, 45.2, 452, or 4520 ppb\n   - Syrup exposure: 1.13, 11.3, 113, 1130, or 11,300 ppb\n   - Exposure method: Oral (via pollen and syrup)\n   - Duration: 6 weeks"
   },
   "891": {
     "answer_llm": "The pesticide used in the study was imidacloprid, at doses of 100 \u03bcg/liter and 20 \u03bcg/liter. The exposure method involved diluting imidacloprid in a 50% sucrose solution. The duration of exposure is not specified in the text.",
     "answer_rev1": "Imidacloprid (99.9% purity) was used at two concentrations. Two concentrations of imidacloprid were used - 100ug/l (83.3ug/kg) and 20ug/l (16.7ug/kg), administered orally in sucrose solution (50% w/w). Lethal exposure was assessed daily until all bee in the test group (approx 40 individuals) were dead - approximately 40 days.\n\nSub-lethal effects on sucrose responsiveness were assessed 1h after exposure - across 4 mins periods each for the 7 concentrations of sucrose used and a further 4 mins for the control (water).\n\nSub-lethal effects on olfactory learning were assessed 1h after exposure using conditioned response over approx 1h for short-term memory  and 5h for long-term memory assessment.",
     "rev1": "AH",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Imidacloprid: \n   - Concentrations: 100 \u00b5g/liter (83.3 \u00b5g/kg), 20 \u00b5g/liter (16.7 \u00b5g/kg)\n   - Exposure Method: Oral exposure via 50% sucrose solution\n   - Duration: Exposure continued until all bees had died"
   },
   "005": {
     "answer_llm": "The pesticide used in the study was thiamethoxam, with doses of 88.2 g a.s./ha for maize and 12.6 g a.s./ha for oilseed rape. The exposure method involved placing bee colonies adjacent to treated fields during the flowering period, and the duration of exposure was throughout this flowering period.",
@@ -873,7 +1055,8 @@
     "rev1_rating": 4,
     "answer_rev2": "The pesticide used in the study was thiamethoxam, with doses of 88.2 g a.s./ha for maize and 12.6 g a.s./ha for oilseed rape. The exposure method involved placing bee colonies adjacent to treated fields during the flowering period, and the duration of exposure was throughout this flowering period.",
     "rev2": "EA",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_llm2": "1. Thiamethoxam: \n   - Maize: 82.8 g a.s./ha (0.83 mg a.s./seed), field exposure, 4-10 days\n   - Oilseed rape: 12.6 g a.s./ha (0.02 mg a.s./seed), field exposure, 9-14 days\n   - Spring barley: 7 g a.s./ha (0.03 mg a.s./seed), field exposure\n2. Metalaxyl-M: \n   - Maize: 1.33 g/L, field exposure\n   - Oilseed rape: 33.3 g/L, field exposure\n3. Fludioxonil: \n   - Maize: 3.33 g/L, field exposure\n   - Oilseed rape: 8.0 g/L, field exposure"
   },
   "002": {
     "answer_llm": "The pesticide used in the study was clothianidin, applied as a seed dressing at a dose of 10 g clothianidin per kg of seed. The exposure method was through planting the treated seeds, and the duration of exposure was from autumn 2013 until summer 2014.",
@@ -882,13 +1065,15 @@
     "rev1_rating": 4,
     "answer_rev2": "The pesticide used in the study was clothianidin, applied as a seed dressing at a dose of 10 g clothianidin per kg of seed. The exposure method was through planting the treated seeds, and the duration of exposure was from autumn 2013 until summer 2014.",
     "rev2": "EA",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_llm2": "1. Clothianidin: field exposure via treated oilseed rape (OSR) seeds at 10 g per kg of seed\n2. Beta-cyfluthrin: field exposure via treated oilseed rape (OSR) seeds at 2 g per kg of seed"
   },
   "890": {
     "answer_llm": "The pesticides used in the study were imidacloprid and fipronil. The doses were: imidacloprid at 7.5 \u00d7 10\u207b\u2074 ng, 7.5 \u00d7 10\u207b\u00b3 ng, and 7.5 \u00d7 10\u207b\u00b2 ng; fipronil at 3.0 \u00d7 10\u207b\u2074 ng, 3.0 \u00d7 10\u207b\u00b3 ng, and 3.0 \u00d7 10\u207b\u00b2 ng. The exposure method was administering 3 \u03bcl of the pesticide solution in 25% (w/v) sucrose, and the duration of exposure was 6 hours.",
     "answer_rev1": "Imidacloprid (Pestanal) and fipronil (Termidor Residual 100g fipronil/L were used in the study. The exposure route was oral and the doses used were supplied in 25% sucrose solution (w:v).\nImidacloprid concentrations choice test: 2.5x10-4; 2.5x10-3 ng/ul (ad libitum, duration 24h). Fipronil concentrations choice test: 1.0x10-4 and 1.0x10-3 ng/ul (ad libitum,  duration 24h).\nHeat tolerance test:\nImidacloprid - 7.5x10-4, 7.5x10-3 and 7.5x10-2 ng\nFipronil - 3x10-4, 3x10-3 and 3x10-2 ng. \nTwo groups, one hld at constant 26 degrees and the second a temperature ramped group. Duration 120 mins.",
     "rev1": "AH",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "1. Imidacloprid: \n   - Concentrations: Low (2.5 x 10^-4 ng \u03bcl^-1), High (2.5 x 10^-3 ng \u03bcl^-1), Very High (2.5 x 10^-2 ng \u03bcl^-1)\n   - Exposure Method: Oral exposure\n   - Duration: 24 hours, with an additional 72-hour observation period\n\n2. Fipronil: \n   - Concentrations: Low (1.0 x 10^-4 ng \u03bcl^-1), High (1.0 x 10^-3 ng \u03bcl^-1), Very High (1.0 x 10^-2 ng \u03bcl^-1)\n   - Exposure Method: Oral exposure\n   - Duration: 24 hours, with an additional 72-hour observation period"
   },
   "672": {
     "answer_llm": "The pesticides used in the study were Sivanto Prime and Quadris Top. Sivanto Prime was applied at a dose of 2000 ml ha\u207b\u00b9 using a drip irrigation method on 30 July 2020, with a total exposure of 125 ml per plant. Quadris Top was applied at a dose of 1000 ml ha\u207b\u00b9 in three spray applications at 7-day intervals, starting on 7 August 2020.",
@@ -897,13 +1082,15 @@
     "rev1_rating": 8,
     "answer_rev2": "The pesticides used in the study were Sivanto Prime (flupyradifurone) and Quadris Top (a zoxystrobin and difenoconazole). Sivanto Prime was diluted in water (2 ml Sivanto l\u22121 water) applied at a dose of 2000 ml ha\u207b\u00b9 on 30 July 2020 (one week before the fungicide and the introduction of bees) and it was applied at the base of each plant (125 ml plant\u22121). Quadris Top was diluted in water (1.5 ml l\u22121 water) and applied by spraying at a dose of 1000 ml ha\u207b\u00b9 , three times during the experiment at 7-day intervals, starting on 7 August 2020- 1 h before the introduction of squash bees into the enclosures. \nPesticides exposure lasted for the entire duration of the experiment (21 days, or until bees died)",
     "rev2": "ER",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Sivanto Prime: 2000 ml ha\u207b\u00b9, applied via drip irrigation system, exposure duration not specified.\n2. Quadris Top: 1000 ml ha\u207b\u00b9, sprayed at 7-day intervals, exposure duration not specified."
   },
   "437": {
     "answer_llm": "The pesticides used in the study were imidacloprid and clothianidin. The doses were: imidacloprid (median: 3 \u00b5g/kg in soils, 168 \u00b5g/kg in soybean flowers in 2018) and clothianidin (median: 27 \u00b5g/kg in treated fields, 20 \u00b5g/kg in previously-treated fields). The exposure method involved sampling soils and flowers from treated and previously-treated fields, and the duration of exposure was over two years (2017 and 2018).",
     "answer_rev1": "In both years of the study, fields were sown with soybeans at a target planting rate of 445, 000 seeds per ha, with rows spaced 46cm apart. Neonicotinoid treated fields were sown with imidacloprid seed treatments at a rate of 0.10 kg AI/ha in the formulation Gaucho (Bayer Crop Science). Fields were either untreated (no prior neonicotinoid use), previously-treated (last use of neonicotinoids in 2016) or treated (continuously cropped with neonicotinoid seeds for >5 years).",
     "rev1": "BN",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "1. Imidacloprid\n2. Clothianidin\n3. Acetamiprid\n4. Thiamethoxam"
   },
   "669": {
     "answer_llm": "The pesticides used in the study were imidacloprid (0.16 mg a.i./l), ethion (79.47 mg a.i./l), and hexaflumuron (500 mg a.i./l). The exposure method involved ingestion by honey bees, and the duration of exposure was not explicitly stated in the abstract.",
@@ -912,7 +1099,8 @@
     "rev1_rating": 9,
     "answer_rev2": "The pesticides used were Imidacloprid \u00ad (Confidor SC 35%), ethion (EC 47%), and hexaflumuron (Consult, EC 10%). For LC50 assessment, bees were allowed  to feed for 1h on the following concentrations (separate groups for each concentration): Ethion:  47.86, 70.79, 104.71, 154.88, and 229.09 mg/L; Imidacloprid: 0.05, 0.09, 0.19, 0.38, and 0.76 mg/L. \nSublethal effects were assessed using the following concentrations, administered via ad libitum feeding for 2h : imidacloprid (0.16 mg a.i./l), ethion (79.47 mg a.i./l), andhexaflumuron (500 mg a.i./l). \nExperiments on larvae were performed using 5 mL of the same concentrations as those used for adults: imidacloprid (0.16 mg a.i./l), ethion (79.47 mg a.i./l), andhexaflumuron (500 mg a.i./l).",
     "rev2": "ER",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "1. Imidacloprid: 0.16 mg a.i./l, oral exposure\n2. Ethion: 79.47 mg a.i./l, oral exposure, 24 hours\n3. Hexaflumuron: 500 mg a.i./l, exposure duration of 24, 48, 72, 96, and 120 hours"
   },
   "660": {
     "answer_llm": "The pesticides used in the study were clothianidin, thiamethoxam, acetamiprid, imidacloprid, fipronil, chlorfenapyr, chlorantraniliprole, diafenthiuron, and spiromesifen. The exposure method involved a dry film application in jars, and the duration of exposure varied from 2 hours to 48 hours, but specific doses were not provided.",
@@ -921,13 +1109,15 @@
     "rev1_rating": 7,
     "answer_rev2": "The pesticides used in the study were clothianidin, thiamethoxam, acetamiprid, imidacloprid, fipronil, chlorfenapyr, chlorantraniliprole, diafenthiuron, and spiromesifen.They use unspecified  'Recommended doses' of unspecifed formulations. They use the dry film method (pesticide solution was sprayed inside a jar and let it dry to form a thin layer) . Lethality was tested at 2, 4,6, 12,24,48 hours..\n\n\nDoses were reported only in the tables and are: acetamiprid:0.2g/L; clothianidin: 0.1 g/L; imidacloprid 0.1mL; thiamethoxam: 0.25 g/L; fipronil: 2mL; chlorfenapyr: 2mL; chlorantraniliprole: 0.3 mL; diafenthiuron: 1.5g/L;  spiromesifen: 0.8mL.",
     "rev2": "ER",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Acetamiprid: dry film method, exposure at 0, 12, and 24 hours\n2. Clothianidin: dry film method, exposure at 0, 12, and 24 hours\n3. Imidacloprid: dry film method, exposure at 0, 12, and 24 hours\n4. Fipronil: dry film method, exposure at 0, 12, and 24 hours\n5. Thiamethoxam: dry film method, exposure at 0, 12, and 24 hours\n6. Spiromesifen: dry film method, exposure at 0, 12, and 24 hours\n7. Chlorantraniliprole: dry film method, exposure at 0, 12, and 24 hours\n8. Chlorfenapyr: dry film method, exposure at 0, 12, and 24 hours\n9. Diafenthiuron: dry film method, exposure at 0, 12, and 24 hours"
   },
   "436": {
     "answer_llm": "The pesticide used in this study was imidacloprid at a dose of 5 ppb. The exposure method involved feeding the bees a 50% sucrose solution treated with imidacloprid. The duration of exposure varied: chronic exposure lasted for seven days, while acute exposure lasted for two days either at the beginning or the end of the seven-day period.",
     "answer_rev1": "The pesticide used in this study was imidacloprid at a dose of 5 ppb. The exposure method involved feeding the bees a 50% sucrose solution treated with imidacloprid. The duration of exposure varied: chronic exposure lasted for seven days, while acute exposure lasted for two days either at the beginning (acute-early) or the end of the seven-day period (accute-late).",
     "rev1": "BN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Imidacloprid: 5 ppb, oral exposure via sucrose solution, 7 days (chronic), 2 days (acute-early), 2 days (acute-late)"
   },
   "659": {
     "answer_llm": "The pesticide used in this study was clothianidin, applied at a dose of 250 L of a 20% solution diluted 5000 times with water. The exposure method was spraying, conducted on 2 and 31 August 2010, with a duration of exposure assessed for 1 week after spraying and long-term effects evaluated over 2 months.",
@@ -936,7 +1126,8 @@
     "rev1_rating": 9,
     "answer_rev2": "250 L of a clothianidin solution (commercial name of Dantotsu; 20% clothianidin; Sumitomokagaku, Tokyo, Japan) was sprayed after being diluted 5000 times with water.Clothianidin spraying was conducted once in each of the two fields studied.",
     "rev2": "ER",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Clothianidin: field exposure via spraying, diluted 5000 times with water, exposure duration of 1 week after spraying."
   },
   "668": {
     "answer_llm": "The pesticides used were acetamiprid (7.6 ppb) and thiacloprid (561 ppb). They were fed to bumblebee colonies in sugar water. The duration of exposure is not specified.",
@@ -945,13 +1136,15 @@
     "rev1_rating": 7,
     "answer_rev2": "The pesticides used were the commercial products, Gazelle (active ingredient acetamiprid) and Calypso (active ingredient thiacloprid). \nThey were fed to bumblebee colonies in sugar water; acetamiprid was added in a 7.6 ppb concentration and thiacloprid was added in a 561ppb concentration, calculated based on the amounts of the active substances listed on the products\u2019 labels. \nThe colonies were fed ad libitum for nine weeks (short-term lab experiments), four weeks (field experiments) and unspecified longer time in the lab (three-week-period since the first new queens had emerged, more than 90 days in total) for the long-term lab experiment.",
     "rev2": "ER",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_llm2": "1. Acetamiprid: 7.6 ppb, oral exposure via sugar water\n2. Thiacloprid: 561 ppb, oral exposure via sugar water"
   },
   "421": {
     "answer_llm": "The pesticide used in this study was thiacloprid. The doses were 100 \u00b5g/kg, 200 \u00b5g/kg, and 555 \u00b5g/kg. The exposure method was through the consumption of a sugar solution, and the duration of exposure was three days.",
     "answer_rev1": "The pesticide used in this study was thiacloprid. The doses were 0 ug/kg, 100 \u00b5g/kg, 200 \u00b5g/kg, and 555 \u00b5g/kg. The exposure method was through the consumption of a spiked sugar solution and pollen patties, and the duration of exposure was three days.",
     "rev1": "BN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "1. Thiacloprid: 100, 200, and 555 \u00b5g/kg, oral exposure via sugar solution and pollen patty, 3 days"
   },
   "671": {
     "answer_llm": "The pesticides used in the study were acetamiprid (ACT) and deltamethrin (DEL). The doses were 10 ng/bee and 100 ng/bee, administered orally using a syringe. The exposure method involved dissolving the pesticides in DMSO and a 40% sucrose solution. The duration of exposure was assessed at 1 hour, 6 hours, and 24 hours after learning sessions.",
@@ -960,13 +1153,15 @@
     "rev1_rating": 8,
     "answer_rev2": "The pesticides used in the study were acetamiprid (ACT) and deltamethrin (DEL), both at doses of 10 ng/bee and 100 ng/bee. The insecticides were administered orally to individual bees using a syringe, as a single dose. The effects were assessed up to 24 or 48 hours after acute exposure.",
     "rev2": "ER",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Acetamiprid: 10 ng/bee and 100 ng/bee, oral exposure, 24 hours before learning\n2. Deltamethrin: 10 ng/bee and 100 ng/bee, oral exposure, 24 hours before learning"
   },
   "429": {
     "answer_llm": "The pesticides used in the study were: \n1. Cypermethrin 10% EC - Dose: 65 g a.i./ha, Exposure Method: Sprayed, Duration: 2 days.\n2. Imidacloprid 17.8% SL - Dose: 20 g a.i./ha, Exposure Method: Sprayed, Duration: 2 days.\n3. Fipronil 5% SC - Dose: 45 g a.i./ha, Exposure Method: Sprayed, Duration: 1 day.\n4. Indoxacarb 14.5% SC - Dose: 44 g a.i./ha, Exposure Method: Sprayed, Duration: 4 days.",
     "answer_rev1": "The pesticides used in the study were: \n1. Cypermethrin 10% EC - Dose: 65 g a.i./ha, Concentration 0.10%\n2. Imidacloprid 17.8% SL - Dose: 20 g a.i./ha, Concentration 0.02% \n3. Fipronil 5% SC - Dose: 45 g a.i./ha, Concentration 0.20% \n4. Indoxacarb 14.5% SC - Dose: 44 g a.i./ha, Concentration 0.06% \n5. Azadirachtin 0.15%, Dose 5 ml/l, Concentration 50%\n6. Dimethoate 30% EC, Dose 200 g.a.i/ha, Concentration 0.10%\nThe exposure method for all was spraying at the point of 50% blooming. The observations of bees orccured the day before the spray, day of and every day thereafter upto 9 days post spray",
     "rev1": "BN",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "1. Azadirachtin: 5 ml/l, concentration 0.500%\n2. Dimethoate: 200 g a. i./ha, concentration 0.010%\n3. Cypermethrin: 65 g a. i./ha, concentration 0.100%\n4. Fipronil: 45 g a. i./ha, concentration 0.020%\n5. Imidacloprid: 20 g a. i./ha, concentration 0.020%\n6. Indoxacarb: 44 g a. i./ha, concentration 0.060%"
   },
   "662": {
     "answer_llm": "The pesticide used in the study was clothianidin. The exposure method involved feeding honey bee colonies clothianidin-infused pollen patties. The dose started at 4.9 ppb in week 1, decreased to 2.0 ppb by week 5, and remained at that level until week 12. The duration of exposure was 12 weeks for the controlled experiment, while field exposure lasted 30 days.",
@@ -975,7 +1170,8 @@
     "rev1_rating": 9,
     "answer_rev2": "Two experiments were performed. One involved comparing bee colonies from Neonicotinoids treated crop to bees colonies located 3km away from any crop. Bees were collected on 30th of May and on the same day the pollen of  the treated location showed 11.5 ppb of clothianifin and 4 ppb of thiamethoxam, on May 4th pollen showed 6.6 ppb of clothianidin and 2ppb thiamethoxam. In the control site neonicotinoids were not detected. \nThe second experiment involved feeding treated colonies with pollen patty spiked with clothianidin and control colonies with unspiked pollen patties. In treated colonies, clothianidin exposure started with 4.9 ppb of clothianidin in week 1 and was lowered each week, until the dose reached 2.0 ppb at week 5 and stayed the same until week 12. Bees were collected 30 days after the start of exposure.",
     "rev2": "ER",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_llm2": "1. Clothianidin: 4.9 ppb initially, reduced to 2.0 ppb by week 5, oral exposure via pollen patty, 12 weeks\n2. Clothianidin: 6.6 ppb and 11.5 ppb, field exposure via pollen, collected on May 5 and May 30, 2014\n3. Thiamethoxam: 2.0 ppb and 4.0 ppb, field exposure via pollen, collected on May 5 and May 30, 2014\n4. Coumaphos\n5. Pyraclostrobin"
   },
   "665": {
     "answer_llm": "1. Imidacloprid: \n   - Dose: 9 ml/kg of seeds (seed treatment) and 27 g a.i./ha (foliar spray)\n   - Exposure method: Seed treatment and foliar spray\n   - Duration of exposure: Not specified in the text.\n\n2. Thiamethoxam: \n   - Dose: 4 g/kg of seeds (seed treatment) and 38 g a.i./ha (foliar spray)\n   - Exposure method: Seed treatment and foliar spray\n   - Duration of exposure: Not specified in the text.\n\n3. Cyantraniliprole: \n   - Dose: 4 ml/kg of seeds (seed treatment) and 90 g a.i./ha (foliar spray)\n   - Exposure method: Seed treatment and foliar spray\n   - Duration of exposure: Not specified in the text.",
@@ -984,73 +1180,85 @@
     "rev1_rating": 7,
     "answer_rev2": "Both seed tratment and foliar spray were used as exposure methods, here below the pesticides formulation types and concentrations are reported:\n\nSeed Treatment Exposure:\n-Imidacloprid 48FS (Gaucho 600 FS). Dose: 9 ml/kg of seeds\n-Thiamethoxam 70WS (Cruiser). Dose: 4 g/kg of seeds\n-Cyantraniliprole 19.8 + Thiamethoxam19.8 FS (Fortenza Duo). Dose: 4ml/kg of seeds\n\nFoliar Exposure: \n-Imidacloprid 17.8 SL (Confidor). Dose: 27 g a.i./ha\n-Thiamethoxam 25WG (Actara). Dose: 38 g a.i./ha\n-Cyantraniliprole 10.26 OD (Benevia). Dose: 90 g a.i./ha \n\nDuration of exposure: until data were recorded so:\nFor data on bee foraging activity: for the seed treatments at 50% of flowering and at peak flowering stage; for the foliar exposure it was up to 7 days after spraying.\nFor data on collected plant samples: for seed treatments data were collected at 30 and 60 days after sowing; for foliar exposure data were collected 3 days after spraying.\n \n\n   - \n   - Duration of exposure: Not specified in the text.\n\n\n   - Exposure method: Seed treatment and foliar spray\n   - Duration of exposure: Not specified in the text.\n\n \n   - Exposure method: Seed treatment and foliar spray\n   - Duration of exposure: Not specified in the text.",
     "rev2": "ER",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_llm2": "1. Imidacloprid: Seed treatment at 9 ml/kg of seeds; Foliar spray at 27 g a.i./ha, residue levels 0.86 mg/kg in leaf samples, 0.15 mg/kg in pollen samples, 0.07 mg/kg in nectar samples\n2. Thiamethoxam: Seed treatment at 4 g/kg of seeds; Foliar spray at 38 g a.i./ha, residue levels 0.96 mg/kg in leaf samples, 0.23 mg/kg in pollen samples, 0.07 mg/kg in nectar samples\n3. Cyantraniliprole: Seed treatment at 4 ml/kg of seeds; Foliar spray at 90 g a.i./ha"
   },
   "432": {
     "answer_llm": "The pesticide used in the study was Imidacloprid. The doses tested included: 0.003, 0.0024, 0.0012, 0.0006, and 0.0003 in 65% sugar; 0.0028, 0.0024, 0.0012, 0.0006, and 0.0003 in 35% ordinary commercial sugar; and various doses in 10% sugars. The exposure method involved administering the pesticide in sugar solutions, but the duration of exposure is not specified.",
     "answer_rev1": "The pesticide used in the study was Imidacloprid. Imidacloprid was fed to bees in sugar solutions varying in concentration (65%, 35% and 10%) AND sugar content (ordinary commercial sugar, sucrose, fructose, glucose).  Honeybees were held in cages of 10 individuals after being fed 5uL of the relevant sugar syrup. Five doses were tested per sugar type and concentration, ranging from ~0.00005 to ~0.0028% with the exact percentage depending on the combination of sugar type and concentration.",
     "rev1": "BN",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Imidacloprid: 10 and 100 ppb, oral exposure, 7 days\n2. Thiamethoxam: 5 and 25 ppb, contact exposure, acute\n3. Clothianidin: field exposure via treated oilseed rape at 10 g per kg of seed\n4. Beta-cyfluthrin: field exposure via treated seeds"
   },
   "023": {
     "answer_llm": "The pesticides used in the study were Success and a combination of 95% malathion with Nu-lure. The doses were 1 part Success to 1.5 parts water for Success, and 1 part 95% malathion to 4 parts Nu-lure for the malathion+Nu-lure treatment. The exposure method involved placing honey bees in dishes with either dry or wet treatments of the pesticides. The duration of exposure was 1 hour for some bees and 3 hours for others.",
     "answer_rev1": "The pesticides used in the study were Success and a combination of 95% malathion with Nu-lure. The doses were 1 part Success to 1.5 parts water for Success, and 1 part 95% malathion to 4 parts Nu-lure for the malathion+Nu-lure treatment. The exposure method involved placing honey bees in dishes with either dry or wet treatments of the pesticides. The duration of exposure was 1 hour for some bees and 3 hours for others.",
     "rev1": "EA",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Malathion: 1\u00d7 (1 part 95% malathion: 4 parts Nu-lure) and 0.1\u00d7 (0.1 part 95% malathion: 4 parts Nu-lure), topical exposure, mortality recorded at 1, 3, 6, and 12 hours post-exposure.\n2. Spinosad (Success): 1\u00d7 (1 part Success: 1.5 parts H\u2082O) and 0.1\u00d7 (0.1 part Success: 1.5 parts H\u2082O), topical exposure, mortality recorded at 1, 3, 6, and 12 hours post-exposure."
   },
   "013": {
     "answer_llm": "The pesticide used in the study was imidacloprid, with doses of 25 \u03bcg/L and 50 \u03bcg/L. The exposure method involved mixing imidacloprid in sugar syrup, and the duration of exposure was 12 days.",
     "answer_rev1": "The pesticide used in the study was imidacloprid, with doses of 25 \u03bcg/L and 50 \u03bcg/L. The exposure method involved mixing imidacloprid in sugar syrup, and the duration of exposure was 12 days.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Imidacloprid: 25 \u03bcg/L and 50 \u03bcg/L, oral exposure via syrup"
   },
   "022": {
     "answer_llm": "The pesticide used in the study was thiamethoxam. The dose was based on a lethal concentration (LC50) of 0.0543 ng a.i./\u00b5L. The exposure method involved feeding the bees a syrup solution containing the pesticide after a 3-hour starvation period, and the duration of exposure was 30 minutes for the initial bioassay, with additional assessments at 1, 4, and 8 days for other effects.",
     "answer_rev1": "The pesticide used in the study was thiamethoxam. The dose was based on a lethal concentration (LC50) of 0.0543 ng a.i./\u00b5L. The exposure method involved feeding the bees a syrup solution containing the pesticide after a 3-hour starvation period, and the duration of exposure was 30 minutes for the initial bioassay, with additional assessments at 1, 4, and 8 days for other effects.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Thiamethoxam: 0.000543 ng a.i./\u03bcL syrup, oral exposure, duration up to 432 hours."
   },
   "076": {
     "answer_llm": "The pesticides used in the study were thiamethoxam, clothianidin, and imidacloprid. The exposure method was through maize seeds coated with these neonicotinoids, with the duration of exposure being during the maize growing seasons from 2011 to 2013. The doses were not specified, but the percentage of maize area coated was approximately 8% in 2011, 9-10% in 2012, and 13% in 2013.",
     "answer_rev1": "The pesticides used in the study were thiamethoxam, clothianidin, and imidacloprid. The exposure method was through maize seeds coated with these neonicotinoids, with the duration of exposure being during the maize growing seasons from 2011 to 2013. The doses were not specified, but the percentage of maize area coated was approximately 8% in 2011, 9-10% in 2012, and 13% in 2013.",
     "rev1": "EA",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "1. Imidacloprid\n2. Imidacloprid desnitro\n3. Acetamiprid\n4. Thiacloprid\n5. Piperonyl-butoxide\n6. Fipronil\n7. Fipronil-sulphide\n8. Fluvalinate-tau\n9. Propiconazole"
   },
   "073": {
     "answer_llm": "The pesticides used in the study are neonicotinoids, specifically imidacloprid and thiacloprid. However, the text does not specify the doses, exposure methods, or duration of exposure.",
     "answer_rev1": "The pesticides used in the study are neonicotinoids, specifically imidacloprid and thiacloprid. However, the text does not specify the doses, exposure methods, or duration of exposure. \n- Should additionally identify that this study is analysing the test species in relation to an agricultural landscape. The use of these insecticides is not the primary focus of this paper, hence the lack of detail. This study examines landscape structure.",
     "rev1": "EA",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_llm2": "No pesticides were tested in this study"
   },
   "020": {
     "answer_llm": "The pesticide used in the study was imidacloprid at a dose of 10 ppb, with dietary exposure through neonicotinoid-laced syrup fed to bumble bee colonies over a duration of 42 days.",
     "answer_rev1": "The pesticide used in the study was imidacloprid at a dose of 10 ppb, with dietary exposure through neonicotinoid-laced syrup fed to bumble bee colonies over a duration of 42 days.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Imidacloprid: 10 ppb, oral exposure via syrup"
   },
   "018": {
     "answer_llm": "The pesticides used in the study were imidacloprid (IMI) and thiacloprid (TCP). The doses were 360 ng/mL/mg protein for C. florisomne CYP9BU3 and 157.9 ng/mL/mg protein for D. cincta CYP9BU4. The exposure method involved a baculovirus and insect cell line system, and the duration of exposure is not specified.",
     "answer_rev1": "The pesticides used in the study were imidacloprid (IMI) and thiacloprid (TCP). The doses were 360 ng/mL/mg protein for C. florisomne CYP9BU3 and 157.9 ng/mL/mg protein for D. cincta CYP9BU4. The exposure method involved a baculovirus and insect cell line system, and the duration of exposure is not specified.",
     "rev1": "EA",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_llm2": "1. Imidacloprid\n2. Thiacloprid"
   },
   "017": {
     "answer_llm": "The pesticide used in the study was thiamethoxam. The dose was 1.34 ng in a 20-\u03bcl sucrose solution. The exposure method involved releasing foraging honey bees away from their colony after administering the pesticide, and the duration of exposure simulated daily intoxication events.",
     "answer_rev1": "The pesticide used in the study was thiamethoxam. The dose was 1.34 ng in a 20-\u03bcl sucrose solution. The exposure method involved releasing foraging honey bees away from their colony after administering the pesticide, and the duration of exposure simulated daily intoxication events.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Thiamethoxam: 1.34 ng in a 20-\u03bcl sucrose solution, oral exposure, field-realistic sublethal dose; field exposure via treated oilseed rape and maize."
   },
   "019": {
     "answer_llm": "The pesticide used in the study was nicotine, administered at a dose of 50 ppm in a sugar solution. The exposure method involved feeding the caged bees with this solution, and the duration of exposure was until the bees died after being kept in a thermostatic cabinet.",
     "answer_rev1": "The pesticide used in the study was nicotine, administered at a dose of 50 ppm in a sugar solution. The exposure method involved feeding the caged bees with this solution, and the duration of exposure was until the bees died after being kept in a thermostatic cabinet.",
     "rev1": "EA",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "No pesticides were tested in this study"
   },
   "021": {
     "answer_llm": "The pesticides used in the study were clothianidin (Poncho\u00ae 250) and thiamethoxam (Cruiser\u00ae 5FS), both at a dose of 0.25 mg AI/kernel. The exposure method involved bumble bees foraging in corn fields during pollen shed, and the duration of exposure was throughout this period. Additionally, pyraclostrobin was applied as a foliar treatment, but the dose and duration of exposure for it were not specified.",
     "answer_rev1": "The pesticides used in the study were clothianidin (Poncho\u00ae 250) and thiamethoxam (Cruiser\u00ae 5FS), both at a dose of 0.25 mg AI/kernel. The exposure method involved bumble bees foraging in corn fields during pollen shed, and the duration of exposure was throughout this period. Additionally, pyraclostrobin was applied as a foliar treatment, but the dose and duration of exposure for it were not specified.",
     "rev1": "EA",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_llm2": "1. Thiamethoxam: seed-treatment, 0.25 mg AI/kernel\n2. Clothianidin: 0.25 mg AI/kernel, seed-treatment\n3. Ipconazole: seed-treatment\n4. Metalaxyl: seed-treatment\n5. Trifloxystrobin: seed-treatment\n6. Fludioxonil: seed-treatment\n7. Mefenoxam: seed-treatment\n8. Thiabendazole: seed-treatment\n9. Azoxystrobin: seed-treatment"
   },
   "532": {
     "answer_llm": "The pesticide used in the study is acetamiprid, with recommended doses of 50-500 mg/L and an LC50 value of 188.49 mg/L for honeybee larvae exposed over 72 hours. Flumethrin is also mentioned, but specific dose and exposure duration details are not provided.",
@@ -1059,13 +1267,15 @@
     "rev1_rating": 2,
     "answer_rev2": "The pesticide used in the study is acetamiprid, 0, 5, and 25 mg/L. The authors used a commercial product: the water-dispersible granules of acetamiprid, with the following composition: 70% acetamiprid, 2% naphthalenesulfonic acid-formaldehyde condensate, 4% ZX-D9\uff08disintegrating agent, 12% bentonite, 2% wetting agent M (wetting agents), and 10% ammonium chloride. The pesticide was delivered as food to honeybee larvae from 2-day-old for four days until capped. The volume of food delivered was gradually elevated from 1.5 to 3 \u03bcL by 0.5 \u03bcL every day.",
     "rev2": "ER",
-    "rev2_rating": 2
+    "rev2_rating": 2,
+    "answer_llm2": "1. Acetamiprid: 0, 5, and 25 mg/L, oral exposure via sucrose solution, 4 days (from 2 days old to 6 days old larvae)"
   },
   "517": {
     "answer_llm": "The pesticides used in the study were spinosad and spinetoram. The doses were: \n- Spinosad: 1/1, 1/10, 1/100, 1/1000, and 1/10 000 of the MFRC; \n- Spinetoram: 1/1, 1/10, 1/100, 1/1000, and 1/10 000 of the MFRC. \nThe exposure method was oral feeding in sugar water, with acute exposure lasting 72 hours and chronic exposure lasting 11 weeks.",
     "answer_rev1": "The study evaluated the effects of spinosad and spinetoram at MFRC (which equals 400 mg a.i./L and 24 mg a.i./L, respectively) as well as 1/10, 1/100, 1/1000 and 1/10000 of MFRC. Pesticides were applied as commerical formulations (Tracer and Delegate, respectively), and pesticide treatments were compared to control (no pesticide). In the first oral exposure experiment, imidacloprid (formulation Confidor at MFRC, which equals 200 mg a.i./L) was used as positive control. Exposure occurred via dry and wet contact, as well as oral intake. The duration of exposure was 72 h in the contact bioassays, 11 weeks in the bioassay to assess acute and chronic side effects via oral treatment, and 7 weeks in the bioassay to assess acute and chronic side effects via oral treatment, including foraging behavior.",
     "rev1": "LH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "1. Spinetoram: \n   - Concentrations: Maximum field recommended concentration (MFRC), 1/10, 1/100, 1/1000, and 1/100,000 of the MFRC\n   - Exposure Method: Direct contact with wet and dry residues, oral exposure in supplemented sugar water\n   - Duration: 72 hours (acute), 11 weeks (chronic)\n\n2. Spinosad: \n   - Concentrations: Maximum field recommended concentration (MFRC), 1/10, 1/100, 1/1000, and 1/100,000 of the MFRC\n   - Exposure Method: Direct contact with wet and dry residues, oral exposure in supplemented sugar water\n   - Duration: 72 hours (acute), 11 weeks (chronic)\n\n3. Imidacloprid: \n   - Concentration: MFRC (0.1% or 200 ppm)\n   - Exposure Method: Oral exposure via treated sugar water\n   - Duration: 11 weeks"
   },
   "521": {
     "answer_llm": "The pesticide used in the study was imidacloprid (Advise 2FI). The doses were 0.001 mg/L and 1 mg/L with exposure twice a week for 52 days, and 4.3 mg/L with exposure once a week for three weeks.",
@@ -1074,7 +1284,8 @@
     "rev1_rating": 5,
     "answer_rev2": "The pesticide used in the study was formulated imidacloprid product, Advise 2Fl (21.4% active ingredient), diluted to concentrations  of 0.001, 1, 4.3, 80, 190, 274, 315, 552 and 967 mg/L. Bees were sprayed twice a week with 0.5 ml pesticide solution until death  (up to 53 days). In a separate but similar test, bees were sprayed once a week for three weeks.",
     "rev2": "ER",
-    "rev2_rating": 4
+    "rev2_rating": 4,
+    "answer_llm2": "1. Imidacloprid: \n   - Concentrations: 0.001, 1, 4.3, 80, 190, 274, 315, 552, 967 mg/L\n   - Exposure method: Foliar spray and contact exposure\n   - Duration: Twice a week for 52 days and once a week for three weeks"
   },
   "519": {
     "answer_llm": "The pesticides used in the study were imidacloprid (5 \u03bcg/kg in sugar syrup) and thymol (in Apiguard\u00ae). The exposure method for imidacloprid was through sugar syrup, and the duration of exposure was 6 weeks for imidacloprid, while thymol exposure was likely continuous over a full year.",
@@ -1083,7 +1294,8 @@
     "rev1_rating": 9,
     "answer_rev2": "The pesticides used were imidacloprid (PESTENAL), dissolved in sucrose syroup to obtain a concentration of 5 \u03bcg/kg (ppb), and thymol (Apiguard gel, 250 g/kg of thymol). Colonies in the imidacloprid and imidacloprid + thymol treatment groups were fed a total of 20 kg of sugar syrup with 5 \u03bcg/kg (ppb) of imidacloprid over 6 weeks. Two weeks after the imidacloprid treatment started, colonies were given one aluminium tray containing 50 g of Apiguard gel (250 g/kg of thymol) that was renewed after two weeks for another two-week period.",
     "rev2": "ER",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Imidacloprid: 5 \u03bcg/kg (ppb), oral exposure via sugar syrup, 6 weeks\n2. Thymol: commercial formulation Apiguard\u00ae, exposure method not specified"
   },
   "518": {
     "answer_llm": "The pesticides used in the study were chromium (as Cr(NO3)3), clothianidin, and propiconazole. The doses were 3.9 mg L<sup>-1</sup> for chromium, 0.074 mg L<sup>-1</sup> for clothianidin, and 700 mg L<sup>-1</sup> for propiconazole. The exposure method was oral ingestion, and the duration of exposure was assessed over 48 hours for synergistic effects and up to 96 hours for antagonistic effects.",
@@ -1092,7 +1304,8 @@
     "rev1_rating": 9,
     "answer_rev2": "The pesticides used in the study were clothianidin and propiconazole, administered via feeding for 2 hours. The volume of ingestion was calculated so that each bee received 0.74 ng of clothianidin and 7 ug of propiconazole, either alone or in combination. The effects of these acute oral exposures were assessed at 4, 24, 48, 72 and 96 h.",
     "rev2": "ER",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_llm2": "1. Propiconazole: 700 mg L\u207b\u00b9, oral exposure via sugar syrup, 7 \u00b5g ingested per bee\n2. Clothianidin: 0.074 mg L\u207b\u00b9, oral exposure via sugar syrup, 0.74 ng ingested per bee\n3. Chromium (as Cr(NO\u2083)\u2083\u00b79H\u2082O): 3.9 mg L\u207b\u00b9, oral exposure via sugar syrup, 0.039 \u00b5g ingested per bee"
   },
   "520": {
     "answer_llm": "The pesticides used in the study were flupyradifurone (FPF) and dimethoate (DIM). The doses for FPF were 11.1 \u00b1 0.3 ng/bee/day, 100.6 \u00b1 2.2 ng/bee/day, 295.2 \u00b1 8.1 ng/bee/day, and 730.5 \u00b1 28.4 ng/bee/day, with exposure duration of 10 days and longer. The exposure method involved feeding bees solutions containing these pesticides mixed with 50% (w/v) sucrose. The specific dose for dimethoate was 1 mg/kg, but further details on its exposure method and duration were not provided.",
@@ -1101,13 +1314,15 @@
     "rev1_rating": 9,
     "answer_rev2": "The pesticides used in the study were flupyradifurone (FPF, 99.9% PESTANAL analytical standard)) and dimethoate (DIM, Purity: 99.5%, PESTANAL analytical standard).  Feeding solutions with 50% (w/v) sucrose were either pure (negative control treatment, only sucrose solution) or contained DIM (positive control, 1 mg/kg) or FPF. \nFive daily doses of FPF were used (11.1 \u00b1 0.3, 33.2 \u00b1 0.7, 100.6 \u00b1 2.2, 292.5 \u00b1 8.1, and 730.5 \u00b1 28.4 ng/bee/day, mean \u00b1 SEM). Feeding solutions were provided ad libitum, renewed each 24 \u00b1 2 h and and continued until at least the LT50 (i.e., 50% mortality of the control treatment was reached).",
     "rev2": "ER",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_llm2": "1. Flupyradifurone: 11 \u00b1 0.3, 33.2 \u00b1 0.7, 100.6 \u00b1 2.2, 292.5 \u00b1 8.1, and 730.5 \u00b1 28.4 ng/bee/day, oral exposure via sucrose solution, 10 days and longer.\n2. Dimethoate: 1 mg/kg, oral exposure via sucrose solution, duration not specified."
   },
   "516": {
     "answer_llm": "The pesticide used in the study was imidacloprid at a dose of 125 \u03bcg L\u207b\u00b9, with exposure through feeding contaminated syrup for a duration of 10 days.",
     "answer_rev1": "The pesticide used was imidacloprid and bees were fed syrup containing 125 \u03bcg L\u207b\u00b9 of imidacloprid. Exposure duration was 10 days.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Imidacloprid: 125 \u03bcg L\u207b\u00b9, oral exposure via syrup, 10 days"
   },
   "531": {
     "answer_llm": "The pesticide used in the study was imidacloprid, at a dose of 36 ng/bee. The exposure method was through feeding bees a sucrose-water solution containing the pesticide, and the duration of exposure was 24 hours after the initial feeding of melatonin.",
@@ -1116,19 +1331,22 @@
     "rev1_rating": 6,
     "answer_rev2": "The pesticide used in the study was imidacloprid (99% purity), administered at a dose of 36 ng/bee. Bees were exposed to the pesticide for 20 minutes by feeding on a sugar solution (2 mL) containing the dissolved pesticide. Experiments were conducted 14 hours after exposure.",
     "rev2": "ER",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_llm2": "1. Imidacloprid: 36 ng/bee, oral exposure via sucrose-water solution"
   },
   "525": {
     "answer_llm": "The pesticide used in this study was imidacloprid, with a dose of 0.014651 mg imidacloprid per microliter of diet. The exposure method was through diet (aqueous solution of 50% sucrose), and the duration of exposure was 8 days.",
     "answer_rev1": "Bees were orally exposed to imidacloprid (0.014651 ng/uL, corresponding to 14.6 ppb, and 0.00021% acetone) via sucrose solution. Duration of exposure was 8 days. Neither imidacloprid nor acetone was added to the sucrose solution in the control treatment.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Imidacloprid: 0.014651 mg/\u03bcL diet, oral exposure, 8 days"
   },
   "522": {
     "answer_llm": "The pesticide used in the study was imidacloprid at a dose of 10 ppb, provided continuously in nectar. The exposure method was through nectar consumption, and the duration of exposure was approximately 48 hours.",
     "answer_rev1": "Bees were orally exposed to imidacloprid (10 ppb or 0 ppb in the control treatments) via nectar, which was provided ad libitum during the 48 h of the experiment.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_llm2": "1. Imidacloprid"
   },
   "523": {
     "answer_llm": "The pesticide used in the study was imidacloprid at a dose of 1 ppb. The exposure method involved feeding bumblebees a sucrose solution containing the pesticide and allowing them to forage in a flight arena. The duration of exposure was during the foraging activities, totaling 70 hours of observation.",
@@ -1137,7 +1355,8 @@
     "rev1_rating": 10,
     "answer_rev2": "The pesticide used in the study was imidacloprid (Confidor) at a concentration of 1 ppb. Bees were exposed to the pesticide via feeding within the colonies for one week, plus the entire duration of the experiment for each colony  (which was unspecified).",
     "rev2": "ER",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_llm2": "1. Imidacloprid: 1 ppb, oral exposure via sucrose solution, duration not explicitly stated"
   },
   "524": {
     "answer_llm": "The pesticides used in the study were IMD (Imidacloprid) at 10 nM and TMX (Thiamethoxam) at 1 nM. The exposure method was through sucrose solutions fed to honeybees during conditioning, and the duration of exposure was during the conditioning tasks.",
@@ -1146,54 +1365,63 @@
     "rev1_rating": 6,
     "answer_rev2": "The pesticides used in the study were imidacloprid and thiamethoxam at concentrations of 0.1, 1 and 10 nM. The exposure method was via feeding during conditioning. In particular, bees were exposed six times to 0.4 \u03bcL of the treatment solution during training, with an interval of either 5 minutes or 30s between conditioning (feeding) trials. Tests were conducted 10 minutes and 24 hours after exposure.",
     "rev2": "ER",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_llm2": "1. Imidacloprid (IMD): 10 nM, oral exposure via sucrose solution, during massed or spaced conditioning.\n2. Thiamethoxam (TMX): 1 nM, oral exposure via sucrose solution, during massed conditioning."
   },
   "512": {
     "answer_llm": "The pesticide used in the study was spinosad. The doses were 0.2 mg kg\u207b\u00b9, 0.8 mg kg\u207b\u00b9, and 8.0 mg kg\u207b\u00b9. The exposure method involved feeding bumble bees pollen patties mixed with spinosad, and the duration of exposure was from March to May 2004.",
     "answer_rev1": "Colonies were exposed to spinosad via pollen patties, with 0.2 mg kg\u207b\u00b9, 0.8 mg kg\u207b\u00b9, or 8.0 mg kg\u207b\u00b9 spinosad. Exposure lasted for four weeks, from the second, to the fifth week of experiment.",
     "rev1": "LH",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Spinosad: 0.2, 0.8, and 8 mg kg\u207b\u00b9, oral exposure via pollen patties; field application rate of 40 g AI ha\u207b\u00b9"
   },
   "658": {
     "answer_llm": "The pesticides used in the study were S-dinotefuran, R-dinotefuran, and Rac-dinotefuran. The doses were 1.25, 2.5, and 5 ng/bee for S-dinotefuran; 5, 10, 50, and 100 ng/bee for R-dinotefuran; and 5, 10, 15, 20, and 25 ng/bee for Rac-dinotefuran. The exposure method was feeding, and the duration of exposure was 24 hours and 48 hours.",
     "answer_rev1": "For the majority of experiments honybees with eithe   S-dinotefuran, R-dinotefuran and Rac-dinotefuran. Honeybees were fed with a dose of 5 ng/bee unless specified here int he following cases:  for social behaviour:  S-dinotefuran, R-dinotefuran, and Rac-dinotefuran were administered at doses of 5 ng/bee, 5 ng/bee, and 10 ng/bee, respectively; for metabolism of dinotefuran: 10 ng/bee dinotefuran",
     "rev1": "ER",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "1. Rac-dinotefuran: 10 ng, oral exposure, unspecified duration\n2. Rac-dinotefuran: 5 ng, oral exposure, unspecified duration\n3. Rac-dinotefuran: 2.5 ng, oral exposure, unspecified duration\n4. S-dinotefuran: 5 ng, oral exposure, unspecified duration\n5. R-dinotefuran: 5 ng, oral exposure, unspecified duration"
   },
   "666": {
     "answer_llm": "The pesticides used in the study are: \n1. Imidacloprid - Dose: 0.13 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 3.2 days to reach LD50.\n2. Thiacloprid - Dose: 90.5 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 782.3 days to reach LD50.\n3. Deltamethrin - Dose: 3.65 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 983.8 days to reach LD50.\n4. Esfenvalerate - Dose: 5.52 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 14,234.1 days to reach LD50.\n5. Sulfoxaflor - Dose: 0.71 ng a.i./Bee/Day, Exposure Method: Maximum residue in nectar/honey, Duration: 92.9 days to reach LD50.",
     "answer_rev1": "Six insecticides were tested using oral feeding method (ad libitum) for 48 hours (or until the bees died if <48h):\n\n1-Imidacloprid (Confidor SL 20% W/V ). Dose: between 0.05 and 3 ppm .\n2-Thiacloprid (Calypso SC, 48% W/V). Dose: between 150 to 800 ppm.\n3-Deltamethrin (Decis Protech EW, 1.5% W/V). Dose: between 2.04 and 73.53 ppm.\n4-Esfenvalerate (Sumifive\u00ae Plus EW, 5% W/V). Dose: between 5.6 and 56.2 ppm.\n5- Sulfoxaflor (Closer\u00ae SC EW 11.43% W/W). Dose: between 0.9 and 3 ppm.\n6- Bacillus thuringiensis ssp. kurstaki (Btk) (DiPel\u00ae DF WG, 54% W/W, strain ABTS-351 (32 mill. CLU/g). Dose:between 54 and 54,000 ppm.",
     "rev1": "ER",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "1. Imidacloprid: 0.05 to 3 ppm, oral exposure, 48 hours\n2. Thiacloprid: 150 to 800 ppm, oral exposure, 48 hours\n3. Deltamethrin: 2.04 to 73.53 ppm, oral exposure, 48 hours\n4. Esfenvalerate: 5.6 to 56.2 ppm, oral exposure, 48 hours\n5. Sulfoxaflor: 0.9 to 3 ppm, oral exposure, 48 hours\n6. Bacillus thuringiensis ssp. kurstaki (Btk): exposure method and duration not specified"
   },
   "657": {
     "answer_llm": "The pesticide used in the study was imidacloprid. The dose was an oral LD50 value between 3.7 and 40.9 ng per bee, administered in a 20 \u03bcl sucrose solution. The exposure method was oral, and the duration of exposure was acute, as indicated by the LD50 testing.",
     "answer_rev1": "1) for sunflower metabolism experiment: prior to seeding, sunfower seeds were dressed with  [methylene-14C]imidacloprid formulated as the commercial 700g/kg (Gaucho WS70); 2) for LD50: with imidacloprid either as technical grade material (purity >98%) or as formulated ready-to- use products (700g/kg WG; 200 g/litre  SC imidacloprid); fed ad libitum in groups. observed for a total period of 48h.\n3) Sampling of foraging honeybees for residues of imidacloprid or metabolites on treated field:plots \ufeffwere drilled with imidacloprid-free sunflower seed or seeds dressed with the standard combined fungicide and imidacloprid 700g/kg  WS (150g AI/U), sampling happened 2-3 dyas after hive installment.\n4) for chronic experiments: Batches (2kg) of sunflower honey (Honig Mu\u00c8ngers- dorff, Cologne, Germany) weree fortifed with 0, 0.002, 0.005, 0.010 and 0.020mg/kg of technical imidacloprid. Honeybee colonies were chronically fed with the fortified honey",
     "rev1": "ER",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_llm2": "1. Imidacloprid: 0.7 mg AI per seed, seed treatment, field exposure\n2. Imidacloprid: 0.002, 0.005, 0.010, and 0.020 mg kg\u207b\u00b9, oral exposure, 39 days"
   },
   "664": {
     "answer_llm": "The pesticide used was Elado (400 g l\u207b\u00b9 clothianidin + 80 g l\u207b\u00b9 \u03b2-cyfluthrin) at a dose of 25 ml per kg of seed. The exposure method was through sowing insecticide-coated seeds, and the duration of exposure was from sowing (6 April to 18 May 2013) until the study assessments.",
     "answer_rev1": "The pesticide used was Elado (400 g l\u207b\u00b9 clothianidin + 80 g l\u207b\u00b9 \u03b2-cyfluthrin) at a dose of 25 ml per kg of seed. The exposure method was through sowing insecticide-coated seeds, (6 April to 18 May 2013). The experiments were conducted in the summer June-July 2013. In particular, wild bee density was evaluated in June-July. Osmia bicornis tubes were collected 3-43 after installing the cocoons int he filed (approxiately installed one week before flowering). Bumblebeee colonies were placed in the fields for 23-38 days. Honeybee colonies were placed in the field for the entire duration of oilseedrape flowering (1-2months).",
     "rev1": "ER",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_llm2": "1. Clothianidin: field exposure via treated seeds with 25 ml Elado (400 g l\u207b\u00b9 clothianidin + 80 g l\u207b\u00b9 \u03b2-cyfluthrin) per kg of seed\n2. \u03b2-cyfluthrin: field exposure via treated seeds with 25 ml Elado (400 g l\u207b\u00b9 clothianidin + 80 g l\u207b\u00b9 \u03b2-cyfluthrin) per kg of seed\n3. Indoxacarb\n4. T-fluvalinate\n5. Pymetrozine\n6. Thiacloprid"
   },
   "371": {
     "answer_llm": "The pesticide used in the study was imidacloprid, applied at a dose of 0.7 mg/seed. The exposure method was seed coating, and the duration of exposure was from early May until full bloom, approximately 73 to 78 days.",
     "answer_rev1": "The pesticide used in the study was imidacloprid, applied at a dose of 0.7 mg/seed as seed coating of sunflower. The exposure was via pollen and nectar  from plants with coated seeds. The exposure duration in the field experiment was from 9 to 17 July. In greenhouse experiment the exposure was for 4 days",
     "rev1": "FS",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_llm2": "1. Imidacloprid: 0.7 mg/seed, field exposure via seed coating"
   },
   "369": {
     "answer_llm": "The pesticide used in the study was clothianidin. The doses detected were between 7.953 to 46.55 mg/l in guttation droplets and between 0.021 to 0.079 mg/kg in dead bees. The exposure method involved bees collecting guttation droplets, and the duration of exposure was from May 28 to May 30, 2011.",
     "answer_rev1": "The pesticide tested is clothianidin via guttation drops from seed treated (Poncho Pro, 0.5 mg/kernel). In the first experiment the level of exposure detected in the guttation droplets were between 0.010 and 0.018 mg/l clothianidin in the control and 7.953 to 46.55 mg/l clothianidin in treated variants. In the second experiment the guttation occured on 5 of 10 days. The residues ranged from 0.006 to 0.008 mg/l in the control and from 0.205 to 1.710 mg/l in treatment.",
     "rev1": "FS",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "1. Clothianidin: field exposure via seed treated maize (0.5 mg/kernel); Residue levels in guttation droplets between 0.010 and 0.018 mg/l in control and 7.953 to 46.55 mg/l in treated variants."
   },
   "224": {
     "answer_llm": "The pesticides used in the study were thiacloprid (21.7% SC) and imidacloprid. Thiacloprid was administered at doses of 500, 325, 250, 125, 62.50, and 31.25 ppm through sugar candies, with three feedings at weekly intervals. Imidacloprid was administered at doses of 500 ppm, 250 ppm, 125 ppm, 62.5 ppm, 31.25 ppm, and 15.625 ppm through solutions, with effects assessed over three feedings on the 1st, 2nd, and 3rd days after feeding.",
     "answer_rev1": "The pesticides used in the study were thiacloprid (21.7% SC). Thiacloprid was administered at doses of 500, 325, 250, 125, 62.50, and 31.25 ppm through sugar candies, with three feedings at weekly intervals.",
     "rev1": "FS",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_llm2": "1. Thiacloprid: 500, 325, 250, 125, 62.50, and 31.25 ppm, field exposure\n2. Thiacloprid: 21.7% SC, oral exposure via sugar candies, three feedings at weekly intervals\n3. Imidacloprid: field realistic concentrations, exposure method not specified, duration not specified\n4. Clothianidin: field realistic concentrations, exposure method not specified, duration not specified"
   }
 }

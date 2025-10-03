@@ -1,0 +1,265 @@
+{
+  "002": {
+    "paper_id": "002",
+    "status": "completed",
+    "questions": {
+      "bee_species": {
+        "answer": "1. Bombus terrestris dalmatinus",
+        "reason": "The methodology section specifies the subspecies of bee tested.",
+        "chunk_ids": [
+          "93e7a4e5-2d16-429c-9a94-0d143e511f2f"
+        ]
+      },
+      "pesticides": {
+        "answer": "Information not found in the provided text.",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.4",
+        "chunk_ids": []
+      },
+      "additional_stressors": {
+        "answer": "No additional stressors were tested",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.5",
+        "chunk_ids": []
+      },
+      "experimental_methodology": {
+        "answer": "Information not found in the provided text.",
+        "reason": "Insufficient or incoherent information found in relevant chunks",
+        "chunk_ids": [
+          "56e95025-3344-4ef4-a68c-2477a3475e71",
+          "34b2ffe8-b6af-4af8-a593-d751d2420e19",
+          "0f4182ed-3411-44bb-848f-d3f083241459",
+          "92eb12d0-7bc0-4495-b893-d436291d9a79"
+        ]
+      },
+      "significance": {
+        "answer": "No pesticides were tested in this study",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.5",
+        "chunk_ids": []
+      },
+      "future_research": {
+        "answer": "1. Standardize hives and ensure queens are from the same hibernation batch to reduce variability in colony composition.\n2. Consider both the number of new queens and the number of queen cells produced when assessing reproductive success, rather than just the timing of the turning point.\n3. Extend ecotoxicological experiments beyond the turning point to capture a more comprehensive picture of reproductive success.\n4. Repeat field and monitoring studies in subsequent years and/or other locations to address remaining questions.\n5. Design specially tailored lower tier studies to address certain aspects of the research that are not feasible in large-scale studies.",
+        "reason": "The authors provided specific future research directions in the discussion sections of the text provided.",
+        "chunk_ids": [
+          "91d84ab5-775b-4c56-9729-13f43e7e1d82",
+          "91e0fe06-5109-4e60-8205-8160bc25e843"
+        ]
+      }
+    },
+    "timestamp": 352317.320972083
+  },
+  "003": {
+    "paper_id": "003",
+    "status": "completed",
+    "questions": {
+      "bee_species": {
+        "answer": "1. Bombus terrestris audax",
+        "reason": "The methodology sections across the text chunks specify the subspecies of bumblebee used in the study.",
+        "chunk_ids": [
+          "af7846dc-7a3b-4445-9191-087a4a117c49",
+          "a2fd9191-5c69-401b-960d-8e3d77d541a2"
+        ]
+      },
+      "pesticides": {
+        "answer": "1. Thiamethoxam: 5 ng/g, oral exposure, 96 hours",
+        "reason": "The study explicitly mentions the testing of thiamethoxam on bees, providing details on the dose, exposure method, and duration.",
+        "chunk_ids": [
+          "667ae264-5038-47fc-9a1e-40585681aae3",
+          "69485f7b-d649-40de-85cc-62ac63fec899"
+        ]
+      },
+      "additional_stressors": {
+        "answer": "1. Parasite stress: Crithidia bombi infection: 10,000 cells per bee, oral inoculation, 15 minutes",
+        "reason": "The study specifically tested the effects of the parasite Crithidia bombi on bumblebees in combination with thiamethoxam, without including other stressors.",
+        "chunk_ids": [
+          "bff704de-da42-4d81-83ff-3a78543f5441",
+          "fe3a475b-c8c0-4110-a23e-92322e2b2aa3"
+        ]
+      },
+      "experimental_methodology": {
+        "answer": "1. **Parasite Inoculation and Toxicity Assessment**:\n   - **Experimental Design**: Randomized controlled trial with 21 treatment groups.\n   - **Sample Size**: 40 bumblebees per treatment group.\n   - **Treatment Groups**: \n     - 2 control groups\n     - 1 *C. bombi* group\n     - 9 thiamethoxam groups\n     - 9 groups exposed to both thiamethoxam & *C. bombi*\n   - **Variables Measured**: LD\\(_{50}\\) of thiamethoxam.\n   - **Level of Biological Organization**: Individual bumblebees.\n   - **Housing**: Bees were individually housed in Nicot cages.\n\n2. **Mortality Assessment**: \n   - **Experimental Design**: Controlled exposure experiment.\n   - **Sample Size**: Not explicitly mentioned, but bees that did not consume the entire dosage were removed (n = 8 removed).\n   - **Procedure**: Bees were starved for 3 hours before being fed a sucrose solution containing thiamethoxam. Mortality was recorded at multiple time points (4, 6, 8, 24, 48, 72, and 96 hours) post-exposure.\n   - **Variables Measured**: Mortality of bees over a 96-hour period post-exposure to thiamethoxam.\n   - **Level of Biological Organization**: Individual bee level.\n\n3. **Parasite Analysis**: \n   - **Sample Size**: Not specified for the total number of bees, but uninoculated bees were checked for infection, and inoculated bees were analyzed for *C. bombi* intensity.\n   - **Experimental Design**: Individual bees were dissected to remove the hindgut, which was then analyzed for *C. bombi* infection.\n   - **Variables Measured**: \n     - *C. bombi* infection presence in uninoculated bees.\n     - *C. bombi* intensity in inoculated bees using a Neubauer improved haemocytometer.\n   - **Level of Biological Organization**: Subindividual (focusing on the hindgut and cellular level).\n\n4. **Body Size Measurement**:\n   - **Sample Size**: All individuals were measured.\n   - **Experimental Design**: Thorax width was measured three times per individual using a Mitutoyo digital calliper to obtain a mean measure of size.\n   - **Variables Measured**: Thorax width as a proxy for body size.\n   - **Level of Biological Organization**: Individual (focusing on physical measurements of bees).",
+        "reason": "The text provides detailed experimental methodologies used in the study involving bees, focusing on parasite inoculation, toxicity assessment, mortality assessment, and parasite analysis.",
+        "chunk_ids": [
+          "24011ad4-261c-44cc-a725-56c744020c30",
+          "667ae264-5038-47fc-9a1e-40585681aae3",
+          "931483a3-f01f-4802-9149-db1a4c1093f4"
+        ]
+      },
+      "significance": {
+        "answer": "1. Thiamethoxam: 5 ng/g, oral exposure, 96 hours",
+        "reason": "The study provided specific details on the experimental testing of thiamethoxam on bees, including the chemical name, doses, exposure method, and duration.",
+        "chunk_ids": [
+          "667ae264-5038-47fc-9a1e-40585681aae3",
+          "69485f7b-d649-40de-85cc-62ac63fec899"
+        ]
+      },
+      "future_research": {
+        "answer": "1. Implement methodologies that assess the interactions between agrochemicals and parasites on non-Apis bees.\n2. In cases when direct assessment is not practical, implement post-regulatory monitoring to better understand the real-world consequences of agrochemical use.\n3. Develop methodologies to test the impact of agrochemicals on non-Apis bees within the current regulatory framework.\n4. Investigate how agrochemicals interact with other environmental factors.\n5. Conduct sub-lethal assessments of chronic exposure in bumblebees alongside toxicity tests to detect subtle, but significant, effects of agrochemical exposure.\n6. Modify methodologies within the regulatory process to consider the interaction effects between multiple environmental stressors on wild bees.",
+        "reason": "The authors explicitly suggest future research directions in the discussion section, focusing on methodological improvements and targeted research questions.",
+        "chunk_ids": [
+          "bff704de-da42-4d81-83ff-3a78543f5441",
+          "18902eee-2748-402b-9aa2-f1821142c17c",
+          "55292e1c-4c35-4301-b768-bb4f0ce7f059"
+        ]
+      }
+    },
+    "timestamp": 352480.19447325
+  },
+  "004": {
+    "paper_id": "004",
+    "status": "completed",
+    "questions": {
+      "bee_species": {
+        "answer": "1. Bombus impatiens",
+        "reason": "All text chunks consistently mention the same species in the methodology or results sections.",
+        "chunk_ids": [
+          "56fe9605-9b28-428f-9354-c1e6df67c91f",
+          "6896dcc8-b668-43b5-9e05-44478fe9f0bf",
+          "24d84b9c-8e45-4cc9-97c9-200b0f6132cb",
+          "2cc7ffa1-3c42-4742-83bd-920a8d4c51ea",
+          "b1392bc1-2ecc-497a-876b-fd10040ab848"
+        ]
+      },
+      "pesticides": {
+        "answer": "1. Acetamiprid: 0.452, 4.52, 45.2, 452, or 4520 ppb, oral exposure via pollen, 6 weeks.\n2. Acetamiprid: 1.13, 11.3, 113, 1130, or 11,300 ppb, oral exposure via syrup, 6 weeks.",
+        "reason": "The study explicitly tested acetamiprid on bees using two different exposure methods and doses.",
+        "chunk_ids": [
+          "2cc7ffa1-3c42-4742-83bd-920a8d4c51ea"
+        ]
+      },
+      "additional_stressors": {
+        "answer": "No additional stressors were tested",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.5",
+        "chunk_ids": []
+      },
+      "experimental_methodology": {
+        "answer": "1. **Pollen Study**:\n   - **Sample Size**: 8 microcolonies per treatment group.\n   - **Experimental Design**: Microcolonies initiated with 5 bees each. Acetamiprid-containing pollen provided at varying concentrations (0.452, 4.52, 45.2, 452, or 4520 ppb) starting seven days after initiation.\n   - **Variables Measured**: Number of newly emerged drones, drone weight, total brood area, number of drone pupae, number of dead larvae, and microcolony weight.\n   - **Level of Biological Organization**: Subindividual (drone emergence and weight) and colony level (brood area, pupae, larvae).\n\n2. **Syrup Study**:\n   - **Sample Size**: 10 microcolonies per treatment group.\n   - **Experimental Design**: Acetamiprid-containing syrup provided at initiation with concentrations of 1.13, 11.3, 113, 1130, or 11,300 ppb. Highest dose groups excluded due to failure in drone production.\n   - **Variables Measured**: Number of newly emerged drones, drone weight, total brood area, number of drone pupae, number of dead larvae, and microcolony weight.\n   - **Level of Biological Organization**: Subindividual (drone emergence and weight) and colony level (brood area, pupae, larvae).",
+        "reason": "The text provides detailed experimental methodologies involving bees, focusing on two separate studies: one using pollen and the other using syrup as vehicles for acetamiprid exposure. The experiments were conducted on microcolonies of *B. impatiens* workers, with specific sample sizes and experimental designs outlined.",
+        "chunk_ids": [
+          "2cc7ffa1-3c42-4742-83bd-920a8d4c51ea"
+        ]
+      },
+      "significance": {
+        "answer": "No pesticides were tested in this study",
+        "reason": "Insufficient or incoherent information found in relevant chunks",
+        "chunk_ids": [
+          "5555e13a-c295-4fa5-9119-fd1282b1eadb",
+          "463a4faf-5093-4488-84cd-ecc81a3c6c31"
+        ]
+      },
+      "future_research": {
+        "answer": "1. Conduct experiments to directly compare exposure route differences to determine if findings apply broadly to various pesticide classes and different castes and pollinator species.\n2. Limit pollen or syrup availability in the critical weeks before drone emergence to assess associations with drone production after approximately 2 weeks.\n3. Vary the timing of pesticide treatment to determine how windows of exposure might affect the number or weight of reproductives produced by a colony.",
+        "reason": "The authors explicitly suggest future research directions in the discussion section, focusing on the importance of delivery vehicles in pesticide exposure studies, the need for comparative experiments, and the timing of exposure.",
+        "chunk_ids": [
+          "2b4ae097-a8b4-49f4-8144-4250dda3b736",
+          "e173254f-6d7f-4901-bf06-8594ea161731",
+          "f7de0135-f872-4f3d-8f21-9693b2fdb13a"
+        ]
+      }
+    },
+    "timestamp": 352707.014474541
+  },
+  "005": {
+    "paper_id": "005",
+    "status": "completed",
+    "questions": {
+      "bee_species": {
+        "answer": "Information not found in the provided text.",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.4",
+        "chunk_ids": []
+      },
+      "pesticides": {
+        "answer": "1. Imidacloprid: 0.5 and 5.0 μg/l, oral exposure (saccharose syrup), summer to following spring.\n2. Clothianidin: 32 g a.s./ha, field exposure, 3-week flowering period and overwintering.",
+        "reason": "The text provides specific details about the pesticides tested on bees, including the chemical names, doses, exposure methods, and durations.",
+        "chunk_ids": [
+          "1b6d7123-9179-4db2-813c-8a87074829ee",
+          "86e69962-f1e8-43b0-b554-af7a4a0e5f1c"
+        ]
+      },
+      "additional_stressors": {
+        "answer": "No additional stressors were tested",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.5",
+        "chunk_ids": []
+      },
+      "experimental_methodology": {
+        "answer": "1. **Overwintering Trials**:\n   - **Experimental Design**: Controlled field trials with separate control and treated fields.\n   - **Sample Size**: 6 colonies per control field and 6 colonies per treated field.\n   - **Location**: Trials conducted in maize fields in Lorraine, Alsace, and Aveyron regions (2006) and oilseed rape fields in Picardie and Alsace regions (2005).\n   - **Variables Measured**: Colony and brood development post-exposure.\n   - **Level of Biological Organization**: Colony level.\n   - **Exposure Details**: Maximum approved label rate for thiamethoxam as a seed treatment was used.\n   - **Post-Exposure Monitoring**: Colonies were relocated to woodland sites to monitor development away from further pesticide exposure.\n\n2. **Exposure to Treated Crops**:\n   - **Experimental Design**: Controlled exposure in mesh-covered tunnels.\n   - **Sample Size**: 3 replicate tunnels with treated crops and 1 control tunnel.\n   - **Bee Colonies**: Each tunnel contained a bee colony with 1 queen and approximately 10,000 to 20,000 bees.\n   - **Variables Measured**: The text does not specify the exact variables measured, but the setup suggests potential measurements of bee health, foraging behavior, or colony performance.\n   - **Level of Biological Organization**: Individual and colony level.\n\n3. **Mortality Assessment**:\n   - **Experimental Design**: Observational study using dead bee traps and linen sheets.\n   - **Sample Size**: Not specified in the text.\n   - **Variables Quantified**: Number of dead adult bees.\n   - **Procedure**:\n     - Dead bees were collected daily from traps and linen sheets placed in front of hives and within field plots.\n     - Assessments were conducted daily over a 5-day period before exposure and continued daily during the exposure phase.\n     - Exposure periods varied by location and year, ranging from 5 to 23 days for maize and 12 to 22 days for oilseed rape.\n   - **Level of Biological Organization**: Individual bees.\n\n4. **Flight Activity at Hive Entrance**:\n   - **Experimental Design**: Daily observations were conducted to count the number of bees entering and leaving the hive over a one-minute period.\n   - **Sample Size**: Not specified.\n   - **Variables Measured**: Number of bees entering and leaving the hive, behavioral observations (e.g., hyperactivity, excessive leg-grooming, fanning).\n   - **Level of Biological Organization**: Individual and colony.\n\n5. **Foraging Activity in Field Plots**:\n   - **Experimental Design**: Observations were made in five designated areas (5 m × 5 m each) within the field.\n   - **Sample Size**: Not specified.\n   - **Variables Measured**: Number of bees actively foraging or flying around the anthers of flowering maize or oilseed rape flowers.\n   - **Level of Biological Organization**: Individual and population.\n\n6. **Pollen Source Determination**:\n   - **Experimental Design**: Pollen traps were used on all colonies during exposure.\n   - **Sample Size**: Not specified.\n   - **Variables Measured**: Pollen types collected and identified taxonomically.\n   - **Level of Biological Organization**: Colony and community.",
+        "reason": "The text provides detailed information on the experimental methodologies used in the study, focusing on various aspects of bee behavior and health during exposure to treated crops.",
+        "chunk_ids": [
+          "0970eba9-a5dd-4721-84f7-e2a579df1516",
+          "1fe5d822-6879-486d-b2e4-79e7dc22ed9e",
+          "a47b3cab-7b4e-4802-9019-e2ec662a0455",
+          "f70db5ba-e911-4823-a59e-c5c5f64b507e"
+        ]
+      },
+      "significance": {
+        "answer": "No pesticides were tested in this study",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.5",
+        "chunk_ids": []
+      },
+      "future_research": {
+        "answer": "- Conduct in-use field trials to monitor colonies exposed to seed treated crops throughout the bee season and the overwintering period.\n- Investigate effects on overwintering success and cover consecutive exposures over multiple years.\n- Quantify the level of honey bee exposure to residues of thiamethoxam and its primary metabolite CGA322704 in pollen and nectar collected.\n- Investigate if exposure to such residues in pollen and nectar from field treated maize and oilseed rape have a detrimental effect on colony strength and survival following repeated single treatment crop exposure each year over a four year period.",
+        "reason": "The authors explicitly suggest specific areas for further investigation to enhance understanding of the impact of neonicotinoid seed treatments on honey bees.",
+        "chunk_ids": [
+          "45ce13c3-3066-4d07-b984-1b45767bd11c",
+          "2ab72134-6e29-41cd-bdc6-797acfc4a53d",
+          "24f57aea-cd1b-4959-890a-f48ccba63d46"
+        ]
+      }
+    },
+    "timestamp": 353117.645345666
+  },
+  "006": {
+    "paper_id": "006",
+    "status": "completed",
+    "questions": {
+      "bee_species": {
+        "answer": "1. Apis mellifera",
+        "reason": "The methodology sections in both text chunks specify the species of bee tested.",
+        "chunk_ids": [
+          "0fdafb1a-3e63-45c7-ae5f-5ea85cfa099b",
+          "c5d35ed7-7dd4-49fa-9b85-3e308e0ebd41"
+        ]
+      },
+      "pesticides": {
+        "answer": "1. Fipronil: 0.5 ng/bee, oral exposure, 62 hours\n2. Thiamethoxam: 3.8 ng/bee, oral exposure, 62 hours\n3. Cypermethrin: 2.5 ng/bee, oral exposure, 62 hours\n4. Tetramethrin: 70 ng/bee, oral exposure, 62 hours\n5. Tau-fluvalinate: 33 ng/bee, oral exposure, 62 hours",
+        "reason": "The study provides specific details on the pesticides tested, including their chemical names, doses, exposure methods, and durations.",
+        "chunk_ids": [
+          "1657a9c7-d9b1-4634-aab3-6afc5f4d5ccd"
+        ]
+      },
+      "additional_stressors": {
+        "answer": "No additional stressors were tested",
+        "reason": "No relevant chunks found for the question. Min score threshold: 0.5",
+        "chunk_ids": []
+      },
+      "experimental_methodology": {
+        "answer": "1. **Mortality Assessment**: \n   - **Sample Size**: Minimum of four replicates of 30 bees, up to eight replicates.\n   - **Experimental Design**: Controlled exposure to sublethal doses of insecticides (cypermethrin, tau-fluvalinate, tetramethrin, fipronil, and thiamethoxam) with a control group exposed to acetone only.\n   - **Variables Measured**: Mortality at 48 hours post-exposure.\n   - **Level of Biological Organization**: Individual bees.\n\n2. **Long-term Survival Test**:\n   - **Sample Size**: Different bees from those used in the 48-hour mortality assessment.\n   - **Experimental Design**: Controlled exposure with daily removal of dead bees from cages.\n   - **Variables Measured**: Mortality over a period of up to 5 days (120 hours) post-exposure.\n   - **Level of Biological Organization**: Individual bees.\n\n3. **Locomotor Ability**: \n   - **Experimental Design**: Observational study using video tracking in a vertical arena.\n   - **Sample Size**: \n     - Day 1: 138 bees\n     - Day 2: 63 bees\n     - Day 6: 38 bees\n   - **Variables Measured**: Mean distance covered by bees over time (in meters).\n   - **Level of Biological Organization**: Individual bees.\n   - **Findings**: The mean distance covered by bees increased from 3.2 to 3.8 meters between days 1 and 2 (p<0.01) and did not significantly increase further by day 6.\n\n4. **Locomotor Deficits**: \n   - **Experimental Design**: Randomized controlled trial\n   - **Sample Sizes**:\n     - Cypermethrin: n = 19 control and n = 20 exposed bees\n     - Tau-fluvalinate: n = 12 control and n = 19 exposed bees\n     - Tetramethrin: n = 20 control and n = 20 exposed bees\n     - Thiamethoxam: n = 19 control and n = 19 exposed bees\n     - Fipronil: n = 19 control and n = 20 exposed bees\n   - **Variables Quantified**: Relative distance covered by bees (locomotor performance)\n   - **Level of Biological Organization**: Individual bees\n   - **Findings**: Significant decrease in relative distance for cypermethrin, tau-fluvalinate, tetramethrin, and thiamethoxam, indicating locomotor deficits. No significant decrease for fipronil, but increased mortality observed five days post-exposure.",
+        "reason": "The text provides detailed experimental methodologies used in the study, focusing on the effects of insecticides on bees, including sample sizes, experimental design, and the level of biological organization measured.",
+        "chunk_ids": [
+          "0e4aeebc-0619-4800-baed-9fd50ee077ba",
+          "1de0d507-b1d0-4f41-997b-7185afff14e9",
+          "b32722f0-356d-4754-a42f-9fabeaadd6b0",
+          "1657a9c7-d9b1-4634-aab3-6afc5f4d5ccd"
+        ]
+      },
+      "significance": {
+        "answer": "1. Cypermethrin: 2.5 ng/bee, contact exposure, 62 hours\n2. Tau-fluvalinate: 33 ng/bee, contact exposure, 62 hours\n3. Tetramethrin: 70 ng/bee, contact exposure, 62 hours\n4. Thiamethoxam: 3.8 ng/bee, contact exposure, 62 hours\n5. Fipronil: 0.5 ng/bee, contact exposure, 62 hours\n6. Acetamiprid: 0.1 μg/bee, unspecified exposure method, unspecified duration\n7. Thiamethoxam: 1 mg/bee, unspecified exposure method, unspecified duration\n8. Thiamethoxam: 10 nM, unspecified exposure method, 24 hours\n9. Imidacloprid: 10 nM, unspecified exposure method, 24 hours\n10. Fipronil: 1 ng/bee, unspecified exposure method, unspecified duration",
+        "reason": "The study provides specific data on the effects of certain pesticides on bees, including the chemical name, dose, exposure method, and duration. The information is extracted directly from the text without any additional interpretation or context.",
+        "chunk_ids": [
+          "1657a9c7-d9b1-4634-aab3-6afc5f4d5ccd",
+          "cec5ab5e-cf28-46bc-99e0-c5eac79fe424",
+          "bae0a9b3-1d20-49f1-89e6-c344d71ca8d7"
+        ]
+      },
+      "future_research": {
+        "answer": "1. Investigate the molecular mechanisms underlying the differential effects of pyrethroids on honeybee sodium channels, using molecular modeling and numerical simulation.\n2. Conduct systematic testing of pyrethroids on cloned and expressed Apis mellifera calcium channels (AmCa<sub>v</sub>) to understand their impact on honeybee physiology.\n3. Explore the potential effects of pyrethroids on secondary targets such as voltage-gated calcium channels, which may affect locomotion, thermoregulation, and hemolymph circulation in honeybees.\n4. Develop a model to link different modes of pesticide exposure (e.g., contact with contaminated waxes vs. laboratory procedures) for accurate risk evaluation.\n5. Investigate the molecular mechanisms underlying the insecticide-specific effects on bee locomotion and mortality.\n6. Conduct longer recording durations to reveal subtle alterations in inter-individual interactions, grooming behaviors, and time spent near a food source.\n7. Implement more sophisticated homing-flight experiments or more subtle memory or orientation tests to further understand the effects of insecticides on bees.\n8. Explore alternative methods of pest control due to the high toxicity of neonicotinoids towards honeybees, especially in light of their temporary ban in Europe.",
+        "reason": "The authors explicitly suggest several future research directions in the discussion section, focusing on understanding the differential effects of pyrethroids and neonicotinoids on honeybees.",
+        "chunk_ids": [
+          "7b5d67a0-d4f3-4310-93cd-05faca7b14ed",
+          "118b74b9-95c1-4f15-9ced-072f7c0452a5",
+          "20690cb9-0b2f-434f-8bbf-6897ed3c1358",
+          "91940548-9d02-4833-ac13-85ee5afbdd9f"
+        ]
+      }
+    },
+    "timestamp": 353326.950822166
+  }
+}

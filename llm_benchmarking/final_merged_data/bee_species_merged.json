@@ -6,7 +6,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The bee species tested was Apis mellifera. The subspecies was Apis mellifera carnica.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "593": {
     "answer_llm": "Honey bees (*Apis mellifera*) were tested.",
@@ -15,7 +17,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The bee species tested was Apis mellifera.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera ligustica",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "592": {
     "answer_llm": "*Osmia cornuta*",
@@ -24,7 +28,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The bee species tested was Osmia cornuta.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Osmia cornuta",
+    "answer_llm2": "1. Osmia cornuta"
   },
   "077": {
     "answer_llm": "*Apis mellifera carnica*",
@@ -33,7 +39,9 @@
     "rev1_rating": 10,
     "answer_rev2": "*Apis mellifera carnica*",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "083": {
     "answer_llm": "The species of bee tested was the bumble bee *Bombus impatiens*.",
@@ -42,7 +50,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The species of bee tested was the bumble bee *Bombus impatiens*.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1.Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "070": {
     "answer_llm": "Honey bees.",
@@ -51,7 +61,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Honey bees.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Honey bees",
+    "answer_llm2": "1. Honey bees"
   },
   "071": {
     "answer_llm": "Honey bees (Apis mellifera) were tested.",
@@ -60,7 +72,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Honey bees (Apis mellifera) were tested.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Honey bees",
+    "answer_llm2": "1. Honey bees"
   },
   "082": {
     "answer_llm": "The species of bees tested include: Africanized Apis mellifera, European Apis mellifera, Bombus terrestris, Melipona quadrifasciata, Partamona helleri, Scaptotrigona postica, and others.",
@@ -78,7 +92,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Honey bee",
     "rev2": "EA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "1. Honey bees",
+    "answer_llm2": "1. Honey bees"
   },
   "586": {
     "answer_llm": "Honeybees and bumblebees were tested.",
@@ -87,7 +103,9 @@
     "rev1_rating": 5,
     "answer_rev2": "The bee species tested was Bombus terrestris. The subspecies was Bombus terrestrus audax.",
     "rev2": "LH",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Bombus terrestris audax",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "589": {
     "answer_llm": "The species of bees tested were *B. impatiens* (bumblebee) and *B. terrestris* (buff-tailed bumblebee).",
@@ -96,7 +114,9 @@
     "rev1_rating": 6,
     "answer_rev2": "The bee species tested was Bombus terrestris. The subspecies was Bombus terrestris audax.",
     "rev2": "LH",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Bombus terrestris audax",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "590": {
     "answer_llm": "The species of bee tested were *Osmia bicornis* (Red mason bee) and honeybees (*Apis mellifera*).",
@@ -105,7 +125,9 @@
     "rev1_rating": 7,
     "answer_rev2": "The bee species tested was Osmia bicornis.",
     "rev2": "LH",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Osmia bicornis",
+    "answer_llm2": "1. Osmia bicornis"
   },
   "591": {
     "answer_llm": "Bumblebees (*Bombus terrestris audax*) and honeybees (*Apis mellifera*) were tested.",
@@ -114,7 +136,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The bee species were Bombus terrestris (subspecies  Bombus terrestris audax) and Apis mellifera.",
     "rev2": "LH",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Bombus terrestris audax; 2. Apis mellifera",
+    "answer_llm2": "1. Bombus terrestris audax; 2. Apis mellifera"
   },
   "073": {
     "answer_llm": "The species of bees tested include *Bombus impatiens* and other species mentioned in the context of decline, such as *B. occidentalis, B. affinis, B. franklini, B. terricola, B. sonorus,* and *B. pensylvanicus*, but primarily *Bombus impatiens* was the focus of the tests.",
@@ -123,7 +147,9 @@
     "rev1_rating": 7,
     "answer_rev2": "primarily *Bombus impatiens* was the focus of the tests.",
     "rev2": "EA",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "074": {
     "answer_llm": "Africanized honeybees (*Apis mellifera*) and stingless bees (*Partamona helleri*).",
@@ -132,7 +158,9 @@
     "rev1_rating": 10,
     "answer_rev2": "Africanized honeybees (*Apis mellifera*) and stingless bees (*Partamona helleri*).",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Apis mellifera; 2. Partamona helleri",
+    "answer_llm2": "1. Apis mellifera; 2. Partamona helleri"
   },
   "080": {
     "answer_llm": "The species of bees tested were *A. mellifera* and *M. scutellaris*.",
@@ -141,13 +169,17 @@
     "rev1_rating": 10,
     "answer_rev2": "The species of bees tested were *A. mellifera* and *M. scutellaris*.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Melipona scutellaris; 2. Apis mellifera",
+    "answer_llm2": "1. Melipona scutellaris; 2. Apis mellifera"
   },
   "075": {
     "answer_llm": "Honey bees (Apis mellifera) were tested in the study.",
     "answer_rev1": "Honey bees (Apis mellifera) were tested in the study.",
     "rev1": "AJ",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera L.",
+    "answer_llm2": "1. Apis mellifera L."
   },
   "072": {
     "answer_llm": "The species of bee tested was *Bombus terrestris* (Linnaeus 1758, Apidae, Hymenoptera).",
@@ -156,7 +188,9 @@
     "rev1_rating": 5,
     "answer_rev2": "The species of bee tested was *Bombus terrestris* (Linnaeus 1758, Apidae, Hymenoptera).",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris; 2. Bombus lapidarius; 3. Bombus pascuorum; 4. Lasioglossum pauxillum"
   },
   "585": {
     "answer_llm": "The species of bee tested is the European honeybee, *Apis mellifera*, specifically *Apis mellifera subsp. carnica (Pollmann)* in some studies.",
@@ -165,7 +199,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The bee species used was Apis mellifera. The subspecies was Apis mellifera carnica.",
     "rev2": "LH",
-    "rev2_rating": 0
+    "rev2_rating": 0,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "Species not specified"
   },
   "584": {
     "answer_llm": "*Bombus terrestris audax*",
@@ -174,7 +210,9 @@
     "rev1_rating": 10,
     "answer_rev2": "The bee species tested was Bombus terrestris. The subspecies was Bombus terrestris audax.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Bombus terrestris audax",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "583": {
     "answer_llm": "Honey bee (*Apis mellifera ligustica*)",
@@ -183,25 +221,33 @@
     "rev1_rating": 10,
     "answer_rev2": "The species tested was Apis mellifera. The subspecies tested was Apis mellifera ligustica.",
     "rev2": "LH",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera ligustica",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "300": {
     "answer_llm": "The species of bees tested were *Megachile lanata*, *M. hera*, *Pseudomegachile* sp., *M. conjuncta*, *Osmia* sp., and *Coelioxys* sp.",
     "answer_rev1": "This study looked at mortality rates in  Helicoverpa armigera and at behavioural changes in six species of leafcutter bees including Megachile lanata, Megachile hera, Pseuodmegachile sp., Megachile cojuncta, Osmia sp., and Coelioxys sp.",
     "rev1": "NN",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "1. Megachile hera; 2. Megachile conjuncta; 3. Megachile lanata; 4. Pseudomegachile sp.; 5. Osmia sp.; 6. Coelioxys sp.",
+    "answer_llm2": "1. Megachile hera; 2. Megachile conjuncta; 3. Megachile lanata; 4. Pseudomegachile sp.; 5. Osmia sp.; 6. Coelioxys sp."
   },
   "790": {
     "answer_llm": "Honey bees",
     "answer_rev1": "Cow pea aphid and honey bees. No species name specified.",
     "rev1": "NN",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Honey bees",
+    "answer_llm2": "Species not specified"
   },
   "799": {
     "answer_llm": "*Bombus terrestris* (bumblebee)",
     "answer_rev1": "Bombus terrestris",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris"
   },
   "798": {
     "answer_llm": "Africanized *A. mellifera*",
@@ -210,67 +256,89 @@
     "rev1_rating": 10,
     "answer_rev2": "Africanized A. mellifera",
     "rev2": "AB",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera; 2. Bombus terrestris; 3. Osmia bicornis"
   },
   "301": {
     "answer_llm": "Honey bees",
     "answer_rev1": "Apis mellifera L.",
     "rev1": "NN",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_rev3": "1. Apis mellifera L.",
+    "answer_llm2": "Species not specified"
   },
   "811": {
     "answer_llm": "*A. mellifera* L.",
     "answer_rev1": "Apis mellifera",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera L.",
+    "answer_llm2": "1. Apis mellifera"
   },
   "295": {
     "answer_llm": "*B. impatiens*",
     "answer_rev1": "Bombus impatiens",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "294": {
     "answer_llm": "*A. mellifera* (honey bee)",
     "answer_rev1": "Apis mellifera",
     "rev1": "NN",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "303": {
     "answer_llm": "The species of bees tested were *A. mellifera* (honeybee) and *A. cerana* (Asian honeybee).",
     "answer_rev1": "Apis cerana (Asian Honeybee) and Apis mellifera (honeybee)",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera; 2. Apis cerana",
+    "answer_llm2": "1. Apis mellifera; 2. Apis cerana"
   },
   "793": {
     "answer_llm": "The species of bee tested is *Apis mellifera* (honey bee).",
     "answer_rev1": "Apis mellifera",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "794": {
     "answer_llm": "Honey bees (*Apis mellifera*) were tested.",
     "answer_rev1": "Apis mellifera carnica",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "304": {
     "answer_llm": "The species of bees tested include:\n- Andrena arabis\n- Andrena barbara\n- Andrena basilicas\n- Andrena carlini\n- Andrena commoda\n- Andrena connectens\n- Andrena crataegi\n- Andrena cressonii\n- Andrena dunningi\n- Andrena erigeniae\n- Andrena forbesii\n- Andrena hippotes\n- Andrena imitatrix\n- Andrena mandibularis\n- Andrena miserabilis\n- Andrena nasonii\n- Andrena pruni\n- Andrena tridens\n- Andrena violae\n- Anthophora abrupta\n- Anthophora bomboides\n- Bombus bimaculatus\n- Bombus griseocollis\n- Bombus impatiens\n- Bombus perplexus\n- Bombus vagans\n- Ceratina calcarata\n- Ceratina dupla\n- Ceratina strenua\n- Eucera hamata\n- Habropoda laboriosa\n- Melissodes bimaculata\n- Melissodes desponsa\n- Melitoma taurea\n- Nomada articulata\n- Nomada australis\n- Nomada cressonii\n- Nomada illinoensis\n- Nomada lepida\n- Nomada luteoloides\n- Nomada maculat\n- Nomada sayi\n- Nomada vicina\n- Ptilothrix bombiformis\n- Pycnapis pruinosa\n- Xylocopa virginica\n- Hylaeus affinis\n- Hylaeus modestus\n- Agapostemon splendens\n- Agapostemon virescens\n- Augochlora pura\n- Augochlorella aurata\n- Augochlorella gratiosa\n- Halictus confusus\n- Halictus ligatus\n- Halictus rubicundus\n- Halictus tectus\n- Lasioglossum admirandum\n- Lasioglossum birkmanni\n- Lasioglossum bruneri\n- Lasioglossum callidum\n- Lasioglossum cattellae.",
     "answer_rev1": "List of species of bees in the study:\n\nAndrenidae \nAndrena arabis \nAndrena barbara \nAndrena bisalicis \nAndrena carlini \nAndrena ceanothi \nAndrena commoda \nAndrena crataegi \nAndrena cressonii \nAndrena distans \nAndrena dunningi \nAndrena erigeniae \nAndrena forbesii \nAndrena hippotes \nAndrena imitatrix \nAndrena melanchroa \nAndrena miserabilis \nAndrena nasonii \nAndrena perplexa \nAndrena pruni \nAndrena tridens \nAndrena vicina \nAndrena violae \n  \nApidae \nAnthophora abrupta \nAnthophora bomboides \nBombus bimaculatus \nBombus fervidus \nBombus impatiens \nBombus perplexus \nBombus vagans \nCeratina calcarata \nCeratina dupla \nCeratina mikmaqi \nCeratina strenua \nEucera hamata \nHabropoda laboriosa \nMelissodes bimaculata \nMelissodes desponsa \nMelitoma taurea \nNomada articulata \nNomada australis \nNomada composita \nNomada cressonii \nNomada illinoensis \nNomada lepida \nNomada luteoloides \nNomada maculata \nNomada ovata \nNomada pygmaea \nPeponapis pruinosa \nXylocopa virginica \n  \nColletidae \nHylaeus af\ufb01nis \nHylaeus mesillae \nHylaeus modestus \n  \n  \n  \nHalictidae \nAgapostemon splendens \nAgapostemon texanus \nAgapostemon virescens \nAugochlora pura \nAugochlorella aurata \nHalictus confusus \nHalictus ligatus \nHalictus rubicundus \nLasioglossum acuminatum \nLasioglossum admirandum \nLasioglossum anomalum \nLasioglossum birkmanni \nLasioglossum bruneri \nLasioglossum callidum \nLasioglossum cattellae \nLasioglossum coriaceum \nLasioglossum cressonii \nLasioglossum ephialtum \nLasioglossum foxii \nLasioglossum hitchensi \nLasioglossum illinoense \nLasioglossum imitatum \nLasioglossum katherineae \nLasioglossum laevissimum \nLasioglossum leucozonium \nLasioglossum lineatulum \nLasioglossum macoupinense \nLasioglossum obscurum \nLasioglossum paradmirandum \nLasioglossum pectorale \nLasioglossum perpunctatum \nLasioglossum pilosum \nLasioglossum planatum \nLasioglossum platyparium \nLasioglossum quebecense \nLasioglossum rohweri \nLasioglossum tegulare \nLasioglossum trigeminum \nLasioglossum truncatum \nLasioglossum versans \nLasioglossum versatum \nLasioglossum viridatum \nLasioglossum weemsi \nLasioglossum zephyrum \nSphecodes antennariae \nSphecodes atlantis \nSphecodes banksii \nSphecodes carolinus \nSphecodes solonis \n  \nMegachilidae \nCoelioxys alternata \nHeriades carinatus \nHoplitis producta \nHoplitis truncata \nMegachile addenda \nMegachile brevis \nMegachile gemula \nMegachile melanophaea \nMegachile mendica \nOsmia atriventris \nOsmia bucephala \nOsmia cornifrons \nOsmia georgica \nOsmia pumila \nOsmia taurus \nStelis coarctatus \nStelis lateralis \n  \nSyrphidae \nAllograpta obliqua \nBlera badia \nChrysotoxum pubescens \nEpistrophe grossulariae \nEristalis hirta \nEristalis tenax \nEupeodes americanus \nFerdinandea buccata \nHeringia calcarata \nMelanostoma mellinum \nMerodon equestris \nMyolepta varipes \nParhelophilus obsoletus \nPlatycheirus immarginatus \nPseudodorus clavatus \nPterallastes thoracicus \nRhingia nasica \nSphaeropharia contigua \nSyritta pipiens \nSyrphus rectus \nSyrphus torvus \nToxomerus geminatus \nToxomerus marginatus \nXylota ejuncida \nXylota quadrimaculata",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "1. Andrena arabis; 2. Andrena barbara; 3. Andrena basilicas; 4. Andrena carlini; 5. Andrena commoda; 6. Andrena connectens; 7. Andrena crataegi; 8. Andrena cressonii; 9. Andrena dunningi; 10. Andrena erigeniae; 11. Andrena forbesii; 12. Andrena hippotes; 13. Andrena imitatrix; 14. Andrena mandibularis; 15. Andrena miserabilis; 16. Andrena nasonii; 17. Andrena pruni; 18. Andrena tridens; 19. Andrena violae; 20. Anthophora abrupta; 21. Anthophora bomboides; 22. Bombus bimaculatus; 23. Bombus griseocollis; 24. Bombus impatiens; 25. Bombus perplexus; 26. Bombus vagans; 27. Ceratina calcarata; 28. Ceratina dupla; 29. Ceratina strenua; 30. Eucera hamata; 31. Habropoda laboriosa; 32. Melissodes bimaculata; 33. Melissodes desponsa; 34. Melitoma taurea; 35. Nomada articulata; 36. Nomada australis; 37. Nomada cressonii; 38. Nomada illinoensis; 39. Nomada lepida; 40. Nomada luteoloides; 41. Nomada maculata; 42. Nomada sayi; 43. Nomada vicina; 44. Ptilothrix bombiformis; 45. Pycnapis pruinosa; 46. Xylocopa virginica; 47. Hylaeus affinis; 48. Hylaeus modestus; 49. Agapostemon splendens; 50. Agapostemon virescens; 51. Augochlora pura; 52. Augochlorella aurata; 53. Augochlorella gratiosa; 54. Halictus confusus; 55. Halictus ligatus; 56. Halictus rubicundus; 57. Halictus tectus; 58. Lasioglossum admirandum; 59. Lasioglossum birkmanni; 60. Lasioglossum bruneri; 61. Lasioglossum callidum; 62. Lasioglossum cattellae; 63. Lasioglossum cariceum; 64. Lasioglossum cresnsti; 65. Lasioglossum ephialtum; 66. Lasioglossum foxii; 67. Lasioglossum hitchensi; 68. Lasioglossum illinoense; 69. Lasioglossum imitatum; 70. Lasioglossum katherinae; 71. Lasioglossum leucozonium; 72. Lasioglossum lineatulum; 73. Lasioglossum macoupinense; 74. Lasioglossum nelumbonis; 75. Lasioglossum paradmirandum; 76. Lasioglossum pectorale; 77. Lasioglossum pilosum; 78. Lasioglossum platyparium; 79. Lasioglossum planatum; 80. Lasioglossum pruinosum; 81. Lasioglossum quebecense; 82. Lasioglossum rohweri; 83. Lasioglossum tegulare; 84. Lasioglossum trigeminum; 85. Lasioglossum versans; 86. Lasioglossum versatum; 87. Lasioglossum vierecki; 88. Lasioglossum zephyrum; 89. Sphecodes atlantis; 90. Sphecodes banksii; 91. Sphecodes carolinus; 92. Sphecodes solonis; 93. Coelioxys alternata; 94. Heriaides carinata; 95. Hoplitis producta; 96. Hoplitis truncata; 97. Megachile addenda; 98. Megachile brevis; 99. Megachile gemula; 100. Megachile melanophaea; 101. Osmia atriventris; 102. Osmia bucephala; 103. Osmia conifrons; 104. Osmia georgica; 105. Osmia pumila; 106. Osmia taurus; 107. Stelis coarctatus; 108. Allograpta obliqua; 109. Blerea bicolor; 110. Chrysosyrphus pubescens; 111. Epistrophe grossulariae; 112. Eristalis tenax; 113. Eristalis transversa; 114. Euripeda americana; 115. Helophilus fasciatus; 116. Heringia calcarata; 117. Melanostoma mellinum; 118. Merodon equestris; 119. Myolepta varipes; 120. Parhelophilus laetus; 121. Parhelophilus obsoletus; 122. Parhelophilus divisus; 123. Parhelophilus integer; 124. Parhelophilus contigua; 125. Spilomyia longicornis; 126. Syritta pipiens; 127. Syritta rectus; 128. Toxomerus marginatus; 129. Xylota ejuncida; 130. Xylota quadrimaculata.",
+    "answer_llm2": "1. Andrena arabis; 2. Andrena barbara; 3. Andrena basilicas; 4. Andrena carlini; 5. Andrena commoda; 6. Andrena connectens; 7. Andrena crataegi; 8. Andrena cressonii; 9. Andrena dunningi; 10. Andrena erigeniae; 11. Andrena forbesii; 12. Andrena hippotes; 13. Andrena imitatrix; 14. Andrena mandibularis; 15. Andrena miserabilis; 16. Andrena nasonii; 17. Andrena pruni; 18. Andrena tridens; 19. Andrena violae; 20. Anthophora abrupta; 21. Anthophora bomboides; 22. Bombus bimaculatus; 23. Bombus griseocollis; 24. Bombus impatiens; 25. Bombus perplexus; 26. Bombus vagans; 27. Ceratina calcarata; 28. Ceratina dupla; 29. Ceratina strenua; 30. Eucera hamata; 31. Habropoda laboriosa; 32. Melissodes bimaculata; 33. Melissodes desponsa; 34. Melitoma taurea; 35. Nomada articulata; 36. Nomada australis; 37. Nomada cressonii; 38. Nomada illinoensis; 39. Nomada lepida; 40. Nomada luteoloides; 41. Nomada maculata; 42. Nomada sayi; 43. Nomada vicina; 44. Ptilothrix bombiformis; 45. Pycnapis pruinosa; 46. Xylocopa virginica; 47. Hylaeus affinis; 48. Hylaeus modestus; 49. Agapostemon splendens; 50. Agapostemon virescens; 51. Augochlora pura; 52. Augochlorella aurata; 53. Augochlorella gratiosa; 54. Halictus confusus; 55. Halictus ligatus; 56. Halictus rubicundus; 57. Halictus tectus; 58. Lasioglossum admirandum; 59. Lasioglossum birkmanni; 60. Lasioglossum bruneri; 61. Lasioglossum callidum; 62. Lasioglossum cattellae; 63. Lasioglossum cariceum; 64. Lasioglossum cresnsti; 65. Lasioglossum ephialtum; 66. Lasioglossum foxii; 67. Lasioglossum hitchensi; 68. Lasioglossum illinoense; 69. Lasioglossum imitatum; 70. Lasioglossum katherinae; 71. Lasioglossum leucozonium; 72. Lasioglossum lineatulum; 73. Lasioglossum macoupinense; 74. Lasioglossum nelumbonis; 75. Lasioglossum paradmirandum; 76. Lasioglossum pectorale; 77. Lasioglossum pilosum; 78. Lasioglossum platyparium; 79. Lasioglossum planatum; 80. Lasioglossum pruinosum; 81. Lasioglossum quebecense; 82. Lasioglossum rohweri; 83. Lasioglossum tegulare; 84. Lasioglossum trigeminum; 85. Lasioglossum versans; 86. Lasioglossum versatum; 87. Lasioglossum vierecki; 88. Lasioglossum zephyrum; 89. Sphecodes atlantis; 90. Sphecodes banksii; 91. Sphecodes carolinus; 92. Sphecodes solonis; 93. Coelioxys alternata; 94. Heriaides carinata; 95. Hoplitis producta; 96. Hoplitis truncata; 97. Megachile addenda; 98. Megachile brevis; 99. Megachile gemula; 100. Megachile melanophaea; 101. Osmia atriventris; 102. Osmia bucephala; 103. Osmia conifrons; 104. Osmia georgica; 105. Osmia pumila; 106. Osmia taurus; 107. Stelis coarctatus; 108. Allograpta obliqua; 109. Blerea bicolor; 110. Chrysosyrphus pubescens; 111. Epistrophe grossulariae; 112. Eristalis tenax; 113. Eristalis transversa; 114. Euripeda americana; 115. Helophilus fasciatus; 116. Heringia calcarata; 117. Melanostoma mellinum; 118. Merodon equestris; 119. Myolepta varipes; 120. Parhelophilus laetus; 121. Parhelophilus obsoletus; 122. Parhelophilus divisus; 123. Parhelophilus integer; 124. Parhelophilus contigua; 125. Spilomyia longicornis; 126. Syritta pipiens; 127. Syritta rectus; 128. Toxomerus marginatus; 129. Xylota ejuncida; 130. Xylota quadrimaculata."
   },
   "302": {
     "answer_llm": "Honeybees (*Apis mellifera*) and honeybee larvae were tested.",
     "answer_rev1": "Apis mellifera, honey bee",
     "rev1": "NN",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "800": {
     "answer_llm": "Africanized honey bees (*Apis mellifera*) were tested.",
     "answer_rev1": "Apis mellifera",
     "rev1": "NN",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "809": {
     "answer_llm": "The species of bees tested were *A. mellifera*, *Megachile rotundata*, *Bombus terrestris*, and *Osmia lignaria*.",
@@ -279,49 +347,65 @@
     "rev1_rating": 1,
     "answer_rev2": "The species of bees tested was *Osmia lignaria*.",
     "rev2": "AB",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Osmia lignaria",
+    "answer_llm2": "1. Osmia lignaria; 2. Osmia bicornis; 3. Apis mellifera"
   },
   "298": {
     "answer_llm": "*B. terrestris* (Bombus terrestris)",
     "answer_rev1": "Bombus terrestris",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris"
   },
   "296": {
     "answer_llm": "*Bombus terrestris* (Bombus terrestris)",
     "answer_rev1": "Bombus terrestris",
     "rev1": "NN",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "299": {
     "answer_llm": "The species of bees tested were Halictus tumulorum, Lasioglossum fulvicorne, L. malachurum, L. pauxillum, Osmia spinulosa, honey bees (*Apis mellifera*), and honey bees (*Apis mellifera carnica*).",
     "answer_rev1": "Apis mellifera carnica",
     "rev1": "NN",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "rev3_rating": "1. Apis mellifera carnia",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "787": {
     "answer_llm": "The species of bee tested was *P. helleri*.",
     "answer_rev1": "Partamona helleri",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Plebeia helleri",
+    "answer_llm2": "1. Plebeia helleri"
   },
   "789": {
     "answer_llm": "*T. spinipes*",
     "answer_rev1": "Trigona sinipes",
     "rev1": "NN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Trigona sinipes",
+    "answer_llm2": "1. Trigona spinipes"
   },
   "216": {
     "answer_llm": "The species of bee tested is *A. mellifera* (honeybee).",
     "answer_rev1": "The species used was Apis mellifera",
     "rev1": "KW",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "227": {
     "answer_llm": "Apis mellifera (honeybee)",
     "answer_rev1": "Apis mellifera",
     "rev1": "KW",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "218": {
     "answer_llm": "The species of bee tested were *O. bicornis* and *B. terrestris*.",
@@ -330,7 +414,9 @@
     "rev1_rating": 2,
     "answer_rev2": "The test species is Osmia bicornis",
     "rev2": "FS",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Osmia bicornis",
+    "answer_llm2": "1. Osmia bicornis"
   },
   "422": {
     "answer_llm": "*Osmia bicornis*, *Bombus terrestris*, and honey bees (*Apis mellifera*).",
@@ -339,7 +425,9 @@
     "rev1_rating": 1,
     "answer_rev2": "Apis mellifera ssp. carnica",
     "rev2": "BN",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica; 2. Osmia bicornis; 3. Bombus terrestris"
   },
   "226": {
     "answer_llm": "Honey bees",
@@ -348,13 +436,17 @@
     "rev1_rating": 4,
     "answer_rev2": "Honey bees (Apis mellifera L.)",
     "rev2": "FS",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_rev3": "1. Apis mellifera L.",
+    "answer_llm2": "1. Apis mellifera L."
   },
   "217": {
     "answer_llm": "*Apis mellifera* (Western honeybee)",
     "answer_rev1": "The bee tested is Apis mellifera",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "430": {
     "answer_llm": "The species of bees tested include 1,081 species from the families Andrenidae (220 species), Apidae (284 species, excluding *Apis mellifera*), Colletidae (69 species), Halictidae (221 species), Megachilidae (278 species), and Melittidae (9 species). Additionally, bumble bees (genus *Bombus*) were also tested.",
@@ -363,19 +455,25 @@
     "rev1_rating": 5,
     "answer_rev2": "The species of bees tested include 1,081 species from the families Andrenidae (220 species), Apidae (284 species, excluding *Apis mellifera*), Colletidae (69 species), Halictidae (221 species), Megachilidae (278 species), and Melittidae (9 species).",
     "rev2": "BN",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "The species of bees tested include 1,081 species from the families Andrenidae (220 species), Apidae (284 species, excluding *Apis mellifera*), Colletidae (69 species), Halictidae (221 species), Megachilidae (278 species), and Melittidae (9 species).",
+    "answer_llm2": "Species not specified"
   },
   "436": {
     "answer_llm": "The species of bee tested was the common eastern bumble bee, *Bombus impatiens*.",
     "answer_rev1": "Bombus impatiens",
     "rev1": "KW",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "233": {
     "answer_llm": "*Bombus terrestris* (buff-tailed bumblebee) and *B. t. audax*",
     "answer_rev1": "The experiments involved Bombus terrestris audax",
     "rev1": "KW",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1, Bombus terrestris audax",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "421": {
     "answer_llm": "The species of bees tested were Osmia cornuta and Osmia bicornis.",
@@ -384,43 +482,57 @@
     "rev1_rating": 2,
     "answer_rev2": "The species of bees tested were Osmia bicornis.",
     "rev2": "BN",
-    "rev2_rating": 3
+    "rev2_rating": 3,
+    "answer_rev3": "1. Osmia bicornis",
+    "answer_llm2": "1. Osmia bicornis; 2. Apis mellifera"
   },
   "277": {
     "answer_llm": "The species of bees tested are *Bombus terrestris* and *Bombus impatiens*.",
     "answer_rev1": "The only species given as tested in this paper is Bombus impatiens",
     "rev1": "KW",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "276": {
     "answer_llm": "The species of bees tested were Bombus terrestris, Bombus lucorum, Bombus pratorum, Bombus pascuorum, and Bombus impatiens.",
     "answer_rev1": "The paper discusses only the treatment of Bombus impatiens (Cresson)",
     "rev1": "KW",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "427": {
     "answer_llm": "*Bombus terrestris audax* (Harris, 1776)",
     "answer_rev1": "The authors use Bombus terrestris audax",
     "rev1": "KW",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Bombus terrestris audax",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "225": {
     "answer_llm": "Honeybees (Apis mellifera) were tested.",
     "answer_rev1": "The paper makes reference only to 'honeybees'",
     "rev1": "KW",
-    "rev1_rating": 4
+    "rev1_rating": 4,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "237": {
     "answer_llm": "*Apis mellifera* (hybrid ligustica and carnica)",
     "answer_rev1": "The authors explain that they are working with ligustica x carnica hybrids of Apis mellifera",
     "rev1": "KW",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera ligustica; 2. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera ligustica; 2. Apis mellifera carnica"
   },
   "731": {
     "answer_llm": "The species of bee tested is the western honey bee (*Apis mellifera*), specifically including honey bee drones in some contexts.",
     "answer_rev1": "Apis mellifera",
     "rev1": "AB",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "740": {
     "answer_llm": "The species of bees tested were *A. mellifera*, *A. ovatula*, *C. lacunatus*, and *X. aestuans*.",
@@ -429,7 +541,9 @@
     "rev1_rating": 8,
     "answer_rev2": "The bee species recorded were Apis mellifera, Anrena ovatula, Tropinota squalida, Collectes lacunatus, Xylocopa aestuans",
     "rev2": "HS",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Apis mellifera; 2. Andrena ovatula; 3. Colletes lacunatus; 4. Xylocopa aestuans; 5. Chalicodoma siculum",
+    "answer_llm2": "1. Apis mellifera; 2. Andrena ovatula; 3. Colletes lacunatus; 4. Xylocopa aestuans; 5. Chalicodoma siculum; 6. Bombus impatiens; 7. Osmia lignaria; 8. Megachile rotundata"
   },
   "734": {
     "answer_llm": "The species of bees tested were *A. mellifera* (honey bee) and *B. impatiens* (common eastern bumble bee).",
@@ -438,7 +552,9 @@
     "rev1_rating": 0,
     "answer_rev2": "Bombus impatiens",
     "rev2": "HS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "733": {
     "answer_llm": "Honey bee males (Apis mellifera) were tested.",
@@ -447,19 +563,25 @@
     "rev1_rating": 5,
     "answer_rev2": "Apis mellifera",
     "rev2": "HS",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "732": {
     "answer_llm": "Honey bees (*Apis mellifera*) were tested.",
     "answer_rev1": "Honey bees were tested",
     "rev1": "AB",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "813": {
     "answer_llm": "African-derived *Apis mellifera*",
     "answer_rev1": "African-derived *Apis mellifera*",
     "rev1": "AB",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "729": {
     "answer_llm": "The species of bee tested is *Osmia bicornis*.",
@@ -468,31 +590,41 @@
     "rev1_rating": 10,
     "answer_rev2": "Osmia bicornis",
     "rev2": "HS",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Osmia bicornis",
+    "answer_llm2": "1. Osmia bicornis"
   },
   "449": {
     "answer_llm": "Italian honey bees (*Apis mellifera*)",
     "answer_rev1": "Italian honey bees",
     "rev1": "RT",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "448": {
     "answer_llm": "Honey bee (Apis spp.) and Apis mellifera.",
     "answer_rev1": "The study used literature data from Apis mellifera",
     "rev1": "RT",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "439": {
     "answer_llm": "The species of bees tested include *P. catamarcensis* (native stingless bee) and *A. mellifera* (Western honey bee).",
     "answer_rev1": "Plebeia catamarcensis",
     "rev1": "RT",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "1. Plebeia catamarcensis",
+    "answer_llm2": "1. Plebeia catamarcensis"
   },
   "377": {
     "answer_llm": "Honey bees (predominantly *Apis mellifera ligustica*) were tested in the study.",
     "answer_rev1": "Apis mellifera ligustica",
     "rev1": "RT",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera ligustica",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "385": {
     "answer_llm": "The species of bees tested were *A. mellifera* and *L. paahama*.",
@@ -501,13 +633,17 @@
     "rev1_rating": 9,
     "answer_rev2": "The species of bees tested were Leioproctus paahaumaa and Apis mellifera",
     "rev2": "SA",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Leioproctus paahaumaa; 2. Apis mellifera",
+    "answer_llm2": "1. Leioproctus paahaumaa; 2. Apis mellifera"
   },
   "378": {
     "answer_llm": "Honey bees (*Apis mellifera*) were tested.",
     "answer_rev1": "Honey bees",
     "rev1": "RT",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "444": {
     "answer_llm": "The species of bee tested was the common eastern bumble bee (*Bombus impatiens* Cresson).",
@@ -516,19 +652,25 @@
     "rev1_rating": 5,
     "answer_rev2": "The test species are Apis mellifera and Bombus impatiens. In the study also the pollinator community was assessed",
     "rev2": "FS",
-    "rev2_rating": 2
+    "rev2_rating": 2,
+    "answer_rev3": "1. Apis mellifera; 2. Bombus impatiens",
+    "answer_llm2": "1. Apis mellifera; 2. Bombus impatiens"
   },
   "445": {
     "answer_llm": "Bumblebees (*Bombus terrestris*) and honey bees were tested.",
     "answer_rev1": "Bombus terrestris",
     "rev1": "RT",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris"
   },
   "451": {
     "answer_llm": "The species of bee tested is Africanized honeybee (*A. mellifera*).",
     "answer_rev1": "Africanized Apis mellifera",
     "rev1": "RT",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "514": {
     "answer_llm": "The species of bees tested were *Bombus impatiens* and *Bombus terrestris*.",
@@ -537,7 +679,9 @@
     "rev1_rating": 1,
     "answer_rev2": "Bombus impatiens",
     "rev2": "LH",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens Cresson"
   },
   "373": {
     "answer_llm": "The species of bees tested were *A. mellifera*, *A. andreniformis*, *A. florea*, *A. m. mellifera*, *A. m. caucasica*, and *Apis mellifera carnica*.",
@@ -546,7 +690,9 @@
     "rev1_rating": 1,
     "answer_rev2": "Apis mellifera carnica",
     "rev2": "SA",
-    "rev2_rating": 1
+    "rev2_rating": 1,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "937": {
     "answer_llm": "The species of bee tested were honeybees, specifically Apis mellifera, including classes such as forager bees, winter bees, nurse bees, and larvae.",
@@ -555,19 +701,25 @@
     "rev1_rating": 7,
     "answer_rev2": "Apis mellifera",
     "rev2": "HS",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "053": {
     "answer_llm": "Honey bees (*Apis mellifera*) were tested.",
     "answer_rev1": "Apis mellifera",
     "rev1": "SA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "052": {
     "answer_llm": "The species of bees tested were *A. cerana* (Apis cerana) and *A. mellifera* (Apis mellifera).",
     "answer_rev1": "Apis cerana",
     "rev1": "SA",
-    "rev1_rating": 3
+    "rev1_rating": 3,
+    "answer_rev3": "1. Apis cerana cerana",
+    "answer_llm2": "1. Apis cerana cerana"
   },
   "948": {
     "answer_llm": "The species of bee tested was *O. bicornis*.",
@@ -576,7 +728,9 @@
     "rev1_rating": 7,
     "answer_rev2": "Osmia bicornis",
     "rev2": "HS",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Osmia bicornis",
+    "answer_llm2": "1. Osmia bicornis"
   },
   "946": {
     "answer_llm": "Honeybee (Apis mellifera) larvae were tested.",
@@ -585,7 +739,9 @@
     "rev1_rating": 8,
     "answer_rev2": "Apis mellifera",
     "rev2": "HS",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "368": {
     "answer_llm": "The species of bee tested is *A. cerana* (Asian honey bee).",
@@ -594,7 +750,9 @@
     "rev1_rating": 7,
     "answer_rev2": "The tested species is Apis cerana (Asian honey bees)",
     "rev2": "FS",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "1. Apis cerana",
+    "answer_llm2": "1. Apis cerana"
   },
   "956": {
     "answer_llm": "Honey bees (*Apis mellifera* L.) were tested.",
@@ -603,7 +761,9 @@
     "rev1_rating": 9,
     "answer_rev2": "Apis mellifera",
     "rev2": "HS",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "934": {
     "answer_llm": "The species of bees tested were adult honeybees (*Apis mellifera*) and the stingless bee *Melipona quadrifasciata anthidioides*.",
@@ -612,43 +772,57 @@
     "rev1_rating": 9,
     "answer_rev2": "Apis mellifera and Melipona quadrifasciata anthidioides",
     "rev2": "HS",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera; 2. Melipona quadrifasciata anthidioides",
+    "answer_llm2": "1. Melipona quadrifasciata anthidioides"
   },
   "056": {
     "answer_llm": "The species of bee tested is *Apis mellifera* (honeybee).",
     "answer_rev1": "Apis mellifera",
     "rev1": "SA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "739": {
     "answer_llm": "The species of bee tested was the Japanese orchard bee, *Osmia cornifrons*.",
     "answer_rev1": "Osmia cornifrons",
     "rev1": "HS",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Osmia cornifrons",
+    "answer_llm2": "1. Osmia cornifrons"
   },
   "737": {
     "answer_llm": "Honey bee (Apis mellifera)",
     "answer_rev1": "Apis mellifera",
     "rev1": "HS",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "736": {
     "answer_llm": "The species of bees tested were *A. mellifera*, *B. terrestris*, and *O. bicornis*.",
     "answer_rev1": "Apis mellifera, Bombus terrestris and Osmia bicornis",
     "rev1": "HS",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Apis mellifera; 2. Bombus terrestris; 3. Osmia bicornis",
+    "answer_llm2": "1. Apis mellifera ligustica; 2. Bombus terrestris; 3. Osmia bicornis"
   },
   "738": {
     "answer_llm": "Honeybees (*Apis mellifera ligustica*)",
     "answer_rev1": "Apis mellifera ligustica",
     "rev1": "HS",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_rev3": "1. Apis mellifera ligustica",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "950": {
     "answer_llm": "Honeybees (Apis mellifera) and blue orchard mason bees (Osmia lignaria) were tested.",
     "answer_rev1": "Apis mellifera and Osmia lignaria",
     "rev1": "HS",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera; 2. Osmia lignaria",
+    "answer_llm2": "1. Vanessa cardui"
   },
   "015": {
     "answer_llm": "*A. mellifera ligustica* (Italian honey bee)",
@@ -657,7 +831,9 @@
     "rev1_rating": 9,
     "answer_rev2": "*A. mellifera ligustica* (Italian honey bee)",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Apis mellifera ligustica",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "012": {
     "answer_llm": "European honeybee (*Apis mellifera*)",
@@ -666,13 +842,17 @@
     "rev1_rating": 9,
     "answer_rev2": "European honeybee (*Apis mellifera*)",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "887": {
     "answer_llm": "The species of bees tested were *B. terrestris* (bumble bees) and *A. mellifera* (honey bees).",
     "answer_rev1": "Bombus terrestris L",
     "rev1": "AH",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris"
   },
   "014": {
     "answer_llm": "The species of bee(s) tested include honeybees (*Apis mellifera*), *A. cerana cerana*, *O. bicornis*, *B. terrestris*, and *B. impatiens*.",
@@ -681,25 +861,33 @@
     "rev1_rating": 1,
     "answer_rev2": "The species of bee(s) tested include honeybees (*Apis mellifera*)",
     "rev2": "EA",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "886": {
     "answer_llm": "*Apis mellifera carnica*",
     "answer_rev1": "Apis mellifera carnica",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "888": {
     "answer_llm": "The species of bee tested were Italian and Carniolan hybrid honey bees.",
     "answer_rev1": "The species of bee tested were Italian and Carniolan hybrid honey bees.",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera ligustica; 2. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera ligustica; 2. Apis mellifera carnica"
   },
   "892": {
     "answer_llm": "Honeybee (specifically worker honeybees)",
     "answer_rev1": "Honeybee (specifically worker honeybees)",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "007": {
     "answer_llm": "Honeybees",
@@ -708,19 +896,25 @@
     "rev1_rating": 2,
     "answer_rev2": "Honeybees",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "1. Apis mellifera Buckfast",
+    "answer_llm2": "1. Apis mellifera Buckfast"
   },
   "009": {
     "answer_llm": "The species of bee tested was *Plebeia lucii* Moure.",
     "answer_rev1": "Plebeia lucii Moure.",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Plebeia lucii",
+    "answer_llm2": "1. Plebeia lucii; 2. Melipona quadrifasciata; 3. Scaptotrigona postica; 4. Partamona helleri"
   },
   "008": {
     "answer_llm": "The species of bee tested was *Tetragonula travancorica*.",
     "answer_rev1": "Tetragonula travancorica",
     "rev1": "AH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Tetragonula travancorica",
+    "answer_llm2": "1. Tetragonula travancorica"
   },
   "006": {
     "answer_llm": "*Apis mellifera* (honeybees) were tested.",
@@ -729,25 +923,33 @@
     "rev1_rating": 9,
     "answer_rev2": "Apis mellifera* (honeybees) were tested.",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "884": {
     "answer_llm": "The species of bees tested were honeybees, specifically *Apis mellifera* and its subspecies *Apis mellifera carnica*.",
     "answer_rev1": "Apis mellifera carnica",
     "rev1": "AH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "883": {
     "answer_llm": "*B. terrestris* (bumblebee)",
     "answer_rev1": "Bombus terrestris",
     "rev1": "AH",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris"
   },
   "011": {
     "answer_llm": "The species of bee tested is *Apis mellifera* (honey bee).",
     "answer_rev1": "Apis mellifera carnica",
     "rev1": "AH",
-    "rev1_rating": 6
+    "rev1_rating": 6,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "016": {
     "answer_llm": "The species of bee tested was *A. mellifera ligustica* (honey bee).",
@@ -756,13 +958,17 @@
     "rev1_rating": 9,
     "answer_rev2": "The species of bee tested was *A. mellifera ligustica* (honey bee).",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Apis mellifera ligustica",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "885": {
     "answer_llm": "Honey bees and bumblebees.",
     "answer_rev1": "Apis mellifera carnica",
     "rev1": "AH",
-    "rev1_rating": 0
+    "rev1_rating": 0,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "010": {
     "answer_llm": "The species of bee tested was *B. terrestris* (Bombus terrestris).",
@@ -771,7 +977,9 @@
     "rev1_rating": 8,
     "answer_rev2": "The species of bee tested was *B. terrestris* (Bombus terrestris).",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Bombus terrestris audax",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "003": {
     "answer_llm": "The species of bees tested were *Bombus terrestris* and *Bombus terrestris audax*.",
@@ -780,7 +988,9 @@
     "rev1_rating": 9,
     "answer_rev2": "The species of bees tested were *Bombus terrestris* and *Bombus terrestris audax*.",
     "rev2": "EA",
-    "rev2_rating": 7
+    "rev2_rating": 7,
+    "answer_rev3": "1. Bombus terrestris audax",
+    "answer_llm2": "1. Bombus terrestris audax"
   },
   "004": {
     "answer_llm": "*Bombus impatiens*",
@@ -789,13 +999,17 @@
     "rev1_rating": 10,
     "answer_rev2": "Bombus impatiens",
     "rev2": "EA",
-    "rev2_rating": 10
+    "rev2_rating": 10,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "891": {
     "answer_llm": "*A. cerana*",
     "answer_rev1": "Apis cerana cerana Fabricius",
     "rev1": "AH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Apis cerana cerana",
+    "answer_llm2": "1. Apis cerana cerana"
   },
   "005": {
     "answer_llm": "Honey bee (Apis mellifera)",
@@ -804,7 +1018,9 @@
     "rev1_rating": 8,
     "answer_rev2": "Honey Bee",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "002": {
     "answer_llm": "Bumble bees, specifically *Bombus terrestris* and *Bombus terrestris dalmatinus* were tested.",
@@ -813,13 +1029,17 @@
     "rev1_rating": 9,
     "answer_rev2": "Bumble bees, specifically *Bombus terrestris dalmatinus*",
     "rev2": "EA",
-    "rev2_rating": 8
+    "rev2_rating": 8,
+    "answer_rev3": "1. Bombus terrestris dalmatinus",
+    "answer_llm2": "1. Bombus terrestris dalmatinus"
   },
   "890": {
     "answer_llm": "The species of bees tested were *Nannotrigona aff. testaceicornis*, *N. perilampoides*, and *Tetragonisca hockingsi*.",
     "answer_rev1": "Tetragonula hockingsi",
     "rev1": "AH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Tetragonula hockingsi",
+    "answer_llm2": "1. Tetragonula hockingsi"
   },
   "672": {
     "answer_llm": "Honeybees (Apis mellifera) and solitary hoary squash bees (Xenoglossa pruinosa) were tested.",
@@ -828,85 +1048,113 @@
     "rev1_rating": 6,
     "answer_rev2": "The solitary hoary squash bee (Xenoglossa (Peponapis) pruinosa)",
     "rev2": "ER",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Xenoglossa pruinosa",
+    "answer_llm2": "1. Xenoglossa pruinosa"
   },
   "437": {
     "answer_llm": "The species of bees tested include: *Melissodes bimaculatus*, *Lasioglossum* (*Dialictus*) spp., *Ceratina calcarata*, *Melissodes desponsus*, *Bombus pensylvanicus* (2017); and *Melissodes bimaculatus*, *Eucera hamata*, *Ceratina mikmaqi*, *Halictus ligatus*, *Ceratina calcarata* (2018).",
     "answer_rev1": "The species or subgenus of bees most frequently collected were: *Melissodes bimaculatus*, *Lasioglossum* (*Dialictus*) spp., *Ceratina calcarata*, *Melissodes desponsus*, *Bombus pensylvanicus* (2017); and *Melissodes bimaculatus*, *Eucera hamata*, *Ceratina mikmaqi*, *Halictus ligatus*, *Ceratina calcarata* (2018).",
     "rev1": "BN",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Melissodes bimaculatus; 2. Ceratina calcarata; 3. Melissodes desponsus; 4. Bombus pensylvanicus; 5. Eucera hamata; 6. Ceratina mikmaqi; 7. Halictus ligatus; 8. Eucera pruinosa; 9. Peponapis pruinosa; 10. Melissodes agilis",
+    "answer_llm2": "1. Melissodes bimaculatus; 2. Ceratina calcarata; 3. Melissodes desponsus; 4. Bombus pensylvanicus; 5. Eucera hamata; 6. Ceratina mikmaqi; 7. Halictus ligatus; 8. Eucera pruinosa; 9. Peponapis pruinosa; 10. Melissodes agilis"
   },
   "023": {
     "answer_llm": "The species of bee tested was the honey bee, *Apis mellifera*.",
     "answer_rev1": "The species of bee tested was the honey bee, *Apis mellifera*.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "013": {
     "answer_llm": "*A. mellifera* (honey bee)",
     "answer_rev1": "*A. mellifera* (honey bee)",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "022": {
     "answer_llm": "M. scutellaris",
     "answer_rev1": "M. scutellaris",
     "rev1": "EA",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Melipona scutellaris",
+    "answer_llm2": "1. Melipona scutellaris"
   },
   "020": {
     "answer_llm": "The species of bees tested were *Bombus terrestris* and *Bombus terricola*.",
     "answer_rev1": "The species of bees tested were *Bombus terrestris* and *Bombus terricola*.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Bombus terrestris; 2. Bombus terricola",
+    "answer_llm2": "1. Bombus terrestris; 2. Bombus terricola"
   },
   "018": {
     "answer_llm": "The species of bees tested are *A. mellifera*, *C. florisomnie*, and *M. rotundata*.",
     "answer_rev1": "The species of bees tested are *A. mellifera*, *C. florisomnie*, and *M. rotundata*.",
     "rev1": "EA",
-    "rev1_rating": 2
+    "rev1_rating": 2,
+    "answer_rev3": "1. Megachile rotundata; 2. Megachile lapponica; 3. Megachile centuncularis; 4. Megachile willughbiella; 5. Megachile leachella",
+    "answer_llm2": "1. Megachile rotundata; 2. Megachile lapponica; 3. Megachile centuncularis; 4. Megachile willughbiella; 5. Megachile leachella"
   },
   "017": {
     "answer_llm": "Honey bees (*Apis mellifera*) were tested in the study.",
     "answer_rev1": "Honey bees (*Apis mellifera*) were tested in the study.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "019": {
     "answer_llm": "Honey bees (*Apis mellifera*) were tested.",
     "answer_rev1": "Honey bees (*Apis mellifera*) were tested.",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera ligustica; 2. Apis mellifera carnica"
   },
   "021": {
     "answer_llm": "The species of bee tested was *Bombus impatiens* (common eastern bumble bee).",
     "answer_rev1": "The species of bee tested was *Bombus impatiens* (common eastern bumble bee).",
     "rev1": "EA",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Bombus impatiens",
+    "answer_llm2": "1. Bombus impatiens"
   },
   "532": {
     "answer_llm": "Honeybees (*Apis mellifera*) were tested.",
     "answer_rev1": "The species tested was Apis mellifera.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "517": {
     "answer_llm": "The species of bees tested were bumblebees (*Bombus terrestris*) and honey bees (*Apis mellifera*).",
     "answer_rev1": "Bombus terrestris",
     "rev1": "LH",
-    "rev1_rating": 5
+    "rev1_rating": 5,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris"
   },
   "521": {
     "answer_llm": "Honeybees (specifically honeybee workers) were tested.",
     "answer_rev1": "The bee species was Apis mellifera.",
     "rev1": "LH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "519": {
     "answer_llm": "European honey bee (*Apis mellifera*) was tested.",
     "answer_rev1": "Apis mellifera was tested.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "518": {
     "answer_llm": "*Apis mellifera* (honey bee)",
@@ -915,7 +1163,9 @@
     "rev1_rating": 9,
     "answer_rev2": "Apis mellifera ligustica",
     "rev2": "ER",
-    "rev2_rating": 9
+    "rev2_rating": 9,
+    "answer_rev3": "1. Apis mellifera ligustica",
+    "answer_llm2": "1. Apis mellifera ligustica"
   },
   "520": {
     "answer_llm": "The species of bees tested were honey bees (Apis mellifera) and eastern honey bees (Apis cerana).",
@@ -924,13 +1174,17 @@
     "rev1_rating": 5,
     "answer_rev2": "The species used was Apis mellfastifera, subspecies carnica, ligustica and Buckfast",
     "rev2": "ER",
-    "rev2_rating": 5
+    "rev2_rating": 5,
+    "answer_rev3": "1. Apis mellifera carnica; 2. Apis mellifera ligustica; 3. Apis mellifera buckfast",
+    "answer_llm2": "1. Apis mellifera"
   },
   "516": {
     "answer_llm": "Winter honey bees (*Apis mellifera*) were tested.",
     "answer_rev1": "Apis mellifera",
     "rev1": "LH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "531": {
     "answer_llm": "The species of bee(s) tested are *Apis mellifera* and *Apis cerana cerana*.",
@@ -939,84 +1193,111 @@
     "rev1_rating": 5,
     "answer_rev2": "Apis mellifera",
     "rev2": "ER",
-    "rev2_rating": 6
+    "rev2_rating": 6,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "513": {
     "answer_llm": "*Osmia lignaria* and *Megachile rotundata*",
     "answer_rev1": "Osmia lignaria and Megachile rotundata.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Osmia lignaria; 2. Megachile rotundata",
+    "answer_llm2": "1. Osmia lignaria; 2. Megachile rotundata"
   },
   "525": {
     "answer_llm": "*A. mellifera* (honeybee)",
     "answer_rev1": "The bee species used was Apis mellifera. The breed was africanized honeybees, which means that they were a hybrid between the african subspecies (Apis mellifera scutellata) and (at least) one of the European subspecies.",
     "rev1": "LH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera (Africanized)",
+    "answer_llm2": "1. Apis mellifera (Africanized)"
   },
   "522": {
     "answer_llm": "The species of bees tested were *B. impatiens*, *B. bimaculatus*, *B. griseocollis*, and *B. perplexus*.",
     "answer_rev1": "The species tested were Bombus impatiens, Bombus bimaculatus, Bombus griseocollis and Bombus perplexus.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Bombus impatiens; 2. Bombus bimaculatus; 3. Bombus griseocollis; 4. Bombus perplexus",
+    "answer_llm2": "1. Bombus impatiens; 2. Bombus bimaculatus; 3. Bombus griseocollis; 4. Bombus perplexus"
   },
   "523": {
     "answer_llm": "The species of bee tested is *Bombus terrestris*.",
     "answer_rev1": "The species testes was Bombus terrestris.",
     "rev1": "LH",
-    "rev1_rating": 10
+    "rev1_rating": 10,
+    "answer_rev3": "1. Bombus terrestris",
+    "answer_llm2": "1. Bombus terrestris"
   },
   "524": {
     "answer_llm": "Honeybees (*Apis mellifera* var. Buckfast) were tested.",
     "answer_rev1": "The bee species used was Apis mellifera, more specifically the variety Buckfast.",
     "rev1": "LH",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Apis mellifera Buckfast",
+    "answer_llm2": "1. Apis mellifera var. Buckfast"
   },
   "512": {
     "answer_llm": "The species of bee(s) tested were honey bees, bumble bees, alfalfa leafcutter bees, and alkali bees, with a specific focus on *Bombus impatiens* Cresson.",
     "answer_rev1": "The tested bee species were Bombus impatiens.",
     "rev1": "LH",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_llm2": "1. Bombus impatiens Cresson"
   },
   "515": {
     "answer_llm": "The species of bee tested is *A. mellifera* (Western honey bee).",
     "answer_rev1": "Apis mellifera",
     "rev1": "LH",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "658": {
     "answer_llm": "Bumblebees",
     "answer_rev1": "honeybee (Apis mellifera)",
     "rev1": "ER",
-    "rev1_rating": 1
+    "rev1_rating": 1,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "Species not specified"
   },
   "657": {
     "answer_llm": "Honeybee (Apis mellifera)",
     "answer_rev1": "Honeybee (Apis mellifera) and honeybee (Apis mellifera carnica)",
     "rev1": "ER",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "664": {
     "answer_llm": "Osmia bicornis, Bombus terrestris, and Apis mellifera.",
     "answer_rev1": "Osmia bicornis, Bombus terrestris, and Apis mellifera. The authors monitored also the density of wild bees (bumblebees and solitary bees)",
     "rev1": "ER",
-    "rev1_rating": 9
+    "rev1_rating": 9,
+    "answer_rev3": "1. Osmia bicornis; 2. Bombus terrestris; 3. Apis mellifera",
+    "answer_llm2": "1. Osmia bicornis; 2. Bombus terrestris; 3. Apis mellifera"
   },
   "663": {
     "answer_llm": "The species of bee tested was *Apis mellifera* (honey bee).",
     "answer_rev1": "The species used was Apis mellifera, possibly carnica as queens of Apis mellifera carnica were used to establish the colonies",
     "rev1": "ER",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   },
   "441": {
     "answer_llm": "The species of bee tested is *A. mellifera* (honey bee).",
     "answer_rev1": "The tested species i the honey bee Apis mellifera",
     "rev1": "FS",
-    "rev1_rating": 7
+    "rev1_rating": 7,
+    "answer_rev3": "1. Apis mellifera",
+    "answer_llm2": "1. Apis mellifera"
   },
   "367": {
     "answer_llm": "Honey bees (Apis mellifera) were tested in the study.",
     "answer_rev1": "Apis mellifera carnica",
     "rev1": "FS",
-    "rev1_rating": 8
+    "rev1_rating": 8,
+    "answer_rev3": "1. Apis mellifera carnica",
+    "answer_llm2": "1. Apis mellifera carnica"
   }
 }

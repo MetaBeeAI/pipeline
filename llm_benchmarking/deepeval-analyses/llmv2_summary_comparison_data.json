@@ -1,0 +1,86 @@
+[
+  {
+    "Approach":"LLM v1",
+    "Metric":"Faithfulness",
+    "Average_Score":0.9882757611,
+    "Count":244
+  },
+  {
+    "Approach":"LLM v1",
+    "Metric":"Faithfulness",
+    "Average_Score":0.7790938199,
+    "Count":233
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Completeness",
+    "Average_Score":0.8306280227,
+    "Count":56
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Accuracy",
+    "Average_Score":0.7953019611,
+    "Count":56
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Completeness",
+    "Average_Score":0.631715022,
+    "Count":74
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Accuracy",
+    "Average_Score":0.6362734791,
+    "Count":74
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Completeness",
+    "Average_Score":0.6871415657,
+    "Count":51
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Accuracy",
+    "Average_Score":0.6653556856,
+    "Count":51
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Completeness",
+    "Average_Score":0.690421853,
+    "Count":54
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Accuracy",
+    "Average_Score":0.6986466106,
+    "Count":54
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Completeness",
+    "Average_Score":0.5565958485,
+    "Count":81
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Accuracy",
+    "Average_Score":0.5720592146,
+    "Count":81
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Completeness",
+    "Average_Score":0.6798260496,
+    "Count":54
+  },
+  {
+    "Approach":"Reviewer vs Reviewer",
+    "Metric":"Accuracy",
+    "Average_Score":0.6541301513,
+    "Count":54
+  }
+]

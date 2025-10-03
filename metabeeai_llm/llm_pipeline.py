@@ -1,6 +1,7 @@
 import json
 import os
 import argparse
+import time
 from json_multistage_qa import ask_json as ask_json_async
 from json_multistage_qa import format_to_list as format_to_list_async
 import asyncio
@@ -34,12 +35,12 @@ with open(questions_path, 'r') as file:
 # ------------------------------------------------------------------------------
 # Helper Function: get_answer
 # ------------------------------------------------------------------------------
-def get_answer(question_text, json_path):
+async def get_answer(question_text, json_path):
     """
     Retrieves the answer for a given question by calling ask_json.
     Returns a dictionary with the required structure: answer, reason, and chunk_ids.
     """
-    result = ask_json(question_text, json_path)
+    result = await ask_json_async(question_text, json_path)
     
     # Ensure the result has the required structure
     if isinstance(result, dict):
@@ -61,7 +62,7 @@ def get_answer(question_text, json_path):
 # ------------------------------------------------------------------------------
 # Generic Recursive Function to Process a Hierarchical Question Tree
 # ------------------------------------------------------------------------------
-def process_question_tree(tree, json_path, context=None):
+async def process_question_tree(tree, json_path, context=None):
     """
     Recursively traverses the question tree (a nested dictionary) and obtains answers using get_answer.
 
@@ -78,7 +79,7 @@ def process_question_tree(tree, json_path, context=None):
         # If this dictionary has a "question" key, treat it as a leaf.
         if "question" in tree:
             question_text = tree["question"].format(**context)
-            answer = get_answer(question_text, json_path)
+            answer = await get_answer(question_text, json_path)
             # Process conditional branch if available.
             return answer
         else:
@@ -88,23 +89,23 @@ def process_question_tree(tree, json_path, context=None):
                     # If the key is "list", return the list as is.
                     question_of_the_list = value["question"].format(**context)
                     endpoint_name = value["endpoint_name"]
-                    answer = get_answer(question_of_the_list, json_path)
-                    list_result = format_to_list(question_of_the_list, answer["answer"])
+                    answer = await get_answer(question_of_the_list, json_path)
+                    list_result = await format_to_list_async(question_of_the_list, answer["answer"])
                     list_items = list_result['answer']
                     result[key] = {}
                     for item in list_items:
                         new_context = context.copy()
                         new_context[endpoint_name] = item
-                        result[key][item] = process_question_tree(value['for_each'], json_path, new_context)
+                        result[key][item] = await process_question_tree(value['for_each'], json_path, new_context)
                 else:
-                    result[key] = process_question_tree(value, json_path, context)
+                    result[key] = await process_question_tree(value, json_path, context)
             return result
     elif isinstance(tree, list):
-        return [process_question_tree(item, json_path, context) for item in tree]
+        return [await process_question_tree(item, json_path, context) for item in tree]
     elif isinstance(tree, str):
         # If the tree itself is a string, treat it as a question.
         question_text = tree.format(**context)
-        return get_answer(question_text, json_path)
+        return await get_answer(question_text, json_path)
     else:
         return tree
 
@@ -112,12 +113,12 @@ def process_question_tree(tree, json_path, context=None):
 # ------------------------------------------------------------------------------
 # Main Function: Retrieve All Answers Based on the Questions Dictionary
 # ------------------------------------------------------------------------------
-def get_literature_answers(json_path):
+async def get_literature_answers(json_path):
     """
     Processes the entire hierarchical question tree defined in QUESTIONS and returns
     the collected answers.
     """
-    answers = process_question_tree(QUESTIONS, json_path)
+    answers = await process_question_tree(QUESTIONS, json_path)
     return answers
 
 
@@ -156,7 +157,7 @@ def merge_json_in_the_folder(folder_path, overwrite=False):
     with open(folder_path + "merged.json", "w") as f:
         json.dump(json_obj, f, indent=2)
 
-def process_papers(base_dir=None, start_paper=1, end_paper=999, overwrite_merged=False):
+async def process_papers(base_dir=None, start_paper=1, end_paper=999, overwrite_merged=False):
     """
     Processes papers in the specified directory range.
     
@@ -182,48 +183,105 @@ def process_papers(base_dir=None, start_paper=1, end_paper=999, overwrite_merged
     if not base_dir.endswith('/'):
         base_dir += '/'
     
-    print(f"Processing papers {start_paper} to {end_paper} in {base_dir}")
+    total_papers = end_paper - start_paper + 1
+    completed_papers = 0
+    failed_papers = []
+    
+    # Create progress log file
+    log_file = os.path.join(base_dir, "processing_log.txt")
+    
+    print(f"🚀 Starting pipeline: {total_papers} papers to process")
+    print(f"📁 Papers directory: {base_dir}")
+    print(f"📝 Progress log: {log_file}")
+    print("=" * 60)
     
     for paper_num in range(start_paper, end_paper + 1):
         # Format the paper number with leading zeros
         paper_folder = f"{paper_num:03d}"
         paper_path = os.path.join(base_dir, paper_folder)
         
-        print(f"Processing paper {paper_folder}...")
+        # Show overall progress
+        remaining = total_papers - completed_papers
+        print(f"\n📊 Progress: {completed_papers}/{total_papers} completed, {remaining} remaining")
+        print(f"🔄 Processing paper {paper_folder}...")
         
         # Skip if the paper directory doesn't exist
         if not os.path.exists(paper_path):
-            print(f"Skipping {paper_folder} - directory not found")
+            print(f"⏭️  Skipping {paper_folder} - directory not found")
             continue
             
         try:
             pages_path = os.path.join(paper_path, "pages/")
             if not os.path.exists(pages_path):
-                print(f"Skipping {paper_folder} - pages directory not found")
+                print(f"⏭️  Skipping {paper_folder} - pages directory not found")
                 continue
                 
-            merge_json_in_the_folder(pages_path, overwrite=overwrite_merged)
-            json_path = os.path.join(pages_path, "merged.json")
-            
+            # Check if merged_v2.json exists
+            json_path = os.path.join(pages_path, "merged_v2.json")
             if not os.path.exists(json_path):
-                print(f"Skipping {paper_folder} - merged.json file not created")
+                print(f"⏭️  Skipping {paper_folder} - merged_v2.json not found")
                 continue
-                
-            literature_answers = get_literature_answers(json_path)
+            
+            # Process the paper with progress tracking
+            print(f"  📖 Processing {len(QUESTIONS)} questions...")
+            
+            # Temporarily reduce logging verbosity and suppress all output during processing
+            import logging
+            import sys
+            from io import StringIO
+            
+            # Capture and suppress all output during processing
+            original_stdout = sys.stdout
+            original_stderr = sys.stderr
+            original_log_level = logging.getLogger().level
+            
+            # Suppress all output
+            sys.stdout = StringIO()
+            sys.stderr = StringIO()
+            logging.getLogger().setLevel(logging.ERROR)
+            
+            try:
+                literature_answers = await get_literature_answers(json_path)
+            finally:
+                # Restore all output
+                sys.stdout = original_stdout
+                sys.stderr = original_stderr
+                logging.getLogger().setLevel(original_log_level)
+            
+            # Only create answers.json for the currently processed paper
             answers_path = os.path.join(paper_path, "answers.json")
             with open(answers_path, 'w') as f:
                 json.dump(literature_answers, f, indent=2)
-            print(f"Successfully processed paper {paper_folder}")
+            
+            completed_papers += 1
+            print(f"  ✅ Paper {paper_folder} completed successfully")
+            
+            # Log completion
+            with open(log_file, 'a') as f:
+                f.write(f"{paper_folder}: COMPLETED at {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
             
         except Exception as e:
-            print(f"Error processing paper {paper_folder}: {str(e)}")
+            print(f"  ❌ Error processing paper {paper_folder}: {str(e)}")
+            failed_papers.append(paper_folder)
+            
+            # Log failure
+            with open(log_file, 'a') as f:
+                f.write(f"{paper_folder}: FAILED at {time.strftime('%Y-%m-%d %H:%M:%S')} - {str(e)}\n")
             continue
+    
+    # Final summary
+    print("\n" + "=" * 60)
+    print(f"🎉 PIPELINE COMPLETED!")
+    print(f"✅ Successfully processed: {completed_papers}/{total_papers} papers")
+    if failed_papers:
+        print(f"❌ Failed papers: {', '.join(failed_papers)}")
+    print(f"📝 Detailed log: {log_file}")
 
 if __name__ == "__main__":
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Process paper folders to extract literature answers")
-    parser.add_argument("--dir", type=str, default="../data/papers", 
-                      help="Base directory containing paper folders (default: data/papers)")
+    parser.add_argument("--dir", type=str, default=None, 
+                      help="Base directory containing paper folders (default: auto-detect from config)")
     parser.add_argument("--start", type=int, default=1, 
                       help="First paper number to process (default: 1)")
     parser.add_argument("--end", type=int, default=999, 
@@ -235,9 +293,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Run the main processing function with the specified parameters
-    process_papers(
+    import asyncio
+    asyncio.run(process_papers(
         base_dir=args.dir,
         start_paper=args.start,
         end_paper=args.end,
         overwrite_merged=args.overwrite
-    ) 
+    )) 

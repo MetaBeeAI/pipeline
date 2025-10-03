@@ -13,7 +13,19 @@ async def test_output_structure():
     
     # Test question
     test_question = "What species of bee(s) were tested?"
-    test_json_path = "papers/001/pages/main_p01-02.pdf.json"
+    
+    # Try to get path from config, fallback to hardcoded path
+    try:
+        import sys
+        sys.path.append('..')
+        from config import get_papers_dir
+        papers_dir = get_papers_dir()
+        test_json_path = os.path.join(papers_dir, "002", "pages", "merged_v2.json")
+        print(f"Using config path: {test_json_path}")
+    except ImportError:
+        # Fallback to hardcoded path
+        test_json_path = "/Users/User/Documents/MetaBeeAI_dataset2/papers/002/pages/merged_v2.json"
+        print(f"Using fallback path: {test_json_path}")
     
     print(f"Testing question: {test_question}")
     print(f"Using JSON file: {test_json_path}")
@@ -46,7 +58,7 @@ async def test_output_structure():
                 print(f"  {field}: {str(value)[:100]}{'...' if len(str(value)) > 100 else ''}")
         
         # Check additional metadata fields
-        additional_fields = ["relevance_info", "question_metadata", "quality_assessment"]
+        additional_fields = ["relevance_info", "question_metadata", "quality_assessment", "deduplication_info"]
         print("\n📊 Additional metadata fields:")
         for field in additional_fields:
             if field in result:
@@ -56,6 +68,13 @@ async def test_output_structure():
                     print(f"    - Total chunks processed: {ri.get('total_chunks_processed', 'N/A')}")
                     print(f"    - Relevant chunks found: {ri.get('relevant_chunks_found', 'N/A')}")
                     print(f"    - Question config: {ri.get('question_config', {}).get('description', 'N/A')}")
+                elif field == "deduplication_info":
+                    di = result[field]
+                    print(f"    - Original chunks: {di.get('original_chunks', 'N/A')}")
+                    print(f"    - Unique chunks: {di.get('unique_chunks', 'N/A')}")
+                    print(f"    - Duplicates removed: {di.get('duplicates_removed', 'N/A')}")
+                    print(f"    - Duplication rate: {di.get('duplication_rate', 'N/A')}%")
+                    print(f"    - Duplicate groups: {di.get('duplicate_groups', 'N/A')}")
             else:
                 print(f"  ❌ {field}: Missing")
         

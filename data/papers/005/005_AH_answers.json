@@ -1,0 +1,53 @@
+{
+  "QUESTIONS": {
+    "bee_and_pesticides.bee_species": {
+      "user_answer_positive": "Honey bee",
+      "user_answer_negative": "Apis mellifera (although probably correct) was not mentioned",
+      "user_reason_positive": "Honey bee is the only species mentioned in the paper. No scientific name given.",
+      "user_reason_negative": "",
+      "user_rating": 8
+    },
+    "bee_and_pesticides.pesticides": {
+      "user_answer_positive": "The pesticide used in the study was thiamethoxam applied as seed dressing, mixed with two fungicides, metalaxyl-M and fludioxinil. The first part of the study measured residues in pollen and nectar in two crops, maize and oilseed rape. The concentration of thiomathoxam for maize was 88.2 g a.s./ha (420g/L) with 1.33g/L metalaxyl-M and 3.33g/L fludioxinil. Concentration of thiomathoxam for oilseed rape was 12.6 g a.s./ha (280g/L)  with 33.3g/L metalaxyl-M and 8.0g/L fludioxinil. A study that involed growing maize following on from a thiamethoxam treated crop of spring barley (77.0 g a.s/ha) was also run. Exposure time was 4-10 days for maize and 9-14 days for oilseed rape.\nA longer term study was run over four years with annula exposure on either maize or oilseed rape dressed with the same concentartions of thiamethoxam as before.",
+      "user_answer_negative": "Missed that it aws applied as a seed dressing. Also missed the secondary exposure to residues left after growing treated barley. Missed the long term study.",
+      "user_reason_positive": "Clear methods section, although lengthy. Two separate studies. One run across one flowering season of either seed dressed maize or oilseed rape. The second aws run across four years of exposure to seed dressed crops.",
+      "user_reason_negative": "More methods based. Not specific enough. Missed the long term study",
+      "user_rating": 4
+    },
+    "bee_and_pesticides.additional_stressors": {
+      "user_answer_positive": "No additional stressors as the fungicides were applied along with the thiamethoxam in the seed dressing.",
+      "user_answer_negative": "",
+      "user_reason_positive": "No additional stressors",
+      "user_reason_negative": "",
+      "user_rating": 10
+    },
+    "experimental_methodology": {
+      "user_answer_positive": "This paper consists of two large-scale field studies: i) the quantification of residues of thiamethoxam and its primary metabolite (CGA322704) in hive products, pollen and nectar of honeybees foraging in maize and oilseed rape that had received a seed dressing of thiamethoxam over one growing season, and ii) assessment of long-term risks associated with a four-year exposure to maize and oilseed rape crops treated with seed dressing containing thiamethoxam. \n\nFor study i), samples of pollen (both bee and hive), nectar (both bee and hive), bee-bread, honey, wax and royal jelly were analysed for thiamethoxam and its metabolite using LC-MS/MS.\nFor study ii), hives were palced in the treated crop while it was in flower and then placed in a forested area away from pesticide treatments. Number of dead adult bees, flight activity and behavioural measures at hive entrance, foraging activity, pollen collection, strength of colony (using the Liebefeld method), presence of healthy egg-laying queen and eggs, area of pollen and nectar storage, area containing eggs, larvae and capped cells and hive weight were all recorded.",
+      "user_answer_negative": "inaccurate and missed the point if the 2 studies",
+      "user_reason_positive": "Two large-scale field trials described.",
+      "user_reason_negative": "",
+      "user_rating": 5
+    },
+    "discussion.significance": {
+      "user_answer_positive": "This study found that the residues of thiamethoxam and its primary metabolite in pollen and nectar collected by bees foraging exclusively on crops that had been treated with a thiamethoxam seed dressing are typically low. Residues found in hive products were consistently even lower than that observed in pollen and nectar, indicating dilution or degradation. There is also nomcarry over from the same pesticide treatment used in two subsequent crop rotations. Over the four year study tehre was no observable diffrence between experimental and control hives in any of the measures monitored. \n\nOverall no detrimental effects of field-realistic exposure to pollen and nectar from the crops that received a seed treatment of thiamethoxam were observed, indicating a low-risk to foraging honeybees.",
+      "user_answer_negative": "Too generic - taken from the introduction section. Findings of the study not discussed here.",
+      "user_reason_positive": "The two studies included in this paper both found that the risk to honeybees from correctly applied thaimethoxam seed dressing was low as the residues found in pollen and nectar are present only at low level.",
+      "user_reason_negative": "Too generic - taken from the introduction section",
+      "user_rating": 2
+    },
+    "discussion.future_research": {
+      "user_answer_positive": "In general experiments on sub-lethal effects are conducted under artificial exposure conditions, and/or include exposure level higher than would occur in the field. This cannot theefore provide critical information on realistic field exposure. More large field trials are therefore neede to bridge this gap.",
+      "user_answer_negative": "",
+      "user_reason_positive": "",
+      "user_reason_negative": "",
+      "user_rating": 9
+    },
+    "discussion.limitations": {
+      "user_answer_positive": "The experimental set up of large-scale field trials make it difficult to include sufficient true statisical replication, as hives are not considered replicates and treatment should be considered on a plot-by-plot basis. This means that expert judgment must be relied on to assess the biological significance of any effects observed, in the context of hive and test conditions. Statistical analysis of results lacks power to detect anything but very large treatment effects and might therefore be misleading.",
+      "user_answer_negative": "This is generic and realtes to the general field.",
+      "user_reason_positive": "The low level of statistal power and the need to rely on scientists with experience in field trials to interpret the significance of observed effects was discussed in realtion to the study.",
+      "user_reason_negative": "This is generic and realtes to the general field.",
+      "user_rating": 4
+    }
+  }
+}

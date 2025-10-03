@@ -1,0 +1,18 @@
+{
+  "QUESTIONS": {
+    "bee_and_pesticides.bee_species": {
+      "user_answer_positive": "Honey bee",
+      "user_answer_negative": "Apis mellifera (although probably correct) was not actually written in the paper",
+      "user_reason_positive": "Honey bee is the only species mentioned in the paper",
+      "user_reason_negative": "",
+      "user_rating": 7
+    },
+    "experimental_methodology": {
+      "user_answer_positive": "There are multiple experiments. A short term exposure",
+      "user_answer_negative": "",
+      "user_reason_positive": "",
+      "user_reason_negative": "",
+      "user_rating": 0
+    }
+  }
+}

@@ -1,0 +1,76 @@
+comparison,question_type,metric,average_mean,average_std,average_min,average_max,count_sum,standard_error_mean
+llmv1_vs_rev1,additional_stressors,Accuracy [GEval],0.5295,,0.5295,0.5295,185,0.0264
+llmv1_vs_rev1,additional_stressors,Completeness [GEval],0.5778,,0.5778,0.5778,185,0.0274
+llmv1_vs_rev1,additional_stressors,Contextual Precision,0.3362,,0.3362,0.3362,185,0.0305
+llmv1_vs_rev1,additional_stressors,Contextual Recall,0.558,,0.558,0.558,185,0.0341
+llmv1_vs_rev1,additional_stressors,Correctness [GEval],0.1946,,0.1946,0.1946,185,0.0292
+llmv1_vs_rev1,additional_stressors,Faithfulness,0.8862,,0.8862,0.8862,185,0.0159
+llmv1_vs_rev1,bee_species,Accuracy [GEval],0.6839,,0.6839,0.6839,194,0.0198
+llmv1_vs_rev1,bee_species,Completeness [GEval],0.7142,,0.7142,0.7142,194,0.0199
+llmv1_vs_rev1,bee_species,Contextual Precision,0.6443,,0.6443,0.6443,194,0.0256
+llmv1_vs_rev1,bee_species,Contextual Recall,0.7696,,0.7696,0.7696,194,0.0293
+llmv1_vs_rev1,bee_species,Correctness [GEval],0.2113,,0.2113,0.2113,194,0.0294
+llmv1_vs_rev1,bee_species,Faithfulness,0.9725,,0.9725,0.9725,194,0.0107
+llmv1_vs_rev1,experimental_methodology,Accuracy [GEval],0.6574,,0.6574,0.6574,191,0.0191
+llmv1_vs_rev1,experimental_methodology,Completeness [GEval],0.6689,,0.6689,0.6689,191,0.0189
+llmv1_vs_rev1,experimental_methodology,Contextual Precision,0.6624,,0.6624,0.6624,191,0.0191
+llmv1_vs_rev1,experimental_methodology,Contextual Recall,0.9033,,0.9033,0.9033,191,0.0155
+llmv1_vs_rev1,experimental_methodology,Correctness [GEval],0.2723,,0.2723,0.2723,191,0.0323
+llmv1_vs_rev1,experimental_methodology,Faithfulness,0.9631,,0.9631,0.9631,191,0.0072
+llmv1_vs_rev1,future_research,Accuracy [GEval],0.5947,,0.5947,0.5947,184,0.0262
+llmv1_vs_rev1,future_research,Completeness [GEval],0.638,,0.638,0.638,184,0.0265
+llmv1_vs_rev1,future_research,Contextual Precision,0.6195,,0.6195,0.6195,184,0.0287
+llmv1_vs_rev1,future_research,Contextual Recall,0.7615,,0.7615,0.7615,184,0.0281
+llmv1_vs_rev1,future_research,Correctness [GEval],0.288,,0.288,0.288,184,0.0335
+llmv1_vs_rev1,future_research,Faithfulness,0.9798,,0.9798,0.9798,184,0.0056
+llmv1_vs_rev1,pesticides,Accuracy [GEval],0.6295,,0.6295,0.6295,233,0.0164
+llmv1_vs_rev1,pesticides,Completeness [GEval],0.6672,,0.6672,0.6672,233,0.0157
+llmv1_vs_rev1,pesticides,Contextual Precision,0.9021,,0.9021,0.9021,233,0.0159
+llmv1_vs_rev1,pesticides,Contextual Recall,0.915,,0.915,0.915,233,0.013
+llmv1_vs_rev1,pesticides,Correctness [GEval],0.1845,,0.1845,0.1845,233,0.0255
+llmv1_vs_rev1,pesticides,Faithfulness,0.7791,,0.7791,0.7791,233,0.0129
+llmv1_vs_rev1,significance,Accuracy [GEval],0.4897,,0.4897,0.4897,244,0.019
+llmv1_vs_rev1,significance,Completeness [GEval],0.5103,,0.5103,0.5103,244,0.0185
+llmv1_vs_rev1,significance,Contextual Precision,0.7787,,0.7787,0.7787,244,0.0155
+llmv1_vs_rev1,significance,Contextual Recall,0.8964,,0.8964,0.8964,244,0.0149
+llmv1_vs_rev1,significance,Correctness [GEval],0.2008,,0.2008,0.2008,244,0.0257
+llmv1_vs_rev1,significance,Faithfulness,0.9883,,0.9883,0.9883,244,0.0032
+llmv2_vs_rev3,additional_stressors,Accuracy [GEval],0.9661,,0.9661,0.9661,94,0.0142
+llmv2_vs_rev3,additional_stressors,Completeness [GEval],0.9684,,0.9684,0.9684,94,0.0144
+llmv2_vs_rev3,additional_stressors,Contextual Precision,0.4343,,0.4343,0.4343,27,0.0889
+llmv2_vs_rev3,additional_stressors,Contextual Recall,0.7407,,0.7407,0.7407,27,0.0859
+llmv2_vs_rev3,additional_stressors,Faithfulness,0.7469,,0.7469,0.7469,27,0.0812
+llmv2_vs_rev3,bee_species,Accuracy [GEval],0.8154,,0.8154,0.8154,139,0.0287
+llmv2_vs_rev3,bee_species,Completeness [GEval],0.8124,,0.8124,0.8124,139,0.0297
+llmv2_vs_rev3,bee_species,Contextual Precision,0.9439,,0.9439,0.9439,138,0.0157
+llmv2_vs_rev3,bee_species,Contextual Recall,0.9783,,0.9783,0.9783,138,0.0125
+llmv2_vs_rev3,bee_species,Faithfulness,0.9862,,0.9862,0.9862,138,0.0097
+llmv2_vs_rev3,pesticides,Accuracy [GEval],0.7578,,0.7578,0.7578,76,0.0236
+llmv2_vs_rev3,pesticides,Completeness [GEval],0.7536,,0.7536,0.7536,76,0.0243
+llmv2_vs_rev3,pesticides,Contextual Precision,0.9531,,0.9531,0.9531,75,0.0198
+llmv2_vs_rev3,pesticides,Contextual Recall,0.961,,0.961,0.961,75,0.0199
+llmv2_vs_rev3,pesticides,Faithfulness,0.8709,,0.8709,0.8709,75,0.0322
+rev1_vs_rev2,additional_stressors,Accuracy [GEval],0.6654,,0.6654,0.6654,51,0.0425
+rev1_vs_rev2,additional_stressors,Completeness [GEval],0.6871,,0.6871,0.6871,51,0.0443
+rev1_vs_rev2,additional_stressors,Correctness [GEval],0.4706,,0.4706,0.4706,51,0.0706
+rev1_vs_rev2,additional_stressors,Faithfulness,0.9363,,0.9363,0.9363,51,0.0304
+rev1_vs_rev2,bee_species,Accuracy [GEval],0.7953,,0.7953,0.7953,56,0.0303
+rev1_vs_rev2,bee_species,Completeness [GEval],0.8306,,0.8306,0.8306,56,0.0289
+rev1_vs_rev2,bee_species,Correctness [GEval],0.4643,,0.4643,0.4643,56,0.0672
+rev1_vs_rev2,bee_species,Faithfulness,1.0,,1.0,1.0,56,0.0
+rev1_vs_rev2,experimental_methodology,Accuracy [GEval],0.6986,,0.6986,0.6986,54,0.0329
+rev1_vs_rev2,experimental_methodology,Completeness [GEval],0.6904,,0.6904,0.6904,54,0.0343
+rev1_vs_rev2,experimental_methodology,Correctness [GEval],0.3519,,0.3519,0.3519,54,0.0656
+rev1_vs_rev2,experimental_methodology,Faithfulness,0.9715,,0.9715,0.9715,54,0.0106
+rev1_vs_rev2,future_research,Accuracy [GEval],0.6541,,0.6541,0.6541,54,0.0413
+rev1_vs_rev2,future_research,Completeness [GEval],0.6798,,0.6798,0.6798,54,0.0425
+rev1_vs_rev2,future_research,Correctness [GEval],0.3333,,0.3333,0.3333,54,0.0648
+rev1_vs_rev2,future_research,Faithfulness,0.9974,,0.9974,0.9974,54,0.0026
+rev1_vs_rev2,pesticides,Accuracy [GEval],0.6363,,0.6363,0.6363,74,0.0227
+rev1_vs_rev2,pesticides,Completeness [GEval],0.6317,,0.6317,0.6317,74,0.0241
+rev1_vs_rev2,pesticides,Correctness [GEval],0.1351,,0.1351,0.1351,74,0.04
+rev1_vs_rev2,pesticides,Faithfulness,0.9528,,0.9528,0.9528,74,0.0163
+rev1_vs_rev2,significance,Accuracy [GEval],0.5721,,0.5721,0.5721,81,0.0296
+rev1_vs_rev2,significance,Completeness [GEval],0.5566,,0.5566,0.5566,81,0.0303
+rev1_vs_rev2,significance,Correctness [GEval],0.1852,,0.1852,0.1852,81,0.0434
+rev1_vs_rev2,significance,Faithfulness,0.9537,,0.9537,0.9537,81,0.0158

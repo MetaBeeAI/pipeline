@@ -10,10 +10,41 @@ from litellm import acompletion
 from pydantic import BaseModel
 
 # Configure logging for debugging and error tracking.
-logging.basicConfig(level=logging.ERROR)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 RETRY = 100
+
+# Model configuration for hybrid approach
+try:
+    # Try relative import first (when used as module)
+    from .pipeline_config import get_current_config
+    config = get_current_config()
+    RELEVANCE_MODEL = config['models']['relevance_model']
+    ANSWER_MODEL = config['models']['answer_model']
+    DEFAULT_RELEVANCE_BATCH_SIZE = config['parallel']['relevance_batch_size']
+    DEFAULT_ANSWER_BATCH_SIZE = config['parallel']['answer_batch_size']
+    MAX_CONCURRENT_REQUESTS = config['parallel']['max_concurrent_requests']
+    BATCH_DELAY = config['parallel']['batch_delay']
+except ImportError:
+    try:
+        # Try direct import (when running script directly)
+        from pipeline_config import get_current_config
+        config = get_current_config()
+        RELEVANCE_MODEL = config['models']['relevance_model']
+        ANSWER_MODEL = config['models']['answer_model']
+        DEFAULT_RELEVANCE_BATCH_SIZE = config['parallel']['relevance_batch_size']
+        DEFAULT_ANSWER_BATCH_SIZE = config['parallel']['answer_batch_size']
+        MAX_CONCURRENT_REQUESTS = config['parallel']['max_concurrent_requests']
+        BATCH_DELAY = config['parallel']['batch_delay']
+    except ImportError:
+        # Fallback configuration if pipeline_config.py is not available
+        RELEVANCE_MODEL = 'openai/gpt-4o-mini'  # Fast model for relevance scoring
+        ANSWER_MODEL = 'openai/gpt-4o'          # High-quality model for answer generation
+        DEFAULT_RELEVANCE_BATCH_SIZE = 20       # Default batch size for relevance scoring
+        DEFAULT_ANSWER_BATCH_SIZE = 5           # Default batch size for answer generation
+        MAX_CONCURRENT_REQUESTS = 25            # Maximum concurrent API requests to avoid rate limiting
+        BATCH_DELAY = 0.1                       # Default delay between batches
 
 # Load questions configuration from YAML file
 import yaml
@@ -27,7 +58,17 @@ def load_questions_config():
     try:
         with open(questions_path, 'r') as file:
             config = yaml.safe_load(file)
-        return config.get('QUESTIONS', {})
+        
+        # Extract both QUESTIONS and GLOBAL_CONFIG
+        questions = config.get('QUESTIONS', {})
+        global_config = config.get('GLOBAL_CONFIG', {})
+        
+        # Merge global config into questions for easy access
+        if global_config:
+            questions['GLOBAL_CONFIG'] = global_config
+        
+        logger.info(f"Loaded {len(questions)} question configurations and global config")
+        return questions
     except Exception as e:
         logger.error(f"Error loading questions config: {e}")
         # Return default configuration if YAML loading fails
@@ -36,92 +77,11 @@ def load_questions_config():
 # Load the configuration
 QUESTIONS_CONFIG = load_questions_config()
 
-def get_question_config(question_text: str) -> dict:
-    """
-    Get configuration for a specific question type based on the question text.
-    
-    Args:
-        question_text (str): The question text to analyze.
-        
-    Returns:
-        dict: Configuration with max_chunks, min_score, description, and no_info_response.
-    """
-    question_lower = question_text.lower()
-    
-    # Try to find a matching question in the YAML configuration
-    for question_key, question_config in QUESTIONS_CONFIG.items():
-        if question_config.get('question', '').lower() in question_lower or question_key.lower() in question_lower:
-            # Extract configuration from YAML
-            config = {
-                'max_chunks': question_config.get('max_chunks', 5),
-                'min_score': question_config.get('min_score', 0.4),
-                'description': question_config.get('description', 'Default configuration'),
-                'no_info_response': question_config.get('no_info_response', 'Information not found in the provided text.')
-            }
-            logger.info(f"Found question config for '{question_key}': {config}")
-            return config
-    
-    # If no exact match found, try keyword-based matching
-    if any(word in question_lower for word in ['species', 'bee', 'apis', 'bombus']):
-        return get_default_config('bee_species')
-    elif any(word in question_lower for word in ['pesticide', 'chemical', 'dose', 'exposure']):
-        return get_default_config('pesticides')
-    elif any(word in question_lower for word in ['stressor', 'temperature', 'parasite', 'pathogen']):
-        return get_default_config('additional_stressors')
-    elif any(word in question_lower for word in ['method', 'experiment', 'trial', 'procedure']):
-        return get_default_config('experimental_methodology')
-    elif any(word in question_lower for word in ['finding', 'result', 'effect', 'impact']):
-        return get_default_config('significance')
-    elif any(word in question_lower for word in ['future', 'research', 'next', 'suggest']):
-        return get_default_config('future_research')
-    else:
-        # Default configuration
-        return {
-            'max_chunks': 5,
-            'min_score': 0.4,
-            'description': 'Default configuration for general questions',
-            'no_info_response': 'Information not found in the provided text.'
-        }
-
-def get_default_config(question_type: str) -> dict:
-    """
-    Get default configuration for a question type if YAML loading fails.
-    
-    Args:
-        question_type (str): The type of question.
-        
-    Returns:
-        dict: Default configuration.
-    """
-    default_configs = {
-        'bee_species': {'max_chunks': 3, 'min_score': 0.6, 'description': 'High threshold - species should be explicitly stated', 'no_info_response': 'Species not specified'},
-        'pesticides': {'max_chunks': 5, 'min_score': 0.5, 'description': 'Medium threshold - look for chemical names, doses, methods', 'no_info_response': 'No pesticides were tested in this study'},
-        'additional_stressors': {'max_chunks': 4, 'min_score': 0.5, 'description': 'Medium threshold - look for non-pesticide stressors', 'no_info_response': 'No additional stressors were tested'},
-        'experimental_methodology': {'max_chunks': 5, 'min_score': 0.4, 'description': 'Lower threshold - methods can be spread across sections', 'no_info_response': 'Experimental methodology not clearly described in this study'},
-        'significance': {'max_chunks': 4, 'min_score': 0.4, 'description': 'Lower threshold - findings can be in results or discussion', 'no_info_response': 'No specific findings regarding pesticide effects were reported in this study'},
-        'future_research': {'max_chunks': 3, 'min_score': 0.4, 'description': 'Lower threshold - future work often in discussion', 'no_info_response': 'No future research directions were suggested'}
-    }
-    return default_configs.get(question_type, {'max_chunks': 5, 'min_score': 0.4, 'description': 'Default configuration', 'no_info_response': 'Information not found in the provided text.'})
-
-
 # --------------------------------------------------------------------------
 # Data Models using Pydantic for response validation
 # --------------------------------------------------------------------------
 
-class Relevance(BaseModel):
-    """
-    Model for representing the relevance response.
-
-    Attributes:
-        reason (str): Explanation for the relevance decision.
-        relevance (bool): Flag indicating whether the text is relevant to the question.
-        is_bib_list (bool): Flag indicating whether the text is a bibliography list.
-        relevance_score (float): Numeric relevance score from 0.0 to 1.0.
-    """
-    reason: str
-    relevance: bool
-    is_bib_list: bool
-    relevance_score: float
+# Relevance model removed - no longer needed with simplified approach
 
 
 class Answer(BaseModel):
@@ -135,28 +95,30 @@ class Answer(BaseModel):
     reason: str
     answer: str
 
+
 class AnswerWithChunkId(BaseModel):
     """
-    Model for representing the answer response.
+    Model for representing the answer response with chunk ID.
 
     Attributes:
         reason (str): Explanation or reasoning behind the answer.
         answer (str): The answer to the provided question.
-        chunk_ids (List[str]): The chunk id of the text that was used to generate the answer.
+        chunk_ids (List[str]): List of chunk IDs used to generate the answer.
     """
     reason: str
     answer: str
     chunk_ids: List[str]
 
+
 class AnswerList(BaseModel):
     """
-    Model for representing the answer response.
+    Model for representing a list of answers.
 
     Attributes:
-        reason (str): Explanation or reasoning behind the answer.
-        answer (List[str]): The answer to the provided question.
+        answer: List of strings.
     """
     answer: List[str]
+
 
 # --------------------------------------------------------------------------
 # Helper Functions
@@ -176,10 +138,202 @@ def load_json_file(path: str) -> Dict[str, Any]:
         return json.load(f)
 
 
+def get_question_config(question_text: str) -> dict:
+    """
+    Get configuration for a specific question type based on the question text.
+    
+    Args:
+        question_text (str): The question text to analyze.
+        
+    Returns:
+        dict: Configuration with max_chunks, min_score, description, and no_info_response.
+    """
+    question_lower = question_text.lower()
+    
+    # Try to find a matching question in the YAML configuration
+    for question_key, question_config in QUESTIONS_CONFIG.items():
+        config_question = question_config.get('question', '').lower()
+        # Check if questions match (either contains the other)
+        if (question_lower in config_question or config_question in question_lower or 
+            question_key.lower() in question_lower):
+            # Extract configuration from YAML
+            config = {
+                'max_chunks': question_config.get('max_chunks', 5),
+                'min_score': question_config.get('min_score', 0.4),
+                'description': question_config.get('description', 'Default configuration'),
+                'no_info_response': question_config.get('no_info_response', 'Information not found in the provided text.')
+            }
+            logger.info(f"Found question config for '{question_key}': {config}")
+            return config
+    
+    # No match found, use default configuration
+    logger.info("No question type match found, using default configuration")
+    return {
+        'max_chunks': 5,
+        'min_score': 0.4,
+        'description': 'Default configuration for general questions',
+        'no_info_response': 'Information not found in the provided text.'
+    }
+
+
+def get_default_config(question_type: str) -> dict:
+    """
+    Get default configuration for a question type if YAML loading fails.
+    
+    Args:
+        question_type (str): The type of question.
+        
+    Returns:
+        dict: Default configuration.
+    """
+    # Return generic defaults
+    return {
+        'max_chunks': 5,
+        'min_score': 0.4,
+        'description': 'Default configuration for general questions',
+        'no_info_response': 'Information not found in the provided text.'
+    }
+
+
+def get_question_metadata(question_text: str) -> dict:
+    """
+    Get metadata for a specific question from the YAML configuration.
+    Uses both exact matching and keyword-based matching for better question identification.
+    
+    Args:
+        question_text (str): The question text to look up.
+        
+    Returns:
+        dict: Question metadata including instructions, output_format, examples, etc.
+    """
+    question_lower = question_text.lower()
+    
+    # First, try exact question matching
+    for question_key, question_config in QUESTIONS_CONFIG.items():
+        if question_key == 'GLOBAL_CONFIG':
+            continue  # Skip global config
+            
+        if question_config.get('question', '').lower() in question_lower or question_key.lower() in question_lower:
+            return {
+                'question_key': question_key,
+                'question': question_config.get('question', ''),
+                'instructions': question_config.get('instructions', []),
+                'output_format': question_config.get('output_format', ''),
+                'example_output': question_config.get('example_output', []),
+                'bad_example_output': question_config.get('bad_example_output', []),
+                'max_chunks': question_config.get('max_chunks', 5),
+                'min_score': question_config.get('min_score', 0.4),
+                'no_info_response': question_config.get('no_info_response', 'Information not found in the provided text.'),
+                'description': question_config.get('description', 'Default configuration')
+            }
+    
+    # If no exact match, return empty metadata
+    return {}
+    
+    return {}
+
+
+
+
+
+def should_use_no_info_response(question: str, chunks: List[Dict[str, Any]], final_answer: str) -> bool:
+    """
+    Determine if the no_info_response should be used instead of the current answer.
+    
+    Args:
+        question (str): The question being answered.
+        chunks (List[Dict[str, Any]]): List of relevant chunks used.
+        final_answer (str): The final synthesized answer.
+        
+    Returns:
+        bool: True if no_info_response should be used, False otherwise.
+    """
+    # Check for explicit insufficient info response
+    if final_answer == 'INSUFFICIENT_INFO':
+        return True
+    
+    # Check for insufficient information indicators in the answer
+    insufficient_indicators = [
+        'not specified', 'not mentioned', 'not described', 'not reported',
+        'unclear', 'ambiguous', 'contradictory', 'incomplete', 'no information',
+        'cannot determine', 'insufficient data', 'limited information'
+    ]
+    
+    answer_lower = final_answer.lower()
+    if any(indicator in answer_lower for indicator in insufficient_indicators):
+        return True
+    
+    # Check if chunks were found
+    if not chunks:
+        return True
+    
+    # Check if answer is too generic or vague
+    generic_indicators = [
+        'the study', 'the research', 'the paper', 'the authors',
+        'more research needed', 'further study required', 'additional investigation'
+    ]
+    
+    if any(indicator in answer_lower for indicator in generic_indicators):
+        # Only use no_info_response if the answer is very generic
+        if len(final_answer.split()) < 20:  # Very short, generic answer
+            return True
+    
+    return False
+
+
+def assess_answer_quality(question: str, chunks: List[Dict[str, Any]], final_answer: str) -> dict:
+    """
+    Assess the quality of the final answer based on available chunks and question requirements.
+    
+    Args:
+        question (str): The question being answered.
+        chunks (List[Dict[str, Any]]): List of relevant chunks used.
+        final_answer (str): The final synthesized answer.
+        
+    Returns:
+        dict: Quality assessment including confidence and recommendations.
+    """
+    question_metadata = get_question_metadata(question)
+    
+    # Check if answer contains the expected format/patterns
+    output_format = question_metadata.get('output_format', '')
+    example_outputs = question_metadata.get('example_output', [])
+    
+    quality_metrics = {
+        'confidence': 'medium',
+        'issues': [],
+        'recommendations': []
+    }
+    
+    # Check for insufficient information indicators
+    insufficient_indicators = [
+        'not specified', 'not mentioned', 'not described', 'not reported',
+        'unclear', 'unclear', 'ambiguous', 'contradictory', 'incomplete'
+    ]
+    
+    answer_lower = final_answer.lower()
+    if any(indicator in answer_lower for indicator in insufficient_indicators):
+        quality_metrics['confidence'] = 'low'
+        quality_metrics['issues'].append('Answer contains insufficient information indicators')
+        quality_metrics['recommendations'].append('Consider using no_info_response')
+    
+    # Check if chunks were found
+    if not chunks:
+        quality_metrics['confidence'] = 'low'
+        quality_metrics['issues'].append('No relevant chunks found')
+        quality_metrics['recommendations'].append('Review question formulation or chunk selection criteria')
+    
+    # Check if answer matches expected format
+    if output_format and not any(keyword in answer_lower for keyword in output_format.lower().split()):
+        quality_metrics['confidence'] = 'medium'
+        quality_metrics['issues'].append('Answer may not match expected output format')
+    
+    return quality_metrics
+
+
 # --------------------------------------------------------------------------
 # Asynchronous Processing Functions
 # --------------------------------------------------------------------------
-
 
 async def format_to_list(question,text, model: str = 'openai/gpt-4o-mini') -> Dict[str, Any]:
     """
@@ -228,34 +382,64 @@ Return the entities in a list format.
     return result
 
 
-async def get_answer(question: str, chunk: Dict[str, Any], model: str = 'openai/gpt-4o-mini') -> Dict[str, Any]:
+async def get_answer(question: str, chunk: Dict[str, Any], model: str = ANSWER_MODEL) -> Dict[str, Any]:
     """
     Retrieve an answer for the given question using the provided text chunk.
 
-    This function constructs a prompt by embedding the question and text chunk,
-    calls the asynchronous API to obtain an answer, and adds the parsed answer
-    to the chunk dictionary.
+    This function constructs a prompt by embedding the question with text chunk,
+    instructions, examples, and bad examples to guide the LLM response quality.
 
     Args:
-        question (str): The question for which the answer is sought.
-        chunk (Dict[str, Any]): Dictionary containing the text and related data.
-        model (str, optional): Model identifier for the API call. Defaults to 'openai/gpt-4o'.
+        question (str): The question to test relevance against.
+        chunk (Dict[str, Any]): Dictionary containing the text to be evaluated.
+        model (str, optional): Model identifier for the API call. Defaults to ANSWER_MODEL.
 
     Returns:
         Dict[str, Any]: Updated chunk with an added 'answer' field containing the response.
     """
     text: str = chunk.get('text', '')
-    prompt: str = f"""
-Please evaluate the following text and return the answer to the question.
-
-<Question>
-{question}
-</Question>
-
-<Text>
-{text}
-</Text>
-    """.strip()
+    
+    # Get question metadata to access instructions, examples, and bad examples
+    question_metadata = get_question_metadata(question)
+    
+    # Build enhanced prompt with examples
+    prompt_parts = [f"<Question>\n{question}\n</Question>"]
+    
+    # Add instructions if available
+    if question_metadata.get('instructions'):
+        instructions_text = "\n".join([f"- {instruction}" for instruction in question_metadata['instructions']])
+        prompt_parts.append(f"<Instructions>\n{instructions_text}\n</Instructions>")
+    
+    # Add output format if available
+    if question_metadata.get('output_format'):
+        prompt_parts.append(f"<Output Format>\n{question_metadata['output_format']}\n</Output Format>")
+    
+    # Add good examples if available
+    if question_metadata.get('example_output'):
+        examples_text = "\n".join([f"✅ Good: {example}" for example in question_metadata['example_output']])
+        prompt_parts.append(f"<Good Examples>\n{examples_text}\n</Good Examples>")
+    
+    # Add bad examples if available
+    if question_metadata.get('bad_example_output'):
+        bad_examples_text = "\n".join([f"❌ Avoid: {example}" for example in question_metadata['bad_example_output']])
+        prompt_parts.append(f"<Bad Examples - AVOID THESE>\n{bad_examples_text}\n</Bad Examples>")
+    
+    # Add the text chunk
+    prompt_parts.append(f"<Text>\n{text}\n</Text>")
+    
+    # Add final guidance
+    prompt_parts.append("""
+<Important Guidelines>
+- Provide ONLY the specific information requested
+- Use the exact format specified in Output Format
+- Follow the Good Examples pattern
+- AVOID the Bad Examples patterns (no explanations, no context, no repetition)
+- Be concise and direct
+- If the text doesn't contain the requested information, return an empty answer
+</Important Guidelines>
+""")
+    
+    prompt = "\n".join(prompt_parts).strip()
 
     messages = [{"content": prompt, "role": "user"}]
 
@@ -275,123 +459,208 @@ Please evaluate the following text and return the answer to the question.
     return chunk
 
 
-async def check_relevance(question: str, chunk: Dict[str, Any], model: str = 'openai/gpt-4o-mini') -> Dict[str, Any]:
+async def get_top_relevant_chunks(
+    chunks: List[Dict[str, Any]], 
+    question: str, 
+    question_metadata: Dict[str, Any],
+    max_chunks: int = 5,
+    model: str = RELEVANCE_MODEL
+) -> List[Dict[str, Any]]:
     """
-    Check if the provided text chunk is relevant to the given question.
-
-    Constructs a prompt combining the question with the text chunk, calls the API,
-    and attaches the relevance result to the chunk dictionary.
-
+    Get the top most relevant chunks for a question using a single LLM call.
+    
     Args:
-        question (str): The question to test relevance against.
-        chunk (Dict[str, Any]): Dictionary containing the text to be evaluated.
-        model (str, optional): Model identifier for the API call. Defaults to 'openai/gpt-4o'.
-
+        chunks: List of text chunks to evaluate
+        question: The question being asked
+        question_metadata: Metadata about the question from YAML config
+        max_chunks: Maximum number of chunks to return
+        model: The LLM model to use for chunk selection
+    
     Returns:
-        Dict[str, Any]: Updated chunk with an added 'relevance' field containing the API response.
+        List of the most relevant chunks
     """
-    text: str = chunk.get('text', '')
-    prompt: str = f"""
-Please evaluate the following text and indicate whether it is relevant to the question. 
-Please evaluate if the text is a reference / citation / bibliography list.
+    try:
+        # Filter out obviously irrelevant chunks first
+        filtered_chunks = []
+        for chunk in chunks:
+            text = chunk.get('text', '').lower()
+            # Skip chunks that are clearly not relevant (headers, metadata, etc.)
+            if any(skip_term in text for skip_term in ['crossmark', 'logo', 'journal:', 'year:', 'doi:', 'authors:', 'accepted:', 'published online:', '© the author']):
+                continue
+            filtered_chunks.append(chunk)
+        
+        if not filtered_chunks:
+            return []
+        
+        # Build the prompt for chunk selection
+        prompt_parts = [
+            f"Question: {question}",
+            "",
+            f"Instructions: {question_metadata.get('instructions', [])}",
+            "",
+            f"Output Format: {question_metadata.get('output_format', '')}",
+            "",
+            "Good Examples:",
+            *[f"- {example}" for example in question_metadata.get('example_output', [])],
+            "",
+            "Bad Examples:",
+            *[f"- {example}" for example in question_metadata.get('bad_example_output', [])],
+            "",
+            f"Task: From the following {len(filtered_chunks)} text chunks, select the top {max_chunks} most relevant chunks that will best answer the question.",
+            "",
+            "Text Chunks:",
+        ]
+        
+        # Add chunks with IDs for reference
+        for i, chunk in enumerate(filtered_chunks):
+            chunk_text = chunk.get('text', '')[:500]  # Limit text length
+            chunk_id = chunk.get('chunk_id', f'chunk_{i}')
+            prompt_parts.append(f"Chunk {i+1} (ID: {chunk_id}): {chunk_text}...")
+            # Debug: Log chunk content to see what we're actually working with
+            logger.info(f"DEBUG: Chunk {i+1} content preview: {chunk_text[:100]}...")
+        
+        prompt_parts.extend([
+            "",
+            "Instructions:",
+            f"1. Analyze all chunks and select the top {max_chunks} most relevant ones",
+            "2. For pesticide questions: ONLY select chunks that actually mention pesticide names, doses, or exposure methods",
+            "3. Prioritize chunks with detailed pesticide information over general mentions",
+            "4. Skip chunks that are just headers, metadata, or don't contain pesticide information",
+            "5. Return ONLY the chunk numbers (1, 2, 3, etc.) in order of relevance",
+            "6. If fewer than {max_chunks} chunks contain pesticide information, return only the relevant ones",
+            "",
+            "Response format: Return only the chunk numbers separated by commas, e.g., '1,3,5'"
+        ])
+        
+        prompt = "\n".join(prompt_parts).strip()
+        
+        messages = [
+            {"role": "system", "content": "You are an expert at identifying the most relevant text chunks for scientific questions. Return only the chunk numbers in order of relevance."},
+            {"role": "user", "content": prompt}
+        ]
+        
+        response = await acompletion(model=model, messages=messages, temperature=0)
+        
+        if response and hasattr(response, 'choices') and response.choices:
+            result = response.choices[0].message.content
+            logger.info(f"DEBUG: LLM chunk selection response: {result}")
+            
+            # Parse the response to get chunk numbers
+            try:
+                # Extract numbers from response (e.g., "1,3,5" or "Chunks 1, 3, and 5")
+                import re
+                numbers = re.findall(r'\d+', str(result))
+                selected_indices = [int(num) - 1 for num in numbers[:max_chunks]]  # Convert to 0-based indices
+                logger.info(f"DEBUG: Parsed chunk indices: {selected_indices}")
+                
+                # Get the selected chunks
+                selected_chunks = []
+                for idx in selected_indices:
+                    if 0 <= idx < len(filtered_chunks):
+                        selected_chunks.append(filtered_chunks[idx])
+                        logger.info(f"DEBUG: Selected chunk {idx+1}: {filtered_chunks[idx].get('chunk_id')} - Content: {filtered_chunks[idx].get('text', '')[:100]}...")
+                
+                logger.info(f"Selected {len(selected_chunks)} chunks from {len(filtered_chunks)} total chunks")
+                return selected_chunks
+                
+            except Exception as e:
+                logger.error(f"Error parsing chunk selection response: {e}")
+                # Fallback: return first few chunks
+                return filtered_chunks[:max_chunks]
+        else:
+            logger.error("No valid response from LLM for chunk selection")
+            # Fallback: return first few chunks
+            return filtered_chunks[:max_chunks]
+            
+    except Exception as e:
+        logger.error(f"Error selecting top chunks: {e}")
+        # Fallback: return first few chunks
+        return chunks[:max_chunks]
 
-<Question>
-{question}
-</Question>
 
-<Text>
-{text}
-</Text>
-
-Please provide:
-1. A relevance score from 0.0 to 1.0 where:
-   - 0.0 = Completely irrelevant or no useful information
-   - 0.3 = Slightly relevant, minimal useful information
-   - 0.5 = Moderately relevant, some useful information
-   - 0.7 = Highly relevant, substantial useful information
-   - 1.0 = Extremely relevant, directly answers the question
-2. A brief explanation for your relevance decision
-3. Whether this is a bibliography/reference list
-    """.strip()
-
-    messages = [{"content": prompt, "role": "user"}]
-
-    for i in range(RETRY):
-        try:
-            response = await acompletion(model=model, messages=messages, response_format=Relevance,temperature=0)
-            outcome = json.loads(response.choices[0].message.content)
-
-            chunk['relevance'] = outcome
-            chunk['relevance_score'] = outcome.get('relevance_score', 0.0) # Extract and assign score
-
-            if outcome.get('is_bib_list'):
-                logger.info("Detected bibliography list for chunk %s", chunk.get('chunk_id'))
-                # Mark the chunk as irrelevant if it is a bibliography list.
-                chunk['relevance'] = {'relevance': False, 'reason': 'Detected as bibliography list.'}
-                chunk['relevance_score'] = 0.0 # Set score to 0 for irrelevant chunks
-
-            logger.info("Relevance for chunk %s: %s", chunk.get('chunk_id'), outcome)
-            break
-        except Exception as e:
-            logger.error("Error checking relevance for chunk %s: %s", chunk.get('chunk_id'), e)
-            # Mark the chunk as irrelevant in case of any error.
-            chunk['relevance'] = {'relevance': False, 'reason': str(e)}
-            chunk['relevance_score'] = 0.0 # Set score to 0 for irrelevant chunks
-            time.sleep(1)
-            continue
-    return chunk
-
-
-async def filter_all_chunks(question: str, chunks: List[Dict[str, Any]], max_chunks: int = 5, min_score: float = 0.3) -> List[Dict[str, Any]]:
+async def filter_all_chunks(question: str, chunks: List[Dict[str, Any]], max_chunks: int = 5, min_score: float = 0.3, batch_size: int = None) -> List[Dict[str, Any]]:
     """
-    Filter a list of text chunks to retain only those relevant to the question.
-    Limits results to top N most relevant chunks above a minimum score.
-
+    Get the top most relevant chunks for a question using a single LLM call.
+    
     Args:
         question (str): The question used for relevance evaluation.
         chunks (List[Dict[str, Any]]): List of text chunk dictionaries.
         max_chunks (int): Maximum number of chunks to return.
-        min_score (float): Minimum relevance score (0.0-1.0) for chunks to be included.
+        min_score (float): Not used in simplified approach, kept for compatibility.
+        batch_size (int): Not used in simplified approach, kept for compatibility.
 
     Returns:
-        List[Dict[str, Any]]: List of top relevant chunks, sorted by relevance score.
+        List[Dict[str, Any]]: List of top relevant chunks.
     """
-    tasks = [check_relevance(question, chunk) for chunk in chunks]
-    gathered_chunks = await asyncio.gather(*tasks)
+    if not chunks:
+        return []
     
-    # Filter by relevance and minimum score
-    relevant_chunks = [
-        chunk for chunk in gathered_chunks 
-        if chunk.get('relevance', {}).get('relevance') and 
-           chunk.get('relevance_score', 0.0) >= min_score
-    ]
+    # Get question metadata for the prompt
+    question_metadata = get_question_metadata(question)
     
-    # Sort by relevance score (highest first)
-    relevant_chunks.sort(key=lambda x: x.get('relevance_score', 0.0), reverse=True)
+    logger.info(f"Selecting top {max_chunks} chunks from {len(chunks)} total chunks using single LLM call")
     
-    # Limit to top N chunks
-    return relevant_chunks[:max_chunks]
+    # Use the new simplified approach
+    relevant_chunks = await get_top_relevant_chunks(
+        chunks=chunks,
+        question=question,
+        question_metadata=question_metadata,
+        max_chunks=max_chunks
+    )
+    
+    logger.info(f"Selected {len(relevant_chunks)} relevant chunks")
+    return relevant_chunks
 
 
-async def query_all_chunks(question: str, chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+async def query_all_chunks(question: str, chunks: List[Dict[str, Any]], batch_size: int = 5) -> List[Dict[str, Any]]:
     """
     Query each relevant text chunk to obtain an answer to the question.
-
-    This function concurrently processes each chunk by retrieving an answer and
-    appending it to the chunk's dictionary.
+    Uses parallel processing with configurable batch sizes for optimal performance.
 
     Args:
         question (str): The question to be answered.
         chunks (List[Dict[str, Any]]): List of text chunks that passed the relevance filter.
+        batch_size (int): Number of chunks to process in parallel (default: 5).
 
     Returns:
         List[Dict[str, Any]]: List of chunks updated with answers.
     """
-    tasks = [get_answer(question, chunk) for chunk in chunks]
-    return await asyncio.gather(*tasks)
+    if not chunks:
+        return []
+    
+    # Process chunks in parallel batches to avoid overwhelming the API
+    all_answered_chunks = []
+    
+    # Split chunks into batches for parallel processing
+    chunk_batches = [chunks[i:i + batch_size] for i in range(0, len(chunks), batch_size)]
+    
+    logger.info(f"Generating answers for {len(chunks)} chunks in {len(chunk_batches)} batches of {batch_size}")
+    
+    for batch_idx, batch in enumerate(chunk_batches):
+        logger.info(f"Processing answer batch {batch_idx + 1}/{len(chunk_batches)} ({len(batch)} chunks)")
+        
+        # Process this batch in parallel
+        tasks = [get_answer(question, chunk) for chunk in batch]
+        batch_results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        # Handle any exceptions and collect valid results
+        for i, result in enumerate(batch_results):
+            if isinstance(result, Exception):
+                logger.error(f"Error generating answer for chunk in batch {batch_idx + 1}: {result}")
+                # Mark chunk as failed on error
+                batch[i]['answer'] = {'answer': 'Error occurred during answer generation', 'reason': f'Error: {str(result)}'}
+            else:
+                all_answered_chunks.append(result)
+        
+        # Small delay between batches to avoid rate limiting
+        if batch_idx < len(chunk_batches) - 1:
+            await asyncio.sleep(BATCH_DELAY)
+    
+    logger.info(f"Successfully generated answers for {len(all_answered_chunks)} chunks")
+    return all_answered_chunks
 
 
-async def reflect_answers(question: str, chunks: List[Dict[str, Any]], model: str = 'openai/gpt-4o-mini') -> Any:
+async def reflect_answers(question: str, chunks: List[Dict[str, Any]], model: str = ANSWER_MODEL) -> Any:
     """
     Reflect on the answers from different text chunks to derive a consolidated answer.
     If no good answer can be synthesized, returns the no_info_response from question metadata.
@@ -419,21 +688,49 @@ async def reflect_answers(question: str, chunks: List[Dict[str, Any]], model: st
         """.strip() for chunk in chunks
     )
 
-    prompt: str = f"""
-Please reflect on the following answers from different text fragments of a paper. 
-Cross-reference between them to determine the correct answer for the question.
-
-<Question>
-{question}
-</Question>
-
-{formatted_chunks}
-
-IMPORTANT: If the chunks do not contain sufficient or coherent information to answer the question properly, 
-or if the information is contradictory, incomplete, or unclear, respond with: "INSUFFICIENT_INFO"
-
-Otherwise, provide a well-synthesized answer based on the available information.
-    """.strip()
+    # Build enhanced reflection prompt with examples and guidelines
+    prompt_parts = [f"<Question>\n{question}\n</Question>"]
+    
+    # Add instructions if available
+    if question_metadata.get('instructions'):
+        instructions_text = "\n".join([f"- {instruction}" for instruction in question_metadata['instructions']])
+        prompt_parts.append(f"<Instructions>\n{instructions_text}\n</Instructions>")
+    
+    # Add output format if available
+    if question_metadata.get('output_format'):
+        prompt_parts.append(f"<Output Format>\n{question_metadata['output_format']}\n</Output Format>")
+    
+    # Add good examples if available
+    if question_metadata.get('example_output'):
+        examples_text = "\n".join([f"✅ Good: {example}" for example in question_metadata['example_output']])
+        prompt_parts.append(f"<Good Examples>\n{examples_text}\n</Good Examples>")
+    
+    # Add bad examples if available
+    if question_metadata.get('bad_example_output'):
+        bad_examples_text = "\n".join([f"❌ Avoid: {example}" for example in question_metadata['bad_example_output']])
+        prompt_parts.append(f"<Bad Examples - AVOID THESE>\n{bad_examples_text}\n</Bad Examples>")
+    
+    # Add the formatted chunks
+    prompt_parts.append(f"<Text Chunks and Answers>\n{formatted_chunks}\n</Text Chunks and Answers>")
+    
+    # Add final guidance
+    prompt_parts.append("""
+<Important Guidelines>
+- Synthesize the BEST answer from all available chunks
+- Use the exact format specified in Output Format
+- Follow the Good Examples pattern exactly
+- AVOID the Bad Examples patterns (no explanations, no context, no repetition)
+- Be concise and direct - provide ONLY the requested information
+- For pesticide questions: Focus on extracting pesticide chemical names first and foremost
+- For pesticide questions: Include experimental details (doses, methods, duration) only if explicitly stated
+- For pesticide questions: A pesticide name alone is a valid answer if no other details are provided
+- Only return "INSUFFICIENT_INFO" if absolutely no pesticide information can be found
+- If information is contradictory, try to resolve conflicts and provide the most likely answer
+- Ensure your answer matches the quality and format of the Good Examples
+</Important Guidelines>
+""")
+    
+    prompt = "\n".join(prompt_parts).strip()
 
     messages = [{"content": prompt, "role": "user"}]
 
@@ -448,176 +745,20 @@ Otherwise, provide a well-synthesized answer based on the available information.
             time.sleep(1)
 
 
-
 # --------------------------------------------------------------------------
 # Batch Processing Helpers with tqdm progress bar
 # --------------------------------------------------------------------------
 
-def get_question_metadata(question_text: str) -> dict:
-    """
-    Get metadata for a specific question from the YAML configuration.
-    
-    Args:
-        question_text (str): The question text to look up.
-        
-    Returns:
-        dict: Question metadata including instructions, output_format, examples, etc.
-    """
-    question_lower = question_text.lower()
-    
-    for question_key, question_config in QUESTIONS_CONFIG.items():
-        if question_config.get('question', '').lower() in question_lower or question_key.lower() in question_lower:
-            return {
-                'question_key': question_key,
-                'question': question_config.get('question', ''),
-                'instructions': question_config.get('instructions', []),
-                'output_format': question_config.get('output_format', ''),
-                'example_output': question_config.get('example_output', []),
-                'bad_example_output': question_config.get('bad_example_output', []),
-                'max_chunks': question_config.get('max_chunks', 5),
-                'min_score': question_config.get('min_score', 0.4),
-                'no_info_response': question_config.get('no_info_response', 'Information not found in the provided text.'),
-                'description': question_config.get('description', 'Default configuration')
-            }
-    
-    return {}
-
-def should_use_no_info_response(question: str, chunks: List[Dict[str, Any]], final_answer: str) -> bool:
-    """
-    Determine if the no_info_response should be used instead of the current answer.
-    
-    Args:
-        question (str): The question being answered.
-        chunks (List[Dict[str, Any]]): List of relevant chunks used.
-        final_answer (str): The final synthesized answer.
-        
-    Returns:
-        bool: True if no_info_response should be used, False otherwise.
-    """
-    # Check for explicit insufficient info response
-    if final_answer == 'INSUFFICIENT_INFO':
-        return True
-    
-    # Check for insufficient information indicators in the answer
-    insufficient_indicators = [
-        'not specified', 'not mentioned', 'not described', 'not reported',
-        'unclear', 'ambiguous', 'contradictory', 'incomplete', 'no information',
-        'cannot determine', 'insufficient data', 'limited information'
-    ]
-    
-    answer_lower = final_answer.lower()
-    if any(indicator in answer_lower for indicator in insufficient_indicators):
-        return True
-    
-    # Check if chunks have very low relevance scores
-    if chunks:
-        avg_relevance = sum(chunk.get('relevance_score', 0.0) for chunk in chunks) / len(chunks)
-        if avg_relevance < 0.4:  # Very low average relevance
-            return True
-    
-    # Check if answer is too generic or vague
-    generic_indicators = [
-        'the study', 'the research', 'the paper', 'the authors',
-        'more research needed', 'further study required', 'additional investigation'
-    ]
-    
-    if any(indicator in answer_lower for indicator in generic_indicators):
-        # Only use no_info_response if the answer is very generic
-        if len(final_answer.split()) < 20:  # Very short, generic answer
-            return True
-    
-    return False
-
-def assess_answer_quality(question: str, chunks: List[Dict[str, Any]], final_answer: str) -> dict:
-    """
-    Assess the quality of the final answer based on available chunks and question requirements.
-    
-    Args:
-        question (str): The question being answered.
-        chunks (List[Dict[str, Any]]): List of relevant chunks used.
-        final_answer (str): The final synthesized answer.
-        
-    Returns:
-        dict: Quality assessment including confidence and recommendations.
-    """
-    question_metadata = get_question_metadata(question)
-    
-    # Check if answer contains the expected format/patterns
-    output_format = question_metadata.get('output_format', '')
-    example_outputs = question_metadata.get('example_output', [])
-    
-    quality_metrics = {
-        'confidence': 'medium',
-        'issues': [],
-        'recommendations': []
-    }
-    
-    # Check for insufficient information indicators
-    insufficient_indicators = [
-        'not specified', 'not mentioned', 'not described', 'not reported',
-        'unclear', 'unclear', 'ambiguous', 'contradictory', 'incomplete'
-    ]
-    
-    answer_lower = final_answer.lower()
-    if any(indicator in answer_lower for indicator in insufficient_indicators):
-        quality_metrics['confidence'] = 'low'
-        quality_metrics['issues'].append('Answer contains insufficient information indicators')
-        quality_metrics['recommendations'].append('Consider using no_info_response')
-    
-    # Check chunk relevance scores
-    if chunks:
-        avg_relevance = sum(chunk.get('relevance_score', 0.0) for chunk in chunks) / len(chunks)
-        if avg_relevance < 0.5:
-            quality_metrics['confidence'] = 'low'
-            quality_metrics['issues'].append(f'Low average relevance score: {avg_relevance:.2f}')
-            quality_metrics['recommendations'].append('Review relevance thresholds')
-    
-    # Check if answer matches expected format
-    if output_format and not any(keyword in answer_lower for keyword in output_format.lower().split()):
-        quality_metrics['confidence'] = 'medium'
-        quality_metrics['issues'].append('Answer may not match expected output format')
-    
-    return quality_metrics
-
-def get_relevance_summary(chunks: List[Dict[str, Any]]) -> dict:
-    """
-    Get a summary of relevance scores for a list of chunks.
-    
-    Args:
-        chunks (List[Dict[str, Any]]): List of chunks with relevance information.
-        
-    Returns:
-        dict: Summary statistics of relevance scores.
-    """
-    if not chunks:
-        return {"total_chunks": 0, "relevant_chunks": 0, "avg_score": 0.0}
-    
-    relevant_chunks = [c for c in chunks if c.get('relevance', {}).get('relevance')]
-    scores = [c.get('relevance_score', 0.0) for c in relevant_chunks]
-    
-    return {
-        "total_chunks": len(chunks),
-        "relevant_chunks": len(relevant_chunks),
-        "avg_score": sum(scores) / len(scores) if scores else 0.0,
-        "min_score": min(scores) if scores else 0.0,
-        "max_score": max(scores) if scores else 0.0,
-        "score_distribution": {
-            "high": len([s for s in scores if s >= 0.7]),
-            "medium": len([s for s in scores if 0.4 <= s < 0.7]),
-            "low": len([s for s in scores if s < 0.4])
-        }
-    }
-
 def chunked(lst: List[Any], batch_size: int) -> List[List[Any]]:
     """
-    Split a list into smaller sublists (batches) of a given size.
+    Split a list into chunks of specified size.
 
     Args:
-        lst (List[Any]): The list to be split.
-        batch_size (int): Maximum size of each sublist.
+        lst (List[Any]): The list to split.
+        batch_size (int): The size of each chunk.
 
     Returns:
-        List[List[Any]]: List of sublists each with a length up to batch_size.
+        List[List[Any]]: List of chunks.
     """
     return [lst[i:i + batch_size] for i in range(0, len(lst), batch_size)]
 
@@ -630,27 +771,28 @@ async def process_batches_async(
         desc: str = "Processing batches"
 ) -> List[Any]:
     """
-    Process text chunks in asynchronous batches using the provided processing function.
-
-    This function divides the full list of chunks into smaller batches and processes
-    each batch concurrently using the specified asynchronous function. A tqdm progress
-    bar is displayed to indicate progress over batches.
+    Process chunks in batches asynchronously with progress tracking.
 
     Args:
-        question (str): The question used in the processing steps.
-        chunks (List[Dict[str, Any]]): List of text chunks to be processed.
-        batch_size (int): Number of chunks to process concurrently in each batch.
-        process_func (Callable): An asynchronous function that processes a batch of chunks.
-        desc (str, optional): Description for the progress bar. Defaults to "Processing batches".
+        question (str): The question being processed.
+        chunks (List[Dict[str, Any]]): List of chunks to process.
+        batch_size (int): Size of each batch.
+        process_func (Callable): Function to process each batch.
+        desc (str): Description for the progress bar.
 
     Returns:
-        List[Any]: Aggregated results from all batches.
+        List[Any]: Results from processing all batches.
     """
-    results: List[Any] = []
+    if not chunks:
+        return []
+
     batches = chunked(chunks, batch_size)
-    for batch in tqdm(batches, desc=desc, unit="batch"):
+    results = []
+
+    for batch in tqdm(batches, desc=desc):
         batch_results = await process_func(question, batch)
         results.extend(batch_results)
+
     return results
 
 
@@ -672,22 +814,47 @@ async def ask_json(question: str = None, json_path: str=None, batch_size=256) ->
     if question is None:
         question: str = "What is the main topic of the paper?"
     if json_path is None:
-        json_path: str = "papers/001/pages/main_p01-02.pdf.json"
+        # Try to get default path from config
+        try:
+            import sys
+            sys.path.append('..')
+            from config import get_papers_dir
+            default_papers_dir = get_papers_dir()
+            json_path = os.path.join(default_papers_dir, "001", "pages", "merged_v2.json")
+        except ImportError:
+            # Fallback to relative path
+            json_path: str = "papers/001/pages/merged_v2.json"
 
     # Load JSON data from file.
     json_obj: Dict[str, Any] = load_json_file(json_path)
-    chunks: List[Dict[str, Any]] = json_obj.get('data', {}).get('chunks', [])
+    original_chunks: List[Dict[str, Any]] = json_obj.get('data', {}).get('chunks', [])
     BATCH_SIZE: int = batch_size
+    
+    # Create a fresh copy of chunks for each question to avoid state persistence
+    # This prevents chunks from being modified by previous questions
+    chunks = [chunk.copy() for chunk in original_chunks]
+    logger.info(f"Using {len(chunks)} fresh chunks from merged_v2.json (deduplication handled in PDF processing)")
+    
+    # DEBUG: Check first few chunks
+    logger.info(f"DEBUG: First chunk keys: {list(chunks[0].keys()) if chunks else 'No chunks'}")
+    logger.info(f"DEBUG: Sample chunk text: {chunks[0].get('text', '')[:100] if chunks else 'No chunks'}...")
 
     # Step 1: Get question-specific configuration
     question_config = get_question_config(question)
     logger.info(f"Question config: {question_config}")
     
     # Step 2: Filter out irrelevant chunks with question-specific settings.
-    relevant_chunks: List[Dict[str, Any]] = await process_batches_async(
-        question, chunks, BATCH_SIZE, 
-        lambda q, c: filter_all_chunks(q, c, question_config['max_chunks'], question_config['min_score']), 
-        desc="Filtering chunks"
+    # Use parallel processing with optimized batch sizes
+    relevance_batch_size = min(DEFAULT_RELEVANCE_BATCH_SIZE, len(chunks), MAX_CONCURRENT_REQUESTS)
+    
+    # Step 2: Filter out irrelevant chunks with question-specific settings.
+    # Use parallel processing with optimized batch sizes
+    relevance_batch_size = min(DEFAULT_RELEVANCE_BATCH_SIZE, len(chunks), MAX_CONCURRENT_REQUESTS)
+    relevant_chunks: List[Dict[str, Any]] = await filter_all_chunks(
+        question, chunks, 
+        question_config['max_chunks'], 
+        question_config['min_score'],
+        batch_size=relevance_batch_size
     )
 
     if len(relevant_chunks) == 0:
@@ -695,31 +862,33 @@ async def ask_json(question: str = None, json_path: str=None, batch_size=256) ->
         return {
             "answer": question_config.get('no_info_response', 'Information not found in the provided text.'),
             "chunk_ids": [],
-            "reason": f"No relevant chunks found for the question. Min score threshold: {question_config['min_score']}",
+            "reason": "No relevant chunks found for the question.",
             "relevance_info": {
                 "total_chunks_processed": len(chunks),
                 "relevant_chunks_found": 0,
                 "question_config": question_config,
-                "chunk_scores": []
+                "selected_chunks": []
             },
             "question_metadata": get_question_metadata(question),
             "quality_assessment": {
                 "confidence": "high",
                 "issues": ["No relevant chunks found"],
-                "recommendations": ["Threshold may be too high"]
+                "recommendations": ["Review question formulation or chunk selection criteria"]
             }
         }
     
-    # Log relevance scores for debugging
+    # Log selected chunks for debugging
     logger.info(f"Found {len(relevant_chunks)} relevant chunks:")
     for i, chunk in enumerate(relevant_chunks):
         chunk_id = chunk.get('chunk_id', 'N/A')
-        score = chunk.get('relevance_score', 0.0)
-        logger.info(f"  Chunk {i+1}: ID {chunk_id}, Score {score:.2f}")
+        logger.info(f"  Chunk {i+1}: ID {chunk_id}")
 
     # Step 2: Query each relevant chunk for its answer.
-    answered_chunks: List[Dict[str, Any]] = await process_batches_async(
-        question, relevant_chunks, BATCH_SIZE, query_all_chunks, desc="Querying chunks"
+    # Use parallel processing with optimized batch sizes for answer generation
+    answer_batch_size = min(DEFAULT_ANSWER_BATCH_SIZE, len(relevant_chunks), MAX_CONCURRENT_REQUESTS)
+    answered_chunks: List[Dict[str, Any]] = await query_all_chunks(
+        question, relevant_chunks, 
+        batch_size=answer_batch_size
     )
     # Step 3: Reflect on all collected answers to produce the final answer.
     final_result: Any = await reflect_answers(question, answered_chunks)
@@ -768,11 +937,10 @@ async def ask_json(question: str = None, json_path: str=None, batch_size=256) ->
             "total_chunks_processed": len(chunks),
             "relevant_chunks_found": len(relevant_chunks),
             "question_config": question_config,
-            "chunk_scores": [
+            "selected_chunks": [
                 {
                     "chunk_id": chunk.get('chunk_id', 'N/A'),
-                    "relevance_score": chunk.get('relevance_score', 0.0),
-                    "reason": chunk.get('relevance', {}).get('reason', 'N/A')
+                    "text_preview": chunk.get('text', '')[:200] + "..." if len(chunk.get('text', '')) > 200 else chunk.get('text', '')
                 }
                 for chunk in relevant_chunks
             ]
@@ -783,6 +951,7 @@ async def ask_json(question: str = None, json_path: str=None, batch_size=256) ->
     
     pprint(enhanced_result)
     return enhanced_result
+
 
 # Entry point when running as a script.
 if __name__ == "__main__":

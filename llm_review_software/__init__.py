@@ -3,7 +3,7 @@
 
 from .beegui import MainWindow
 from .annotator import annotate_pdf
-from .merger import merge_json_in_the_folder
+from ..process_pdfs.merger import merge_json_in_the_folder
 
 __all__ = [
     'MainWindow',
