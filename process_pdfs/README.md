@@ -1,183 +1,680 @@
 # PDF Processing Pipeline
 
-This directory contains tools for processing research papers from PDF format into structured JSON data suitable for LLM analysis. The pipeline handles splitting, extraction, merging, and deduplication of text chunks.
+This folder contains scripts for converting PDF scientific papers into structured JSON format suitable for LLM-based information extraction.
 
-## Directory Structure
+## Overview
 
-Papers should be organized as follows:
+The PDF processing pipeline converts raw PDF papers into structured JSON chunks through four main steps:
 
-```
-Data directory (set in .env)
-├── 001/                    # Paper folder (paperID as name)
-│   ├── 001_main.pdf       # Main PDF file
-│   └── pages/             # Generated during processing
-│       ├── 001_main_p1-2.pdf
-│       ├── 001_main_p3-4.pdf
-│       ├── main_001_main_p1-2.pdf.json
-│       ├── main_001_main_p3-4.pdf.json
-│       ├── merged_v2.json
-│       └── merged_v2_deduplicated.json
-├── 002/
-│   └── ...
-```
+1. **Split PDFs** - Break papers into overlapping 2-page segments
+2. **Vision API Processing** - Extract text and structure using Landing AI's Vision Agentic API
+3. **Merge JSON Files** - Combine individual page JSON files into a single document
+4. **Deduplicate Chunks** - Remove duplicate text chunks from overlapping pages
 
-## Processing Workflow
+---
 
-The pipeline consists of 4 main steps that should be executed in order:
+## Quick Start
 
-### 1. `split_pdf.py` - PDF Splitting
+### Prerequisites
 
-Splits large PDFs into overlapping 2-page segments to work around Vision Agent's page limitations.
-
-**Purpose:**
-- Creates overlapping 2-page PDF segments from the main PDF
-- Enables processing of large documents that would otherwise exceed Vision Agent limits
-- Maintains content continuity through page overlaps
-
-**Usage:**
+1. **Environment Setup**:
 ```bash
-# Process all papers in default data directory
-python split_pdf.py
-
-# Process papers in specific directory
-python split_pdf.py --papers-dir /path/to/papers
-
-# Process starting from specific paper folder
-python split_pdf.py --start-folder 005
+# Activate your virtual environment
+source ../venv/bin/activate  # On Mac/Linux
+# Or: ..\venv\Scripts\activate  # On Windows
 ```
 
-**Output:**
-- Creates `paperID_main_p1-2.pdf`, `paperID_main_p3-4.pdf`, etc. in each paper's subdirectory
+2. **API Keys**: Configure your API keys in the `.env` file:
+```bash
+# Copy the example environment file
+cp ../env.example ../.env
 
-### 2. `va_process_papers.py` - Vision Agent Processing
+# Edit the .env file and add your API key
+# LANDING_AI_API_KEY=your_landing_ai_api_key_here
+```
 
-Converts PDF segments into structured JSON using Vision Agentic Document Analysis.
+The `.env` file is located in the project root directory and is hidden from git for security.
 
-**Purpose:**
-- Extracts structured text chunks from PDF segments
-- Identifies chunk types (headers, body text, tables, etc.)
-- Provides grounding information (page numbers, bounding boxes)
-- Handles API communication with Vision Agent service
+3. **Input Data Format**: Your papers must be organized as follows:
+```
+papers/
+├── 001/
+│   └── 001_main.pdf
+├── 002/
+│   └── 002_main.pdf
+├── 003/
+│   └── 003_main.pdf
+...
+```
 
-**Usage:**
+Each paper should have:
+- A folder with a 3-digit numeric name (e.g., `001`, `002`, `003`)
+- A PDF file named `{folder_number}_main.pdf` inside that folder
+
+---
+
+### Basic Usage - Complete Pipeline
+
+Run all steps for all papers in directory:
+```bash
+python process_all.py
+```
+
+Run all steps for papers 1-10:
+```bash
+python process_all.py --start 1 --end 10
+```
+
+Run with a custom directory:
+```bash
+python process_all.py --dir /path/to/papers --start 1 --end 10
+```
+
+**Merge-only mode** (skip expensive PDF splitting and API processing):
+```bash
+# Process all papers - only merge and deduplicate
+python process_all.py --merge-only
+
+# Process specific papers - only merge and deduplicate
+python process_all.py --merge-only --start 1 --end 10
+```
+
+---
+
+## Core Files
+
+### 1. `process_all.py` - **Main Pipeline Runner**
+
+**Purpose**: Orchestrates all four steps of the PDF processing pipeline in sequence.
+
+**Usage**:
+```bash
+# Process all papers (all steps)
+python process_all.py
+
+# Process papers 1-10 (all steps)
+python process_all.py --start 1 --end 10
+
+# Process papers 50-100
+python process_all.py --start 50 --end 100
+
+# Merge-only mode (skip expensive PDF splitting and API processing)
+python process_all.py --merge-only
+
+# Merge-only for specific papers
+python process_all.py --merge-only --start 1 --end 10
+
+# Filter out marginalia chunks during merging
+python process_all.py --start 1 --end 10 --filter-chunk-type marginalia
+```
+
+**Command-line options**:
+- `--start N`: First paper number to process (optional; defaults to first paper in directory)
+- `--end N`: Last paper number to process (optional; defaults to last paper in directory)
+- `--dir PATH`: Custom papers directory (default: from config/env)
+- `--merge-only`: Only run merge and deduplication steps (skip expensive PDF splitting and API processing)
+- `--skip-split`: Skip PDF splitting step
+- `--skip-api`: Skip Vision API processing step
+- `--skip-merge`: Skip JSON merging step
+- `--skip-deduplicate`: Skip chunk deduplication step
+- `--filter-chunk-type TYPE [TYPE ...]`: Filter out specific chunk types (e.g., marginalia, figure)
+
+**Output**: Creates the following files for each paper:
+- `papers/XXX/pages/main_p01-02.pdf`, `main_p02-03.pdf`, etc. (split PDFs)
+- `papers/XXX/pages/main_p01-02.pdf.json`, etc. (API responses)
+- `papers/XXX/pages/merged_v2.json` (final merged and deduplicated file)
+
+---
+
+### 2. `split_pdf.py` - PDF Splitter
+
+**Purpose**: Splits multi-page PDFs into overlapping 2-page segments to help the Vision API maintain context across page boundaries.
+
+**Why overlapping pages?**: Scientific papers often have content that spans across pages (tables, paragraphs). Overlapping ensures we don't lose information at page boundaries.
+
+**Usage as standalone**:
+```bash
+python split_pdf.py /path/to/papers
+```
+
+**How it works**:
+1. Finds all `XXX_main.pdf` files in paper folders
+2. Creates a `pages/` subdirectory in each paper folder
+3. Generates overlapping 2-page PDFs:
+   - `main_p01-02.pdf` (pages 1-2)
+   - `main_p02-03.pdf` (pages 2-3)
+   - `main_p03-04.pdf` (pages 3-4)
+   - etc.
+
+**Example**:
+A 10-page paper will generate 9 split PDFs with overlapping pages.
+
+---
+
+### 3. `va_process_papers.py` - Vision API Processor
+
+**Purpose**: Processes each split PDF through Landing AI's Vision Agentic Document Analysis API to extract text and structure.
+
+**Usage as standalone**:
 ```bash
 # Process all papers
-python va_process_papers.py
+python va_process_papers.py --dir data/papers
 
-# Process papers in specific directory
-python va_process_papers.py --papers-dir /path/to/papers
-
-# Resume processing from specific folder
-python va_process_papers.py --start-folder 010
+# Start from a specific paper (useful for resuming)
+python va_process_papers.py --dir data/papers --start 059
 ```
 
-**Requirements:**
-- Vision Agent API endpoint configured in environment
-- API key set in `.env` file
+**Command-line options**:
+- `--dir PATH`: Papers directory (default: data/papers)
+- `--start XXX`: Starting folder number (e.g., 059)
 
-**Output:**
-- Creates `main_paperID_main_p1-2.pdf.json`, `main_paperID_main_p3-4.pdf.json`, etc.
-- Each JSON contains structured chunks with metadata
+**How it works**:
+1. Finds all split PDF files in `papers/XXX/pages/`
+2. Sends each PDF to the Vision Agentic API
+3. Saves the JSON response as `{pdf_filename}.json`
+4. Skips files that already have JSON outputs (resume-friendly)
+5. Logs all processing activity with timestamps
 
-### 3. Deduplication - `deduplicate_chunks.py` vs `batch_deduplicate.py`
-
-Two options for removing duplicate text chunks:
-
-#### `deduplicate_chunks.py` - Core Module
-- **Purpose**: Core deduplication functions and single-file processing
-- **Use for**: Processing individual merged files or custom workflows
-- **Contains**: `deduplicate_chunks()`, `analyze_chunk_uniqueness()`, `process_merged_json_file()`
-
-#### `batch_deduplicate.py` - Batch Processing Script
-- **Purpose**: Automated batch processing of all papers
-- **Use for**: Processing entire datasets efficiently
-- **Features**: Progress tracking, error handling, dry-run mode, paper range selection
-
-**Recommended Usage:**
-```bash
-# Batch process all papers (recommended)
-python batch_deduplicate.py
-
-# Dry run to analyze without changes
-python batch_deduplicate.py --dry-run
-
-# Process specific paper range
-python batch_deduplicate.py --start-paper 1 --end-paper 50
+**Output**: Creates JSON files with this structure:
+```json
+{
+  "data": {
+    "chunks": [
+      {
+        "chunk_id": "unique_id",
+        "text": "Extracted text content...",
+        "chunk_type": "paragraph",
+        "grounding": [
+          {
+            "page": 0,
+            "bbox": [x1, y1, x2, y2]
+          }
+        ],
+        "metadata": {...}
+      }
+    ]
+  }
+}
 ```
 
-**What it does:**
-- Groups chunks by identical text content
-- Preserves all chunk IDs from duplicates in a `chunk_ids` list
-- Keeps the chunk with the most complete metadata
-- Provides deduplication statistics and reports
+**Important**: This step requires a valid `LANDING_AI_API_KEY` in your `.env` file.
 
-**Output:**
-- Creates `merged_v2_deduplicated.json` files
-- Generates deduplication reports and statistics
+---
 
-### 4. `merger.py` - JSON Merging
+### 4. `merger.py` - JSON Merger
 
-Combines individual page JSON files into a single merged file with proper page numbering.
+**Purpose**: Combines individual page JSON files into a single `merged_v2.json` file per paper, handling overlapping pages correctly.
 
-**Purpose:**
-- Merges all page-level JSON files into one consolidated file
-- Handles page number adjustments for overlapping segments
-- Provides optional filtering of unwanted chunk types
-- Maintains proper grounding information across merged pages
-
-**Usage:**
+**Usage as standalone**:
 ```bash
-# Basic merge (no filtering)
+# Merge all papers
 python merger.py --basepath /path/to/data
 
-# Filter out headers and footers
-python merger.py --basepath /path/to/data --filter-chunk-type header footer
+# Filter out marginalia chunks
+python merger.py --basepath /path/to/data --filter-chunk-type marginalia
 
 # Filter multiple chunk types
-python merger.py --basepath /path/to/data --filter-chunk-type header footer marginalia page_number
+python merger.py --basepath /path/to/data --filter-chunk-type marginalia figure
 ```
 
-**Filtering Options:**
-- `header` - Page headers
-- `footer` - Page footers
-- `marginalia` - Margin notes/annotations
-- `page_number` - Page numbers
-- `watermark` - Watermarks
-- Custom chunk types as identified by Vision Agent
+**Command-line options**:
+- `--basepath PATH`: Base path containing the `papers/` folder
+- `--filter-chunk-type TYPE [TYPE ...]`: Chunk types to exclude from output
 
-**Output:**
-- Creates `merged_v2.json` in each paper's `pages/` directory
-- Provides page and chunk count statistics
+**How it works**:
+1. Finds all `main_*.json` files in `papers/XXX/pages/`
+2. Adjusts page numbers to account for overlapping pages
+3. Merges all chunks into a single JSON structure
+4. Optionally filters out specified chunk types
+5. Saves as `merged_v2.json`
 
-## Complete Pipeline Execution
+**Page number adjustment**: Since pages overlap, the merger maps overlapping pages to the same global page number to avoid duplication.
 
-To process papers from start to finish:
+**Example**:
+- File 1 (pages 1-2): Global pages 1-2
+- File 2 (pages 2-3): Page 2 maps to global page 2, page 3 becomes global page 3
+- File 3 (pages 3-4): Page 3 maps to global page 3, page 4 becomes global page 4
+
+**Output format**:
+```json
+{
+  "data": {
+    "chunks": [
+      {
+        "chunk_id": "unique_id",
+        "text": "...",
+        "chunk_type": "paragraph",
+        "grounding": [{"page": 0, "bbox": [...]}],
+        "metadata": {...}
+      }
+    ]
+  }
+}
+```
+
+---
+
+### 5. `deduplicate_chunks.py` - Chunk Deduplication Module
+
+**Purpose**: Provides functions to identify and remove duplicate text chunks that result from overlapping pages.
+
+**Usage as a module**:
+```python
+from deduplicate_chunks import analyze_chunk_uniqueness, deduplicate_chunks
+
+# Analyze duplication
+analysis = analyze_chunk_uniqueness(chunks)
+print(f"Found {analysis['duplicate_chunks']} duplicates")
+
+# Deduplicate
+deduplicated_chunks = deduplicate_chunks(chunks)
+```
+
+**Key functions**:
+- `analyze_chunk_uniqueness(chunks)` - Returns statistics about duplicates
+- `deduplicate_chunks(chunks)` - Removes duplicates while preserving all chunk IDs
+- `get_duplicate_summary(chunks)` - Human-readable summary of duplicates
+- `process_merged_json_file(path)` - Process a single merged JSON file
+
+**How deduplication works**:
+1. Groups chunks by text content
+2. For duplicate groups, keeps one chunk but preserves all chunk IDs
+3. Adds metadata about the deduplication process
+
+**Duplicate handling**: When duplicates are found, the deduplicated chunk includes:
+- `chunk_id`: Primary chunk ID (first occurrence)
+- `chunk_ids`: List of all chunk IDs with the same text
+- `original_chunk_id`: Reference to the original ID
+
+---
+
+### 6. `batch_deduplicate.py` - Batch Deduplication Runner
+
+**Purpose**: Processes all `merged_v2.json` files in a directory to remove duplicates.
+
+**Usage as standalone**:
+```bash
+# Deduplicate all papers
+python batch_deduplicate.py
+
+# Deduplicate papers in a range
+python batch_deduplicate.py --start-paper 1 --end-paper 10
+
+# Dry run (analyze without modifying files)
+python batch_deduplicate.py --dry-run
+
+# Custom directory
+python batch_deduplicate.py --base-dir /path/to/papers
+
+# Verbose output
+python batch_deduplicate.py --verbose
+```
+
+**Command-line options**:
+- `--base-dir PATH`: Base directory containing paper folders
+- `--start-paper N`: First paper number to process
+- `--end-paper N`: Last paper number to process
+- `--dry-run`: Analyze files without making changes
+- `--output FILE`: Save results summary to file
+- `--verbose`, `-v`: Enable verbose logging
+
+**How it works**:
+1. Finds all paper folders with `merged_v2.json` files
+2. Analyzes each file for duplicate chunks
+3. Deduplicates and overwrites the file (unless `--dry-run`)
+4. Generates a summary report
+
+**Output**: Creates a summary JSON file with:
+```json
+{
+  "status": "completed",
+  "total_papers": 10,
+  "processed_papers": 10,
+  "total_duplicates_removed": 145,
+  "results": [...]
+}
+```
+
+---
+
+## Individual Script Usage
+
+### Running Steps Separately
+
+If you need to run individual steps (useful for debugging or resuming):
+
+#### Step 1: Split PDFs
+```bash
+python split_pdf.py /path/to/papers
+```
+
+#### Step 2: Process with Vision API
+```bash
+python va_process_papers.py --dir /path/to/papers
+```
+
+#### Step 3: Merge JSON files
+```bash
+python merger.py --basepath /path/to/data
+```
+
+#### Step 4: Deduplicate chunks
+```bash
+python batch_deduplicate.py --base-dir /path/to/papers
+```
+
+---
+
+## Input Data Format
+
+### Required Directory Structure
+
+```
+papers/
+├── 001/
+│   └── 001_main.pdf
+├── 002/
+│   └── 002_main.pdf
+├── 003/
+│   └── 003_main.pdf
+...
+```
+
+**Requirements**:
+- Each paper must be in a folder with a 3-digit numeric name
+- PDF file must be named `{folder_number}_main.pdf`
+- PDFs should be complete scientific papers (not split or partial)
+
+### PDF Requirements
+
+- **Format**: Valid PDF files
+- **Content**: Text-based PDFs work best (scanned PDFs may have lower quality)
+- **Size**: No strict limits, but very large files may take longer to process
+- **Pages**: Multi-page documents are fully supported
+
+---
+
+## Output Data Format
+
+### Final Output: `merged_v2.json`
+
+The pipeline produces a `merged_v2.json` file for each paper with the following structure:
+
+```json
+{
+  "data": {
+    "chunks": [
+      {
+        "chunk_id": "unique_chunk_identifier",
+        "text": "The extracted text content from the PDF...",
+        "chunk_type": "paragraph",
+        "grounding": [
+          {
+            "page": 0,
+            "bbox": [x1, y1, x2, y2]
+          }
+        ],
+        "chunk_ids": ["id1", "id2"],
+        "metadata": {
+          "confidence": 0.95,
+          "font_size": 12,
+          ...
+        }
+      }
+    ]
+  },
+  "deduplication_info": {
+    "original_chunks": 500,
+    "unique_chunks": 450,
+    "duplicates_removed": 50,
+    "duplication_rate": 10.0,
+    "duplicate_groups": 25
+  }
+}
+```
+
+### Field Descriptions:
+
+- **chunk_id**: Unique identifier for this chunk
+- **text**: Extracted text content
+- **chunk_type**: Type of content (paragraph, heading, table, figure, marginalia, etc.)
+- **grounding**: Location information
+  - **page**: Page number (0-indexed)
+  - **bbox**: Bounding box coordinates [x1, y1, x2, y2]
+- **chunk_ids**: List of all chunk IDs with identical text (after deduplication)
+- **metadata**: Additional information from the Vision API
+- **deduplication_info**: Statistics about the deduplication process
+
+This format is designed to be consumed by the LLM pipeline in `../metabeeai_llm/`.
+
+---
+
+## Understanding the Process Flow
+
+### Complete Pipeline Flow
+
+```
+Raw PDF → Split PDF → Vision API → Individual JSONs → Merged JSON → Deduplicated JSON
+```
+
+**Detailed steps**:
+
+1. **Input**: `001_main.pdf` (10 pages)
+
+2. **After Splitting**:
+   ```
+   pages/main_p01-02.pdf
+   pages/main_p02-03.pdf
+   pages/main_p03-04.pdf
+   ...
+   pages/main_p09-10.pdf
+   ```
+
+3. **After API Processing**:
+   ```
+   pages/main_p01-02.pdf.json
+   pages/main_p02-03.pdf.json
+   ...
+   pages/main_p09-10.pdf.json
+   ```
+
+4. **After Merging**:
+   ```
+   pages/merged_v2.json (contains all chunks with adjusted page numbers)
+   ```
+
+5. **After Deduplication**:
+   ```
+   pages/merged_v2.json (duplicates removed, chunk IDs preserved)
+   ```
+
+---
+
+## Troubleshooting
+
+### "LANDING_AI_API_KEY not found"
+- **Cause**: API key not configured in `.env` file
+- **Fix**: 
+  ```bash
+  cp ../env.example ../.env
+  # Edit .env and add your LANDING_AI_API_KEY
+  ```
+
+### "PDF file not found"
+- **Cause**: PDF file not named correctly or in wrong location
+- **Fix**: Ensure PDFs are named `{folder_number}_main.pdf` and in the correct folder
+
+### "No merged_v2.json files found"
+- **Cause**: Merger step hasn't been run yet or failed
+- **Fix**: Run `python merger.py --basepath /path/to/data` first
+
+### API processing is slow
+- **Cause**: Vision API processes each page individually
+- **Solution**: This is normal. Processing time depends on:
+  - Number of papers
+  - Pages per paper
+  - API response time
+  - The script will automatically resume if interrupted
+
+### Duplicate chunks remain after deduplication
+- **Cause**: Chunks might have slight text differences
+- **Fix**: Check the deduplication_info in merged_v2.json for statistics
+- **Note**: Only exact text matches are considered duplicates
+
+### Out of API quota
+- **Cause**: Too many API calls
+- **Fix**: 
+  - The script automatically skips already-processed files
+  - Use `--start` parameter to resume from a specific paper
+  - Contact Landing AI to increase your quota
+
+---
+
+## Advanced Usage
+
+### Merge-Only Mode (Cost-Effective)
+
+If you've already run the expensive PDF splitting and Vision API processing steps, you can use `--merge-only` to only run the merge and deduplication steps:
 
 ```bash
-# 1. Split PDFs into 2-page segments
-python split_pdf.py
+# Process all papers - merge and deduplicate only
+python process_all.py --merge-only
 
-# 2. Extract structured data with Vision Agent
-python va_process_papers.py
-
-# 3. Merge JSON files (with optional filtering)
-python merger.py --basepath /path/to/data --filter-chunk-type header footer
-
-# 4. Remove duplicate chunks
-python batch_deduplicate.py
+# Process specific papers - merge and deduplicate only
+python process_all.py --merge-only --start 1 --end 10
 ```
 
-## Configuration
+This is useful when:
+- You've already processed PDFs through the Vision API
+- You want to re-run merging with different filter options
+- You want to re-deduplicate after manual edits to JSON files
+- You're testing the merge/deduplication logic without API costs
 
-- **Data Directory**: Set `METABEEAI_DATA_DIR` in `.env` file
-- **Vision Agent**: Configure API endpoint and key in `.env`
-- **Logging**: Most scripts support verbose logging for debugging
+**Note**: Merge-only mode validates that JSON files exist (not PDFs) and automatically skips the split and API steps.
 
-## Output Files
+### Processing All Papers Automatically
 
-- **Split PDFs**: `paperID_main_p1-2.pdf`, etc.
-- **Raw JSON**: `main_paperID_main_p1-2.pdf.json`, etc.
-- **Merged JSON**: `merged_v2.json`
-- **Final Output**: `merged_v2_deduplicated.json`
+If you don't specify `--start` and `--end`, the pipeline will automatically detect and process all numeric folders in your papers directory:
 
-See `README_deduplication.md` for detailed information about the deduplication system.
+```bash
+# Process all papers found in the directory
+python process_all.py
+
+# Process all papers with merge-only
+python process_all.py --merge-only
+```
+
+The script will:
+1. Scan the papers directory for numeric folders (001, 002, 003, etc.)
+2. Sort them numerically
+3. Process from the first to the last paper found
+
+### Filtering Chunk Types
+
+You can filter out specific chunk types during merging:
+
+```bash
+# Remove marginalia (page numbers, headers, footers)
+python process_all.py --start 1 --end 10 --filter-chunk-type marginalia
+
+# Remove multiple types
+python process_all.py --start 1 --end 10 --filter-chunk-type marginalia figure
+
+# When running merger separately
+python merger.py --basepath /path/to/data --filter-chunk-type marginalia
+```
+
+Common chunk types to filter:
+- `marginalia` - Headers, footers, page numbers
+- `figure` - Figure captions (if you only want main text)
+- `table` - Table content (if you only want prose)
+
+### Resuming Processing
+
+If processing is interrupted, the pipeline is resume-friendly:
+
+```bash
+# API processing automatically skips existing JSON files
+python va_process_papers.py --dir /path/to/papers --start 059
+
+# Deduplication can be re-run on specific papers
+python batch_deduplicate.py --start-paper 50 --end-paper 100
+```
+
+### Dry Run Mode
+
+Test the pipeline without making changes:
+
+```bash
+# Analyze duplication without modifying files
+python batch_deduplicate.py --dry-run
+
+# See what would happen
+python batch_deduplicate.py --dry-run --verbose
+```
+
+---
+
+## Performance Tips
+
+1. **Parallel Processing**: The Vision API processes one file at a time. For faster processing, consider running multiple instances on different paper ranges:
+   ```bash
+   # Terminal 1
+   python process_all.py --start 1 --end 50
+   
+   # Terminal 2
+   python process_all.py --start 51 --end 100
+   ```
+
+2. **Resume from Failures**: If processing fails partway through, use `--skip-split` and `--start` to resume:
+   ```bash
+   python process_all.py --start 75 --end 100 --skip-split
+   ```
+
+3. **Monitor Progress**: Check log files created in the papers directory:
+   ```bash
+   tail -f papers/processing_log_*.txt
+   ```
+
+---
+
+## Dependencies
+
+Core dependencies (install via `pip install -r ../requirements.txt`):
+- `PyPDF2` - PDF manipulation
+- `requests` - API calls
+- `python-dotenv` - Environment variable management
+- `termcolor` - Colored console output
+- `pathlib` - Path operations
+
+---
+
+## Next Steps
+
+After processing your PDFs:
+
+1. Verify output files:
+   ```bash
+   ls papers/001/pages/merged_v2.json
+   ```
+
+2. Check deduplication statistics in the JSON file
+
+3. Proceed to the LLM pipeline:
+   ```bash
+   cd ../metabeeai_llm
+   python llm_pipeline.py --start 1 --end 10
+   ```
+
+---
+
+## Related Documentation
+
+- **LLM Pipeline**: See `../metabeeai_llm/README.md` for extracting information from processed papers
+- **Data Analysis**: See `../query_database/` for analyzing extracted data
+- **Configuration**: See `../config.py` for centralized configuration
+
+---
+
+**Last Updated**: October 2025
+

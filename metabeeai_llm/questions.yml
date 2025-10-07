@@ -2,7 +2,7 @@ QUESTIONS:
   bee_species:
     question: "What bee species were experimentally tested in this study?"
     instructions:
-      - "Extract species names only from methodology or results sections."
+      - "Extract species names only from title, abstract, methodology or results sections."
       - "Provide full scientific names (genus, species, subspecies) exactly as written in the text."
       - "Include common names only if no scientific name is provided."
       - "List each species ONLY ONCE, using the MOST SPECIFIC name available in the reference text."

@@ -1,565 +1,928 @@
-# MetaBeeAI LLM Project
+# MetaBeeAI Pipeline
 
-A project for processing and analyzing scientific papers about bee populations using Large Language Models and Vision AI.
+A comprehensive pipeline for extracting, analyzing, and benchmarking structured information from scientific literature using Large Language Models and Vision AI.
 
-## Project Structure 
+## Overview
 
-```
-MetaBeeAI_LLM/
-├── process_pdfs/                    # Convert full text PDFs to structured JSON using LandingAI Vision Agentic Document Extraction
-│   ├── split_pdf.py                 # PDF splitting and processing utilities
-│   └── va_process_papers.py         # Vision AI pipeline for document analysis
-│
-├── metabeeai_llm/                   # Pipeline for using LLMs to obtain answers to specific questions from papers
-│   ├── __init__.py                  # Package initialization
-│   ├── llm_pipeline.py              # Main LLM processing pipeline
-│   ├── json_multistage_qa.py        # Multi-stage question-answering with LLMs
-│   ├── process_llm_output.py        # Process and structure LLM outputs
-│   ├── unique_chunk_id.py           # Ensure unique chunk IDs across documents
-│   ├── merger.py                    # Merge and combine processed data
-│   ├── synthesis.py                 # Data synthesis and summarization
-│   └── questions.yml                # Configuration file defining questions for LLM processing
-│
-├── llm_review_software/             # Combines answers with chunks and PDFs, provides GUI for reviewing LLM output
-│   ├── beegui.py                    # Main GUI application for reviewing and annotating
-│   ├── annotator.py                 # PDF annotation utilities
-│   ├── merger.py                    # Data merging and combination
-│   └── synthesis.py                 # Data synthesis and reporting
-│
-├── structured_datatable/             # Uses LLM answers to create condensed data tables (CSV/JSON)
-│   └── field_examples.yaml          # Configuration for field extraction examples
-│
-├── data/                            # Data directory containing processed papers
-│   └── papers/                      # Individual paper directories with processed data
-│
-├── metabeeai-frontend/              # Next.js frontend application
-│   └── src/                         # Frontend source code
-│
+The MetaBeeAI pipeline transforms PDF scientific papers into structured, analyzable data through five main stages:
 
-├── schema_config.yaml               # Schema configuration for data extraction
-├── requirements.txt                  # Python dependencies
-├── setup.py                         # Package installation configuration
-└── README.md                        # This file
-```
+1. **PDF Processing** - Convert PDFs to structured JSON chunks
+2. **LLM Question Answering** - Extract information using LLMs
+3. **Human Review** - Validate and annotate LLM outputs
+4. **Benchmarking** - Evaluate LLM performance against human reviewers
+5. **Data Analysis** - Analyze trends and relationships in extracted data
 
-## Component Overview
+---
 
-### 1. **process_pdfs**
-Converts full text PDFs to structured JSON using LandingAI Vision Agentic Document Extraction. This component:
-- Splits PDFs into manageable chunks
-- Uses Vision AI to extract text and structure from PDF pages
-- Outputs structured JSON for further processing
+## Prerequisites
 
-### 2. **metabeeai_llm**
-Core pipeline for using Large Language Models to obtain answers to specific questions from the papers. This component:
-- Processes the structured JSON from Vision AI
-- Uses LLMs to answer questions defined in `metabeeai_llm/questions.yml`
-- Outputs structured answers for each paper
-
-### 3. **llm_review_software**
-Combines the LLM answers with document chunks and PDFs, providing a GUI for reviewing LLM output and providing comments. This component:
-- Integrates all processed data (PDFs, chunks, LLM answers)
-- Provides interactive GUI for human review and annotation
-- Saves review outputs alongside original data for further processing
-
-### 4. **structured_datatable**
-Uses the LLM answers and further condenses them (with another LLM pipeline) to output a data table (CSV) or JSON structured output. This component:
-- Takes the reviewed LLM outputs
-- Applies additional LLM processing for data condensation
-- Outputs structured data tables in CSV or JSON format
-
-## Required Input Data
-
-Before using the MetaBeeAI pipeline, you need to prepare your dataset of papers. We recommend using **ASReview** for ML-assisted paper selection and scoring.
-
-### 1. **Paper Selection with ASReview**
-
-**ASReview** is a machine learning tool that helps you efficiently screen papers for systematic reviews:
-
-- **Input**: Upload abstracts and titles of candidate papers
-- **Process**: ASReview uses active learning to score papers based on your initial decisions
-- **Output**: Ranked list of papers with relevance scores
-- **Benefit**: Reduces manual screening time by 95% while maintaining quality
-
-**Installation and Setup:**
-```bash
-pip install asreview
-asreview lab
-```
-
-### 2. **Data Structure Requirements**
-
-After selecting papers with ASReview, organize your data as follows:
-
-```
-data/
-├── papers/                          # Main papers directory
-│   ├── 001/                        # Paper subfolder (unique number)
-│   │   ├── 001_main.pdf            # Full-text PDF (rename as needed)
-│   │   └── ...                     # Other paper files
-│   ├── 002/                        # Second paper
-│   │   ├── 002_main.pdf            # Full-text PDF
-│   │   └── ...                     # Other paper files
-│   └── ...                         # Additional papers
-└── included_papers.csv              # ASReview output with paper metadata
-```
-
-**Folder Naming Convention:**
-- Use **numbers** (001, 002, 003, ...)
-- Each number should be **unique** across all papers
-- Numbers should be **sequential** for easy organization
-
-**PDF Requirements:**
-- **One PDF per subfolder**
-- **Full-text PDFs** (not just abstracts)
-- **Rename PDFs** to match folder structure (e.g., `001_main.pdf`)
-- **High-quality scans** for better Vision AI processing
-
-### 3. **Paper Metadata CSV**
-
-ASReview exports a CSV file containing metadata for included papers. Place this file in the `data/` folder:
-
-**Required CSV Columns:**
-- **paper_id**: Must match the subfolder names (001, 002, 003, ...)
-- **title**: Paper title
-- **authors**: Author names
-- **journal**: Journal name
-- **year**: Publication year
-- **doi**: Digital Object Identifier (if available)
-- **abstract**: Paper abstract (if available)
-
-**Example CSV Structure:**
-```csv
-paper_id,title,authors,journal,year,doi,abstract
-001,"Effects of pesticides on bee populations","Smith et al.","Nature",2023,"10.1038/...","This study examines..."
-002,"Neonicotinoid impact on pollinators","Jones et al.","Science",2023,"10.1126/...","Research shows that..."
-```
-
-### 4. **Data Validation**
-
-Before running the pipeline, ensure:
-
-- [ ] **PDF files exist** in each numbered subfolder
-- [ ] **PDFs are readable** and contain full text
-- [ ] **CSV metadata** is in the `data/` folder
-- [ ] **Paper IDs match** between folders and CSV
-- [ ] **No duplicate numbers** across subfolders
-- [ ] **File permissions** allow reading by the pipeline
-
-**Quick Validation Command:**
-```bash
-# Check folder structure
-ls -la data/papers/
-
-# Verify PDF files exist
-find data/papers/ -name "*.pdf" -type f
-
-# Check CSV file
-ls -la data/included_papers.csv
-```
-
-## Configuration
-
-The MetaBeeAI pipeline uses environment variables to configure data directories and API keys. This allows you to customize the pipeline for your specific setup.
-
-### Environment Variables
-
-Create a `.env` file in the project root with the following variables:
+### 1. Environment Setup
 
 ```bash
-# Data Directory Configuration
-METABEEAI_DATA_DIR=/path/to/your/papers/directory
-
-# API Keys
-OPENAI_API_KEY=your_openai_api_key_here
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
-LANDING_AI_API_KEY=your_landing_ai_api_key_here
-```
-
-### Data Directory Configuration
-
-The `METABEEAI_DATA_DIR` environment variable controls where the pipeline looks for and saves data:
-
-- **If not set**: Defaults to `"data/papers"` relative to the project root
-- **If set**: Points to your custom papers directory
-
-**Example configurations:**
-```bash
-# macOS/Linux
-METABEEAI_DATA_DIR=/Users/username/Documents/research/papers
-
-# Windows
-METABEEAI_DATA_DIR=C:\Users\username\Documents\research\papers
-
-# Linux
-METABEEAI_DATA_DIR=/home/username/research/papers
-```
-
-**Directory Structure Expected:**
-```
-your_custom_papers_directory/
-├── papers/                          # Paper subfolders
-│   ├── 001/                        # Paper 001
-│   │   ├── 001_main.pdf            # Full-text PDF
-│   │   └── pages/                  # Processed pages
-│   ├── 002/                        # Paper 002
-│   │   ├── 002_main.pdf            # Full-text PDF
-│   │   └── pages/                  # Processed pages
-│   └── ...                         # Additional papers
-├── included_papers.csv              # Paper metadata
-├── logs/                           # Processing logs
-└── output/                         # Generated outputs
-```
-
-### Benefits of Environment Configuration
-
-1. **Flexibility**: Point to any directory on your system
-2. **Portability**: Easy to move between different machines
-3. **Multi-Project Support**: Use different directories for different projects
-4. **Clean Separation**: Keep data separate from code
-5. **Easy Sharing**: Share code without sharing data paths
-
-### Setup Instructions
-
-1. **Copy the example file:**
-   ```bash
-   cp env.example .env
-   ```
-
-2. **Edit `.env` with your paths:**
-   ```bash
-   # Edit the file with your preferred text editor
-   nano .env
-   # or
-   code .env
-   ```
-
-3. **Set your data directory:**
-   ```bash
-   METABEEAI_DATA_DIR=/path/to/your/papers
-   ```
-
-4. **Add your API keys:**
-   ```bash
-   OPENAI_API_KEY=sk-your-actual-key-here
-   ANTHROPIC_API_KEY=your-actual-key-here
-   LANDING_AI_API_KEY=your-actual-key-here
-   ```
-
-**Note**: The `.env` file is not tracked in git, so your API keys and custom paths remain private.
-
-## LLM Benchmarking and Dataset Generation
-
-The pipeline includes tools for generating test datasets and evaluating LLM outputs using DeepEval:
-
-### Data Merging and Dataset Generation
-- **Location**: `llm_benchmarking/merge-answers.py`
-- **Purpose**: Combines LLM answers with human reviewer answers for dataset creation
-- **Input Sources**:
-  - LLM answers: `papers/{paper_id}/answers.json`
-  - Reviewer answers: Either local `answers_extended.json` files or external reviewer databases
-- **Output**: Merged JSON files in `final_merged_data/` folder
-
-### Dataset Generation Workflow
-1. **Data Merging**: Combine LLM and reviewer answers using `merge_answers.py`
-2. **Test Dataset Creation**: Generate evaluation datasets using `test_dataset_generation.py`
-3. **Reviewer Comparison**: Create reviewer comparison datasets using `reviewer_dataset_generation.py`
-4. **DeepEval Assessment**: Evaluate datasets using various DeepEval metrics
-
-### Usage Examples
-```bash
-# Use local answers_extended.json files (default)
-python llm_benchmarking/merge-answers.py
-
-# Use external reviewer database
-python llm_benchmarking/merge-answers.py --reviewer-db /path/to/reviewers
-```
-
-### LLM Evaluation with DeepEval
-
-The pipeline includes comprehensive evaluation tools using DeepEval for assessing LLM performance:
-
-#### Test Dataset Generation
-- **Location**: `llm_benchmarking/test_dataset_generation.py`
-- **Purpose**: Generates test datasets using reviewer answers to various questions about bee research papers
-- **Features**:
-  - **Input**: Questions asked about bee research papers
-  - **Expected Output**: Human reviewer answers (gold standard)
-  - **Context**: Relevant text chunks from original papers
-  - **Metadata**: Paper ID, question type, reviewer, and quality rating
-  - **Output Formats**: Both JSON and CSV for flexibility
-  - **Output Location**: `llm_benchmarking/test-datasets/` folder
-
-#### Reviewer Comparison Dataset Generation
-- **Location**: `llm_benchmarking/reviewer_dataset_generation.py`
-- **Purpose**: Generates test datasets comparing answers from two different reviewers for the same questions
-- **Features**:
-  - **Input**: Questions asked about bee research papers
-  - **Expected Output**: Reviewer 1 answers (used as gold standard)
-  - **Actual Outputs**: Reviewer 2 answers (for comparison)
-  - **Metadata**: Paper ID, question type, and both reviewers' ratings
-  - **Use Cases**: Evaluating inter-reviewer agreement, training models to identify consensus vs. disagreement
-  - **Output Formats**: Both JSON and CSV for flexibility
-  - **Output Location**: `llm_benchmarking/test-datasets/` folder
-
-#### Traditional DeepEval Metrics
-- **Location**: `llm_benchmarking/deepeval_benchmarking.py`
-- **Purpose**: Evaluates LLM outputs using faithfulness, contextual precision, and contextual recall metrics
-- **Features**: 
-  - **FaithfulnessMetric**: Measures consistency between actual/expected outputs while validating against paper context
-  - **ContextualPrecisionMetric**: Assesses relevance and focus of retrieved context
-  - **ContextualRecallMetric**: Evaluates completeness of context coverage
-  - Batch processing, incremental saving, retry logic, and cost optimization
-
-#### G-Eval for Correctness Assessment
-- **Location**: `llm_benchmarking/deepeval_GEval.py`
-- **Purpose**: Uses G-Eval metrics to assess correctness, completeness, and accuracy of LLM outputs
-- **Features**: 
-  - **Correctness**: Strict evaluation of output accuracy against expected results
-  - **Completeness**: Assessment of coverage of key points
-  - **Accuracy**: Evaluation of information accuracy and alignment
-  - Uses GPT-4o by default for best evaluation quality
-  - Same robust batch processing and error handling as traditional benchmarking
-
-#### Reviewer Comparison Evaluation
-- **Location**: `llm_benchmarking/deepeval_reviewers.py`
-- **Purpose**: Evaluates reviewer comparison dataset using both context-free and context-aware metrics
-- **Features**:
-  - **FaithfulnessMetric**: Measures how faithful reviewer 2 answers are to reviewer 1 answers (requires paper context with `--add-context`)
-  - **G-Eval Correctness**: Strict evaluation of reviewer 2 accuracy against reviewer 1
-  - **G-Eval Completeness**: Assessment of reviewer 2 coverage of reviewer 1 key points
-  - **G-Eval Accuracy**: Evaluation of reviewer 2 information accuracy vs reviewer 1
-  - **Flexible Context**: Can run with or without paper context depending on needs
-  - **Faithfulness-Only Mode**: `--faithfulness-only` flag for efficient context-aware evaluation
-  - **Reviewer Analysis**: Provides insights into inter-reviewer agreement patterns
-
-#### Test Dataset Questions Covered
-The test dataset includes 7 question types:
-1. **bee_species**: "What species of bee(s) were tested?"
-2. **pesticides**: "What pesticide(s) were used in this study, and what was the dose, exposure method and duration of exposure of the pesticide(s)?"
-3. **additional_stressors**: "Were any additional stressors or combination used (like temperature, parasites or pathogens, other chemicals or nutrition stress)?"
-4. **experimental_methodology**: "What experimental methodologies was used in this paper?"
-5. **significance**: "Summarize the paper's discussion regarding the importance to the field."
-6. **future_research**: "Summarize the paper's discussion regarding future research directions."
-7. **limitations**: "Summarize the paper's discussion regarding any limitations or barriers to research."
-
-#### Usage Examples
-```bash
-# Generate test dataset from reviewer answers
-python llm_benchmarking/test_dataset_generation.py
-
-# Generate reviewer comparison dataset
-python llm_benchmarking/reviewer_dataset_generation.py
-
-# Run traditional DeepEval evaluation
-python llm_benchmarking/deepeval_benchmarking.py --question bee_species
-
-# Run G-Eval correctness evaluation (recommended for quality assessment)
-python llm_benchmarking/deepeval_GEval.py --question bee_species
-
-# Run reviewer comparison evaluation
-python llm_benchmarking/deepeval_reviewers.py --question bee_species
-
-# Run FaithfulnessMetric only (requires context)
-python llm_benchmarking/deepeval_reviewers.py --faithfulness-only --add-context --question bee_species
-
-# Run with custom settings
-python llm_benchmarking/deepeval_GEval.py --question pesticides --batch-size 25 --model gpt-4o
-```
-
-#### Evaluation Outputs
-Both evaluation scripts save results in `llm_benchmarking/deepeval-results/` with:
-- **JSON format**: Complete evaluation results with metadata
-- **JSONL format**: Line-by-line results for easy processing
-- **Timestamped filenames**: Unique identification for each evaluation run
-- **Incremental saving**: Results saved after each batch to prevent data loss
-
-#### Test Dataset Structure
-The generated test dataset follows this structure:
-```json
-{
-  "input": "What species of bee(s) were tested?",
-  "expected_output": "Honey bees (Apis mellifera) were tested.",
-  "actual_outputs": "Honey bees (*Apis mellifera*), specifically the Carniolan honey bee (*Apis mellifera carnica*), were tested in the study.",
-  "context": ["Text chunk 1 from the paper...", "Text chunk 2 from the paper..."],
-  "metadata": {
-    "paper_id": "594",
-    "question_id": "bee_species",
-    "reviewer": "AJ",
-    "rating": 10
-  }
-}
-```
-
-#### Data Sources
-- **Questions**: From `llm_benchmarking/llm_questions.txt`
-- **Reviewer Answers**: From `final_merged_data/*_merged.json` files
-- **Context**: From paper pages and merged chunk data
-- **Chunk IDs**: From paper `answers.json` files
-- **Output Location**: Generated datasets are saved in `llm_benchmarking/test-datasets/` folder
-
-### Streamlined Structure
-
-The `llm_benchmarking/` module has been streamlined to focus on core benchmarking functions:
-
-- **Core Functions**: Dataset generation, DeepEval evaluation, reviewer analysis, and results visualization
-- **Moved Files**: `process_benchmarking.py` and related utilities have been moved to `structured_datatable/from_benchmarking_to_fix/` for future integration with the structured data pipeline
-
-This ensures a clean separation between benchmarking (evaluation and analysis) and final data structuring (extraction and formatting).
-
-See `llm_benchmarking/README.md` for detailed documentation on the streamlined benchmarking workflow and folder structures.
-
-### DeepEval Results Analysis
-
-The `deepeval_results_analysis.py` script provides comprehensive analysis and visualization of evaluation results:
-
-- **Data Consolidation**: Merges results from multiple evaluation runs into organized files
-- **Visualization**: Creates comparison plots between LLM vs reviewer and reviewer vs reviewer data
-- **Statistical Analysis**: Provides standard error bars and detailed metric breakdowns
-- **Output Organization**: Saves merged data and plots in structured directories
-
-This tool enables researchers to:
-- Compare performance across different evaluation approaches
-- Identify patterns in LLM vs human performance
-- Generate publication-ready visualizations
-- Maintain organized historical evaluation data
-
-**✅ Status**: Successfully tested and working! The script has processed 1,658 evaluation entries across 6 metrics and 6 question types, generating comprehensive visualizations and merged data files.
-
-## Setup
-
-1. Create and activate a virtual environment:
-```bash
+# Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
-```
+source venv/bin/activate  # On Mac/Linux
+# Or: venv\Scripts\activate  # On Windows
 
-2. Install dependencies:
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file in the project root with your API keys:
+### 2. Configuration
+
+Create a `.env` file in the project root:
+
 ```bash
-OPENAI_API_KEY=your_openai_key
-ANTHROPIC_API_KEY=your_anthropic_key
-LANDING_AI_API_KEY=your_landing_key
+# Copy example file
+cp env.example .env
+
+# Edit .env and add your settings:
+# METABEEAI_DATA_DIR=/path/to/your/papers
+# OPENAI_API_KEY=your_openai_key
+# LANDING_AI_API_KEY=your_landing_ai_key
 ```
 
-## Usage
+The `.env` file is hidden from git for security.
 
-### 1. Process PDFs
-```bash
-# Split and process PDFs using Vision AI
-python process_pdfs/va_process_papers.py
+### 3. Data Organization
+
+Organize your papers in the following structure:
+
+```
+papers/
+├── 001/
+│   └── 001_main.pdf
+├── 002/
+│   └── 002_main.pdf
+├── 003/
+│   └── 003_main.pdf
+...
 ```
 
-### 2. Run LLM Pipeline
+**Requirements**:
+- Each paper in a numbered folder (001, 002, 003, etc.)
+- PDF named `{folder_number}_main.pdf`
+- Full-text PDFs (not just abstracts)
+
+---
+
+## Complete Pipeline Workflow
+
+### STAGE 1: PDF Processing
+
+**Purpose**: Convert PDF papers into structured JSON chunks with text and metadata.
+
+**Location**: `process_pdfs/`
+
+**Steps**:
+
 ```bash
-# Process papers with LLM to answer questions
-python -m metabeeai_llm.llm_pipeline
+# Option A: Run complete pipeline (recommended)
+cd process_pdfs
+python process_all.py --start 1 --end 10
+
+# Option B: Merge-only mode (if PDFs already processed)
+python process_all.py --merge-only --start 1 --end 10
+
+# Option C: Process all papers in directory
+python process_all.py
 ```
 
-### 3. Review and Annotate
-```bash
-# Launch the review GUI
-python llm_review_software/beegui.py
+**What happens**:
+1. **Split PDFs** - Creates overlapping 2-page segments
+2. **Vision API** - Extracts text and structure using Landing AI
+3. **Merge JSONs** - Combines individual pages into single files
+4. **Deduplicate** - Removes duplicate chunks from overlapping pages
+
+**Output**: `papers/XXX/pages/merged_v2.json` for each paper
+
+**Documentation**: See `process_pdfs/README.md`
+
+---
+
+### STAGE 2: LLM Question Answering
+
+**Purpose**: Use LLMs to extract specific information by answering predefined questions.
+
+**Location**: `metabeeai_llm/`
+
+**Configuration**:
+
+Edit `metabeeai_llm/questions.yml` to customize questions:
+
+```yaml
+bee_species:
+  question: "What bee species were experimentally tested?"
+  instructions:
+    - "Extract species names from methodology sections"
+    - "Provide full scientific names"
+  output_format: "Numbered list"
+  example_output:
+    - "1. Apis mellifera carnica; 2. Bombus terrestris"
+  max_chunks: 5
+  min_score: 0.6
 ```
 
-### 4. Generate Test Datasets and Evaluate
+**Run the pipeline**:
+
 ```bash
-# Generate test datasets from reviewer answers
-python llm_benchmarking/test_dataset_generation.py
+cd metabeeai_llm
 
-# Generate reviewer comparison dataset
-python llm_benchmarking/reviewer_dataset_generation.py
+# Process papers 1-10
+python llm_pipeline.py --start 1 --end 10
 
-# Evaluate with DeepEval (traditional metrics)
-python llm_benchmarking/deepeval_benchmarking.py --question bee_species
+# Process all papers
+python llm_pipeline.py
 
-# Evaluate with G-Eval (correctness assessment)
-python llm_benchmarking/deepeval_GEval.py --question bee_species
-
-# Evaluate reviewer comparisons
-python llm_benchmarking/deepeval_reviewers.py --question bee_species
-
-# Analyze and visualize all evaluation results
-python llm_benchmarking/deepeval_results_analysis.py
+# Process specific directory
+python llm_pipeline.py --dir /path/to/papers --start 1 --end 10
 ```
 
-### 5. Generate Final Structured Output
+**What happens**:
+1. Loads questions from `questions.yml`
+2. For each paper, selects relevant text chunks
+3. Asks LLM to answer each question based on chunks
+4. Synthesizes final answers with reasoning and source citations
+
+**Output**: `papers/XXX/answers.json` for each paper
+
+**Documentation**: See `metabeeai_llm/README.md`
+
+---
+
+### STAGE 3: Human Review and Annotation
+
+**Purpose**: Review LLM-generated answers, provide ratings, and annotate PDFs.
+
+**Location**: `llm_review_software/`
+
+**Tools**:
+
+#### 3A. Review GUI
 ```bash
-# Create structured data tables (using moved utilities)
-# Note: process_benchmarking.py has been moved to structured_datatable/from_benchmarking_to_fix/
-# for future integration with the structured data pipeline
+cd llm_review_software
+python beegui.py
 ```
 
-## Processing Pipeline
+**Features**:
+- View PDFs with highlighted source chunks
+- Review LLM answers question-by-question
+- Provide ratings and corrections
+- Navigate between papers and questions
+- Save annotations and reviews
 
-The MetaBeeAI pipeline follows a structured workflow:
+**Output**: `answers_extended.json` files with reviewer ratings
 
-### **Phase 1: Document Processing**
-- **PDF Processing**: Automated PDF splitting and Vision AI analysis
-- **LLM Integration**: Multi-stage question-answering with Large Language Models
+#### 3B. PDF Annotation Tool
+```bash
+python annotator.py --basepath /path/to/data
+```
 
-### **Phase 2: Review and Annotation**
-- **Interactive Review**: GUI-based review and annotation system
-- **Data Merging**: Combine LLM and reviewer answers for analysis
+**Features**:
+- Annotates PDFs with bounding boxes showing source chunks
+- Color-codes chunks by question type
+- Creates annotated PDFs for verification
 
-### **Phase 3: Benchmarking and Evaluation**
-- **Dataset Generation**: Create test datasets for evaluation
-- **DeepEval Assessment**: Comprehensive evaluation using various metrics
-- **Reviewer Analysis**: Statistical analysis of reviewer ratings and agreement
-- **Results Analysis**: Consolidate and visualize evaluation results
+**Output**: Annotated PDF files
 
-### **Phase 4: Final Data Structuring** (Future)
-- **Structured Output**: Final data extraction and formatting
-- **Integration**: Connect with structured data pipeline
+**Documentation**: Review GUI has built-in help and tooltips
 
-## Features
+---
 
-- **PDF Processing**: Automated PDF splitting and Vision AI analysis
-- **LLM Integration**: Multi-stage question-answering with Large Language Models
-- **Interactive Review**: GUI-based review and annotation system
-- **Dataset Generation**: Automated creation of evaluation datasets
-- **DeepEval Integration**: Comprehensive LLM output assessment
-- **Modular Design**: Independent components that can be used separately
-- **Comprehensive Logging**: Detailed processing logs and status updates
+### STAGE 4: LLM Benchmarking and Evaluation
+
+**Purpose**: Evaluate LLM performance against human reviewer gold standards.
+
+**Location**: `llm_benchmarking/`
+
+**Complete benchmarking workflow**:
+
+```bash
+cd llm_benchmarking
+
+# Run LLM v1 benchmarking (all questions)
+python run_benchmarking.py --type llmv1
+
+# Run LLM v2 benchmarking
+python run_benchmarking.py --type llmv2
+
+# Run reviewer comparison benchmarking
+python run_benchmarking.py --type rev
+
+# Run all benchmarking types
+python run_benchmarking.py --type all
+
+# Run analysis only (after benchmarking)
+python run_benchmarking.py --analyze-only
+```
+
+**What happens**:
+
+**For LLM v1 benchmarking**:
+1. **Data merging** - Combines LLM and reviewer answers
+2. **Dataset generation** - Creates evaluation test cases
+3. **DeepEval metrics** - Evaluates faithfulness, precision, recall
+4. **GEval metrics** - Evaluates correctness, completeness, accuracy
+5. **Analysis** - Creates summary statistics and visualizations
+
+**For LLM v2 benchmarking**:
+1. **Merge LLM v2 data** - Adds improved LLM answers
+2. **Evaluation** - Compares LLM v2 vs Reviewer 3
+3. **Analysis** - Generates comparative statistics
+
+**For Reviewer comparison**:
+1. **Dataset generation** - Pairs Reviewer 1 vs Reviewer 2 answers
+2. **Evaluation** - Measures inter-reviewer agreement
+3. **Analysis** - Identifies consensus and disagreement patterns
+
+**Metrics explained**:
+- **Faithfulness**: How well answers align with source text
+- **Contextual Precision**: Relevance of retrieved chunks
+- **Contextual Recall**: Completeness of chunk coverage
+- **Correctness**: Factual accuracy (binary)
+- **Completeness**: Coverage of key points (continuous)
+- **Accuracy**: Semantic alignment quality (continuous)
+
+**Output**:
+- `deepeval-results/*.json/jsonl` - Detailed evaluation results
+- `deepeval-analyses/` - Merged data and visualizations
+- `comparison_plots/` - Comparative analysis plots
+- `summary_all_results_improved.csv` - Comprehensive statistics
+
+**Documentation**: See `llm_benchmarking/README.md`
+
+---
+
+### STAGE 5: Data Analysis and Visualization
+
+**Purpose**: Extract structured data and analyze trends, patterns, and relationships.
+
+**Location**: `query_database/`
+
+**Workflow**:
+
+```bash
+cd query_database
+
+# Step 1: Extract structured data from LLM answers
+python investigate_bee_species.py
+python investigate_pesticides.py
+python investigate_additional_stressors.py
+python investigate_significance.py
+
+# Step 2: Analyze trends and create visualizations
+python trend_analysis.py
+python network_analysis.py
+```
+
+**What each script does**:
+
+**Data Extraction**:
+- `investigate_bee_species.py` - Extracts species names, taxonomy
+- `investigate_pesticides.py` - Extracts chemical names, doses, exposure methods
+- `investigate_additional_stressors.py` - Extracts non-pesticide stressors
+- `investigate_significance.py` - Extracts key findings and results
+
+**Analysis**:
+- `trend_analysis.py` - Analyzes co-occurrence patterns, creates bar charts
+- `network_analysis.py` - Creates network visualizations showing relationships
+
+**Output**:
+- `output/*.json` - Structured data files
+- `output/trend_analysis_plots/` - Trend visualizations
+- `output/network_plots/` - Network diagrams
+- `output/*.txt` - Statistical reports
+
+**Documentation**: See `query_database/README.md`
+
+---
+
+## Quick Start Guide
+
+### Minimal Working Example (3 papers)
+
+```bash
+# 1. Setup environment
+cp env.example .env
+# Edit .env with your API keys
+source venv/bin/activate
+
+# 2. Process PDFs
+cd process_pdfs
+python process_all.py --start 1 --end 3
+cd ..
+
+# 3. Run LLM pipeline
+cd metabeeai_llm
+python llm_pipeline.py --start 1 --end 3
+cd ..
+
+# 4. Extract and analyze data
+cd query_database
+python investigate_bee_species.py
+python investigate_pesticides.py
+python trend_analysis.py
+cd ..
+
+# 5. Check results
+ls -lh query_database/output/
+```
+
+---
+
+## Project Structure
+
+```
+MetaBeeAI/pipeline/
+├── process_pdfs/              # STAGE 1: PDF to JSON conversion
+│   ├── process_all.py         # Main pipeline runner
+│   ├── split_pdf.py           # PDF splitting
+│   ├── va_process_papers.py   # Vision API processing
+│   ├── merger.py              # JSON merging
+│   ├── batch_deduplicate.py   # Deduplication
+│   └── README.md              # Documentation
+│
+├── metabeeai_llm/             # STAGE 2: LLM question answering
+│   ├── llm_pipeline.py        # Main pipeline runner
+│   ├── json_multistage_qa.py  # Q&A engine
+│   ├── pipeline_config.py     # Configuration
+│   ├── questions.yml          # Question definitions ⭐
+│   └── README.md              # Documentation
+│
+├── llm_review_software/       # STAGE 3: Human review and annotation
+│   ├── beegui.py              # Review GUI application
+│   ├── annotator.py           # PDF annotation tool
+│   └── __init__.py
+│
+├── llm_benchmarking/          # STAGE 4: LLM evaluation
+│   ├── run_benchmarking.py    # Main benchmarking runner
+│   ├── merge_answers.py       # Data merging
+│   ├── test_dataset_generation.py          # Dataset creation
+│   ├── deepeval_benchmarking.py            # Standard metrics
+│   ├── deepeval_GEval.py                   # GEval metrics
+│   ├── deepeval_llmv2.py                   # LLM v2 evaluation
+│   ├── deepeval_reviewers.py               # Reviewer comparison
+│   ├── analyze_deepeval_results_improved.py # Analysis
+│   ├── create_comparison_plots.py          # Visualization
+│   └── README.md                           # Documentation
+│
+├── query_database/            # STAGE 5: Data analysis
+│   ├── investigate_bee_species.py          # Extract species data
+│   ├── investigate_pesticides.py           # Extract pesticide data
+│   ├── investigate_additional_stressors.py # Extract stressor data
+│   ├── investigate_significance.py         # Extract findings
+│   ├── trend_analysis.py                   # Trend analysis
+│   ├── network_analysis.py                 # Network visualization
+│   └── README.md                           # Documentation
+│
+├── data/
+│   └── papers/                # Paper data (PDFs and outputs)
+│
+├── config.py                  # Centralized configuration
+├── requirements.txt           # Python dependencies
+├── setup.py                   # Package setup
+├── env.example                # Environment configuration template
+└── README.md                  # This file
+```
+
+---
+
+## Detailed Pipeline Flow
+
+```
+Raw PDFs
+    ↓
+[STAGE 1: process_pdfs/]
+    ├── Split into 2-page segments
+    ├── Extract with Vision API
+    ├── Merge JSON files
+    └── Deduplicate chunks
+    ↓
+papers/XXX/pages/merged_v2.json
+    ↓
+[STAGE 2: metabeeai_llm/]
+    ├── Load questions from questions.yml
+    ├── Select relevant chunks
+    ├── Query LLM for answers
+    └── Synthesize final answers
+    ↓
+papers/XXX/answers.json
+    ↓
+[STAGE 3: llm_review_software/]
+    ├── Review in GUI
+    ├── Rate answer quality
+    ├── Provide corrections
+    └── Annotate PDFs
+    ↓
+papers/XXX/answers_extended.json
+    ↓
+[STAGE 4: llm_benchmarking/]
+    ├── Merge LLM + reviewer answers
+    ├── Generate test datasets
+    ├── Run DeepEval evaluation
+    ├── Analyze results
+    └── Create visualizations
+    ↓
+Evaluation metrics, plots, statistics
+    ↓
+[STAGE 5: query_database/]
+    ├── Extract structured data
+    ├── Analyze trends
+    ├── Create network graphs
+    └── Generate reports
+    ↓
+Final structured data + visualizations
+```
+
+---
+
+## Step-by-Step Usage Guide
+
+### Step 1: Process PDFs
+
+Convert raw PDFs into structured JSON format.
+
+```bash
+cd process_pdfs
+
+# Process all papers (complete pipeline)
+python process_all.py --start 1 --end 50
+
+# Or: Merge-only mode (if already processed with Vision API)
+python process_all.py --merge-only
+
+# Or: Process all papers in directory
+python process_all.py
+```
+
+**Input**: `papers/XXX/XXX_main.pdf`
+
+**Output**: `papers/XXX/pages/merged_v2.json`
+
+**Time**: ~10-30 seconds per paper (Vision API step is slowest)
+
+**Cost**: Vision API credits per page (check Landing AI pricing)
+
+**Skip if**: You've already processed PDFs through Vision API
+
+**See**: `process_pdfs/README.md` for details
+
+---
+
+### Step 2: Run LLM Pipeline
+
+Extract information by asking LLMs specific questions about each paper.
+
+```bash
+cd metabeeai_llm
+
+# Customize questions (optional)
+nano questions.yml  # Edit question prompts, instructions, examples
+
+# Run pipeline
+python llm_pipeline.py --start 1 --end 50
+
+# Or: Process all papers
+python llm_pipeline.py
+```
+
+**Input**: `papers/XXX/pages/merged_v2.json`
+
+**Output**: `papers/XXX/answers.json`
+
+**Questions answered** (configurable in `questions.yml`):
+- What bee species were tested?
+- What pesticides were used (dose, method, duration)?
+- Were additional stressors tested?
+- What experimental methods were used?
+- What were the key findings?
+- What future research directions were suggested?
+
+**Time**: ~30-120 seconds per paper (depends on paper length and model)
+
+**Cost**: OpenAI API costs (GPT-4o-mini recommended for cost efficiency)
+
+**Model configuration**: Edit `pipeline_config.py` to choose models
+
+**See**: `metabeeai_llm/README.md` for details
+
+---
+
+### Step 3: Human Review and Annotation (Optional)
+
+Review and validate LLM-generated answers with human expertise.
+
+```bash
+cd llm_review_software
+
+# Launch review GUI
+python beegui.py
+```
+
+**What the GUI provides**:
+- Side-by-side PDF and answer review
+- Visual highlighting of source chunks
+- Question-by-question navigation
+- Rating system (1-10 scale)
+- Annotation and correction tools
+- Save progress automatically
+
+**Input**: 
+- `papers/XXX/XXX_main.pdf` (original PDF)
+- `papers/XXX/pages/merged_v2.json` (chunks)
+- `papers/XXX/answers.json` (LLM answers)
+
+**Output**: `papers/XXX/answers_extended.json` (with ratings and corrections)
+
+**Use cases**:
+- Quality assurance for critical projects
+- Training data generation for improved models
+- Inter-reviewer agreement studies
+- Validating LLM performance
+
+**Optional PDF annotation**:
+```bash
+python annotator.py --basepath /path/to/data
+```
+Creates annotated PDFs with bounding boxes around source chunks.
+
+---
+
+### Step 4: Benchmarking and Evaluation (Optional)
+
+Evaluate LLM performance against human reviewer gold standards.
+
+```bash
+cd llm_benchmarking
+
+# Run complete benchmarking for LLM v1
+python run_benchmarking.py --type llmv1
+
+# Run specific question type
+python run_benchmarking.py --type llmv1 --question bee_species
+
+# Compare LLM v2 vs Reviewer 3
+python run_benchmarking.py --type llmv2
+
+# Evaluate inter-reviewer agreement
+python run_benchmarking.py --type rev
+
+# Run all benchmarking types
+python run_benchmarking.py --type all
+
+# Skip dataset generation (if already done)
+python run_benchmarking.py --type llmv1 --skip-dataset
+
+# Run analysis only
+python run_benchmarking.py --analyze-only
+```
+
+**Prerequisites**:
+- Completed Stage 3 (human review)
+- Have both LLM answers and reviewer answers
+
+**What happens**:
+1. **Data merging** - Combines LLM + reviewer answers
+2. **Dataset generation** - Creates evaluation test cases
+3. **DeepEval evaluation** - Runs multiple metrics
+4. **Analysis** - Generates statistics and plots
+5. **Visualization** - Creates comparison charts
+
+**Metrics evaluated**:
+- Faithfulness, Contextual Precision/Recall
+- Correctness, Completeness, Accuracy (GEval)
+- Inter-reviewer agreement scores
+
+**Output**:
+- `deepeval-results/` - Detailed evaluation results
+- `deepeval-analyses/` - Visualizations and merged data
+- `comparison_plots/` - Comparative analysis
+- `summary_all_results_improved.csv` - Comprehensive statistics
+
+**Time**: ~5-30 seconds per test case (depends on batch size)
+
+**Cost**: OpenAI API costs for evaluation (gpt-4o-mini recommended)
+
+**See**: `llm_benchmarking/README.md` for details
+
+---
+
+### Step 5: Data Analysis and Visualization
+
+Analyze extracted data for trends, patterns, and relationships.
+
+```bash
+cd query_database
+
+# Extract structured data from all papers
+python investigate_bee_species.py
+python investigate_pesticides.py
+python investigate_additional_stressors.py
+python investigate_significance.py
+
+# Analyze trends and create visualizations
+python trend_analysis.py
+python network_analysis.py
+```
+
+**What happens**:
+
+**Data extraction**:
+- Parses LLM answers into structured fields
+- Standardizes species names and pesticide names
+- Categorizes stressors by type
+- Extracts quantitative findings
+
+**Analysis**:
+- Identifies most studied species and pesticides
+- Calculates co-occurrence frequencies
+- Creates network graphs showing relationships
+- Generates statistical reports
+
+**Output**:
+- `output/bee_species_data.json` - Species database
+- `output/pesticides_data.json` - Pesticide database
+- `output/additional_stressors_data.json` - Stressor database
+- `output/significance_data.json` - Findings database
+- `output/trend_analysis_plots/` - Bar charts and trends
+- `output/network_plots/` - Network visualizations
+- `output/*.txt` - Statistical reports
+
+**Use cases**:
+- Meta-analysis of research trends
+- Identifying knowledge gaps
+- Understanding bee-pesticide interactions
+- Supporting systematic reviews
+
+**See**: `query_database/README.md` for details
+
+---
+
+## Common Workflows
+
+### Workflow A: Complete Pipeline (All Stages)
+
+```bash
+# 1. Process PDFs
+cd process_pdfs && python process_all.py --start 1 --end 10 && cd ..
+
+# 2. Run LLM pipeline
+cd metabeeai_llm && python llm_pipeline.py --start 1 --end 10 && cd ..
+
+# 3. Extract and analyze data
+cd query_database
+python investigate_bee_species.py
+python investigate_pesticides.py
+python trend_analysis.py
+python network_analysis.py
+cd ..
+```
+
+### Workflow B: Re-processing Existing PDFs
+
+```bash
+# Only merge and deduplicate (skip expensive Vision API)
+cd process_pdfs && python process_all.py --merge-only && cd ..
+
+# Re-run LLM with updated questions
+cd metabeeai_llm && python llm_pipeline.py && cd ..
+```
+
+### Workflow C: Benchmarking Only
+
+```bash
+# Assuming you have reviewed answers
+cd llm_benchmarking
+
+# Run complete benchmarking
+python run_benchmarking.py --type llmv1
+
+# Analyze results
+python run_benchmarking.py --analyze-only
+```
+
+### Workflow D: Analysis Only
+
+```bash
+# If you have answers.json files, extract and analyze
+cd query_database
+python investigate_bee_species.py
+python investigate_pesticides.py
+python trend_analysis.py
+python network_analysis.py
+```
+
+---
+
+## Configuration Files
+
+### `questions.yml` - Question Definitions
+**Location**: `metabeeai_llm/questions.yml`
+
+**Purpose**: Define all questions the LLM will answer
+
+**Key fields**:
+- `question` - The question text
+- `instructions` - Guidelines for answering
+- `output_format` - Expected format
+- `example_output` - Good examples
+- `bad_example_output` - Examples to avoid
+- `max_chunks` - How many text chunks to analyze
+- `min_score` - Relevance threshold
+
+**This is your main customization point!**
+
+### `pipeline_config.py` - Model Configuration
+**Location**: `metabeeai_llm/pipeline_config.py`
+
+**Purpose**: Configure LLM models and processing parameters
+
+**Options**:
+- `FAST_CONFIG` - gpt-4o-mini (fast, cheap)
+- `BALANCED_CONFIG` - Mixed models (recommended)
+- `QUALITY_CONFIG` - gpt-4o (high quality, slower)
+
+### `.env` - Environment Configuration
+**Location**: Root directory (hidden from git)
+
+**Required variables**:
+```bash
+METABEEAI_DATA_DIR=/path/to/papers
+OPENAI_API_KEY=sk-...
+LANDING_AI_API_KEY=...
+```
+
+---
+
+## Cost Estimation
+
+### For 100 papers (average 10 pages each):
+
+| Stage | Service | Estimated Cost | Notes |
+|-------|---------|----------------|-------|
+| Stage 1 | Landing AI Vision API | $50-150 | Per page processing |
+| Stage 2 | OpenAI (gpt-4o-mini) | $5-15 | 6 questions per paper |
+| Stage 2 | OpenAI (gpt-4o) | $50-150 | Higher quality, more expensive |
+| Stage 4 | OpenAI (evaluation) | $10-30 | If benchmarking |
+
+**Cost reduction tips**:
+1. Use `--merge-only` to skip re-processing PDFs
+2. Use gpt-4o-mini for most tasks
+3. Test on small batches first (--start 1 --end 5)
+4. Skip benchmarking for production runs
+
+---
+
+## Troubleshooting
+
+### "METABEEAI_DATA_DIR not set"
+```bash
+# Fix: Add to .env file
+echo "METABEEAI_DATA_DIR=/path/to/papers" >> .env
+```
+
+### "API key not found"
+```bash
+# Fix: Add keys to .env file
+cp env.example .env
+# Edit .env and add your API keys
+```
+
+### "No merged_v2.json files found"
+```bash
+# Fix: Run PDF processing first
+cd process_pdfs
+python process_all.py --start 1 --end 10
+```
+
+### "No answers.json files found"
+```bash
+# Fix: Run LLM pipeline first
+cd metabeeai_llm
+python llm_pipeline.py --start 1 --end 10
+```
+
+### Pipeline is slow
+- **PDF Processing**: Normal (Vision API is slow). Use `--merge-only` if re-running
+- **LLM Pipeline**: Use FAST_CONFIG in `pipeline_config.py`
+- **Benchmarking**: Reduce batch size or use gpt-4o-mini
+
+### Out of API credits
+- **Landing AI**: Check quota at Landing AI dashboard
+- **OpenAI**: Check usage at platform.openai.com/usage
+
+---
 
 ## Dependencies
 
-Key dependencies include:
-- **Vision AI**: `requests` for LandingAI API integration
-- **LLM Processing**: `openai`, `litellm` for language model interactions
-- **PDF Handling**: `PyPDF2`, `pymupdf` for PDF processing
-- **GUI**: `PyQt5` for the review interface
-- **Data Processing**: `pandas`, `numpy` for data manipulation
-- **Web Framework**: `fastapi`, `uvicorn` for API services
+Key dependencies (see `requirements.txt` for complete list):
 
-See `requirements.txt` for the complete list of dependencies.
+**Core**:
+- `python >= 3.8`
+- `litellm` - LLM API interface
+- `openai` - OpenAI API client
+- `PyPDF2` - PDF manipulation
+- `pymupdf` (fitz) - PDF rendering
 
-## Configuration
+**Data Processing**:
+- `pandas` - Data manipulation
+- `numpy` - Numerical operations
+- `pyyaml` - YAML parsing
 
-- **`metabeeai_llm/questions.yml`**: Define the questions to ask the LLM about each paper
-- **`schema_config.yaml`**: Configure the data extraction schema
-- **`field_examples.yaml`**: Provide examples for field extraction
+**Visualization**:
+- `matplotlib` - Plotting
+- `seaborn` - Statistical visualization
+- `networkx` - Network graphs
 
-## Notes
+**GUI** (optional):
+- `PyQt5` - GUI framework
 
-- API keys are required for OpenAI, Anthropic, and Landing AI services
-- Processing large PDFs may take significant time
-- The pipeline is designed to be modular - you can run components independently
-- Check processing logs in the data directory for status updates
-- The GUI requires PyQt5 and may have platform-specific requirements
+**Evaluation** (optional):
+- `deepeval` - LLM evaluation framework
 
-## Contributing
+**API Integration**:
+- `requests` - HTTP requests
+- `python-dotenv` - Environment variables
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+---
 
-## License
+## Best Practices
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+### 1. Start Small
+Test the pipeline on 3-5 papers before processing hundreds:
+```bash
+python process_all.py --start 1 --end 5
+```
+
+### 2. Customize Questions First
+Review and edit `metabeeai_llm/questions.yml` before large-scale processing.
+
+### 3. Monitor Costs
+- Use gpt-4o-mini for initial runs
+- Check OpenAI usage dashboard regularly
+- Test prompts on small batches
+
+### 4. Validate Data Quality
+- Review a sample of LLM answers manually
+- Check edge cases in benchmarking results
+- Verify extracted data makes sense
+
+### 5. Use Version Control
+- Commit `questions.yml` changes
+- Tag versions of pipeline configurations
+- Keep changelog of prompt improvements
+
+### 6. Backup Data
+- Keep original PDFs in separate location
+- Backup `answers.json` files before re-running
+- Export analysis results regularly
+
+---
+
+## Output Files Summary
+
+| File | Created By | Purpose |
+|------|-----------|---------|
+| `papers/XXX/pages/merged_v2.json` | Stage 1 | Structured PDF chunks |
+| `papers/XXX/answers.json` | Stage 2 | LLM-generated answers |
+| `papers/XXX/answers_extended.json` | Stage 3 | Reviewed answers with ratings |
+| `deepeval-results/*.json` | Stage 4 | Evaluation results |
+| `query_database/output/*.json` | Stage 5 | Extracted structured data |
+| `query_database/output/*_plots/*.png` | Stage 5 | Visualizations |
+| `*.txt` reports | Stages 4-5 | Statistical summaries |
+
+---
+
+## Support and Resources
+
+### Documentation by Stage:
+1. PDF Processing: `process_pdfs/README.md`
+2. LLM Pipeline: `metabeeai_llm/README.md`
+3. Review Software: Built-in GUI help
+4. Benchmarking: `llm_benchmarking/README.md`
+5. Data Analysis: `query_database/README.md`
+
+### Getting Help:
+1. Check relevant README for your stage
+2. Review example outputs in `data/papers/`
+3. Check troubleshooting sections
+4. Verify environment configuration in `.env`
+
+---
+
+## Citation
+
+If you use this pipeline in your research, please cite:
+
+```bibtex
+@software{metabeeai_pipeline,
+  title = {MetaBeeAI Pipeline: Automated Literature Extraction for Bee Research},
+  author = {MetaBeeAI Team},
+  year = {2025},
+  url = {https://github.com/your-repo/metabeeai-pipeline}
+}
+```
+
+---
+
+**Last Updated**: October 2025
