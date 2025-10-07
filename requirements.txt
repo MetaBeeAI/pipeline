@@ -40,6 +40,13 @@ ipykernel
 faker
 reportlab
 matplotlib
+seaborn
+
+# Network analysis (for network_analysis.py)
+networkx
+
+# LLM evaluation (for llm_benchmarking)
+deepeval
 
 # HTTP requests (for va_process_papers.py)
 requests
